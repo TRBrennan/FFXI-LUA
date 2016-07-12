@@ -30,13 +30,13 @@ function get_sets()
 		--1=Standard, 2 =DT , 3 = Death--
         Idle_ind = 1                  
        
-        sets.Idle.Standard = {ammo="Brigantia Pebble",
-                                      head="Hike Khat",neck="Loricate Torque", ear1="Genmei Earring", ear2="Infused Earring",
+        sets.Idle.Standard = {ammo="Staunch Tathlum",
+                                      head="Hike Khat",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands="Amalric Gages",ring1="Warden's ring",ring2="Gelatinous Ring +1",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Amalric Nails", back ="Solemnity Cape"}
 									  
 		sets.Idle.DT = {ammo="Hagneia stone",
-                                      head="Hike Khat",neck="Loricate Torque", ear1="Ethereal earring", ear2="Infused Earring",
+                                      head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands="Amalric Gages",ring1="Gelatinous Ring +1",ring2="Warden's ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Amalric Nails", back ="Solemnity Cape"}
 		
@@ -52,7 +52,7 @@ function get_sets()
                 --1=Standard--
 				
                 TP_ind = 1
-				sets.TP.Standard = {ammo="Brigantia Pebble",
+				sets.TP.Standard = {ammo="Staunch Tathlum",
                                       head="Hike Khat",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands="Amalric Gages",ring1="Warden's ring",ring2="Gelatinous Ring +1",
                                       waist="Fucho-no-obi",legs="Assiduity Pants",feet="Amalric Nails", back ="Solemnity Cape"}
@@ -76,13 +76,13 @@ function get_sets()
 			
 			sets.Nuke.Standard = {ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Barkarole Earring",
-                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
-                                 back="Taranus's Cape",legs="Merlinic Shalwar",feet="Merliic Crackcrows"}
+                                 body="Merlinic Jubbah",hands="Amalric Gages", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
+                                 back="Taranus's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackows"}
 										
 			sets.Nuke.MagicBurst = {ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Mizukage-no-Kubikazari",ear2="Friomisi earring", ear1="Barkarole Earring",
-                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Locus Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
-                                 back="Taranus's Cape",legs="Merlinic Shalwar",feet="Merliic Crackcrows"}	
+                                 body="Merlinic Jubbah",hands="Amalric Gages", ring1="Locus Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
+                                 back="Taranus's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackows"}	
 			
 			
 
@@ -94,7 +94,7 @@ function get_sets()
 			Enhancing_ind = 1
 				
 			sets.Enhancing.Normal = { ammo="Savant's Treatise",
-                                 head="Telchine Cap",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
+                                 head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Spellbreaker Earring",
                                  body="Telchine Chasuble",hands="Chironic Gloves", ring1="Metamorph Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
                                  back="Fi follet cape +1",legs="Telchine Braconi",feet="Telchine Pigaches"}
 						 
@@ -105,7 +105,7 @@ function get_sets()
 			sets.Magic.Enfeebling = {ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Barkarole Earring",
                                  body="Vanya Robe",hands="Lurid Mitts", ring1="Metamorph Ring", ring2 ="Weatherspoon Ring", waist ="Porous Rope",
-                                 back="Taranus's Cape",legs="Psycloth Lappas",feet="Merliic Crackcrows"}
+                                 back="Taranus's Cape",legs="Psycloth Lappas",feet="Medium's Sabots"}
 			
 			sets.Magic.Healing = {ammo="Kalboron Stone",
                                  head="Merlinic Hood",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
@@ -119,8 +119,8 @@ function get_sets()
 			
 			sets.Magic.Dark = { ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Incanter's Torque",ear2="Friomisi earring", ear1="Barkarole Earring",
-                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Shiva Ring", waist ="Refoccilation Stone",
-                                 back="Taranus's Cape",legs="Merlinic Shalwar",feet="Merliic Crackcrows"}
+                                 body="Merlinic Jubbah",hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Shiva Ring", waist ="Refoccilation Stone",
+                                 back="Taranus's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackows"}
 			
 			sets.Magic.Death = {ammo="Strobilus",
                                  head="Pixie Hairpin +1",neck="Mizukage-no-Kubikazari",ear2="Etiolation Earring", ear1="Barkarole Earring",
@@ -134,8 +134,13 @@ function get_sets()
        
 			sets.precast.FC.Standard = {ammo="Sapience Orb",
 							head="Merlinic Hood",  body="Vrikodara Jupon",  hands="Telchine Gloves", legs="Psycloth Lappas",
-						    feet="Merliic Crackcrows",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
+						    feet="Merlinic Crackcrows",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
 						    right_ear ="Loquac. Earring",left_ring="Prolix Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
+							
+			sets.precast.FC.Death = {ammo="Sapience Orb",
+							head="Merlinic Hood",  body="Vrikodara Jupon",  hands="Telchine Gloves", legs="Psycloth Lappas",
+						    feet="Merlinic Crackcrows",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
+						    right_ear ="Loquac. Earring",left_ring="Prolix Ring", right_ring="Mephitas's Ring", back="Swith Cape"}
 							
 							 
 
@@ -148,15 +153,20 @@ function get_sets()
 		
 		sets.Utility.DrainAspir = { ammo="Strobilus",
                                  head="Pixie Hairpin +1",neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Barkarole Earring",
-                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Mephitas's Ring", waist ="Fucho-no-obi",
-                                 back="Taranus's Cape",legs="Merlinic Shalwar",feet="Merliic Crackcrows"}
+                                 body="Merlinic Jubbah",hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Mephitas's Ring", waist ="Fucho-no-obi",
+                                 back="Taranus's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackcrows"}
  
+		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
 		--WS Sets--
        
 		sets.WS = {}
 end
 
 function precast(spell)
+
+		if spell.english == 'Death' then
+			equip(sets.precast.FC.Death)
+		end
 		if spell.action_type == 'Magic' then
                 equip(sets.precast.FC.Standard)
          end
@@ -211,20 +221,49 @@ end
 function aftercast(spell)
         if player.status == 'Engaged' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
-        else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
-        end
-       
-        if spell.action_type == 'Weaponskill' then
-                add_to_chat(158,'TP Return: ['..tostring(player.tp)..']')
+				if buffactive['Doom'] then
+					equip(set_combine(sets.TP[sets.TP.index[TP_ind]],sets.Utility.Doomed))
+					status_change(player.status)
+				end
+				if buffactive['Terror']	then 
+					equip(sets.TP.DT)
+					status_change(player.status)
+				end
+		else
+                equip(sets.Idle[sets.Idle.index[Idle_ind]])					
+				if buffactive['Doom'] then
+					equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]],sets.Utility.Doomed))
+					status_change(player.status)
+				end
+				if buffactive['Terror']	then 
+					equip(sets.TP.DT)
+					status_change(player.status)
+				end
         end
 end
+
  
 function status_change(new,old)
-        if new == 'Engaged' then
+        if player.status == 'Engaged' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
+				if buffactive['Doom'] then
+					equip(set_combine(sets.TP[sets.TP.index[TP_ind]],sets.Utility.Doomed))
+					status_change(player.status)
+				end
+				if buffactive['Terror']	then 
+					equip(sets.TP.DT)
+					status_change(player.status)
+				end
         else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
+                equip(sets.Idle[sets.Idle.index[Idle_ind]])					
+				if buffactive['Doom'] then
+					equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]],sets.Utility.Doomed))
+					status_change(player.status)
+				end
+				if buffactive['Terror']	then 
+					equip(sets.TP.DT)
+					status_change(player.status)
+				end
         end
 end
  

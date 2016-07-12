@@ -31,12 +31,12 @@ function get_sets()
         Idle_ind = 1                  
        
         sets.Idle.Standard = {ammo="Homiliary",
-                                      head="Hike Khat",neck="Loricate Torque", ear1="Genmei Earring", ear2="Infused Earring",
+                                      head="Hike Khat",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Warden's ring",ring2="Gelatinous Ring +1",
-                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Solemnity Cape"}
+                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Aptitude Mantle"}
 									  
 		sets.Idle.DT = {ammo="Hagneia stone",
-                                      head="Hike Khat",neck="Loricate Torque", ear1="Ethereal earring", ear2="Infused Earring",
+                                      head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Gelatinous Ring +1",ring2="Warden's ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Solemnity Cape"}							  
                                                  
@@ -72,12 +72,12 @@ function get_sets()
 			sets.Nuke.Standard = {ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Barkarole Earring",
                                  body="Amalric Doublet",hands="Amalric Gages", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
-                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merliic Crackcrows"}
+                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackcrows"}
 										
 			sets.Nuke.MagicBurst = {ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Mizukage-no-Kubikazari",ear2="Friomisi earring", ear1="Barkarole Earring",
                                  body="Amalric Doublet",hands="Amalric Gages", ring1="Locus Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
-                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merliic Crackcrows"}	
+                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackcrows"}	
 
 		--Enhancing Sets--					
 		sets.Enhancing ={}
@@ -89,7 +89,7 @@ function get_sets()
 			sets.Enhancing.Normal = { ammo="Savant's Treatise",
                                  head="Telchine Cap",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
                                  body="Telchine Chasuble",hands="Chironic Gloves", ring1="Metamorph Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
-                                 back="Fi follet cape +1",legs="Telchine Braconi",feet="Telchine Pigaches"}
+                                 back="Fi follet cape +1",legs="Telchine Braconi",feet="Regal Pumps"}
 					 
 								 
 		--Magic Sets--
@@ -97,23 +97,23 @@ function get_sets()
 		
 			sets.Magic.Enfeebling = {ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Barkarole Earring",
-                                 body="Vanya Robe",hands="Lurid Mitts", ring1="Metamorph Ring", ring2 ="Perception Ring", waist ="Ovate Rope",
-                                 back="Lugh's Cape",legs="Psycloth Lappas",feet="Merliic Crackcrows"}
+                                 body="Shango Robe",hands="Lurid Mitts", ring1="Metamorph Ring", ring2 ="Perception Ring", waist ="Ovate Rope",
+                                 back="Kumbira Cape",legs="Psycloth Lappas",feet="Merlinic Crackcrows"}
 			
 			sets.Magic.Healing = {main = "Ababinili +1", sub ="Curatio Grip",ammo="Kalboron Stone",
-                                 head="Orsion Cap +2",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
+                                 head="Orison Cap +2",neck="Incanter's Torque",ear1 ="Nourishing Earring +1", ear2="Spellbreaker Earring",
                                  body="Vrikodara Jupon",hands="Telchine Gloves", ring1="Ephedra Ring", ring2 ="Sirona's Ring", waist ="Ovate Rope",
-                                 back="Oretania's Cape",legs="Orsion Pantaloons +1",feet="Vanya Clogs"}
+                                 back="Oretania's Cape",legs="Orison Pantaloons +1",feet="Vanya Clogs"}
 												 
 			sets.Magic.Regen = { ammo="Savant's Treatise",
                                  head="Arbatel Bonnet",neck="Incanter's Torque ",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
-                                 body="Telchine Chasuble",hands="Orsion Mitts +1", ring1="Metamorph Ring", ring2 ="Weatherspoon Ring", waist ="Porous Rope",
+                                 body="Telchine Chasuble",hands="Orison Mitts +1", ring1="Metamorph Ring", ring2 ="Weatherspoon Ring", waist ="Porous Rope",
                                  back="Bookworms's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 			
 			sets.Magic.Dark = { ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Incanter's Torque",ear2="Friomisi earring", ear1="Barkarole Earring",
-                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Shiva Ring", waist ="Refoccilation Stone",
-                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merliic Crackcrows"}
+                                 body="Shango Robe",hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Shiva Ring", waist ="Refoccilation Stone",
+                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackcrows"}
 
 		--Precast Sets--
 			sets.precast = {}
@@ -121,9 +121,12 @@ function get_sets()
 			sets.precast.FC = {}
        
 			sets.precast.FC.Standard = {main ="", sub ="Vivid Strap", ammo="Incanter Stone",
-							head="Welkin Crown",  body="Vrikodara Jupon",  hands="Telchine Gloves",legs="Orvail pants +1",feet="Chelona Boots", back="Swith cape",
+							head="Nahtirah Hat",  body="Shango Robe",  hands="Telchine Gloves",legs="Orvail pants +1",feet="Regal Pumps", back="Swith cape",
 							neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",right_ear="Loquac. Earring",left_ring="Prolix Ring", right_ring="Weatherspoon ring"}
-							
+			
+			sets.precast.FC.Healing = {main ="", sub ="Vivid Strap", ammo="Incanter Stone",
+							head="Nahtirah Hat",  body="Shango Robe",  hands="Telchine Gloves",legs="Orvail pants +1",feet="Regal Pumps", back="Swith cape",
+							neck="Voltsurge Torque", waist="Witful Belt", left_ear="Nourishing Earring +1",right_ear="Loquac. Earring",left_ring="Prolix Ring", right_ring="Weatherspoon ring"}			
 							 
 		--Utility and JA Sets --					
 		sets.Utility = {}
@@ -135,7 +138,7 @@ function get_sets()
 		sets.Utility.DrainAspir = { ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Barkarole Earring",
                                  body="Amalric Doublet",hands="Amalric Gages", ring1="Evanescence Ring", ring2 ='Shiva Ring', waist ="Fucho-no-obi",
-                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merliic Crackcrows"}
+                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackcrows"}
  
 		--WS Sets--
        
@@ -143,6 +146,10 @@ function get_sets()
 end
 
 function precast(spell)
+
+		if spell.skill == 'Healing Magic' then
+			equip(sets.precast.FC.Healing)
+		end
 
 		if spell.action_type == 'Magic' then
                 equip(sets.precast.FC.Standard)

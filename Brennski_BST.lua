@@ -40,7 +40,7 @@ function get_sets()
                                       waist="Flume Belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}, back ="Mecistopins mantle"}
                                                  
         sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap",ammo="Amar Cluster",
-                                head="Rawhide Mask",neck="Loricate Torque", ear1="Etiolation earring", ear2="Handler's earring +1",
+                                head="Rawhide Mask",neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
                                         body="Emet Harness +1",hands="Adhemar Wristbands",ring1="Dark ring",ring2="Succor ring",
                                         back="Cornflower Cape",waist="Flume belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 										
@@ -123,12 +123,14 @@ function get_sets()
         sets.Utility.Steps = {ammo="Falcon Eye",
 							head="Dampening Tam", body="Adhemar Jacket", hands="Rawhide Gloves",legs=="Samnuha Tights", feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},  neck="Subtlety Spec.",
 							waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Steelflash Earring",  left_ring="Yacuruna Ring",  right_ring="Epona's Ring",  back="Grounded Mantle",}
+							
+		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
                                                  
 	     --Ninja Magic Sets--
         sets.NINMagic = {}
 							
 	    sets.NINMagic.Utsusemi ={
-                              head="Dampening Tam",neck="Loricate Torque", ar1="Brutal Earring",ear2="Cessance Earring",
+                              head="Dampening Tam",neck="Loricate Torque +1", ar1="Brutal Earring",ear2="Cessance Earring",
                               body="Emet harness",hands="Adhemar Wristbands",ring1="Gelatinous Ring +1",ring2="Petrov Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
@@ -264,24 +266,51 @@ end
 function aftercast(spell)
         if player.status == 'Engaged' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
-        else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
-        end
-       
-        if spell.action_type == 'Weaponskill' then
-                add_to_chat(158,'TP Return: ['..tostring(player.tp)..']')
+				if buffactive['Doom'] then
+					equip(set_combine(sets.TP[sets.TP.index[TP_ind]],sets.Utility.Doomed))
+					status_change(player.status)
+				end
+				if buffactive['Terror']	then 
+					equip(sets.TP.DT)
+					status_change(player.status)
+				end
+		else
+                equip(sets.Idle[sets.Idle.index[Idle_ind]])					
+				if buffactive['Doom'] then
+					equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]],sets.Utility.Doomed))
+					status_change(player.status)
+				end
+				if buffactive['Terror']	then 
+					equip(sets.TP.DT)
+					status_change(player.status)
+				end
         end
 end
 
-
-function status_change(new,old)
-        if new == 'Engaged' then
-                equip(sets.TP[sets.TP.index[TP_ind]])
-        else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
-        end
-end
  
+function status_change(new,old)
+        if player.status == 'Engaged' then
+                equip(sets.TP[sets.TP.index[TP_ind]])
+				if buffactive['Doom'] then
+					equip(set_combine(sets.TP[sets.TP.index[TP_ind]],sets.Utility.Doomed))
+					status_change(player.status)
+				end
+				if buffactive['Terror']	then 
+					equip(sets.TP.DT)
+					status_change(player.status)
+				end
+        else
+                equip(sets.Idle[sets.Idle.index[Idle_ind]])					
+				if buffactive['Doom'] then
+					equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]],sets.Utility.Doomed))
+					status_change(player.status)
+				end
+				if buffactive['Terror']	then 
+					equip(sets.TP.DT)
+					status_change(player.status)
+				end
+        end
+end 
 function self_command(command)
         if command == 'toggle TP set' then
                 TP_ind = TP_ind +1

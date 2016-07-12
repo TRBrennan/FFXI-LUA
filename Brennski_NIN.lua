@@ -40,7 +40,7 @@ function get_sets()
                                       waist="Flume Belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}, back ="Solemnity Cape"}
                                                  
         sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap",ammo="Amar Cluster",
-                                head="Rawhide Mask",neck="Loricate Torque", ear1="Etiolation earring", ear2="Handler's earring +1",
+                                head="Rawhide Mask",neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
                                         body="Emet harness +1",hands="Herculean Gloves",ring1="Warden's ring",ring2="Gelatinous Ring +1",
                                         back="Solemnity Cape",waist="Flume belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 										
@@ -69,12 +69,12 @@ function get_sets()
                                         back="Yokaze mantle",waist="Kentarch Belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}}
                                                        
                 sets.TP.DT = {ammo="Happo Shuriken",
-                              head="Dampening Tam",neck="Loricate Torque", ar1="Brutal Earring",ear2="Cessance Earring",
+                              head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ar1="Brutal Earring",ear2="Cessance Earring",
                               body="Emet harness +1",hands="Adhemar Wristbands",ring1="Gelatinous Ring +1",ring2="Petrov Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}}
                                  
                 sets.TP.DTAccuracy = {aammo="Happo Shuriken",
-                                      head="Dampening Tam",neck="Loricate Torque", ar1="Brutal Earring",ear2="Cessance Earring",    
+                                      head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ar1="Brutal Earring",ear2="Cessance Earring",    
 									  body="Emet harness +1",hands="Adhemar Wristbands",ring1="Dark ring",ring2="Gelatinous Ring +1",
                                       back="Yokaze mantle",waist="Flume belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}}
                                                          
@@ -114,12 +114,12 @@ function get_sets()
         --Ninja Magic Sets--
         sets.NINMagic = {}
        
-		sets.NINMagic.Nuke ={head = "Herculean Helm", neck="Sanctity Necklace", ear2="Friomisi earring", ear1="Hecate's Earring",
+		sets.NINMagic.Nuke ={head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}}, neck="Sanctity Necklace", ear2="Friomisi earring", ear1="Hecate's Earring",
 							body="Samnuha Coat", hands="Leyline Gloves", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Eschan Stone",
 							back="Gunslinger's Cape",   legs="Herculean Trousers",  feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
 							
 	    sets.NINMagic.Utsusemi ={
-                              head="Dampening Tam",neck="Loricate Torque", ar1="Brutal Earring",ear2="Cessance Earring",
+                              head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ar1="Brutal Earring",ear2="Cessance Earring",
                               body="Emet harness +1",hands="Adhemar Wristbands",ring1="Gelatinous Ring +1",ring2="Petrov Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}}
  
@@ -129,7 +129,7 @@ function get_sets()
        
         sets.Utility.Weather = {waist="Hachirin-no-obi",back="Twilight Cape"}
  
-        sets.Utility.MB = {head="Herculean Helm",body="Amalric Doublet",ear1="Static Earring",ring1="Locus Ring",ring2="Mujin Band"}
+        sets.Utility.MB = {head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},body="Amalric Doublet",ear1="Static Earring",ring1="Locus Ring",ring2="Mujin Band"}
  
        
         sets.Utility.Stoneskin = {head="Haruspex hat",neck="Stone Gorget",ear1="Loquac. earring",ear2="Earthcry earring",
@@ -145,7 +145,7 @@ function get_sets()
 							waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Dignitary's Earring",  left_ring="Yacuruna Ring",  right_ring="Epona's Ring",  back="Grounded Mantle",}
                                                  
                                                  
-        sets.Utility.PDT = {head="Adhemar Bonnet",neck="Loricate Torque",ear1="Ethereal earring",
+        sets.Utility.PDT = {head="Adhemar Bonnet",neck="Loricate Torque",ear1="Etiolation Earring",
                                                 body="Iuitl vest",hands="Umuthi gloves",ring1="Dark ring",ring2="Dark ring",
                                                 back="Solemnity Cape",waist="Flume belt",legs="Iuitl Tights +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                
@@ -153,6 +153,7 @@ function get_sets()
                                                 body="Assim. jubbah +1",hands="Umuthi gloves",ring1="Dark ring",ring2="Dark ring",
                                                 back="Solemnity Cape",legs="Quiahuiz trousers",feet="Luhlaza charuqs"}
   
+		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
         --Job Ability Sets--
        
         sets.JA = {}
@@ -223,20 +224,49 @@ end
 function aftercast(spell)
         if player.status == 'Engaged' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
-        else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
-        end
-       
-        if spell.action_type == 'Weaponskill' then
-                add_to_chat(158,'TP Return: ['..tostring(player.tp)..']')
+				if buffactive['Doom'] then
+					equip(set_combine(sets.TP[sets.TP.index[TP_ind]],sets.Utility.Doomed))
+					status_change(player.status)
+				end
+				if buffactive['Terror']	then 
+					equip(sets.TP.DT)
+					status_change(player.status)
+				end
+		else
+                equip(sets.Idle[sets.Idle.index[Idle_ind]])					
+				if buffactive['Doom'] then
+					equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]],sets.Utility.Doomed))
+					status_change(player.status)
+				end
+				if buffactive['Terror']	then 
+					equip(sets.TP.DT)
+					status_change(player.status)
+				end
         end
 end
+
  
 function status_change(new,old)
-        if new == 'Engaged' then
+        if player.status == 'Engaged' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
+				if buffactive['Doom'] then
+					equip(set_combine(sets.TP[sets.TP.index[TP_ind]],sets.Utility.Doomed))
+					status_change(player.status)
+				end
+				if buffactive['Terror']	then 
+					equip(sets.TP.DT)
+					status_change(player.status)
+				end
         else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
+                equip(sets.Idle[sets.Idle.index[Idle_ind]])					
+				if buffactive['Doom'] then
+					equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]],sets.Utility.Doomed))
+					status_change(player.status)
+				end
+				if buffactive['Terror']	then 
+					equip(sets.TP.DT)
+					status_change(player.status)
+				end
         end
 end
  

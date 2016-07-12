@@ -40,14 +40,14 @@ function get_sets()
                                       waist="Fucho-no-obi",legs="Blood cuisses",feet="Iuitl gaiters", back ="Kumbira Cape"}
                                                  
         sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap",ammo="Amar Cluster",
-                                head="Rabid Visor",neck="Loricate Torque", ear1="Etiolation earring", ear2="Handler's earring +1",
+                                head="Rabid Visor",neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
                                         body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Dark ring",ring2="Succor ring",
-                                        back="Iximulew Cape",waist="Flume belt +1",legs="Osmium Cuisses",feet="Founder's Greaves"}
+                                        back="Iximulew Cape",waist="Flume belt +1",legs="Osmium Cuisses",feet="Odyssean Greaves"}
 										
 		sets.Idle.Cleave = {main="Terra's Staff",sub="Umbra strap",ammo="Amar Cluster",
-										head="Rabid Visor",neck="Loricate Torque", ear1="Etiolation earring", ear2="Handler's earring +1",
+										head="Rabid Visor",neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
                                        body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Dark ring",ring2="Succor ring",
-                                        back="Mecistopins mantle",waist="Flume belt +1",legs="Osmium Cuisses",feet="Founder's Greaves"}								
+                                        back="Mecistopins mantle",waist="Flume belt +1",legs="Osmium Cuisses",feet="Odyssean Greaves"}								
         --TP Sets--
         sets.TP = {}
  
@@ -56,32 +56,32 @@ function get_sets()
 				
                 TP_ind = 1
 				sets.TP.Standard = { ammo="Amar Cluster",
-                                    head="Founder's Corona", neck="Loricate Torque", ear1="Genmei Earring",ear2="Cessance Earring",
+                                    head="Sulevia's Mask +1", neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Cessance Earring",
                                     body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Petrov Ring",ring2="Gelatinous Ring +1",
-                                    back="Weard Mantle",waist="Flume Belt +1",legs="Souveran Diechlings",feet="Founder's Greaves"}
+                                    back="Weard Mantle",waist="Flume Belt +1",legs="Souveran Diechlings",feet="Odyssean Greaves"}
                                                        
                                                        
 				sets.TP.Tank = { ammo="Amar Cluster",
-                                    head="Founder's Corona", neck="Loricate Torque", ear1="Genmei Earring",ear2="Ethereal Earring",
+                                    head="Sulevia's Mask +1", neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Ethereal Earring",
                                     body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Warden's Ring",ring2="Gelatinous Ring +1",
-                                    back="Weard Mantle",waist="Flume Belt +1",legs="Souveran Diechlings",feet="Founder's Greaves"}
+                                    back="Weard Mantle",waist="Flume Belt +1",legs="Souveran Diechlings",feet="Odyssean Greaves"}
                                                        
 	   
                 sets.TP.AccuracyFull = {ammo="Amar Cluster",
-                                        head="Founder's Corona",neck="Sanctity Necklace", ear1="Steelflash earring", ear2="Cessance Earring",
+                                        head="Sulevia's Mask +1",neck="Sanctity Necklace", ear1="Steelflash earring", ear2="Cessance Earring",
                                         body="Founder's Breastplate",hands="Leyline Gloves",ring1="Petrov Ring",ring2="Gelatinous Ring +1",
-                                        back="Weard mantle",waist="Kentarch Belt +1",legs="Founder's Hose",feet="Founder's Greaves"}
+                                        back="Weard mantle",waist="Kentarch Belt +1",legs="Founder's Hose",feet="Odyssean Greaves"}
                                                        
                                                          
                  sets.TP.DW = {ammo="Amar Cluster",
-                                    head="Founder's Corona", neck="Sanctity Necklace", ear1="Dudgeon earring", ear2="Heartseeker earring",
+                                    head="Sulevia's Mask +1", neck="Sanctity Necklace", ear1="Dudgeon earring", ear2="Heartseeker earring",
                                     body="Founder's Breastplate",hands="Leyline Gloves",ring1="Petrov Ring",ring2="Rajas Ring",
-                                    back="Weard mantle",waist="windbuffet belt +1",legs="Founder's Hose",feet="Founder's Greaves"}                                                        
+                                    back="Weard mantle",waist="windbuffet belt +1",legs="Founder's Hose",feet="Odyssean Greaves"}                                                        
                                                          
 				sets.TP.CP = {ammo="Amar Cluster",
-                                    head="Founder's Corona", neck="Sanctity Necklace", ear1="Steelflash Earring", ear2="Cessance Earring",
+                                    head="Sulevia's Mask +1", neck="Sanctity Necklace", ear1="Steelflash Earring", ear2="Cessance Earring",
                                     body="Founder's Breastplate",hands="Leyline Gloves",ring1="Petrov Ring",ring2="Rajas Ring",
-                                    back="Mecistopins mantle",waist="Kentarch Belt +1",legs="Founder's Hose",feet="Founder's Greaves"}  
+                                    back="Mecistopins mantle",waist="Kentarch Belt +1",legs="Founder's Hose",feet="Odyssean Greaves"}  
 
 
 									
@@ -104,9 +104,9 @@ function get_sets()
        
            
 		 sets.SavageBlade.Attack = {ammo="Sapience Orb",
-                                          head="Founder's Corona",neck="Fotia gorget",ear1="Brutal Earring",ear2="Cessance Earring",
+                                          head="Sulevia's Mask +1",neck="Fotia gorget",ear1="Brutal Earring",ear2="Cessance Earring",
                                           body="Founder's Breastplate",hands="Leyline Glvoes",ring1="Epona's ring",ring2="Rajas Ring",
-                                          back="Buquwik cape",waist="Dynamic belt",legs="Quiahuiz leggings",feet="Founder's Greaves"}
+                                          back="Buquwik cape",waist="Dynamic belt",legs="Quiahuiz leggings",feet="Odyssean Greaves"}
                                                            
         sets.ChantDuCygne = {}
        
@@ -114,7 +114,7 @@ function get_sets()
         ChantDuCygne_ind = 1
        
          sets.ChantDuCygne.Attack = {ammo="Jukukik Feather",
-                                            head="Founder's Corona",neck="Fotia gorget",ear1="Brutal Earring",ear2="Cessance Earring",
+                                            head="Sulevia's Mask +1",neck="Fotia gorget",ear1="Brutal Earring",ear2="Cessance Earring",
                                             body="Founder's Breastplate",hands="Leyline Glvoes",ring1="Epona's ring",ring2="Rajas Ring",
                                             back="Grounded Mantle",waist="Light Belt",legs="Founder's Hose",feet="Thereoid Greaves"}		
 
@@ -129,18 +129,18 @@ function get_sets()
         sets.WS.CircleBlade = {}              
                        
         sets.WS.CircleBlade = {ammo="Sapience Orb",
-                                          head="Founder's Corona",neck="Fotia gorget",ear1="Brutal Earring",ear2="Cessance Earring",
+                                          head="Sulevia's Mask +1",neck="Fotia gorget",ear1="Brutal Earring",ear2="Cessance Earring",
                                           body="Founder's Breastplate",hands="Manibozho gloves",ring1="Epona's ring",ring2="Rajas Ring",
-                                          back="Buquwik cape",waist="Dynamic belt",legs="Quiahuiz leggings",feet="Founder's Greaves"}
+                                          back="Buquwik cape",waist="Dynamic belt",legs="Quiahuiz leggings",feet="Odyssean Greaves"}
                                                    
    
  
         sets.WS.VorpalBlade = {}
        
         sets.WS.VorpalBlade = {ammo="Sapience Orb",
-                                          head="Founder's Corona",neck="Fotia gorget",ear1="Brutal Earring",ear2="Cessance Earring",
+                                          head="Sulevia's Mask +1",neck="Fotia gorget",ear1="Brutal Earring",ear2="Cessance Earring",
                                           body="Founder's Breastplate",hands="Manibozho gloves",ring1="Epona's ring",ring2="Rajas Ring",
-                                          back="Buquwik cape",waist="Dynamic belt",legs="Quiahuiz leggings",feet="Founder's Greaves"}
+                                          back="Buquwik cape",waist="Dynamic belt",legs="Quiahuiz leggings",feet="Odyssean Greaves"}
                                                  
         sets.Realmrazer = {}
        
@@ -160,9 +160,9 @@ function get_sets()
                                back="Grounded Mantle",legs="Hagondes Pants",feet="Weatherspoon souliers +1"}    
 
 		sets.WS.Atonement = {ammo="Amar Cluster",
-                                    head="Founder's Corona", neck="Asperity necklace", ear1="Brutal Earring",ear2="Cessance Earring",
+                                    head="Sulevia's Mask +1", neck="Asperity necklace", ear1="Brutal Earring",ear2="Cessance Earring",
                                     body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Petrov Ring",ring2="Rajas Ring",
-                                    back="Weard Mantle",waist="windbuffet belt +1",legs="Founder's Hose",feet="Founder's Greaves"}
+                                    back="Weard Mantle",waist="windbuffet belt +1",legs="Founder's Hose",feet="Odyssean Greaves"}
                                                                                        
         --Magic Sets--
         sets.Magic = {}
@@ -189,14 +189,14 @@ function get_sets()
  
                                                             
         sets.Utility.Steps = {ammo="Falcon Eye",
-							head="Dampening Tam", body="Adhemar Jacket", hands="Rawhide Gloves",legs=="Founder's Hose", feet="Founder's Greaves",  neck="Subtlety Spec.",
+							head="Dampening Tam", body="Adhemar Jacket", hands="Rawhide Gloves",legs=="Founder's Hose", feet="Odyssean Greaves",  neck="Subtlety Spec.",
 							waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Steelflash Earring",  left_ring="Yacuruna Ring",  right_ring="Rajas Ring",  back="Grounded Mantle",}
                                                  
-        sets.Utility.PDT = {head="Founder's Corona",neck="Loricate Torque",ear1="Ethereal earring",
+        sets.Utility.PDT = {head="Sulevia's Mask +1",neck="Loricate Torque +1",ear1="Ethereal earring",
                                                 body="Iuitl vest",hands="Umuthi gloves",ring1="Dark ring",ring2="Dark ring",
                                                 back="Solemnity Cape",waist="Flume belt",legs="Iuitl Tights +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                
-        sets.Utility.MDT = {head="Founder's Corona",neck="Loricate Torque",
+        sets.Utility.MDT = {head="Sulevia's Mask +1",neck="Loricate Torque +1",
                                                 body="Assim. jubbah +1",hands="Umuthi gloves",ring1="Dark ring",ring2="Dark ring",
                                                 back="Solemnity Cape",legs="Quiahuiz trousers",feet="Luhlaza charuqs"}
   
