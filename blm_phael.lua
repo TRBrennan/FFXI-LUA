@@ -413,6 +413,11 @@ end
 -- --- Precast ---
 
 function precast(spell)		
+if death_mode == 1 and player.mp > 1800 then
+	if spell then
+		equip(sets.precast_Death)
+	end
+else 
 	if Cure_Spells:contains(spell.name) then
 		equip(sets.precast_Cure)
 		send_command('@input /echo Cure Precast Set')		
@@ -451,10 +456,27 @@ function precast(spell)
 			equip(sets.WS.Myrkr)
 			send_command('@input /echo Myrkr Set')
 	end
-	
+end
 end
 -- --- MidCast ---
 function midcast(spell)
+if death_mode == 1 and player.mp > 1800 then
+	if spell.name =='Death' then
+		equip(sets.midcast_Death)
+	end
+	if spell.name =='Comet' then
+		equip(sets.midcast_Comet)
+	end
+	if spell.skill=='Dark Magic' then
+		equip(sets.midcast_DarkMagic)
+	end
+	if spell.skill =='Elemntal Maigc' or spell.skill =='Enfeebling Maigc' or spell.skill == 'Healing Magic' or spell.skill == 'Enhancing Maigc' then
+		equip(sets.midcast_Comet)
+	end
+	if spell then
+		equip(sets.midcast_Comet)
+	end
+else 
 	if Cure_Spells:contains(spell.name) then 
 		equip(sets.midcast_Cure)
 		send_command('@input /echo ST Cure Set')
@@ -567,6 +589,7 @@ function midcast(spell)
 			
 		end
 	end
+end
 end
 end
 	elseif spell.skill == 'Dark Magic' then
