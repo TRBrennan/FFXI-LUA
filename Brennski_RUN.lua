@@ -140,7 +140,7 @@ function get_sets()
                                           head="Adhemar Bonnet",neck="Fotia gorget",ear1="Brutal earring",ear2="Moonshade earring",
                                           body="Adhemar Jacket",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Petrov Ring",ring2="Epona's ring",
                                           back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
-										  waist="Fotia belt",legs="Quiahuiz leggings",feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
+										  waist="Fotia belt",legs="Samnunha Tights",feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
                                                                  
 
                 sets.FellCleave = {}
@@ -178,8 +178,8 @@ function get_sets()
                 --Utility Sets--
                 sets.Utility = {}
                                                                        
-                sets.Utility.Phalanx = {ammo ="Sapience Orb", head="Futhark bandeau +1",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear1="Genmei earring",
-                                            body="Emet harness +1",hands="Kurys Gloves", waist ="Olympus Sash", ring1='"Stikini Ring"', ring2='Supershear Ring',
+                sets.Utility.Phalanx = {ammo ="Sapience Orb", head="Futhark bandeau +1",neck="Incanter's Torque",ear2 ="Andoaa Earring", ear1="Genmei earring",
+                                            body="Emet harness +1",hands="Kurys Gloves", waist ="Olympus Sash", ring1="Stikini Ring", ring2='Supershear Ring',
                                             legs="Carmine Cuisses",feet="Erilaz Greaves +1", back="Evasionist's cape"}
                                                          
                 sets.Utility.Regen = {head="Runeist Bandeau",neck="Incanter's Torque",ear1="Genmei earring",ear2="Augment. earring",
@@ -191,7 +191,7 @@ function get_sets()
                                          back="Evasionist cape",waist="Flume Belt +1",legs="Carmine Cuisses",feet="Erilaz Greaves +1" }
 										 
 				sets.Utility.Enmity = {ammo="Sapience Orb",head="Rapid Visor",neck="Warder's Charm",ear2 ="Friomisi Earring", ear1="Genmei earring",
-                                            body="Emet harness +1",hands="Kurys Gloves", waist ="Kasiri Belt", ring1='Supershear Ring', ring2='Supershear Ring',
+                                            body="Emet harness +1",hands="Kurys Gloves", waist ="Kasiri Belt", ring1='Supershear Ring', ring2='Petrov Ring',
                                             legs="Erilaz Leg Guards +1",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}}}						
 				
 				sets.Utility.Enhancing = {ammo="Sapience Orb",head="Erilaz Galea",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear1="Genmei earring",
@@ -202,44 +202,36 @@ function get_sets()
                                
                 --Job Ability Sets--
                 sets.JA = {}
-				sets.JA.VP = {ammo="Sapience Orb",head="Erilaz Galea",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear1="Genmei earring",
-                                            body="Emet harness +1",hands="Kurys Gloves", waist ="Olympus Sash", ring1='Supershear Ring', ring2='Supershear Ring',
-                                            legs="Runeist Trousers",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}}}	
+				sets.JA.VP = {}	
 				
+				sets.JA.Leiment ={body = "Futhark Coat"}
 				
-                sets.JA.Embolen = {ammo="Sapience Orb",head="Erilaz Galea",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear1="Genmei earring",
-                                            body="Emet harness +1",hands="Kurys Gloves", waist ="Olympus Sash", ring1='Petrov Ring', ring2='Supershear Ring',
-                                            legs="Carmine Cuisses",feet="Erilaz Greaves +1",back="Evasionist cape"}
+                sets.JA.Embolen = {back="Evasionist cape"}
                
                 sets.JA.Lunge = {ammo="Seething Bomblet +1",
-                                   head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Hecate's Earring",
-                                 body="Samnuha Coat",hands="Leyline Gloves", ring1="Acumen Ring", ring2 ='Arvina Ringlet +1', waist ="Eschan Stone",
-                                 back="Evasionist's cape",legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
+                                 head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
+								 neck="Sanctity Necklace",
+								 ear2="Friomisi earring", 
+								 ear1="Hecate's Earring",
+                                 body="Samnuha Coat",
+								 hands="Leyline Gloves",
+								 ring1="Acumen Ring", 
+								 ring2 ='Arvina Ringlet +1', 
+								 waist ="Eschan Stone",
+                                 back="Evasionist's cape",
+								 legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
+								 feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
        
-                sets.JA.Vallation = {head = "Rapid Visor", body="Runeist coat +1",legs="Futhark trousers", ammo="Sapience Orb",neck="Warder's Charm",
-									ear2="Friomisi Earring", ear1="Genmei earring",hands="Futhark Mitons", waist ="Kasiri Belt", ring1='Supershear Ring', ring2='Petrov Ring',
-									feet="Erilaz Greaves +1", legs="Erilaz Leg Guards +1",
+                sets.JA.Vallation = {body="Runeist coat +1",																
 									back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}}}
                                                          
-                sets.JA.Battuta = {head="Futhark bandeau +1", ammo="Sapience Orb",neck="Warder's Charm",ear2 ="Friomisi Earring", ear1="Genmei earring",
-                                            body="Emet harness +1",hands="Futhark Mitons", waist ="Kasiri Belt", ring1='Supershear Ring', ring2='Petrov Ring',
-                                            legs="Erilaz Leg Guards +1",feet="Erilaz Greaves +1",
-											back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}}}
+                sets.JA.Battuta = {head="Futhark bandeau +1"}
        
-                sets.JA.Gambit = {hands="Runeist mitons +1", ammo="Sapience Orb",head="Rapid Visor",neck="Warder's Charm",ear2 ="Friomisi Earring", ear1="Genmei earring",
-                                            body="Emet harness +1",waist ="Chaac Belt", ring1='Supershear Ring', ring2='Petrov Ring',
-                                            legs="Erilaz Leg Guards +1",feet="Erilaz Greaves +1",
-											back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}}}
+                sets.JA.Gambit = {hands="Runeist mitons +1", waist ="Chaac Belt"}
        
-                sets.JA.Pflug = {feet="Runeist bottes", ammo="Sapience Orb",head="Highwing Helm",neck="Warder's Charm",ear2 ="Friomisi Earring", ear1="Genmei earring",
-                                            body="Emet harness +1",hands="Futhark Mitons", waist ="Kasiri Belt", ring1='Supershear Ring', ring2='Petrov Ring',
-                                            legs="Erilaz Leg Guards +1", 
-											back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}}}
+                sets.JA.Pflug = {feet="Runeist bottes",}
 											
-				sets.JA.Ryake = {feet = "Futhark Boots",ammo="Sapience Orb",head="Highwing Helm",neck="Warder's Charm",ear2 ="Friomisi Earring", ear1="Genmei earring",
-                                            body="Emet harness +1",hands="Futhark Mitons", waist ="Kasiri Belt", ring1='Supershear Ring', ring2='Petrov Ring',
-                                            legs="Erilaz Leg Guards +1", 
-											back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}}}
+				sets.JA.Ryake = {feet = "Futhark Boots", waist ="Chaac Belt"}
                         
                 --Precast Sets--
                 sets.precast = {}
@@ -259,16 +251,13 @@ function get_sets()
                                             legs="Orvail pants +1",feet="Carmine Greaves", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}}}							 
 end
     
-function precast(spell)
-       
+function precast(spell)       
         if spell.skill == 'Enhancing Magic' then
-                equip(sets.precast.FC.Enhancing)
-				
+                equip(sets.precast.FC.Enhancing)				
         end
        
         if spell.action_type == 'Ninjutsu' then
-                equip(sets.precast.FC.Standard)
-				
+                equip(sets.precast.FC.Standard)				
         end
 		
 		if spell.action_type == 'Magic' then
@@ -276,69 +265,63 @@ function precast(spell)
         end
 		
 		if spell.english =='Vivacious Pulse' then
-			equip(sets.JA.VP)
+			equip(set_combine(sets.Utility.Enmity,sets.JA.VP))
 		end
        
         if spell.english == 'Lunge' or spell.english == 'Swipe' then
-                equip(sets.JA.Lunge)
-				
+                equip(sets.JA.Lunge)				
         end
        
         if spell.english == 'Vallation' or spell.english == 'Valiance' then
-                equip(sets.JA.Vallation)
-				
+                equip(set_combine(sets.Utility.Enmity,sets.JA.Vallation))
         end
+		
 		if spell.english=='Flash' then	
-				equip(sets.precast.FC.Enmity)
-				
+				equip(sets.precast.FC.Enmity)				
 		end
        
         if spell.english == 'Battuta' then
-                equip(sets.JA.Battuta)
-				
+                equip(set_combine(sets.Utility.Enmity,sets.JA.Battuta))			
         end
        
+	     if spell.english == 'Leiment' then
+                equip(set_combine(sets.Utility.Enmity,sets.JA.Leiment))			
+        end
+		
         if spell.english == 'Pflug' then
-                equip(sets.JA.Pflug)
-				
+                equip(set_combine(sets.Utility.Enmity,sets.JA.Pflug))				
         end
        
         if spell.english == 'Gambit' then
-                equip(sets.JA.Gambit)
-				
+                equip(set_combine(sets.Utility.Enmity,sets.JA.Gambit))				
         end
                
         if spell.english == 'Resolution' or spell.english == 'Shockwave' then
-                equip(sets.Resolution[sets.Resolution.index[Resolution_ind]])
-				
+                equip(sets.Resolution[sets.Resolution.index[Resolution_ind]])				
         end
 		
 		if spell.english == 'Dimidiation' then
-                equip(sets.Dimidiation[sets.Dimidiation.index[Dimidiation_ind]])
-				
+                equip(sets.Dimidiation[sets.Dimidiation.index[Dimidiation_ind]])				
         end
        
         if spell.english == 'Requiescat' then
-                equip(sets.Requiescat[sets.Requiescat.index[Requiescat_ind]])
-				
+                equip(sets.Requiescat[sets.Requiescat.index[Requiescat_ind]])				
         end
 		
         if spell.english == 'Fell Cleave' then
-                equip(sets.FellCleave[sets.FellCleave.index[FellCleave_ind]])
-				
+                equip(sets.FellCleave[sets.FellCleave.index[FellCleave_ind]])				
         end		
 		
 		if spell.english == 'Savage Blade' or  spell.english == 'Ground Strike' then
-                equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
-				
+                equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])				
         end
 end            
  
 function midcast(spell,act)
 	   if spell.skill == 'Enhancing Magic' then
-                equip(sets.Utility.Enhancing)
+                equip(set_combine(sets.Utility.Enmity,sets.Utility.Enhancing))
 				if buffactive['Embolden'] then
-					equip(sets.JA.Embolen)
+					equip(set_combine(sets.Utility.Enmity,sets.JA.Embolen))
 				end
 				if string.find(spell.name,'Bar') or spell.name=="Temper" then
                     equip({hands="Runeist Mitons +1"})
