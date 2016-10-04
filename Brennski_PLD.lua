@@ -24,17 +24,17 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Homiliary",
                                       head="Rawhide Mask",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Warden's Ring",
+                                      body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Carmine Cuisses",feet="Souveran Schuhs", back ="Kumbira Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum",
                                     head="Sulevia's Mask +1", neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Thureous Earring",
-                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Warden's Ring",
+                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
                                     back="Weard Mantle",waist="Flume Belt +1",legs="Souveran Diechlings",feet="Souveran Schuhs"}
 										
 		sets.Idle.Cleave = {ammo="Staunch Tathlum",
                                     head="Sulevia's Mask +1", neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Thureous Earring",
-                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Warden's Ring",
+                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
                                     back="Weard Mantle",waist="Flume Belt +1",feet="Souveran Schuhs",legs="Carmine Cuisses"}								
         --TP Sets--
         sets.TP = {}
@@ -51,7 +51,7 @@ function get_sets()
                                     body="Souveran Cuirass",
 									hands="Souveran Handschuhs",
 									ring1="Defending ring",
-									ring2="Warden's Ring",
+									ring2="Vocane Ring",
                                     back="Weard Mantle",
 									waist="Flume Belt +1",
 									legs="Souveran Diechlings",
@@ -68,8 +68,8 @@ function get_sets()
 									ring2="Chirich Ring",
                                     back="Weard Mantle",
 									waist="Flume Belt +1",
-									legs="Souveran Diechlings",
-									feet="Odyssean Greaves"}
+									legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
+									feet="Valorous Greaves"}
                                                        
 	   
                 sets.TP.AccuracyFull = {ammo="Ginsen",
@@ -80,11 +80,11 @@ function get_sets()
                                         body="Founder's Breastplate",
 										hands="Leyline Gloves",
 										ring1="Petrov Ring",
-										ring2="Warden's Ring",
+										ring2="Vocane Ring",
                                         back="Weard mantle",
 										waist="Kentarch Belt +1",
-										legs="Founder's Hose",
-										feet="Odyssean Greaves"}
+										legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
+										feet="Valorous Greaves"}
                                                        
                                                          
                  sets.TP.DW = {ammo="Ginsen",
@@ -182,9 +182,10 @@ function get_sets()
 		sets.Magic.Phalanx ={head="Carmine Mask", legs ="Carmine Cuisses",neck = "Incanter's Torque", body ="Shabti Cruissas",hands="Souveran Handschuhs",feet="Souveran Schuhs",
 							ring1 = "Stikini Ring",ear2 ="Andoaa Earring", waist ="Olympus Sash"}
 		
-		sets.Magic.Enhancing ={head="Carmine Mask", legs ="Carmine Cuisses",neck = "Incanter's Torque", body ="Shabti Cruissas", ring1 = "Stikini Ring". ear2 ="Andoaa Earring", waist ="Olympus Sash"}
+		sets.Magic.Enhancing ={head="Carmine Mask", legs ="Carmine Cuisses",neck = "Incanter's Torque", body ="Shabti Cruissas", ring1 = "Stikini Ring",
+								ear2 ="Andoaa Earring", waist ="Olympus Sash"}
 		
-		sets.Magic.Reprisal ={ring2="Supershear Ring", ring1=ring1 = "Stikini Ring", ear2 ="Andoaa Earring", waist ="Olympus Sash"}
+		sets.Magic.Reprisal ={ring2="Supershear Ring", ring1 = "Stikini Ring", ear2 ="Andoaa Earring", waist ="Olympus Sash"}
 		
 		sets.Magic.Flash ={neck = "Incanter's Torque", ring1 = "Stikini Ring"}
 		
@@ -248,14 +249,14 @@ function get_sets()
 							head="Carmine Mask", 
 							body="Odyssean Chestplate",
 							hands="Leyline Gloves",
-							legs="Odyssean Cuisses",
+							legs={ name="Odyssean Cuisses", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','"Fast Cast"+3','INT+1','Mag. Acc.+9','"Mag.Atk.Bns."+3',}},
 						    feet="Odyssean Greaves",
 							neck="Voltsurge Torque",
 							waist="Witful Belt",
 							left_ear="Etiolation Earring",
 						    right_ear="Loquac. Earring",
 							left_ring="Rahab Ring",
-							right_ring="Weatherspoon ring", 
+							right_ring="Prolix ring", 
 							back="Swith Cape"}
        
 end

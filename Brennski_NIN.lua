@@ -96,7 +96,7 @@ function init_gear_sets()
         left_ear="Etiolation Earring",
         right_ear="Loquac. Earring",
         left_ring="Rahab Ring",
-        right_ring="Weatherspoon ring",
+        right_ring="Prolix ring",
         back="Mujin Mantle"}
          
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {
@@ -262,7 +262,7 @@ function init_gear_sets()
         waist="Eschan Stone",
 		feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}},
         left_ear="Stealth Earring", right_ear="Dignitary's Earring",
-        left_ring="Stikini Ring", right_ring="Weatherspoon ring",
+        left_ring="Stikini Ring", right_ring="Sangoma Ring",
         back="Izdubar Mantle"}
  
     sets.midcast.NinjutsuBuff = {
@@ -272,7 +272,7 @@ function init_gear_sets()
 		ear1="Genmei Earring",ear2="Infused Earring",
         body="Emet harness +1",
 		hands="Herculean Gloves",
-		ring2="Gelatinous Ring +1",
+		ring2="Vocane Ring",
 		ring1="Defending Ring",
         back="Solemnity Cape",
 		waist="Flume belt +1",
@@ -296,7 +296,7 @@ function init_gear_sets()
         neck="Sanctity necklace",
         waist="Flume Belt +1",
         left_ear="Infused Earring", right_ear="Genmei Earring",   
-        left_ring="Gelatinous Ring +1",
+        left_ring="Vocane Ring",
         right_ring="Defending Ring",
         back="Shadow mantle"}
          
@@ -311,7 +311,7 @@ function init_gear_sets()
         neck="Sanctity necklace",
         waist="Flume Belt +1",
         left_ear="Infused Earring", right_ear="Genmei Earring",   
-        right_ring="Gelatinous Ring +1",
+        right_ring="Vocane Ring",
         left_ring="Defending Ring",
         back="Solmenity Cape"}
  
@@ -325,7 +325,7 @@ function init_gear_sets()
         neck="Sanctity necklace",
         waist="Flume Belt +1",
         left_ear="Infused Earring", right_ear="Genmei Earring",    
-        right_ring="Gelatinous Ring +1",
+        right_ring="Vocane Ring",
         left_ring="Defending Ring",
         back="Solemnity cape"}
      
@@ -357,7 +357,7 @@ function init_gear_sets()
         waist="Flume Belt +1",
         left_ear="Genmei Earring",
         right_ear="Suppanomimi",
-        right_ring="Gelatinous Ring +1",
+        right_ring="Vocane Ring",
         left_ring="Defending Ring",
         back="Solemnity Cape",}
          

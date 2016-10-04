@@ -32,12 +32,12 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Homiliary",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Warden's ring",ring2="Gelatinous Ring +1",
+                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Vocane Ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Aptitude Mantle"}
 									  
 		sets.Idle.DT = {ammo="Hagneia stone",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Gelatinous Ring +1",ring2="Warden's ring",
+                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Vocane Ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Solemnity Cape"}							  
                                                  
 		--TP Sets--
@@ -49,7 +49,7 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = {ammo="Homiliary",
                                       head="Hike Khat",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Warden's ring",ring2="Gelatinous Ring +1",
+                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Vocane Ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants",feet="Chironic Slippers", back ="Solemnity Cape"}
 
 		--WS Sets--
@@ -107,7 +107,7 @@ function get_sets()
 												 
 			sets.Magic.Regen = { ammo="Savant's Treatise",
                                  head="Arbatel Bonnet",neck="Incanter's Torque ",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
-                                 body="Telchine Chasuble",hands="Orison Mitts +1", ring1="Metamorph Ring", ring2 ="Weatherspoon Ring", waist ="Porous Rope",
+                                 body="Telchine Chasuble",hands="Orison Mitts +1", ring1="Metamorph Ring", ring2 ="Prolix ring", waist ="Porous Rope",
                                  back="Bookworms's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 			
 			sets.Magic.Dark = { ammo="Pemphredo Tathlum",
@@ -122,11 +122,11 @@ function get_sets()
        
 			sets.precast.FC.Standard = {main ="", sub ="Vivid Strap", ammo="Incanter Stone",
 							head="Nahtirah Hat",  body="Shango Robe",  hands="Telchine Gloves",legs="Orvail pants +1",feet="Regal Pumps", back="Swith cape",
-							neck="Voltsurge Torque", waist="Channeler's Stone", left_ear="Etiolation Earring",right_ear="Loquac. Earring",left_ring="Prolix Ring", right_ring="Weatherspoon ring"}
+							neck="Voltsurge Torque", waist="Channeler's Stone", left_ear="Etiolation Earring",right_ear="Loquac. Earring",left_ring="Prolix Ring", right_ring="Prolix ring"}
 			
 			sets.precast.FC.Healing = {main ="", sub ="Vivid Strap", ammo="Incanter Stone",
 							head="Nahtirah Hat",  body="Shango Robe",  hands="Telchine Gloves",legs="Orvail pants +1",feet="Regal Pumps", back="Swith cape",
-							neck="Voltsurge Torque", waist="Channeler's Stone", left_ear="Nourishing Earring +1",right_ear="Loquac. Earring",left_ring="Prolix Ring", right_ring="Weatherspoon ring"}			
+							neck="Voltsurge Torque", waist="Channeler's Stone", left_ear="Nourishing Earring +1",right_ear="Loquac. Earring",left_ring="Prolix Ring", right_ring="Prolix ring"}			
 							 
 		--Utility and JA Sets --					
 		sets.Utility = {}

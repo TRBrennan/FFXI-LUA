@@ -36,12 +36,12 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Staunch Tathlum",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", ear1="Genmei earring", ear2="Infused Earring",
-                                      body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Defending ring",ring2="Gelatinous ring +1",
+                                      body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Flume Belt +1",legs="Carmine Cuisses",feet="Sulevia's Leggings +1", back ="Solemnity Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum", 
 							head="Sulevia's Mask +1",neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Cessance Earring",
-                              body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Gelatinous Ring +1",ring2="Defending  Ring",
+                              body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Defending  Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
 										
 							
@@ -74,7 +74,7 @@ function get_sets()
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
                               head="Sulevia's Mask +1",neck="Loricate Torque +1", ear1="Brutal Earring",ear2="Telos Earring",
-                              body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Gelatinous Ring +1",ring2="Defending  Ring",
+                              body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Defending  Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
                                  
                 sets.TP.DTAccuracy = {ammo="Ginsen",
@@ -136,7 +136,7 @@ function get_sets()
        				
 	    sets.NINMagic.Utsusemi ={
                               head="Dampening Tam",neck="Loricate Torque +1", ar1="Brutal Earring",ear2="Cessance Earring",
-                              body="Emet harness +1",hands="Sulevia's Gauntlets +1",ring1="Gelatinous Ring +1",ring2="Petrov Ring",
+                              body="Emet harness +1",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Petrov Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Herculean Trousers",feet="Valorous Greaves"}
  
                                               
@@ -196,7 +196,7 @@ function get_sets()
        sets.precast.FC.Standard = { ammo="Sapience Orb",
 							head="Herculean Helm",  body="Taeon Tabard",  hands="Leyline Gloves",   legs="Orvail Pants +1",
 						    feet="Amalric Nails",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
+						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Prolix ring", back="Swith Cape"}
        
 	   sets.Breath = {ammo="Staunch Tathlum",
 				   head="Ptero. Armet +1",neck="Lancer's Torque",ear1="Anastasi Earring",ear2="Lancer's Earring",

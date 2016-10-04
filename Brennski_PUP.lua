@@ -35,10 +35,10 @@ function get_sets()
         Idle_ind = 1                  
        
         sets.Idle.Standard = {head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Sanctity Necklace",ear1="Genmei Earring", ear2="Infused Earring",
-		body="Emet harness +1",hands="Herculean gloves",ring1="Defending ring",ring2="Gelatinous Ring +1",
+		body="Emet harness +1",hands="Herculean gloves",ring1="Defending ring",ring2="Vocane Ring",
                                         back="Solemnity Cape",waist="Isa Belt",legs="Herculean Trousers",feet="Hermes' Sandals"}
                                                  
-        sets.Idle.DT = {head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring", body="Emet harness +1",hands="Herculean gloves",ring1="Defending ring",ring2="Gelatinous Ring +1",
+        sets.Idle.DT = {head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring", body="Emet harness +1",hands="Herculean gloves",ring1="Defending ring",ring2="Vocane Ring",
                                         back="Solemnity Cape",waist="Isa Belt",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 										
 		sets.Idle.PetTank = { Head = "Anwig Salade", neck ="Empath Necklace",ear1="Handlers Earring", ear2="Rimeice earring",
@@ -71,12 +71,12 @@ function get_sets()
                                                        
                 sets.TP.DT = {
                               head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Ethereal", ear2="Genmei Earring",
-                              body="Emet harness +1",hands="Herculean Gloves",ring1="Gelatinous Ring +1",ring2="Petrov Ring",
+                              body="Emet harness +1",hands="Herculean Gloves",ring1="Vocane Ring",ring2="Petrov Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
                                  
                 sets.TP.DTAccuracy = { 
                                       head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Suppanomimi", ear2="Genmei Earring",     
-									  body="Emet harness +1",hands="Herculean Gloves",ring1="Dark ring",ring2="Gelatinous Ring +1",
+									  body="Emet harness +1",hands="Herculean Gloves",ring1="Dark ring",ring2="Vocane Ring",
                                       back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},waist="Flume belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
 									  
                                                          
@@ -117,7 +117,7 @@ function get_sets()
 							
 	    sets.NINMagic.Utsusemi ={
                               head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ar1="Brutal Earring",ear2="Cessance Earring",
-                              body="Emet harness +1",hands="Regimens Mittens",ring1="Gelatinous Ring +1",ring2="Petrov Ring",
+                              body="Emet harness +1",hands="Regimens Mittens",ring1="Vocane Ring",ring2="Petrov Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}}}
  
         
@@ -163,7 +163,7 @@ function get_sets()
        sets.precast.FC.Standard = {  
 							head="Herculean Helm",  body="Vrikodara Jupon",  hands="Leyline Gloves",   legs="Orvail Pants +1",
 						    feet="Amalric Nails",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
+						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Prolix ring", back="Swith Cape"}
        
 end
  

@@ -33,7 +33,7 @@ function get_sets()
        
         sets.Idle.Standard = {
                                       head="Rawhide Mask",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Emet Harness +1",hands="Herculean gloves",ring1="Defending ring",ring2="Gelatinous Ring +1",
+                                      body="Emet Harness +1",hands="Herculean gloves",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Flume Belt +1",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}, back ="Solemnity Cape"}
                                                  
         sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap", 
@@ -193,7 +193,7 @@ function get_sets()
        
         sets.JA.LightDarkShot= {ammo ="Animikii Bullet",head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 							neck="Sanctity Necklace",   ear2="Friomisi earring", ear1="Hecate's Earring",
-							body="Samnuha Coat",    hands="Leyline Gloves", ring1="Weatherspoon Ring", ring2 ='Arvina Ringlet +1', waist ="Eschan Stone",
+							body="Samnuha Coat",    hands="Leyline Gloves", ring1="Sangoma Ring", ring2 ='Arvina Ringlet +1', waist ="Eschan Stone",
 							back="Gunslinger's Cape",   legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},  feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
                                                     
 
@@ -205,14 +205,14 @@ function get_sets()
        sets.precast.FC.Standard = {  
 							head="Carmine Mask",  body="Taeon Tabard",  hands="Leyline Gloves",   legs="Lengo Pants",
 						    feet="Carmine Greaves",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
+						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Prolix ring", back="Swith Cape"}
 		--Ninja Magic Sets--
         sets.NINMagic = {}
        
 								
 	    sets.NINMagic.Utsusemi ={
                               head="Dampening Tam",neck="Loricate Torque", ar1="Brutal Earring",ear2="Cessance Earring",
-                              body="Emet harness +1",hands="Adhemar Wristbands",ring1="Gelatinous Ring +1",ring2="Petrov Ring",
+                              body="Emet harness +1",hands="Adhemar Wristbands",ring1="Vocane Ring",ring2="Petrov Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
 end

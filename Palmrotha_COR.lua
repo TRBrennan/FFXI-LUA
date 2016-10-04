@@ -33,7 +33,7 @@ function get_sets()
        
         sets.Idle.Standard = {
                                       head="Rawhide Mask",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Emet Harness",hands="Herculean gloves",ring1="Warden's ring",ring2="Gelatinous Ring +1",
+                                      body="Emet Harness",hands="Herculean gloves",ring1="Vocane Ring",ring2="Vocane Ring",
                                       waist="Flume Belt +1",legs="Carmine Cuisses",feet ="Herculean Boots", back ="Aptitude Mantle"}
                                                  
         sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap", 
@@ -175,7 +175,7 @@ function get_sets()
        
         sets.JA.LightDarkShot= {ammo ="Animikii Bullet",head="Herculean Helm",
 							neck="Quanpur necklace",   ear2="Friomisi earring", ear1="Hecate's Earring",
-							body="Rawhide Vest",    hands="Taeon Gloves", ring1="Weatherspoon Ring", ring2 ='Arvina Ringlet', waist ="Eschan Stone",
+							body="Rawhide Vest",    hands="Taeon Gloves", ring1="Prolix ring", ring2 ='Arvina Ringlet', waist ="Eschan Stone",
 							back="Gunslinger's Cape",   legs="Obatala Subligar",  feet ="Herculean Boots"}
                                                     
 
@@ -187,14 +187,14 @@ function get_sets()
        sets.precast.FC.Standard = {  
 							head="Psycloth Tiara",  body="Taeon Tabard",  hands="Taeon Gloves",   legs="Lengo Pants",
 						    feet="Chelona Boots",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear="Loquac. Earring", left_ring="Prolix Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
+						    right_ear="Loquac. Earring", left_ring="Prolix Ring", right_ring="Prolix ring", back="Swith Cape"}
 		--Ninja Magic Sets--
         sets.NINMagic = {}
        
 								
 	    sets.NINMagic.Utsusemi ={
                               head="Dampening Tam",neck="Loricate Torque +1", ar1="Brutal Earring",ear2="Cessance Earring",
-                              body="Emet harness +1",hands="Taeon Gloves",ring1="Gelatinous Ring +1",ring2="Petrov Ring",
+                              body="Emet harness +1",hands="Taeon Gloves",ring1="Vocane Ring",ring2="Petrov Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Obatala Subligar",feet = "Herculean Boots" }
        
 end

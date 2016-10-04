@@ -36,7 +36,7 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Demonry Core",
                                       head="Rawhide Mask",neck="Sanctity Necklace", ear1="Genmei earring", ear2="Handler's earring",
-                                      body="Emet Harness +1",hands="Ankusa Gloves",ring1="Warden's ring",ring2="Defending ring",
+                                      body="Emet Harness +1",hands="Ankusa Gloves",ring1="Vocane Ring",ring2="Defending ring",
                                       waist="Flume Belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}, back ="Mecistopins mantle"}
                                                  
         sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap",ammo="Amar Cluster",
@@ -133,7 +133,7 @@ function get_sets()
 							
 	    sets.NINMagic.Utsusemi ={
                               head="Dampening Tam",neck="Loricate Torque +1", ar1="Brutal Earring",ear2="Cessance Earring",
-                              body="Emet harness",hands="Adhemar Wristbands",ring1="Gelatinous Ring +1",ring2="Petrov Ring",
+                              body="Emet harness",hands="Adhemar Wristbands",ring1="Vocane Ring",ring2="Petrov Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
 	   --Job Ability Sets--
@@ -163,7 +163,7 @@ function get_sets()
 		sets.precast.FC.Standard = {
 							head="Herculean Helm",  body="Taeon Tabard",  hands="Leyline Gloves",   legs="Orvail Pants +1",
 						    feet="Amalric Nails",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
+						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Prolix ring", back="Swith Cape"}
 		sets.precast.Ready ={}
        
 end

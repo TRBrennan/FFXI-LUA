@@ -32,12 +32,12 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Staunch Tathlum",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands="Amalric Gages",ring1="Defending ring",ring2="Gelatinous Ring +1",
+                                      body="Vrikodara Jupon",hands="Amalric Gages",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Amalric Nails", back ="Solemnity Cape"}
 									  
 		sets.Idle.DT = {ammo="Hagneia stone",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands="Amalric Gages",ring1="Gelatinous Ring +1",ring2="Defending ring",
+                                      body="Vrikodara Jupon",hands="Amalric Gages",ring1="Vocane Ring",ring2="Defending ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Amalric Nails", back ="Solemnity Cape"}
 		
 		sets.Idle.Death ={ammo="Strobilus",
@@ -54,7 +54,7 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = {ammo="Staunch Tathlum",
                                       head="Hike Khat",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands="Amalric Gages",ring1="Defending ring",ring2="Gelatinous Ring +1",
+                                      body="Vrikodara Jupon",hands="Amalric Gages",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants",feet="Amalric Nails", back ="Solemnity Cape"}
 
 		--WS Sets--
@@ -106,7 +106,8 @@ function get_sets()
 		
 			sets.Magic.Enfeebling = {ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Barkarole Earring",
-                                 body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", ring1="Stikini Ring", ring2 ="Weatherspoon Ring", waist ="Luminary Sash",
+                                 body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
+								 hands="Lurid Mitts", ring1="Stikini Ring", ring2 ="Sangoma Ring", waist ="Luminary Sash",
                                  back="Taranus's Cape",legs="Psycloth Lappas",feet="Medium's Sabots"}
 			
 			sets.Magic.Healing = {ammo="Kalboron Stone",
@@ -116,7 +117,7 @@ function get_sets()
 												 
 			sets.Magic.Regen = { ammo="Savant's Treatise",
                                  head="Arbatel Bonnet",neck="Incanter's Torque ",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
-                                 body="Telchine Chasuble",hands="Telchine Gloves", ring1="Stikini Ring", ring2 ="Weatherspoon Ring", waist ="Luminary Sash",
+                                 body="Telchine Chasuble",hands="Telchine Gloves", ring1="Stikini Ring", ring2 ="Prolix ring", waist ="Luminary Sash",
                                  back="Taranus's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 			
 			sets.Magic.Dark = { ammo="Pemphredo Tathlum",
@@ -141,7 +142,7 @@ function get_sets()
 							legs="Psycloth Lappas",
 						    feet={ name="Merlinic Crackows", augments={'"Fast Cast"+6','"Mag.Atk.Bns."+12',}},
 							neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear ="Loquac. Earring",left_ring="Rahab Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
+						    right_ear ="Loquac. Earring",left_ring="Rahab Ring", right_ring="Prolix ring", back="Swith Cape"}
 							
 			sets.precast.FC.Death = {ammo="Sapience Orb",
 							head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},

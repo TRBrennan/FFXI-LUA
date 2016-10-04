@@ -32,12 +32,12 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Homiliary",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Defending ring",ring2="Gelatinous Ring +1",
+                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Solemnity Cape"}
 									  
 		sets.Idle.DT = {ammo="Hagneia stone",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Gelatinous Ring +1",ring2="Defending ring",
+                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Vocane Ring",ring2="Defending ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Solemnity Cape"}							  
                                                  
 		--TP Sets--
@@ -49,7 +49,7 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = {ammo="Homiliary",
                                       head="Hike Khat",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Defending ring",ring2="Gelatinous Ring +1",
+                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants",feet="Chironic Slippers", back ="Solemnity Cape"}
 
 		--WS Sets--
@@ -105,7 +105,7 @@ function get_sets()
 			sets.Magic.Enfeebling = {ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Barkarole Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", 
-								 ring1="Stikini Ring", ring2 ="Weatherspoon Ring", waist ="Luminary Sash",
+								 ring1="Stikini Ring", ring2 ="Sangoma Ring", waist ="Luminary Sash",
                                  back="Lugh's Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},,feet="Medium's Sabots"}
 			
 			sets.Magic.Healing = {ammo="Kalboron Stone",
@@ -115,7 +115,7 @@ function get_sets()
 												 
 			sets.Magic.Regen = { ammo="Savant's Treatise",
                                  head="Arbatel Bonnet",neck="Incanter's Torque ",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
-                                 body="Telchine Chasuble",hands="Telchine Gloves", ring1="Stikini Ring", ring2 ="Weatherspoon Ring", waist ="Luminary Sash",
+                                 body="Telchine Chasuble",hands="Telchine Gloves", ring1="Stikini Ring", ring2 ="Prolix ring", waist ="Luminary Sash",
                                  back="Bookworms's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 			
 			sets.Magic.Dark = { ammo="Pemphredo Tathlum",
@@ -125,7 +125,7 @@ function get_sets()
 								 
 			sets.Magic.Stun ={ammo="Pemphredo Tathlum",head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
 							neck="Voltsurge Torque", waist ="Luminary Sash", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
-							 left_ring="Rahab Ring", right_ring="Weatherspoon ring",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}, 
+							 left_ring="Rahab Ring", right_ring="Sangoma Ring",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}, 
 							 body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},legs="Psycloth Lappas", back ="Lugh's Cape"}
 
 		--Precast Sets--
@@ -140,16 +140,16 @@ function get_sets()
 							legs="Psycloth Lappas",
 						    feet={ name="Merlinic Crackows", augments={'"Fast Cast"+6','"Mag.Atk.Bns."+12',}},
 							neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear ="Loquac. Earring",left_ring="Rahab Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
+						    right_ear ="Loquac. Earring",left_ring="Rahab Ring", right_ring="Prolix ring", back="Swith Cape"}
 							
 			sets.precast.FC.Regen = { ammo="Sapience Orb",
                                  head="Telchine Cap",neck="Voltsurge Torque",right_ear="Loquac. Earring",left_ear="Etiolation Earring",
-                                 body="Telchine Chasuble",hands="Telchine Gloves", left_ring="Rahab Ring", right_ring="Weatherspoon ring",waist="Witful Belt",
+                                 body="Telchine Chasuble",hands="Telchine Gloves", left_ring="Rahab Ring", right_ring="Prolix ring",waist="Witful Belt",
                                  back="Lugh's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 								 
 			sets.precast.FC.Storms = { ammo="Sapience Orb",
                                  head="Telchine Cap",neck="Voltsurge Torque",right_ear="Loquac. Earring",left_ear="Etiolation Earring",
-                                 body="Telchine Chasuble",hands="Telchine Gloves", left_ring="Rahab Ring", right_ring="Weatherspoon ring",waist="Witful Belt",
+                                 body="Telchine Chasuble",hands="Telchine Gloves", left_ring="Rahab Ring", right_ring="Prolix ring",waist="Witful Belt",
                                  back="Swith Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 		--Utility and JA Sets --					
 		sets.Utility = {}

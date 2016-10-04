@@ -51,7 +51,7 @@ function get_sets()
 		range="Dunna",
         head="Nahtirah Hat",
 		neck="Jeweled Collar",ear1="Etiolation Earring", ear2="Loquacious Earring",
-        body="Shango Robe", ring2="Weatherspoon Ring", hands="Telchine Gloves",ring1="Prolix Ring",
+        body="Shango Robe", ring2="Prolix ring", hands="Telchine Gloves",ring1="Prolix Ring",
         back="Lifestream Cape",waist="Channeler's Stone",legs="Geomancy Pants",feet="Regal Pumps"
 		}
 
