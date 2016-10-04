@@ -2,29 +2,16 @@ function get_sets()
  
         send_command('bind f9 gs c toggle TP set')
         send_command('bind f10 gs c toggle Idle set')
-        send_command('bind f11 gs c toggle CDC set')
-        send_command('bind f12 gs c toggle Req set')
-        send_command('bind !f12 gs c toggle Rea set')
-        send_command('bind ^` gs c toggle MB set')
-       
-        function file_unload()
-     
- 
+         function file_unload()
+    
         send_command('unbind ^f9')
         send_command('unbind ^f10')
-        send_command('unbind ^f11')
-        send_command('unbind ^f12')
-        send_command('unbind ^`')
-       
-        send_command('unbind !f9')
+
+          send_command('unbind !f9')
         send_command('unbind !f10')
-        send_command('unbind !f11')
-        send_command('unbind !f12')
  
         send_command('unbind f9')
         send_command('unbind f10')
-        send_command('unbind f11')
-        send_command('unbind f12')
  
         end    
                
@@ -126,7 +113,7 @@ function get_sets()
 		sets.SB.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
                                     body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Petrov Ring",ring2="Rajas Ring",
-                                    back="Cichol's Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Sulevia Leggins +1" }
+                                    back="Cichol's Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Sulevia Leggings +1" }
         --Ninja Magic Sets--
         sets.NINMagic = {}
        				
