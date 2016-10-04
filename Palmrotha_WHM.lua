@@ -122,11 +122,11 @@ function get_sets()
        
 			sets.precast.FC.Standard = {main ="", sub ="Vivid Strap", ammo="Incanter Stone",
 							head="Nahtirah Hat",  body="Shango Robe",  hands="Telchine Gloves",legs="Orvail pants +1",feet="Regal Pumps", back="Swith cape",
-							neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",right_ear="Loquac. Earring",left_ring="Prolix Ring", right_ring="Weatherspoon ring"}
+							neck="Voltsurge Torque", waist="Channeler's Stone", left_ear="Etiolation Earring",right_ear="Loquac. Earring",left_ring="Prolix Ring", right_ring="Weatherspoon ring"}
 			
 			sets.precast.FC.Healing = {main ="", sub ="Vivid Strap", ammo="Incanter Stone",
 							head="Nahtirah Hat",  body="Shango Robe",  hands="Telchine Gloves",legs="Orvail pants +1",feet="Regal Pumps", back="Swith cape",
-							neck="Voltsurge Torque", waist="Witful Belt", left_ear="Nourishing Earring +1",right_ear="Loquac. Earring",left_ring="Prolix Ring", right_ring="Weatherspoon ring"}			
+							neck="Voltsurge Torque", waist="Channeler's Stone", left_ear="Nourishing Earring +1",right_ear="Loquac. Earring",left_ring="Prolix Ring", right_ring="Weatherspoon ring"}			
 							 
 		--Utility and JA Sets --					
 		sets.Utility = {}

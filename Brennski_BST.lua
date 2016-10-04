@@ -36,17 +36,18 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Demonry Core",
                                       head="Rawhide Mask",neck="Sanctity Necklace", ear1="Genmei earring", ear2="Handler's earring",
-                                      body="Emet Harness +1",hands="Ankusa Gloves",ring1="Warden's ring",ring2="Sheltered ring",
+                                      body="Emet Harness +1",hands="Ankusa Gloves",ring1="Warden's ring",ring2="Defending ring",
                                       waist="Flume Belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}, back ="Mecistopins mantle"}
                                                  
         sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap",ammo="Amar Cluster",
                                 head="Rawhide Mask",neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
-                                        body="Emet Harness +1",hands="Adhemar Wristbands",ring1="Dark ring",ring2="Succor ring",
+                                        body="Emet Harness +1",hands="Adhemar Wristbands",ring1="Defending ring",ring2="Succor ring",
                                         back="Cornflower Cape",waist="Flume belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 										
 		sets.Idle.PetEngaged = {ammo ="Demonry Core",
-							  head="Valorous Mask", body="Acro Surcoat", legs="Valorous Hose", feet ="Emicho Gambieras", hands ="Regimen Mittens",
-							  back="Pastoralist's Mantle", neck="Empath necklace", ear1="Handler's Earring", ear2= "Sabong Earring", waist ="Incarnation Sash"}								
+							  head="Awing Salade", 
+							  body="Taeon Tabard", legs="Valorous Hose", feet ="Emicho Gambieras", hands ="Regimen Mittens", legs ="Taeon Tights",
+							  back="Pastoralist's Mantle", neck="Empath necklace", ear1="Handler's Earring", ear2="Rimeice earring", waist ="Isa Belt"}								
 							
         --TP Sets--
         sets.TP = {}
@@ -55,7 +56,7 @@ function get_sets()
                 --1=Standard--
 				
                 TP_ind = 1
-				sets.TP.Standard = {ammo ="Demonry Core", head="Valorous Mask", neck="Empath necklace", ear1="Sabong Earring",ear2="Cessance Earring",
+				sets.TP.Standard = {ammo ="Demonry Core", head={ name="Valorous Mask", augments={'Pet: Mag. Acc.+11','Pet: "Dbl.Atk."+2 Pet: Crit.hit rate +2','Pet: Accuracy+14 Pet: Rng. Acc.+14',}}, neck="Empath necklace", ear1="Sabong Earring",ear2="Cessance Earring",
                                     body="Acro Surcoat",hands ="Regimen Mittens",ring1="Petrov Ring",ring2="Epona's Ring",
 									back="Pastoralist's Mantle",waist="Incarnation Sash",legs="Valorous Hose",feet ="Emicho Gambieras"}
                                                        
@@ -64,13 +65,14 @@ function get_sets()
 		
 		sets.Ready = {}
 		
-		sets.Ready.Physical ={ammo ="Demonry Core",
-							  head="Valorous Mask", body="Acro Surcoat", legs="Valorous Hose", feet ="Emicho Gambieras", hands ="Regimen Mittens",
+		sets.Ready.Physical ={main ="Kerehcatl", sub="Arktoi",ammo ="Demonry Core",
+							  head={ name="Valorous Mask", augments={'Pet: Mag. Acc.+11','Pet: "Dbl.Atk."+2 Pet: Crit.hit rate +2','Pet: Accuracy+14 Pet: Rng. Acc.+14',}},
+							  body="Acro Surcoat", legs="Valorous Hose", feet ="Emicho Gambieras", hands ="Regimen Mittens",
 							  back="Pastoralist's Mantle", neck="Empath necklace", ear1="Hija Earring", ear2= "Sabong Earring",waist="Incarnation Sash"}
 		
-		sets.Ready.Magical ={ammo ="Demonry Core",
+		sets.Ready.Magical ={main ="Mdomo Axe", sub ="Arktoi",ammo ="Demonry Core",
 							  head="Valorous Mask", body="Acro Surcoat", legs="Valorous Hose", feet ="Emicho Gambieras", hands ="Regimen Mittens",
-							  back="Pastoralist's Mantle", neck="Empath necklace", ear1="Hija Earring", ear2= "Sabong Earring",waist="Incarnation Sash"}
+							  back="Pastoralist's Mantle", neck="Deino Collar", ear1="Hija Earring", ear2= "Sabong Earring",waist="Incarnation Sash"}
 							  
 		--WS Sets--
 		sets.WS ={}
@@ -113,11 +115,11 @@ function get_sets()
  
        
         sets.Utility.Stoneskin = {head="Haruspex hat",neck="Stone Gorget",ear1="Loquac. earring",ear2="Earthcry earring",
-                                                          body="Assim. jubbah +1",hands="Stone Mufflers",ring1="Prolix ring",
+                                                          body="Assim. jubbah +1",hands="Stone Mufflers",ring1="Rahab ring",
                                                           back="Swith cape",waist="Siegel sash",legs="Haven hose",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                          
         sets.Utility.Phalanx = {head="Haruspex hat",neck="Colossus's torque",ear1="Loquac. earring",ear2="Augment. earring",
-                                                    body="Assim. jubbah +1",hands="Ayao's gages",ring1="Prolix ring",
+                                                    body="Assim. jubbah +1",hands="Ayao's gages",ring1="Rahab ring",
                                                         back="Swith cape",waist="Pythia sash +1",legs="Portent pants",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                        
         sets.Utility.Steps = {ammo="Falcon Eye",
@@ -150,7 +152,7 @@ function get_sets()
 		
 		sets.JA.Reward ={ammo = "Pet food Theta Biscuit", body="Monster Jackcoat", ring1="Metamorph Ring",ring2 ="Sirona's Ring", feet ="Monster Gaiters"} 
 		
-		sets.JA.ReadyPre ={main ="Charmer's Merlin", Legs = ""}
+		sets.JA.ReadyPre ={sub ="Charmer's Merlin", Legs = "Desultor Tassets"}
 		
 		
 		--Precast Sets--
@@ -161,7 +163,7 @@ function get_sets()
 		sets.precast.FC.Standard = {
 							head="Herculean Helm",  body="Taeon Tabard",  hands="Leyline Gloves",   legs="Orvail Pants +1",
 						    feet="Amalric Nails",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear="Loquac. Earring", left_ring="Prolix Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
+						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
 		sets.precast.Ready ={}
        
 end
@@ -264,52 +266,27 @@ function midcast(spell,act)
 end
 
 function aftercast(spell)
-        if player.status == 'Engaged' then
+    if player.status == 'Engaged' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
-				if buffactive['Doom'] then
-					equip(set_combine(sets.TP[sets.TP.index[TP_ind]],sets.Utility.Doomed))
-					status_change(player.status)
-				end
-				if buffactive['Terror']	then 
-					equip(sets.TP.DT)
-					status_change(player.status)
-				end
-		else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])					
-				if buffactive['Doom'] then
-					equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]],sets.Utility.Doomed))
-					status_change(player.status)
-				end
-				if buffactive['Terror']	then 
-					equip(sets.TP.DT)
-					status_change(player.status)
-				end
+				
+        else
+                equip(sets.Idle[sets.Idle.index[Idle_ind]])
         end
+		if buffactive['doom'] then
+					equip(sets.Utility.Doom)
+		end
+		if buffactive['terror'] or buffactive['stun'] or buffactive['sleep']	then 
+					equip(sets.TP.DT)
+		end
 end
 
  
 function status_change(new,old)
         if player.status == 'Engaged' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
-				if buffactive['Doom'] then
-					equip(set_combine(sets.TP[sets.TP.index[TP_ind]],sets.Utility.Doomed))
-					status_change(player.status)
-				end
-				if buffactive['Terror']	then 
-					equip(sets.TP.DT)
-					status_change(player.status)
-				end
-        else
+	    else
                 equip(sets.Idle[sets.Idle.index[Idle_ind]])					
-				if buffactive['Doom'] then
-					equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]],sets.Utility.Doomed))
-					status_change(player.status)
-				end
-				if buffactive['Terror']	then 
-					equip(sets.TP.DT)
-					status_change(player.status)
-				end
-        end
+		 end
 end 
 function self_command(command)
         if command == 'toggle TP set' then

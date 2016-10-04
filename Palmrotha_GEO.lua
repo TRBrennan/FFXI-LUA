@@ -51,8 +51,8 @@ function get_sets()
 		range="Dunna",
         head="Nahtirah Hat",
 		neck="Jeweled Collar",ear1="Etiolation Earring", ear2="Loquacious Earring",
-        body="Shango Robe", ring2="Weatherspoon Ring", hands="Telchine Gloves",
-        back="Swith Cape",waist="Cetl Belt",legs="Geomancy Pants",feet="Regal Pumps"
+        body="Shango Robe", ring2="Weatherspoon Ring", hands="Telchine Gloves",ring1="Prolix Ring",
+        back="Lifestream Cape",waist="Channeler's Stone",legs="Geomancy Pants",feet="Regal Pumps"
 		}
 
     sets.precast.FastCast.Cure = set_combine(sets.precast.FC, {main="Tamaxchi",sub="Sors Shield",back="Pahtli Cape"})
@@ -64,13 +64,13 @@ function get_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Amar cluster",
         head="Welkin Crown",neck="Sanctity Necklace",ear1="Etiolation Earring",ear2="Brutal Earring",
-        body="Amalric doublet",hands="Amalric gages",ring1="Rajas Ring",ring2="Rufescent Ring",
+        body="Azimuth Coat +1",hands="Amalric gages",ring1="Rajas Ring",ring2="Rufescent Ring",
         back="Buquwik Cape",waist="Fotia Belt",legs="Amalric slops",feet="Battlecast Gaiters"}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Flash Nova'] = {ammo="Witchstone",
-        head="Welkin Crown",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Barkarole Earring",
-        body="Amalric doublet",hands="Amalric gages",ring1="Acumen Ring",ring2="Etana ring",
+        head="Welkin Crown",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Strophadic Earring",
+        body="Azimuth Coat +1",hands="Amalric gages",ring1="Acumen Ring",ring2="Etana ring",
         back="Toro Cape",waist="Fotia Belt", legs="Amalric slops", feet="Helios boots"}
 
     sets.precast.WS['Starlight'] = {ear2="Moonshade Earring"}
@@ -86,14 +86,14 @@ function get_sets()
     sets.midcast = {}
 
     sets.midcast.Geomancy = {main="Solstice", range="Dunna", 
-		head="Azimuth Hood", body="Bagua Tunic", hands="Geomancy Mitaines +1", ear1="Influx Earring", ear2="Gifted Earring", 
+		head="Azimuth Hood +1", body="Bagua Tunic", hands="Geomancy Mitaines", ear1="Influx Earring", ear2="Gifted Earring", 
 		neck="Incanter's Torque", ring2="Renaye Ring", feet="Medium's Sabots", back="Lifestream Cape"}
 		
     sets.midcast.Geomancy.Indi = {main="Solstice", range="Dunna", 
-		head="Azimuth Hood", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Incanter's Torque",
+		head="Azimuth Hood +1", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Incanter's Torque",
 		legs="Bagua Pants", hands="Geomancy Mitaines", feet="Medium's Sabots", back="Lifestream Cape"}
 
-    sets.midcast.Cure = {main="Tamaxchi",sub="Genbu's Shield", ear1="Novia Earring", ear2="Gifted Earring",
+    sets.midcast.Cure = {main="Vadose Rod",sub="Genbu's Shield", ear1="Novia Earring", ear2="Gifted Earring",
         head="Welkin Crown", body="Vanya Robe",hands="Telchine Gloves", ring1="Ephedra Ring", ring2 ="Sirona's Ring",
         legs="Assiduity Pants +1",feet="Regal pumps", back ="Oretania's Cape"}
     
@@ -113,14 +113,14 @@ function get_sets()
 	-- main="Marin staff", sub="Niobid Strap", 
 	range="Dunna",
 				head="Bagua Galero", neck="Eddy Necklace", ear2="Influx Earring", ear1="Moonshade Earring",
-                body="Shango Robe", hands="Azimuth Gloves", ring1="Metamorph Ring", ring2 ="Perception Ring",
+                body="Shango Robe", hands="Azimuth Gloves", ring1="Vertigo Ring", ring2 ="Perception Ring",
                 back="Kumbira Cape", waist="Ovate Rope", legs="Amalric slops", feet="Bagua Sandals"}
     
     sets.midcast['Elemental Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 
 	ammo="Witchstone",
-				head="Welkin Crown", neck="Eddy Necklace", ear1="Barkarole Earring", ear2="Friomisi Earring",
-                body="Amalric doublet", hands="Amalric gages", ring1="Acumen Ring", ring2="Shiva Ring",
+				head="Welkin Crown", neck="Eddy Necklace", ear1="Strophadic Earring", ear2="Friomisi Earring",
+                body="Azimuth Coat +1", hands="Amalric gages", ring1="Acumen Ring", ring2="Vertigo Ring",
                 back="Toro Cape", waist="Refoccillation Stone", legs="Amalric slops", feet="Helios boots"}
         
     sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
@@ -128,13 +128,13 @@ function get_sets()
     sets.midcast['Dark Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 
 	range="Dunna",
-				head="Bagua Galero", neck="Incanter's Torque", ear1="Barkarole Earring", ear2="Friomisi Earring",
-                body="Geomancy Tunic", hands="Amalric gages", ring1="Acumen Ring", ring2="Etana ring",
+				head="Bagua Galero", neck="Incanter's Torque", ear1="Strophadic Earring", ear2="Friomisi Earring",
+                body="Geomancy Tunic", hands="Amalric gages", ring1="Acumen Ring", ring2="Vertigo ring",
                 back="Lifestream Cape", waist="Cetl Belt", legs="Amalric slops", feet="Helios boots"}
 
     sets.magic_burst = {main="Marin staff +1", sub="Niobid Strap", ammo="Ghastly Tathlum",
-				head="Merlinic hood", neck="Mizu. Kubikazari", lear="Barkarole Earring", rear="Friomisi Earring",
-                body="Amalric doublet", hands="Amalric gages", lring="Mujin Band", rring="Locus ring",
+				head="Merlinic hood", neck="Mizu. Kubikazari", lear="Strophadic Earring", rear="Friomisi Earring",
+                body="Azimuth Coat +1", hands="Amalric gages", lring="Mujin Band", rring="Locus ring",
                 back="Seshaw cape", waist="Fucho-no-obi", legs="Merlinic shalwar", feet="Merlinic Crackows"}
 	
 				
@@ -155,31 +155,31 @@ function get_sets()
 	
     -- Resting sets
     sets.resting = {main="Pluto's Staff", range="Dunna",
-				head="Azimuth Hood", neck="Incanter's Torque", rear="Etiolation Earring", lear="Etiolation Earring",
-                body="Amalric doublet", hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
+				head="Azimuth Hood +1", neck="Incanter's Torque", rear="Etiolation Earring", lear="Etiolation Earring",
+                body="Azimuth Coat +1", hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
                 back="Toro Cape", waist="Refoccilation Stone", legs="Assiduity Pants +1", feet="Azimuth Gaiters"}
 	
     -- Idle sets
 
-    sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="",
-        neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
+    sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
+        neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
+        body="Azimuth Coat +1",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Aptitude Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
 
-    sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="",
-        neck="Twilight Torque", ear1="Etiolation Earring", ear2="Handler's Earring",
-        body="Geomancy Tunic",hands="Geomancy Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
+    sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
+        neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Handler's Earring",
+        body="Azimuth Coat +1",hands="Geomancy Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Aptitude Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
 
     -- .Pet sets are for when Luopan is present.
-	sets.idle.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head="",
-        neck="Twilight Torque", ear1="Etiolation Earring", ear2="Handler's Earring",
-        body="Geomancy Tunic",hands="Geomancy Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
+	sets.idle.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
+        neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Handler's Earring",
+        body="Azimuth Coat +1",hands="Geomancy Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Aptitude Mantle",waist="Isa Belt",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
    
-    sets.idle.PDT.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head=empty,
-        neck="Twilight Torque", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Geomancy Tunic",hands="Geomancy Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
+    sets.idle.PDT.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
+        neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
+        body="Azimuth Coat +1",hands="Geomancy Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Aptitude Mantle",waist="Isa Belt",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
 
     -- .Indi sets are for when an Indi-spell is active.
@@ -189,13 +189,13 @@ function get_sets()
     sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {})
 
     sets.idle.Town = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
-        neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
+        neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
+        body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Aptitude Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
 
     sets.idle.Weak = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
-        neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Patricius Ring",
+        neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
+        body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Aptitude Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
 
     sets.Kiting = {feet="Herald's Gaiters"}
@@ -214,8 +214,8 @@ function get_sets()
 
     -- Normal melee group
     sets.engaged = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
-        neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Geomancy Tunic",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Patricius Ring",
+        neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
+        body="Geomancy Tunic",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 	
 	
@@ -345,7 +345,7 @@ function self_command(str)
 			geo_mode = 'Wilt'
 		elseif indi_mode == 'Barrier' then
 			indi_mode = 'Haste'
-			geo_mode = 'None'
+			geo_mode = 'Malaise'
 		elseif indi_mode == 'Haste' then
 			indi_mode ='Vex'
 			geo_mode='Wilt'
@@ -368,9 +368,9 @@ function self_command(str)
 		elseif geo_mode == 'Languor' then
 			geo_mode = 'Wilt'
 		elseif geo_mode == 'Wilt' then
-			geo_mode = 'None'
-		elseif geo_mode == 'None' then
-			geo_mode = 'Frailty'			
+			geo_mode = 'Attunement'
+		elseif geo_mode == 'Attunement' then
+			geo_mode = 'Frailty'		
 		end		
 		windower.add_to_chat(8,'Geo set mode: '..geo_mode)		
 		windower.send_command('input /tell Brennski Geo_mode: '..geo_mode)
@@ -476,7 +476,7 @@ function relaxed_play_mode()
 				and indi_mode == 'Haste'
 				and check_recasts(s('Indi-Haste')) then
 				windower.send_command('Indi-Haste')
-		elseif not check_buffs('MAgic Evasion Boost')
+		elseif not check_buffs('Magic Evasion Boost')
 				and not check_buffs('silence', 'mute')
 				and indi_mode == 'Vex'
 				and check_recasts(s('Indi-Vex')) then
@@ -502,7 +502,8 @@ function relaxed_play_mode()
 						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Languor <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;frazzle <bt>')
 					elseif geo_mode == 'Wilt' then
 						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Wilt <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>')
-					elseif geo_mode == 'None' then
+					elseif geo_mode == 'Attunement' then
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Attunement <t>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>')
 					end
 					blaze = 'Off'
 		
@@ -513,7 +514,8 @@ function relaxed_play_mode()
 				and check_recasts(s('Geo-Vex'))
 				and check_recasts(s('Geo-Malaise'))
 				and check_recasts(s('Geo-Torpor'))
-				and check_recasts(s('Geo-Wilt')) then
+				and check_recasts(s('Geo-Wilt'))
+				and check_recasts(s('Geo-Attunement')) then
 					if player.mp > 305	and geo_mode == 'Frailty' then
 						windower.send_command('wait 2;Geo-Frailty <bt>;wait 7;frazzle <bt>')					
 					elseif player.mp > 302	and geo_mode == 'Vex' then
@@ -526,7 +528,8 @@ function relaxed_play_mode()
 						windower.send_command('wait 2;Geo-Languor <bt>;wait 7;frazzle<bt>')	
 					elseif player.mp > 250 and geo_mode == 'Wilt' then
 						windower.send_command('wait 2;Geo-Wilt <me>')
-					elseif geo_mode == 'None' then
+					elseif geo_mode == 'Attunement' then
+						windower.send_command('wait 2;Geo-Attunement <t>')
 					end
 		
 		end

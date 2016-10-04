@@ -24,8 +24,7 @@ function get_sets()
     -- Load and initialize the include file.
     include('Mote-Include.lua')
 end
---  This is my file to add in my augmented gear
-include('Include/AugmentedGear.lua')
+
  
 -- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
 function job_setup()
@@ -55,7 +54,7 @@ function user_setup()
      
     determine_haste_group()
     select_movement_feet()
-    select_default_macro_book()
+
 end
      
 -- Define sets and vars used by this job file.
@@ -64,9 +63,9 @@ function init_gear_sets()
     -- Precast sets
     --------------------------------------
     Andartia={}
-    Andartia.MAB={ name="Andartia's Mantle", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}
-    Andartia.DA= { name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
-    Andartia.WSD={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}}
+    Andartia.MAB="Yokaze Mantle"
+    Andartia.DA= "Yokaze Mantle"
+    Andartia.WSD="Yokaze Mantle"
  
     -- Precast sets to enhance JAs
     sets.precast.JA['Mijin Gakure'] = {legs="Mochizuki Hakama"}
@@ -82,23 +81,23 @@ function init_gear_sets()
     -- Set for acc on steps, since Yonin drops acc a fair bit
     sets.precast.Step = {neck="Yarak Torque"}
  
-    sets.precast.Flourish1 = {hands=HercHands.TH,waist="Chaac Belt"}
+    sets.precast.Flourish1 = {waist="Chaac Belt"}
  
     -- Fast cast sets for spells
     sets.precast.FC = {
         ammo="Staunch Tathlum",
-        head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}}
+        head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
         body="Taeon Tabard",
         hands="Leyline Gloves",
-        legs=HercLegs.FC,
-        feet=HercFeet.FC,
+        legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
+        feet="Herculean Boots",
         neck="Voltsurge Torque",
         waist="Druid's Rope",
         left_ear="Etiolation Earring",
         right_ear="Loquac. Earring",
         left_ring="Rahab Ring",
-        right_ring="Weatherspoon ring"
-        back="Mujin Mantle",}
+        right_ring="Weatherspoon ring",
+        back="Mujin Mantle"}
          
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {
         neck="Magoraga Beads",
@@ -112,7 +111,7 @@ function init_gear_sets()
     sets.precast.WS = {
         ammo="Seething bomblet +1",
         head="Adhemar Bonnet",
-        body="Herculean Vest"
+        body="Herculean Vest",
         hands="Adhemar Wristbands",
         legs="Hiza. Hizayoroi +1",
         feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
@@ -127,7 +126,7 @@ function init_gear_sets()
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {
         ammo="Seething bomblet +1",
         head="Adhemar Bonnet",
-        body="Herculean Vest"
+        body="Herculean Vest",
         hands="Adhemar Wristbands",
         legs="Hiza. Hizayoroi +1",
         feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
@@ -146,7 +145,7 @@ function init_gear_sets()
         neck="Caro necklace",
         hands="Adhemar Wristbands",
         waist="Grunfeld rope",
-        body=HercBody.WSD,
+        body="Herculean Vest",
         legs="Hiza. Hizayoroi +1",
         feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
         left_ear="Moonshade Earring",
@@ -158,7 +157,7 @@ function init_gear_sets()
         body="Adhemar Jacket",
         hands="Adhemar Wristbands",
         legs="Samnuha tights",
-        feet=HercFeet.CRITACC,
+        feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
         waist="Fotia Belt",
         back=Andartia.DA,
         right_ring="Petrov Ring",})
@@ -167,12 +166,12 @@ function init_gear_sets()
         ammo="Jukukik feather",
         head="Lilitu headpiece",
         neck="Caro necklace",
-        body="Herculean Vest"
+        body="Herculean Vest",
         hands="Adhemar Wristbands",
         legs="Hiza. Hizayoroi +1",
         left_ear="Telos Earring",
         right_ear="Moonshade Earring",
-        feet=HercFeet.WSD,
+        feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
         waist="Grunfeld rope",
         right_ring="Petrov Ring",
         left_ring="Rajas Ring"})
@@ -204,7 +203,7 @@ function init_gear_sets()
         head="Hachiya hatsuburi +1",
         body="Foppish Tunica",
         hands="Rawhide Gloves",
-        legs=HercLegs.FC,
+        legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
         feet="Mochi. Kyahan +1",
         neck="Willpower Torque",
         waist="Druid's Rope",
@@ -214,12 +213,12 @@ function init_gear_sets()
         right_ring="Evanescence Ring",
         back="Mujin Mantle",}
      
-    sets.midcast.Utsusemi = set_combine(sets.midcast.SelfNinjutsu, {
+    sets.midcast.Utsusemi = set_combine(sets.midcast.SelfNinjutsu,{
         ammo="Staunch Tathlum",
         ead={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
         body="Foppish Tunica",
         hands="Leyline Gloves",
-        legs=HercLegs.FC,
+        legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
         neck="Willpower Torque",
         waist="Druid's Rope",
         left_ear="Halasz Earring",
@@ -227,9 +226,9 @@ function init_gear_sets()
         left_ring="Prolix Ring",
         right_ring="Defending Ring",
         feet="Hattori Kyahan", 
-        back=Andartia.DA})
+        back="Andartia Mantle"})
  
-    sets.midcast.ElementalNinjutsu = {
+    sets.midcast.ElementalNinjutsu = 
        {ammo = "Pemphredo Tathlum",
 	   head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}}, 
 	   neck="Sanctity Necklace", 
@@ -241,12 +240,12 @@ function init_gear_sets()
 	   ring2 ="Acumen Ring",
 	   waist ="Eschan Stone",
 	   back="Izdubar Mantle",
-	   legs="Herculean Trousers",
+	   legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
 	   feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
  
     -- MBD caps at 40% , unknown as of what cap on MABII is
     sets.midcast.ElementalNinjutsu.MAB = set_combine(sets.midcast.ElementalNinjutsu, {
-        legs="Herculean Trousers",
+        legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
         feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}},
         right_ear="Static Earring",
         left_ring="Locus Ring",
@@ -261,9 +260,10 @@ function init_gear_sets()
 	    body="Samnuha Coat",
 	    hands="Leyline Gloves",
         waist="Eschan Stone",
+		feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}},
         left_ear="Stealth Earring", right_ear="Dignitary's Earring",
-        left_ring="Stikini Ring", right_ring="Weatherspoon ring"
-        back=="Izdubar Mantle"}
+        left_ring="Stikini Ring", right_ring="Weatherspoon ring",
+        back="Izdubar Mantle"}
  
     sets.midcast.NinjutsuBuff = {
         ammo="Staunch Tathlum",
@@ -276,8 +276,8 @@ function init_gear_sets()
 		ring1="Defending Ring",
         back="Solemnity Cape",
 		waist="Flume belt +1",
-		legs="Herculean Trousers",
-		feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}}
+		legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
+		feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
  
     sets.midcast.RA = {}
  
@@ -311,22 +311,22 @@ function init_gear_sets()
         neck="Sanctity necklace",
         waist="Flume Belt +1",
         left_ear="Infused Earring", right_ear="Genmei Earring",   
-        left_ring="Gelatinous Ring +1",
-        right_ring="Defending Ring",
+        right_ring="Gelatinous Ring +1",
+        left_ring="Defending Ring",
         back="Solmenity Cape"}
  
     sets.idle.Town = {
-        ammo="Pemphredo Tathlum",
+        ammo="Staunch Tathlum",
         head="Skormoth mask",
         body="Councilor's Garb",
         hands="Ryuo Tekko",
         legs="Gyve Trousers",
         feet=gear.MovementFeet,
         neck="Sanctity necklace",
-        waist="Gishdubar sash",
-        left_ear="Telos Earring", right_ear="Genmei Earring",   
-        left_ring="Gelatinous Ring +1",
-        right_ring="Defending Ring",
+        waist="Flume Belt +1",
+        left_ear="Infused Earring", right_ear="Genmei Earring",    
+        right_ring="Gelatinous Ring +1",
+        left_ring="Defending Ring",
         back="Solemnity cape"}
      
     sets.idle.Weak = {
@@ -339,8 +339,8 @@ function init_gear_sets()
         neck="Sanctity necklace",
         waist="Flume Belt +1",
         left_ear="Infused Earring", right_ear="Genmei Earring",   
-        left_ring="Meridian Ring",
-        right_ring="Defending Ring",
+        Right_ring="Meridian Ring",
+        Left_ring="Defending Ring",
         back="Shadow mantle"}
      
     -- Defense sets
@@ -350,15 +350,15 @@ function init_gear_sets()
         ammo="Staunch Tathlum",
         head="Ryuo Somen",
         body="Emet Harness +1",
-        hands=HercHands.PDT,
-        legs="Herculean Trousers",
-        feet=HercFeet.DT,
+        hands="Herculean Gloves",
+        legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
+        feet="Herculean Boots",
         neck="Loricate Torque +1",
         waist="Flume Belt +1",
         left_ear="Genmei Earring",
         right_ear="Suppanomimi",
-        left_ring="Gelatinous Ring +1",
-        right_ring="Defending Ring",
+        right_ring="Gelatinous Ring +1",
+        left_ring="Defending Ring",
         back="Solemnity Cape",}
          
     sets.defense.MDT = {
@@ -366,8 +366,8 @@ function init_gear_sets()
         head="Dampening Tam",
         body="Hiza. Haramaki +1",
         hands="Floral Gauntlets",
-        legs=HercLegs.DT,
-        feet=HercFeet.DT,
+        hands="Herculean Gloves",
+        feet="Herculean Boots",
         neck="Loricate Torque",
         waist="Flume Belt",
         left_ear="Brutal Earring",
@@ -410,9 +410,9 @@ function init_gear_sets()
         hands="Floral gauntlets",
         legs="Samnuha tights",
         feet="Hiza. Sune-Ate +1",
-        neck="Erudition necklace",
+        neck="Lissome Necklace",
         waist="Patentia sash",
-        left_ear="Brutal Earring", right_ear="Suppanomimi",
+        left_ear="Cessance Earring", right_ear="Suppanomimi",
         left_ring="Epona's Ring", right_ring="Petrov Ring",
         back=Andartia.DA}
          
@@ -422,8 +422,7 @@ function init_gear_sets()
         right_ring="Cacoethic Ring",})
          
     sets.engaged.HighAcc = set_combine(sets.engaged.ACC, {
-        legs=HercLegs.ACC,
-        left_ring="Chirich Ring",})
+               left_ring="Chirich Ring",})
          
     -- I dont use   
     sets.engaged.Evasion = {}
@@ -439,9 +438,9 @@ function init_gear_sets()
         hands="Floral gauntlets",
         legs="Samnuha tights",
         feet="Hiza. Sune-Ate +1",
-        neck="Erudition necklace",
+        neck="Lissome Necklace",
         waist="Windbuffet Belt +1",
-        left_ear="Brutal Earring", right_ear="Suppanomimi",
+        left_ear="Cessance Earring", right_ear="Suppanomimi",
         left_ring="Epona's Ring", right_ring="Petrov Ring",
         back=Andartia.DA}
          
@@ -470,9 +469,9 @@ function init_gear_sets()
         hands="Adhemar Wristbands",
         legs="Samnuha tights",
         feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
-        neck="Erudition necklace",
+        neck="Lissome Necklace",
         waist="Windbuffet Belt +1",
-        left_ear="Brutal Earring", right_ear="Suppanomimi",
+        left_ear="Cessance Earring", right_ear="Suppanomimi",
         left_ring="Epona's Ring", right_ring="Petrov Ring",
         back=Andartia.DA}
          
@@ -502,9 +501,9 @@ function init_gear_sets()
         hands="Adhemar Wristbands",
         legs="Samnuha tights",
         feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
-        neck="Erudition necklace",
+        neck="Lissome Necklace",
         waist="Windbuffet Belt +1",
-        left_ear="Brutal Earring", right_ear="Cessance Earring",
+        left_ear="Cessance Earring", right_ear="Telos Earring",
         left_ring="Epona's Ring", right_ring="Petrov Ring",
         back=Andartia.DA}
          
@@ -532,7 +531,7 @@ function init_gear_sets()
         hands="Adhemar Wristbands",
         legs="Samnuha tights",
         feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
-        neck="Erudition necklace",
+        neck="Lissome Necklace",
         waist="Windbuffet Belt +1",
         left_ear="Telos Earring", right_ear="Cessance earring",
         left_ring="Epona's Ring", right_ring="Petrov Ring",

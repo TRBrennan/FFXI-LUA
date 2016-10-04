@@ -36,18 +36,18 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Homiliary",
                                       head="Rawhide Mask",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Paguroidea Ring",ring2="Sheltered ring",
-                                      waist="Fucho-no-obi",legs="Blood cuisses",feet="Iuitl gaiters", back ="Kumbira Cape"}
+                                      body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Warden's Ring",
+                                      waist="Fucho-no-obi",legs="Carmine Cuisses",feet="Souveran Schuhs", back ="Kumbira Cape"}
                                                  
-        sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap",ammo="Amar Cluster",
-                                head="Rabid Visor",neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
-                                        body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Dark ring",ring2="Succor ring",
-                                        back="Iximulew Cape",waist="Flume belt +1",legs="Osmium Cuisses",feet="Odyssean Greaves"}
+        sets.Idle.DT = { ammo="Staunch Tathlum",
+                                    head="Sulevia's Mask +1", neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Thureous Earring",
+                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Warden's Ring",
+                                    back="Weard Mantle",waist="Flume Belt +1",legs="Souveran Diechlings",feet="Souveran Schuhs"}
 										
-		sets.Idle.Cleave = {main="Terra's Staff",sub="Umbra strap",ammo="Amar Cluster",
-										head="Rabid Visor",neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
-                                       body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Dark ring",ring2="Succor ring",
-                                        back="Mecistopins mantle",waist="Flume belt +1",legs="Osmium Cuisses",feet="Odyssean Greaves"}								
+		sets.Idle.Cleave = {ammo="Staunch Tathlum",
+                                    head="Sulevia's Mask +1", neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Thureous Earring",
+                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Warden's Ring",
+                                    back="Weard Mantle",waist="Flume Belt +1",feet="Souveran Schuhs",legs="Carmine Cuisses"}								
         --TP Sets--
         sets.TP = {}
  
@@ -57,19 +57,19 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = { ammo="Amar Cluster",
                                     head="Sulevia's Mask +1", neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Cessance Earring",
-                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Petrov Ring",ring2="Gelatinous Ring +1",
+                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Petrov Ring",ring2="Warden's Ring",
                                     back="Weard Mantle",waist="Flume Belt +1",legs="Souveran Diechlings",feet="Odyssean Greaves"}
                                                        
                                                        
-				sets.TP.Tank = { ammo="Amar Cluster",
-                                    head="Sulevia's Mask +1", neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Ethereal Earring",
-                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Warden's Ring",ring2="Gelatinous Ring +1",
-                                    back="Weard Mantle",waist="Flume Belt +1",legs="Souveran Diechlings",feet="Odyssean Greaves"}
+				sets.TP.Tank = { ammo="Staunch Tathlum",
+                                    head="Sulevia's Mask +1", neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Thureous Earring",
+                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Warden's Ring",
+                                    back="Weard Mantle",waist="Flume Belt +1",legs="Souveran Diechlings",feet="Souveran Schuhs"}
                                                        
 	   
                 sets.TP.AccuracyFull = {ammo="Amar Cluster",
                                         head="Sulevia's Mask +1",neck="Sanctity Necklace", ear1="Steelflash earring", ear2="Cessance Earring",
-                                        body="Founder's Breastplate",hands="Leyline Gloves",ring1="Petrov Ring",ring2="Gelatinous Ring +1",
+                                        body="Founder's Breastplate",hands="Leyline Gloves",ring1="Petrov Ring",ring2="Warden's Ring",
                                         back="Weard mantle",waist="Kentarch Belt +1",legs="Founder's Hose",feet="Odyssean Greaves"}
                                                        
                                                          
@@ -162,20 +162,20 @@ function get_sets()
 		sets.WS.Atonement = {ammo="Amar Cluster",
                                     head="Sulevia's Mask +1", neck="Asperity necklace", ear1="Brutal Earring",ear2="Cessance Earring",
                                     body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Petrov Ring",ring2="Rajas Ring",
-                                    back="Weard Mantle",waist="windbuffet belt +1",legs="Founder's Hose",feet="Odyssean Greaves"}
+                                    back="Weard Mantle",waist="windbuffet belt +1",legs="Founder's Hose",feet="Souveran Schuhs"}
                                                                                        
         --Magic Sets--
         sets.Magic = {}
        
 	    sets.Magic.Divine = {}
 		
-		sets.Magic.Phalanx ={}
+		sets.Magic.Phalanx ={head="Carmine Mask", legs ="Carmine Cuisses",neck = "Incanter's Torque", body ="Shabti Cruissas",hands="Souveran Handschuhs",feet="Souveran Schuhs"}
 		
-		sets.Magic.Enhancing ={neck = "Incanter's Torque", body ="Shabti Cruissas"}
+		sets.Magic.Enhancing ={head="Carmine Mask", legs ="Carmine Cuisses",neck = "Incanter's Torque", body ="Shabti Cruissas"}
 		
 		sets.Magic.Reprisal ={}
 		
-		sets.Magic.Flash ={neck="Atzintli Necklace",ear2 ="Friomisi Earring", back ="Weard Mantle", waist ="Kasiri Belt", ring2='Begrudging Ring', ring1='Petrov Ring'}
+		sets.Magic.Flash ={neck="Atzintli Necklace",ear2 ="Friomisi Earring", back ="Weard Mantle", waist ="Kasiri Belt", ring2='Supershear Ring', ring1='Petrov Ring'}
 		
 		sets.Magic.Healing = {neck = 'Diemer Gorget'}
                                
@@ -218,9 +218,9 @@ function get_sets()
         sets.precast.FC = {}
        
        sets.precast.FC.Standard = { ammo="Sapience Orb",
-							head="Psycloth Tiara",  body="Taeon Tabard",  hands="Leyline Gloves",   legs="Lengo Pants",
+							head="Carmine Mask",  body="Odyssean Chestplate",  hands="Leyline Gloves",   legs="Lengo Pants",
 						    feet="Odyssean Greaves",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear="Loquac. Earring", left_ring="Prolix Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
+						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
        
 end
  

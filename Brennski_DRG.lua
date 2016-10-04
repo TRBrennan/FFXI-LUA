@@ -37,10 +37,10 @@ function get_sets()
         sets.Idle.Standard = {ammo="Staunch Tathlum",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", ear1="Genmei earring", ear2="Infused Earring",
                                       body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Defending ring",ring2="Gelatinous ring +1",
-                                      waist="Flume Belt +1",legs="Sulevia's Cuisses +1",feet="Hermes' Sandals", back ="Solemnity Cape"}
+                                      waist="Flume Belt +1",legs="Carmine Cuisses",feet="Sulevia's Leggings +1", back ="Solemnity Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum", 
-							head="Sulevia's Mask +1",neck="Loricate Torque +1", ar1="Brutal Earring",ear2="Cessance Earring",
+							head="Sulevia's Mask +1",neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Cessance Earring",
                               body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Gelatinous Ring +1",ring2="Defending  Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
 										
@@ -48,26 +48,29 @@ function get_sets()
         --TP Sets--
         sets.TP = {}
  
-           sets.TP.index = {'Standard', 'AccuracyLite', 'AccuracyFull', 'DT', 'DTAccuracy'}
-                --1=Standard, 2 = AccuracyLite, 3=AccuracyFull, 4=DT, 5=DTAccuracy--
+           sets.TP.index = {'Standard', 'AccuracyFull', 'DT', 'DTAccuracy'}
+                --1=Standard, 2 =AccuracyFull, 3=DT, 4=DTAccuracy--
 				
                 TP_ind = 1
 				sets.TP.Standard = {ammo="Ginsen",
-                                    head="Boii Mask +1", neck="Lissome necklace", ear1="Brutal Earring",ear2="Telos Earring",
-                                    body="Emicho Haubert",hands="Emicho Gauntlets",ring1="Petrov Ring",ring2="Chirich Ring",
-                                    back="Cichol's Mantle",waist="Ioskeha Belt",legs="Odyssean Cuisses",feet="Valorous Greaves"}
+									head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}},
+									body={ name="Emicho Haubert", augments={'HP+50','DEX+10','Accuracy+15',}},
+									hands={ name="Emicho Gauntlets", augments={'HP+50','DEX+10','Accuracy+15',}},
+									legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
+									feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
+									neck="Lissome Necklace",
+									waist="Ioskeha Belt",
+									left_ear="Cessance Earring",
+									right_ear="Telos Earring",
+									left_ring="Petrov Ring",
+									right_ring="Chirich Ring",
+									back ="Grounded Mantle"}
                                                        
                                                        
-                sets.TP.AccuracyLite = {ammo="Seethng bomblet +1",
-                                        head="Boii Mask +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
-										body="Emicho Haubert",hands="Emicho Gauntlets",ring1="Petrov Ring",ring2="Cacoethic Ring",
-                                        back="Cichol's Mantle",waist="Ioskeha Belt",legs="Odyssean Cuisses",feet="Valorous Greaves"}
-       
                 sets.TP.AccuracyFull = {ammo="Seething Bomblet +1",
-                                        head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}}
-										,neck="Sanctity Necklace", ear1="Dignitary's Earring", ear2="Telos Earring",
+                                        head="Sulevia's Mask +1",neck="Sanctity Necklace", ear1="Dignitary's Earring", ear2="Telos Earring",
                                         body="Emicho Haubert",hands="Emicho Gauntlets",ring1="Cacoethic Ring",ring2="Chirich Ring",
-                                        back="Cichol's Mantle",waist="Ioskeha Belt",legs="Odyssean Cuisses",feet="Valorous Greaves"}
+                                        back ="Grounded Mantle",waist="Ioskeha Belt",legs="Odyssean Cuisses",feet="Valorous Greaves"}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
                               head="Sulevia's Mask +1",neck="Loricate Torque +1", ear1="Brutal Earring",ear2="Telos Earring",
@@ -77,61 +80,62 @@ function get_sets()
                 sets.TP.DTAccuracy = {ammo="Ginsen",
                                       head="Sulevia's Mask +1",neck="Lissome Necklace", ear2="Telos Earring",ear1="Cessance Earring",    
 									  body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Petrov Ring",ring2="Rajas Ring",
-                                      back="Cichol's Mantle",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
+                                      back ="Grounded Mantle",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
                                                          
 									
        --Weaponskill Sets--
         sets.WS = {}
        
-        sets.Resolution = {}
+        sets.Stardiver = {}
 		
-		sets.Resolution.Index ={'Attack'}
+		sets.Stardiver.Index ={'Attack'}
 		
-		Reso_ind= 1
+		Stardiver_ind= 1
 		
-		sets.Resolution.Attack = {ammo="Seething Bomblet +1",
-                                    head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Petrov Ring",ring2="Rufescent Ring",
-                                    back="Cichol's Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Valorous Greaves"}
+		sets.Stardiver.Attack = {ammo="Amar Cluster",
+                                    head="Valorous Mask", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
+                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Rufescent Ring",
+                                    back ="Grounded Mantle",waist="Fotia Belt",legs="Valorous Hose",feet="Valorous Greaves"}
 		
-                                                           
-        sets.Ukkos = {} 
-		sets.Ukkos.Index ={'Attack'}
+		sets.ImpulseDrive = {}
 		
-		Ukkos_Ind = 1
+		sets.ImpulseDrive.Index ={'Attack'}
 		
-		sets.Ukkos.Atack = {ammo="Yetshila",
-                                    head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Petrov Ring",ring2="Begrudging Ring",
-                                    back="Cichol's Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Thereoid Greaves"}
-
-		sets.KJ = {}
-		sets.KJ.Index ={'Attack'}
+		ImpulseDrive_ind= 1
 		
-		KJ_Ind= 1
-		
-		sets.KJ.Attack = {ammo="Seething Bomblet +1",
-                                    head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Petrov Ring",ring2="Rajas Ring",
-                                    back="Cichol's Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Valorous Greaves"}
+		sets.ImpulseDrive.Attack = {ammo="Amar Cluster",
+                                    head="Valorous Mask", neck="Caro Necklace", ear1="Moonshade Earring",ear2="Telos Earring",
+                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Rufescent Ring",
+                                    back ="Grounded Mantle",waist="Grunfeld Rope",legs="Valorous Hose",feet="Valorous Greaves"}
 									
-    	sets.Upheavel = {}
-		sets.Upheavel.Index ={'Attack'}
-		Upheavel_ind= 1
-		sets.Upheavel.Attack = {ammo="Brigantia Pebble", head="Sulevia's Mask +1",neck="Tjukurrpa medal", ear1="Moonshade Earring",ear2="Telos Earring",
-									  body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Petrov Ring",ring2="Supershear Ring",
-                                      back="Cichol's Mantle",waist="Fotia Belt",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
-        
-		sets.SB ={}
-		sets.SB.Attack = {ammo="Seething Bomblet +1",
-                                    head="Boii Mask +1", neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Petrov Ring",ring2="Rajas Ring",
-                                    back="Cichol's Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Sulevia Leggins +1" }
+									
+		sets.CT = {}
+		
+		sets.CT.Index ={'Attack'}
+		
+		CT_ind= 1
+		
+		sets.CT.Attack = {ammo="Amar Cluster",
+                                    head="Valorous Mask", neck="Caro Necklace", ear1="Moonshade Earring",ear2="Telos Earring",
+                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Rufescent Ring",
+                                    back ="Grounded Mantle",waist="Grunfeld Rope",legs="Valorous Hose",feet="Valorous Greaves"}
+									
+		sets.Drakesbane = {}
+		
+		sets.Drakesbane.Index ={'Attack'}
+		
+		Drakesbane= 1
+		
+		sets.Drakesbane.Attack = {ammo="Amar Cluster",
+                                    head="Valorous Mask", neck="Caro Necklace", ear1="Moonshade Earring",ear2="Telos Earring",
+                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Rufescent Ring",
+                                    back ="Grounded Mantle",waist="Grunfeld Rope",legs="Valorous Hose",feet="Thereoid Greaves"}
+	
         --Ninja Magic Sets--
         sets.NINMagic = {}
        				
 	    sets.NINMagic.Utsusemi ={
-                              head="Dampening Tam",neck="Loricate Torque +1", ear1="Brutal Earring",ear2="Cessance Earring",
+                              head="Dampening Tam",neck="Loricate Torque +1", ar1="Brutal Earring",ear2="Cessance Earring",
                               body="Emet harness +1",hands="Sulevia's Gauntlets +1",ring1="Gelatinous Ring +1",ring2="Petrov Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Herculean Trousers",feet="Valorous Greaves"}
  
@@ -153,7 +157,7 @@ function get_sets()
                                                         back="Swith cape",waist="Pythia sash +1",legs="Portent pants",feet="Valorous Greaves"}
                                                        
         sets.Utility.Steps = {ammo="Ginsen",
-							head="Boii Mask +1", body="Emicho Haubert", hands="Rawhide Gloves",legs=="Odyssean Cuisses", feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",  back="Cichol's Mantle",}
+							head="Boii Mask +1", body="Emicho Haubert", hands="Rawhide Gloves",legs=="Odyssean Cuisses", feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",  back ="Grounded Mantle",}
                                                  
 		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
 		
@@ -161,22 +165,29 @@ function get_sets()
         --Job Ability Sets--
        
         sets.JA = {}
-               
-		sets.JA.Berserk ={back = "Cichol's Mantle",feet = "Warrior's Calligae +2"}
-
-		sets.JA.Aggressor = { body = "Warrior's Lorcia +2"}
-		
-		sets.JA.Warcry = {head = "Agoge Mask"}		
-		
-		sets.JA.MightyStrikes = {hands = "Warrior's Muffler +2"}
-		
-		sets.JA.Ret ={}
-		
-		sets.JA.BloodRage ={body ="Ravager's Lorica +2"}
-		
-		sets.JA.Tomahawk = {ammo = "Throwing Tomahawk",feet = "Warrior's Calligae +2"}
-
-		sets.JA.Restraint ={}
+		sets.JA.Jump = { ammo="Ginsen",
+						head="Sulevia's Mask +1",
+						body={ name="Emicho Haubert", augments={'HP+50','DEX+10','Accuracy+15',}},
+						hands={ name="Emicho Gauntlets", augments={'HP+50','DEX+10','Accuracy+15',}},
+						legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
+						feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
+						neck="Lissome Necklace",
+						waist="Ioskeha Belt",
+						left_ear="Cessance Earring",
+						right_ear="Telos Earring",
+						left_ring="Petrov Ring",
+						right_ring="Chirich Ring",
+						back ="Grounded Mantle"}
+	
+		sets.JA.Angon = {ammo="Angon",ear1="Dragoon's Earring",hands="Ptero. Fin. G. +1"} -- Angon, Relic Hands, and that dumb earring in Mamook if you feel like it
+		sets.JA.AncientCircle = {legs="Vishap Brais +1"} -- Artifact Legs
+	
+		sets.JA.SpiritLink = {head="Vishap Armet +1",ear1="Pratik Earring",hands="Pel. Vambraces +1",feet="Ptero. Greaves +1"} -- Spirit Link/Empathy gear go here
+		sets.JA.SpiritSurge = {neck="Chanoix's Gorget",ear1="Anastasi Earring",ear2="Lancer's Earring",
+					body="Ptero. Mail +1",hands="Despair Fin. Gaunt.", 
+					back="Updraft Mantle",legs="Vishap Brais +1",feet="Ptero. Greaves +1"} -- Relic Body and Wyvern HP go here
+		sets.JA.SteadyWing = sets.JA.SpiritSurge -- Wyvern HP
+		sets.JA.SteadyWing['Body'] = "Emicho Haubert" -- Path D Emicho Haubert
         --Precast Sets--
         sets.precast = {}
        
@@ -187,6 +198,11 @@ function get_sets()
 						    feet="Amalric Nails",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
 						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Weatherspoon ring", back="Swith Cape"}
        
+	   sets.Breath = {ammo="Staunch Tathlum",
+				   head="Ptero. Armet +1",neck="Lancer's Torque",ear1="Anastasi Earring",ear2="Lancer's Earring",
+				   body="Emicho Haubert",hands="Despair Fin. Gaunt.",
+				   back="Updraft Mantle",waist="Glassblower's Belt",legs="Vishap Brais +1",feet="Ptero. Greaves +1"}
+
 end
  
   
@@ -195,54 +211,64 @@ function precast(spell)
                 equip(sets.precast.FC.Standard)
          end
               
-        if spell.english == 'Resolution' or spell.english == 'Shockwave' or spell.english == 'Stardiver' then
-                equip(sets.Resolution.Attack)
-        end
-       
-        if spell.english == "Ukko's Fury" then
-                equip(sets.Ukkos.Attack)
+        if spell.english == 'Stardiver' then
+                equip(sets.Stardiver.Attack)
         end
 		
-		if spell.english == 'Savage Blade' or spell.english == 'Ground Strike' or spell.english == 'Steel Cyclone' then
-			equip(sets.SB.Attack)
+		if spell.english == 'Impulse Drive' then
+			equip(sets.ImpulseDrive.Attack)
 		end
 		
-		if spell.english == "King's Justice"  then
-                equip(sets.KJ.Attack)
-        end
-		
-		if spell.english == "Upheaval" or spell.english =='Scourge' then
-			equip(sets.Upheavel.Attack)
+		if spell.english == 'Drakesbane' then
+			equip(sets.Drakesbane.Attack)
 		end
 		
-		if spell.english =='Berserk' then
-			equip(sets.JA.Berserk)
+		if spell.english == "Camlann's Torment" then
+			equip(sets.CT.Attack)
 		end
-		
-		if spell.english =='Aggressor' then
-			equip(sets.JA.Aggressor)
-		end
-		
-		if spell.english =='Warcry' then
-			equip(sets.JA.Warcry)
-		end
-		
-		if spell.english =='Tomahawk' then
-			equip(sets.JA.Tomahawk)
-		end
-		
-		if spell.english =='Bloodrage' then
-			equip(sets.JA.BloodRage)
-		end
-		
-		if spell.english =='Mighty Strikes' then
-			equip(sets.JA.MightyStrikes)
-		end
-		
+				
         if spell.english == 'Box Step' then
                 equip(sets.Utility.Steps)
         end
-       
+    if spell.name == 'Dismiss' and pet.hpp < 100 then		
+		cancel_spell()
+		windower.add_to_chat(50,'  '..pet.name..' is below full HP (<pethpp>), cancelling Dismiss!')
+	elseif spell.name == 'Call Wyvern' then
+		if pet.isvalid then
+		cancel_spell()
+		send_command('input /ja "Spirit Link" <me>')
+		else
+		equip(sets.JA.SpiritSurge) -- Relic Body goes here; can just use Spirit Surge set if you have it augmented
+		end
+	elseif spell.name == 'Spirit Surge' then
+		equip(sets.JA.SpiritSurge)
+	elseif spell.name == 'Steady Wing' then
+		equip(sets.JA.SteadyWing)
+	elseif spell.name == 'Angon' then
+		equip(sets.JA.Angon)
+	elseif spell.name == 'Ancient Circle' then
+		equip(sets.JA.AncientCircle)
+	elseif spell.name == 'Spirit Link' then
+		if pet.isvalid then
+			equip(sets.JA.SpiritLink)
+		else
+			cancel_spell()
+			send_command('input /ja "Call Wyvern" <me>')
+		end
+	elseif string.find(spell.name,"Jump") == 'Jump' then
+		if not pet.isvalid then 
+			if spell.name == "Spirit Jump" then
+				cancel_spell()
+				send_command('input /ja "Jump" <t>')
+				return
+			elseif spell.name == "Soul Jump" then
+				cancel_spell()
+				send_command('input /ja "High Jump" <t>')
+				return
+			end
+		end
+		equip(sets.JA.Jump)
+	end
 end
        
 function midcast(spell,act)
@@ -273,6 +299,23 @@ function midcast(spell,act)
                 equip(sets.NINMagic.Utsusemi)
         end
 end	
+
+-- Pet Change: Occurs when your Pet is summoned or killed.
+function pet_change(pet,gain)
+	if gain == false and pet.name then
+		-- General announcement for when your Wyvern is killed, Dimissed, or eaten by Spirit Surge
+		windower.add_to_chat(50,' *** '..string.upper(pet.name)..' IS DEAD YO ***') 
+	end
+end
+
+-- Pet Midcast: If GearSwap sees your pet readying a WS, this occurs
+function pet_midcast(spell)
+	if string.find(spell.name,' Breath') then
+		--equip(sets.Breath)		
+		windower.send_command('wait 1.2;gs c petcast')
+		-- Wyvern Breath Delay: 1.25s http://forum.square-enix.com/ffxi/threads/47481
+	end
+end
  
 function aftercast(spell)
         if player.status == 'Engaged' then
