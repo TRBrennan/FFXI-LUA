@@ -203,7 +203,7 @@ function get_sets()
         sets.precast.FC = {}
        
        sets.precast.FC.Standard = {  
-							head="Carmine Mask",  body="Taeon Tabard",  hands="Leyline Gloves",   legs="Lengo Pants",
+							head="Carmine Mask",  body="Taeon Tabard",  hands="Leyline Gloves",   legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},
 						    feet="Carmine Greaves",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
 						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Prolix ring", back="Swith Cape"}
 		--Ninja Magic Sets--

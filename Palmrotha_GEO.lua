@@ -121,7 +121,7 @@ function get_sets()
 	ammo="Witchstone",
 				head="Welkin Crown", neck="Eddy Necklace", ear1="Strophadic Earring", ear2="Friomisi Earring",
                 body="Azimuth Coat +1", hands="Amalric gages", ring1="Acumen Ring", ring2="Vertigo Ring",
-                back="Toro Cape", waist="Refoccillation Stone", legs="Amalric slops", feet="Helios boots"}
+                back="Toro Cape", waist="Refoccillation Stone", legs="Amalric slops", feet="Merlinic Crackows"}
         
     sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
 
