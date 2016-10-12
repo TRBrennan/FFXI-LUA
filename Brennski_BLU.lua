@@ -49,8 +49,8 @@ function get_sets()
         --TP Sets--
         sets.TP = {}
  
-           sets.TP.index = {'Standard', 'AccuracyMid', 'AccuracyFull', 'DT', 'DTAccuracy', 'LearnBlu'}
-                --1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy, 7=LearnBlu--
+           sets.TP.index = {'Standard', 'AccuracyMid', 'AccuracyFull', 'DT', 'DTAccuracy'}
+                --1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy--
 				
                 TP_ind = 1
 				sets.TP.Standard = { ammo="Ginsen",
@@ -79,16 +79,7 @@ function get_sets()
 									  body="Emet harness +1",hands="Herculean Gloves",ring1="Defending ring",ring2="Vocane Ring",
                                       back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},waist="Flume belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                          
-                 sets.TP.DW = {ammo="Ginsen",
-                                    head="Adhemar Bonnet", neck="Sanctity Necklace", ear1="Dudgeon earring", ear2="Heartseeker earring",
-                                    body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Petrov Ring",ring2="Epona's Ring",
-                                    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},waist="windbuffet belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }                                                        
-
-				sets.TP.LearnBlu = {ammo="Mavi tathlum",
-                                    head="Adhemar Bonnet", neck="Sanctity Necklace", ear1="Suppanomimi", ear2="Cessance Earring",
-                                    body="Assimilator's Jubbah",hands="Magus Bazubands",ring1="Petrov Ring",ring2="Epona's Ring",
-                                    back="Cornflower Cape",waist="windbuffet belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }  
-									
+                 
        --Weaponskill Sets--
         sets.WS = {}
        

@@ -33,7 +33,7 @@ function get_sets()
                                       head="Rawhide Mask",neck="Sanctity Necklace", ear1="Genmei earring",ear2="Infused Earring",
                                       body="Runeist coat +1",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},
 									  ring1="Defending ring",ring2="Vocane Ring",
-                                      back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}},
+                                      back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+8','Enmity+10',}},
 									  waist="Fucho-no-obi",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'CHR+6','STR+14','"Refresh"+1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}}}
 									  
 			    sets.Idle.Cleave = { ammo ="Staunch Tathlum",
@@ -69,7 +69,7 @@ function get_sets()
 								right_ear="Etiolation Earring",
 								left_ring="Defending Ring",
 								right_ring="Vocane Ring",
-								back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}},
+								back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+8','Enmity+10',}},
 							}	
                                                        
                 sets.TP.DT = {main ="Lionheart", ammo="Amar Cluster",
@@ -182,11 +182,11 @@ function get_sets()
 										 
 				sets.Utility.Enmity = {ammo="Sapience Orb",head="Rapid Visor",neck="Warder's Charm",ear2 ="Friomisi Earring", ear1="Genmei earring",
                                             body="Emet harness +1",hands="Kurys Gloves", waist ="Kasiri Belt", ring1='Supershear Ring', ring2='Petrov Ring',
-                                            legs="Erilaz Leg Guards +1",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}}}						
+                                            legs="Erilaz Leg Guards +1",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+8','Enmity+10',}}}						
 				
 				sets.Utility.Enhancing = {ammo="Sapience Orb",head="Erilaz Galea",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear1="Genmei earring",
                                             body="Emet harness +1",hands="Kurys Gloves", waist ="Olympus Sash", ring1='"Stikini Ring"', ring2='Supershear Ring',
-                                            legs="Carmine Cuisses",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}}}	
+                                            legs="Carmine Cuisses",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+8','Enmity+10',}}}	
 											
 				sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
                                
@@ -213,7 +213,7 @@ function get_sets()
 								 feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
        
                 sets.JA.Vallation = {body="Runeist coat +1",																
-									back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}}}
+									back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+8','Enmity+10',}}}
                                                          
                 sets.JA.Battuta = {head="Futhark bandeau +1"}
        
@@ -238,7 +238,7 @@ function get_sets()
 				
 				sets.precast.FC.Enmity = {ammo="Sapience Orb",head="Carmine Mask",neck="Warder's Charm", ear1="Loquac. Earring", ear2="Etiolation Earring",
                                             body="Vrikodara Jupon",hands="Leyline Gloves", waist ="Kasiri Belt", left_ring="Rahab Ring", right_ring="Prolix ring",
-                                            legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},feet="Carmine Greaves", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+4','Enmity+10',}}}							 
+                                            legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},feet="Carmine Greaves", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+8','Enmity+10',}}}							 
 end
     
 function precast(spell)       

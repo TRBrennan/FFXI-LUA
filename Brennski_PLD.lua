@@ -313,7 +313,7 @@ end
 function midcast(spell,act)
         
 		if spell.english == 'Flash' then
-		 eequip(set_combine(sets.Utility.Enmity,sets.Magic.Flash))
+		 equip(set_combine(sets.Utility.Enmity,sets.Magic.Flash))
 		 end
 		
 		if spell.skill =='Enhancing Magic' then
@@ -334,6 +334,9 @@ function midcast(spell,act)
 		
 		if spell.english == 'Phalanx' then
 			equip(set_combine(sets.Utility.Enmity,sets.Magic.Phalanx))
+		end
+		if spell.skill =='Blue Magic' then
+			equip(sets.Utility.Enmity)
 		end
 end	
  
