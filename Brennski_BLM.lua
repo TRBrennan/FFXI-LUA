@@ -63,7 +63,7 @@ function get_sets()
 		
 		sets.WS.Myrkr ={ammo="Strobilus",
                                  head="Pixie Hairpin +1",neck="Sanctity Necklace",ear2="Etiolation Earring", ear1="Barkarole Earring",
-                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Mephitas's Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
+                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Mephitas's Ring", ring2 ="Rahab Ringd", waist ="Refoccilation Stone",
                                  back="Taranus's Cape",legs="Amalric Slops",feet="Amalric Nails"}
 										
 		
