@@ -58,7 +58,7 @@ function get_sets()
 		
 		sets.WS.Myrkr ={ammo="Strobilus",
                                  head="Pixie Hairpin +1",neck="Sanctity Necklace",ear2="Etiolation Earring", ear1="Barkarole Earring",
-                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Mephitas's Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
+                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Mephitas's Ring", ring2 ="Rahab Ring", waist ="Refoccilation Stone",
                                  back="Bane Cape",legs="Amalric Slops",feet="Amalric Nails"}	
 										
 		
@@ -125,7 +125,7 @@ function get_sets()
 								 
 			sets.Magic.Stun ={ammo="Pemphredo Tathlum",head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
 							neck="Voltsurge Torque", waist ="Luminary Sash", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
-							 left_ring="Rahab Ring", right_ring="Sangoma Ring",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}, 
+							 left_ring="Rahab Ring", right_ring="Kishar Ring",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}, 
 							 body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},legs="Psycloth Lappas", back ="Lugh's Cape"}
 
 		--Precast Sets--
