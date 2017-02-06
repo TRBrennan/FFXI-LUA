@@ -169,11 +169,11 @@ function get_sets()
                 sets.Utility = {}
                                                                        
                 sets.Utility.Phalanx = {ammo ="Sapience Orb", head="Futhark bandeau +1",neck="Incanter's Torque",ear2 ="Andoaa Earring", ear1="Genmei earring",
-                                            body="Emet harness +1",hands="Kurys Gloves", waist ="Olympus Sash", ring1="Stikini Ring", ring2='Supershear Ring',
+                                            body="Emet harness +1",hands="Runeist mitons +2", waist ="Olympus Sash", ring1="Stikini Ring", ring2='Supershear Ring',
                                             legs="Carmine Cuisses",feet="Erilaz Greaves +1", back="Evasionist's cape"}
                                                          
                 sets.Utility.Regen = {head="Runeist Bandeau",neck="Incanter's Torque",ear1="Genmei earring",ear2="Augment. earring",
-                                      body="Futhark coat",hands="Runeist mitons +1",ring1="Rahab ring", ring2='Supershear Ring',
+                                      body="Futhark coat",hands="Runeist mitons +2",ring1="Rahab ring", ring2='Supershear Ring',
                                       back="Swith cape",waist="Pythia sash +1",legs="Futhark trousers",feet="Runeist bottes"}
                                                          
                 sets.Utility.SID = {ammo ="Staunch Tathlum", head="Herculean Helm",neck="Incanter's Torque",ear1="Genmei earring", ear2 = "Halasz Earring",
@@ -185,7 +185,7 @@ function get_sets()
                                             legs="Erilaz Leg Guards +1",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}						
 				
 				sets.Utility.Enhancing = {ammo="Sapience Orb",head="Erilaz Galea",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear1="Genmei earring",
-                                            body="Emet harness +1",hands="Kurys Gloves", waist ="Olympus Sash", ring1='"Stikini Ring"', ring2='Supershear Ring',
+                                            body="Emet harness +1",hands="Runeist mitons +2", waist ="Olympus Sash", ring1='"Stikini Ring"', ring2='Supershear Ring',
                                             legs="Carmine Cuisses",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}	
 											
 				sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
