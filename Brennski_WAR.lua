@@ -147,7 +147,18 @@ function get_sets()
                                                  
 		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
 		
-		sets.Utility.Enmity = {}
+		sets.Utility.Enmity = {ammo="Sapience Orb",
+								ear2 ="Friomisi Earring", 
+								back ="Weard Mantle",
+								waist ="Kasiri Belt",
+								ring2="Supershear Ring",
+								neck = "Warder's Charm",
+								hands="Souveran Handschuhs",
+								feet="Souveran Schuhs",
+								body="Souveran Cuirass",
+								ring1="Petrov Ring",
+								legs="Odyssean Cuisses",
+								head="Rabid Visor"}
 		
 		sets.Utility.Sleeping = {neck="Opo-Opo Necklace"}
         --Job Ability Sets--
@@ -217,27 +228,30 @@ function precast(spell)
 		end
 		
 		if spell.english =='Berserk' then
-			equip(sets.JA.Berserk)
+			equip(set_combine(sets.Utility.Enmity,sets.JA.Berserk))
 		end
 		
 		if spell.english =='Aggressor' then
-			equip(sets.JA.Aggressor)
+			equip(set_combine(sets.Utility.Enmity,sets.JA.Aggressor))
 		end
 		
 		if spell.english =='Warcry' then
-			equip(sets.JA.Warcry)
+			equip(set_combine(sets.Utility.Enmity,sets.JA.Warcry))
 		end
 		
 		if spell.english =='Tomahawk' then
-			equip(sets.JA.Tomahawk)
+			equip(set_combine(sets.Utility.Enmity,sets.JA.Tomahawk))
 		end
 		
 		if spell.english =='Bloodrage' then
-			equip(sets.JA.BloodRage)
+			equip(set_combine(sets.Utility.Enmity,sets.JA.BloodRage))
 		end
 		
 		if spell.english =='Mighty Strikes' then
-			equip(sets.JA.MightyStrikes)
+			equip(set_combine(sets.Utility.Enmity,sets.JA.MightyStrikes))
+		end
+		if spell.english =='Provoke' then
+			quip(sets.Utility.Enmity)
 		end
 		
         if spell.english == 'Box Step' then
