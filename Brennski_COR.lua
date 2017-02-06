@@ -151,7 +151,7 @@ function get_sets()
 		--Ranged Attack ---
 			sets.Ranged = {}
 			sets.Ranged.RangedAttack =  { ammo ="Orichalcum bullet", head="Dampening Tam",
-							neck="Sanctity Necklace",   ear2="Dignitary's Earring", ear1="Neritic Earringsa",
+							neck="Sanctity Necklace",   ear2="Telos Earring", ear1="Neritic Earringsa",
 							body="Adhemar Jacket",hands="Adhemar Wristbands", ring1="Paqichikaji Ring",ring2="Cacoethic Ring", waist ="Eschan Stone",
 							back="Gunslinger's Cape",   legs="Samnuha Tights",  feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 		
@@ -205,7 +205,7 @@ function get_sets()
        sets.precast.FC.Standard = {  
 							head="Carmine Mask",  body="Taeon Tabard",  hands="Leyline Gloves",   legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},
 						    feet="Carmine Greaves",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Prolix ring", back="Swith Cape"}
+						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Kishar Ring", back="Swith Cape"}
 		--Ninja Magic Sets--
         sets.NINMagic = {}
        

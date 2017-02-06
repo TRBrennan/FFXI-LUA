@@ -256,7 +256,7 @@ function get_sets()
 							left_ear="Etiolation Earring",
 						    right_ear="Loquac. Earring",
 							left_ring="Rahab Ring",
-							right_ring="Prolix ring", 
+							right_ring="Kishar Ring", 
 							back="Swith Cape"}
        
 end

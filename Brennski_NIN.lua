@@ -63,8 +63,8 @@ function init_gear_sets()
     -- Precast sets
     --------------------------------------
     Andartia={}
-    Andartia.MAB="Yokaze Mantle"
-    Andartia.DA= "Yokaze Mantle"
+    Andartia.MAB="Izdubar Mantle"
+    Andartia.DA= "Andartia's Mantle"
     Andartia.WSD="Yokaze Mantle"
  
     -- Precast sets to enhance JAs
@@ -96,7 +96,7 @@ function init_gear_sets()
         left_ear="Etiolation Earring",
         right_ear="Loquac. Earring",
         left_ring="Rahab Ring",
-        right_ring="Prolix ring",
+        right_ring="Kishar Ring",
         back="Mujin Mantle"}
          
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {
@@ -196,7 +196,7 @@ function init_gear_sets()
     --------------------------------------
  
     sets.midcast.FastRecast = {
-        ear2="Loquacious Earring",ring1="Prolix Ring"}
+        ear2="Loquacious Earring",ring1="Kishar Ring"}
          
     sets.midcast.SelfNinjutsu = {
         ammo="Staunch Tathlum",
@@ -209,7 +209,7 @@ function init_gear_sets()
         waist="Druid's Rope",
         left_ear="Stealth Earring",
         right_ear="Loquac. Earring",
-        left_ring="Prolix Ring",   
+        left_ring="Kishar Ring",   
         right_ring="Evanescence Ring",
         back="Mujin Mantle",}
      
@@ -223,10 +223,10 @@ function init_gear_sets()
         waist="Druid's Rope",
         left_ear="Halasz Earring",
         right_ear="Loquac. Earring",
-        left_ring="Prolix Ring",
+        left_ring="Kishar Ring",
         right_ring="Defending Ring",
         feet="Hattori Kyahan", 
-        back="Andartia Mantle"})
+        back="Andartia's Mantle"})
  
     sets.midcast.ElementalNinjutsu = 
        {ammo = "Pemphredo Tathlum",

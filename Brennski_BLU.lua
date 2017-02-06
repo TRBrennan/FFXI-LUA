@@ -195,12 +195,12 @@ function get_sets()
 
         
 		sets.BlueMagic.PhysStun = {ammo ="Amar Cluster",
-									   ear1="Moonshade Earring",ear2="Mavi Earring", ring2="Stikini Ring", Ring1="Prolix ring",  back="Cuchulain's Mantle"}         
+									   ear1="Moonshade Earring",ear2="Mavi Earring", ring2="Stikini Ring", Ring1="Kishar Ring",  back="Cuchulain's Mantle"}         
 
 										
 	    sets.BlueMagic.Debuff = {ammo="Pemphredo Tathlum",
 								  head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},ear2="Lifestorm Earring", ear1="Psystorm Earring", neck ="atzintli necklace",
-								body="Amalric Doublet",hands="Adhemar Wristbands",ring1="Prolix ring", ring2="Stikini Ring", back="Cornflower cape",
+								body="Amalric Doublet",hands="Adhemar Wristbands",ring1="Kishar Ring", ring2="Stikini Ring", back="Cornflower cape",
 								legs="Amalric Slops",feet="Amalric Nails",wait="Eschan Stone"}
 		
 				
@@ -300,7 +300,7 @@ function get_sets()
        sets.precast.FC.Standard = { ammo="Sapience Orb",
 							head="Herculean Helm",  body="Vrikodara Jupon",  hands="Leyline Gloves",   legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},
 						    feet="Carmine Greaves",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Prolix ring", back="Swith Cape"}
+						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Kishar Ring", back="Swith Cape"}
        
 end
  

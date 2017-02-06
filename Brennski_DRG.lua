@@ -62,7 +62,7 @@ function get_sets()
 									waist="Ioskeha Belt",
 									left_ear="Cessance Earring",
 									right_ear="Telos Earring",
-									left_ring="Petrov Ring",
+									left_ring="Niqmaddu Ring",
 									right_ring="Chirich Ring",
 									back ="Grounded Mantle"}
                                                        
@@ -94,7 +94,7 @@ function get_sets()
 		
 		sets.Stardiver.Attack = {ammo="Amar Cluster",
                                     head="Valorous Mask", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Rufescent Ring",
+                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
                                     back ="Grounded Mantle",waist="Fotia Belt",legs="Valorous Hose",feet="Valorous Greaves"}
 		
 		sets.ImpulseDrive = {}
@@ -105,7 +105,7 @@ function get_sets()
 		
 		sets.ImpulseDrive.Attack = {ammo="Amar Cluster",
                                     head="Valorous Mask", neck="Caro Necklace", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Rufescent Ring",
+                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
                                     back ="Grounded Mantle",waist="Grunfeld Rope",legs="Valorous Hose",feet="Valorous Greaves"}
 									
 									
@@ -117,7 +117,7 @@ function get_sets()
 		
 		sets.CT.Attack = {ammo="Amar Cluster",
                                     head="Valorous Mask", neck="Caro Necklace", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Rufescent Ring",
+                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
                                     back ="Grounded Mantle",waist="Grunfeld Rope",legs="Valorous Hose",feet="Valorous Greaves"}
 									
 		sets.Drakesbane = {}
@@ -128,7 +128,7 @@ function get_sets()
 		
 		sets.Drakesbane.Attack = {ammo="Amar Cluster",
                                     head="Valorous Mask", neck="Caro Necklace", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Rufescent Ring",
+                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
                                     back ="Grounded Mantle",waist="Grunfeld Rope",legs="Valorous Hose",feet="Thereoid Greaves"}
 	
         --Ninja Magic Sets--
@@ -196,7 +196,7 @@ function get_sets()
        sets.precast.FC.Standard = { ammo="Sapience Orb",
 							head="Herculean Helm",  body="Taeon Tabard",  hands="Leyline Gloves",   legs="Orvail Pants +1",
 						    feet="Amalric Nails",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Prolix ring", back="Swith Cape"}
+						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Kishar Ring", back="Swith Cape"}
        
 	   sets.Breath = {ammo="Staunch Tathlum",
 				   head="Ptero. Armet +1",neck="Lancer's Torque",ear1="Anastasi Earring",ear2="Lancer's Earring",

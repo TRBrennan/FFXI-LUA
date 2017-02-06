@@ -105,17 +105,17 @@ function get_sets()
 			sets.Magic.Enfeebling = {ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Barkarole Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", 
-								 ring1="Stikini Ring", ring2 ="Sangoma Ring", waist ="Luminary Sash",
-                                 back="Lugh's Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},,feet="Medium's Sabots"}
+								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
+                                 back="Lugh's Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},feet="Medium's Sabots"}
 			
 			sets.Magic.Healing = {ammo="Kalboron Stone",
                                  head="Merlinic Hood",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
                                  body="Vrikodara Jupon",hands="Telchine Gloves", ring1="Ephedra Ring", ring2 ="Sirona's Ring", waist ="Luminary Sash",
-                                 back="Solemnity Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},,feet="Pedagogy loafers"}
+                                 back="Solemnity Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},feet="Pedagogy loafers"}
 												 
 			sets.Magic.Regen = { ammo="Savant's Treatise",
                                  head="Arbatel Bonnet",neck="Incanter's Torque ",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
-                                 body="Telchine Chasuble",hands="Telchine Gloves", ring1="Stikini Ring", ring2 ="Prolix ring", waist ="Luminary Sash",
+                                 body="Telchine Chasuble",hands="Telchine Gloves", ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Bookworms's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 			
 			sets.Magic.Dark = { ammo="Pemphredo Tathlum",
@@ -133,23 +133,23 @@ function get_sets()
        
 			sets.precast.FC = {}
        
-			sets.precast.FC.Standard = {{ammo="Sapience Orb",
+			sets.precast.FC.Standard = {ammo="Sapience Orb",
 							head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
 							body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}}, 
 							hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}}, 
 							legs="Psycloth Lappas",
 						    feet={ name="Merlinic Crackows", augments={'"Fast Cast"+6','"Mag.Atk.Bns."+12',}},
 							neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
-						    right_ear ="Loquac. Earring",left_ring="Rahab Ring", right_ring="Prolix ring", back="Swith Cape"}
+						    right_ear ="Loquac. Earring",left_ring="Rahab Ring", right_ring="Kishar Ring", back="Swith Cape"}
 							
 			sets.precast.FC.Regen = { ammo="Sapience Orb",
                                  head="Telchine Cap",neck="Voltsurge Torque",right_ear="Loquac. Earring",left_ear="Etiolation Earring",
-                                 body="Telchine Chasuble",hands="Telchine Gloves", left_ring="Rahab Ring", right_ring="Prolix ring",waist="Witful Belt",
+                                 body="Telchine Chasuble",hands="Telchine Gloves", left_ring="Rahab Ring", right_ring="Kishar Ring",waist="Witful Belt",
                                  back="Lugh's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 								 
 			sets.precast.FC.Storms = { ammo="Sapience Orb",
                                  head="Telchine Cap",neck="Voltsurge Torque",right_ear="Loquac. Earring",left_ear="Etiolation Earring",
-                                 body="Telchine Chasuble",hands="Telchine Gloves", left_ring="Rahab Ring", right_ring="Prolix ring",waist="Witful Belt",
+                                 body="Telchine Chasuble",hands="Telchine Gloves", left_ring="Rahab Ring", right_ring="Kishar Ring",waist="Witful Belt",
                                  back="Swith Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 		--Utility and JA Sets --					
 		sets.Utility = {}

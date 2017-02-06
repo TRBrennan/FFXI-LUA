@@ -40,15 +40,15 @@ function get_sets()
 				
                 TP_ind = 1
 				sets.TP.Standard = {ammo="Ginsen",
-                                    head="Boii Mask +1", neck="Lissome necklace", ear1="Brutal Earring",ear2="Telos Earring",
-                                    body="Emicho Haubert",hands="Emicho Gauntlets",ring1="Petrov Ring",ring2="Chirich Ring",
+                                    head="Boii Mask +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
+                                    body="Emicho Haubert",hands="Emicho Gauntlets",ring1="Niqmaddu Ring",ring2="Chirich Ring",
                                     back="Cichol's Mantle",waist="Ioskeha Belt",legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
 									feet="Valorous Greaves"}
                                                        
                                                        
                 sets.TP.AccuracyLite = {ammo="Seethng bomblet +1",
                                         head="Boii Mask +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
-										body="Emicho Haubert",hands="Emicho Gauntlets",ring1="Petrov Ring",ring2="Cacoethic Ring",
+										body="Emicho Haubert",hands="Emicho Gauntlets",ring2="Petrov Ring",ring1="Niqmaddu Ring",
                                         back="Cichol's Mantle",waist="Ioskeha Belt",legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
 										feet="Valorous Greaves"}
        
@@ -60,13 +60,13 @@ function get_sets()
 										feet="Valorous Greaves"}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
-                              head="Sulevia's Mask +1",neck="Loricate Torque +1", ear1="Brutal Earring",ear2="Telos Earring",
+                              head="Sulevia's Mask +1",neck="Loricate Torque +1", ear1="Cessance Earring",ear2="Telos Earring",
                               body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Defending  Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
                                  
                 sets.TP.DTAccuracy = {ammo="Ginsen",
                                       head="Sulevia's Mask +1",neck="Lissome Necklace", ear2="Telos Earring",ear1="Cessance Earring",    
-									  body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Petrov Ring",ring2="Rajas Ring",
+									  body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Niqmaddu Ring",ring2="Rajas Ring",
                                       back="Cichol's Mantle",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
                                                          
 									
@@ -81,7 +81,7 @@ function get_sets()
 		
 		sets.Resolution.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Petrov Ring",ring2="Rufescent Ring",
+                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
                                     back="Cichol's Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Valorous Greaves"}
 		
                                                            
@@ -92,7 +92,7 @@ function get_sets()
 		
 		sets.Ukkos.Atack = {ammo="Yetshila",
                                     head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Petrov Ring",ring2="Begrudging Ring",
+                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Begrudging Ring",
                                     back="Cichol's Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Thereoid Greaves"}
 
 		sets.KJ = {}
@@ -102,20 +102,20 @@ function get_sets()
 		
 		sets.KJ.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Petrov Ring",ring2="Rajas Ring",
+                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rajas Ring",
                                     back="Cichol's Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Valorous Greaves"}
 									
     	sets.Upheavel = {}
 		sets.Upheavel.Index ={'Attack'}
 		Upheavel_ind= 1
 		sets.Upheavel.Attack = {ammo="Brigantia Pebble", head="Sulevia's Mask +1",neck="Tjukurrpa medal", ear1="Moonshade Earring",ear2="Telos Earring",
-									  body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Petrov Ring",ring2="Supershear Ring",
+									  body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Petrov Ring",ring2="Niqmaddu Ring",
                                       back="Cichol's Mantle",waist="Fotia Belt",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
         
 		sets.SB ={}
 		sets.SB.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Petrov Ring",ring2="Rajas Ring",
+                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rajas Ring",
                                     back="Cichol's Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Sulevia Leggings +1" }
         --Ninja Magic Sets--
         sets.NINMagic = {}
@@ -146,6 +146,8 @@ function get_sets()
 							head="Boii Mask +1", body="Emicho Haubert", hands="Rawhide Gloves",legs=="Odyssean Cuisses", feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",  back="Cichol's Mantle",}
                                                  
 		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
+		
+		sets.Utility.Enmity = {}
 		
 		sets.Utility.Sleeping = {neck="Opo-Opo Necklace"}
         --Job Ability Sets--
@@ -183,7 +185,7 @@ function get_sets()
 							left_ear="Etiolation Earring",
 						    right_ear="Loquac. Earring",
 							left_ring="Rahab Ring",
-							right_ring="Prolix ring", 
+							right_ring="Kishar Ring", 
 							back="Swith Cape"}
        
 end
@@ -194,7 +196,7 @@ function precast(spell)
                 equip(sets.precast.FC.Standard)
          end
               
-        if spell.english == 'Resolution' or spell.english == 'Shockwave' or spell.english == 'Stardiver' then
+        if spell.english == 'Resolution' or spell.english == 'Shockwave' or spell.english == 'Stardiver' or spell.english == 'Ruinator' then
                 equip(sets.Resolution.Attack)
         end
        
