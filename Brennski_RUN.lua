@@ -31,7 +31,7 @@ function get_sets()
                                
                 sets.Idle.Standard = {ammo="Homiliary",
                                       head="Rawhide Mask",neck="Sanctity Necklace", ear1="Genmei earring",ear2="Infused Earring",
-                                      body="Runeist coat +2",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},
+                                      body="Runeist's coat +2",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},
 									  ring1="Defending ring",ring2="Vocane Ring",
                                       back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},
 									  waist="Fucho-no-obi",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'CHR+6','STR+14','"Refresh"+1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}}}
@@ -45,8 +45,8 @@ function get_sets()
    			   --TP Sets--
                 sets.TP = {}
         
-                sets.TP.index = {'Standard', 'Tank', 'DT', 'DTAccuracy'}
-                --1=Standard, 2 = Tank,3=DT, 4=DTAccuracy--
+                sets.TP.index = {'Standard', 'PDTank', 'MDTank', 'DT', 'DTAccuracy'}
+                --1=Standard, 2 = Tank,3=MDTtank, 4=DT 5=DTAccuracy--
  			   TP_ind = 1
 				sets.TP.Standard = { main ="Lionheart",sub ="Nepenthe Grip",ammo="Ginsen",
                                     head="Skormoth Mask", neck="Lissome necklace", ear2="Telos Earring", ear1="Cessance earring", 
@@ -55,7 +55,7 @@ function get_sets()
 									waist="Ioskeha Belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                        
                                                        
-                sets.TP.Tank = {main={ name="Aettir", augments={'Accuracy+70','Mag. Evasion+50','System: 2 ID: 114 Val: 9',}},
+                sets.TP.PDTank = {main={ name="Aettir", augments={'Accuracy+70','Mag. Evasion+50','System: 2 ID: 114 Val: 9',}},
 								sub="Refined Grip +1",
 								ammo="Staunch Tathlum",
 								head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
@@ -71,6 +71,23 @@ function get_sets()
 								right_ring="Vocane Ring",
 								back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},
 							}	
+				
+				sets.TP.MDTank = {main={ name="Aettir", augments={'Accuracy+70','Mag. Evasion+50','System: 2 ID: 114 Val: 9',}},
+								sub="Refined Grip +1",
+								ammo="Staunch Tathlum",
+								head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
+								body="Futhark Coat +1",
+								hands="Kurys Gloves",
+								legs="Eri. Leg Guards +1",
+								feet="Erilaz Greaves +1",
+								neck="Loricate Torque +1",
+								waist="Flume Belt +1",
+								left_ear="Genmei Earring",
+								right_ear="Etiolation Earring",
+								left_ring="Defending Ring",
+								right_ring="Vocane Ring",
+								back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},
+							}
                                                        
                 sets.TP.DT = {main ="Lionheart", ammo="Amar Cluster",
                               head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Cessance earring", 
@@ -173,14 +190,14 @@ function get_sets()
                                             legs="Carmine Cuisses",feet="Erilaz Greaves +1", back="Evasionist's cape"}
                                                          
                 sets.Utility.Regen = {head="Runeist Bandeau",neck="Incanter's Torque",ear1="Genmei earring",ear2="Augment. earring",
-                                      body="Futhark coat",hands="Runeist mitons +2",ring1="Rahab ring", ring2='Supershear Ring',
+                                      body="Futhark coat",hands="Runeist's mitons +2",ring1="Rahab ring", ring2='Supershear Ring',
                                       back="Swith cape",waist="Pythia sash +1",legs="Futhark trousers",feet="Runeist bottes"}
                                                          
                 sets.Utility.SID = {ammo ="Staunch Tathlum", head="Herculean Helm",neck="Incanter's Torque",ear1="Genmei earring", ear2 = "Halasz Earring",
                                          body="Emet Harness +1",hands="Herculean Gloves",ring1="Evanescence Ring", ring2='Supershear Ring',
                                          back="Evasionist cape",waist="Flume Belt +1",legs="Carmine Cuisses",feet="Erilaz Greaves +1" }
 										 
-				sets.Utility.Enmity = {ammo="Sapience Orb",head="Rapid Visor",neck="Warder's Charm",ear2 ="Friomisi Earring", ear1="Genmei earring",
+				sets.Utility.Enmity = {ammo="Sapience Orb",head="Rabid Visor",neck="Unmoving Collar",ear2 ="Friomisi Earring", ear1="Genmei earring",
                                             body="Emet harness +1",hands="Kurys Gloves", waist ="Kasiri Belt", ring1='Supershear Ring', ring2='Petrov Ring',
                                             legs="Erilaz Leg Guards +1",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}						
 				
@@ -212,12 +229,12 @@ function get_sets()
 								 legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
 								 feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
        
-                sets.JA.Vallation = {body="Runeist coat +2",																
+                sets.JA.Vallation = {body="Runeist's coat +2",																
 									back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}
                                                          
                 sets.JA.Battuta = {head="Futhark bandeau +1"}
        
-                sets.JA.Gambit = {hands="Runeist mitons +2", waist ="Chaac Belt"}
+                sets.JA.Gambit = {hands="Runeist's mitons +2", waist ="Chaac Belt"}
        
                 sets.JA.Pflug = {feet="Runeist bottes",}
 											
@@ -228,7 +245,7 @@ function get_sets()
        
                 sets.precast.FC = {}
        
-                sets.precast.FC.Standard = {ammo="Sapience Orb",head="Carmine Mask",neck="Warder's Charm", ear1="Loquac. Earring",ear2="Etiolation Earring",
+                sets.precast.FC.Standard = {ammo="Sapience Orb",head="Carmine Mask",neck="Unmoving Collar", ear1="Loquac. Earring",ear2="Etiolation Earring",
                                             body="Vrikodara Jupon",hands="Leyline Gloves", waist ="Kasiri Belt",left_ring="Rahab Ring", right_ring="Kishar Ring",
                                             legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},feet="Carmine Greaves", back="Swith cape"}
                                                                        
@@ -236,7 +253,7 @@ function get_sets()
                                              body="Vrikodara Jupon",hands="Leyline Gloves", left_ring="Rahab Ring", right_ring="Kishar Ring",
                                              legs="Futhark trousers",feet="Carmine Greaves"}
 				
-				sets.precast.FC.Enmity = {ammo="Sapience Orb",head="Carmine Mask",neck="Warder's Charm", ear1="Loquac. Earring", ear2="Etiolation Earring",
+				sets.precast.FC.Enmity = {ammo="Sapience Orb",head="Carmine Mask",neck="Unmoving Collar", ear1="Loquac. Earring", ear2="Etiolation Earring",
                                             body="Vrikodara Jupon",hands="Leyline Gloves", waist ="Kasiri Belt", left_ring="Rahab Ring", right_ring="Kishar Ring",
                                             legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},feet="Carmine Greaves", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}							 
 end
@@ -246,7 +263,7 @@ function precast(spell)
                 equip(sets.precast.FC.Enhancing)				
         end
        
-        if spell.action_type == 'Ninjutsu' then
+        if spell.skill == 'Ninjutsu' then
                 equip(sets.precast.FC.Standard)				
         end
 		
@@ -266,7 +283,7 @@ function precast(spell)
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Vallation))
         end
 		
-		if spell.english=='Flash' then	
+		if spell.english=='Flash'  or spell.skill == 'Enfeebling Magic' or spell.english == 'Foil' then	
 				equip(sets.precast.FC.Enmity)				
 		end
        
@@ -274,7 +291,7 @@ function precast(spell)
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Battuta))			
         end
        
-	     if spell.english == 'Leiment' then
+	     if spell.english == 'Leiment' or spell.english == 'Elemental Sforzo' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Leiment))			
         end
 		
@@ -357,7 +374,7 @@ function midcast(spell,act)
 			
         end
 		
-		if spell.english =='Flash' or spell.english == 'Crusade' or spell.english == 'Foil' or spell.skill =='Blue Magic' then	
+		if spell.english =='Flash' or spell.english == 'Crusade' or spell.english == 'Foil' or spell.skill =='Blue Magic' or spell.skill == 'Enfeebling Magic' or spell.skill == 'Dark Magic' then	
 				equip(sets.Utility.Enmity)
 				
 		end

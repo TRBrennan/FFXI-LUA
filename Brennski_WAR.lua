@@ -82,7 +82,7 @@ function get_sets()
 		sets.Resolution.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
                                     body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
-                                    back="Cichol's Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Valorous Greaves"}
+                                    back="Cichol's Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Argosy Sollerets +1"}
 		
                                                            
         sets.Ukkos = {} 
@@ -103,7 +103,7 @@ function get_sets()
 		sets.KJ.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
                                     body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rajas Ring",
-                                    back="Cichol's Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Valorous Greaves"}
+                                    back="Cichol's Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Argosy Sollerets +1"}
 									
     	sets.Upheavel = {}
 		sets.Upheavel.Index ={'Attack'}
@@ -116,7 +116,7 @@ function get_sets()
 		sets.SB.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
                                     body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rajas Ring",
-                                    back="Cichol's Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Sulevia Leggings +1" }
+                                    back="Cichol's Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Argosy Sollerets +1" }
         --Ninja Magic Sets--
         sets.NINMagic = {}
        				
@@ -152,7 +152,7 @@ function get_sets()
 								back ="Weard Mantle",
 								waist ="Kasiri Belt",
 								ring2="Supershear Ring",
-								neck = "Warder's Charm",
+								neck = "Unmoving Collar",
 								hands="Souveran Handschuhs",
 								feet="Souveran Schuhs",
 								body="Souveran Cuirass",

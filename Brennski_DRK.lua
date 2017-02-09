@@ -99,7 +99,7 @@ function get_sets()
 		sets.Resolution.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
                                     body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
-                                    back="Grounded Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Valorous Greaves"}
+                                    back="Grounded Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Argosy Sollerets +1"}
 		
                                                            
         sets.Ukkos = {} 
@@ -120,7 +120,7 @@ function get_sets()
 		sets.KJ.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
                                     body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rajas Ring",
-                                    back="Grounded Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Valorous Greaves"}
+                                    back="Grounded Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Argosy Sollerets +1"}
 									
     	sets.Upheavel = {}
 		sets.Upheavel.Index ={'Attack'}

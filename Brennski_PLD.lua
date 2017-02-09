@@ -217,7 +217,7 @@ function get_sets()
 								back ="Weard Mantle",
 								waist ="Kasiri Belt",
 								ring2="Supershear Ring",
-								neck = "Warder's Charm",
+								neck = "Unmoving Collar",
 								hands="Souveran Handschuhs",
 								feet="Souveran Schuhs",
 								body="Souveran Cuirass",

@@ -47,7 +47,7 @@ function get_sets()
                 --1=Standard--
 				
                 TP_ind = 1
-				sets.TP.Standard = {ammo ="Ginsen", head ="Ayanmo Zucchetto +1", body ="Ayanmo Corazza", neck="Lissome Necklace", ear1 ="Suppanomimi", ear2 ="Telos Earring",ring1, ring2="Chirich Ring",
+				sets.TP.Standard = {ammo ="Ginsen", head ="Ayanmo Zucchetto +1", body ="Ayanmo Corazza", neck="Lissome Necklace", ear1 ="Suppanomimi", ear2 ="Telos Earring",ring1="Petrov Ring", ring2="Chirich Ring",
 									hands ="Ayanmo Manopolas +1", legs ="Carmine Cuisses", feet ="Carmine Greaves", back = "Grounded Mantle", waist ="Kentarch Belt +1" }
 						
 		
@@ -236,7 +236,7 @@ end
 function midcast(spell,act)
 
 		if spell.skill =='Enhancing Magic' then
-			equip(sets.Enhancing.Standard)
+			equip(sets.Enhancing.Normal)
 		end
 		if spell.english =='Stun' then
 			equip(sets.magic.Stun)
