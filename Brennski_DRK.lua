@@ -1,20 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @TRBrennan
- Unwatch 1
-  Star 0
-  Fork 0 TRBrennan/FFXI-LUA
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
-Branch: master Find file Copy pathFFXI-LUA/Brennski_WAR.lua
-26cfb96  an hour ago
-@TRBrennan TRBrennan Add files via upload
-1 contributor
-RawBlameHistory     
-325 lines (244 sloc)  15 KB
 function get_sets()
  
         send_command('bind f9 gs c toggle TP set')
@@ -341,5 +324,3 @@ function self_command(command)
                 equip(sets.Idle[sets.Idle.index[Idle_ind]])
         end
 end
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help

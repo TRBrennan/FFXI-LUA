@@ -2,18 +2,41 @@ function get_sets()
  
         send_command('bind f9 gs c toggle TP set')
         send_command('bind f10 gs c toggle Idle set')
+		send_command('bind f11 gs c toggle Weapons')
          function file_unload()
     
         send_command('unbind ^f9')
         send_command('unbind ^f10')
+		send_command('unbind ^f11')
 
-          send_command('unbind !f9')
+        send_command('unbind !f9')
         send_command('unbind !f10')
- 
+		send_command('unbind !f11')
+		
         send_command('unbind f9')
         send_command('unbind f10')
+		send_command('unbind f11')
  
         end    
+		
+		--Weapons--
+		
+		sets.Weapons = {}
+		
+		sets.Weapons.Index = {'GS', 'GA', 'Polearm','AxeShield', 'SwordShield', 'ClubShield'}
+		Weapons_ind = 1
+		
+		sets.Weapons.GS = {main ="Ragnarok", sub ="Utu Grip"}
+		
+		sets.Weapons.GA = {main ="Aganoshe", sub ="Utu Grip"}
+		
+		sets.Weapons.Polearm = {main ="Blurred Lance", sub ="Utu Grip"}
+		
+		sets.Weapons.AxeShield = {main ="Purgation", sub ="Blurred Shield"}
+		
+		sets.Weapons.SwordShield = {main ="Tanmogayi +1", sub ="Blurred Shield"}
+		
+		sets.Weapons.ClubShield = {main ="Loxotic Mace", sub ="Blurred Shield"}
                
         --Idle Sets--  
         sets.Idle = {}
@@ -23,12 +46,12 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Staunch Tathlum",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", ear1="Genmei earring", ear2="Infused Earring",
-                                      body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Defending ring",ring2="Vocane Ring",
+                                      body="Souveran Cuirass",hands="Sulevia's Gauntlets +1",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Flume Belt +1",legs="Sulevia's Cuisses +1",feet="Hermes' Sandals", back ="Solemnity Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum", 
 							head="Sulevia's Mask +1",neck="Loricate Torque +1", ar1="Brutal Earring",ear2="Cessance Earring",
-                              body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Defending  Ring",
+                              body="Souveran Cuirass",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Defending  Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
 										
 							
@@ -102,7 +125,7 @@ function get_sets()
 		
 		sets.KJ.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rajas Ring",
+                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
                                     back="Cichol's Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Argosy Sollerets +1"}
 									
     	sets.Upheavel = {}
@@ -115,7 +138,7 @@ function get_sets()
 		sets.SB ={}
 		sets.SB.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rajas Ring",
+                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
                                     back="Cichol's Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Argosy Sollerets +1" }
         --Ninja Magic Sets--
         sets.NINMagic = {}
@@ -251,7 +274,7 @@ function precast(spell)
 			equip(set_combine(sets.Utility.Enmity,sets.JA.MightyStrikes))
 		end
 		if spell.english =='Provoke' then
-			quip(sets.Utility.Enmity)
+			equip(sets.Utility.Enmity)
 		end
 		
         if spell.english == 'Box Step' then
@@ -330,7 +353,12 @@ function self_command(command)
                 if Idle_ind > #sets.Idle.index then Idle_ind = 1 end
                 send_command('@input /echo <----- Idle Set changed to '..sets.Idle.index[Idle_ind]..' ----->')
                 equip(sets.Idle[sets.Idle.index[Idle_ind]])
-         elseif command == 'equip TP set' then
+		elseif command == 'toggle Weapons' then
+                Weapons_ind = Weapons_ind +1
+               if Weapons_ind > #sets.Weapons.Index then Weapons_ind = 1 end
+                send_command('@input /echo <----- Weapons Set changed to '..sets.Weapons.Index[Weapons_ind]..' ----->')
+                equip(sets.Weapons[sets.Weapons.Index[Weapons_ind]])
+        elseif command == 'equip TP set' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
         elseif command == 'equip Idle set' then
                 equip(sets.Idle[sets.Idle.index[Idle_ind]])
