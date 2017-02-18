@@ -196,7 +196,7 @@ function get_sets()
 		
 		sets.JA.MightyStrikes = {hands = "Warrior's Muffler +2"}
 		
-		sets.JA.Ret ={}
+		sets.JA.Ret ={feet = "Ravager's Calligae +1"}
 		
 		sets.JA.BloodRage ={body ="Ravager's Lorica +2"}
 		

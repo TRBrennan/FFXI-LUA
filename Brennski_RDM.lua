@@ -76,21 +76,21 @@ function get_sets()
 								
 			sets.Enhancing.Normal = { ammo="Savant's Treatise",
                                  head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Spellbreaker Earring",
-                                 body="Telchine Chasuble",hands="Chironic Gloves", ring1="Stikini Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
-                                 back="Sucellos's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
+                                 body="Telchine Chasuble",hands="Atrophy Gloves +1", ring1="Stikini Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
+                                 back="Ghostfyre Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 							 
 								 
 		--Magic Sets--
 		sets.Magic ={}
 		
 			sets.Magic.Enfeebling = {ammo="Pemphredo Tathlum",
-                                 head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Hecate's Earring",
+                                 head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},feet="Medium's Sabots"}
 								 
 			sets.Magic.EnfeeblingSkill = {ammo="Pemphredo Tathlum",
-                                 head="Carmine Mask",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Hecate's Earring",
+                                 head="Carmine Mask",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs="Psycloth Lappas",feet="Medium's Sabots"}
@@ -157,7 +157,7 @@ function get_sets()
 		sets.WS = {}
 		
 		sets.WS.CDC = {ammo="Jukukik Feather",
-                                            head="Adhemar Bonnet",
+                                            head="Taeon Chapeau",
 											neck="Fotia gorget",
 											ear1="Moonshade Earring",
 											ear2="Telos Earring",
@@ -268,7 +268,7 @@ function midcast(spell,act)
 		end
 		
 		if spell.english == 'Regen' or spell.english == 'Regen II' or spell.english == 'Regen III' or spell.english == 'Regen IV' or spell.english == 'Regen V' then	
-				equip(sets.Magic.Regen)
+				equip(set_combine(sets.Enhancing.Normal,sets.Magic.Regen))
 		end
 		
 		if spell.english == 'Refresh' or spell.english == 'Refresh II' then

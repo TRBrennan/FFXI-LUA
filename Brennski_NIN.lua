@@ -117,8 +117,8 @@ function init_gear_sets()
         feet={ name="Herculean Boots", augments={'Attack+30','"Counter"+1','STR+8','Accuracy+10',}},
         neck="Fotia Gorget",
         waist="Windbuffet Belt +1",
-        left_ear="Moonshade Earring",
-        right_ear="Cessance Earring",
+        right_ear_ear="Moonshade Earring",
+        left_ear="Telos Earring",
         left_ring="Epona's Ring",
         right_ring="Rufescent Ring",
         back=Andartia.WSD}
@@ -132,8 +132,8 @@ function init_gear_sets()
         feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
         neck="Fotia Gorget",
         waist="Grunfeld Belt",
-        left_ear="Moonshade Earring",
-        right_ear="Cessance Earring",
+        right_ear_ear="Moonshade Earring",
+        left_ear="Telos Earring",
         left_ring="Epona's Ring",
         right_ring="Rufescent Ring",
         back=Andartia.WSD})
@@ -148,7 +148,8 @@ function init_gear_sets()
         body="Herculean Vest",
         legs="Hiza. Hizayoroi +1",
         feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
-        left_ear="Moonshade Earring",
+        right_ear_ear="Moonshade Earring",
+        left_ear="Telos Earring",
         left_ring="Rufescent Ring",
         right_ring="Rajas Ring"})
  
@@ -412,7 +413,7 @@ function init_gear_sets()
         feet="Hiza. Sune-Ate +1",
         neck="Lissome Necklace",
         waist="Patentia sash",
-        left_ear="Cessance Earring", right_ear="Suppanomimi",
+        left_ear="Telos Earring", right_ear="Suppanomimi",
         left_ring="Epona's Ring", right_ring="Petrov Ring",
         back=Andartia.DA}
          
@@ -440,7 +441,7 @@ function init_gear_sets()
         feet="Hiza. Sune-Ate +1",
         neck="Lissome Necklace",
         waist="Windbuffet Belt +1",
-        left_ear="Cessance Earring", right_ear="Suppanomimi",
+        left_ear="Telos Earring", right_ear="Suppanomimi",
         left_ring="Epona's Ring", right_ring="Petrov Ring",
         back=Andartia.DA}
          
@@ -471,7 +472,7 @@ function init_gear_sets()
         feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
         neck="Lissome Necklace",
         waist="Windbuffet Belt +1",
-        left_ear="Cessance Earring", right_ear="Suppanomimi",
+        left_ear="Telos Earring", right_ear="Suppanomimi",
         left_ring="Epona's Ring", right_ring="Petrov Ring",
         back=Andartia.DA}
          
@@ -503,7 +504,7 @@ function init_gear_sets()
         feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
         neck="Lissome Necklace",
         waist="Windbuffet Belt +1",
-        left_ear="Cessance Earring", right_ear="Telos Earring",
+        left_ear="Telos Earring", right_ear="Cessance Earring",
         left_ring="Epona's Ring", right_ring="Petrov Ring",
         back=Andartia.DA}
          
