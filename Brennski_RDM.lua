@@ -31,7 +31,7 @@ function get_sets()
         Idle_ind = 1                  
        
         sets.Idle.Standard = {ammo="Homiliary",
-                                      head="Hike Khat",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
+                                      head="Vitivation Chapeau",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Carmine Cuisses",feet="Chironic Slippers", back ="Solemnity Cape"}
 									  
@@ -77,7 +77,7 @@ function get_sets()
 			sets.Enhancing.Normal = { ammo="Savant's Treatise",
                                  head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Spellbreaker Earring",
                                  body="Telchine Chasuble",hands="Atrophy Gloves +1", ring1="Stikini Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
-                                 back="Ghostfyre Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
+                                 back="Ghostfyre Cape",legs="Telchine Braconi",feet="Lethargy Houseaux"}
 							 
 								 
 		--Magic Sets--
@@ -88,6 +88,7 @@ function get_sets()
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},feet="Medium's Sabots"}
+								 
 								 
 			sets.Magic.EnfeeblingSkill = {ammo="Pemphredo Tathlum",
                                  head="Carmine Mask",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
@@ -115,7 +116,7 @@ function get_sets()
 							 left_ring="Rahab Ring", right_ring="Kishar Ring",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}, 
 							 body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},legs="Psycloth Lappas", back ="Izdubar Mantle"}
 						
-			sets.Magic.Refresh = {}
+			sets.Magic.Refresh = {legs ="Lethargy Fuseau"}
 
 		--Precast Sets--
 			sets.precast = {}
@@ -147,10 +148,18 @@ function get_sets()
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Evanescence Ring", ring2 ='Shiva Ring', waist ="Fucho-no-obi",
                                  back="Izdubar Mantle",legs="Merlinic Shalwar",feet="Merlinic Crackows"}
 								 
-		sets.Utility.Dia = {}
+		sets.Utility.Dia = {head = "Vitivation Chapeau"}
 		
 		
 		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
+		
+		sets.JA ={}
+		
+		sets.JA.CS ={body ="Duelist's Tabard +2"}
+		
+		sets.JA.Sab ={hands ="Lethargy Gantherots +1"}
+		
+		sets.JA.Composure ={Feet = "Lethargy Houseaux", hands = "Lethargy Gantherots +1" , body = "Lethargy Sayon", legs = "Lethargy Fuseau", head ="Lethargy Chappel"}		
  
 		--WS Sets--
        
@@ -211,8 +220,8 @@ function precast(spell)
         if spell.english == 'Regen' or spell.english == 'Regen II' or spell.english == 'Regen III' or spell.english == 'Regen IV' or spell.english == 'Regen V' then	
 			equip(sets.precast.FC.Regen)
 		end
-		if spell.english == 'Tabula Ras' then
-			equip(sets.Utility.Tabula)
+		if spell.english == 'Chainspell' then
+			equip(sets.JA.CS)
 		end
 		if spell.english =='Stun' then
 			equip(sets.magic.Stun)
@@ -255,8 +264,15 @@ function midcast(spell,act)
 			equip(sets.Magic.Dark)
 		end
 		
+		if spell.english =='Dia III' or spell.english == 'Slow II' then
+			equip(set_combine(sets.Magic.Enfeebling,sets.Utility.Dia))
+		end
+		
 		if spell.skill =='Enfeebling Magic' then
 			equip(sets.Magic.Enfeebling)
+			if buffactive =='Saboteur' then	
+				equip(set_combine(sets.Magic.Enfeebling,sets.JA.Sab))
+			end
 		end
 		
 		if spell.skill =='Elemental Magic' then

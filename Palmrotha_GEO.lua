@@ -164,23 +164,23 @@ function get_sets()
     sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Azimuth Coat +1",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Aptitude Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        back="Mecisto. Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
 
     sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Handler's Earring",
         body="Azimuth Coat +1",hands="Geomancy Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Aptitude Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        back="Mecisto. Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
 
     -- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Handler's Earring",
         body="Azimuth Coat +1",hands="Geomancy Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Aptitude Mantle",waist="Isa Belt",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        back="Mecisto. Mantle",waist="Isa Belt",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
    
     sets.idle.PDT.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Azimuth Coat +1",hands="Geomancy Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Aptitude Mantle",waist="Isa Belt",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        back="Mecisto. Mantle",waist="Isa Belt",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
 
     -- .Indi sets are for when an Indi-spell is active.
     sets.idle.Indi = set_combine(sets.idle, {})
@@ -191,12 +191,12 @@ function get_sets()
     sets.idle.Town = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Aptitude Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        back="Mecisto. Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
 
     sets.idle.Weak = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Aptitude Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        back="Mecisto. Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
 
     sets.Kiting = {feet="Herald's Gaiters"}
 
@@ -213,9 +213,9 @@ function get_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Normal melee group
-    sets.engaged = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
-        neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Geomancy Tunic",hands="Geomancy Mitaines +1", ring1="Defending Ring", ring2="Vertigo Ring",
+    sets.engaged = {range="Dunna",
+        neck="Loricate Torque +1", ear1="Dudgeon Earring", ear2="Heartseeker Earring",
+        body="Geomancy Tunic",hands="Geomancy Mitaines +1", ring1="Enlivened Ring", ring2="Vertigo Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 	
 	

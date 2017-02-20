@@ -178,7 +178,7 @@ function precast(spell)
         if spell.english == 'Regen' or spell.english == 'Regen II' or spell.english == 'Regen III' or spell.english == 'Regen IV' or spell.english == 'Regen V' then	
 			equip(sets.precast.FC.Regen)
 		end
-		if spell.english == 'Tabula Ras' then
+		if spell.english == 'Tabula Rasa' then
 			equip(sets.Utility.Tabula)
 		end
 		if spell.english =='Stun' then

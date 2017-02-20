@@ -188,7 +188,7 @@ function get_sets()
        
         sets.JA = {}
                
-		sets.JA.Berserk ={back = "Cichol's Mantle",feet = "Warrior's Calligae +2"}
+		sets.JA.Berserk ={back = "Cichol's Mantle",feet = "Warrior's Calligae +2", body = "Pummeler's Lorica"}
 
 		sets.JA.Aggressor = { body = "Warrior's Lorcia +2"}
 		
