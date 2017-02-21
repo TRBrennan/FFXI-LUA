@@ -2,8 +2,8 @@ function get_sets()
  
         send_command('bind f9 gs c toggle Nuke set')
         send_command('bind f10 gs c toggle Idle set')
-	send_command('bind f11 gs c toggle TP set')
-	send_command('bind f12 gs c toggle melee')
+		send_command('bind f11 gs c toggle TP set')
+		send_command('bind f12 gs c toggle Enfeebling Set')
 		
         function file_unload()
      
@@ -34,12 +34,12 @@ function get_sets()
 		--1=Standard, 2 =DT --
         Idle_ind = 1                  
        
-        sets.Idle.Standard = {main="Bolelabunga", sub ="Genemi Shield",ammo="Homiliary",
-                                      head="Vitivation Chapeau",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
+        sets.Idle.Standard = {main="Bolelabunga", sub ="Genmei Shield",ammo="Homiliary",
+                                      head="Vitivation Chapeau",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Carmine Cuisses",feet="Chironic Slippers", back ="Solemnity Cape"}
 									  
-		sets.Idle.DT = {main="Bolelabunga", sub ="Genemi Shield", ammo="Hagneia stone",
+		sets.Idle.DT = {main="Bolelabunga", sub ="Genmei Shield", ammo="Hagneia stone",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring2="Vocane Ring",ring1="Defending ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Solemnity Cape"}							  
@@ -84,23 +84,32 @@ function get_sets()
                                  head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Spellbreaker Earring",
                                  body="Telchine Chasuble",hands="Atrophy Gloves +1", ring1="Stikini Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
                                  back="Ghostfyre Cape",legs="Telchine Braconi",feet="Lethargy Houseaux"}
-							 
 								 
-		--Magic Sets--
-		sets.Magic ={}
+		--Enfeebling Sets--
+		sets.Enfeebling ={}
 		
-			sets.Magic.Enfeebling = {main ="Marin Staff +1", sub = "Nobid Grip" ,ammo="Pemphredo Tathlum",
+			sets.Enfeebling.index ={'Acc', 'Potentcy'}
+			--1=Standard, 2= Magic Burst'--
+			Enfeebling_ind = 1
+		
+			sets.Enfeebling.Acc = {main ="Marin Staff +1", sub = "Nobid Grip" ,ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},feet="Medium's Sabots"}
 								 
 								 
-			sets.Magic.EnfeeblingSkill = {main ="Marin Staff +1", sub = "Nobid Grip",ammo="Pemphredo Tathlum",
+			sets.Enfeebling.Pot = {main ="Marin Staff +1", sub = "Nobid Grip",ammo="Pemphredo Tathlum",
                                  head="Carmine Mask",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs="Psycloth Lappas",feet="Medium's Sabots"}
+							 
+								 
+		--Magic Sets--
+		sets.Magic ={}
+		
+			
 			
 			sets.Magic.Healing = {ammo="Kalboron Stone",
                                  head="Merlinic Hood",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
@@ -108,7 +117,7 @@ function get_sets()
                                  back="Solemnity Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},feet="Pedagogy loafers"}
 												 
 			sets.Magic.Regen = { ammo="Savant's Treatise",
-                                 head="Arbatel Bonnet",neck="Incanter's Torque ",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
+                                 head="Telchine Cap",neck="Incanter's Torque ",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
                                  body="Telchine Chasuble",hands="Telchine Gloves", ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 			
@@ -120,7 +129,7 @@ function get_sets()
 			sets.Magic.Stun ={main ="Marin Staff +1", sub = "Nobid Grip",ammo="Pemphredo Tathlum",head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
 							neck="Voltsurge Torque", waist ="Luminary Sash", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
 							 left_ring="Rahab Ring", right_ring="Kishar Ring",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}, 
-							 body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},legs="Psycloth Lappas", back ="Izdubar Mantle"}
+							 body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},legs="Psycloth Lappas", back ="Sucellos's Cape"}
 						
 			sets.Magic.Refresh = {legs ="Lethargy Fuseau"}
 
@@ -275,19 +284,18 @@ function midcast(spell,act)
 		end
 		
 		if spell.english =='Dia III' or spell.english == 'Slow II' then
-			equip(set_combine(sets.Magic.Enfeebling,sets.Utility.Dia))
+			equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]],sets.Utility.Dia))
 		end
 		
 		if spell.skill =='Enfeebling Magic' then
-			equip(sets.Magic.Enfeebling)
+			equip(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]])
 			if buffactive =='Saboteur' then	
-				equip(set_combine(sets.Magic.Enfeebling,sets.JA.Sab))
+				equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]],sets.JA.Sab))
 			end
 		end
 		
 		if spell.skill =='Elemental Magic' then
-			equip(sets.Nuke[sets.Nuke.index[Nuke_ind]])
-			
+			equip(sets.Nuke[sets.Nuke.index[Nuke_ind]])			
 		                if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]],sets.Utility.Weather))
 				       end
@@ -329,7 +337,6 @@ function aftercast(spell)
 				end
         end
 end
-
  
 function status_change(new,old)
         if player.status == 'Engaged' then
@@ -356,23 +363,21 @@ function self_command(command)
                 if Idle_ind > #sets.Idle.index then Idle_ind = 1 end
                 send_command('@input /echo <----- Idle Set changed to '..sets.Idle.index[Idle_ind]..' ----->')
                 equip(sets.Idle[sets.Idle.index[Idle_ind]])
-	elseif command == 'toggle TP set' then
-		TP_ind = TP_ind +1
-		if TP_ind > #sets.TP.index then TP_ind =1 end
-		send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ---->')
-		equip(sets.TP[sets.TP.index[TP_ind]])
-	elseif command == 'toggle melee' then
-		MeleeMode_ind = MeleeMode_ind +1
-		if MeleeMode_ind = 1 then
-		  enable('main','sub')
-        	else
-            	  disable('main','sub')
-		end
-		if MeleeMode_ind> #sets.MeleeMode.index then MeleeMode_ind =1 end
-        end
+		elseif command == 'toggle TP set' then
+				TP_ind = TP_ind +1
+				if TP_ind > #sets.TP.index then TP_ind =1 end
+				send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ---->')
+				equip(sets.TP[sets.TP.index[TP_ind]])
+		elseif command == 'toggle Enfeebling Set' then
+				Enfeebling_ind = Enfeebling_indd +1		
+				if Enfeebling_ind> #sets.Enfeebling.index then Enfeebling_ind =1 end
+				send_command('@input /echo <----- Enfeebling Set changed to '..sets.Enfeebling.index[Enfeebling_ind]..' ---->')
+				equip(sets.TP[sets.TP.index[TP_ind]])
         elseif command == 'equip TP set' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
         elseif command == 'equip Idle set' then
                 equip(sets.Idle[sets.Idle.index[Idle_ind]])
         end
 end
+
+		
