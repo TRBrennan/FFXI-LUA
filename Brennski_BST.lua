@@ -66,12 +66,13 @@ function get_sets()
 		sets.Ready = {}
 		
 		sets.Ready.Physical ={main ="Kerehcatl", sub="Arktoi",ammo ="Demonry Core",
-							  head={ name="Valorous Mask", augments={'Pet: Mag. Acc.+11','Pet: "Dbl.Atk."+2 Pet: Crit.hit rate +2','Pet: Accuracy+14 Pet: Rng. Acc.+14',}},
+							  head="Despair Helm",
 							  body="Acro Surcoat", legs="Valorous Hose", feet ="Emicho Gambieras", hands ="Regimen Mittens",
 							  back="Pastoralist's Mantle", neck="Empath necklace", ear1="Hija Earring", ear2= "Sabong Earring",waist="Incarnation Sash"}
 		
 		sets.Ready.Magical ={main ="Mdomo Axe", sub ="Arktoi",ammo ="Demonry Core",
-							  head="Valorous Mask", body="Acro Surcoat", legs="Valorous Hose", feet ="Emicho Gambieras", hands ="Regimen Mittens",
+							 head={ name="Valorous Mask", augments={'Pet: Mag. Acc.+11','Pet: "Dbl.Atk."+2 Pet: Crit.hit rate +2','Pet: Accuracy+14 Pet: Rng. Acc.+14',}},
+							 body="Emicho Haubert", legs="Valorous Hose", feet ="Emicho Gambieras", hands ="Regimen Mittens",
 							  back="Pastoralist's Mantle", neck="Deino Collar", ear1="Hija Earring", ear2= "Sabong Earring",waist="Incarnation Sash"}
 							  
 		--WS Sets--

@@ -49,7 +49,7 @@ function get_sets()
                 --1=Standard, 2 = Tank,3=MDTtank, 4=DT 5=DTAccuracy--
  			   TP_ind = 1
 				sets.TP.Standard = { main ="Lionheart",sub ="Utu Grip",ammo="Ginsen",
-                                    head="Skormoth Mask", neck="Lissome necklace", ear2="Telos Earring", ear1="Cessance earring", 
+                                    head="Skormoth Mask", neck="Lissome necklace", ear2="Telos Earring", ear1="Sherida earring", 
                                     body="Herculean Vest",hands="Adhemar Wristbands",ring1="Chirich Ring",ring2="Niqmaddu Ring",
                                     back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 									waist="Ioskeha Belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
@@ -121,8 +121,8 @@ function get_sets()
 											waist="Fotia Belt",
 											left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
 											right_ear="Telos Earring",
-											left_ring="Niqmaddu Ring",
-											right_ring="Rufescent Ring",
+											right_ring="Niqmaddu Ring",
+											left_ring="Rufescent Ring",
 											back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 											}
                                                                  
@@ -134,7 +134,7 @@ function get_sets()
                                                                         
                 sets.Dimidiation.Attack = {ammo="Jukukik Feather",
                                             head="Adhemar Bonnet",neck="Caro Necklace",ear1="Telos Earring",ear2="Moonshade Earring",
-                                            body="Herculean Vest",hands="Meg. Gloves +1",ring1="Niqmaddu Ring",ring2="Epona's ring",
+                                            body="Herculean Vest",hands="Meg. Gloves +1",right_ring="Niqmaddu Ring",left_ring="Petrov ring",
                                             back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 										    waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Attack+23','Weapon skill damage +2%','STR+3','Accuracy+6',}},feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}} }							
                                                          
@@ -145,7 +145,7 @@ function get_sets()
                
                 sets.Requiescat.Attack = {ammo="Seething Bomblet +1",
                                           head="Adhemar Bonnet",neck="Fotia gorget",ear1="Brutal earring",ear2="Moonshade earring",
-                                          body="Adhemar Jacket",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Niqmaddu Ring",ring2="Epona's ring",
+                                          body="Adhemar Jacket",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},right_ring="Niqmaddu Ring",left_ring="Petrov ring",
                                           back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 										  waist="Fotia belt",legs="Samnunha Tights",feet={ name="Herculean Boots", augments={'Attack+30','"Counter"+1','STR+8','Accuracy+10',}}}
                                                                  
@@ -165,8 +165,7 @@ function get_sets()
 											waist="Fotia Belt",
 											left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
 											right_ear="Telos Earring",
-											left_ring="Niqmaddu Ring",
-											right_ring="Rufescent Ring",
+											right_ring="Niqmaddu Ring",left_ring="Petrov ring",
 											back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 										}                     
                                                                          
@@ -177,7 +176,7 @@ function get_sets()
        
                 sets.SavageBlade.Attack = {ammo="Seething Bomblet +1",
                                           head="Adhemar Bonnet",neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                          body="Herculean Vest",hands="Meg. Gloves +1",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
+                                          body="Herculean Vest",hands="Meg. Gloves +1",right_ring="Niqmaddu Ring",left_ring="Rufescent Ring",
                                           back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 										  waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Attack+23','Weapon skill damage +2%','STR+3','Accuracy+6',}},
 										  feet={ name="Herculean Boots", augments={'Attack+30','"Counter"+1','STR+8','Accuracy+10',}}}            

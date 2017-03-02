@@ -79,7 +79,7 @@ function get_sets()
 									  
 				sets.TP.TH = { ammo="Ginsen",
                                     head="Dampening Tam", neck="Lissome necklace", ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-                                    body="Adhemar Jacket",hands="Plunderer's Armlets +1",ring1="Petrov Ring",ring2="Epona's Ring",
+                                    body="Adhemar Jacket",hands="Assassin's Armlets",ring1="Petrov Ring",ring2="Epona's Ring",
                                     back="Canny Cape",waist="Chaac Belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                          
 									

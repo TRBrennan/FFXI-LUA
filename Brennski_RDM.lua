@@ -64,44 +64,47 @@ function get_sets()
 			--1=Standard, 2= Magic Burst'--
 			Nuke_ind = 1
 			
-			sets.Nuke.Standard = {main ="Marin Staff +1", sub = "Nobid Grip",ammo="Pemphredo Tathlum",
+			sets.Nuke.Standard = {main ="Marin Staff +1", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
                                  hhead={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
 								 neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Hecate's Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
-                                 back="Sucellos's Cape",legs="Merlinic Shalwar",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}}
+                                 back="Sucellos's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
+								 feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}}
 										
-			sets.Nuke.MagicBurst = {main ="Marin Staff +1", sub = "Nobid Grip",ammo="Pemphredo Tathlum",
+			sets.Nuke.MagicBurst = {main ="Marin Staff +1", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
                                  head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
-								 neck="Mizukage-no-Kubikazari",ear2="Friomisi earring", ear1="Hecate's Earring",
+								 neck="Mizukage-no-Kubikazari",ear2="Friomisi earring", ear1="Static Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
 								 hands="Amalric Gages", ring1="Locus Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
-                                 back="Sucellos's Cape",legs="Merlinic Shalwar",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}}	
-
+                                 back="Sucellos's Cape",
+								 legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+12 "Mag.Atk.Bns."+12','Magic burst mdg.+8%','MND+5','"Mag.Atk.Bns."+12',}},
+								 feet={ name="Merlinic Crackows", augments={'Magic burst mdg.+8%','Mag. Acc.+13','"Mag.Atk.Bns."+12',}}}
+			
 		--Enhancing Sets--					
 		sets.Enhancing ={}
 								
 			sets.Enhancing.Normal = { ammo="Savant's Treatise",
                                  head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Spellbreaker Earring",
                                  body="Telchine Chasuble",hands="Atrophy Gloves +1", ring1="Stikini Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
-                                 back="Ghostfyre Cape",legs="Telchine Braconi",feet="Lethargy Houseaux"}
+                                 back="Ghostfyre Cape",legs="Telchine Braconi",feet="Lethargy Houseaux +1"}
 								 
 		--Enfeebling Sets--
 		sets.Enfeebling ={}
 		
-			sets.Enfeebling.index ={'Acc', 'Potentcy'}
-			--1=Standard, 2= Magic Burst'--
+			sets.Enfeebling.index ={'Acc', 'Pot'}
+			--1=Acc, 2= Pot'--
 			Enfeebling_ind = 1
 		
-			sets.Enfeebling.Acc = {main ="Marin Staff +1", sub = "Nobid Grip" ,ammo="Pemphredo Tathlum",
+			sets.Enfeebling.Acc = {main ="Marin Staff +1", sub = "Niobid Strap" ,ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},feet="Medium's Sabots"}
 								 
 								 
-			sets.Enfeebling.Pot = {main ="Marin Staff +1", sub = "Nobid Grip",ammo="Pemphredo Tathlum",
+			sets.Enfeebling.Pot = {main ="Marin Staff +1", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
                                  head="Carmine Mask",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
-                                 body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", 
+                                 body = "Lethargy Sayon +1",hands="Lurid Mitts", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs="Psycloth Lappas",feet="Medium's Sabots"}
 							 
@@ -121,12 +124,13 @@ function get_sets()
                                  body="Telchine Chasuble",hands="Telchine Gloves", ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 			
-			sets.Magic.Dark = {main ="Marin Staff +1", sub = "Nobid Grip", ammo="Pemphredo Tathlum",
+			sets.Magic.Dark = {main ="Marin Staff +1", sub = "Niobid Strap", ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Incanter's Torque",ear2="Friomisi earring", ear1="Hecate's Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Shiva Ring", waist ="Refoccilation Stone",
-                                 back="Sucellos's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackows"}
+                                 back="Sucellos's Cape",llegs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
+								 feet="Merlinic Crackows"}
 								 
-			sets.Magic.Stun ={main ="Marin Staff +1", sub = "Nobid Grip",ammo="Pemphredo Tathlum",head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
+			sets.Magic.Stun ={main ="Marin Staff +1", sub = "Niobid Strap",ammo="Pemphredo Tathlum",head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
 							neck="Voltsurge Torque", waist ="Luminary Sash", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
 							 left_ring="Rahab Ring", right_ring="Kishar Ring",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}, 
 							 body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},legs="Psycloth Lappas", back ="Sucellos's Cape"}
@@ -174,7 +178,7 @@ function get_sets()
 		
 		sets.JA.Sab ={hands ="Lethargy Gantherots +1"}
 		
-		sets.JA.Composure ={Feet = "Lethargy Houseaux", hands = "Lethargy Gantherots +1" , body = "Lethargy Sayon", legs = "Lethargy Fuseau", head ="Lethargy Chappel"}		
+		sets.JA.Composure ={Feet = "Lethargy Houseaux +1" , body = "Lethargy Sayon +1", legs = "Lethargy Fuseau", head ="Lethargy Chappel"}		
  
 		--WS Sets--
        
@@ -193,7 +197,7 @@ function get_sets()
 											waist="Fotia belt",legs="Samnuha Tights",feet="Thereoid Greaves"}
 		
 		sets.WS.Savage =	{ammo="Amar Cluster",
-                                          head="Adhemar Bonnet",
+                                          head="Despair Helm",
 										  neck="Caro Necklace",
 										  ear1="Ishvara Earring",
 										  ear2="Moonshade Earring",
@@ -260,6 +264,9 @@ function precast(spell)
 		if spell.english == 'Sanguine Blade' then
 			equip(sets.Magic.Dark)
 		end
+		if spell.english =='Composure' then
+			equip(sets.JA.Composure)
+		end
 		
 end
 
@@ -267,10 +274,10 @@ function midcast(spell,act)
 
 		if spell.skill =='Enhancing Magic' then
 			equip(sets.Enhancing.Normal)
-			if buffactive =='Composure' and spell.target.type == 'PLAYER' then
-            			equip(sets.JA.Composure)
+			if buffactive['Composure'] and spell.target.type == 'PLAYER' then
+            	equip(set_combine(sets.Enhancing.Normal,sets.JA.Composure))
 			end
-        end
+        
 		end
 		if spell.english =='Stun' then
 			equip(sets.magic.Stun)
@@ -289,8 +296,8 @@ function midcast(spell,act)
 		
 		if spell.skill =='Enfeebling Magic' then
 			equip(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]])
-			if buffactive =='Saboteur' then	
-				equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]],sets.JA.Sab))
+			if buffactive['Saboteur'] then	
+				equip(set_combine(sets.Enfeebling.Pot,sets.JA.Sab))
 			end
 		end
 		
@@ -369,15 +376,13 @@ function self_command(command)
 				send_command('@input /echo <----- TP Set changed to '..sets.TP.index[TP_ind]..' ---->')
 				equip(sets.TP[sets.TP.index[TP_ind]])
 		elseif command == 'toggle Enfeebling Set' then
-				Enfeebling_ind = Enfeebling_indd +1		
+				Enfeebling_ind = Enfeebling_ind +1		
 				if Enfeebling_ind> #sets.Enfeebling.index then Enfeebling_ind =1 end
 				send_command('@input /echo <----- Enfeebling Set changed to '..sets.Enfeebling.index[Enfeebling_ind]..' ---->')
-				equip(sets.TP[sets.TP.index[TP_ind]])
+				equip(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]])
         elseif command == 'equip TP set' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
         elseif command == 'equip Idle set' then
                 equip(sets.Idle[sets.Idle.index[Idle_ind]])
         end
 end
-
-		

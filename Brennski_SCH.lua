@@ -73,14 +73,18 @@ function get_sets()
                                  hhead={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
 								 neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Barkarole Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
-                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}}
+                                 back="Lugh's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
+								 feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}}
 										
 			sets.Nuke.MagicBurst = {ammo="Pemphredo Tathlum",
                                  head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
 								 neck="Mizukage-no-Kubikazari",ear2="Friomisi earring", ear1="Barkarole Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
 								 hands="Amalric Gages", ring1="Locus Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
-                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}}	
+                                 back="Lugh's Cape",
+								 legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+12 "Mag.Atk.Bns."+12','Magic burst mdg.+8%','MND+5','"Mag.Atk.Bns."+12',}},
+								 feet={ name="Merlinic Crackows", augments={'Magic burst mdg.+8%','Mag. Acc.+13','"Mag.Atk.Bns."+12',}}}
+			
 
 		--Enhancing Sets--					
 		sets.Enhancing ={}
@@ -121,7 +125,8 @@ function get_sets()
 			sets.Magic.Dark = { ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Incanter's Torque",ear2="Friomisi earring", ear1="Barkarole Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Shiva Ring", waist ="Refoccilation Stone",
-                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackows"}
+                                 back="Lugh's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
+								 feet="Merlinic Crackows"}
 								 
 			sets.Magic.Stun ={ammo="Pemphredo Tathlum",head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
 							neck="Voltsurge Torque", waist ="Luminary Sash", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
@@ -161,7 +166,8 @@ function get_sets()
 		sets.Utility.DrainAspir = { ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Barkarole Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Evanescence Ring", ring2 ='Shiva Ring', waist ="Fucho-no-obi",
-                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackows"}
+                                 back="Lugh's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
+								 feet="Merlinic Crackows"}
 		
 		sets.Utility.Tabula ={legs ="Argute Pants +2"}
 		
@@ -182,7 +188,7 @@ function precast(spell)
 			equip(sets.Utility.Tabula)
 		end
 		if spell.english =='Stun' then
-			equip(sets.magic.Stun)
+			equip(sets.Magic.Stun)
 		end
 		if spell.action_type == 'Magic' then
                 equip(sets.precast.FC.Standard)
@@ -199,7 +205,7 @@ function midcast(spell,act)
 			end
 		end
 		if spell.english =='Stun' then
-			equip(sets.magic.Stun)
+			equip(sets.Magic.Stun)
 		end
 		if spell.skill =='Healing Magic' then
 			equip(sets.Magic.Healing)
@@ -242,7 +248,7 @@ function midcast(spell,act)
 
 		end
 		
-		if spell.english =='Noctohelix' or spell.english =='Noctohelix II' then
+		if spell.english =='Noctohelix' or spell.english =='Noctohelix II'  or spell.english == 'Kastura' then
 			equip(sets.Magic.Dark)
 				if spell.element == world.day_element or spell.element == world.weather_element then
                     equip(set_combine(sets.Magic.Dark,sets.Utility.Weather))

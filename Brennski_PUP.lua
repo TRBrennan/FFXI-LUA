@@ -35,7 +35,7 @@ function get_sets()
         Idle_ind = 1                  
        
         sets.Idle.Standard = {head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Sanctity Necklace",ear1="Genmei Earring", ear2="Infused Earring",
-		body="Emet harness +1",hands="Rao Kote",ring1="Defending ring",ring2="Vocane Ring",
+		body="Hizamaru haramaki +1",hands="Rao Kote",ring1="Defending ring",ring2="Vocane Ring",
                                         back="Solemnity Cape",waist="Isa Belt",legs="Herculean Trousers",feet="Hermes' Sandals"}
                                                  
         sets.Idle.DT = {head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring", body="Emet harness +1",hands="Herculean gloves",ring1="Defending ring",ring2="Vocane Ring",
@@ -54,7 +54,7 @@ function get_sets()
 				sets.TP.Standard = {  
                                     head="Hizamaru Somen +1", neck="Empath Necklace", ear1="Cessance Earring",ear2="Telos Earring",
                                     body="Herculean Vest",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Niqmaddu Ring",ring2="Chirich Ring",
-                                    back="Visucius's Mantle",waist="windbuffet belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+                                    back="Visucius's Mantle",waist="Incarnation Sash",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                        
                 sets.TP.PetTank = { Head = "Anwig Salade", neck ="Empath Necklace",ear1="Handlers Earring", ear2="Rimeice earring",
 									body="Taeon Tabard", Hands="Rao Kote", Waist="Isa Belt", ring1="Defending Ring", ring2="Overbearing Ring",back="Visucius's mantle", 
