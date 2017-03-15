@@ -113,14 +113,6 @@ function init_gear_sets()
         TaeonHands = {}
               TaeonHands.Snap = {name="Taeon Gloves", augments={'"Snapshot"+5', 'Attack+22','"Snapshot"+3'}}
 
-        sets.Organizer = {
-            main="Annihilator",
-            sub="Odium",
-            ammo="Perun +1",
-            range="Yoichinoyumi",
-            hands="Taeon Gloves",
-            feet="Legion Scutum"
-        }
         -- Misc. Job Ability precasts
         sets.precast.JA['Bounty Shot'] = {hands="Amini Glovelettes +1"}
         sets.precast.JA['Double Shot'] = {head="Amini Gapette"}
@@ -133,13 +125,13 @@ function init_gear_sets()
 
         sets.precast.JA['Eagle Eye Shot'] = set_combine(sets.midcast.RA, {
             head="Uk'uxkaj Cap", 
-            ear1="Fotia Pearl",
+            ear1="Sherida Earring",
             ear2="Fotia Pearl",
             neck="Rancor Collar",
             back="Buquwik Cape",
             hands="Amini Glovelettes +1",
-            ring1="Ifrit Ring",
-            ring2="Ifrit Ring +1",
+            ring1="Rajas Ring",
+            ring2="Petrov",
             legs="Amini Brague +1", 
             feet="Thereoid Greaves"
         })
@@ -170,7 +162,7 @@ function init_gear_sets()
             ear2="Tripudio Earring",
             body="Pursuer's Doublet",
             hands="Amini Glovelettes +1",
-            ring1="Paguroidea Ring",
+            ring1="Vocane Ring",
             ring2="Defending Ring",
     	    back="Solemnity Cape",
             waist="Elanid Belt",
@@ -429,11 +421,11 @@ function init_gear_sets()
         sets.precast.WS = {
             head="Meghanada Visor +1",
 						neck="Fotia gorget",
-						ear1="Telos Earring",
+						ear1="Sherida Earring",
 						ear2="Moonshade Earring",
                         body="Adhemar Jacket",
 						hands="Meg. Gloves +1",
-						ring1="Petrov Ring",
+						ring1="Rajas Ring",
 						ring2="Arvina Ringlet +1",
                         back="Lupine Cape",
 						waist="Fotia Belt",
@@ -457,7 +449,8 @@ function init_gear_sets()
 							ear1="Moonshade Earring",
 							body="Samnuha Coat",
 							hands="Meg. Gloves +1",   
-							ring1="Acumen Ring", ring2 ='Arvina Ringlet +1',
+							ring1="Acumen Ring", 
+							ring2 ='Arvina Ringlet +1',
 							waist ="Eschan Stone",
 							back="Gunslinger's Cape",   
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
@@ -474,7 +467,8 @@ function init_gear_sets()
 							ear1="Moonshade Earring",
 							body="Samnuha Coat",
 							hands="Meg. Gloves +1",   
-							ring1="Acumen Ring", ring2 ='Arvina Ringlet +1',
+							ring1="Acumen Ring", 
+							ring2 ='Arvina Ringlet +1',
 							waist ="Eschan Stone",
 							back="Gunslinger's Cape",   
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
@@ -495,8 +489,6 @@ function init_gear_sets()
 
         sets.precast.WS['Coronach'].SAM = set_combine(sets.precast.WS, {
             neck="Ocachi Gorget",
-            ear1="Enervating Earring",
-            ear2="Tripudio Earring",
             hands="Amini Glovelettes +1",
             legs="Amini Brague +1", 
         })
@@ -504,7 +496,6 @@ function init_gear_sets()
         -- LAST STAND
         sets.LastStand = {
            neck="Fotia Gorget",
-           ear2="Moonshade Earring",
            ring2="Garuda Ring",
            waist="Fotia Belt",
            feet="Orion Socks +1"
@@ -515,7 +506,7 @@ function init_gear_sets()
 
         sets.precast.WS['Last Stand'].SAM = set_combine(sets.precast.WS, {
             neck="Fotia Gorget",
-            ear1="Tripudio Earring",
+            ear1="Telos Earring",
             ear2="Moonshade Earring",
             hands="Amini Glovelettes +1",
             ring2="Garuda Ring",
@@ -525,7 +516,6 @@ function init_gear_sets()
         
         -- DETONATOR
         sets.Detonator = {
-           ear2="Moonshade Earring",
            neck="Fotia Gorget",
            waist="Fotia Belt",
            feet="Arcadian Socks +1"
@@ -536,8 +526,7 @@ function init_gear_sets()
         
         -- SLUG SHOT
         sets.SlugShot = {
-           neck="Breeze Gorget",
-           ear2="Moonshade Earring",
+           neck="Fotia Gorget",
            waist="Fotia Belt",
            feet="Arcadian Socks +1"
         }
@@ -573,7 +562,6 @@ function init_gear_sets()
         -- JISHNUS
         sets.Jishnus = {
             neck="Fotia Gorget",
-            ear2="Moonshade Earring",
             waist="Fotia Belt",
             legs="Amini Brague +1", 
             ring2="Rajas Ring",
@@ -583,7 +571,6 @@ function init_gear_sets()
         sets.precast.WS['Jishnu\'s Radiance'] = set_combine(sets.precast.WS, sets.Jishnus)
         sets.precast.WS['Jishnu\'s Radiance'].Mid = set_combine(sets.precast.WS.Mid, {
             neck="Fotia Gorget",
-            ear2="Moonshade Earring",
             waist="Fotia Belt",
             legs="Adhemar Kecks",
             ring2="Rajas Ring",
@@ -623,18 +610,19 @@ function init_gear_sets()
         --sets.Kiting = {feet="Fajin Boots"}
        
         sets.buff.Barrage = {
-            head="Uk'uxkaj Cap",
-            neck="Rancor Collar",
-            ear1="Fotia Pearl",
-            ear2="Fotia Pearl",
-            body="Pursuer's Doublet",
-            hands="Orion Bracers +1",
-            ring1="Ifrit Ring",
-            ring2="Longshot Ring",
-            back="Lutian Cape",
-            waist="Elanid Belt",
-            legs="Adhemar Kecks", 
-            feet="Orion Socks +1"
+
+            ear1="Sherida Earring",
+            head="Meghanada Visor +1",
+	    neck="Sanctity Necklace", 
+	    ear2="Telos Earring", 
+	    body="Adhemar Jacket",
+ 	    hands="Adhemar Wristbands",
+	    ring1="Rajas Ring",
+	    ring2="Cacoethic Ring", 
+ 	    waist ="Yemaya Belt",
+	    back="Gunslinger's Cape",   
+	    legs="Pursuer's Pants",
+	    feet ="Meg. Jam +1"
         }
         -- placeholder until I can get to it
         sets.buff.Barrage.Mid = sets.buff.Barrage
