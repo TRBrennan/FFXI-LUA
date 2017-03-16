@@ -82,12 +82,14 @@ function get_sets()
 								 feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}}
 										
 			sets.Nuke.MagicBurst = {ammo="Pemphredo Tathlum",
-                                 head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
-								 neck="Mizukage-no-Kubikazari",ear2="Friomisi earring", ear1="Barkarole Earring",
-                                 body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Locus Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
-                                 back="Taranus's Cape", 
-								 legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+12 "Mag.Atk.Bns."+12','Magic burst mdg.+8%','MND+5','"Mag.Atk.Bns."+12',}},
-								 feet={ name="Merlinic Crackows", augments={'Magic burst mdg.+8%','Mag. Acc.+13','"Mag.Atk.Bns."+12',}}}
+									neck="Mizukage-no-Kubikazari",ear2="Friomisi earring", ear1="Barkarole Earring",
+									ring1="Locus Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
+									back="Taranus's Cape", 
+									head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst dmg.+7%','CHR+7','Mag. Acc.+12',}},
+									body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
+									hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+									legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
+									feet={ name="Merlinic Crackows", augments={'Magic burst dmg.+8%','Mag. Acc.+13','"Mag.Atk.Bns."+12',}}}
 			
 
 		--Enhancing Sets--					
@@ -113,9 +115,9 @@ function get_sets()
                                  back="Taranus's Cape",legs="Psycloth Lappas",feet="Medium's Sabots"}
 			
 			sets.Magic.Healing = {ammo="Kalboron Stone",
-                                 head="Merlinic Hood",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
+                                 head="Vanya Hood",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear2="Mendi. Earring",
                                  body="Vrikodara Jupon",hands="Telchine Gloves", ring1="Ephedra Ring", ring2 ="Sirona's Ring", waist ="Luminary Sash",
-                                 back="Solemnity Cape",legs="Psycloth Lappas",feet="Pedagogy loafers"}
+                                 back="Solemnity Cape",legs="Psycloth Lappas",feet="Vanya Clogs"}
 												 
 			sets.Magic.Regen = { ammo="Savant's Treatise",
                                  head="Arbatel Bonnet",neck="Incanter's Torque ",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",

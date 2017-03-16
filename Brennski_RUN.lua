@@ -94,11 +94,22 @@ function get_sets()
                               body="Emet harness +1",hands="Kurys Gloves",ring1="Vocane Ring",ring2="Defending Ring",
                               back="Evasionist's Cape",waist="Flume belt +1",legs="Erilaz Leg Guards +1",feet="Erilaz Greaves +1"}
                                  
-                sets.TP.DTAccuracy = {main ="Lionheart",ammo="Amar Cluster",
-                                      head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Cessance earring",    
-									  body="Emet harness +1",hands="Kurys Gloves",ring1="Cacoethic ring",ring2="Defending Ring",
-                                      back="Evasionist's Cape",waist="Flume belt +1",legs="Erilaz Leg Guards +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
-                                                         
+                sets.TP.DTAccuracy = {   main="Lionheart",
+    sub="Utu Grip",
+    ammo="Staunch Tathlum",
+    head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
+    body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+    hands="Kurys Gloves",
+    legs="Eri. Leg Guards +1",
+    feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
+    neck="Loricate Torque +1",
+    waist="Flume Belt +1",
+    left_ear="Sherida Earring",
+    right_ear="Telos Earring",
+    left_ring="Chirich Ring",
+    right_ring="Niqmaddu Ring",
+    back={ name="Evasionist's Cape", augments={'Enmity+6','"Embolden"+10','"Dbl.Atk."+2','Damage taken-3%',}},
+}
                                                     
                                                          
                                                          

@@ -186,6 +186,11 @@ function get_sets()
 							         head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Caro Necklace",ear1="Corybant Pearl",ear2="Kemas Earring",
                                      body="Herculean Vest",hands="Adhemar Wristbands",ring1="Petrov Ring",ring2="Rajas Ring",
                                      back="Cornflower Cape",waist="Prosilio belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+									 
+		 sets.BlueMagic.Dart = {ammo ="Amar Cluster",
+							         head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Caro Necklace",ear1="Corybant Pearl",ear2="Kemas Earring",
+                                     body="Herculean Vest",hands="Adhemar Wristbands",ring1="Petrov Ring",ring2="Rajas Ring",
+                                     back="Cornflower Cape",waist="Chaac Belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 		
 
 		sets.BlueMagic.BlueMagic = {ammo="Pemphredo Tathlum",
@@ -214,7 +219,7 @@ function get_sets()
                 back="Gigant Mantle",waist="Lieutenant's Sash",legs="Mavi Tayt +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 		
 		sets.BlueMagic.BlueCure = {
-                head="Herculean Helm",neck="Colossus's Torque", ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
+                head="Herculean Helm",neck="Incanter's Torque", ear1 ="Lifestorm Earring", ear2="Mendi. Earring",
                 body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Metamorph Ring",ring2="Sirona's Ring",
                 back="Solemnity Cape",waist="Porous Rope",legs="Amalric Slops",feet="Amalric Nails"}
                                                  

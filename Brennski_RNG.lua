@@ -81,7 +81,6 @@ function user_setup()
 
         get_combat_form()
         get_custom_ranged_groups()
-        select_default_macro_book()
 
         send_command('bind != gs c toggle CapacityMode')
         send_command('bind f9 gs c cycle RangedMode')
@@ -146,12 +145,18 @@ function init_gear_sets()
         })
 
         sets.precast.FC = {
-            head="Ejekamal Mask",
-            ear1="Loquacious Earring",
-            body="Samnuha Coat",
-            legs="Quiahuiz Trousers",
-            hands="Leyline Gloves",
-            ring1="Prolix Ring"
+            head="Carmine Mask",  
+			body="Taeon Tabard",  
+			hands="Leyline Gloves",  
+			legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},
+						    feet="Carmine Greaves",  
+							neck="Voltsurge Torque", 
+							waist="Witful Belt", 
+							left_ear="Etiolation Earring",
+						    right_ear="Loquac. Earring", 
+							left_ring="Rahab Ring",
+							right_ring="Kishar Ring",
+							back="Swith Cape"
         }
         sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, { neck="Magoraga Beads" })
         
@@ -166,7 +171,7 @@ function init_gear_sets()
             ring2="Defending Ring",
     	    back="Solemnity Cape",
             waist="Elanid Belt",
-            legs="Carmine Cuisses +1",
+            legs="Carmine Cuisses",
             feet="Herculean Boots"
         }
         sets.idle.Regen = set_combine(sets.idle, {
@@ -191,17 +196,18 @@ function init_gear_sets()
  
         -- Engaged sets
         sets.engaged =  {
-            head="Arcadian Beret +1",
-            neck="Twilight Torque",
-            ear1="Enervating Earring",
-            ear2="Tripudio Earring",
-            body="Pursuer's Doublet", 
-            hands="Iuitl Wristbands +1",
-            ring1="Paguroidea Ring",
-            ring2="Defending Ring",
-            waist="Impulse Belt",
-            legs="Nahtirah Trousers", 
-            feet="Orion Socks +1"
+             head="Adhemar Bonnet", 
+			neck="Lissome necklace", 
+			ear1="Sherida Earring", 
+			ear2="Telos Earring",
+			body="Adhemar Jacket",
+			hands="Adhemar Wristbands",
+			ring1="Chirich Ring",
+			ring2="Epona's Ring",
+			back="Grounded Mantle",
+			waist="Windbuffet Belt +1",
+			legs="Samnuha Tights",
+			feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}
         }
         sets.engaged.PDT = set_combine(sets.engaged, {
             hands="Iuitl Wristbands +1",
@@ -212,19 +218,19 @@ function init_gear_sets()
         })
         sets.engaged.Bow = set_combine(sets.engaged, {})
 
-        sets.engaged.Melee = {
-            head="Adhemar Bonnet",
-            neck="Lissome necklace",
-            ear1="Cessance Earring",
-            ear2="Telos Earring",
-            body="Adhemar Jacket",
-            hands="Adhemar Wristbands",
-            ring1="Rajas Ring",
-            ring2="Epona's Ring",
-            back="Bleating Mantle",
-            waist="Windbuffet Belt +1",
-            legs="Adhemar Kecks",
-            feet="Taeon Boots"
+        sets.engaged.Melee = {    
+            head="Adhemar Bonnet", 
+			neck="Lissome necklace", 
+			ear1="Suppanomimi", 
+			ear2="Telos Earring",
+			body="Adhemar Jacket",
+			hands="Adhemar Wristbands",
+			ring1="Chirich Ring",
+			ring2="Epona's Ring",
+			back="Grounded Mantle",
+			waist="Windbuffet Belt +1",
+			legs="Samnuha Tights",
+			feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} 
         }
         sets.engaged.Bow.Melee = sets.engaged.Melee
 
@@ -238,16 +244,18 @@ function init_gear_sets()
         sets.engaged.DW = set_combine(sets.engaged, {})
 
         sets.engaged.DW.Melee = set_combine(sets.engaged.Melee, {
-            head="Adhemar Bonnet",
-            neck="Lissome necklace",
-            ear1="Cessance Earring",
-            ear2="Telos Earring",
-            body="Adhemar Jacket",
-            hands="Floral Gauntlets",
-            back="Bleating Mantle",
-            waist="Patentia Sash",
-            legs="Carmine Cuisses +1",
-            feet="Taeon Boots"
+            head="Adhemar Bonnet", 
+			neck="Lissome necklace", 
+			ear1="Suppanomimi", 
+			ear2="Telos Earring",
+			body="Adhemar Jacket",
+			hands="Adhemar Wristbands",
+			ring1="Chirich Ring",
+			ring2="Epona's Ring",
+			back="Grounded Mantle",
+			waist="Windbuffet Belt +1",
+			legs="Carmine Cuisses",
+			feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} 
         })
 
         ------------------------------------------------------------------
@@ -455,7 +463,7 @@ function init_gear_sets()
 							back="Gunslinger's Cape",   
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
 							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
-        }
+        
         sets.precast.WS['Wildfire'] = set_combine(sets.precast.WS, sets.Wildfire)
         sets.precast.WS['Wildfire'].Mid = set_combine(sets.precast.WS.Mid, sets.Wildfire)
         sets.precast.WS['Wildfire'].Acc = set_combine(sets.precast.WS.Acc, sets.Wildfire)
@@ -473,7 +481,7 @@ function init_gear_sets()
 							back="Gunslinger's Cape",   
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
 							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
-        }
+        
         sets.precast.WS['Trueflight'] = set_combine(sets.precast.WS, sets.Trueflight)
         sets.precast.WS['Trueflight'].Mid = set_combine(sets.precast.WS.Mid, sets.Trueflight)
         sets.precast.WS['Trueflight'].Acc = set_combine(sets.precast.WS.Acc, sets.Trueflight)
@@ -1033,14 +1041,4 @@ end
 --        add_to_chat(122,"SAM Roll")
 --    end
 --end
--- Select default macro book on initial load or subjob change.
-function select_default_macro_book()
-	-- Default macro set/book
-	if player.sub_job == 'WAR'then
-		    set_macro_page(3, 5)
-	elseif player.sub_job == 'SAM' then
-		    set_macro_page(4, 5)
-	else
-		set_macro_page(3, 5)
-	end
-end
+
