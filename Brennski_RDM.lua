@@ -37,12 +37,12 @@ function get_sets()
         sets.Idle.Standard = {main="Bolelabunga", sub ="Genmei Shield",ammo="Homiliary",
                                       head="Vitivation Chapeau +1",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Defending ring",ring2="Vocane Ring",
-                                      waist="Fucho-no-obi",legs="Carmine Cuisses",feet="Chironic Slippers", back ="Solemnity Cape"}
+                                      waist="Fucho-no-obi",legs="Carmine Cuisses +1",feet="Chironic Slippers", back ="Moonbeam Cape"}
 									  
 		sets.Idle.DT = {main="Bolelabunga", sub ="Genmei Shield", ammo="Hagneia stone",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring2="Vocane Ring",ring1="Defending ring",
-                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Solemnity Cape"}							  
+                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Moonbeam Cape"}							  
                                                  
 		--TP Sets--
         sets.TP = {}
@@ -52,7 +52,7 @@ function get_sets()
 				
                 TP_ind = 1
 				sets.TP.Standard = {main="Sequence", sub ="Colada", ammo ="Ginsen", head ="Ayanmo Zucchetto +1", body ="Ayanmo Corazza", neck="Lissome Necklace", ear1 ="Suppanomimi", ear2 ="Telos Earring",ring1="Petrov Ring", ring2="Chirich Ring",
-									hands ="Ayanmo Manopolas +1", legs ="Carmine Cuisses", feet ="Carmine Greaves", back = "Grounded Mantle", waist ="Kentarch Belt +1" }
+									hands ="Ayanmo Manopolas +1", legs ="Carmine Cuisses +1", feet ="Carmine Greaves +1", back = "Grounded Mantle", waist ="Kentarch Belt +1" }
 	sets.MeleeMode ={}
 		sets.MeleeMode.Index ={'NotMelee','Melee'}
 		MeleeMode_ind =1
@@ -64,26 +64,26 @@ function get_sets()
 			--1=Standard, 2= Magic Burst'--
 			Nuke_ind = 1
 			
-			sets.Nuke.Standard = {main ="Marin Staff +1", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
+			sets.Nuke.Standard = {main ="Oranyan", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
                                  hhead={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
 								 neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Hecate's Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
                                  back="Sucellos's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
 								 feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}}
 										
-			sets.Nuke.MagicBurst = {main ="Marin Staff +1", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
+			sets.Nuke.MagicBurst = {main ="Oranyan", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
                                   neck="Mizukage-no-Kubikazari",ear2="Friomisi earring", ear1="Static Earring", ring1="Locus Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
                                  back="Sucellos's Cape",
 								 head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst dmg.+7%','CHR+7','Mag. Acc.+12',}},
 									body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
 									hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-									legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
+									legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+12 "Mag.Atk.Bns."+12','Magic burst dmg.+8%','MND+5','"Mag.Atk.Bns."+12',}},
 									feet={ name="Merlinic Crackows", augments={'Magic burst dmg.+8%','Mag. Acc.+13','"Mag.Atk.Bns."+12',}}}
 			
 		--Enhancing Sets--					
 		sets.Enhancing ={}
 								
-			sets.Enhancing.Normal = { ammo="Savant's Treatise",
+			sets.Enhancing.Normal = { main ="Oranyan", sub = "Niobid Strap",
                                  head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Spellbreaker Earring",
                                  body="Telchine Chasuble",hands="Atrophy Gloves +1", ring1="Stikini Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
                                  back="Ghostfyre Cape",legs="Telchine Braconi",feet="Lethargy Houseaux +1"}
@@ -95,14 +95,15 @@ function get_sets()
 			--1=Acc, 2= Pot'--
 			Enfeebling_ind = 1
 		
-			sets.Enfeebling.Acc = {main ="Marin Staff +1", sub = "Niobid Strap" ,ammo="Pemphredo Tathlum",
-                                 head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
+			sets.Enfeebling.Acc = {main ="Oranyan", sub = "Niobid Strap" ,ammo="Pemphredo Tathlum",
+                                 head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst dmg.+7%','CHR+7','Mag. Acc.+12',}},
+								 neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},feet="Medium's Sabots"}
 								 
 								 
-			sets.Enfeebling.Pot = {main ="Marin Staff +1", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
+			sets.Enfeebling.Pot = {main ="Oranyan", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
                                  head="Carmine Mask",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
                                  body = "Lethargy Sayon +1",hands="Lurid Mitts", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
@@ -124,18 +125,18 @@ function get_sets()
                                  body="Telchine Chasuble",hands="Telchine Gloves", ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 			
-			sets.Magic.Dark = {main ="Marin Staff +1", sub = "Niobid Strap", ammo="Pemphredo Tathlum",
+			sets.Magic.Dark = {main ="Oranyan", sub = "Niobid Strap", ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Incanter's Torque",ear2="Friomisi earring", ear1="Hecate's Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Shiva Ring", waist ="Refoccilation Stone",
                                  back="Sucellos's Cape",llegs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
 								 feet="Merlinic Crackows"}
 								 
-			sets.Magic.Stun ={main ="Marin Staff +1", sub = "Niobid Strap",ammo="Pemphredo Tathlum",head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
+			sets.Magic.Stun ={main ="Oranyan", sub = "Niobid Strap",ammo="Pemphredo Tathlum",head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
 							neck="Voltsurge Torque", waist ="Luminary Sash", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
 							 left_ring="Rahab Ring", right_ring="Kishar Ring",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}, 
 							 body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},legs="Psycloth Lappas", back ="Sucellos's Cape"}
 						
-			sets.Magic.Refresh = {legs ="Lethargy Fuseau", waist = "Gishdubar Sash"}
+			sets.Magic.Refresh = {legs ="Lethargy Fuseau", waist = "Gishdubar Sash", head =""}
 
 		--Precast Sets--
 			sets.precast = {}
@@ -147,7 +148,7 @@ function get_sets()
 							body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}}, 
 							hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}}, 
 							legs="Psycloth Lappas",
-						    feet="Carmine Greaves",
+						    feet="Carmine Greaves +1",
 							neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
 						    right_ear ="Loquac. Earring",left_ring="Rahab Ring", right_ring="Kishar Ring", back="Swith Cape"}
 							

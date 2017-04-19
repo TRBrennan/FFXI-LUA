@@ -81,7 +81,7 @@ function get_sets()
 		
 		sets.Resolution.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
+                                    body="Argosy Hauberk",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
                                     back="Grounded Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Argosy Sollerets +1"}
 		
                                                            
@@ -92,7 +92,7 @@ function get_sets()
 		
 		sets.Ukkos.Atack = {ammo="Yetshila",
                                     head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Begrudging Ring",
+                                    body="Argosy Hauberk",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Begrudging Ring",
                                     back="Grounded Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Thereoid Greaves"}
 
 		sets.KJ = {}
@@ -102,7 +102,7 @@ function get_sets()
 		
 		sets.KJ.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rajas Ring",
+                                    body="Argosy Hauberk",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Rajas Ring",
                                     back="Grounded Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Argosy Sollerets +1"}
 									
     	sets.Upheavel = {}
@@ -115,7 +115,7 @@ function get_sets()
 		sets.SB ={}
 		sets.SB.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers",ring1="Niqmaddu Ring",ring2="Rajas Ring",
+                                    body="Argosy Hauberk",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Rajas Ring",
                                     back="Grounded Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Sulevia Leggings +1" }
         --Ninja Magic Sets--
         sets.NINMagic = {}

@@ -113,7 +113,7 @@ function init_gear_sets()
               TaeonHands.Snap = {name="Taeon Gloves", augments={'"Snapshot"+5', 'Attack+22','"Snapshot"+3'}}
 
         -- Misc. Job Ability precasts
-        sets.precast.JA['Bounty Shot'] = {hands="Amini Glovelettes +1"}
+        sets.precast.JA['Bounty Shot'] = {hands="Amini Glovelettes +1", waist = "Chaac Belt"}
         sets.precast.JA['Double Shot'] = {head="Amini Gapette"}
         sets.precast.JA['Camouflage'] = {body="Orion Jerkin +1"}
         sets.precast.JA['Sharpshot'] = {legs="Orion Braccae +1"}
@@ -130,7 +130,7 @@ function init_gear_sets()
             back="Buquwik Cape",
             hands="Amini Glovelettes +1",
             ring1="Rajas Ring",
-            ring2="Petrov",
+            ring2="Apate Ring",
             legs="Amini Brague +1", 
             feet="Thereoid Greaves"
         })
@@ -149,7 +149,7 @@ function init_gear_sets()
 			body="Taeon Tabard",  
 			hands="Leyline Gloves",  
 			legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},
-						    feet="Carmine Greaves",  
+						    feet="Carmine Greaves +1",  
 							neck="Voltsurge Torque", 
 							waist="Witful Belt", 
 							left_ear="Etiolation Earring",
@@ -161,18 +161,18 @@ function init_gear_sets()
         sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, { neck="Magoraga Beads" })
         
         sets.idle = {
-            head="Arcadian Beret +1",
-            neck="Sanctity Necklace",
-            ear1="Enervating Earring",
-            ear2="Tripudio Earring",
-            body="Pursuer's Doublet",
-            hands="Amini Glovelettes +1",
-            ring1="Vocane Ring",
-            ring2="Defending Ring",
-    	    back="Solemnity Cape",
-            waist="Elanid Belt",
-            legs="Carmine Cuisses",
-            feet="Herculean Boots"
+            head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
+			body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+			hands="Kurys Gloves",
+			legs={ name="Carmine Cuisses +1", augments={'Accuracy+15','Attack+10','"Dual Wield"+5',}},
+			feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
+			neck="Sanctity Necklace",
+			waist="Flume Belt +1",
+			left_ear="Etiolation Earring",
+			right_ear="Genmei Earring",
+			left_ring="Vocane Ring",
+			right_ring="Defending Ring",
+			back="Moonbeam Cape",
         }
         sets.idle.Regen = set_combine(sets.idle, {
             head="Ocelomeh Headpiece +1",
@@ -190,7 +190,7 @@ function init_gear_sets()
             ring1="Paguroidea Ring",
             ring2="Defending Ring",
             hands="Amini Glovelettes +1",
-            legs="Carmine Cuisses +1",
+            legs="Carmine Cuisses +1 +1",
             back="Lutian Cape"
         })
  
@@ -211,7 +211,7 @@ function init_gear_sets()
         }
         sets.engaged.PDT = set_combine(sets.engaged, {
             hands="Iuitl Wristbands +1",
-    	    back="Solemnity Cape",
+    	    back="Moonbeam Cape",
             neck="Twilight Torque",
             ring1="Dark Ring",
             ring2="Defending Ring"
@@ -238,7 +238,7 @@ function init_gear_sets()
             neck="Twilight Torque",
             ring1="Patricius Ring",
             ring2="Defending Ring",
-    	    back="Solemnity Cape",
+    	    back="Moonbeam Cape",
         })
 
         sets.engaged.DW = set_combine(sets.engaged, {})
@@ -254,7 +254,7 @@ function init_gear_sets()
 			ring2="Epona's Ring",
 			back="Grounded Mantle",
 			waist="Windbuffet Belt +1",
-			legs="Carmine Cuisses",
+			legs="Carmine Cuisses +1",
 			feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} 
         })
 
@@ -264,11 +264,11 @@ function init_gear_sets()
         sets.precast.RA = {
             head="Amini Gapette", -- 7
             body="Amini Caban +1", -- 7
-            hands=TaeonHands.Snap, --8
+            hands="Carmine Finger Gauntlets", --8
             back="Lutian Cape", -- 2
             legs="Adhemar Kecks",
             waist="Impulse Belt", -- 2
-            feet="Wurrukatte Boots" -- 3
+            feet="Meg. Jam. +1" -- 8
         }
         
         ------------------------------------------------------------------
@@ -276,17 +276,17 @@ function init_gear_sets()
         ------------------------------------------------------------------
         sets.midcast.RA = { 
 							head="Meghanada Visor +1",
-							neck="Sanctity Necklace", 
+							neck="Iskur Gorget", 
 							ear2="Telos Earring", 
 							ear1="Volley Earring",
 							body="Adhemar Jacket",
-							hands="Adhemar Wristbands", 
-							ring1="Rajas",
+							hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
+							ring1="Apate Ring",
 							ring2="Cacoethic Ring", 
 							waist ="Yemaya Belt",
-							back="Gunslinger's Cape",   
-							legs="Pursuer's Pants",
-							feet ="Meg. Jam +1"
+							back="Belenus's Cape",   
+							legs="Adhemar Kecks",
+							feet="Meg. Jam. +1"
         }
         sets.midcast.RA.Mid = set_combine(sets.midcast.RA, {
             back="Lutian Cape", 
@@ -326,11 +326,11 @@ function init_gear_sets()
 							ear2="Telos Earring", 
 							ear1="Volley Earring",
 							body="Adhemar Jacket",
-							hands="Adhemar Wristbands", 
-							ring1="Rajas",
+							hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
+							ring1="Apate Ring",
 							ring2="Cacoethic Ring", 
 							waist ="Yemaya Belt",
-							back="Gunslinger's Cape",   
+							back="Belenus's Cape",   
 							legs="Pursuer's Pants",
 							feet ="Meg. Jam +1"
         }
@@ -366,11 +366,11 @@ function init_gear_sets()
 							ear2="Telos Earring", 
 							ear1="Volley Earring",
 							body="Adhemar Jacket",
-							hands="Adhemar Wristbands", 
-							ring1="Rajas",
+							hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
+							ring1="Apate Ring",
 							ring2="Cacoethic Ring", 
 							waist ="Yemaya Belt",
-							back="Gunslinger's Cape",   
+							back="Belenus's Cape",   
 							legs="Pursuer's Pants",
 							feet ="Meg. Jam +1"
         }
@@ -432,9 +432,9 @@ function init_gear_sets()
 						ear1="Sherida Earring",
 						ear2="Moonshade Earring",
                         body="Adhemar Jacket",
-						hands="Meg. Gloves +1",
+						hands="Meg. Gloves +2",
 						ring1="Rajas Ring",
-						ring2="Arvina Ringlet +1",
+						ring2="Regal Ring",
                         back="Lupine Cape",
 						waist="Fotia Belt",
 						legs="Pursuer's Pants",
@@ -456,11 +456,11 @@ function init_gear_sets()
 							ear2="Friomisi earring", 
 							ear1="Moonshade Earring",
 							body="Samnuha Coat",
-							hands="Meg. Gloves +1",   
+							hands="Meg. Gloves +2",   
 							ring1="Acumen Ring", 
 							ring2 ='Arvina Ringlet +1',
 							waist ="Eschan Stone",
-							back="Gunslinger's Cape",   
+							back="Belenus's Cape",   
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
 							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
         
@@ -474,11 +474,11 @@ function init_gear_sets()
 							ear2="Friomisi earring", 
 							ear1="Moonshade Earring",
 							body="Samnuha Coat",
-							hands="Meg. Gloves +1",   
+							hands="Meg. Gloves +2",   
 							ring1="Acumen Ring", 
 							ring2 ='Arvina Ringlet +1',
 							waist ="Eschan Stone",
-							back="Gunslinger's Cape",   
+							back="Belenus's Cape",   
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
 							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
         
@@ -504,7 +504,7 @@ function init_gear_sets()
         -- LAST STAND
         sets.LastStand = {
            neck="Fotia Gorget",
-           ring2="Garuda Ring",
+           ring2="Regal Ring",
            waist="Fotia Belt",
            feet="Orion Socks +1"
         }
@@ -619,16 +619,16 @@ function init_gear_sets()
        
         sets.buff.Barrage = {
 
-            ear1="Sherida Earring",
-            head="Meghanada Visor +1",
+        ear1="Sherida Earring",
+        head="Meghanada Visor +1",
 	    neck="Sanctity Necklace", 
 	    ear2="Telos Earring", 
 	    body="Adhemar Jacket",
- 	    hands="Adhemar Wristbands",
-	    ring1="Rajas Ring",
+ 	    hands="Orion Bracers +1",
+	    ring1="Apate Ring",
 	    ring2="Cacoethic Ring", 
  	    waist ="Yemaya Belt",
-	    back="Gunslinger's Cape",   
+	    back="Belenus's Cape",   
 	    legs="Pursuer's Pants",
 	    feet ="Meg. Jam +1"
         }

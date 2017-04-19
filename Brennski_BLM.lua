@@ -30,17 +30,17 @@ function get_sets()
 		--1=Standard, 2 =DT , 3 = Death--
         Idle_ind = 1                  
        
-        sets.Idle.Standard = {ammo="Staunch Tathlum",
+        sets.Idle.Standard = {ammo="Staunch Tathlum", main ="Lathi",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands="Amalric Gages",ring1="Defending ring",ring2="Vocane Ring",
-                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Amalric Nails", back ="Solemnity Cape"}
+                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Amalric Nails", back ="Moonbeam Cape"}
 									  
-		sets.Idle.DT = {ammo="Hagneia stone",
+		sets.Idle.DT = {ammo="Hagneia stone", main ="Lathi",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands="Amalric Gages",ring1="Vocane Ring",ring2="Defending ring",
-                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Amalric Nails", back ="Solemnity Cape"}
+                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Amalric Nails", back ="Moonbeam Cape"}
 		
-		sets.Idle.Death ={ammo="Strobilus",
+		sets.Idle.Death ={ammo="Strobilus", main ="Lathi",
                                  head="Pixie Hairpin +1",neck="Sanctity Necklace",ear2="Etiolation Earring", ear1="Barkarole Earring",
                                  body="Amalric Doublet",hands="Amalric Gages", ring1="Mephitas's Ring", ring2="Defending Ring", waist ="Fucho-no-obi",
                                  back="Taranus's Cape",legs="Amalric Slops",feet="Amalric Nails"}	
@@ -52,10 +52,10 @@ function get_sets()
                 --1=Standard--
 				
                 TP_ind = 1
-				sets.TP.Standard = {ammo="Staunch Tathlum",
+				sets.TP.Standard = {main ="Lathi",ammo="Staunch Tathlum",
                                       head="Hike Khat",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands="Amalric Gages",ring1="Defending ring",ring2="Vocane Ring",
-                                      waist="Fucho-no-obi",legs="Assiduity Pants",feet="Amalric Nails", back ="Solemnity Cape"}
+                                      waist="Fucho-no-obi",legs="Assiduity Pants",feet="Amalric Nails", back ="Moonbeam Cape"}
 
 		--WS Sets--
 			
@@ -74,14 +74,14 @@ function get_sets()
 			--1=Standard, 2= Magic Burst'--
 			Nuke_ind = 1
 			
-			sets.Nuke.Standard = {ammo="Pemphredo Tathlum",
+			sets.Nuke.Standard = {main ="Lathi",ammo="Pemphredo Tathlum",
                                  head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
 								 neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Barkarole Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
                                  back="Taranus's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
 								 feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}}
 										
-			sets.Nuke.MagicBurst = {ammo="Pemphredo Tathlum",
+			sets.Nuke.MagicBurst = {main ="Lathi",ammo="Pemphredo Tathlum",
 									neck="Mizukage-no-Kubikazari",ear2="Friomisi earring", ear1="Barkarole Earring",
 									ring1="Locus Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
 									back="Taranus's Cape", 
@@ -99,7 +99,7 @@ function get_sets()
 			--1=Normal--
 			Enhancing_ind = 1
 				
-			sets.Enhancing.Normal = { ammo="Savant's Treatise",
+			sets.Enhancing.Normal = {main ="Oranyan",ammo="Savant's Treatise",
                                  head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Spellbreaker Earring",
                                  body="Telchine Chasuble",hands="Chironic Gloves", ring1="Stikini Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
                                  back="Fi follet cape +1",legs="Telchine Braconi",feet="Telchine Pigaches"}
@@ -108,7 +108,7 @@ function get_sets()
 		--Magic Sets--
 		sets.Magic ={}
 		
-			sets.Magic.Enfeebling = {ammo="Pemphredo Tathlum",
+			sets.Magic.Enfeebling = {main ="Lathi",ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Barkarole Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
 								 hands="Lurid Mitts", ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",

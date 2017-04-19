@@ -104,7 +104,14 @@ function init_gear_sets()
         body="Mochi. Chainmail +1",})
  
     -- Snapshot for ranged
-    sets.precast.RA = {}
+    sets.precast.RA = {head="Amini Gapette", -- 7
+            body="Amini Caban +1", -- 7
+            
+            back="Lutian Cape", -- 2
+            legs="Adhemar Kecks",
+            waist="Impulse Belt", -- 2
+            feet="Meg. Jam. +1" -- 8
+			}
         
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
@@ -120,7 +127,7 @@ function init_gear_sets()
         right_ear_ear="Moonshade Earring",
         left_ear="Telos Earring",
         left_ring="Epona's Ring",
-        right_ring="Rufescent Ring",
+        right_ring="Regal Ring",
         back=Andartia.WSD}
          
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {
@@ -135,7 +142,7 @@ function init_gear_sets()
         right_ear_ear="Moonshade Earring",
         left_ear="Telos Earring",
         left_ring="Epona's Ring",
-        right_ring="Rufescent Ring",
+        right_ring="Regal Ring",
         back=Andartia.WSD})
          
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -150,7 +157,7 @@ function init_gear_sets()
         feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
         right_ear_ear="Moonshade Earring",
         left_ear="Telos Earring",
-        left_ring="Rufescent Ring",
+        left_ring="Regal Ring",
         right_ring="Rajas Ring"})
  
     sets.precast.WS['Blade: Shun'] = set_combine(sets.precast.WS, { 
@@ -275,12 +282,25 @@ function init_gear_sets()
 		hands="Herculean Gloves",
 		ring2="Vocane Ring",
 		ring1="Defending Ring",
-        back="Solemnity Cape",
+        back="Moonbeam Cape",
 		waist="Flume belt +1",
 		legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
 		feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
  
-    sets.midcast.RA = {}
+    sets.midcast.RA = {
+		head="Meghanada Visor +1",
+							neck="Iskur Gorget", 
+							ear2="Telos Earring", 
+							ear1="Volley Earring",
+							body="Adhemar Jacket",
+							hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
+							ring1="Apate Ring",
+							ring2="Cacoethic Ring", 
+							waist ="Yemaya Belt",
+							back="Gunslinger's Cape",   
+							legs="Pursuer's Pants",
+							feet="Meg. Jam. +1"
+	}
  
     --------------------------------------
     -- Idle/resting/defense/etc sets
@@ -328,7 +348,7 @@ function init_gear_sets()
         left_ear="Infused Earring", right_ear="Genmei Earring",    
         right_ring="Vocane Ring",
         left_ring="Defending Ring",
-        back="Solemnity cape"}
+        back="Moonbeam Cape"}
      
     sets.idle.Weak = {
         ammo="Staunch Tathlum",
@@ -360,7 +380,7 @@ function init_gear_sets()
         right_ear="Suppanomimi",
         right_ring="Vocane Ring",
         left_ring="Defending Ring",
-        back="Solemnity Cape",}
+        back="Moonbeam Cape",}
          
     sets.defense.MDT = {
         ammo="Happo Shuriken",
@@ -375,7 +395,7 @@ function init_gear_sets()
         right_ear="Static Earring",
         left_ring="Shadow Ring",
         right_ring="Defending Ring",
-        back="Solemnity Cape",}
+        back="Moonbeam Cape",}
  
     sets.Kiting = {left_ring="Shneddick Ring",feet=gear.MovementFeet}
     ---------------------------------------------------------------------------------

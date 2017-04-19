@@ -62,10 +62,10 @@ function get_sets()
 										body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Chirich Ring",ring2="Epona's ring",
                                         back="Canny Cape",waist="windbuffet belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
-                sets.TP.AccuracyFull = {ammo="Honed tathlum",
+                sets.TP.AccuracyFull = {ammo="Amar Cluster",
                                         head="Dampening Tam", neck="Lissome necklace", ear1="Dudgeon Earring",ear2="Heartseeker Earring",
                                         body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Cacoethic Ring",ring2="Chirich Ring",
-                                         back="Canny Cape",waist="Kentarch Belt +1",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+                                         back="Canny Cape",waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
                               head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Ethereal", ear2="Genmei Earring",
@@ -79,7 +79,7 @@ function get_sets()
 									  
 				sets.TP.TH = { ammo="Ginsen",
                                     head="Dampening Tam", neck="Lissome necklace", ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-                                    body="Adhemar Jacket",hands="Assassin's Armlets",ring1="Petrov Ring",ring2="Epona's Ring",
+                                    body="Adhemar Jacket",hands="Assassin's Armlets +2",ring1="Petrov Ring",ring2="Epona's Ring",
                                     back="Canny Cape",waist="Chaac Belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                          
 									

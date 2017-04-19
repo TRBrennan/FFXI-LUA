@@ -30,15 +30,15 @@ function get_sets()
 		--1=Standard, 2 =DT --
         Idle_ind = 1                  
        
-        sets.Idle.Standard = {ammo="Homiliary",
+        sets.Idle.Standard = {main ="Akademos",ammo="Homiliary",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Defending ring",ring2="Vocane Ring",
-                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Solemnity Cape"}
+                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Moonbeam Cape"}
 									  
-		sets.Idle.DT = {ammo="Hagneia stone",
+		sets.Idle.DT = {main ="Akademos",ammo="Hagneia stone",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Vocane Ring",ring2="Defending ring",
-                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Solemnity Cape"}							  
+                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Moonbeam Cape"}							  
                                                  
 		--TP Sets--
         sets.TP = {}
@@ -47,10 +47,10 @@ function get_sets()
                 --1=Standard--
 				
                 TP_ind = 1
-				sets.TP.Standard = {ammo="Homiliary",
+				sets.TP.Standard = {main ="Akademos",ammo="Homiliary",
                                       head="Hike Khat",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
                                       body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Defending ring",ring2="Vocane Ring",
-                                      waist="Fucho-no-obi",legs="Assiduity Pants",feet="Chironic Slippers", back ="Solemnity Cape"}
+                                      waist="Fucho-no-obi",legs="Assiduity Pants",feet="Chironic Slippers", back ="Moonbeam Cape"}
 
 		--WS Sets--
 			
@@ -69,8 +69,8 @@ function get_sets()
 			--1=Standard, 2= Magic Burst'--
 			Nuke_ind = 1
 			
-			sets.Nuke.Standard = {ammo="Pemphredo Tathlum",
-                                 hhead={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
+			sets.Nuke.Standard = {main ="Akademos",ammo="Pemphredo Tathlum",
+                                 head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
 								 neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Barkarole Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
                                  back="Lugh's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
@@ -102,12 +102,12 @@ function get_sets()
 			--1=Normal, 2=Storms--
 			Enhancing_ind = 1
 				
-			sets.Enhancing.Normal = { ammo="Savant's Treatise",
+			sets.Enhancing.Normal = { main ="Oranyan",ammo="Savant's Treatise",
                                  head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Spellbreaker Earring",
                                  body="Telchine Chasuble",hands="Chironic Gloves", ring1="Stikini Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
                                  back="Fi follet cape +1",legs="Telchine Braconi",feet="Telchine Pigaches"}
 		
-			sets.Enhancing.Storms = { ammo="Savant's Treatise",
+			sets.Enhancing.Storms = { main ="Oranyan",ammo="Savant's Treatise",
                                  head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Spellbreaker Earring",
                                  body="Telchine Chasuble",hands="Chironic Gloves", ring1="Stikini Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
                                  back="Fi follet cape +1",legs="Telchine Braconi",feet="Pedagogy loafers"}								 
@@ -115,7 +115,7 @@ function get_sets()
 		--Magic Sets--
 		sets.Magic ={}
 		
-			sets.Magic.Enfeebling = {ammo="Pemphredo Tathlum",
+			sets.Magic.Enfeebling = {main ="Akademos",ammo="Pemphredo Tathlum",
                                  head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Barkarole Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",

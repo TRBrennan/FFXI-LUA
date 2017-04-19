@@ -37,7 +37,7 @@ function get_sets()
         sets.Idle.Standard = {ammo="Staunch Tathlum",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", ear1="Genmei earring", ear2="Infused Earring",
                                       body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Defending ring",ring2="Vocane Ring",
-                                      waist="Flume Belt +1",legs="Carmine Cuisses",feet="Sulevia's Leggings +1", back ="Solemnity Cape"}
+                                      waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Sulevia's Leggings +1", back ="Solemnity Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum", 
 							head="Sulevia's Mask +1",neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Cessance Earring",

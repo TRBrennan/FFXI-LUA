@@ -67,7 +67,7 @@ function get_sets()
                 sets.TP.AccuracyFull = {
                                         head="Dampening Tam", neck="Empath Necklace", ear1="Dignitary's Earring",ear2="Telos Earring",
                                         body="Herculean Vest",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Cacoethic Ring",ring2="Supershear Ring",
-                                         back="Visucius's Mantle",waist="Kentarch Belt +1",legs="Carmine Cuisses",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+                                         back="Visucius's Mantle",waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                        
                 sets.TP.DT = {
                               head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Ethereal", ear2="Genmei Earring",
