@@ -435,7 +435,7 @@ function init_gear_sets()
 						hands="Meg. Gloves +2",
 						ring1="Rajas Ring",
 						ring2="Regal Ring",
-                        back="Lupine Cape",
+                        back="Belenus's Cape",
 						waist="Fotia Belt",
 						legs="Pursuer's Pants",
 						feet ="Meg. Jam +1"}
@@ -446,7 +446,7 @@ function init_gear_sets()
             feet="Orion Socks +1",
         })
         sets.precast.WS.Acc = set_combine(sets.precast.WS.Mid, {
-            back="Lutian Cape"
+            back="Belenus's Cape"
         })
 
         -- WILDFIRE

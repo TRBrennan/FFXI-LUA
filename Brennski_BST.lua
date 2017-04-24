@@ -35,12 +35,12 @@ function get_sets()
         Idle_ind = 1                  
        
         sets.Idle.Standard = {ammo="Demonry Core",
-                                      head="Rawhide Mask",neck="Sanctity Necklace", ear1="Genmei earring", ear2="Handler's earring",
+                                      head={ name="Herculean Helm", augments={'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},neck="Sanctity Necklace", ear1="Genmei earring", ear2="Handler's earring",
                                       body="Emet Harness +1",hands="Ankusa Gloves",ring1="Vocane Ring",ring2="Defending ring",
                                       waist="Flume Belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}, back ="Mecistopins mantle"}
                                                  
         sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap",ammo="Amar Cluster",
-                                head="Rawhide Mask",neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
+                                head={ name="Herculean Helm", augments={'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
                                         body="Emet Harness +1",hands="Adhemar Wristbands",ring1="Defending ring",ring2="Succor ring",
                                         back="Cornflower Cape",waist="Flume belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 										
@@ -72,7 +72,7 @@ function get_sets()
 		
 		sets.Ready.Magical ={main ="Mdomo Axe", sub ="Arktoi",ammo ="Demonry Core",
 							 head={ name="Valorous Mask", augments={'Pet: Mag. Acc.+11','Pet: "Dbl.Atk."+2 Pet: Crit.hit rate +2','Pet: Accuracy+14 Pet: Rng. Acc.+14',}},
-							 body="Emicho Haubert", legs="Valorous Hose", feet ="Emicho Gambieras", hands ="Regimen Mittens",
+							 body="Valorous Mail", legs="Valorous Hose", feet ="Emicho Gambieras", hands ="Regimen Mittens",
 							  back="Pastoralist's Mantle", neck="Deino Collar", ear1="Hija Earring", ear2= "Sabong Earring",waist="Incarnation Sash"}
 							  
 		--WS Sets--

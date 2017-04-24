@@ -36,12 +36,14 @@ function get_sets()
        
         sets.Idle.Standard = {main="Bolelabunga", sub ="Genmei Shield",ammo="Homiliary",
                                       head="Vitivation Chapeau +1",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Defending ring",ring2="Vocane Ring",
+                                      body="Vrikodara Jupon",hands={ name="Merlinic Dastanas", augments={'DEX+3','Mag. Acc.+16 "Mag.Atk.Bns."+16','"Refresh"+1',}},
+									  ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Carmine Cuisses +1",feet="Chironic Slippers", back ="Moonbeam Cape"}
 									  
 		sets.Idle.DT = {main="Bolelabunga", sub ="Genmei Shield", ammo="Hagneia stone",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring2="Vocane Ring",ring1="Defending ring",
+                                      body="Vrikodara Jupon",hands={ name="Merlinic Dastanas", augments={'DEX+3','Mag. Acc.+16 "Mag.Atk.Bns."+16','"Refresh"+1',}},
+									  ring2="Vocane Ring",ring1="Defending ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Moonbeam Cape"}							  
                                                  
 		--TP Sets--
@@ -83,7 +85,7 @@ function get_sets()
 		--Enhancing Sets--					
 		sets.Enhancing ={}
 								
-			sets.Enhancing.Normal = { main ="Oranyan", sub = "Niobid Strap",
+			sets.Enhancing.Normal = { main ="Oranyan", sub = "Niobid Strap", ammo="Regal Gem",
                                  head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Spellbreaker Earring",
                                  body="Telchine Chasuble",hands="Atrophy Gloves +1", ring1="Stikini Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
                                  back="Ghostfyre Cape",legs="Telchine Braconi",feet="Lethargy Houseaux +1"}
@@ -95,7 +97,7 @@ function get_sets()
 			--1=Acc, 2= Pot'--
 			Enfeebling_ind = 1
 		
-			sets.Enfeebling.Acc = {main ="Oranyan", sub = "Niobid Strap" ,ammo="Pemphredo Tathlum",
+			sets.Enfeebling.Acc = {main ="Oranyan", sub = "Niobid Strap" ,ammo="Regal Gem",
                                  head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst dmg.+7%','CHR+7','Mag. Acc.+12',}},
 								 neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Lurid Mitts", 
@@ -103,7 +105,7 @@ function get_sets()
                                  back="Sucellos's Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},feet="Medium's Sabots"}
 								 
 								 
-			sets.Enfeebling.Pot = {main ="Oranyan", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
+			sets.Enfeebling.Pot = {main ="Oranyan", sub = "Niobid Strap",ammo="Regal Gem",
                                  head="Carmine Mask",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
                                  body = "Lethargy Sayon +1",hands="Lurid Mitts", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
@@ -112,10 +114,8 @@ function get_sets()
 								 
 		--Magic Sets--
 		sets.Magic ={}
-		
-			
-			
-			sets.Magic.Healing = {ammo="Kalboron Stone",
+					
+			sets.Magic.Healing = {ammo="Regal Gem",
                                  head="Vanya Hood",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear2="Mendi. Earring",
                                  body="Vrikodara Jupon",hands="Telchine Gloves", ring1="Ephedra Ring", ring2 ="Sirona's Ring", waist ="Luminary Sash",
                                  back="Solemnity Cape",legs={ name="Chironic Hose", augments={'Mag. Acc.+9 "Mag.Atk.Bns."+9','"Cure" spellcasting time -10%','Mag. Acc.+13',}},feet="Vanya Clogs"}
@@ -289,17 +289,17 @@ function midcast(spell,act)
 		
 		if spell.skill =='Dark Magic' then
 			equip(sets.Magic.Dark)
-		end
-		
-		if spell.english =='Dia III' or spell.english == 'Slow II' then
-			equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]],sets.Utility.Dia))
-		end
+		end		
 		
 		if spell.skill =='Enfeebling Magic' then
 			equip(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]])
 			if buffactive['Saboteur'] then	
 				equip(set_combine(sets.Enfeebling.Pot,sets.JA.Sab))
 			end
+		end
+		
+		if spell.english =='Dia III' or spell.english == 'Slow II' then
+			equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]],sets.Utility.Dia))
 		end
 		
 		if spell.skill =='Elemental Magic' then
@@ -313,7 +313,7 @@ function midcast(spell,act)
 				equip(set_combine(sets.Enhancing.Normal,sets.Magic.Regen))
 		end
 		
-		if spell.english == 'Refresh' or spell.english == 'Refresh II' then
+		if spell.english == 'Refresh' or spell.english == 'Refresh II' or spell.english == 'Refresh III' then
 				equip(set_combine(sets.Enhancing.Normal,sets.Magic.Refresh))
 		end
 		

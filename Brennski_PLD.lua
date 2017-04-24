@@ -24,18 +24,18 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Homiliary",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-									  neck="Sanctity Necklace", ear1="Odnowa Earring +1", ear2="Infused Earring",
-                                      body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
+									  neck="Coatl Gorget +1", ear1="Odnowa Earring +1", ear2="Infused Earring",
+                                      body="Reverence Surcoat +2",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Carmine Cuisses +1",feet="Souveran Schuhs", back ="Moonbeam Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum",
                                     head="Souveran Schaller", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Thureous Earring",
-                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
-                                    back="Moonbeam Cape",waist="Flume Belt +1",legs="Souveran Diechlings",feet="Souveran Schuhs"}
+                                    body="Reverence Surcoat +2",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
+                                    back="Moonbeam Cape",waist="Flume Belt +1",legs="Souveran Diechlings +1",feet="Souveran Schuhs"}
 										
 		sets.Idle.Cleave = {ammo="Staunch Tathlum",
                                     head="Souveran Schaller", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Thureous Earring",
-                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
+                                    body="Reverence Surcoat +2",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
                                     back="Moonbeam Cape",waist="Flume Belt +1",feet="Souveran Schuhs",legs="Carmine Cuisses +1"}								
         --TP Sets--
         sets.TP = {}
@@ -49,18 +49,18 @@ function get_sets()
 									neck="Loricate Torque +1",
 									ear1="Odnowa Earring +1",
 									ear2="Thureous Earring",
-                                    body="Souveran Cuirass",
+                                    body="Reverence Surcoat +2",
 									hands="Souveran Handschuhs",
 									ring1="Defending ring",
 									ring2="Vocane Ring",
                                     back="Moonbeam Cape",
 									waist="Flume Belt +1",
-									legs="Souveran Diechlings",
+									legs="Souveran Diechlings +1",
 									feet="Souveran Schuhs"}
 									
 				sets.TP.Standard = {    ammo="Ginsen",
 										head="Flam. Zucchetto +1",
-										body={ name="Emicho Haubert", augments={'HP+50','DEX+10','Accuracy+15',}},
+										body="Valorous Mail",
 										hands={ name="Emicho Gauntlets", augments={'HP+50','DEX+10','Accuracy+15',}},
 										legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
 										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
@@ -222,9 +222,9 @@ function get_sets()
 								neck = "Unmoving Collar",
 								hands="Souveran Handschuhs",
 								feet="Souveran Schuhs",
-								body="Souveran Cuirass",
+								body="Reverence Surcoat +2",
 								ring1="Petrov Ring",
-								legs="Souveran Diechlings",
+								legs="Souveran Diechlings +1",
 								head="Souveran Schaller"}
 								
 		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
@@ -251,7 +251,7 @@ function get_sets()
        
        sets.precast.FC.Standard = { ammo="Sapience Orb",
 							head="Carmine Mask", 
-							body="Odyssean Chestplate",
+							body="Reverence Surcoat +2",
 							hands="Souveran Handschuhs",
 							legs={ name="Odyssean Cuisses", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','"Fast Cast"+3','INT+1','Mag. Acc.+9','"Mag.Atk.Bns."+3',}},
 						    feet="Carmine Greaves +1",

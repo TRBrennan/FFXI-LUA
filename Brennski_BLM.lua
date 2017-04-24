@@ -32,12 +32,14 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Staunch Tathlum", main ="Lathi",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands="Amalric Gages",ring1="Defending ring",ring2="Vocane Ring",
+                                      body="Vrikodara Jupon",hands={ name="Merlinic Dastanas", augments={'DEX+3','Mag. Acc.+16 "Mag.Atk.Bns."+16','"Refresh"+1',}},
+									  ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Amalric Nails", back ="Moonbeam Cape"}
 									  
 		sets.Idle.DT = {ammo="Hagneia stone", main ="Lathi",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands="Amalric Gages",ring1="Vocane Ring",ring2="Defending ring",
+                                      body="Vrikodara Jupon",hands={ name="Merlinic Dastanas", augments={'DEX+3','Mag. Acc.+16 "Mag.Atk.Bns."+16','"Refresh"+1',}},
+									  ring1="Vocane Ring",ring2="Defending ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Amalric Nails", back ="Moonbeam Cape"}
 		
 		sets.Idle.Death ={ammo="Strobilus", main ="Lathi",
@@ -54,7 +56,8 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = {main ="Lathi",ammo="Staunch Tathlum",
                                       head="Hike Khat",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands="Amalric Gages",ring1="Defending ring",ring2="Vocane Ring",
+                                      body="Vrikodara Jupon",hands={ name="Merlinic Dastanas", augments={'DEX+3','Mag. Acc.+16 "Mag.Atk.Bns."+16','"Refresh"+1',}},
+									  ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants",feet="Amalric Nails", back ="Moonbeam Cape"}
 
 		--WS Sets--

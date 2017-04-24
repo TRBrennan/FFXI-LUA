@@ -54,7 +54,7 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = {ammo="Ginsen",
 									head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}},
-									body={ name="Emicho Haubert", augments={'HP+50','DEX+10','Accuracy+15',}},
+									body="Valorous Mail", 
 									hands={ name="Emicho Gauntlets", augments={'HP+50','DEX+10','Accuracy+15',}},
 									legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
 									feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
@@ -69,7 +69,7 @@ function get_sets()
                                                        
                 sets.TP.AccuracyFull = {ammo="Seething Bomblet +1",
                                         head="Sulevia's Mask +1",neck="Sanctity Necklace", ear1="Dignitary's Earring", ear2="Telos Earring",
-                                        body="Emicho Haubert",hands="Emicho Gauntlets",ring1="Cacoethic Ring",ring2="Chirich Ring",
+                                        body="Valorous Mail",hands="Emicho Gauntlets",ring1="Cacoethic Ring",ring2="Chirich Ring",
                                         back ="Grounded Mantle",waist="Ioskeha Belt",legs="Odyssean Cuisses",feet="Valorous Greaves"}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
@@ -157,7 +157,7 @@ function get_sets()
                                                         back="Swith cape",waist="Pythia sash +1",legs="Portent pants",feet="Valorous Greaves"}
                                                        
         sets.Utility.Steps = {ammo="Ginsen",
-							head="Boii Mask +1", body="Emicho Haubert", hands="Rawhide Gloves",legs=="Odyssean Cuisses", feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",  back ="Grounded Mantle",}
+							head="Boii Mask +1", body="Valorous Mail", hands="Rawhide Gloves",legs=="Odyssean Cuisses", feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",  back ="Grounded Mantle",}
                                                  
 		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
 		
@@ -167,7 +167,7 @@ function get_sets()
         sets.JA = {}
 		sets.JA.Jump = { ammo="Ginsen",
 						head="Sulevia's Mask +1",
-						body={ name="Emicho Haubert", augments={'HP+50','DEX+10','Accuracy+15',}},
+						body={ name="Valorous Mail", augments={'HP+50','DEX+10','Accuracy+15',}},
 						hands={ name="Emicho Gauntlets", augments={'HP+50','DEX+10','Accuracy+15',}},
 						legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
 						feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
@@ -187,7 +187,7 @@ function get_sets()
 					body="Ptero. Mail +1",hands="Despair Fin. Gaunt.", 
 					back="Updraft Mantle",legs="Vishap Brais +1",feet="Ptero. Greaves +1"} -- Relic Body and Wyvern HP go here
 		sets.JA.SteadyWing = sets.JA.SpiritSurge -- Wyvern HP
-		sets.JA.SteadyWing['Body'] = "Emicho Haubert" -- Path D Emicho Haubert
+		sets.JA.SteadyWing['Body'] = "Valorous Mail" -- Path D Valorous Mail
         --Precast Sets--
         sets.precast = {}
        
@@ -200,7 +200,7 @@ function get_sets()
        
 	   sets.Breath = {ammo="Staunch Tathlum",
 				   head="Ptero. Armet +1",neck="Lancer's Torque",ear1="Anastasi Earring",ear2="Lancer's Earring",
-				   body="Emicho Haubert",hands="Despair Fin. Gaunt.",
+				   body="Valorous Mail",hands="Despair Fin. Gaunt.",
 				   back="Updraft Mantle",waist="Glassblower's Belt",legs="Vishap Brais +1",feet="Ptero. Greaves +1"}
 
 end
