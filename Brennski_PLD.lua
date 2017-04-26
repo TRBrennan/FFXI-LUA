@@ -40,8 +40,8 @@ function get_sets()
         --TP Sets--
         sets.TP = {}
  
-           sets.TP.index = { 'Tank','Standard', 'AccuracyFull', 'DW'}
-                --1=Tank ,2 = Standard, 3 = AccuracyFull, 4= DW--
+           sets.TP.index = { 'Tank','Standard'}
+                --1=Tank ,2 = Standard--
 				
                 TP_ind = 1				                                                                                         
 				sets.TP.Tank = { ammo="Staunch Tathlum",
@@ -72,36 +72,7 @@ function get_sets()
 										right_ring="Chirich Ring",
 										back="Grounded Mantle",
 									}
-                                                       
-	   
-                sets.TP.AccuracyFull = {ammo="Ginsen",
-                                        head="Sulevia's Mask +1",
-										neck="Sanctity Necklace",
-										ear1="Steelflash earring",
-										ear2="Cessance Earring",
-                                        body="Founder's Breastplate",
-										hands="Leyline Gloves",
-										ring1="Petrov Ring",
-										ring2="Vocane Ring",
-                                        back="Moonbeam Cape",
-										waist="Kentarch Belt +1",
-										legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
-										feet="Valorous Greaves"}
-                                                       
-                                                         
-                 sets.TP.DW = {ammo="Ginsen",
-                                    head="Sulevia's Mask +1",
-									neck="Sanctity Necklace",
-									ear1="Dudgeon earring", 
-									ear2="Heartseeker earring",
-                                    body="Founder's Breastplate",
-									hands="Leyline Gloves",
-									ring1="Petrov Ring",
-									ring2="Rajas Ring",
-                                    back="Weard mantle",
-									waist="windbuffet belt +1",
-									legs="Founder's Hose",
-									feet="Odyssean Greaves"}                                                        
+                                                                                                               
 									
        --Weaponskill Sets--
         sets.WS = {}
@@ -111,7 +82,7 @@ function get_sets()
         sets.Requiescat.index = {'Attack'}
         Requiescat_ind = 1
        
-        sets.Requiescat.Attack = {head="Carmine Mask",
+        sets.Requiescat.Attack = {head="Carmine Mask +1",
 								 neck="Fotia Gorget",
 								 ear2="Moondshade earring",
 								 ear1="Telos Earring",
@@ -181,10 +152,10 @@ function get_sets()
        
 	    sets.Magic.Divine = {neck = "Incanter's Torque", ring1 = "Stikini Ring"}
 		
-		sets.Magic.Phalanx ={head="Carmine Mask", legs ="Carmine Cuisses +1",neck = "Incanter's Torque", body ="Shabti Cruissas",hands="Souveran Handschuhs",feet="Souveran Schuhs",
+		sets.Magic.Phalanx ={head="Carmine Mask +1", legs ="Carmine Cuisses +1",neck = "Incanter's Torque", body ="Shabti Cruissas",hands="Souveran Handschuhs",feet="Souveran Schuhs",
 							ring1 = "Stikini Ring",ear2 ="Andoaa Earring", waist ="Olympus Sash"}
 		
-		sets.Magic.Enhancing ={head="Carmine Mask", legs ="Carmine Cuisses +1",neck = "Incanter's Torque", body ="Shabti Cruissas", ring1 = "Stikini Ring",
+		sets.Magic.Enhancing ={head="Carmine Mask +1", legs ="Carmine Cuisses +1",neck = "Incanter's Torque", body ="Shabti Cruissas", ring1 = "Stikini Ring",
 								ear2 ="Andoaa Earring", waist ="Olympus Sash"}
 		
 		sets.Magic.Reprisal ={ring2="Supershear Ring", ring1 = "Stikini Ring", ear2 ="Andoaa Earring", waist ="Olympus Sash"}
@@ -250,7 +221,7 @@ function get_sets()
         sets.precast.FC = {}
        
        sets.precast.FC.Standard = { ammo="Sapience Orb",
-							head="Carmine Mask", 
+							head="Carmine Mask +1", 
 							body="Reverence Surcoat +2",
 							hands="Souveran Handschuhs",
 							legs={ name="Odyssean Cuisses", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','"Fast Cast"+3','INT+1','Mag. Acc.+9','"Mag.Atk.Bns."+3',}},

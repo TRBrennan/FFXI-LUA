@@ -92,10 +92,10 @@ function get_sets()
         Requiescat_ind = 1
        
         sets.Requiescat.Attack = {ammo="Seething Bomblet +1",
-                                          head="Adhemar Bonnet",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Telos Earring",
+                                          head="Carmine Mask +1",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Telos Earring",
                                           body="Adhemar Jacket",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Petrov Ring",ring2="Epona's ring",
                                           back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
-										  waist="Fotia belt",legs="Quiahuiz leggings",feet={ name="Herculean Boots", augments={'Attack+30','"Counter"+1','STR+8','Accuracy+10',}}}
+										  waist="Fotia belt",legs="Quiahuiz leggings",feet="Carmine Greaves +1"}
 										  
 		sets.SavageBlade = {}
        
@@ -207,7 +207,7 @@ function get_sets()
 
 										
 	    sets.BlueMagic.Debuff = {ammo="Pemphredo Tathlum",
-								  head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},ear2="Lifestorm Earring", ear1="Psystorm Earring", neck ="atzintli necklace",
+								  head="Carmine Mask +1",ear2="Lifestorm Earring", ear1="Psystorm Earring", neck ="atzintli necklace",
 								body="Amalric Doublet",hands="Adhemar Wristbands",ring1="Kishar Ring", ring2="Stikini Ring", back="Cornflower cape",
 								legs="Amalric Slops",feet="Amalric Nails",wait="Eschan Stone"}
 		

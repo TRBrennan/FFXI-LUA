@@ -145,7 +145,7 @@ function init_gear_sets()
         })
 
         sets.precast.FC = {
-            head="Carmine Mask",  
+            head="Carmine Mask +1",  
 			body="Taeon Tabard",  
 			hands="Leyline Gloves",  
 			legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},

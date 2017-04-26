@@ -273,15 +273,15 @@ function get_sets()
        
                 sets.precast.FC = {}
        
-                sets.precast.FC.Standard = {ammo="Sapience Orb",head="Carmine Mask",neck="Unmoving Collar", ear1="Loquac. Earring",ear2="Etiolation Earring",
+                sets.precast.FC.Standard = {ammo="Sapience Orb",head="Carmine Mask +1",neck="Unmoving Collar", ear1="Loquac. Earring",ear2="Etiolation Earring",
                                             body="Vrikodara Jupon",hands="Leyline Gloves", waist ="Kasiri Belt",left_ring="Rahab Ring", right_ring="Kishar Ring",
                                             legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},feet="Carmine Greaves +1 +1", back="Swith cape"}
                                                                        
-                sets.precast.FC.Enhancing = {ammo="Carmine Mask",head="Herculean Helm",neck="Jeweled Necklace", ear1="Loquac. Earring", ear2="Etiolation Earring",
+                sets.precast.FC.Enhancing = {ammo="Carmine Mask +1",head="Herculean Helm",neck="Jeweled Necklace", ear1="Loquac. Earring", ear2="Etiolation Earring",
                                              body="Vrikodara Jupon",hands="Leyline Gloves", left_ring="Rahab Ring", right_ring="Kishar Ring",
                                              legs="Futhark trousers",feet="Carmine Greaves +1 +1"}
 				
-				sets.precast.FC.Enmity = {ammo="Sapience Orb",head="Carmine Mask",neck="Unmoving Collar", ear1="Loquac. Earring", ear2="Etiolation Earring",
+				sets.precast.FC.Enmity = {ammo="Sapience Orb",head="Carmine Mask +1",neck="Unmoving Collar", ear1="Loquac. Earring", ear2="Etiolation Earring",
                                             body="Vrikodara Jupon",hands="Leyline Gloves", waist ="Kasiri Belt", left_ring="Rahab Ring", right_ring="Kishar Ring",
                                             legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},feet="Carmine Greaves +1 +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}							 
 end

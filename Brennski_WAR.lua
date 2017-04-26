@@ -115,8 +115,8 @@ function get_sets()
 		Ukkos_Ind = 1
 		
 		sets.Ukkos.Atack = {ammo="Yetshila",
-                                    head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Begrudging Ring",
+                                    head="Boii Mask +1", neck="Caro Necklace", ear1="Moonshade Earring",ear2="Telos Earring",
+                                    body="Argosy Hauberk",hands="Argosy Mufflers +1",ring1="Regal Ring",ring2="Begrudging Ring",
                                     back="Cichol's Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Thereoid Greaves"}
 
 		sets.KJ = {}
@@ -127,7 +127,7 @@ function get_sets()
 		sets.KJ.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
                                     body="Argosy Hauberk",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
-                                    back="Cichol's Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Argosy Sollerets +1"}
+                                    back="Cichol's Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Pummeler's Calligae +3"}
 									
     	sets.Upheavel = {}
 		sets.Upheavel.Index ={'Attack'}
@@ -210,7 +210,7 @@ function get_sets()
         sets.precast.FC = {}
        
        sets.precast.FC.Standard = { ammo="Sapience Orb",
-							head="Carmine Mask", 
+							head="Carmine Mask +1", 
 							body="Odyssean Chestplate",
 							hands="Leyline Gloves",
 							legs={ name="Odyssean Cuisses", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','"Fast Cast"+3','INT+1','Mag. Acc.+9','"Mag.Atk.Bns."+3',}},
