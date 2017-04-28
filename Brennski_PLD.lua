@@ -25,7 +25,7 @@ function get_sets()
         sets.Idle.Standard = {ammo="Homiliary",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
 									  neck="Coatl Gorget +1", ear1="Odnowa Earring +1", ear2="Infused Earring",
-                                      body="Reverence Surcoat +2",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
+                                      body="Reverence Surcoat +2",hands="Regal Gauntlets",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Carmine Cuisses +1",feet="Souveran Schuhs", back ="Moonbeam Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum",
@@ -152,13 +152,49 @@ function get_sets()
        
 	    sets.Magic.Divine = {neck = "Incanter's Torque", ring1 = "Stikini Ring"}
 		
-		sets.Magic.Phalanx ={head="Carmine Mask +1", legs ="Carmine Cuisses +1",neck = "Incanter's Torque", body ="Shabti Cruissas",hands="Souveran Handschuhs",feet="Souveran Schuhs",
-							ring1 = "Stikini Ring",ear2 ="Andoaa Earring", waist ="Olympus Sash"}
+		sets.Magic.Phalanx ={	ear2 ="Andoaa Earring", 
+								waist ="Olympus Sash",
+								ammo="Sapience Orb",
+								ear2 ="Andoaa Earring",
+								back ="Weard Mantle",
+								waist ="Olympus Sash",
+								ring2="Supershear Ring",
+								neck = "Incanter's Torque",
+								hands ="Regal Gauntlets",
+								feet="Souveran Schuhs",
+								body ="Shabti Cruissas",
+								ring1 = "Stikini Ring",
+								legs ="Carmine Cuisses +1",
+								head="Carmine Mask +1"
+							}
 		
-		sets.Magic.Enhancing ={head="Carmine Mask +1", legs ="Carmine Cuisses +1",neck = "Incanter's Torque", body ="Shabti Cruissas", ring1 = "Stikini Ring",
-								ear2 ="Andoaa Earring", waist ="Olympus Sash"}
+		sets.Magic.Enhancing ={	ear2 ="Andoaa Earring", waist ="Olympus Sash",
+								ammo="Sapience Orb",
+								ear2 ="Andoaa Earring",
+								back ="Weard Mantle",
+								waist ="Olympus Sash",
+								ring2="Supershear Ring",
+								neck = "Incanter's Torque",
+								hands ="Regal Gauntlets",
+								feet="Souveran Schuhs",
+								body ="Shabti Cruissas",
+								ring1 = "Stikini Ring",
+								legs ="Carmine Cuisses +1",
+								head="Carmine Mask +1"
+								}
 		
-		sets.Magic.Reprisal ={ring2="Supershear Ring", ring1 = "Stikini Ring", ear2 ="Andoaa Earring", waist ="Olympus Sash"}
+		sets.Magic.Reprisal ={	ammo="Sapience Orb",
+								ear2 ="Andoaa Earring",
+								back ="Weard Mantle",
+								waist ="Olympus Sash",
+								ring2="Supershear Ring",
+								neck = "Unmoving Collar",
+								hands ="Regal Gauntlets",
+								feet="Souveran Schuhs",
+								body="Reverence Surcoat +2",
+								ring1 = "Stikini Ring",
+								legs="Souveran Diechlings +1",
+								head="Souveran Schaller"}
 		
 		sets.Magic.Flash ={neck = "Incanter's Torque", ring1 = "Stikini Ring"}
 		
@@ -292,7 +328,7 @@ function midcast(spell,act)
 		 end
 		
 		if spell.skill =='Enhancing Magic' then
-			equip(set_combine(sets.Utility.Enmity,sets.Magic.Enhancing))
+			equip(sets.Magic.Enhancing)
 		end
 		
 		if spell.skill =='Divine Magic' then
@@ -304,11 +340,11 @@ function midcast(spell,act)
 		end
 		
 		if spell.english == 'Reprisal' then
-			equip(set_combine(sets.Utility.Enmity,sets.Magic.Reprisal))
+			equip(sets.Magic.Reprisal)
 		end
 		
 		if spell.english == 'Phalanx' then
-			equip(set_combine(sets.Utility.Enmity,sets.Magic.Phalanx))
+			equip(sets.Magic.Phalanx)
 		end
 		if spell.skill =='Blue Magic' then
 			equip(sets.Utility.Enmity)

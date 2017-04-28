@@ -97,7 +97,7 @@ function get_sets()
 			--1=Acc, 2= Pot'--
 			Enfeebling_ind = 1
 		
-			sets.Enfeebling.Acc = {main ="Oranyan", sub = "Niobid Strap" ,ammo="Regal Gem",
+			sets.Enfeebling.Acc = {main ="Oranyan", sub = "Niobid Strap",ammo="Regal Gem",
                                  head="Carmine Mask +1",
 								 neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
                                  body="Atrophy Tabaed +2",hands="Kaykaus Cuffs", 
@@ -115,7 +115,7 @@ function get_sets()
 		--Magic Sets--
 		sets.Magic ={}
 					
-			sets.Magic.Healing = {ammo="Regal Gem",
+			sets.Magic.Healing = {main ="Oranyan", sub = "Niobid Strap",ammo="Regal Gem",
                                  head="Vanya Hood",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear2="Mendi. Earring",
                                  body="Vrikodara Jupon",hands="Kaykaus Cuffs", ring1="Ephedra Ring", ring2 ="Sirona's Ring", waist ="Luminary Sash",
                                  back="Solemnity Cape",legs ="Chironic Hose",feet="Vanya Clogs"}
@@ -144,7 +144,7 @@ function get_sets()
 			sets.precast.FC = {}
        
 			sets.precast.FC.Standard = {ammo="Sapience Orb",
-							head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
+							head="Carmine Mask +1",
 							body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}}, 
 							hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}}, 
 							legs="Psycloth Lappas",
