@@ -40,7 +40,7 @@ function get_sets()
 									  
 			    sets.Idle.Cleave = { ammo ="Staunch Tathlum",
                                       head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", left_ear="Odnowa Earring +1",
-								right_ear="Etiolation Earring", body="Futhark Coat +1",hands="Kurys Gloves",ring1="Defending ring",ring2="Vocane Ring",
+								right_ear="Etiolation Earring", body="Futhark Coat +1",hands="Regal Gauntlets",ring1="Defending ring",ring2="Vocane Ring",
                                       back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},
 									  waist="Flume Belt +1",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
                                   
@@ -62,31 +62,37 @@ function get_sets()
 			   --TP Sets--
                 sets.TP = {}
         
-                sets.TP.index = {'Standard', 'PDTank','MDTank','HPB' ,'DT', 'StatusResist'}
-                --1=Standard, 2 = Tank, 3=MDTtank, 4=HPB,5=DT, 6=StatusResist--
+                sets.TP.index = {'Standard', 'DT','MDTank','HPB','StatusResist'}
+                --1=Standard,2=DT, 3=MDTtank, 4=HPB, 5=StatusResist--
  			   TP_ind = 1
-				sets.TP.Standard = { ammo="Ginsen",
-                                    head="Ayanmo Zucchetto +1", neck="Lissome necklace", ear2="Telos Earring", ear1="Sherida earring", 
-                                    body="Herculean Vest",hands="Adhemar Wristbands",ring1="Regal Ring",ring2="Niqmaddu Ring",
+				sets.TP.Standard = {ammo="Ginsen",
+                                    head="Ayanmo Zucchetto +1", 
+									neck="Lissome necklace", 
+									ear2="Telos Earring", 
+									ear1="Sherida earring", 
+                                    body="Herculean Vest",
+									hands="Adhemar Wristbands",
+									ring1="Regal Ring",
+									ring2="Niqmaddu Ring",
                                     back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
-									waist="Ioskeha Belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
-                                                       
-                                                       
-                sets.TP.PDTank = {ammo="Staunch Tathlum",
-								head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
-								body="Erilaz Surcoat +1",
-								hands="Kurys Gloves",
-								legs="Eri. Leg Guards +1",
-								feet="Erilaz Greaves +1",
-								neck="Loricate Torque +1",
-								waist="Flume Belt +1",
-								left_ear="Odnowa Earring +1",
-								right_ear="Etiolation Earring",
-								left_ring="Defending Ring",
-								right_ring="Vocane Ring",
-								back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},
-							}	
-				
+									waist="Ioskeha Belt",
+									legs="Samnuha Tights",
+									feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+									
+				sets.TP.DT = { ammo="Staunch Tathlum",
+                              head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
+							  neck="Loricate Torque +1", 
+							  ear1="Odnowa Earring +1", 
+							  ear2="Telos earring", 
+                              body="Futhark Coat +1",
+							  hands="Regal Gauntlets",
+							  ring1="Vocane Ring",
+							  ring2="Defending Ring",
+                              back="Evasionist's Cape",
+							  waist="Flume belt +1",
+							  legs="Erilaz Leg Guards +1",
+							  feet="Erilaz Greaves +1"}                                                       
+		
 				sets.TP.MDTank = {
 								ammo="Staunch Tathlum",
 								head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
@@ -109,33 +115,27 @@ function get_sets()
 									legs="Eri. Leg Guards +1",
 									feet="Erilaz Greaves +1",
 									neck="Sanctity Necklace",
-									waist="Trance belt",
+									waist="Flume Belt +1",
 									left_ear="Odnowa Earring +1",
 									right_ear="Etiolation Earring",
 									left_ring="Defending Ring",
 									right_ring="Vocane Ring",
 									back="Moonbeam Cape",
-								}
-									
-                                                       
-                sets.TP.DT = { ammo="Staunch Tathlum",
-                              head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Cessance earring", 
-                              body="Futhark Coat +1",hands="Kurys Gloves",ring1="Vocane Ring",ring2="Defending Ring",
-                              back="Evasionist's Cape",waist="Flume belt +1",legs="Erilaz Leg Guards +1",feet="Erilaz Greaves +1"}
-                                
+								}						
+                                                                                      
                 sets.TP.StatusResist = {ammo="Staunch Tathlum",
-							head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
-							body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
-							hands="Kurys Gloves",
-							legs="Eri. Leg Guards +1",
-							feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
-							neck="Loricate Torque +1",
-							waist="Flume Belt +1",
-							left_ear="Sherida Earring",
-							right_ear="Telos Earring",
-							left_ring="Chirich Ring",
-							right_ring="Niqmaddu Ring",
-							back={ name="Evasionist's Cape", augments={'Enmity+6','"Embolden"+10','"Dbl.Atk."+2','Damage taken-3'}}
+								head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
+								body="Futhark Coat +1",
+								hands="Erilaz Gauntlets +1",
+								legs="Runeist Trousers +2",
+								feet="Erilaz Greaves +1",
+								neck="Loricate Torque +1",
+								waist="Flume Belt +1",
+								left_ear="Hearty Earring",
+								right_ear="Etiolation Earring",
+								left_ring="Defending Ring",
+								right_ring="Vocane Ring",
+								back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}
 							}
                                                     
                                                          
@@ -250,7 +250,7 @@ function get_sets()
                                
                 --Job Ability Sets--
                 sets.JA = {}
-				sets.JA.VP = {}	
+				sets.JA.VP = {legs = "Runeist Trousers +2",ring1="Stikini Ring",neck="Incanter's Torque",head ="Erilaz Galea"}	
 				
 				sets.JA.Leiment ={body = "Futhark Coat +1"}
 				
@@ -280,6 +280,8 @@ function get_sets()
                 sets.JA.Pflug = {feet="Runeist bottes",}
 											
 				sets.JA.Ryake = {feet = "Futhark Boots", waist ="Chaac Belt"}
+				
+				
                         
                 --Precast Sets--
                 sets.precast = {}
@@ -324,7 +326,7 @@ function precast(spell)
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Vallation))
         end
 		
-		if spell.english=='Flash'  or spell.skill == 'Enfeebling Magic' or spell.english == 'Foil' then	
+		if spell.english=='Flash'  or spell.skill == 'Enfeebling Magic' or spell.english == 'Foil' or spell.skill =='Dark Magic' or spell.skill =="Blue Magic" then	
 				equip(sets.precast.FC.Enmity)				
 		end
        
@@ -372,7 +374,7 @@ function midcast(spell,act)
 					equip(set_combine(sets.Utility.Enmity,sets.JA.Embolen))
 				end
 				if string.find(spell.name,'Bar') or spell.name=="Temper" then
-                    equip({hands="Runeist Mitons +1"})
+                    equip({hands="Runeist Mitons +2"})
                 end
        end       
 	   if spell.english == 'Stoneskin' then
