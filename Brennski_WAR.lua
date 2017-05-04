@@ -132,12 +132,12 @@ function get_sets()
     	sets.Upheavel = {}
 		sets.Upheavel.Index ={'Attack'}
 		Upheavel_ind= 1
-		sets.Upheavel.Attack = {ammo="Brigantia Pebble", head="Sulevia's Mask +1",neck="Tjukurrpa medal", ear1="Moonshade Earring",ear2="Telos Earring",
+		sets.Upheavel.Attack = {ammo="Knobkierrie", head="Sulevia's Mask +1",neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Ishvara Earring",
 									  body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Regal Ring",ring2="Niqmaddu Ring",
                                       back="Cichol's Mantle",waist="Fotia Belt",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +2"}
         
 		sets.SB ={}
-		sets.SB.Attack = {ammo="Seething Bomblet +1",
+		sets.SB.Attack = {ammo="Knobkierrie",
                                     head="Boii Mask +1", neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
                                     body="Argosy Hauberk",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
                                     back="Cichol's Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Sulevia's Leggings +2" }
@@ -174,7 +174,7 @@ function get_sets()
 		sets.Utility.Enmity = {ammo="Sapience Orb",
 								ear2 ="Friomisi Earring", 
 								back ="Weard Mantle",
-								waist ="Kasiri Belt",
+								waist ="Trance belt",
 								ring2="Supershear Ring",
 								neck = "Unmoving Collar",
 								hands="Souveran Handschuhs",

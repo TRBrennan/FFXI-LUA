@@ -30,7 +30,7 @@ function get_sets()
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum",
                                     head="Souveran Schaller", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Thureous Earring",
-                                    body="Reverence Surcoat +2",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
+                                    body="Reverence Surcoat +2",hands="Regal Gauntlets",ring1="Defending ring",ring2="Vocane Ring",
                                     back="Moonbeam Cape",waist="Flume Belt +1",legs="Souveran Diechlings +1",feet="Souveran Schuhs"}
 										
 		sets.Idle.Cleave = {ammo="Staunch Tathlum",
@@ -50,7 +50,7 @@ function get_sets()
 									ear1="Odnowa Earring +1",
 									ear2="Thureous Earring",
                                     body="Reverence Surcoat +2",
-									hands="Souveran Handschuhs",
+									hands="Regal Gauntlets",
 									ring1="Defending ring",
 									ring2="Vocane Ring",
                                     back="Moonbeam Cape",
@@ -110,7 +110,7 @@ function get_sets()
 										  hands="Sulevia's Gauntlets +1",
 										  ring2="Regal Ring",
 										  ring1="Petrov Ring",
-                                          back="Buquwik cape",
+                                          back="Lupine Cape",
 										  waist="Grunfield Rope",
 										  legs="Sulevia Cuisses +1",
 										  feet="Sulevia's Leggings +2"}
@@ -142,7 +142,7 @@ function get_sets()
                                  body="Founder's Breastplate",hands="Amalric Gages", ring1="Acumen Ring", ring2 ='Fenrir Ring', waist ="Eschan Stone",
                                  back="Grounded Mantle",legs="Hagondes Pants",feet="Weatherspoon souliers +1" }
 
-		sets.WS.Atonement = {ammo="Amar Cluster",
+		sets.WS.Atonement = {ammo="Floestone",
                                     head="Sulevia's Mask +1", neck="Asperity necklace", ear1="Brutal Earring",ear2="Cessance Earring",
                                     body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Petrov Ring",ring2="Rajas Ring",
                                     back="Weard Mantle",waist="windbuffet belt +1",legs="Founder's Hose",feet="Souveran Schuhs"}
@@ -224,7 +224,7 @@ function get_sets()
 		sets.Utility.Enmity = {ammo="Sapience Orb",
 								ear2 ="Friomisi Earring", 
 								back ="Weard Mantle",
-								waist ="Kasiri Belt",
+								waist ="Trance belt",
 								ring2="Supershear Ring",
 								neck = "Unmoving Collar",
 								hands="Souveran Handschuhs",

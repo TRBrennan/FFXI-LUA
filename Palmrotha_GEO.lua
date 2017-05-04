@@ -50,7 +50,7 @@ function get_sets()
 		main="Sucellus", sub="Genbu's Shield",
 		range="Dunna",
         head="Nahtirah Hat",
-		neck="Jeweled Collar",ear1="Etiolation Earring", ear2="Loquacious Earring",
+		neck="Voltsurge Torque",ear1="Etiolation Earring", ear2="Loquacious Earring",
         body="Shango Robe", ring2="Prolix ring", hands="Telchine Gloves",ring1="Prolix Ring",
         back="Lifestream Cape",waist="Channeler's Stone",legs="Geomancy Pants",feet="Regal Pumps"
 		}
@@ -62,7 +62,7 @@ function get_sets()
     
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Amar cluster",
+    sets.precast.WS = {ammo="Floestone",
         head="Welkin Crown",neck="Sanctity Necklace",ear1="Etiolation Earring",ear2="Brutal Earring",
         body="Azimuth Coat +1",hands="Amalric gages",ring1="Rajas Ring",ring2="Rufescent Ring",
         back="Buquwik Cape",waist="Fotia Belt",legs="Amalric slops",feet="Battlecast Gaiters"}
@@ -119,8 +119,8 @@ function get_sets()
     sets.midcast['Elemental Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 
 	ammo="Witchstone",
-				head="Welkin Crown", neck="Eddy Necklace", ear1="Strophadic Earring", ear2="Friomisi Earring",
-                body="Azimuth Coat +1", hands="Amalric gages", ring1="Acumen Ring", ring2="Vertigo Ring",
+				head="Welkin Crown", neck="Mizukage-no-Kubikazari", ear1="Strophadic Earring", ear2="Friomisi Earring",
+                body="Azimuth Coat +1", hands="Amalric gages", ring1="Acumen Ring", ring2="Locus Ring",
                 back="Toro Cape", waist="Refoccillation Stone", legs="Amalric slops", feet="Merlinic Crackows"}
         
     sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
@@ -215,7 +215,7 @@ function get_sets()
     -- Normal melee group
     sets.engaged = {range="Dunna",
         neck="Loricate Torque +1", ear1="Dudgeon Earring", ear2="Heartseeker Earring",
-        body="Geomancy Tunic",hands="Geomancy Mitaines +1", ring1="Enlivened Ring", ring2="Vertigo Ring",
+        body="Geomancy Tunic",hands="Geomancy Mitaines +1", ring1="Enlivened Ring", ring2="Petrov Ring",
         back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 	
 	

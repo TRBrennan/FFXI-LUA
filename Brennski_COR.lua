@@ -96,7 +96,7 @@ function get_sets()
         sets.SavageBlade.Attack = {
                                           head="Adhemar Bonnet",neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Herculean Vest",hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Rajas Ring",
-                                          back="Lupine Cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Attack+23','Weapon skill damage +2%','STR+3','Accuracy+6',}},
+                                          back="Buquwik cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Attack+23','Weapon skill damage +2%','STR+3','Accuracy+6',}},
 										  feet={ name="Herculean Boots", augments={'Attack+30','"Counter"+1','STR+8','Accuracy+10',}}  }
                                                            
                                                                                                                        
@@ -107,7 +107,7 @@ function get_sets()
         sets.SanguineBlade = {
                                  head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},neck="Sanctity Necklace",rear="Friomisi earring", ear1="Novio Earring",
                                  body="Adhemar Jacket",hands="Leyline Gloves", ring1="Acumen Ring", ring2 ='Fenrir Ring', waist ="Eschan Stone",
-                                 back="Cornflower cape",legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},feet="Weatherspoon souliers +1" }
+                                 back="Buquwik cape",legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},feet="Weatherspoon souliers +1" }
 								 
 		sets.VorpalBlade = {}
        
@@ -116,7 +116,7 @@ function get_sets()
         sets.VorpalBlade = {
                                           head="Dampening Tam",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Telos Earring",
                                           body="Adhemar Jacket",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Petrov ring",ring2="Regal Ring",
-                                          back="Lupine Cape",waist="Grunfeld Rope",legs="Quiahuiz leggings",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }						 
+                                          back="Buquwik cape",waist="Grunfeld Rope",legs="Quiahuiz leggings",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }						 
                
 	    sets.Leaden = {}
        
