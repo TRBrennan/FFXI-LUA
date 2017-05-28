@@ -36,7 +36,7 @@ function get_sets()
        
         sets.Idle.Standard = {main="Bolelabunga", sub ="Genmei Shield",ammo="Homiliary",
                                       head="Vitivation Chapeau +1",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Merlinic Dastanas", augments={'DEX+3','Mag. Acc.+16 "Mag.Atk.Bns."+16','"Refresh"+1',}},
+                                      body="Jhakri Robe +1",hands={ name="Merlinic Dastanas", augments={'DEX+3','Mag. Acc.+16 "Mag.Atk.Bns."+16','"Refresh"+1',}},
 									  ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Carmine Cuisses +1",feet="Chironic Slippers", back ="Moonbeam Cape"}
 									  
@@ -66,14 +66,14 @@ function get_sets()
 			--1=Standard, 2= Magic Burst'--
 			Nuke_ind = 1
 			
-			sets.Nuke.Standard = {main ="Oranyan", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
+			sets.Nuke.Standard = {main="Grioavolr", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
                                  hhead={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
 								 neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Hecate's Earring",
-                                 body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
+                                 body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Jhakri Cuffs +2", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
                                  back="Sucellos's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
 								 feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}}
 										
-			sets.Nuke.MagicBurst = {main ="Oranyan", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
+			sets.Nuke.MagicBurst = {main="Grioavolr", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
                                   neck="Mizukage-no-Kubikazari",ear2="Friomisi earring", ear1="Static Earring", ring1="Locus Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
                                  back="Sucellos's Cape",
 								 head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst dmg.+7%','CHR+7','Mag. Acc.+12',}},
@@ -86,7 +86,7 @@ function get_sets()
 		sets.Enhancing ={}
 								
 			sets.Enhancing.Normal = { main ="Oranyan", sub = "Niobid Strap", ammo="Regal Gem",
-                                 head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Spellbreaker Earring",
+                                 head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Regal Earring",
                                  body="Telchine Chasuble",hands="Atrophy Gloves +1", ring1="Stikini Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
                                  back="Ghostfyre Cape",legs="Telchine Braconi",feet="Lethargy Houseaux +1"}
 								 
@@ -97,16 +97,16 @@ function get_sets()
 			--1=Acc, 2= Pot'--
 			Enfeebling_ind = 1
 		
-			sets.Enfeebling.Acc = {main ="Oranyan", sub = "Enki Strap",ammo="Regal Gem",
+			sets.Enfeebling.Acc = {main="Grioavolr", sub = "Enki Strap",ammo="Regal Gem",
                                  head="Carmine Mask +1",
-								 neck="Incanter's Torque",ear2="Dignitary's Earring", ear1="Gwati Earring",
+								 neck="Incanter's Torque",ear2="Dignitary's Earring", ear1="Regal Earring",
                                  body="Atrophy Tabard +2",hands="Kaykaus Cuffs", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs ="Chironic Hose",feet="Medium's Sabots"}
 								 
 								 
-			sets.Enfeebling.Pot = {main ="Oranyan", sub = "Enki Strap",ammo="Regal Gem",
-                                 head="Carmine Mask +1",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Gwati Earring",
+			sets.Enfeebling.Pot = {main="Grioavolr", sub = "Enki Strap",ammo="Regal Gem",
+                                 head="Carmine Mask +1",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Regal Earring",
                                  body = "Lethargy Sayon +1",hands="Lethargy Gantherots +1", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs="Psycloth Lappas",feet="Medium's Sabots"}
@@ -116,22 +116,22 @@ function get_sets()
 		sets.Magic ={}
 					
 			sets.Magic.Healing = {main ="Oranyan",sub ="Enki Strap",ammo="Regal Gem",
-                                 head="Vanya Hood",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear2="Mendi. Earring",
+                                 head="Vanya Hood",neck="Incanter's Torque",ear1 ="Regal Earring", ear2="Mendi. Earring",
                                  body="Vrikodara Jupon",hands="Kaykaus Cuffs", ring1="Ephedra Ring", ring2 ="Sirona's Ring", waist ="Luminary Sash",
                                  back="Solemnity Cape",legs ="Chironic Hose",feet="Vanya Clogs"}
 												 
 			sets.Magic.Regen = {main="Bolelabunga", ammo="Savant's Treatise",
-                                 head="Telchine Cap",neck="Incanter's Torque ",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
+                                 head="Telchine Cap",neck="Incanter's Torque ",ear1 ="Regal Earring", ear2="Regal Earring",
                                  body="Telchine Chasuble",hands="Kaykaus Cuffs", ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
                                  back="Sucellos's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 			
-			sets.Magic.Dark = {main ="Oranyan", sub ="Enki Strap", ammo="Pemphredo Tathlum",
+			sets.Magic.Dark = {main="Grioavolr", sub ="Enki Strap", ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Incanter's Torque",ear2="Friomisi earring", ear1="Hecate's Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Shiva Ring", waist ="Refoccilation Stone",
                                  back="Sucellos's Cape",llegs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
 								 feet="Merlinic Crackows"}
 								 
-			sets.Magic.Stun ={main ="Oranyan",sub ="Enki Strap",ammo="Pemphredo Tathlum",head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
+			sets.Magic.Stun ={main="Grioavolr",sub ="Enki Strap",ammo="Pemphredo Tathlum",head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
 							neck="Voltsurge Torque", waist ="Luminary Sash", left_ear="Etiolation Earring", right_ear="Loquac. Earring",
 							 left_ring="Rahab Ring", right_ring="Kishar Ring",feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}, 
 							 body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},legs="Psycloth Lappas", back ="Sucellos's Cape"}
@@ -163,7 +163,7 @@ function get_sets()
        
         sets.Utility.Weather = {waist="Hachirin-no-obi"}
 				
-		sets.Utility.DrainAspir = { ammo="Pemphredo Tathlum", sub ="Enki Strap",
+		sets.Utility.DrainAspir = {main="Grioavolr", ammo="Pemphredo Tathlum", sub ="Enki Strap",
                                  head="Pixie Hairpin +1",neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Hecate's Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Evanescence Ring", ring2 ='Shiva Ring', waist ="Fucho-no-obi",
                                  back="Izdubar Mantle",legs="Merlinic Shalwar",feet="Merlinic Crackows"}
@@ -190,36 +190,36 @@ function get_sets()
 											neck="Fotia gorget",
 											ear1="Moonshade Earring",
 											ear2="Sherida Earring",
-                                            body="Herculean Vest",
-											hands="Adhemar Wristbands",
+                                            body="Jhakri Robe +1",
+											hands="Jhakri Cuffs +2",
 											ring1="Begrudging Ring",
 											ring2="Epona's Ring",
                                             back="Lupine Cape",
-											waist="Fotia belt",legs="Samnuha Tights",feet="Thereoid Greaves"}
+											waist="Fotia belt",legs="Jhakri Slops +1",feet="Thereoid Greaves"}
 		
 		sets.WS.Savage =	{ammo="Floestone",
-                                          head="Despair Helm",
+                                          head="Jhakri Coronal +1",
 										  neck="Caro Necklace",
 										  ear1="Ishvara Earring",
 										  ear2="Moonshade Earring",
-                                          body="Herculean Vest",hands="Jhakri Cuffs +1",
+                                          body="Jhakri Robe +1",hands="Jhakri Cuffs +2",
 										  ring1="Petrov Ring",ring2="Rajas Ring",
                                           back="Lupine Cape",
 										  waist="Grunfeld Rope",
-										  legs={ name="Herculean Trousers", augments={'Attack+23','Weapon skill damage +2%','STR+3','Accuracy+6',}},
-										  feet="Thereoid Greaves"}
+										  legs="Jhakri Slops +1",
+										  feet="Thereoid Greaves" }
 		
-		sets.WS.Vorpal = {ammo="Floestone",
-                                            head="Adhemar Bonnet",
-											neck="Fotia gorget",
-											ear1="Moonshade Earring",
-											ear2="Telos Earring",
-                                            body="Herculean Vest",
-											hands="Adhemar Wristbands",
-											ring1="Petrov Ring",
-											ring2="Epona's Ring",
-                                            back="Lupine Cape",
-											waist="Fotia belt",legs="Samnuha Tights",feet="Thereoid Greaves"}
+		sets.WS.Vorpal = {mmo="Floestone",
+                                          head="Jhakri Coronal +1",
+										  neck="Caro Necklace",
+										  ear1="Ishvara Earring",
+										  ear2="Moonshade Earring",
+                                          body="Jhakri Robe +1",hands="Jhakri Cuffs +2",
+										  ring1="Petrov Ring",ring2="Rajas Ring",
+                                          back="Lupine Cape",
+										  waist="Grunfeld Rope",
+										  legs="Jhakri Slops +1",
+										  feet="Thereoid Greaves"}
 		
 		sets.WS.Req = {ammo="Floestone",
                                             head="Adhemar Bonnet",
@@ -227,7 +227,7 @@ function get_sets()
 											ear1="Moonshade Earring",
 											ear2="Telos Earring",
                                             body="Herculean Vest",
-											hands="Adhemar Wristbands",
+											hands="Jhakri Cuffs +2",
 											ring1="Petrov Ring",
 											ring2="Epona's Ring",
                                             back="Lupine Cape",

@@ -85,11 +85,11 @@ function get_sets()
     -- Base fast recast for spells
     sets.midcast = {}
 
-    sets.midcast.Geomancy = {main="Solstice", range="Dunna", 
+    sets.midcast.Geomancy = {main="Solstice", sub="Culminus", range="Dunna", 
 		head="Azimuth Hood +1", body="Bagua Tunic", hands="Geomancy Mitaines", ear1="Influx Earring", ear2="Gifted Earring", 
 		neck="Incanter's Torque", ring2="Renaye Ring", feet="Medium's Sabots", back="Lifestream Cape"}
 		
-    sets.midcast.Geomancy.Indi = {main="Solstice", range="Dunna", 
+    sets.midcast.Geomancy.Indi = {main="Solstice", sub="Culminus", range="Dunna", 
 		head="Azimuth Hood +1", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Incanter's Torque",
 		legs="Bagua Pants", hands="Geomancy Mitaines", feet="Medium's Sabots", back="Lifestream Cape"}
 
@@ -112,16 +112,27 @@ function get_sets()
     sets.midcast['Enfeebling Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 
 	range="Dunna",
-				head="Bagua Galero", neck="Eddy Necklace", ear2="Influx Earring", ear1="Moonshade Earring",
+				head="Jhakri Coronal +1", neck="Eddy Necklace", ear2="Influx Earring", ear1="Moonshade Earring",
                 body="Shango Robe", hands="Azimuth Gloves", ring1="Vertigo Ring", ring2 ="Perception Ring",
-                back="Kumbira Cape", waist="Ovate Rope", legs="Amalric slops", feet="Bagua Sandals"}
+                back="Kumbira Cape", waist="Ovate Rope", legs="Jhakri Slops +1", feet="Bagua Sandals"}
     
     sets.midcast['Elemental Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 
+	main = "Solstice",
+	sub="Culminus",
 	ammo="Witchstone",
-				head="Welkin Crown", neck="Mizukage-no-Kubikazari", ear1="Strophadic Earring", ear2="Friomisi Earring",
-                body="Azimuth Coat +1", hands="Amalric gages", ring1="Acumen Ring", ring2="Locus Ring",
-                back="Toro Cape", waist="Refoccillation Stone", legs="Amalric slops", feet="Merlinic Crackows"}
+							head="Jhakri Coronal +1",
+							body="Azimuth Coat +1",
+							hands="Jhakri Cuffs +1",
+							legs="Jhakri Slops +1",
+							feet="Jhakri Pigaches +1",
+							neck="Mizu. Kubikazari",
+							waist="Refoccilation Stone",
+							left_ear="Strophadic Earring",
+							right_ear="Friomisi Earring",
+							left_ring="Acumen Ring",
+							right_ring="Locus Ring",
+							back="Toro Cape",}
         
     sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
 
@@ -129,14 +140,25 @@ function get_sets()
 	-- main="Marin staff", sub="Niobid Strap", 
 	range="Dunna",
 				head="Bagua Galero", neck="Incanter's Torque", ear1="Strophadic Earring", ear2="Friomisi Earring",
-                body="Geomancy Tunic", hands="Amalric gages", ring1="Acumen Ring", ring2="Vertigo ring",
-                back="Lifestream Cape", waist="Cetl Belt", legs="Amalric slops", feet="Helios boots"}
+                body="Geomancy Tunic", hands="Jhakri Cuffs +1", ring1="Acumen Ring", ring2="Vertigo ring",
+                back="Lifestream Cape", waist="Cetl Belt", legs="Jhakri Slops +1", feet="Jhakri Pigaches +1"}
 
-    sets.magic_burst = {main="Marin staff +1", sub="Niobid Strap", ammo="Ghastly Tathlum",
-				head="Merlinic hood", neck="Mizu. Kubikazari", lear="Strophadic Earring", rear="Friomisi Earring",
-                body="Azimuth Coat +1", hands="Amalric gages", lring="Mujin Band", rring="Locus ring",
-                back="Seshaw cape", waist="Fucho-no-obi", legs="Merlinic shalwar", feet="Merlinic Crackows"}
-	
+    sets.magic_burst =     	{main="Marin Staff +1",
+							sub="Niobid Strap",
+							range="Dunna",
+							head="Jhakri Coronal +1",
+							body="Azimuth Coat +1",
+							hands="Jhakri Cuffs +1",
+							legs="Jhakri Slops +1",
+							feet="Jhakri Pigaches +1",
+							neck="Mizu. Kubikazari",
+							waist="Refoccilation Stone",
+							left_ear="Strophadic Earring",
+							right_ear="Friomisi Earring",
+							left_ring="Acumen Ring",
+							right_ring="Locus Ring",
+							back="Toro Cape",
+	}
 				
 	sets.obi = {
 		Fire = {waist="Karin Obi"},
@@ -215,8 +237,13 @@ function get_sets()
     -- Normal melee group
     sets.engaged = {range="Dunna",
         neck="Loricate Torque +1", ear1="Dudgeon Earring", ear2="Heartseeker Earring",
-        body="Geomancy Tunic",hands="Geomancy Mitaines +1", ring1="Enlivened Ring", ring2="Petrov Ring",
-        back="Lifestream Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
+        head="Jhakri Coronal +1",
+		body="Azimuth Coat +1",
+		hands="Jhakri Cuffs +1",
+		legs="Jhakri Slops +1",
+		feet="Jhakri Pigaches +1",
+		ring1="Enlivened Ring", ring2="Petrov Ring",
+        back="Lifestream Cape",waist="Fucho-no-obi"}
 	
 	
 end

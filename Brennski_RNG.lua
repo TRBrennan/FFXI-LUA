@@ -427,18 +427,18 @@ function init_gear_sets()
 
         -- Weaponskill sets  
         sets.precast.WS = {
-            head="Meghanada Visor +1",
+						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 						neck="Fotia gorget",
 						ear1="Sherida Earring",
 						ear2="Moonshade Earring",
                         body="Adhemar Jacket",
 						hands="Meg. Gloves +2",
-						ring1="Rajas Ring",
+						ring1="Dingir Ring",
 						ring2="Regal Ring",
                         back="Belenus's Cape",
 						waist="Fotia Belt",
-						legs="Pursuer's Pants",
-						feet ="Meg. Jam +1"}
+						legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
+						feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}}}
         
         sets.precast.WS.Mid = set_combine(sets.precast.WS, {
             ear1="Enervating Earring",
@@ -458,7 +458,7 @@ function init_gear_sets()
 							body="Samnuha Coat",
 							hands="Meg. Gloves +2",   
 							ring1="Acumen Ring", 
-							ring2 ='Arvina Ringlet +1',
+							ring2 ='Dingir Ring',
 							waist ="Eschan Stone",
 							back="Belenus's Cape",   
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
@@ -476,8 +476,9 @@ function init_gear_sets()
 							body="Samnuha Coat",
 							hands="Meg. Gloves +2",   
 							ring1="Acumen Ring", 
-							ring2 ='Arvina Ringlet +1',
-							waist ="Eschan Stone",
+							ring2 ='Dingir Ring',
+							--waist ="Eschan Stone",
+							waist="Hachirin-no-obi",
 							back="Belenus's Cape",   
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
 							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}

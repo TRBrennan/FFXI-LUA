@@ -85,7 +85,7 @@ function init_gear_sets()
  
     -- Fast cast sets for spells
     sets.precast.FC = {
-        ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum",
         head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
         body="Taeon Tabard",
         hands="Leyline Gloves",
@@ -116,12 +116,12 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-        ammo="Seething bomblet +1",
-        head="Adhemar Bonnet",
+        --ammo="Seething bomblet +1",
+        head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
         body="Herculean Vest",
         hands="Adhemar Wristbands",
         legs="Hiza. Hizayoroi +1",
-        feet={ name="Herculean Boots", augments={'Attack+30','"Counter"+1','STR+8','Accuracy+10',}},
+        feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}},
         neck="Fotia Gorget",
         waist="Windbuffet Belt +1",
         right_ear_ear="Moonshade Earring",
@@ -131,12 +131,12 @@ function init_gear_sets()
         back=Andartia.WSD}
          
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {
-        ammo="Seething bomblet +1",
+        --ammo="Seething bomblet +1",
         head="Adhemar Bonnet",
         body="Herculean Vest",
         hands="Adhemar Wristbands",
         legs="Hiza. Hizayoroi +1",
-        feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
+        feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
         neck="Fotia Gorget",
         waist="Grunfeld Belt",
         right_ear_ear="Moonshade Earring",
@@ -147,55 +147,55 @@ function init_gear_sets()
          
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Blade: Ten'] = set_combine(sets.precast.WS,{
-        ammo="Seething bomblet +1",
-        head="Lilitu headpiece",
+        --ammo="Seething bomblet +1",
+        head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
         neck="Caro necklace",
         hands="Adhemar Wristbands",
         waist="Grunfeld rope",
         body="Herculean Vest",
         legs="Hiza. Hizayoroi +1",
-        feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
+        feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}},
         right_ear_ear="Moonshade Earring",
         left_ear="Telos Earring",
         left_ring="Regal Ring",
         right_ring="Rajas Ring"})
  
     sets.precast.WS['Blade: Shun'] = set_combine(sets.precast.WS, { 
-        head="Lilitu headpiece",
+        head="Adhemar Bonnet",
         body="Adhemar Jacket",
         hands="Adhemar Wristbands",
         legs="Samnuha tights",
-        feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
+        feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
         waist="Fotia Belt",
         back=Andartia.DA,
-        right_ring="Petrov Ring",})
+        right_ring="Regal Ring",})
  
     sets.precast.WS['Blade: Metsu'] = set_combine(sets.precast.WS, {
-        ammo="Jukukik feather",
-        head="Lilitu headpiece",
+        --ammo="Jukukik feather",
+        head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
         neck="Caro necklace",
         body="Herculean Vest",
         hands="Adhemar Wristbands",
         legs="Hiza. Hizayoroi +1",
         left_ear="Telos Earring",
         right_ear="Moonshade Earring",
-        feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
+        feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}},
         waist="Grunfeld rope",
-        right_ring="Petrov Ring",
+        right_ring="Regal Ring",
         left_ring="Rajas Ring"})
  
     sets.precast.WS['Blade: Hi'] = set_combine(sets.precast.WS, {
-        ammo="Yetshila",
+        --ammo="Yetshila",
         head="Adhemar Bonnet",
         body="Herculean Vest",
         hands="Ryuo Tekko",
         legs="Hiza. Hizayoroi +1",
-        feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
+       feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}},
         neck="Caro Necklace",
         waist="Windbuffet Belt +1",
         left_ear="Moonshade Earring",
         right_ear="Ishvara Earring",
-        left_ring="Petrov Ring",
+        left_ring="Regal Ring",
         right_ring="Begruding Ring",
         back=Andartia.WSD})
  
@@ -207,7 +207,7 @@ function init_gear_sets()
         ear2="Loquacious Earring",ring1="Kishar Ring"}
          
     sets.midcast.SelfNinjutsu = {
-        ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum",
         head="Hachiya hatsuburi +1",
         body="Foppish Tunica",
         hands="Rawhide Gloves",
@@ -222,8 +222,8 @@ function init_gear_sets()
         back="Mujin Mantle",}
      
     sets.midcast.Utsusemi = set_combine(sets.midcast.SelfNinjutsu,{
-        ammo="Staunch Tathlum",
-        ead={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
+        --ammo="Staunch Tathlum",
+       head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
         body="Foppish Tunica",
         hands="Leyline Gloves",
         legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
@@ -237,14 +237,14 @@ function init_gear_sets()
         back="Andartia's Mantle"})
  
     sets.midcast.ElementalNinjutsu = 
-       {ammo = "Pemphredo Tathlum",
+       {--ammo = "Pemphredo Tathlum",
 	   head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}}, 
 	   neck="Sanctity Necklace", 
 	   ear2="Friomisi earring", 
 	   ear1="Hecate's Earring",
 	   body="Samnuha Coat",
 	   hands="Leyline Gloves",
-	   ring1="Shiva Ring",
+	   ring1="Dingir Ring",
 	   ring2 ="Acumen Ring",
 	   waist ="Eschan Stone",
 	   back="Izdubar Mantle",
@@ -260,7 +260,7 @@ function init_gear_sets()
         right_ring="Mujin Band",})
          
     sets.midcast.NinjutsuDebuff = {
-        ammo = "Pemphredo Tathlum",
+        --ammo = "Pemphredo Tathlum",
 	    head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}}, 
 	    neck="Sanctity Necklace", 
 	    ear2="Friomisi earring", 
@@ -274,7 +274,7 @@ function init_gear_sets()
         back="Izdubar Mantle"}
  
     sets.midcast.NinjutsuBuff = {
-        ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum",
 		head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
 		neck="Loricate Torque+1", 
 		ear1="Genmei Earring",ear2="Infused Earring",
@@ -308,7 +308,7 @@ function init_gear_sets()
      
     -- Resting sets
     sets.resting = {
-        ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum",
         head="Rao kabuto",
         body="Hizamaru haramaki +1",
         hands="Rao kote",
@@ -323,7 +323,7 @@ function init_gear_sets()
          
     -- Idle sets
     sets.idle = {
-        ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum",
         head="Rao kabuto",
         body="Hizamaru haramaki +1",
         hands="Rao kote",
@@ -337,7 +337,7 @@ function init_gear_sets()
         back="Solmenity Cape"}
  
     sets.idle.Town = {
-        ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum",
         head="Skormoth mask",
         body="Councilor's Garb",
         hands="Ryuo Tekko",
@@ -351,7 +351,7 @@ function init_gear_sets()
         back="Moonbeam Cape"}
      
     sets.idle.Weak = {
-        ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum",
         head="Rao kabuto",
         body="Hizamaru haramaki +1",
         hands="Rao kote",
@@ -368,7 +368,7 @@ function init_gear_sets()
     sets.defense.Evasion = {neck="Yarak Torque", back="Yokaze Mantle"}
  
     sets.defense.PDT = {
-        ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum",
         head="Ryuo Somen",
         body="Emet Harness +1",
         hands="Herculean Gloves",
@@ -383,7 +383,7 @@ function init_gear_sets()
         back="Moonbeam Cape",}
          
     sets.defense.MDT = {
-        ammo="Happo Shuriken",
+        --ammo="Happo Shuriken",
         head="Dampening Tam",
         body="Hiza. Haramaki +1",
         hands="Floral Gauntlets",
@@ -425,7 +425,7 @@ function init_gear_sets()
      
     -- Normal melee group    39DW
     sets.engaged = {
-        ammo="Happo Shuriken",
+        --ammo="Happo Shuriken",
         head="Ryuo somen",
         body="Adhemar Jacket",
         hands="Floral gauntlets",
@@ -434,7 +434,7 @@ function init_gear_sets()
         neck="Lissome Necklace",
         waist="Patentia sash",
         left_ear="Telos Earring", right_ear="Suppanomimi",
-        left_ring="Epona's Ring", right_ring="Petrov Ring",
+        left_ring="Epona's Ring", right_ring="Regal Ring",
         back=Andartia.DA}
          
     sets.engaged.Acc = set_combine(sets.engaged, {
@@ -453,7 +453,7 @@ function init_gear_sets()
      
     -- 15% melee group 31 DW
      sets.engaged.Haste_15 = {
-        ammo="Happo Shuriken",
+        --ammo="Happo Shuriken",
         head="Ryuo somen",
         body="Adhemar Jacket",
         hands="Floral gauntlets",
@@ -462,7 +462,7 @@ function init_gear_sets()
         neck="Lissome Necklace",
         waist="Windbuffet Belt +1",
         left_ear="Telos Earring", right_ear="Suppanomimi",
-        left_ring="Epona's Ring", right_ring="Petrov Ring",
+        left_ring="Epona's Ring", right_ring="Regal Ring",
         back=Andartia.DA}
          
     sets.engaged.Acc.Haste_15 = set_combine(sets.engaged.Haste_15, {
@@ -484,7 +484,7 @@ function init_gear_sets()
  
     -- Custom melee group: 30% Haste (~20% DW) ~ 19
     sets.engaged.Haste_30 = {
-        ammo="Happo Shuriken",
+        --ammo="Happo Shuriken",
         head="Ryuo somen",
         body="Adhemar Jacket",
         hands="Adhemar Wristbands",
@@ -493,7 +493,7 @@ function init_gear_sets()
         neck="Lissome Necklace",
         waist="Windbuffet Belt +1",
         left_ear="Telos Earring", right_ear="Suppanomimi",
-        left_ring="Epona's Ring", right_ring="Petrov Ring",
+        left_ring="Epona's Ring", right_ring="Regal Ring",
         back=Andartia.DA}
          
     sets.engaged.Acc.Haste_30 = set_combine(sets.engaged.Haste_30,{
@@ -516,7 +516,7 @@ function init_gear_sets()
  
     -- Custom melee group 35%: 13 DW Rarely used set if ever
     sets.engaged.Haste_35 = {
-        ammo="Happo Shuriken",
+        --ammo="Happo Shuriken",
         head="Ryuo somen",
         body="Adhemar Jacket",
         hands="Adhemar Wristbands",
@@ -525,7 +525,7 @@ function init_gear_sets()
         neck="Lissome Necklace",
         waist="Windbuffet Belt +1",
         left_ear="Telos Earring", right_ear="Cessance Earring",
-        left_ring="Epona's Ring", right_ring="Petrov Ring",
+        left_ring="Epona's Ring", right_ring="Regal Ring",
         back=Andartia.DA}
          
     sets.engaged.HighAcc.Haste_35 = set_combine(sets.engaged.Haste_35,{
@@ -546,8 +546,8 @@ function init_gear_sets()
  
     -- Custom melee group: Max Haste (0% DW)
     sets.engaged.MaxHaste = {
-        ammo="Happo Shuriken",
-        head="Adhemar bonnet",
+        --ammo="Happo Shuriken",
+        head="Dampening Tam",
         body="Herculean Vest",
         hands="Adhemar Wristbands",
         legs="Samnuha tights",
@@ -555,21 +555,22 @@ function init_gear_sets()
         neck="Lissome Necklace",
         waist="Windbuffet Belt +1",
         left_ear="Telos Earring", right_ear="Cessance earring",
-        left_ring="Epona's Ring", right_ring="Petrov Ring",
+        left_ring="Epona's Ring", right_ring="Regal Ring",
         back=Andartia.DA}
          
     sets.engaged.Acc.MaxHaste = set_combine(sets.engaged.MaxHaste,{
-        head="Dampening Tam",})
+        head="Dampening Tam",
+		waist ="Kentarch belt +1"})
          
     sets.engaged.HighAcc.MaxHaste = set_combine(sets.engaged.Acc.MaxHaste,{
         head="Dampening Tam",
         hands="Herculean Vest",
         legs="Samnuha tights",
-        feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14',}},
+        feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
         neck="Yarak Torque",
         waist="Kentarch Belt +1", 
         right_ring="Cacoethic Ring",
-        left_ring="ChirichRing",})
+        left_ring="Chirich Ring",})
      
     -- I dont use
     sets.engaged.Evasion.MaxHaste = {}

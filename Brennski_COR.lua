@@ -94,9 +94,10 @@ function get_sets()
         SavageBlade_ind = 1
        
         sets.SavageBlade.Attack = {
-                                          head="Adhemar Bonnet",neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
+                                          head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
+										  neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Herculean Vest",hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Rajas Ring",
-                                          back="Buquwik cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Attack+23','Weapon skill damage +2%','STR+3','Accuracy+6',}},
+                                          back="Buquwik cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
 										  feet={ name="Herculean Boots", augments={'Attack+30','"Counter"+1','STR+8','Accuracy+10',}}  }
                                                            
                                                                                                                        
@@ -125,7 +126,7 @@ function get_sets()
          
 		sets.Leaden ={ ammo ="Orichalcum bullet", head="Pixie Hairpin +1",
 							neck="Sanctity Necklace",  ear2="Friomisi earring", ear1="Moonshade Earring",
-							body="Samnuha Coat",  hands="Leyline Gloves",   ring1="Acumen Ring", ring2 ='Arvina Ringlet +1', waist ="Eschan Stone",
+							body="Samnuha Coat",  hands="Leyline Gloves",   ring1="Dingir Ring", ring2 ='Arvina Ringlet +1', waist ="Eschan Stone",
 							back="Camulus's Mantle", legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},  feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
 							
 		sets.WildFire = {}
@@ -135,7 +136,7 @@ function get_sets()
 			
 		sets.WildFire = {ammo ="Orichalcum bullet",head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 							neck="Sanctity Necklace",   ear2="Friomisi earring", ear1="Moonshade Earring",
-							body="Samnuha Coat",hands="Meg. Gloves +2", ring1="Acumen Ring", ring2 ='Arvina Ringlet +1', waist ="Eschan Stone",
+							body="Samnuha Coat",hands="Meg. Gloves +2", ring1="Dingir Ring", ring2 ='Arvina Ringlet +1', waist ="Eschan Stone",
 							back="Camulus's Mantle",   legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
 							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
 		
@@ -144,10 +145,13 @@ function get_sets()
         sets.LastStand.index = {'Attack'}
         LastStand_ind = 1					
 			
-		sets.LastStand = {ammo ="Orichalcum bullet", head="Meghanada Visor +1",neck="Fotia gorget",ear1="Telos Earring",ear2="Moonshade Earring",
-                                          body="Adhemar Jacket",hands="Meg. Gloves +2",ring1="Cacoethic Ring",ring2="Regal Ring",
-                                          back="Lupine Cape",waist="Fotia Belt",legs="Pursuer's Pants",
-										  feet ="Meg. Jam. +1"}
+		sets.LastStand = {ammo ="Chrono bullet", 
+										head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
+										neck="Fotia gorget",ear1="Telos Earring",ear2="Moonshade Earring",
+                                          body="Adhemar Jacket",hands="Meg. Gloves +2",ring1="Dingir Ring",ring2="Regal Ring",
+                                          back="Camulus's Mantle",waist="Fotia Belt",
+										  legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
+										  feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}}}
 										  
 		--Ranged Attack ---
 			sets.Ranged = {}
@@ -161,7 +165,7 @@ function get_sets()
             feet="Meg. Jam. +1" -- 8
         }
 			
-			sets.Ranged.RangedAttack =  { ammo ="Orichalcum bullet", head="Meghanada Visor +1",
+			sets.Ranged.RangedAttack =  { ammo ="Chrono bullet", head="Meghanada Visor +1",
 							neck="Iskur Gorget", ear2="Telos Earring", ear1="Volley Earring",
 							body="Adhemar Jacket",hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
 							ring1="Arvina Ringlet +1",ring2="Cacoethic Ring", waist ="Yemaya Belt",

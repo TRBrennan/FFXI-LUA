@@ -25,17 +25,17 @@ function get_sets()
         sets.Idle.Standard = {ammo="Homiliary",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
 									  neck="Coatl Gorget +1", ear1="Odnowa Earring +1", ear2="Infused Earring",
-                                      body="Reverence Surcoat +2",hands="Regal Gauntlets",ring1="Defending ring",ring2="Vocane Ring",
+                                      body="Reverence Surcoat +3",hands="Regal Gauntlets",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Carmine Cuisses +1",feet="Souveran Schuhs", back ="Moonbeam Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum",
                                     head="Souveran Schaller", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Thureous Earring",
-                                    body="Reverence Surcoat +2",hands="Regal Gauntlets",ring1="Defending ring",ring2="Vocane Ring",
+                                    body="Reverence Surcoat +3",hands="Regal Gauntlets",ring1="Defending ring",ring2="Vocane Ring",
                                     back="Moonbeam Cape",waist="Flume Belt +1",legs="Souveran Diechlings +1",feet="Souveran Schuhs"}
 										
 		sets.Idle.Cleave = {ammo="Staunch Tathlum",
                                     head="Souveran Schaller", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Thureous Earring",
-                                    body="Reverence Surcoat +2",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
+                                    body="Reverence Surcoat +3",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
                                     back="Moonbeam Cape",waist="Flume Belt +1",feet="Souveran Schuhs",legs="Carmine Cuisses +1"}								
         --TP Sets--
         sets.TP = {}
@@ -49,7 +49,7 @@ function get_sets()
 									neck="Loricate Torque +1",
 									ear1="Odnowa Earring +1",
 									ear2="Thureous Earring",
-                                    body="Reverence Surcoat +2",
+                                    body="Reverence Surcoat +3",
 									hands="Regal Gauntlets",
 									ring1="Defending ring",
 									ring2="Vocane Ring",
@@ -107,12 +107,12 @@ function get_sets()
 										  ear1="Ishvara Earring",
 										  ear2="Moondshade Earring",
                                           body="Sulevia's Platemail +1",
-										  hands="Sulevia's Gauntlets +1",
+										  hands="Odyssean Gauntlets",
 										  ring2="Regal Ring",
 										  ring1="Petrov Ring",
                                           back="Lupine Cape",
 										  waist="Grunfield Rope",
-										  legs="Sulevia Cuisses +1",
+										  legs="Sulevia Cuisses +2",
 										  feet="Sulevia's Leggings +2"}
                                                            
         sets.ChantDuCygne = {}
@@ -131,7 +131,7 @@ function get_sets()
 											ring1="Petrov Ring",
                                             back="Grounded Mantle",
 											waist="Fotia Belt",
-											legs="Odyssean Cuisses",
+											legs="Sulevia's Cuisses +2",
 											feet="Thereoid Greaves"}		
 
                                                                                                                    
@@ -144,8 +144,8 @@ function get_sets()
 
 		sets.WS.Atonement = {ammo="Floestone",
                                     head="Sulevia's Mask +1", neck="Asperity necklace", ear1="Brutal Earring",ear2="Cessance Earring",
-                                    body="Souveran Cuirass",hands="Souveran Handschuhs",ring1="Petrov Ring",ring2="Rajas Ring",
-                                    back="Weard Mantle",waist="windbuffet belt +1",legs="Founder's Hose",feet="Souveran Schuhs"}
+                                    body="Souveran Cuirass",hands="Odyssean Gauntlets",ring1="Petrov Ring",ring2="Rajas Ring",
+                                    back="Weard Mantle",waist="windbuffet belt +1",legs="Sulevia's Cuisses +2",feet="Souveran Schuhs"}
                                                                                        
         --Magic Sets--
         sets.Magic = {}
@@ -191,7 +191,7 @@ function get_sets()
 								neck = "Unmoving Collar",
 								hands ="Regal Gauntlets",
 								feet="Souveran Schuhs",
-								body="Reverence Surcoat +2",
+								body="Reverence Surcoat +3",
 								ring1 = "Stikini Ring",
 								legs="Souveran Diechlings +1",
 								head="Souveran Schaller"}
@@ -229,7 +229,7 @@ function get_sets()
 								neck = "Unmoving Collar",
 								hands="Souveran Handschuhs",
 								feet="Souveran Schuhs",
-								body="Reverence Surcoat +2",
+								body="Reverence Surcoat +3",
 								ring1="Petrov Ring",
 								legs="Souveran Diechlings +1",
 								head="Souveran Schaller"}
@@ -258,7 +258,7 @@ function get_sets()
        
        sets.precast.FC.Standard = { ammo="Sapience Orb",
 							head="Carmine Mask +1", 
-							body="Reverence Surcoat +2",
+							body="Reverence Surcoat +3",
 							hands="Souveran Handschuhs",
 							legs={ name="Odyssean Cuisses", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','"Fast Cast"+3','INT+1','Mag. Acc.+9','"Mag.Atk.Bns."+3',}},
 						    feet="Carmine Greaves +1",
