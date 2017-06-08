@@ -437,8 +437,8 @@ function init_gear_sets()
 						ring2="Regal Ring",
                         back="Belenus's Cape",
 						waist="Fotia Belt",
-						legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
-						feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}}}
+						legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
+						feet="Meg. Jam. +1",}
         
         sets.precast.WS.Mid = set_combine(sets.precast.WS, {
             ear1="Enervating Earring",

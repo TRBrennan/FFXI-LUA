@@ -156,9 +156,9 @@ function init_gear_sets()
         legs="Hiza. Hizayoroi +1",
         feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}},
         right_ear_ear="Moonshade Earring",
-        left_ear="Telos Earring",
-        left_ring="Regal Ring",
-        right_ring="Rajas Ring"})
+        left_ear="Ishvara Earring",
+        right_ring="Regal Ring",
+        left_ring="Rajas Ring"})
  
     sets.precast.WS['Blade: Shun'] = set_combine(sets.precast.WS, { 
         head="Adhemar Bonnet",
@@ -302,7 +302,7 @@ function init_gear_sets()
 							feet="Meg. Jam. +1"
 	}
  
-    --------------------------------------
+    ------------------------\--------------
     -- Idle/resting/defense/etc sets
     --------------------------------------
      
@@ -334,7 +334,7 @@ function init_gear_sets()
         left_ear="Infused Earring", right_ear="Genmei Earring",   
         right_ring="Vocane Ring",
         left_ring="Defending Ring",
-        back="Solmenity Cape"}
+        back="Moonbeam Cape"}
  
     sets.idle.Town = {
         --ammo="Staunch Tathlum",
@@ -362,7 +362,7 @@ function init_gear_sets()
         left_ear="Infused Earring", right_ear="Genmei Earring",   
         Right_ring="Meridian Ring",
         Left_ring="Defending Ring",
-        back="Shadow mantle"}
+        back="Moonbeam Cape"}
      
     -- Defense sets
     sets.defense.Evasion = {neck="Yarak Torque", back="Yokaze Mantle"}
@@ -370,7 +370,7 @@ function init_gear_sets()
     sets.defense.PDT = {
         --ammo="Staunch Tathlum",
         head="Ryuo Somen",
-        body="Emet Harness +1",
+        body="Ashera Harness",
         hands="Herculean Gloves",
         legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
         feet="Herculean Boots",
@@ -385,7 +385,7 @@ function init_gear_sets()
     sets.defense.MDT = {
         --ammo="Happo Shuriken",
         head="Dampening Tam",
-        body="Hiza. Haramaki +1",
+        body="Ashera Harness",
         hands="Floral Gauntlets",
         hands="Herculean Gloves",
         feet="Herculean Boots",
@@ -548,7 +548,7 @@ function init_gear_sets()
     sets.engaged.MaxHaste = {
         --ammo="Happo Shuriken",
         head="Dampening Tam",
-        body="Herculean Vest",
+        body="Ashera Harness",
         hands="Adhemar Wristbands",
         legs="Samnuha tights",
         feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
@@ -564,7 +564,7 @@ function init_gear_sets()
          
     sets.engaged.HighAcc.MaxHaste = set_combine(sets.engaged.Acc.MaxHaste,{
         head="Dampening Tam",
-        hands="Herculean Vest",
+        hands="Ashera Harness",
         legs="Samnuha tights",
         feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
         neck="Yarak Torque",

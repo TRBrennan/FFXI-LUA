@@ -109,13 +109,13 @@ function get_sets()
 		sets.Upheavel.Index ={'Attack'}
 		Upheavel_ind= 1
 		sets.Upheavel.Attack = {ammo="Brigantia Pebble", head="Sulevia's Mask +1",neck="Tjukurrpa medal", ear1="Moonshade Earring",ear2="Telos Earring",
-									  body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Petrov Ring",ring2="Niqmaddu Ring",
+									  body="Sulevia's Platemail +1",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Niqmaddu Ring",
                                       back="Grounded Mantle",waist="Fotia Belt",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
         
 		sets.SB ={}
 		sets.SB.Attack = {ammo="Seething Bomblet +1",
                                     head="Boii Mask +1", neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Rajas Ring",
+                                    body="Argosy Hauberk",hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Rajas Ring",
                                     back="Grounded Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Sulevia Leggings +1" }
         --Ninja Magic Sets--
         sets.NINMagic = {}

@@ -28,7 +28,7 @@ function get_sets()
 		
 		sets.Weapons.GS = {main ="Ragnarok", sub ="Utu Grip"}
 		
-		sets.Weapons.GA = {main ="Aganoshe", sub ="Utu Grip"}
+		sets.Weapons.GA = {main ="Chango", sub ="Utu Grip"}
 		
 		sets.Weapons.Polearm = {main ="Blurred Lance", sub ="Utu Grip"}
 		
@@ -51,7 +51,7 @@ function get_sets()
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum", 
 							head="Sulevia's Mask +1",neck="Loricate Torque +1", ar1="Brutal Earring",ear2="Cessance Earring",
-                              body="Souveran Cuirass",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Defending  Ring",
+                              body="Souveran Cuirass",hands="Sulevia's Gauntlets +1",ring2="Vocane Ring",ring1="Defending  Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
 										
 							
@@ -134,14 +134,14 @@ function get_sets()
 									  body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Regal Ring",ring2="Niqmaddu Ring",
                                       back="Cichol's Mantle",waist="Grunfeld Rope",legs="Sulevia's Cuisses +2",feet="Pummeler's Calligae +3"}
 									  
-		sets.Upheavel.AttackHighTP = {ammo="Knobkierrie", head="Sulevia's Mask +1",neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Ishvara Earring",
-									  body="Pumm. Lorica +2",hands="Sulevia's Gauntlets +1",ring1="Regal Ring",ring2="Niqmaddu Ring",
+		sets.Upheavel.AttackHighTP = {ammo="Knobkierrie", head="Odyssean Helm",neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Ishvara Earring",
+									  body="Pumm. Lorica +2",hands="Valorous Mitts",ring1="Regal Ring",ring2="Niqmaddu Ring",
                                       back="Cichol's Mantle",waist="Grunfeld Rope",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}								
         
 		sets.SB ={}
 		sets.SB.Attack = {ammo="Knobkierrie",
-                                    head="Boii Mask +1", neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                    body="Pumm. Lorica +2",hands="Odyssean Gauntlets",ring1="Niqmaddu Ring",ring2="Regal Ring",
+                                    head="Odyssean Helm", neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
+                                    body="Pumm. Lorica +2",hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Regal Ring",
                                     back="Cichol's Mantle",waist="Grunfeld Rope",legs="Argosy Breeches +1",feet="Sulevia's Leggings +2" }
         --Ninja Magic Sets--
         sets.NINMagic = {}
@@ -248,7 +248,7 @@ function precast(spell)
                 equip(sets.KJ.Attack)
         end
 		
-		if spell.english == "Upheaval" or spell.english =='Scourge' then
+		if spell.english == "Upheaval"  then
 			equip(sets.Upheavel.AttackLowTP)
 		end
 		

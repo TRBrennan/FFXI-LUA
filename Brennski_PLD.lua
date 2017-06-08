@@ -107,7 +107,7 @@ function get_sets()
 										  ear1="Ishvara Earring",
 										  ear2="Moondshade Earring",
                                           body="Sulevia's Platemail +1",
-										  hands="Odyssean Gauntlets",
+										  hands="Valorous Mitts",
 										  ring2="Regal Ring",
 										  ring1="Petrov Ring",
                                           back="Lupine Cape",
@@ -144,7 +144,7 @@ function get_sets()
 
 		sets.WS.Atonement = {ammo="Floestone",
                                     head="Sulevia's Mask +1", neck="Asperity necklace", ear1="Brutal Earring",ear2="Cessance Earring",
-                                    body="Souveran Cuirass",hands="Odyssean Gauntlets",ring1="Petrov Ring",ring2="Rajas Ring",
+                                    body="Souveran Cuirass",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Rajas Ring",
                                     back="Weard Mantle",waist="windbuffet belt +1",legs="Sulevia's Cuisses +2",feet="Souveran Schuhs"}
                                                                                        
         --Magic Sets--
