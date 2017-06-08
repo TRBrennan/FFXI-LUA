@@ -1,4 +1,4 @@
-unction get_sets()
+function get_sets()
 
 	--binds--
 send_command('bind !f2 gs equip sets.CP; gs disable back; input /echo <----- CP mantle locked ----->') -- Alt F2 locks CP mantle
@@ -316,7 +316,7 @@ sets.Ranged.HighAccuracy = {
 set.PDT = {
     head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}}, 
     body="Meg. Cuirie +1",
-    hands="Kurys gloves"
+    hands="Kurys gloves",
     legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
     feet="Ahosi Leggings",
     neck="Loricate Torque +1",
@@ -330,7 +330,7 @@ set.PDT = {
 set.MDT = {
 	 head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}}, 
     body="Meg. Cuirie +1",
-    hands="Kurys gloves"
+    hands="Kurys gloves",
     legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
     feet="Ahosi Leggings",
     neck="Loricate Torque +1",
@@ -482,7 +482,7 @@ sets.MagicGun.Attack = {
 							waist ="Eschan Stone",
 							back="Belenus's Cape",   
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
-							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
+							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}
 }
 sets.MagicGun.Accuracy = {
 							head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
@@ -496,7 +496,7 @@ sets.MagicGun.Accuracy = {
 							waist ="Eschan Stone",
 							back="Belenus's Cape",   
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
-							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
+							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}
 }
 
 sets.OtherWS = {}		
@@ -512,7 +512,7 @@ sets.OtherWS.Attack = {
                         back="Belenus's Cape",
 						waist="Fotia Belt",
 						legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
-						feet="Meg. Jam. +1",}
+						feet="Meg. Jam. +1",
 }	
 sets.OtherWS.Accuracy = {
 						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
@@ -526,7 +526,7 @@ sets.OtherWS.Accuracy = {
                         back="Belenus's Cape",
 						waist="Fotia Belt",
 						legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
-						feet="Meg. Jam. +1",}
+						feet="Meg. Jam. +1",
 }
 
 sets.RangedWS = {}		
@@ -542,7 +542,7 @@ sets.RangedWS.Attack = {
                         back="Belenus's Cape",
 						waist="Fotia Belt",
 						legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
-						feet="Meg. Jam. +1",}
+						feet="Meg. Jam. +1",
 }	
 sets.RangedWS.Accuracy = {
 						head="Meghanada Visor +1",
@@ -556,7 +556,7 @@ sets.RangedWS.Accuracy = {
                         back="Belenus's Cape",
 						waist="Fotia Belt",
 						legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
-						feet="Meg. Jam. +1",}
+						feet="Meg. Jam. +1",
 }
 
 sets.RangedWScrit = {}		
@@ -602,7 +602,7 @@ sets.AeolianEdge = {
 							waist ="Eschan Stone",
 							back="Belenus's Cape",   
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
-							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
+							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}
 }
 
 	
