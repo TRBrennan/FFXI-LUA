@@ -23,12 +23,12 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Staunch Tathlum",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", ear1="Genmei earring", ear2="Infused Earring",
-                                      body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Defending ring",ring2="Vocane Ring",
+                                      body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Flume Belt +1",legs="Carmine Cuisses",feet="Hermes' Sandals", back ="Solemnity Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum", 
-							head="Sulevia's Mask +1",neck="Loricate Torque +1", ar1="Brutal Earring",ear2="Cessance Earring",
-                              body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Defending  Ring",
+							head="Sulevia's Mask +2",neck="Loricate Torque +1", ar1="Brutal Earring",ear2="Cessance Earring",
+                              body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending  Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
 										
 							
@@ -40,14 +40,14 @@ function get_sets()
 				
                 TP_ind = 1
 				sets.TP.Standard = {ammo="Ginsen",
-                                    head="Boii Mask +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
+                                    head="Flam. Zucchetto +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
                                     body="Valorous Mail",hands="Emicho Gauntlets",ring1="Niqmaddu Ring",ring2="Chirich Ring",
                                     back="Grounded Mantle",waist="Ioskeha Belt",legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
 									feet="Valorous Greaves"}
                                                        
                                                        
                 sets.TP.AccuracyLite = {ammo="Seethng bomblet +1",
-                                        head="Boii Mask +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
+                                        head="Flam. Zucchetto +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
 										body="Valorous Mail",hands="Emicho Gauntlets",ring2="Petrov Ring",ring1="Niqmaddu Ring",
                                         back="Grounded Mantle",waist="Ioskeha Belt",legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
 										feet="Valorous Greaves"}
@@ -60,13 +60,13 @@ function get_sets()
 										feet="Valorous Greaves"}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
-                              head="Sulevia's Mask +1",neck="Loricate Torque +1", ear1="Cessance Earring",ear2="Telos Earring",
-                              body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Defending  Ring",
+                              head="Sulevia's Mask +2",neck="Loricate Torque +1", ear1="Cessance Earring",ear2="Telos Earring",
+                              body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending  Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
                                  
                 sets.TP.DTAccuracy = {ammo="Ginsen",
-                                      head="Sulevia's Mask +1",neck="Lissome Necklace", ear2="Telos Earring",ear1="Cessance Earring",    
-									  body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Niqmaddu Ring",ring2="Rajas Ring",
+                                      head="Sulevia's Mask +2",neck="Lissome Necklace", ear2="Telos Earring",ear1="Cessance Earring",    
+									  body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Niqmaddu Ring",ring2="Rajas Ring",
                                       back="Grounded Mantle",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
                                                          
 									
@@ -80,9 +80,9 @@ function get_sets()
 		Reso_ind= 1
 		
 		sets.Resolution.Attack = {ammo="Seething Bomblet +1",
-                                    head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
-                                    back="Grounded Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Argosy Sollerets +1"}
+                                    head="Argosy Celata +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
+                                    body="Valorous Mail",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Rufescent Ring",
+                                    back="Grounded Mantle",waist="Fotia Belt",legs="Argosy Breeches +1",feet="Argosy Sollerets +1"}
 		
                                                            
         sets.Ukkos = {} 
@@ -91,9 +91,9 @@ function get_sets()
 		Ukkos_Ind = 1
 		
 		sets.Ukkos.Atack = {ammo="Yetshila",
-                                    head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Begrudging Ring",
-                                    back="Grounded Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Thereoid Greaves"}
+                                    head="Argosy Celata +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
+                                    body="Valorous Mail",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Begrudging Ring",
+                                    back="Grounded Mantle",waist="Grunfeld Rope",legs="Argosy Breeches +1",feet="Thereoid Greaves"}
 
 		sets.KJ = {}
 		sets.KJ.Index ={'Attack'}
@@ -101,28 +101,28 @@ function get_sets()
 		KJ_Ind= 1
 		
 		sets.KJ.Attack = {ammo="Seething Bomblet +1",
-                                    head="Boii Mask +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body="Argosy Hauberk",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Rajas Ring",
-                                    back="Grounded Mantle",waist="Fotia Belt",legs="Argosy Breeches",feet="Argosy Sollerets +1"}
+                                    head="Flam. Zucchetto +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
+                                    body="Valorous Mail",hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Rajas Ring",
+                                    back="Grounded Mantle",waist="Fotia Belt",legs="Argosy Breeches +1",feet="Argosy Sollerets +1"}
 									
     	sets.Upheavel = {}
 		sets.Upheavel.Index ={'Attack'}
 		Upheavel_ind= 1
-		sets.Upheavel.Attack = {ammo="Brigantia Pebble", head="Sulevia's Mask +1",neck="Tjukurrpa medal", ear1="Moonshade Earring",ear2="Telos Earring",
-									  body="Sulevia's Platemail +1",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Niqmaddu Ring",
+		sets.Upheavel.Attack = {ammo="Knobkierrie", head="Sulevia's Mask +2",neck="Tjukurrpa medal", ear1="Moonshade Earring",ear2="Telos Earring",
+									  body="Sulevia's Plate. +2",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Niqmaddu Ring",
                                       back="Grounded Mantle",waist="Fotia Belt",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +1"}
         
 		sets.SB ={}
-		sets.SB.Attack = {ammo="Seething Bomblet +1",
-                                    head="Boii Mask +1", neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                    body="Argosy Hauberk",hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Rajas Ring",
-                                    back="Grounded Mantle",waist="Grunfeld Rope",legs="Argosy Breeches",feet="Sulevia Leggings +1" }
+		sets.SB.Attack = {ammo="Knobkierrie",
+                                    head="Argosy Celata +1", neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
+                                    body="Valorous Mail",hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Rajas Ring",
+                                    back="Grounded Mantle",waist="Grunfeld Rope",legs="Argosy Breeches +1",feet="Sulevia Leggings +1" }
         --Ninja Magic Sets--
         sets.NINMagic = {}
        				
 	    sets.NINMagic.Utsusemi ={
                               head="Dampening Tam",neck="Loricate Torque +1", ear1="Brutal Earring",ear2="Cessance Earring",
-                              body="Emet harness +1",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Petrov Ring",
+                              body="Emet harness +1",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Petrov Ring",
                               back="Solemnity Cape",waist="Flume belt +1",legs="Herculean Trousers",feet="Valorous Greaves"}
 							  
 		
@@ -145,7 +145,7 @@ function get_sets()
                                                         back="Swith cape",waist="Pythia sash +1",legs="Portent pants",feet="Valorous Greaves"}
                                                        
         sets.Utility.Steps = {ammo="Ginsen",
-							head="Boii Mask +1", body="Valorous Mail", hands="Rawhide Gloves",legs=="Odyssean Cuisses", feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",  back="Grounded Mantle",}
+							head="Flam. Zucchetto +1", body="Valorous Mail", hands="Rawhide Gloves",legs=="Odyssean Cuisses", feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",  back="Grounded Mantle",}
                                                  
 		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
 		

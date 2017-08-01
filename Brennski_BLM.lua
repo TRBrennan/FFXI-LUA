@@ -175,7 +175,8 @@ function get_sets()
 		
 		sets.Utility.DrainAspir = { ammo="Strobilus",
                                  head="Pixie Hairpin +1",neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Barkarole Earring",
-                                 body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Mephitas's Ring", waist ="Fucho-no-obi",
+                                 body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", 
+								 ring1="Evanescence Ring", ring2 ="Mephitas's Ring", waist ="Fucho-no-obi",
                                  back="Taranus's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackcrows"}
  
 		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}

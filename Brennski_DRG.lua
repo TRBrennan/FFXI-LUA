@@ -36,12 +36,12 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Staunch Tathlum",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", ear1="Genmei earring", ear2="Infused Earring",
-                                      body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Defending ring",ring2="Vocane Ring",
+                                      body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Sulevia's Leggings +2", back ="Moonbeam Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum", 
-							head="Sulevia's Mask +1",neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Cessance Earring",
-                              body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Defending  Ring",
+							head="Sulevia's Mask +2",neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Cessance Earring",
+                              body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending  Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +2"}
 										
 							
@@ -74,13 +74,13 @@ function get_sets()
                                         back ="Grounded Mantle",waist="Ioskeha Belt",legs="Odyssean Cuisses",feet="Valorous Greaves"}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
-                              head="Sulevia's Mask +1",neck="Loricate Torque +1", left_ear="Sherida earring",right_ear="Telos Earring",
-                              body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Defending Ring",
+                              head="Sulevia's Mask +2",neck="Loricate Torque +1", left_ear="Sherida earring",right_ear="Telos Earring",
+                              body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
                                  
                 sets.TP.DTAccuracy = {ammo="Ginsen",
-                                      head="Sulevia's Mask +1",neck="Lissome Necklace", left_ear="Sherida earring",	right_ear="Telos Earring",   
-									  body="Sulevia's Platemail +1",hands="Sulevia's Gauntlets +1",ring1="Petrov Ring",ring2="Chirich Ring",
+                                      head="Sulevia's Mask +2",neck="Lissome Necklace", left_ear="Sherida earring",	right_ear="Telos Earring",   
+									  body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Chirich Ring",
                                       back ="Grounded Mantle",waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
                                                          
 									
@@ -137,7 +137,7 @@ function get_sets()
        				
 	    sets.NINMagic.Utsusemi ={
                               head="Dampening Tam",neck="Loricate Torque +1", ar1="Brutal Earring",ear2="Cessance Earring",
-                              body="Emet harness +1",hands="Sulevia's Gauntlets +1",ring1="Vocane Ring",ring2="Petrov Ring",
+                              body="Emet harness +1",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Petrov Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs="Herculean Trousers",feet="Valorous Greaves"}
  
                                               
@@ -167,7 +167,7 @@ function get_sets()
        
         sets.JA = {}
 		sets.JA.Jump = { ammo="Ginsen",
-						head="Sulevia's Mask +1",
+						head="Sulevia's Mask +2",
 						body={ name="Valorous Mail", augments={'HP+50','DEX+10','Accuracy+15',}},
 						hands={ name="Emicho Gauntlets", augments={'HP+50','DEX+10','Accuracy+15',}},
 						legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},

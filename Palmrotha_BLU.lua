@@ -34,22 +34,30 @@ function get_sets()
         sets.Idle.index = {'Standard','DT', 'Cleave'}
         Idle_ind = 1                  
        
-        sets.Idle.Standard = {ammo="Staunch Tathlum",
-                                      head={ name="Herculean Helm", augments={'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Jhakri Robe +1",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},ring1="Defending ring",ring2="Vocane Ring",
-                                      waist="Fucho-no-obi",legs="Carmine Cuisses +1",feet={ name="Herculean Boots", augments={'CHR+6','STR+14','"Refresh"+1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}}, 
-									  back ="Moonbeam Cape"}
+        sets.Idle.Standard = {head="Rawhide Mask",
+										body="Jhakri Robe",
+										hands="Rawhide Gloves",
+										legs="Carmine Cuisses +1",
+										feet="Despair Greaves",
+										neck="Loricate Torque +1",
+										waist="Fucho-no-Obi",
+										left_ear="Heartseeker Earring",
+										right_ear="Dudgeon Earring",
+										left_ring="Vertigo Ring",
+										right_ring="Enlivened Ring",
+										back="Solemnity Cape"
+										}
                                                  
         sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap",ammo="Staunch Tathlum",
                                 head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
-                                        body="Emet harness +1",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},ring1="Defending ring",ring2="Vocane Ring",
+                                        body="Emet harness",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},ring1="Defending ring",ring2="Vocane Ring",
                                         back="Moonbeam Cape",waist="Flume belt +1",legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
 										feet={ name="Herculean Boots", augments={'CHR+6','STR+14','"Refresh"+1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}} }
 										
 										
 		sets.Idle.Cleave = {main="Terra's Staff",sub="Umbra strap",ammo="Staunch Tathlum",
                                 head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
-                                        body="Emet harness +1",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},ring1="Defending ring",ring2="Vocane Ring",
+                                        body="Emet harness",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},ring1="Defending ring",ring2="Vocane Ring",
                                         back="Moonbeam Cape",waist="Flume belt +1", legs = "Carmine Cuisses +1",
 										feet={ name="Herculean Boots", augments={'CHR+6','STR+14','"Refresh"+1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}} }
 		
@@ -62,32 +70,41 @@ function get_sets()
                 --1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy--
 				
                 TP_ind = 1
-				sets.TP.Standard = { ammo="Ginsen",
-                                    head="Adhemar Bonnet", neck="Asperity necklace", ear1="Suppanomimi",ear2="Brutal Earring",
-                                    body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Petrov Ring",ring2="Epona's Ring",
-                                    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},waist="windbuffet belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
-                                                       
-                                                       
+				sets.TP.Standard = {  ammo="Expeditious Pinion",
+									head="Jhakri Coronal +1",
+									body="Emet Harness",
+									hands="Rawhide Gloves",
+									legs="Carmine Cuisses +1",
+									feet="Despair Greaves",
+									neck="Iqabi Necklace",
+									waist="Kentarch Belt",
+									left_ear="Heartseeker Earring",
+									right_ear="Dudgeon Earring",
+									left_ring="Petrov Ring",
+									right_ring="Enlivened Ring",
+									back="Cornflower Cape"
+									}			
+																						   
                 sets.TP.AccuracyMid = {ammo="Ginsen",
                                         head="Carmine Mask +1",neck="Asperity necklace", ear1="Suppanomimi", ear2="Cessance Earring",                            
-										body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Ilabrat Ring",ring2="Epona's ring",
-                                       back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},waist="windbuffet belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+										body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Chirich Ring",ring2="Epona's ring",
+                                       back="Cornflower Cape",waist="windbuffet belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
                 sets.TP.AccuracyFull = {ammo="Floestone",
                                         head="Carmine Mask +1",neck="Lissome Necklace", ear1="Dignitary's Earring", ear2="Telos Earring",
-                                        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Cacoethic Ring",ring2="Ilabrat Ring",
-                                        back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+                                        body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Cacoethic Ring",ring2="Chirich Ring",
+                                        back="Cornflower Cape",waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
                               head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Ethereal", ear2="Genmei Earring",
-                              body="Emet harness +1",hands="Herculean Gloves",ring1="Vocane Ring",ring2="Defending Ring",
+                              body="Emet harness",hands="Herculean Gloves",ring1="Vocane Ring",ring2="Defending Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
 							  feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                  
                 sets.TP.DTAccuracy = {ammo="Ginsen",
                                       head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Suppanomimi", ear2="Genmei Earring",     
-									  body="Emet harness +1",hands="Herculean Gloves",ring1="Ilabrat Ring",ring2="Epona's ring",
-                                      back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},waist="Flume belt +1",legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
+									  body="Emet harness",hands="Herculean Gloves",ring1="Chirich Ring",ring2="Epona's ring",
+                                      back="Cornflower Cape",waist="Flume belt +1",legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
 									  feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                          
                  
@@ -102,7 +119,7 @@ function get_sets()
         sets.Requiescat.Attack = {ammo="Seething Bomblet +1",
                                           head="Carmine Mask +1",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Telos Earring",
                                           body="Adhemar Jacket",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Petrov Ring",ring2="Epona's ring",
-                                          back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+                                          back="Cornflower Cape",
 										  waist="Fotia belt",legs="Quiahuiz leggings",feet="Carmine Greaves +1"}
 										  
 		sets.SavageBlade = {}
@@ -113,9 +130,8 @@ function get_sets()
            sets.SavageBlade.Attack = {ammo="Floestone",
                                           head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 										  neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','Weapon skill damage +2%','STR+1','Attack+4',}},
-										  hands="Jhakri Cuffs +2",
-										  ring1="Ilabrat Ring",ring2="Rajas Ring",
+                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands="Jhakri Cuffs +1",
+										  ring1="Petrov Ring",ring2="Rajas Ring",
                                           back="Lupine Cape",
 										  waist="Grunfeld Rope",
 										  legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
@@ -136,7 +152,7 @@ function get_sets()
        
         sets.WS.SanguineBlade = {ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Sanctity Necklace",rear="Friomisi earring", ear1="Novio Earring",
-                                 body="Jhakri Robe +1",hands="Jhakri Cuffs +2", ring1="Shiva Ring", ring2 ='Shiva Ring', waist ="Eschan Stone",
+                                 body="Jhakri Robe",hands="Jhakri Cuffs +1", ring1="Vertigo Ring", ring2 ='Vertigo Ring', waist ="Eschan Stone",
                                  back="Cornflower cape",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1" }
                
         sets.WS.CircleBlade = {}              
@@ -144,16 +160,15 @@ function get_sets()
         sets.WS.CircleBlade = {ammo="Floestone",
                                           head="Adhemar Bonnet",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Telos Earring",
                                           body="Adhemar Jacket",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Petrov Ring",ring2="Epona's Ring",
-                                          back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},waist="Fotia belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+                                          back="Cornflower Cape",waist="Fotia belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                    
         sets.WS.Expiacion = {}        
                        
         sets.WS.Expiacion = {ammo="Floestone",
                                           head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 										  neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
-                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','Weapon skill damage +2%','STR+1','Attack+4',}},
-										  hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Petrov Ring",ring2="Rajas Ring",
-                                          back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},waist="Grunfeld Rope",
+                                          body="Adhemar Jacket",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Petrov Ring",ring2="Rajas Ring",
+                                          back="Cornflower Cape",waist="Grunfeld Rope",
 										  legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
 										  feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}} }
  
@@ -163,7 +178,7 @@ function get_sets()
                                           head="Adhemar Bonnet",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Telos Earring",
                                           body="Adhemar Jacket",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},
 										  ring1="Petrov Ring",ring2="Epona's Ring",
-                                          back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},waist="Fotia belt",
+                                          back="Cornflower Cape",waist="Fotia belt",
 										  legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
 										  feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                  
@@ -182,7 +197,7 @@ function get_sets()
         sets.WS.FlashNova = {ammo="Pemphredo Tathlum",
                                    Head ="Jhakri Coronal +1",
 								   neck="Sanctity Necklace",rear="Friomisi earring", ear1="Novio Earring",
-                                 body="Adhemar Jacket",hands="Amalric Gages", ring1="Shiva Ring", ring2 ='Shiva Ring', waist ="Eschan Stone",
+                                 body="Adhemar Jacket",hands="Amalric Gages", ring1="Vertigo Ring", ring2 ='Vertigo Ring', waist ="Eschan Stone",
                                  back="Cornflower cape",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
 
                                                                
@@ -199,28 +214,28 @@ function get_sets()
        
 	   sets.BlueMagic.Physical = {ammo ="Floestone",
 							         head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Caro Necklace",ear1="Corybant Pearl",ear2="Kemas Earring",
-                                     body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands="Jhakri Cuffs +2",ring1="Petrov Ring",ring2="Rajas Ring",
+                                     body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands="Jhakri Cuffs +1",ring1="Petrov Ring",ring2="Rajas Ring",
                                      back="Cornflower Cape",waist="Grunfeld Rope",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 									 
 		 sets.BlueMagic.Dart = {ammo ="Floestone",
 							         head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Caro Necklace",ear1="Corybant Pearl",ear2="Kemas Earring",
-                                     body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands="Jhakri Cuffs +2",ring1="Petrov Ring",ring2="Rajas Ring",
+                                     body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands="Jhakri Cuffs +1",ring1="Petrov Ring",ring2="Rajas Ring",
                                      back="Cornflower Cape",waist="Chaac Belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 		
 
 		sets.BlueMagic.BlueMagic = {ammo="Pemphredo Tathlum",
                                    Head ="Jhakri Coronal +1",neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Regal Earring",
-                                 body="Jhakri Robe +1",hands="Jhakri Cuffs +2", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Eschan Stone",
+                                 body="Jhakri Robe",hands="Jhakri Cuffs +1", ring1="Vertigo Ring", ring2 ="Acumen Ring", waist ="Eschan Stone",
                                  back="Cornflower cape",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1" }
 
         
 		sets.BlueMagic.PhysStun = {ammo ="Floestone",
-									   ear1="Moonshade Earring",ear2="Mavi Earring", ring2="Stikini Ring", Ring1="Kishar Ring",  back="Cuchulain's Mantle",hands = "Jhakri Cuffs +2"}         
+									   ear1="Moonshade Earring",ear2="Mavi Earring", ring2="Stikini Ring", Ring1="Kishar Ring",  back="Cuchulain's Mantle",hands = "Jhakri Cuffs +1"}         
 
 										
 	    sets.BlueMagic.Debuff = {ammo="Pemphredo Tathlum",
 								  head="Carmine Mask +1",ear2="Regal Earring", ear1="Psystorm Earring", neck ="atzintli necklace",
-								body="Jhakri Robe +1",hands="Jhakri Cuffs +2",ring1="Kishar Ring", ring2="Stikini Ring", back="Cornflower cape",
+								body="Jhakri Robe",hands="Jhakri Cuffs +1",ring1="Kishar Ring", ring2="Stikini Ring", back="Cornflower cape",
 								legs="Jhakri Slops +1",feet="Jhakri Pigaches +1",wait="Eschan Stone"}
 		
 				
@@ -245,24 +260,24 @@ function get_sets()
                                                                  
         
         sets.BlueMagic.Enmity = {ammo="Iron Gobbet",
-				head="Rabid Visor",  body="Emet harness +1",  hands="Leyline Gloves", legs="Obatala Subligar",  feet="Dux Greaves", neck="Atzintli Necklace",
+				head="Rabid Visor",  body="Emet harness",  hands="Leyline Gloves", legs="Obatala Subligar",  feet="Dux Greaves", neck="Atzintli Necklace",
 				waist="Trance belt",  left_ear="Friomisi Earring", right_ear="Cryptic Earring",  left_ring='Supershear Ring',  right_ring="Begrudging Ring",  back="Cornflower Cape"}
 				
 		sets.BlueMagic.Dark = {ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Regal Earring",
-                                 body="Jhakri Robe +1",hands="Amalric Gages", ring1="Shiva Ring", ring2 ='Shiva Ring', waist ="Eschan Stone",
+                                 body="Jhakri Robe",hands="Amalric Gages", ring1="Vertigo Ring", ring2 ='Vertigo Ring', waist ="Eschan Stone",
                                  back="Cornflower cape",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1" }
                                                         
         --Ninja Magic Sets--
         sets.NINMagic = {}
        
 		sets.NINMagic.Nuke ={Head ="Jhakri Coronal +1", neck="Sanctity Necklace", ear2="Friomisi earring", ear1="Regal Earring",
-							body="Samnuha Coat", hands="Leyline Gloves", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Eschan Stone",
+							body="Samnuha Coat", hands="Leyline Gloves", ring1="Vertigo Ring", ring2 ="Acumen Ring", waist ="Eschan Stone",
 							back="Gunslinger's Cape",   legs="Herculean Trousers",  feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
 							
 	    sets.NINMagic.Utsusemi ={
                               head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ar1="Brutal Earring",ear2="Cessance Earring",
-                              body="Emet harness +1",hands="Adhemar Wristbands",ring1="Vocane Ring",ring2="Petrov Ring",
+                              body="Emet harness",hands="Adhemar Wristbands",ring1="Vocane Ring",ring2="Petrov Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}}
  
                                               
@@ -271,7 +286,7 @@ function get_sets()
        
         sets.Utility.Weather = {waist="Hachirin-no-obi",back="Twilight Cape"}
  
-        sets.Utility.MB = {head="Herculean Helm",body="Jhakri Robe +1",ear1="Static Earring",ring1="Locus Ring",ring2="Mujin Band"}
+        sets.Utility.MB = {head="Herculean Helm",body="Jhakri Robe",ear1="Static Earring",ring1="Locus Ring",ring2="Mujin Band"}
  
        
         sets.Utility.Stoneskin = {head="Haruspex hat",neck="Stone Gorget",ear1="Loquac. earring",ear2="Earthcry earring",
@@ -318,7 +333,7 @@ function get_sets()
         sets.precast.FC = {}
        
        sets.precast.FC.Standard = { ammo="Sapience Orb",
-							head="Herculean Helm",  body="Vrikodara Jupon",  hands="Leyline Gloves",   legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},
+							head="Herculean Helm",  body="Vrikodara Jupon",  hands={ name="Telchine Gloves", augments={'"Fast Cast"+3',}},   legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},
 						    feet="Carmine Greaves +1",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
 						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Kishar Ring", back="Swith Cape"}
        

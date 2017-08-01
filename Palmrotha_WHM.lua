@@ -1,242 +1,377 @@
+-- Local Settings, setting the zones prior to use
+naSpells = S{"Paralyna","Silena","Viruna","Erase","Stona","Blindna","Poisona"}
+
+resSpells = S{"Barstonra","Barwatera","Baraera","Barfira","Barblizzara","Barthundra",
+	"Barstone","Barwater","Baraero","Barfire","Barblizzard","Barthunder"}
+ST_Cure_Spells = S{"Cure","Cure II","Cure III","Cure IV","Cure V","Cure VI"}
+MT_Cure_Spells = S{"Curaga","Curaga II","Curaga III","Curaga IV","Curaga V","Cura","Cura II","Cura III"}
+FC_Spells = S{"Haste","Utsusemi: Ichi","Utsusemi: Ni","Refresh","Flurry","Aurorastorm"}
+Regen_Spells = S{"Regen","Regen II","Regen III","Regen IV"}
+Holy_Spells = S{"Banish","Banish II","Banish III","Banishga","Banishga II","Holy","Holy II"}
+Gear_Debug = 0
+
+-- Start Functions here
+-- Gear Sets
 function get_sets()
- 
-        send_command('bind f9 gs c toggle Nuke set')
-        send_command('bind f10 gs c toggle Idle set')
-		send_command('bind f11 gs c toggle Enhancing set')
 		
-        function file_unload()
-     
- 
-        send_command('unbind ^f9')
-        send_command('unbind ^f10')
-		send_command('unbind ^f11')
+	sets.aftercast_Idle_refresh ={ 
+    main="Bolelabunga",
+    sub="Genbu's Shield",
+    ammo="Incantor Stone",
+    head="Inyanga Tiara",
+    body="Ebers Bliaud +1",
+    hands="Inyanga Dastanas",
+    legs="Assid. Pants +1",
+    feet="Inyanga Crackows",
+    neck="Loricate Torque +1",
+    waist="Fucho-no-Obi",
+    left_ear="Lifestorm Earring",
+    right_ear="Spellbr. Earring",
+    left_ring="Vertigo Ring",
+    right_ring="Inyanga Ring",
+    back="Solemnity Cape",
+}
+	
+	sets.aftercast_Move = sets.aftercast_Idle_refresh
 
-       
-        send_command('unbind !f9')
-        send_command('unbind !f10')
-		self_command('unbind !f11')
+	sets.aftercast_Idle = sets.aftercast_Idle_refresh
+	
+	sets.precast_Cure =  { main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
+    sub="Sors Shield",
+    ammo="Incantor Stone",
+    head="Nahtirah Hat",
+    body="Shango Robe",
+    hands={ name="Telchine Gloves", augments={'"Fast Cast"+3',}},
+    legs="Assid. Pants +1",
+    feet="Regal Pumps",
+    neck="Voltsurge Torque",
+    waist="Channeler's Stone",
+    left_ear="Lifestorm Earring",
+    right_ear="Spellbr. Earring",
+    left_ring="Prolix Ring",
+    right_ring="Sirona's Ring",
+    back="Swith Cape",
+}
+		
+	sets.precast_FastCast =  {  main="Marin Staff +1",
+    sub="Vivid Strap",
+    ammo="Incantor Stone",
+    head="Nahtirah Hat",
+    body="Shango Robe",
+    hands={ name="Telchine Gloves", augments={'"Fast Cast"+3',}},
+    legs="Assid. Pants +1",
+    feet="Regal Pumps",
+    neck="Voltsurge Torque",
+    waist="Channeler's Stone",
+    left_ear="Lifestorm Earring",
+    right_ear="Spellbr. Earring",
+    left_ring="Prolix Ring",
+    right_ring="Sirona's Ring",
+    back="Swith Cape",
 
-        send_command('unbind f9')
-        send_command('unbind f10')
-		send_command('unbind f11')
+}
+	
+	sets.precast_Haste = {    main="Queller Rod",
+    sub="Sors Shield",
+    ammo="Impatiens",
+    head="Vanya Hood",
+    body="Inyanga Jubbah +1",
+    hands={ name="Fanatic Gloves", augments={'MP+50','Healing magic skill +10','"Conserve MP"+7','"Fast Cast"+7',}},
+    legs="Aya. Cosciales +1",
+    feet="Chelona Boots",
+    neck="Voltsurge Torque",
+    waist="Channeler's Stone",
+    left_ear="Loquac. Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Lebeche Ring",
+    right_ring="Kishar Ring",
+       back="Solemnity Cape"
+}
+		
+	sets.midcast_Haste = {  main="Bolelabunga",
+    sub="Sors Shield",
+    ammo="Homiliary",
+    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
+    body={ name="Telchine Chas.", augments={'Evasion+8','"Cure" spellcasting time -5%','Enh. Mag. eff. dur. +9',}},
+    hands="Dynasty Mitts",
+    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +8',}},
+    feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +7',}},
+    neck="Voltsurge Torque",
+    waist="Channeler's Stone",
+    left_ear="Loquac. Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Sangoma Ring",
+    right_ring="Kishar Ring",
+       back="Solemnity Cape"
+}
+	
+	sets.precast_Devotion = {}
 
- 
-        end    
+	sets.Resting = {main="Queller rod",sub="Genmei shield",ammo="Incantor Stone",
+		head="Befouled crown",neck="Loricate torque +1",ear1="Sanare earring",ear2="Spellbreaker Earring",
+		body="Piety briault +1",hands="Gendewitha gages +1",ring1="Patricius Ring",ring2="Defending ring",
+		back="Solemnity cape",waist="Fucho-no-obi",legs="Lengo pants",feet="Inspirited boots"}
+	
+	sets.midcast_EnfeeblingMagic = {main="Grioavolr",sub="Mephitis grip",ammo="Hydrocera",
+		head="Befouled crown",neck="Imbodla necklace",ear1="Lifestorm Earring",ear2="Psystorm Earring",
+		body="Chironic doublet",hands="Lurid mitts",ring1="Weatherspoon ring",ring2="Vertigo ring",
+		back="Refraction cape",waist="Rumination sash",legs="Chironic hose",feet="Medium's sabots"}
+	
+	sets.midcast_BarSpells_Solace = {
+    main="Beneficus",
+    sub="Sors Shield",
+    ammo="Homiliary",
+    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
+    body="Ebers Bliaud +1",
+    hands="Dynasty Mitts",
+    legs={ name="Piety Pantaln. +1", augments={'Enhances "Shellra V" effect',}},
+    feet="Ebers Duckbills",
+    neck="Incanter's Torque",
+    waist="Channeler's Stone",
+    left_ear="Andoaa Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Rahab Ring",
+    right_ring="Kishar Ring",
+    back="Solemnity Cape"
+}
 		
-		 --Idle Sets--  
-        sets.Idle = {}
-       
-        sets.Idle.index = {'Standard', 'DT'}
-		--1=Standard, 2 =DT --
-        Idle_ind = 1                  
-       
-        sets.Idle.Standard = {ammo="Homiliary",
-                                      head="Hike Khat",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Vocane Ring",ring2="Vocane Ring",
-                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Aptitude Mantle"}
-									  
-		sets.Idle.DT = {ammo="Hagneia stone",
-                                      head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Vocane Ring",ring2="Vocane Ring",
-                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Solemnity Cape"}							  
-                                                 
-		--TP Sets--
-        sets.TP = {}
- 
-           sets.TP.index = {'Standard'}
-                --1=Standard--
-				
-                TP_ind = 1
-				sets.TP.Standard = {ammo="Homiliary",
-                                      head="Hike Khat",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Chironic Gloves", augments={'"Fast Cast"+1','Weapon Skill Acc.+10','Damage taken-4%','Accuracy+5 Attack+5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},ring1="Vocane Ring",ring2="Vocane Ring",
-                                      waist="Fucho-no-obi",legs="Assiduity Pants",feet="Chironic Slippers", back ="Solemnity Cape"}
+	sets.midcast_Barspells_noSolace = sets.midcast_BarSpells_Solace
 
-		--WS Sets--
-			
-		sets.WS = {}
+	sets.midcast_EnhancingMagic = {    main="Beneficus",
+    sub="Sors Shield",
+    ammo="Homiliary",
+    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
+    Body ="Piety Briault",
+    hands="Dynasty Mitts",
+    legs={ name="Piety Pantaln. +1", augments={'Enhances "Shellra V" effect',}},
+    feet="Piety Duckbills",
+    neck="Incanter's Torque",
+    waist="Channeler's Stone",
+    left_ear="Andoaa Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Sangoma Ring",
+    right_ring="Kishar Ring",
+       back="Solemnity Cape"
+}
+	
+	sets.midcast_MAB = {main="Grioavolr",sub="Niobid strap",ammo="Pemphredo tathlum",
+		head="Helios band",neck="Sanctity necklace",ear1="Friomisi Earring",ear2="Crematio Earring",
+		body="Vedic coat",hands="Helios gloves",ring1="Weatherspoon ring",ring2="Acumen ring",
+		back="Toro cape",waist="Eschan stone",legs="Chironic hose",feet="Navon crackows"}
 		
-		sets.WS.Myrkr ={ammo="Strobilus",
-                                 head="Pixie Hairpin +1",neck="Sanctity Necklace",ear2="Etiolation Earring", ear1="Barkarole Earring",
-                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Mephitas's Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
-                                 back="Bane Cape",legs="Amalric Slops",feet="Amalric Nails"}	
-										
+	sets.midcast_Impact = {main="Grioavolr",sub="Mephitis grip",ammo="Pemphredo tathlum",
+		neck="Sanctity necklace",ear1="Friomisi Earring",ear2="Crematio Earring",
+		body="Twilight cloak",hands="Chironic gloves",ring1="Weatherspoon ring",ring2="Archon ring",
+		back="Toro cape",waist="Eschan stone",legs="Chironic hose",feet="Helios boots"}	
 		
-		--Nuke Sets---
-		sets.Nuke ={}
+	sets.midcast_Regen = {    main="Bolelabunga",
+    sub="Sors Shield",
+    ammo="Homiliary",
+    head="Inyanga Tiara",
+    Body ="Piety Briault",
+    hands="Ebers Mitts",
+    legs="Theophany Pantaloons +1",
+    feet="Ebers Duckbills",
+    neck="Incanter's Torque",
+    waist="Channeler's Stone",
+    left_ear="Andoaa Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Sangoma Ring",
+    right_ring="Kishar Ring",
+    back="Solemnity Cape"
+}
+	sets.midcast_Auspice = {feet="Ebers Duckbills"}
+	
+	sets.midcast_Cure = { main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
+    sub="Sors Shield",
+    ammo="Esper Stone",
+    head="Vanya Hood",
+    body="Ebers Bliaud +1",
+    hands="Theophany Mitts +2",
+    legs="Ebers Pant. +1",
+    feet ="Vanya Clogs",
+    neck="Nodens Gorget",
+    waist="Channeler's Stone",
+    left_ear="Nourish. Earring +1",
+    right_ear="Glorious Earring",
+    left_ring="Lebeche Ring",
+    right_ring="Sirona's Ring",
+       back="Solemnity Cape"
+}
+	
+	sets.midcast_Curaga = {    main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
+    sub="Sors Shield",
+    ammo="Esper Stone",
+    head="Vanya Hood",
+    body="Ebers Bliaud +1",
+    hands="Theophany Mitts +2",
+    legs="Ebers Pant. +1",
+    feet={ name="Kaykaus Boots", augments={'MP+60','"Cure" spellcasting time -5%','Enmity-5',}},
+    neck="Nodens Gorget",
+    waist="Channeler's Stone",
+    left_ear="Nourish. Earring +1",
+    right_ear="Glorious Earring",
+    left_ring="Lebeche Ring",
+    right_ring="Sirona's Ring",
+       back="Solemnity Cape"
+}
 		
-			sets.Nuke.index ={'Standard', 'MagicBurst'}
-			--1=Standard, 2= Magic Burst'--
-			Nuke_ind = 1
-			
-			sets.Nuke.Standard = {ammo="Pemphredo Tathlum",
-                                 head="Merlinic Hood",neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Barkarole Earring",
-                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
-                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackcrows"}
-										
-			sets.Nuke.MagicBurst = {ammo="Pemphredo Tathlum",
-                                 head="Merlinic Hood",neck="Mizukage-no-Kubikazari",ear2="Friomisi earring", ear1="Barkarole Earring",
-                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Locus Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
-                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackcrows"}	
+	sets.midcast_Stoneskin = sets.midcast_EnhancingMagic
+	
+	sets.midcast_DebuffRemoval = {    main="Queller Rod",
+    sub="Sors Shield",
+    ammo="Esper Stone",
+    head="Ebers Cap",
+    body="Ebers Bliaud +1",
+    hands={ name="Fanatic Gloves", augments={'MP+50','Healing magic skill +10','"Conserve MP"+7','"Fast Cast"+7',}},
+    legs="Theophany Pantaloons +1",
+    feet ="Vanya Clogs",
+    neck="Malison Medallion",
+    waist="Channeler's Stone",
+    left_ear="Nourish. Earring +1",
+    right_ear="Loquac. Earring",
+    left_ring="Ephedra Ring",
+    right_ring="Ephedra Ring",
+       back="Solemnity Cape"
+}
 
-		--Enhancing Sets--					
-		sets.Enhancing ={}
-		
-			sets.Enhancing.index = {'Normal', 'Storms'}
-			--1=Normal, 2=Storms--
-			Enhancing_ind = 1
-				
-			sets.Enhancing.Normal = { ammo="Savant's Treatise",
-                                 head="Telchine Cap",neck="Incanter's Torque",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
-                                 body="Telchine Chasuble",hands="Chironic Gloves", ring1="Metamorph Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
-                                 back="Fi follet cape +1",legs="Telchine Braconi",feet="Regal Pumps"}
-					 
-								 
-		--Magic Sets--
-		sets.Magic ={}
-		
-			sets.Magic.Enfeebling = {ammo="Pemphredo Tathlum",
-                                 head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Barkarole Earring",
-                                 body="Shango Robe",hands="Lurid Mitts", ring1="Metamorph Ring", ring2 ="Perception Ring", waist ="Ovate Rope",
-                                 back="Kumbira Cape",legs="Psycloth Lappas",feet="Merlinic Crackcrows"}
-			
-			sets.Magic.Healing = {main = "Ababinili +1", sub ="Curatio Grip",ammo="Kalboron Stone",
-                                 head="Orison Cap +2",neck="Incanter's Torque",ear1 ="Nourishing Earring +1", ear2="Spellbreaker Earring",
-                                 body="Vrikodara Jupon",hands="Telchine Gloves", ring1="Ephedra Ring", ring2 ="Sirona's Ring", waist ="Ovate Rope",
-                                 back="Oretania's Cape",legs="Orison Pantaloons +1",feet="Vanya Clogs"}
-												 
-			sets.Magic.Regen = { ammo="Savant's Treatise",
-                                 head="Arbatel Bonnet",neck="Incanter's Torque ",ear1 ="Lifestorm Earring", ear2="Spellbreaker Earring",
-                                 body="Telchine Chasuble",hands="Orison Mitts +1", ring1="Metamorph Ring", ring2 ="Prolix ring", waist ="Porous Rope",
-                                 back="Bookworms's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
-			
-			sets.Magic.Dark = { ammo="Pemphredo Tathlum",
-                                 head="Pixie Hairpin +1",neck="Incanter's Torque",ear2="Friomisi earring", ear1="Barkarole Earring",
-                                 body="Shango Robe",hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Shiva Ring", waist ="Refoccilation Stone",
-                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackcrows"}
+	sets.midcast_Cursna = {    main="Queller Rod",
+    sub="Sors Shield",
+    ammo="Esper Stone",
+    head="Ebers Cap",
+    body="Ebers Bliaud +1",
+    hands={ name="Fanatic Gloves", augments={'MP+50','Healing magic skill +10','"Conserve MP"+7','"Fast Cast"+7',}},
+    legs="Theophany Pantaloons +1",
+    feet ="Vanya Clogs",
+    neck="Malison Medallion",
+    waist="Channeler's Stone",
+    left_ear="Nourish. Earring +1",
+    right_ear="Loquac. Earring",
+    left_ring="Ephedra Ring",
+    right_ring="Ephedra Ring",
+    back="Solemnity Cape"
+}
+	
 
-		--Precast Sets--
-			sets.precast = {}
-       
-			sets.precast.FC = {}
-       
-			sets.precast.FC.Standard = {main ="", sub ="Vivid Strap", ammo="Incanter Stone",
-							head="Nahtirah Hat",  body="Shango Robe",  hands="Telchine Gloves",legs="Orvail pants +1",feet="Regal Pumps", back="Swith cape",
-							neck="Voltsurge Torque", waist="Channeler's Stone", left_ear="Etiolation Earring",right_ear="Loquac. Earring",left_ring="Prolix Ring", right_ring="Prolix ring"}
-			
-			sets.precast.FC.Healing = {main ="", sub ="Vivid Strap", ammo="Incanter Stone",
-							head="Nahtirah Hat",  body="Shango Robe",  hands="Telchine Gloves",legs="Orvail pants +1",feet="Regal Pumps", back="Swith cape",
-							neck="Voltsurge Torque", waist="Channeler's Stone", left_ear="Nourishing Earring +1",right_ear="Loquac. Earring",left_ring="Prolix Ring", right_ring="Prolix ring"}			
-							 
-		--Utility and JA Sets --					
-		sets.Utility = {}
-       
-        sets.Utility.Weather = {waist="Hachirin-no-obi"}
-		
-		sets.Utility.Klima = {feet = "Arbatel Loafers +1"}
-		
-		sets.Utility.DrainAspir = { ammo="Pemphredo Tathlum",
-                                 head="Pixie Hairpin +1",neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Barkarole Earring",
-                                 body="Amalric Doublet",hands="Amalric Gages", ring1="Evanescence Ring", ring2 ='Shiva Ring', waist ="Fucho-no-obi",
-                                 back="Lugh's Cape",legs="Merlinic Shalwar",feet="Merlinic Crackcrows"}
- 
-		--WS Sets--
-       
-		sets.WS = {}
+
 end
+
+-- --- Precast ---
 
 function precast(spell)
-
-		if spell.skill == 'Healing Magic' then
-			equip(sets.precast.FC.Healing)
-		end
-
-		if spell.action_type == 'Magic' then
-                equip(sets.precast.FC.Standard)
-         end
-		
+	if ST_Cure_Spells:contains(spell.name) then
+		equip(sets.precast_Cure)
+		--send_command('@input /echo Cure Precast Set')
+	elseif MT_Cure_Spells:contains(spell.name) then
+		equip(sets.precast_Cure)
+		--send_command('@input /echo Cure Precast Set')
+	elseif naSpells:contains(spell.name) then
+		equip(sets.precast_FastCast)
+		--send_command('@input /echo NA Precast Set')
+	elseif FC_Spells:contains(spell.name) then
+		equip(sets.precast_Haste)
+		--send_command('@input /echo Haste Precast Set')
+	elseif spell.name == 'Impact' then
+		equip({body="Twilight cloak"})
+	else
+		equip(sets.precast_FastCast)
+		--send_command('@input /echo Precast Set')
+	end
 end
+-- --- MidCast ---
+function midcast(spell)
+	if ST_Cure_Spells:contains(spell.name) then 
+		equip(sets.midcast_Cure)
+		weathercheck(spell.element)
+		send_command('@input /echo ST Cure Set')
+	elseif MT_Cure_Spells:contains(spell.name) then
+		equip(sets.midcast_Curaga)
+		weathercheck(spell.element)
+		send_command('@input /echo MT Cure Set')
+	elseif naSpells:contains(spell.name) then
+		equip(sets.midcast_DebuffRemoval)
+		send_command('@input /echo NA Cure Set')
+	elseif Regen_Spells:contains(spell.name) then
+		equip(sets.midcast_Regen)
+		send_command('@input /echo Regen Set')
+	elseif spell.name == 'Cursna' then
+		equip(sets.midcast_Cursna)
+	elseif spell.skill == 'Enfeebling Magic' then
+		equip(sets.midcast_EnfeeblingMagic)
+		send_command('@input /echo Enfeebling Set')
+	elseif spell.skill == 'Enhancing Magic' then		
+		if resSpells:contains(spell.name) then					
+			equip(sets.midcast_BarSpells_Solace)
+				send_command('@input /echo Barspell Set')
+		elseif FC_Spells:contains(spell.name) then		
+			equip(sets.midcast_Haste)
+				send_command('@input /echo Enhancing Duration Set')
+		else
+			equip(sets.midcast_EnhancingMagic)
+				send_command('@input /echo Enhancing Set')
+		end	
+	elseif Holy_Spells:contains(spell.name) then
+		equip(sets.midcast_MAB)
+		weathercheck(spell.element)
+		send_command('@input /echo Holy Nuke Set')			
+	elseif spell.skill == 'Elemental Magic' then
+		if spell.name == 'Impact' then
+			equip(sets.midcast_Impact)
+			weathercheck(spell.element)
+			send_command('@input /echo Impact Set')	
+		else
+			equip(sets.midcast_MAB)
+			weathercheck(spell.element)
+			send_command('@input /echo Elemental Set')	
+		end
+	else
+		equip(sets.midcast_Haste)
+	end		
+end		
 
-function midcast(spell,act)
-
-		if spell.skill =='Enhancing Magic' then
-			equip(sets.Enhancing[sets.Enhancing.index[Enhancing_ind]])
-			if buffactive['Perpetuance'] then
-				equip(set_combine(sets.Enhancing[sets.Enhancing.index[Enhancing_ind]], sets.Utility.Perpetuance))
-			end
-		end
-		
-		if spell.skill =='Healing Magic' then
-			equip(sets.Magic.Healing)
-		end
-		
-		if spell.skill =='Dark Magic' then
-			equip(sets.Magic.Dark)
-		end
-		
-		if spell.skill =='Enfeebling Magic' then
-			equip(sets.Magic.Enfeebling)
-		end
-		
-		if spell.skill =='Elemental Magic' then
-			equip(sets.Nuke[sets.Nuke.index[Nuke_ind]])
-			
-		                if spell.element == world.day_element or spell.element == world.weather_element then
-                              equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]],sets.Utility.Weather))
-							  if buffactive['Klimaform'] then
-								equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]],sets.Utility.Weather, sets.Utility.Klima))
-							  end
-                        end
-		end
-		
-		if spell.english == 'Regen' or spell.english == 'Regen II' or spell.english == 'Regen III' or spell.english == 'Regen IV' or spell.english == 'Regen V' then	
-				equip(sets.Magic.Regen)
-		end
-		
-		if spell.english == 'Drain' or spell.english =='Drain II' or spell.english=='Aspir II' or spell.english =='Aspir' then
-			equip(sets.Utility.DrainAspir)
-		end
-end
+-- --- Aftercast ---
 
 function aftercast(spell)
-        if player.status == 'Engaged' then
-                equip(sets.TP[sets.TP.index[TP_ind]])
-        else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
-        end
-       
-        if spell.action_type == 'Weaponskill' then
-                add_to_chat(158,'TP Return: ['..tostring(player.tp)..']')
-        end
+	if Gear_Debug == 0 then
+			equip(sets.aftercast_Idle)	
+			send_command('@input /echo Idle Set')
+	else
+	end
 end
- 
-function status_change(new,old)
-        if new == 'Engaged' then
-                equip(sets.TP[sets.TP.index[TP_ind]])
-        else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
-        end
+
+-- Status Change - ie. Resting
+
+function status_change(new,tab)
+	if new == 'Resting' then
+		equip(sets['Resting'])
+	else
+		equip(sets['aftercast_Idle'])
+	end
 end
- 
-function self_command(command)
-        if command == 'toggle Nuke set' then
-                Nuke_ind = Nuke_ind +1
-                if Nuke_ind > #sets.Nuke.index then Nuke_ind = 1 end
-                send_command('@input /echo <----- Nuke Set changed to '..sets.Nuke.index[Nuke_ind]..' ----->')
-                equip(sets.Nuke[sets.Nuke.index[Nuke_ind]])
-        elseif command == 'toggle Idle set' then
-                Idle_ind = Idle_ind +1
-                if Idle_ind > #sets.Idle.index then Idle_ind = 1 end
-                send_command('@input /echo <----- Idle Set changed to '..sets.Idle.index[Idle_ind]..' ----->')
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
-		elseif command == 'toggle Enhancing set' then
-				Enhancing_ind = Enhancing_ind +1
-				if Enhancing_ind > #sets.Enhancing.index then Enhancing_ind =1 end
-				send_command('@input /echo <----- Enhancing Set changed to '..sets.Enhancing.index[Enhancing_ind]..' ---->')
-				equip(sets.Enhancing[sets.Enhancing.index[Enhancing_ind]])
-        elseif command == 'equip TP set' then
-                equip(sets.TP[sets.TP.index[TP_ind]])
-        elseif command == 'equip Idle set' then
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
-        end
+
+
+-- Self Commands -- ie. Defender 
+
+function self_command(command)	
+	if command == 'equip Idle set' then				
+		equip(sets.aftercast_Idle_refresh)	
+    elseif command == 'change debug mode' then
+		if Gear_Debug == 1 then
+			Gear_Debug = 0
+			send_command('@input /echo Debug Mode Set to 0')
+		else
+			Gear_Debug = 1
+			send_command('@input /echo Debug Mode Set to 1')
+		end
+	end
+end
+
+-- This function is user defined, but never called by GearSwap itself. It's just a user function that's only called from user functions. I wanted to check the weather and equip a weather-based set for some spells, so it made sense to make a function for it instead of replicating the conditional in multiple places.
+
+function weathercheck(spell_element)
+	if spell_element == world.weather_element or spell_element == world.day_element then
+		equip({waist="Hachirin-no-Obi"})
+		send_command('@input /echo Using Element Obi')
+	else		
+	end
 end

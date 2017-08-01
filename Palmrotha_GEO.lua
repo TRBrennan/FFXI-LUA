@@ -52,10 +52,10 @@ function get_sets()
         head="Nahtirah Hat",
 		neck="Voltsurge Torque",ear1="Etiolation Earring", ear2="Loquacious Earring",
         body="Shango Robe", ring2="Prolix ring", hands="Telchine Gloves",ring1="Prolix Ring",
-        back="Lifestream Cape",waist="Channeler's Stone",legs="Geomancy Pants",feet="Regal Pumps"
+        back="Lifestream Cape",waist="Channeler's Stone",legs="Geo. Pants +1",feet="Regal Pumps"
 		}
 
-    sets.precast.FastCast.Cure = set_combine(sets.precast.FC, {main="Tamaxchi",sub="Sors Shield",back="Pahtli Cape"})
+    sets.precast.FastCast.Cure = set_combine(sets.precast.FC, {main="Vadose Rod",sub="Sors Shield",back="Pahtli Cape"})
 
     sets.precast.FastCast['Elemental Magic'] = set_combine(sets.precast.FC, {hands="Bagua mitaines"})
 
@@ -86,16 +86,16 @@ function get_sets()
     sets.midcast = {}
 
     sets.midcast.Geomancy = {main="Solstice", sub="Culminus", range="Dunna", 
-		head="Azimuth Hood +1", body="Bagua Tunic", hands="Geomancy Mitaines", ear1="Influx Earring", ear2="Gifted Earring", 
+		head="Azimuth Hood +1", body="Bagua Tunic", hands="Geo. Mitaines +2", ear1="Influx Earring", ear2="Gifted Earring", 
 		neck="Incanter's Torque", ring2="Renaye Ring", feet="Medium's Sabots", back="Lifestream Cape"}
 		
     sets.midcast.Geomancy.Indi = {main="Solstice", sub="Culminus", range="Dunna", 
 		head="Azimuth Hood +1", body="Bagua Tunic", ear1="Influx Earring", ear2="Gifted Earring", neck="Incanter's Torque",
-		legs="Bagua Pants", hands="Geomancy Mitaines", feet="Medium's Sabots", back="Lifestream Cape"}
+		legs="Bagua Pants +1", hands="Geo. Mitaines +2", feet="Azimuth Gaiters +1", back="Lifestream Cape"}
 
-    sets.midcast.Cure = {main="Vadose Rod",sub="Genbu's Shield", ear1="Novia Earring", ear2="Gifted Earring",
-        head="Welkin Crown", body="Vanya Robe",hands="Telchine Gloves", ring1="Ephedra Ring", ring2 ="Sirona's Ring",
-        legs="Assiduity Pants +1",feet="Regal pumps", back ="Oretania's Cape"}
+    sets.midcast.Cure = {main="Vadose Rod",sub="Sors Shield", ear1="Novia Earring", ear2="Gifted Earring",
+        head="Vanya hood", body="Vanya Robe",hands="Telchine Gloves", ring1="Ephedra Ring", ring2 ="Sirona's Ring",
+        legs="Assiduity Pants +1",feet="Vanya Clogs", back ="Solemnity Cape"}
     
     sets.midcast.Curaga = sets.midcast.Cure
 
@@ -112,7 +112,7 @@ function get_sets()
     sets.midcast['Enfeebling Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 
 	range="Dunna",
-				head="Jhakri Coronal +1", neck="Eddy Necklace", ear2="Influx Earring", ear1="Moonshade Earring",
+				head="Jhakri Coronal +1", neck="Erra Pendant", ear2="Influx Earring", ear1="Moonshade Earring",
                 body="Shango Robe", hands="Azimuth Gloves", ring1="Vertigo Ring", ring2 ="Perception Ring",
                 back="Kumbira Cape", waist="Ovate Rope", legs="Jhakri Slops +1", feet="Bagua Sandals"}
     
@@ -120,7 +120,7 @@ function get_sets()
 	-- main="Marin staff", sub="Niobid Strap", 
 	main = "Solstice",
 	sub="Culminus",
-	ammo="Witchstone",
+	range="Dunna",
 							head="Jhakri Coronal +1",
 							body="Azimuth Coat +1",
 							hands="Jhakri Cuffs +1",
@@ -139,7 +139,7 @@ function get_sets()
     sets.midcast['Dark Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 
 	range="Dunna",
-				head="Bagua Galero", neck="Incanter's Torque", ear1="Strophadic Earring", ear2="Friomisi Earring",
+				head="Bagua Galero", neck="Erra Pendant", ear1="Strophadic Earring", ear2="Friomisi Earring",
                 body="Geomancy Tunic", hands="Jhakri Cuffs +1", ring1="Acumen Ring", ring2="Vertigo ring",
                 back="Lifestream Cape", waist="Cetl Belt", legs="Jhakri Slops +1", feet="Jhakri Pigaches +1"}
 
@@ -186,23 +186,26 @@ function get_sets()
     sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Azimuth Coat +1",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Mecisto. Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geo. Sandals +3"}
 
     sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Handler's Earring",
-        body="Azimuth Coat +1",hands="Geomancy Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Mecisto. Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        body="Azimuth Coat +1",hands="Geo. Mitaines +2", ring1="Defending Ring", ring2="Vertigo Ring",
+        back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geo. Sandals +3"}
 
     -- .Pet sets are for when Luopan is present.
-	sets.idle.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
+	sets.idle.Pet = {--main="Sucellus", 
+		main = "Solstice",sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Handler's Earring",
-        body="Azimuth Coat +1",hands="Geomancy Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Mecisto. Mantle",waist="Isa Belt",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        body="Telchine Chasuble",hands="Geo. Mitaines +2", ring1="Defending Ring", ring2="Vertigo Ring",
+        back="Lifestream Cape",waist="Isa Belt",legs="Telchine Braconi",feet="Telchine Pigaches"}
    
-    sets.idle.PDT.Pet = {main="Sucellus", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
-        neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
-        body="Azimuth Coat +1",hands="Geomancy Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Mecisto. Mantle",waist="Isa Belt",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+    sets.idle.PDT.Pet = {--main="Sucellus",
+		main = "Solstice",
+		sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
+        neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Handler's Earring",
+        body="Telchine Chasuble",hands="Geo. Mitaines +2", ring1="Defending Ring", ring2="Vertigo Ring",
+        back="Lifestream Cape",waist="Isa Belt",legs="Telchine Braconi",feet="Telchine Pigaches"}
 
     -- .Indi sets are for when an Indi-spell is active.
     sets.idle.Indi = set_combine(sets.idle, {})
@@ -213,12 +216,12 @@ function get_sets()
     sets.idle.Town = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Mecisto. Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geo. Sandals +3"}
 
     sets.idle.Weak = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Mecisto. Mantle",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geo. Sandals +3"}
 
     sets.Kiting = {feet="Herald's Gaiters"}
 
@@ -913,21 +916,6 @@ function slot_disabling()
         enable('right_ear')
     end
 
-    --[[ count_msg_mecisto can be adjusted to the value you want for periodic
-            reminders that you have slot locked, count is incresed twice by
-            most actions due to slot_disabling() being called in precast
-            and again after the cast in gear_modes() ]]
-    if player.equipment.back == 'Mecisto. Mantle' then
-        disable('back')
-   --     if count_msg_mecisto == 0 then
-    --        windower.add_to_chat(8,'REMINDER:  '
-      --          ..'Mecistopins mantle equiped on back')
-    --    end
-    --    count_msg_mecisto = (count_msg_mecisto + 1) % 30
-    else
-        enable('back')
-   --     count_msg_mecisto = 0
-    end
 end
 
 function status_change(new,old)

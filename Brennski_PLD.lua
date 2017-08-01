@@ -86,8 +86,8 @@ function get_sets()
 								 neck="Fotia Gorget",
 								 ear2="Moondshade earring",
 								 ear1="Telos Earring",
-                                 body="Sulevia's Platemail +1",
-								 hands="Sulevia's Gauntlets +1", 
+                                 body="Sulevia's Plate. +2",
+								 hands="Sulev. Gauntlets +2", 
 								 ring2="Regal Ring",
 								 ring1="Petrov Ring",
 								 waist ="Fotia Belt",
@@ -102,11 +102,11 @@ function get_sets()
        
            
 		 sets.SavageBlade.Attack = {ammo="Sapience Orb",
-                                          head="Sulevia's Mask +1",
+                                          head={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}},
 										  neck="Caro Necklace",
 										  ear1="Ishvara Earring",
 										  ear2="Moondshade Earring",
-                                          body="Sulevia's Platemail +1",
+                                          body="Sulevia's Plate. +2",
 										  hands="Valorous Mitts",
 										  ring2="Regal Ring",
 										  ring1="Petrov Ring",
@@ -121,11 +121,11 @@ function get_sets()
         ChantDuCygne_ind = 1
        
          sets.ChantDuCygne.Attack = {ammo="Jukukik Feather",
-                                            head="Sulevia's Mask +1",
+                                            head="Sulevia's Mask +2",
 											neck="Fotia gorget",
 											ear1="Telos Earring",
 											ear2="Moonshade Earring",
-                                            body="Sulevia's Platemail +1",
+                                            body="Sulevia's Plate. +2",
 											hands="Flam. Manopolas +1",
 											ring2="Rajas ring",
 											ring1="Petrov Ring",
@@ -143,7 +143,7 @@ function get_sets()
                                  back="Grounded Mantle",legs="Hagondes Pants",feet="Weatherspoon souliers +1" }
 
 		sets.WS.Atonement = {ammo="Floestone",
-                                    head="Sulevia's Mask +1", neck="Asperity necklace", ear1="Brutal Earring",ear2="Cessance Earring",
+                                    head="Sulevia's Mask +2", neck="Asperity necklace", ear1="Brutal Earring",ear2="Cessance Earring",
                                     body="Souveran Cuirass",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Rajas Ring",
                                     back="Weard Mantle",waist="windbuffet belt +1",legs="Sulevia's Cuisses +2",feet="Souveran Schuhs"}
                                                                                        
@@ -213,11 +213,11 @@ function get_sets()
 							head="Dampening Tam", body="Adhemar Jacket", hands="Rawhide Gloves",legs=="Founder's Hose", feet="Odyssean Greaves",  neck="Subtlety Spec.",
 							waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Steelflash Earring",  left_ring="Yacuruna Ring",  right_ring="Rajas Ring",  back="Grounded Mantle",}
                                                  
-        sets.Utility.PDT = {head="Sulevia's Mask +1",neck="Loricate Torque +1",ear1="Ethereal earring",
+        sets.Utility.PDT = {head="Sulevia's Mask +2",neck="Loricate Torque +1",ear1="Ethereal earring",
                                                 body="Iuitl vest",hands="Umuthi gloves",ring1="Dark ring",ring2="Dark ring",
                                                 back="Moonbeam Cape",waist="Flume belt",legs="Iuitl Tights +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                
-        sets.Utility.MDT = {head="Sulevia's Mask +1",neck="Loricate Torque +1",
+        sets.Utility.MDT = {head="Sulevia's Mask +2",neck="Loricate Torque +1",
                                                 body="Assim. jubbah +1",hands="Umuthi gloves",ring1="Dark ring",ring2="Dark ring",
                                                 back="Moonbeam Cape",legs="Quiahuiz trousers",feet="Luhlaza charuqs"}
 												
