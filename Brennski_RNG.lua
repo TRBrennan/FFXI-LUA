@@ -654,7 +654,7 @@ sets.snapshot = {
 end
 
 function precast(spell)
-	if spell.action_type == 'Ranged Attack' then
+	if spell.type == 'Ranged Attack' then
 		equip(sets.snapshot)
 	elseif spell.type == 'WeaponSkill' 
 		then if player.tp >= 1000 
@@ -694,7 +694,7 @@ function precast(spell)
 					then equip(sets.Evisceration[sets.WS.index[WS_ind]])
 				elseif spell.english == 'Bora Axe' or spell.english == 'Decimation' or spell.english == 'Avalanche' or spell.english == 'Gale Axe' or spell.english == 'Smash Axe' or spell.english == 'Raging Axe'
 					then equip(sets.OtherAxe[sets.WS.index[WS_ind]])
-				elseif spell.action_type == 'Weaponskill' 
+				elseif spell.type == 'Weaponskill' 
 					then equip(sets.OtherWS[sets.WS.index[WS_ind]])
 				end
 			else cancel_spell(); windower.add_to_chat(121, 'Canceled '..spell.name..' '..spell.target.name..' is Too Far')
@@ -716,7 +716,7 @@ function precast(spell)
 end
 	
 function midcast(spell,act)
-	if spell.action_type == 'Ranged Attack' 
+	if spell.type == 'Ranged Attack' 
 		then equip(sets.Ranged[sets.Ranged.index[WS_ind]])
 		if buffactive['Velocity Shot'] 
 			then equip(sets.JA.VShot)

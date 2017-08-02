@@ -120,8 +120,9 @@ function get_sets()
                                 back="Visucius's Mantle",waist="Grunfeld Rope",legs="Samnuha Tights",
 								feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14'}} }							          
                        
-        sets.WS.VS = {  head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}}, neck="caro Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
-                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Begrudging Ring",ring2="Epona's Ring",
+        sets.WS.VS = {  head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}}, neck="Rancor Collar",ear1="Moonshade Earring",ear2="Telos Earring",
+                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},
+										  ring1="Niqmaddu Ring",ring2="Epona's Ring",
                                           back="Visucius's Mantle",waist="Grunfeld Rope",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14'}} }
                                                                           
         sets.WS.SS = { head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}}, neck="caro Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
@@ -212,41 +213,28 @@ end
  
   
 function precast(spell)
-        if spell.action_type == 'Magic' then
+        if spell.type == 'Magic' then
                 equip(sets.precast.FC.Standard)
-         end
-		 
-		if spell.english =='Repair' or spell.english == 'Maintenance' then
+        elseif spell.english =='Repair' or spell.english == 'Maintenance' then
 			equip(sets.JA.Repair)
-		end
-		
-		if spell.english =='Dark Maneuver' or spell.english =='Light Maneuver' or spell.english =='Ice Maneuver' or spell.english =='Earth Maneuver' or spell.english =='Fire Maneuver' or spell.english =='Wind Maneuver' or spell.english =='Thunder Maneuver' or spell.english =='Water Maneuver' then
+		elseif spell.english =='Dark Maneuver' or spell.english =='Light Maneuver' or spell.english =='Ice Maneuver' or spell.english =='Earth Maneuver' or spell.english =='Fire Maneuver' or spell.english =='Wind Maneuver' or spell.english =='Thunder Maneuver' or spell.english =='Water Maneuver' then
 			equip(sets.JA.Maneuver)
-		end
-                  
-		if spell.english =='Stringing Pummel' then
+		elseif spell.english =='Stringing Pummel' then
 			equip(sets.WS.SP)
-		end
-		
-		if spell.english =='Victory Smite' then
+		elseif spell.english =='Victory Smite' then
 			equip(sets.WS.VS)
-		end
-		
-		if spell.english =='Shijin Spiral' then
+		elseif spell.english =='Shijin Spiral' then
 			equip(sets.WS.SS)
-		end
-		
-		if spell.english =='Asuran Fists' then
+		elseif spell.english =='Asuran Fists' then
 			equip(sets.WS.AF)
-		end
-		if spell.english =='Raging Fists' then
+		elseif spell.english =='Raging Fists' then
 			equip(sets.WS.RF)
-		end
-		if spell.english =='Howling Fist' then
+		elseif spell.english =='Howling Fist' then
 			equip(sets.WS.HF)
-		end
-		if spell.english == 'Box Step' then
+		elseif spell.english == 'Box Step' then
                 equip(sets.Utility.Steps)
+        elseif spell.type == 'WeaponSkill' then
+			equip(sets.WS.HF)		
         end
 
 end

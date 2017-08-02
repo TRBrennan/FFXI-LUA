@@ -235,10 +235,10 @@ function get_sets()
 end
   
 function precast(spell)
-        if spell.action_type == 'Magic' then
+        if spell.type == 'Magic' then
                 equip(sets.precast.FC.Standard)
          end
-       if spell.action_type == 'Ranged Attack' then
+       if spell.type == 'Ranged Attack' then
 			equip(sets.Ranged.RangedAttack)
 		end
 		
@@ -345,7 +345,7 @@ function aftercast(spell)
 		end
 
        
-        if spell.action_type == 'Weaponskill' then
+        if spell.type == 'Weaponskill' then
                 add_to_chat(158,'TP Return: ['..tostring(player.tp)..']')
         end
 end

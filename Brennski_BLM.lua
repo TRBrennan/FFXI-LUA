@@ -193,7 +193,7 @@ function precast(spell)
 		if spell.english == 'Death' then
 			equip(sets.precast.FC.Death)
 		end
-		if spell.action_type == 'Magic' then
+		if spell.type == 'Magic' then
                 equip(sets.precast.FC.Standard)
          end
 		

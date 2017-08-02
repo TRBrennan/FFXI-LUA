@@ -256,7 +256,7 @@ function get_sets()
 										 
 				sets.Utility.Enmity = {ammo="Sapience Orb",head="Rabid Visor",neck="Unmoving Collar",right_ear ="Friomisi Earring", left_ear="Odnowa Earring +1",
                                             body="Emet harness +1",hands="Kurys Gloves", waist ="Trance belt", ring1='Supershear Ring', right_ring='Petrov Ring',
-                                            legs="Erilaz Leg Guards +1",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}						
+                                            legs="Erilaz Leg Guards +1",feet="Ashoi Leggings", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}						
 				
 				sets.Utility.Enhancing = {ammo="Sapience Orb",head="Erilaz Galea +1",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear1="Genmei earring",
                                             body="Emet harness +1",hands="Regal Gauntlets", waist ="Olympus Sash", ring1='"Stikini Ring"', right_ring='Supershear Ring',
@@ -328,66 +328,38 @@ end
 function precast(spell)       
         if spell.skill == 'Enhancing Magic' then
                 equip(sets.precast.FC.Enhancing)				
-        end
-       
-        if spell.skill == 'Ninjutsu' then
+        elseif spell.skill == 'Ninjutsu' then
                 equip(sets.precast.FC.Standard)				
-        end
-		
-		if spell.action_type == 'Magic' then
+        elseif spell.type == 'Magic' then
                 equip(sets.precast.FC.Standard)	
-        end
-		
-		if spell.english =='Vivacious Pulse' then
+        elseif spell.english =='Vivacious Pulse' then
 			equip(set_combine(sets.Utility.Enmity,sets.JA.VP))
-		end
-       
-        if spell.english == 'Lunge' or spell.english == 'Swipe' or spell.english == "Herculean Slash" then
+		elseif spell.english == 'Lunge' or spell.english == 'Swipe' or spell.english == "Herculean Slash" then
                 equip(sets.JA.Lunge)				
-        end
-       
-        if spell.english == 'Vallation' or spell.english == 'Valiance' then
+        elseif spell.english == 'Vallation' or spell.english == 'Valiance' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Vallation))
-        end
-		
-		if spell.english=='Flash'  or spell.skill == 'Enfeebling Magic' or spell.english == 'Foil' or spell.skill =='Dark Magic' or spell.skill =="Blue Magic" then	
+        elseif spell.english=='Flash'  or spell.skill == 'Enfeebling Magic' or spell.english == 'Foil' or spell.skill =='Dark Magic' or spell.skill =="Blue Magic" then	
 				equip(sets.precast.FC.Enmity)				
-		end
-       
-        if spell.english == 'Battuta' then
+		elseif spell.english == 'Battuta' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Battuta))			
-        end
-       
-	     if spell.english == 'Leiment' or spell.english == 'Elemental Sforzo' then
+        elseif spell.english == 'Leiment' or spell.english == 'Elemental Sforzo' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Leiment))			
-        end
-		
-        if spell.english == 'Pflug' then
+        elseif spell.english == 'Pflug' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Pflug))				
-        end
-       
-        if spell.english == 'Gambit' then
+        elseif spell.english == 'Gambit' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Gambit))				
-        end
-               
-        if spell.english == 'Resolution' or spell.english == 'Shockwave' then
+        elseif spell.english == 'Resolution' or spell.english == 'Shockwave' then
                 equip(sets.Resolution[sets.Resolution.index[Resolution_ind]])				
-        end
-		
-		if spell.english == 'Dimidiation' then
+        elseif spell.english == 'Dimidiation' then
                 equip(sets.Dimidiation[sets.Dimidiation.index[Dimidiation_ind]])				
-        end
-       
-        if spell.english == 'Requiescat' then
+        elseif spell.english == 'Requiescat' then
                 equip(sets.Requiescat[sets.Requiescat.index[Requiescat_ind]])				
-        end
-		
-        if spell.english == 'Fell Cleave' then
+        elseif spell.english == 'Fell Cleave' then
                 equip(sets.FellCleave[sets.FellCleave.index[FellCleave_ind]])				
-        end		
-		
-		if spell.english == 'Savage Blade' or  spell.english == 'Ground Strike' then
+       elseif spell.english == 'Savage Blade' or  spell.english == 'Ground Strike' then
                 equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])				
+		elseif spell.type == 'Weaponskill' then
+			equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])		
         end
 end            
  

@@ -246,7 +246,7 @@ function precast(spell)
 		if spell.english =='Stun' then
 			equip(sets.magic.Stun)
 		end
-		if spell.action_type == 'Magic' then
+		if spell.type == 'Magic' then
                 equip(sets.precast.FC.Standard)
          end
 		

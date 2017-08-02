@@ -5,8 +5,8 @@ send_command('bind !f2 gs equip sets.CP; gs disable back; input /echo <----- CP 
 send_command('bind ^f2 gs enable back; input /echo <----- CP mantle unlocked ----->') -- Ctrl F2 unlocks CP mantle
 
 send_command('bind !f10 gs c toggle Haste set;')  -- Alt F10 swap DW for different Haste level 0 to 25 to 15
-send_command('bind !f9 gs c toggle Melee Weapon set;')  -- Alt F9 swap melee weapon from Melee to Physical range to Magical range
-send_command('bind !f8 gs c toggle TP set;') -- Alt F8 swap TP Sets
+send_command('bind !f8 gs c toggle Melee Weapon set;')  -- Alt F9 swap melee weapon from Melee to Physical range to Magical range
+send_command('bind !f9 gs c toggle TP set;') -- Alt F8 swap TP Sets
 send_command('bind !f7 gs c toggle pdt set;') -- Alt F7 swap to DT 
 send_command('bind !f6 gs c status check;') -- Alt F6 return sets status
 
@@ -43,7 +43,7 @@ sets.Idle.Standard = {
     left_ear="Infused Earring", right_ear="Genmei Earring",   
     right_ring="Vocane Ring",
     left_ring="Defending Ring",
-    back="Moonbeam Cape"}
+    back="Moonbeam Cape",
 }
 sets.Idle.DT = {
 	head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
@@ -173,7 +173,7 @@ sets.TP.HighAccuracy.Low = {
 	left_ring="Regal Ring",
 	right_ring="Ilabrat Ring",
     back="Andartia's Mantle",
-	waist="Kentarch belt +1",,
+	waist="Kentarch belt +1",
 	legs="Samnuha Tights",
 	feet="Hiza. Sune-Ate +1",
 }
@@ -224,7 +224,7 @@ sets.TP.Hybrid.Low = {
 }
 sets.TP.Hybrid.Mid = {
 	head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}}, 
-	neck="~Loricate Torque +1",  
+	neck="Loricate Torque +1",  
 	left_ear="Telos Earring", 
 	right_ear="Suppanomimi",
     body="Ashera Harness",
@@ -238,7 +238,7 @@ sets.TP.Hybrid.Mid = {
 }
 sets.TP.Hybrid.High = {
 	head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}}, 
-	neck="~Loricate Torque +1", 
+	neck="Loricate Torque +1", 
 	left_ear="Telos Earring", 
 	right_ear="Cessance earring", 
     body="Ashera Harness",
@@ -408,8 +408,8 @@ sets.Magic.Self = {
         waist="Flume Belt +1",
         left_ear="Etiolation Earring",
         right_ear="Loquac. Earring",
-        left_ring="Kishar Ring",
-        right_ring="Defending Ring",
+        right_ring="Kishar Ring",
+        left_ring="Defending Ring",
         feet="Hattori Kyahan", 
         back="Andartia's Mantle"}
 
@@ -447,7 +447,7 @@ sets.snapshot = {
             waist="Impulse Belt", -- 2
             feet="Meg. Jam. +1" -- 8
 }	
-	
+sets.precast = {}	
 sets.precast.FC = {
         --ammo="Staunch Tathlum",
         head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
@@ -466,31 +466,33 @@ sets.precast.FC = {
 end
 
 function precast(spell)
-	if spell.action_type == 'Ranged Attack' then
+	if spell.type == 'Ranged Attack' then
 		equip(sets.snapshot)
 	elseif spell.type == 'WeaponSkill' 
 		then if player.tp >= 1000 
-			then if spell.english == 'Evisceration' or spell.english = 'Blade: Shun' or spell.english = 'Blade: Jin' or spell.english = 'Blade: Ku' 
+			then if spell.english == 'Evisceration' or spell.english == 'Blade: Shun' or spell.english == 'Blade: Jin' or spell.english == 'Blade: Ku' 
 					then equip(sets.MultiHit[sets.WS.index[WS_ind]])
-				elseif spell.english == 'Blade: Hi' or spell.english = 'Blade: Ten' or spell.english = 'Blade: Chi'  or spell.english = 'Blade: Kamu' or spell.english = 'Blade: Yu' 
+				elseif spell.english == 'Blade: Hi' or spell.english == 'Blade: Ten' or spell.english == 'Blade: Chi'  or spell.english == 'Blade: Kamu' or spell.english == 'Blade: Yu' 
 					then equip(sets.OneHit[sets.WS.index[WS_ind]])
-				elseif spell.action_type == 'Weaponskill' 
+				elseif spell.type == 'Weaponskill' 
 					then equip(sets.OtherWS[sets.WS.index[WS_ind]])
 				end
 			else cancel_spell(); windower.add_to_chat(121, 'Canceled '..spell.name..' '..spell.target.name..' is Too Far')
-			end
 		end
-	elseif spell.action_type == 'Magic'
+	elseif spell.type == 'Magic'
 		then equip(sets.precast.FC)
 	end
 end
 	
 function midcast(spell,act)
-	if spell.english == 'Utsusemi: Ichi' or spell.english ='Utsusemi: Ni' or spell.english ='Utsusemi: San' or spell.english ='Migawari: Ichi' or spell.english = 'Kakka: Ichi' or spell.english = 'Yain: Ichi'
-	or spell.english = 'Ashia: Ichi' or spell.english = 'Yurin: Ichi' or spell.english = 'Myoshu: Ichi' or spell.english = 'Gekka: Ichi' 
+	if spell.english == 'Utsusemi: Ichi' or spell.english =='Utsusemi: Ni' or spell.english =='Utsusemi: San' or spell.english =='Migawari: Ichi' or spell.english == 'Kakka: Ichi' or spell.english == 'Yain: Ichi'
+	or spell.english == 'Ashia: Ichi' or spell.english == 'Yurin: Ichi' or spell.english == 'Myoshu: Ichi' or spell.english == 'Gekka: Ichi' 
 			then equip(sets.Magic.Self)
-		elseif spell.action_type=='Magic'
+		elseif spell.type=='Magic'
 			then equip(sets.Maigc.Nuke)
+				if spell.element == world.day_element or spell.element == world.weather_element then
+					equip(sets.Obi)
+				end
 	end
 end
 

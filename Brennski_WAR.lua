@@ -248,66 +248,37 @@ end
  
   
 function precast(spell)
-        if spell.action_type == 'Magic' then
+        if spell.type == 'Magic' then
                 equip(sets.precast.FC.Standard)
-         end
-              
-        if spell.english == 'Resolution' or spell.english == 'Shockwave' or spell.english == 'Stardiver' or spell.english == 'Ruinator' or spell.english == "Vorpal Blade" then
+        elseif spell.english == 'Resolution' or spell.english == 'Shockwave' or spell.english == 'Stardiver' or spell.english == 'Ruinator' or spell.english == "Vorpal Blade" then
                 equip(sets.Resolution.Attack)
-        end
-       
-        if spell.english == "Ukko's Fury" then
+        elseif spell.english == "Ukko's Fury" then
                 equip(sets.Ukkos.Attack)
-        end
-		
-		if spell.english == 'Savage Blade' or spell.english == 'Ground Strike' or spell.english == 'Steel Cyclone' or spell.english == "Mistral Axe" or spell.english =='Fell Cleave' then
+        elseif spell.english == 'Savage Blade' or spell.english == 'Ground Strike' or spell.english == 'Steel Cyclone' or spell.english == "Mistral Axe" or spell.english =='Fell Cleave' then
 			equip(sets.SB.Attack)
-		end
-		
-		if spell.english == "King's Justice"  then
+		elseif spell.english == "King's Justice"  then
                 equip(sets.KJ.Attack)
-        end
-		
-		if spell.english == "Upheaval"  then
+        elseif spell.english == "Upheaval"  then
 			equip(sets.Upheavel.AttackHighTP)
-		end
-		
-		if spell.english =='Scourge' then
+		elseif spell.english =='Scourge' then
 			equip(sets.Upheavel.AttackHighTP)
-		end
-		
-		if spell.english =='Berserk' then
+		elseif spell.english =='Berserk' then
 			equip(set_combine(sets.Utility.Enmity,sets.JA.Berserk))
-		end
-		
-		if spell.english =='Aggressor' then
+		elseif spell.english =='Aggressor' then
 			equip(set_combine(sets.Utility.Enmity,sets.JA.Aggressor))
-		end
-		
-		if spell.english =='Warcry' then
+		elseif spell.english =='Warcry' then
 			equip(set_combine(sets.Utility.Enmity,sets.JA.Warcry))
-		end
-		
-		if spell.english =='Tomahawk' then
+		elseif spell.english =='Tomahawk' then
 			equip(set_combine(sets.Utility.Enmity,sets.JA.Tomahawk))
-		end
-		
-		if spell.english =='Bloodrage' then
+		elseif spell.english =='Bloodrage' then
 			equip(set_combine(sets.Utility.Enmity,sets.JA.BloodRage))
-		end
-		
-		if spell.english =='Mighty Strikes' then
+		elseif spell.english =='Mighty Strikes' then
 			equip(set_combine(sets.Utility.Enmity,sets.JA.MightyStrikes))
-		end
-		if spell.english =='Provoke' then
+		elseif spell.english =='Provoke' then
 			equip(sets.Utility.Enmity)
-		end
-		
-        if spell.english == 'Box Step' then
+		elseif spell.english == 'Box Step' then
                 equip(sets.Utility.Steps)
-        end
-		
-		if spell.type == 'Weapon Skill' then
+        elseif spell.type == 'Weapon Skill' then
 			equip(sets.Resolution.Attack)
 		end
        

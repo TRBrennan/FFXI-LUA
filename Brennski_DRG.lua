@@ -208,30 +208,19 @@ end
  
   
 function precast(spell)
-        if spell.action_type == 'Magic' then
+    if spell.type == 'Magic' then
                 equip(sets.precast.FC.Standard)
-         end
-              
-        if spell.english == 'Stardiver' then
+    elseif spell.english == 'Stardiver' then
                 equip(sets.Stardiver.Attack)
-        end
-		
-		if spell.english == 'Impulse Drive' then
+    elseif spell.english == 'Impulse Drive' then
 			equip(sets.ImpulseDrive.Attack)
-		end
-		
-		if spell.english == 'Drakesbane' then
+	elseif spell.english == 'Drakesbane' then
 			equip(sets.Drakesbane.Attack)
-		end
-		
-		if spell.english == "Camlann's Torment" then
+	elseif spell.english == "Camlann's Torment" then
 			equip(sets.CT.Attack)
-		end
-				
-        if spell.english == 'Box Step' then
+	elseif spell.english == 'Box Step' then
                 equip(sets.Utility.Steps)
-        end
-    if spell.name == 'Dismiss' and pet.hpp < 100 then		
+    elseif spell.name == 'Dismiss' and pet.hpp < 100 then		
 		cancel_spell()
 		windower.add_to_chat(50,'  '..pet.name..' is below full HP (<pethpp>), cancelling Dismiss!')
 	elseif spell.name == 'Call Wyvern' then
@@ -269,7 +258,9 @@ function precast(spell)
 			end
 		end
 		equip(sets.JA.Jump)
-	end
+		elseif spell.type == 'Weaponskill' then
+			equip(sets.Drakesbane.Attack)
+        end
 end
        
 function midcast(spell,act)
