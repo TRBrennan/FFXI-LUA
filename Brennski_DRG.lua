@@ -54,7 +54,7 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = {ammo="Ginsen",
 									head="Flam. Zucchetto +1",
-									body="Valorous Mail", 
+									body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}}, 
 									hands={ name="Emicho Gauntlets", augments={'HP+50','DEX+10','Accuracy+15',}},
 									legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
 									feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
@@ -70,7 +70,7 @@ function get_sets()
                 sets.TP.AccuracyFull = {ammo="Seething Bomblet +1",
                                         head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}},
 										neck="Sanctity Necklace", ear1="Dignitary's Earring", ear2="Telos Earring",
-                                        body="Valorous Mail",hands="Emicho Gauntlets",ring1="Cacoethic Ring",ring2="Chirich Ring",
+                                        body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Flam. Manopolas +1",ring1="Cacoethic Ring",ring2="Chirich Ring",
                                         back ="Grounded Mantle",waist="Ioskeha Belt",legs="Odyssean Cuisses",feet="Valorous Greaves"}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
@@ -95,7 +95,7 @@ function get_sets()
 		
 		sets.Stardiver.Attack = {ammo="Amar Cluster",
                                     head="Valorous Mask", neck="Fotia Gorget", ear2="Moonshade Earring",ear1="Sherida Earring",
-                                    body="Valorous Mail",hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Regal Ring",
+                                    body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Regal Ring",
                                     back ="Grounded Mantle",waist="Fotia Belt",legs="Sulevia's Cuisses +2",feet="Valorous Greaves"}
 		
 		sets.ImpulseDrive = {}
@@ -106,7 +106,7 @@ function get_sets()
 		
 		sets.ImpulseDrive.Attack = {ammo="Amar Cluster",
                                     head="Valorous Mask", neck="Caro Necklace", ear2="Moonshade Earring",ear1="Sherida Earring",
-                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Regal Ring",
+                                    body="Sulevia's Plate. +2",,hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Regal Ring",
                                     back ="Grounded Mantle",waist="Grunfeld Rope",legs="Sulevia's Cuisses +2",feet="Valorous Greaves"}
 									
 									
@@ -118,7 +118,7 @@ function get_sets()
 		
 		sets.CT.Attack = {ammo="Amar Cluster",
                                     head="Valorous Mask", neck="Caro Necklace", ear2="Moonshade Earring",ear1="Sherida Earring",
-                                    body="Sulevia Platemail +1",hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Regal Ring",
+                                    body="Sulevia's Plate. +2",,hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Regal Ring",
                                     back ="Grounded Mantle",waist="Grunfeld Rope",legs="Sulevia's Cuisses +2",feet="Valorous Greaves"}
 									
 		sets.Drakesbane = {}
@@ -158,7 +158,7 @@ function get_sets()
                                                         back="Swith cape",waist="Pythia sash +1",legs="Portent pants",feet="Valorous Greaves"}
                                                        
         sets.Utility.Steps = {ammo="Ginsen",
-							head="Boii Mask +1", body="Valorous Mail", hands="Rawhide Gloves",legs=="Odyssean Cuisses", feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",  back ="Grounded Mantle",}
+							head="Boii Mask +1", body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}}, hands="Rawhide Gloves",legs=="Odyssean Cuisses", feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",  back ="Grounded Mantle",}
                                                  
 		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
 		
@@ -168,7 +168,7 @@ function get_sets()
         sets.JA = {}
 		sets.JA.Jump = { ammo="Ginsen",
 						head="Sulevia's Mask +2",
-						body={ name="Valorous Mail", augments={'HP+50','DEX+10','Accuracy+15',}},
+						body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},
 						hands={ name="Emicho Gauntlets", augments={'HP+50','DEX+10','Accuracy+15',}},
 						legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
 						feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
@@ -201,7 +201,7 @@ function get_sets()
        
 	   sets.Breath = {ammo="Staunch Tathlum",
 				   head="Ptero. Armet +1",neck="Lancer's Torque",ear1="Anastasi Earring",ear2="Lancer's Earring",
-				   body="Valorous Mail",hands="Despair Fin. Gaunt.",
+				   body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Despair Fin. Gaunt.",
 				   back="Updraft Mantle",waist="Glassblower's Belt",legs="Vishap Brais +1",feet="Ptero. Greaves +1"}
 
 end
