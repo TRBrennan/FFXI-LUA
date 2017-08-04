@@ -36,7 +36,7 @@ function get_sets()
 		
 		sets.Weapons.SwordShield = {main ="Tanmogayi +1", sub ="Blurred Shield"}
 		
-		sets.Weapons.ClubShield = {main ="Loxotic Mace", sub ="Blurred Shield"}
+		sets.Weapons.ClubShield = {main ="Beryllium Mace", sub ="Blurred Shield"}
 		
 		sets.Weapons.ClubShield = {main ="Ternion Dagger +1", sub ="Blurred Shield"}
                
@@ -148,7 +148,8 @@ function get_sets()
 									  
 		sets.Upheavel.AttackHighTP = {ammo="Knobkierrie", head={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}},
 									  neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Ishvara Earring",
-									  body="Pumm. Lorica +3",hands="Valorous Mitts",ring1="Regal Ring",ring2="Niqmaddu Ring",
+									  body="Pumm. Lorica +3",hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},
+									  ring1="Regal Ring",ring2="Niqmaddu Ring",
                                        back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 									   waist="Grunfeld Rope",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}								
         
@@ -156,7 +157,8 @@ function get_sets()
 		sets.SB.Attack = {ammo="Knobkierrie",
                                     head={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}}, 
 									neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                    body="Pumm. Lorica +3",hands="Valorous Mitts",ring1="Niqmaddu Ring",ring2="Regal Ring",
+                                    body="Pumm. Lorica +3",hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},
+									ring1="Niqmaddu Ring",ring2="Regal Ring",
                                      back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 									 waist="Grunfeld Rope",legs="Argosy Breeches +1",feet="Sulevia's Leggings +2" }
         --Ninja Magic Sets--

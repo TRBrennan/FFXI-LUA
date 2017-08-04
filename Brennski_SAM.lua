@@ -47,7 +47,7 @@ function get_sets()
         Idle_ind = 1                  
        
         sets.Idle.Standard = {ammo="Staunch Tathlum", 
-							head="Rao kabuto",
+							head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
 							body="Hizamaru haramaki +1",
 							hands="Rao kote",
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
@@ -61,7 +61,7 @@ function get_sets()
 							}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum", 
-							head="Rao kabuto",
+							head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
 							body="Emet Harness +1",
 							hands="Rao kote",
 							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
@@ -85,8 +85,8 @@ function get_sets()
 				sets.TP.Standard = {ammo="Ginsen",
                                     head="Flam. Zucchetto +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
                                     body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Flam. Manopolas +1",
-									ring1="Niqmaddu Ring",ring2="Ilabrat Ring",
-                                     back="Lupine Cape",waist="Ioskeha Belt",
+									right_ring="Niqmaddu Ring",left_ring="Ilabrat Ring",
+                                     back="Takaha Mantle",waist="Ioskeha Belt",
 									 legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
 									feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
                                                        
@@ -94,8 +94,8 @@ function get_sets()
                 sets.TP.AccuracyMid = {ammo="Seethng bomblet +1",
                                         head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}}, 
 										neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
-										body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Flam. Manopolas +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
-                                         back="Lupine Cape",
+										body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Flam. Manopolas +1",right_ring="Niqmaddu Ring",left_ring="Regal Ring",
+                                         back="Takaha Mantle",
 										 waist="Ioskeha Belt",legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
 										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
        
@@ -103,8 +103,8 @@ function get_sets()
                                        head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}},
 										neck="Sanctity Necklace", ear1="Dignitary's Earring", ear2="Telos Earring",
                                         body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},
-										hands="Flam. Manopolas +1",ring1="Cacoethic Ring",ring2="Chirich Ring",
-                                        back="Lupine Cape",
+										hands="Flam. Manopolas +1",right_ring="Cacoethic Ring",left_ring="Chirich Ring",
+                                        back="Takaha Mantle",
 										waist="Ioskeha Belt",
 										legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
 										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
@@ -112,14 +112,14 @@ function get_sets()
                 sets.TP.DT = {ammo="Staunch Tathlum",
                               head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}}, 
 							  neck="Loricate Torque +1", ear1="Cessance Earring",ear2="Telos Earring",
-                              body="Emet Harness +1",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending Ring",
-                               back="Lupine Cape",
+                              body="Emet Harness +1",hands="Sulev. Gauntlets +2",right_ring="Vocane Ring",left_ring="Defending Ring",
+                               back="Takaha Mantle",
 							   waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
                                  
                 sets.TP.DTAccuracy = {ammo="Ginsen",
                                       head="Sulevia's Mask +2",neck="Lissome Necklace", ear2="Telos Earring",ear1="Odnowa Earring +1",    
-									  body="Emet Harness +1",hands="Sulev. Gauntlets +2",ring1="Niqmaddu Ring",ring2="Chirich Ring",
-                                       back="Lupine Cape",
+									  body="Emet Harness +1",hands="Sulev. Gauntlets +2",right_ring="Niqmaddu Ring",left_ring="Chirich Ring",
+                                       back="Takaha Mantle",
 									   waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
                                                          
 									
@@ -138,9 +138,9 @@ function get_sets()
 							waist="Grunfeld Rope",
 							left_ear="Ishvara Earring",
 							right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
-							left_ring="Regal Ring",
-							right_ring="Niqmaddu Ring",
-							back="Lupine Cape"}
+							right_ring="Regal Ring",
+							left_ring="Niqmaddu Ring",
+							back="Takaha Mantle"}
 		
 		sets.MultiHit = {}
 		
@@ -154,13 +154,13 @@ function get_sets()
 							waist="Fotia Belt",
 							left_ear="Telos Earring",
 							right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
-							left_ring="Regal Ring",
-							right_ring="Niqmaddu Ring",
-							back="Lupine Cape"}
+							right_ring="Regal Ring",
+							left_ring="Niqmaddu Ring",
+							back="Takaha Mantle"}
 		
-		sets.Hyrbid = {}
+		sets.HybridWS = {}
 		
-		sets.Hybrid.Attack = {ammo="Knobkierrie",
+		sets.HybridWS.Attack = {ammo="Knobkierrie",
 							head={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}},
 							body="Found. Breastplate",
 							hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},
@@ -170,16 +170,17 @@ function get_sets()
 							waist="Fotia Belt",
 							left_ear="Friomisi earring",
 							right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
-							left_ring="Regal Ring",
-							right_ring="Niqmaddu Ring",
-							back="Izdubar Mantle"}
+							;eft_ring="Regal Ring",
+							right_ear_ring="Niqmaddu Ring",
+							back="Izdubar Mantle"
+							}
        
         --Ninja Magic Sets--
         sets.NINMagic = {}
        				
 	    sets.NINMagic.Utsusemi ={
                               head="Dampening Tam",neck="Loricate Torque +1", ear1="Brutal Earring",ear2="Cessance Earring",
-                              body="Emet harness +1",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Petrov Ring",
+                              body="Emet harness +1",hands="Sulev. Gauntlets +2",right_ring="Vocane Ring",left_ring="Petrov Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs="Herculean Trousers",feet="Valorous Greaves"}
  
                                               
@@ -188,33 +189,33 @@ function get_sets()
        
         sets.Utility.Weather = {waist="Hachirin-no-obi",back="Twilight Cape"}
  
-        sets.Utility.MB = {head="Herculean Helm",body="Amalric Doublet",ear1="Static Earring",ring1="Locus Ring",ring2="Mujin Band"} 
+        sets.Utility.MB = {head="Herculean Helm",body="Amalric Doublet",ear1="Static Earring",right_ring="Locus Ring",left_ring="Mujin Band"} 
        
         sets.Utility.Stoneskin = {head="Haruspex hat",neck="Stone Gorget",ear1="Loquac. earring",ear2="Earthcry earring",
-                                                          body="Assim. jubbah +1",hands="Stone Mufflers",ring1="Rahab ring",
+                                                          body="Assim. jubbah +1",hands="Stone Mufflers",right_ring="Rahab ring",
                                                           back="Swith cape",waist="Siegel sash",legs="Haven hose",feet="Valorous Greaves"}
                                                          
         sets.Utility.Phalanx = {head="Haruspex hat",neck="Colossus's torque",ear1="Loquac. earring",ear2="Augment. earring",
-                                                    body="Assim. jubbah +1",hands="Ayao's gages",ring1="Rahab ring",
+                                                    body="Assim. jubbah +1",hands="Ayao's gages",right_ring="Rahab ring",
                                                         back="Swith cape",waist="Pythia sash +1",legs="Portent pants",feet="Valorous Greaves"}
                                                        
         sets.Utility.Steps = {ammo="Ginsen",
 							head="Boii Mask +1", body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}}, hands="Rawhide Gloves",legs=="Odyssean Cuisses",
 							feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",
-							right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",   back="Lupine Cape",}
+							right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",   back="Takaha Mantle",}
                                                  
-		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
+		sets.Utility.Doomed = {waist="Gishdubar Sash", right_ring ="Saida Ring"}
 		
 		sets.Utility.Enmity = {ammo="Sapience Orb",
 								ear2 ="Friomisi Earring", 
 								back ="Weard Mantle",
 								waist ="Trance belt",
-								ring2="Supershear Ring",
+								left_ring="Supershear Ring",
 								neck = "Unmoving Collar",
 								hands="Souveran Handschuhs",
 								feet="Souveran Schuhs",
 								body="Souveran Cuirass",
-								ring1="Petrov Ring",
+								right_ring="Petrov Ring",
 								legs="Souveran Diechlings +1",
 								head="Souveran Schaller"}
 		
@@ -223,7 +224,7 @@ function get_sets()
        
         sets.JA = {}
                
-		sets.JA.Meditate ={back = "Cichol's Mantle",feet = "Agoge Calligae", body = "Pumm. Lorica +3"}
+		sets.JA.Meditate ={feet = "Agoge Calligae", body = "Pumm. Lorica +3", back ="Takaha Mantle"}
 
 		sets.JA.Hasso = { body = "Agoge Lorcia", head ="Pummeler's Mask +1"}
 		
@@ -268,7 +269,7 @@ function precast(spell)
         elseif spell.english == 'Tachi: Fudo' or spell.english == 'Tachi: Kasha' or spell.english == 'Tachi: Shoha' then
                 equip(sets.OneHit.Attack)
         elseif spell.english == "Tachi: Jinpu" then
-                equip(sets.Hybrid.Attack)
+                equip(sets.HybridWS.Attack)
         elseif spell.english == 'Stardiver' or spell.english == 'Tachi: Rana' then
 			equip(sets.MultiHit.Attack)
 		elseif spell.english =='Meditate' then
@@ -276,7 +277,7 @@ function precast(spell)
 		elseif spell.english =='Hasso' then
 			equip(set_combine(sets.Utility.Enmity,sets.JA.Hasso))
 		elseif spell.english =='Blade Bash' then
-			equip(set_combine(sets.Utility.Enmity,sets.JA.Blade Bash))
+			equip(set_combine(sets.Utility.Enmity,sets.JA.BladeBash))
 		elseif spell.english =='Tomahawk' then
 			equip(set_combine(sets.Utility.Enmity,sets.JA.Tomahawk))
 		elseif spell.english =='Bloodrage' then
