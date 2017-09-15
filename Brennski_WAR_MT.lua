@@ -34,7 +34,7 @@ function get_sets()
 		
 		sets.Weapons.AxeShield = {main ="Purgation", sub ="Blurred Shield"}
 		
-		sets.Weapons.SwordShield = {main ="Reikiko", sub ="Blurred Shield"}
+		sets.Weapons.SwordShield = {main ="Tanmogayi +1", sub ="Blurred Shield"}
 		
 		sets.Weapons.ClubShield = {main ="Beryllium Mace", sub ="Blurred Shield"}
 		
@@ -67,7 +67,7 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = {ammo="Ginsen",
                                     head="Flam. Zucchetto +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
-                                    body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Flam. Manopolas +1",ring1="Niqmaddu Ring",ring2="Petrov Ring",
+                                    body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Flam. Manopolas +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
                                      back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},waist="Ioskeha Belt",
 									 legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
 									feet="Pummeler's Calligae +3"}
@@ -76,7 +76,7 @@ function get_sets()
                 sets.TP.AccuracyMid = {ammo="Seethng bomblet +1",
                                         head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}}, 
 										neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
-										body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Flam. Manopolas +1",ring1="Niqmaddu Ring",ring2="Petrov Ring",
+										body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Flam. Manopolas +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
                                          back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 										 waist="Ioskeha Belt",legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
 										feet="Pummeler's Calligae +3"}
@@ -96,26 +96,25 @@ function get_sets()
                                back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 							   waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Pummeler's Calligae +3"}
                                  
-                sets.TP.DTAccuracy = {ammo="Staunch Tathlum",
-                                      head="Flam. Zucchetto +1",neck="Loricate Torque +1", ear2="Telos Earring",ear1="Cessance Earring",    
-									  body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Niqmaddu Ring",ring2="Defending Ring",
+                sets.TP.DTAccuracy = {ammo="Ginsen",
+                                      head="Sulevia's Mask +2",neck="Lissome Necklace", ear2="Telos Earring",ear1="Odnowa Earring +1",    
+									  body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Niqmaddu Ring",ring2="Chirich Ring",
                                        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
-									   waist="Ioskeha Belt",legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
-									   feet="Pummeler's Calligae +3"}
+									   waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Pummeler's Calligae +3"}
 									   
 				sets.TP.Tank = { ammo="Staunch Tathlum",
                                     head="Souveran Schaller",
 									neck="Loricate Torque +1",
 									ear1="Odnowa Earring +1",
 									ear2="Thureous Earring",
-                                    body="Souveran Cuirass",
-									hands="Souv. Handschuhs",
+                                    body="Reverence Surcoat +3",
+									hands="Souveran Handschuhs",
 									ring1="Defending ring",
 									ring2="Vocane Ring",
                                     back="Moonbeam Cape",
 									waist="Flume Belt +1",
 									legs="Souveran Diechlings +1",
-									feet="Souveran Schuhs"}			
+									feet="Souveran Schuhs"}					   
                                                          
 									
        --Weaponskill Sets--
@@ -128,30 +127,30 @@ function get_sets()
 		Reso_ind= 1
 		
 		sets.Resolution.Attack = {ammo="Seething Bomblet +1",
-                                    head="Argosy Celata +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
-                                    body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
+                                    head="Sulevia's Mask +2", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
+                                    body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Sulev. Gauntlets +2",ring1="Niqmaddu Ring",ring2="Regal Ring",
                                      back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
-									 waist="Fotia Belt",legs="Argosy Breeches +1",feet="Pummeler's Calligae +3"}
+									 waist="Fotia Belt",legs="Sulevia's Cuisses +2",feet="Pummeler's Calligae +3"}
 		
                                                            
         sets.Ukkos = {} 
 		sets.Ukkos.Index ={'Attack'}		
 		Ukkos_Ind = 1		
 		sets.Ukkos.Atack = {ammo="Yetshila",
-                                    head="Argosy Celata +1", neck="Rancor Collar", ear1="Moonshade Earring",ear2="Telos Earring",
+                                    head="Sulevia's Mask +2", neck="Rancor Collar", ear1="Moonshade Earring",ear2="Telos Earring",
                                     body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
                                      back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
-									 waist="Grunfeld Rope",legs="Argosy Breeches +1",
+									 waist="Grunfeld Rope",legs="Sulevia's Cuisses +2",
 									feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}}}
 
 		sets.KJ = {}
 		sets.KJ.Index ={'Attack'}		
 		KJ_Ind= 1		
 		sets.KJ.Attack = {ammo="Seething Bomblet +1",
-                                    head="Argosy Celata +1", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
+                                    head="Sulevia's Mask +2", neck="Fotia Gorget", ear1="Moonshade Earring",ear2="Telos Earring",
                                     body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Argosy Mufflers +1",ring1="Niqmaddu Ring",ring2="Regal Ring",
                                      back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
-									 waist="Fotia Belt",legs="Argosy Breeches +1",feet="Pummeler's Calligae +3"}
+									 waist="Fotia Belt",legs="Sulevia's Cuisses +2",feet="Pummeler's Calligae +3"}
 									
     	sets.Upheavel = {}
 		sets.Upheavel.Index ={'Attack'}
@@ -177,19 +176,20 @@ function get_sets()
 									ring1="Niqmaddu Ring",ring2="Regal Ring",
                                      back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 									 waist="Grunfeld Rope",legs={ name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}},feet="Sulevia's Leggings +2" }
+									 
 		sets.HS = {}		
 		sets.HS.Attack = { ammo="Yetshila",
 							head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}},
 							body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},
 							hands="Flam. Manopolas +1",
-							legs="Argosy Breeches +1",
+							legs="Sulev. Cuisses +2",
 							feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
 							neck="Fotia Gorget",
 							waist="Fotia Belt",
 							left_ear="Telos Earring",
 							right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
 							left_ring="Regal Ring",
-							right_ring="Begruding Ring",
+							right_ring="Niqmaddu Ring",
 							back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},}
         --Ninja Magic Sets--
         sets.NINMagic = {}
@@ -286,8 +286,8 @@ function precast(spell)
                 equip(sets.Resolution.Attack)
         elseif spell.english == "Ukko's Fury" then
                 equip(sets.Ukkos.Attack)
-        elseif spell.english == 'Savage Blade' or spell.english == 'Ground Strike' or spell.english == 'Steel Cyclone' or spell.english == "Mistral Axe" or spell.english =='Fell Cleave' or spell.english == "Judgment" or spell.english == 'Black Halo'
-				or spell.english == "Metatron Torment" then
+        elseif spell.english == 'Savage Blade' or spell.english == 'Ground Strike' or spell.english == 'Steel Cyclone' or spell.english == "Mistral Axe" or spell.english =='Fell Cleave' or spell.english == "Judgment" 
+				or spell.english == 'Black Halo' then
 			equip(sets.SB.Attack)
 		elseif spell.english == "King's Justice"  then
                 equip(sets.KJ.Attack)

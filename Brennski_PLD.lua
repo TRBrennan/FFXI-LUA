@@ -61,7 +61,7 @@ function get_sets()
 				sets.TP.Standard = {    ammo="Ginsen",
 										head="Flam. Zucchetto +1",
 										body="Valorous Mail",
-										hands={ name="Emicho Gauntlets", augments={'HP+50','DEX+10','Accuracy+15',}},
+										hands="Flam. Manopolas +1",
 										legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
 										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
 										neck="Lissome Necklace",
@@ -102,18 +102,12 @@ function get_sets()
        
            
 		 sets.SavageBlade.Attack = {ammo="Sapience Orb",
-                                          head={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}},
-										  neck="Caro Necklace",
-										  ear1="Ishvara Earring",
-										  ear2="Moondshade Earring",
-                                          body="Sulevia's Plate. +2",
-										  hands="Valorous Mitts",
-										  ring2="Regal Ring",
-										  ring1="Petrov Ring",
-                                          back="Lupine Cape",
-										  waist="Grunfield Rope",
-										  legs="Sulevia Cuisses +2",
-										  feet="Sulevia's Leggings +2"}
+                                         ead={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}}, 
+									neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
+                                    body={ name="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}},hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},
+									ring1="Niqmaddu Ring",ring2="Regal Ring",
+                                     back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
+									 waist="Grunfeld Rope",legs={ name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}},feet="Sulevia's Leggings +2"}
                                                            
         sets.ChantDuCygne = {}
        

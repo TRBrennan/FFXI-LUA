@@ -56,7 +56,7 @@ function get_sets()
 									head="Flam. Zucchetto +1",
 									body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}}, 
 									hands="Flam. Manopolas +1",
-									legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
+									legs ="Flamma Dirs +1",
 									feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
 									neck="Lissome Necklace",
 									waist="Ioskeha Belt",
@@ -71,7 +71,7 @@ function get_sets()
                                         head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}},
 										neck="Sanctity Necklace", ear1="Dignitary's Earring", ear2="Telos Earring",
                                         body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Flam. Manopolas +1",ring1="Cacoethic Ring",ring2="Chirich Ring",
-                                        back ="Updraft Mantle",waist="Ioskeha Belt",legs="Odyssean Cuisses",feet="Valorous Greaves"}
+                                        back ="Updraft Mantle",waist="Ioskeha Belt",legs ="Flamma Dirs +1",feet="Valorous Greaves"}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
                               head="Sulevia's Mask +2",neck="Loricate Torque +1", left_ear="Sherida earring",right_ear="Telos Earring",
@@ -95,7 +95,7 @@ function get_sets()
 		
 		sets.Stardiver.Attack = {ammo="Floestone",
                                     head="Flam. Zucchetto +1", neck="Fotia Gorget", ear2="Moonshade Earring",ear1="Sherida Earring",
-                                    body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},
+                                    body="Sulevia's Plate. +2",
 									hands="Sulev. Gauntlets +2",ring1="Niqmaddu Ring",ring2="Regal Ring",
                                     back ="Updraft Mantle",waist="Fotia Belt",legs="Sulevia's Cuisses +2",feet="Valorous Greaves"}
 		
@@ -110,7 +110,8 @@ function get_sets()
 									  body={ name="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}},
 									  hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},ring1="Regal Ring",ring2="Niqmaddu Ring",
                                        back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
-									   waist="Grunfeld Rope",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}	
+									   waist="Grunfeld Rope",legs={ name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}},
+									   feet="Sulevia's Leggings +2"}	
 									
 									
 		sets.CT = {}
@@ -124,7 +125,8 @@ function get_sets()
 									  body={ name="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}},
 									  hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},ring1="Regal Ring",ring2="Niqmaddu Ring",
                                        back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
-									   waist="Grunfeld Rope",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}	
+									   waist="Grunfeld Rope",legs={ name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}},
+									   feet="Sulevia's Leggings +2"}	
 									
 		sets.Drakesbane = {}
 		
@@ -175,7 +177,7 @@ function get_sets()
 						head="Sulevia's Mask +2",
 						body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},
 						hands={ name="Emicho Gauntlets", augments={'HP+50','DEX+10','Accuracy+15',}},
-						legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
+						legs ="Flamma Dirs +1",
 						feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
 						neck="Lissome Necklace",
 						waist="Ioskeha Belt",

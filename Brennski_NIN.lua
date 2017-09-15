@@ -192,7 +192,7 @@ sets.TP.HighAccuracy.Mid = {
 	feet={ name="Herculean Boots", augments={'Accuracy+25 Attack+25','"Dual Wield"+2','STR+13','Accuracy+6',}}, 
 }
 sets.TP.HighAccuracy.High = {
-	head="Dampening Tam", 
+	head="Ken. Jinpachi", 
 	neck="Sanctity necklace", 
 	left_ear="Telos Earring", 
 	right_ear="Dignitary's earring", 
@@ -300,7 +300,7 @@ sets.MultiHit.Attack = {
 		back="Andartia's Mantle"
 }			   
 sets.MultiHit.Accuracy = {
-		head="Dampening Tam",
+		head="Ken. Jinpachi",
         body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
         hands="Adhemar Wristbands",
         legs="Samnuha tights",

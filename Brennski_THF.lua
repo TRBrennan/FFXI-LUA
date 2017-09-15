@@ -61,7 +61,7 @@ function get_sets()
                                                        
                 sets.TP.AccuracyMid = {ammo="Ginsen",
                                         head="Dampening Tam", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
-										body="Ashera Harness",hands="Adhemar Wristbands",ring1="Chirich Ring",ring2="Epona's ring",
+										body="Ashera Harness",hands="Adhemar Wristbands",ring1="Ilabrat Ring",ring2="Epona's ring",
                                         back="Canny Cape",waist="windbuffet belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
                 sets.TP.AccuracyFull = {ammo="Amar Cluster",
@@ -81,7 +81,7 @@ function get_sets()
 									  
 				sets.TP.TH = { ammo="Ginsen",
                                     head="Dampening Tam", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
-                                    body="Ashera Harness",hands="Assassin's Armlets +2",ring1="Petrov Ring",ring2="Epona's Ring",
+                                    body="Ashera Harness",hands="Plunderer's Armlets +1",ring1="Petrov Ring",ring2="Epona's Ring",
                                     back="Canny Cape",waist="Chaac Belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                          
 									
@@ -117,9 +117,21 @@ function get_sets()
 										  neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Herculean Vest",hands="Meg. Gloves +1",ring1="Petrov Ring",ring2="Rajas Ring",
                                           back="Canny Cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
-										  feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}} }							
-                                                                                               
-                                                               
+										  feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}} }		
+										  
+		sets.WS,AeolianEdge = {
+							head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
+							neck="Sanctity Necklace",  
+							ear2="Friomisi earring", 
+							ear1="Moonshade Earring",
+							body="Samnuha Coat",
+							hands="Meg. Gloves +2",   
+							ring1="Acumen Ring", 
+							ring2 ='Dingir Ring',
+							waist ="Chaac Belt",
+							back="Belenus's Cape",   
+							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
+							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}     }                                                  
                                                           
         --Ninja Magic Sets--
         sets.NINMagic = {}
@@ -213,6 +225,10 @@ function precast(spell)
                         end
         end
        
+	   if spell.english == 'Aeolian Edge' then
+			equip(sets.WS.AeolianEdge)
+		end
+	   
         if spell.english == 'Box Step' then
                 equip(sets.Utility.Steps)
         end

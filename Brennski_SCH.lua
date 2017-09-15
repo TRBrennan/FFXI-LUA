@@ -124,7 +124,7 @@ function get_sets()
                                  head="Merlinic Hood",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Barkarole Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Kaykaus Cuffs", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
-                                 back="Lugh's Cape",legs ="Chironic Hose",feet="Medium's Sabots"}
+                                 back="Lugh's Cape",legs ="Chironic Hose",feet="Skaoi Boots"}
 			
 			sets.Magic.Healing = {sub ="Enki Strap",ammo="Kalboron Stone",
                                  head="Vanya Hood",neck="Incanter's Torque",ear1 ="Regal Earring", ear2="Medni. Earring",

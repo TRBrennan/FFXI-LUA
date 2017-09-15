@@ -87,40 +87,40 @@ function get_sets()
                                     body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Flam. Manopolas +1",
 									right_ring="Niqmaddu Ring",left_ring="Ilabrat Ring",
                                      back="Takaha Mantle",waist="Ioskeha Belt",
-									 legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
+									 legs ="Ryuo Hakama",
 									feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
                                                        
                                                        
-                sets.TP.AccuracyMid = {ammo="Seethng bomblet +1",
+                sets.TP.AccuracyMid = {ammo="Jukukik Feather",
                                         head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}}, 
 										neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
-										body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Flam. Manopolas +1",right_ring="Niqmaddu Ring",left_ring="Regal Ring",
+										body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},hands="Flam. Manopolas +1",right_ring="Niqmaddu Ring",left_ring="Ilabrat Ring",
                                          back="Takaha Mantle",
-										 waist="Ioskeha Belt",legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
+										 waist="Ioskeha Belt",legs ="Ryuo Hakama",
 										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
        
-                sets.TP.AccuracyFull = {ammo="Seething Bomblet +1",
+                sets.TP.AccuracyFull = {ammo="Jukukik Feather",
                                        head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}},
 										neck="Sanctity Necklace", ear1="Dignitary's Earring", ear2="Telos Earring",
                                         body={ name="Valorous Mail", augments={'Accuracy+21 Attack+21','STR+10','Accuracy+15','Attack+4',}},
 										hands="Flam. Manopolas +1",right_ring="Cacoethic Ring",left_ring="Chirich Ring",
                                         back="Takaha Mantle",
 										waist="Ioskeha Belt",
-										legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
+										legs ="Ryuo Hakama",
 										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
-                              head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}}, 
+                              head="Ynglinga Sallet",
 							  neck="Loricate Torque +1", ear1="Cessance Earring",ear2="Telos Earring",
-                              body="Emet Harness +1",hands="Sulev. Gauntlets +2",right_ring="Vocane Ring",left_ring="Defending Ring",
-                               back="Takaha Mantle",
-							   waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
+                              body="Emet Harness +1",hands="Kurys Gloves",right_ring="Vocane Ring",left_ring="Defending Ring",
+                               back="Moonbeam Cape",
+							   waist="Flume Belt +1",legs ="Ryuo Hakama",feet="Sulevia's Leggings +2"}
                                  
                 sets.TP.DTAccuracy = {ammo="Ginsen",
-                                      head="Sulevia's Mask +2",neck="Lissome Necklace", ear2="Telos Earring",ear1="Odnowa Earring +1",    
-									  body="Emet Harness +1",hands="Sulev. Gauntlets +2",right_ring="Niqmaddu Ring",left_ring="Chirich Ring",
+                                      head="Ynglinga Sallet",neck="Lissome Necklace", ear2="Telos Earring",ear1="Odnowa Earring +1",    
+									  body="Emet Harness +1",hands="Flam. Manopolas +1",right_ring="Niqmaddu Ring",left_ring="Chirich Ring",
                                        back="Takaha Mantle",
-									   waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
+									   waist="Ioskeha Belt",legs ="Ryuo Hakama",feet="Sulevia's Leggings +2"}
                                                          
 									
        --Weaponskill Sets--
@@ -133,7 +133,7 @@ function get_sets()
 							body={ name="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}},
 							hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},
 							legs="Hiza. Hizayoroi +2",
-							feet="Hiza. Sune-Ate +1",
+							feet={ name="Valorous Greaves", augments={'Attack+21','Weapon skill damage +5%',}},
 							neck="Caro Necklace",
 							waist="Grunfeld Rope",
 							left_ear="Ishvara Earring",
@@ -148,7 +148,7 @@ function get_sets()
 							head={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}},
 							body={ name="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}},
 							hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},
-							legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
+							legs ="Ryuo Hakama",
 							feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
 							neck="Fotia Gorget",
 							waist="Fotia Belt",
@@ -165,12 +165,12 @@ function get_sets()
 							body="Found. Breastplate",
 							hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},
 							legs="Hiza. Hizayoroi +2",
-							feet="Hiza. Sune-Ate +1",
+							feet={ name="Valorous Greaves", augments={'Attack+21','Weapon skill damage +5%',}},
 							neck="Fotia Gorget",
 							waist="Fotia Belt",
 							left_ear="Friomisi earring",
 							right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
-							;eft_ring="Regal Ring",
+							left_ring="Regal Ring",
 							right_ear_ring="Niqmaddu Ring",
 							back="Izdubar Mantle"
 							}

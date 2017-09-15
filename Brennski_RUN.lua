@@ -57,7 +57,7 @@ function get_sets()
 		
 				sets.Weapons = {}
 		
-				sets.Weapons.Index = {'Lionheart','Aettir','Epeolatry', 'Fettering'}
+				sets.Weapons.Index = {'Lionheart','Aettir','Epeolatry', 'Sword'}
 				Weapons_ind = 1
 		
 				sets.Weapons.Lionheart = {main ="Lionheart", sub ="Utu Grip"}
@@ -66,7 +66,7 @@ function get_sets()
 		
 				sets.Weapons.Epeolatry = {main ="Epeolatry", sub ="Utu Grip"}
 				
-				sets.Weapons.Fettering = {main ="Fettering Blade"}
+				sets.Weapons.Sword = {main ="Reikiko"}
 		
 			   --TP Sets--
                 sets.TP = {}
@@ -107,7 +107,7 @@ function get_sets()
 								head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
 								body="Ashera Harness",
 								--hands="Regal Gauntlets",
-								hands ="Kurys Gloves",
+								hands ="Runeist's Mitons +3",
 								legs="Eri. Leg Guards +1",
 								feet="Turms Leggings",
 								neck="Loricate Torque +1",
@@ -262,6 +262,21 @@ function get_sets()
                                             body="Emet harness +1",hands="Regal Gauntlets", waist ="Olympus Sash", ring1='"Stikini Ring"', right_ring='Supershear Ring',
                                             legs="Carmine Cuisses +1",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}	
 				
+				sets.Utility.EnhancingSkill = { ammo="Sapience Orb",
+												head="Erilaz Galea +1",
+												body="Emet Harness +1",
+												hands="Runeist's Mitons +3",
+												legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+												feet="Erilaz Greaves +1",
+												neck="Incanter's Torque",
+												waist="Olympus Sash",
+												left_ear="Genmei Earring",
+												right_ear="Andoaa Earring",
+												left_ring="Stikini Ring",
+												right_ring="Supershear Ring",
+												back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},
+											}
+				
 				sets.Utility.Refresh =	{ammo="Sapience Orb",head="Erilaz Galea +1",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear1="Genmei earring",
                                             body="Emet harness +1",hands="Regal Gauntlets", waist ="Gishdubar Sash", ring1='"Stikini Ring"', right_ring='Supershear Ring',
                                             legs="Carmine Cuisses +1",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}
@@ -277,6 +292,8 @@ function get_sets()
 				
                 sets.JA.Embolen = {back="Evasionist cape"}
                
+				
+			   
                 sets.JA.Lunge = {ammo="Seething Bomblet +1",
                                  head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 								 neck="Sanctity Necklace",
@@ -294,7 +311,7 @@ function get_sets()
                 sets.JA.Vallation = {body="Runeist's Coat +3",																
 									back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}
                                                          
-                sets.JA.Battuta = {head="Futhark bandeau +1"}
+                sets.JA.Battuta = {head="Futhark bandeau +1", "Turms Mittens"}
        
                 sets.JA.Gambit = {hands="Runeist's Mitons +3", waist ="Chaac Belt"}
        
@@ -314,7 +331,7 @@ function get_sets()
                                             legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},feet="Carmine Greaves +1", 
 											back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}
                                                                        
-                sets.precast.FC.Enhancing = {ammo="Carmine Mask +1",head="Herculean Helm",neck="Jeweled Necklace", ear1="Loquac. Earring", ear2="Etiolation Earring",
+                sets.precast.FC.Enhancing = {ammo="Sapience Orb",head="Carmine Mask +1",neck="Voltsurge Torque", ear1="Loquac. Earring", ear2="Etiolation Earring",
                                              body="Ashera Harness",hands="Regal Gauntlets", waist ="Flume Belt +1",left_ring="Defending Ring",right_ring="Vocane Ring",
                                              legs="Futhark trousers",feet="Carmine Greaves +1",
 											 back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}}}
@@ -338,7 +355,8 @@ function precast(spell)
                 equip(sets.JA.Lunge)				
         elseif spell.english == 'Vallation' or spell.english == 'Valiance' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Vallation))
-        elseif spell.english=='Flash'  or spell.skill == 'Enfeebling Magic' or spell.english == 'Foil' or spell.skill =='Dark Magic' or spell.skill =="Blue Magic" then	
+        elseif spell.english=='Flash'  or spell.skill == 'Enfeebling Magic' or spell.english == 'Foil' or spell.skill =='Dark Magic' or spell.skill =="Blue Magic" or spell.english =='Tellus'
+				or spell.english =='Lux' or spell.english =='Gelus' or spell.english =='Tenebrae' or spell.english =='Sulpor' or spell.english =='Ignis' or spell.english =='Unda' or spell.english =='Flabra' then	
 				equip(sets.precast.FC.Enmity)				
 		elseif spell.english == 'Battuta' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Battuta))			
@@ -369,8 +387,8 @@ function midcast(spell,act)
 				if buffactive['Embolden'] then
 					equip(set_combine(sets.Utility.Enhancing,sets.JA.Embolen))
 				end
-				if string.find(spell.name,'Bar') or spell.name=="Temper" then
-                    equip({hands="Runeist Mitons +2"})
+				if string.find(spell.name,'Bar') or spell.name=="Temper" or spell.name == "Phalanx" then
+                    equip(sets.Utility.Enhancing)
                 end
        end       
 	   if spell.english == 'Stoneskin' then
@@ -409,19 +427,15 @@ function midcast(spell,act)
                                 send_command('@wait 0.3; input //cancel Copy Image*')
                         end
 				
-        end
- 
+        end 
         if spell.english == 'Utsusemi: Ni' then
                 equip(sets.Utility.SID)
 			
-        end
-		
+        end		
 		if spell.english =='Flash' or spell.english == 'Crusade' or spell.english == 'Foil' or spell.skill =='Blue Magic' or spell.skill == 'Enfeebling Magic' or spell.skill == 'Dark Magic' then	
 				equip(sets.Utility.Enmity)
 				
-		end
-		
-		
+		end	
 end
  
 function aftercast(spell)
@@ -476,6 +490,15 @@ function buff_change(buff, gain)
             end
         end
     end
+	if buff == 'Battuta' then
+        if gain then 
+            equip(sets.JA.Battuta)
+            disable('hands')            
+        else
+            enable('hands')         
+            status_change(player.status)
+        end
+    end 
 end
  
 function self_command(command)
