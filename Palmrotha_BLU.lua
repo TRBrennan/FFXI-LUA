@@ -72,7 +72,7 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = {  ammo="Expeditious Pinion",
 									head="Jhakri Coronal +1",
-									body="Emet Harness",
+									body ="Herculean Vest",
 									hands="Rawhide Gloves",
 									legs="Carmine Cuisses +1",
 									feet="Despair Greaves",
@@ -130,7 +130,7 @@ function get_sets()
            sets.SavageBlade.Attack = {ammo="Floestone",
                                           head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 										  neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands="Jhakri Cuffs +1",
+                                          body ="Herculean Vest",hands="Jhakri Cuffs +1",
 										  ring1="Petrov Ring",ring2="Rajas Ring",
                                           back="Lupine Cape",
 										  waist="Grunfeld Rope",
@@ -144,7 +144,7 @@ function get_sets()
        
                 sets.ChantDuCygne.Attack = {ammo="Jukukik Feather",
                                             head="Adhemar Bonnet",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Telos Earring",
-                                            body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands="Adhemar Wristbands",ring1="Begrudging Ring",ring2="Epona's Ring",
+                                            body ="Herculean Vest",hands="Adhemar Wristbands",ring1="Begrudging Ring",ring2="Epona's Ring",
                                             back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},waist="Fotia belt",legs="Samnuha Tights",feet="Thereoid Greaves"}		
 
                                                                                                                    
@@ -214,12 +214,12 @@ function get_sets()
        
 	   sets.BlueMagic.Physical = {ammo ="Floestone",
 							         head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Caro Necklace",ear1="Corybant Pearl",ear2="Kemas Earring",
-                                     body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands="Jhakri Cuffs +1",ring1="Petrov Ring",ring2="Rajas Ring",
+                                     body ="Herculean Vest",hands="Jhakri Cuffs +1",ring1="Petrov Ring",ring2="Rajas Ring",
                                      back="Cornflower Cape",waist="Grunfeld Rope",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 									 
 		 sets.BlueMagic.Dart = {ammo ="Floestone",
 							         head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Caro Necklace",ear1="Corybant Pearl",ear2="Kemas Earring",
-                                     body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands="Jhakri Cuffs +1",ring1="Petrov Ring",ring2="Rajas Ring",
+                                     body ="Herculean Vest",hands="Jhakri Cuffs +1",ring1="Petrov Ring",ring2="Rajas Ring",
                                      back="Cornflower Cape",waist="Chaac Belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 		
 
@@ -339,60 +339,40 @@ function get_sets()
        
 end
  
-  
-function precast(spell)
-        if spell.action_type == 'Magic' then
-                equip(sets.precast.FC.Standard)
-         end
-       
-        if spell.english == 'Azure Lore' then
-                equip(sets.JA.AzureLore)
-        end
-       
-        if spell.english == 'Requiescat' then
-                equip(sets.Requiescat[sets.Requiescat.index[Requiescat_ind]])
-        end
-       
-        if spell.english == 'Chant du Cygne' then
-                equip(sets.ChantDuCygne[sets.ChantDuCygne.index[ChantDuCygne_ind]])
-        end
-		
-		if spell.english == 'Savage Blade' then
-                equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
-        end
-       
-        if spell.english == 'Circle Blade' then
-                equip(sets.WS.CircleBlade)
-        end
-               
-        if spell.english == 'Expiacion' then
-                equip(sets.WS.Expiacion)
-        end
  
-        if spell.english == 'Vorpal Blade' then
+function precast(spell)
+        if spell.type == 'Magic' then
+                equip(sets.precast.FC.Standard)    
+        elseif spell.english == 'Azure Lore' then
+                equip(sets.JA.AzureLore)
+        elseif spell.english == 'Requiescat' then
+                equip(sets.Requiescat[sets.Requiescat.index[Requiescat_ind]])
+        elseif spell.english == 'Chant du Cygne' then
+                equip(sets.ChantDuCygne[sets.ChantDuCygne.index[ChantDuCygne_ind]])
+        elseif spell.english == 'Savage Blade' then
+                equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
+        elseif spell.english == 'Circle Blade' then
+                equip(sets.WS.CircleBlade)
+        elseif spell.english == 'Expiacion' then
+                equip(sets.WS.Expiacion)
+        elseif spell.english == 'Vorpal Blade' then
                 equip(sets.WS.VorpalBlade)
-        end
-       
-        if spell.english == 'Sanguine Blade' then
+        elseif spell.english == 'Sanguine Blade' then
                 equip(sets.BlueMagic.Dark)
                 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
-        end
-       
-        if spell.english == 'Box Step' then
+        elseif spell.english == 'Box Step' then
                 equip(sets.Utility.Steps)
-        end
-       
-        if spell.english == 'Realmrazer' then
+        elseif spell.english == 'Realmrazer' then
                 equip(sets.Realmrazer[sets.Realmrazer.index[Realmrazer_ind]])
-        end
-       
-        if spell.english == 'Flash Nova' then
+        elseif spell.english == 'Flash Nova' then
                 equip(sets.WS.FlashNova)
                 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
+		elseif spell.type == 'Weaponskill' then
+			equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
         end
 end
        
@@ -400,9 +380,7 @@ end
 function midcast(spell,act)
 		if spell.english =='magic' then
 		equip(sets.BlueMagic.BlueMagic)
-		end
-		
-        if spell.english == 'Vertical Cleave' or spell.english == 'Death Scissors' or spell.english == 'Empty Thrash' or spell.english == 'Dimensional Death' or spell.english == 'Quadrastrike' or spell.english == 'Bloodrake' 
+		elseif spell.english == 'Vertical Cleave' or spell.english == 'Death Scissors' or spell.english == 'Empty Thrash' or spell.english == 'Dimensional Death' or spell.english == 'Quadrastrike' or spell.english == 'Bloodrake' 
 		or spell.english == 'Disseverment' or spell.english == 'Hysteric Barrage' or spell.english == 'Frenetic Rip' or spell.english == 'Seedspray' or spell.english == 'Vanity Dive' or spell.english == 'Goblin Rush' or spell.english == 'Paralyzing Triad' or spell.english == 'Thrashing Assault' 
 			or  spell.english == 'Benthic Typhoon' or spell.english == 'Final Sting' or spell.english == 'Spiral Spin' or spell.english == 'Whirl of Rage' 
 		   or spell.english == 'Quad. Continuum' or spell.english == 'Delta Thrust' or spell.english == 'Cannonball' or spell.english == 'Glutinous Dart' or spell.english == 'Heavy Strike' or spell.english == 'Sinker Drill' then
@@ -413,9 +391,7 @@ function midcast(spell,act)
                 if buffactive['Efflux'] then
                         equip(sets.JA.Efflux)
                 end
-        end
-
-        if spell.english == 'Gates of Hades' or spell.english == 'Lunge' or spell.english == 'Swipe' or spell.english == 'Leafstorm' or spell.english == 'Firespit' or spell.english == 'Acrid Stream' or spell.english == 'Regurgitation' or spell.english == 'Corrosive Ooze' or spell.english == 'Thermal Pulse' or spell.english == 'Magic Hammer'
+        elseif spell.english == 'Gates of Hades' or spell.english == 'Lunge' or spell.english == 'Swipe' or spell.english == 'Leafstorm' or spell.english == 'Firespit' or spell.english == 'Acrid Stream' or spell.english == 'Regurgitation' or spell.english == 'Corrosive Ooze' or spell.english == 'Thermal Pulse' or spell.english == 'Magic Hammer'
         or spell.english == 'Evryone. Grudge' or spell.english == 'Water Bomb' or spell.english == 'Dark Orb' or spell.english == 'Thunderbolt' or spell.english == 'Tem. Upheaval' or spell.english == 'Embalming Earth' or spell.english == 'Foul Waters' or spell.english == 'Rending Deluge'
         or spell.english == 'Droning Whirlwind' or spell.english == 'Subduction' or spell.english == 'Anvil Lightning' or spell.english == 'Blinding Fulgor' or spell.english == 'Entomb' or spell.english == 'Palling Salvo' or spell.english == 'Scouring Spate'
         or spell.english == 'Searing Tempest' or spell.english == 'Silent Storm' or spell.english == 'Spectral Floe' or spell.english == 'Blazing Bound' 
@@ -433,17 +409,12 @@ function midcast(spell,act)
                         equip(sets.Utility.MB)
                 end
                 end
-        end
-
-	if spell.english == 'Tenebral Crush'  then
+		elseif spell.english == 'Tenebral Crush'  then
 		      equip(sets.BlueMagic.Dark)
                 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(set_combine(sets.BlueMagic.Dark, sets.Utility.Weather))
                         end
-        end
-	
-		
-    if spell.english=='Sheep Song' or spell.english=='Blood Drain' or spell.english=='Soporific' or spell.english=='Soud Blast' or spell.english=='Chaotic Eye' or  spell.english=='Digest' or spell.english=='Blank Gaze' 
+      elseif spell.english=='Sheep Song' or spell.english=='Blood Drain' or spell.english=='Soporific' or spell.english=='Soud Blast' or spell.english=='Chaotic Eye' or  spell.english=='Digest' or spell.english=='Blank Gaze' 
 	   or spell.english=='Venom Shell' or spell.english=='MP Drainkiss' or spell.english=='Stinking Gas' or spell.english=='Geist Wall' or spell.english=='Awful Eye' or spell.english=='Blood Saber' 
 	   or spell.english=='Jettatura' or spell.english=='Frightful Roar' or spell.english=='Filamented Hold' or spell.english=='Cold Wave' or spell.english=='Light of Penance' or spell.english=='1000 Needles' 
 	   or spell.english=='Feather Tickle' or spell.english=='Yawn' or spell.english=='Voracious Trunk' or spell.english=='Infrasonics' or spell.english=='Sandspray' or spell.english=='Corrosive Ooze' 
@@ -451,53 +422,34 @@ function midcast(spell,act)
 	   or spell.english=='Demoralizing Roar' or spell.english=='Auroral Drape' or spell.english=='Dream Flower' or spell.english=='Reaving Wind' or spell.english=='Mortal Ray' 
 	   or spell.english=='Absolute Terror' or spell.english=='Blistering Roar' then
 				equip(sets.BlueMagic.Debuff)
-	  end
-
-	   
-        if spell.english == 'Magic Fruit' or spell.english == 'Plenilune Embrace' or spell.english == 'Wild Carrot' or spell.english == 'Pollen' or spell.english == 'Cure III' or spell.english == 'Cure IV' or spell.english =='White Wind' then
+	  elseif spell.english == 'Magic Fruit' or spell.english == 'Plenilune Embrace' or spell.english == 'Wild Carrot' or spell.english == 'Pollen' or spell.english == 'Cure III' or spell.english == 'Cure IV' or spell.english =='White Wind' then
                 equip(sets.BlueMagic.BlueCure)
                         if spell.target.name == player.name and string.find(spell.english, 'Magic Fruit') or string.find(spell.english, 'Plenilune Embrace') or string.find(spell.english, 'Wild Carrot') or string.find(spell.english, 'Cure III') or string.find(spell.english, 'Cure IV') then
                                 equip(sets.BlueMagic.BlueCure)
                         end
                        
-        end
-              
-        if spell.english == 'Head Butt' or spell.english == 'Sudden Lunge' or spell.english == 'Tourbillion' or spell.english == 'Saurian Slide' or spell.english == 'Sweeping Gouge' or spell.english == 'Frypan' then
+        elseif spell.english == 'Head Butt' or spell.english == 'Sudden Lunge' or spell.english == 'Tourbillion' or spell.english == 'Saurian Slide' or spell.english == 'Sweeping Gouge' or spell.english == 'Frypan' then
                 equip(sets.BlueMagic.PhysStun)
-        end    
-       
-        if spell.english == 'MP Drainkiss' or spell.english == 'Digest' or spell.english == 'Blood Saber' or spell.english == 'Blood Drain' or spell.english == 'Osmosis'  or spell.english == 'Magic Barrier' or spell.english == 'Diamondhide' or spell.english == 'Metallic Body' then
+        elseif spell.english == 'MP Drainkiss' or spell.english == 'Digest' or spell.english == 'Blood Saber' or spell.english == 'Blood Drain' or spell.english == 'Osmosis'  or spell.english == 'Magic Barrier' or spell.english == 'Diamondhide' or spell.english == 'Metallic Body' then
                 equip(sets.BlueMagic.Buff)
                 if buffactive['Diffusion'] then
                         equip(sets.JA.Diffusion)
                 end
-        end
-       
-        if spell.english == 'Fantod' or spell.english =='Wind Breath' or spell.english =='Exuviation' then
-                equip(sets.BlueMagic.Enmity)
-               
-        end
-       
-        if spell.english == 'Erratic Flutter' or spell.english == 'Nat. Meditation' or spell.english == 'Uproot' or spell.english == 'Saline Coat' or spell.english == 'Barrier Tusk'
+        elseif spell.english == 'Fantod' or spell.english =='Wind Breath' or spell.english =='Exuviation' then
+                equip(sets.BlueMagic.Enmity)               
+        elseif spell.english == 'Erratic Flutter' or spell.english == 'Nat. Meditation' or spell.english == 'Uproot' or spell.english == 'Saline Coat' or spell.english == 'Barrier Tusk'
 		or spell.english=='Metallic Body' or spell.english=='Diamondhide' or spell.english=='Reactor Cool'  or spell.english=='Plasma Charge' or spell.english=='Magic Barrier' or spell.english=='Orcish Counterstance'
 		or spell.english=='Pyric Bulwark' or spell.english=='Carcharian Verve' or spell.english == 'Battery Charge' or spell.engligh == 'Refresh' or spell.english =='Occultation' then
                 equip(sets.BlueMagic.Buff)
-        end
-		
-		if spell.english =='Poison Breath' or spell.english =='Magnetite Cloud' or spell.english =='Self Destruct' or spell.english =='Hecatomb Wave' or spell.english =='Radiant Breath' or 
+       elseif spell.english =='Poison Breath' or spell.english =='Magnetite Cloud' or spell.english =='Self Destruct' or spell.english =='Hecatomb Wave' or spell.english =='Radiant Breath' or 
         spell.english =='Flying Hip Press' or spell.english =='Bad Breath' or spell.english =='Frost Breath' or spell.english =='Heat Breath' or spell.english =='Final Sting' or 
         spell.english =='Thunder Breath' or spell.english =='Wind Breath' then
 				equip(sets.BlueMagic.Breath)
-		end
-
-       
-        if spell.english == 'Cocoon' or spell.english == 'Mighty Guard' or spell.english == 'Harden Shell' or spell.english == 'Animating Wail' or spell.english == 'Battery Charge' or spell.english == 'Nat. Meditation' or spell.english == 'Carcharian Verve' or spell.english == 'O. Counterstance' or spell.english == 'Barrier Tusk' or spell.english == 'Saline Coat' or spell.english == 'Regeneration' or spell.english == 'Erratic Flutter' then
+		elseif spell.english == 'Cocoon' or spell.english == 'Mighty Guard' or spell.english == 'Harden Shell' or spell.english == 'Animating Wail' or spell.english == 'Battery Charge' or spell.english == 'Nat. Meditation' or spell.english == 'Carcharian Verve' or spell.english == 'O. Counterstance' or spell.english == 'Barrier Tusk' or spell.english == 'Saline Coat' or spell.english == 'Regeneration' or spell.english == 'Erratic Flutter' then
                 if buffactive['Diffusion'] then
                         equip(sets.JA.Diffusion)
                 end
-        end
-				
-	    if spell.english == 'Utsusemi: Ichi' then
+        elseif spell.english == 'Utsusemi: Ichi' then
                 equip(sets.NINMagic.Utsusemi)
                         if buffactive['Copy Image (3)'] then
                                 send_command('@wait 0.3; input //cancel Copy Image*')
@@ -511,9 +463,7 @@ function midcast(spell,act)
                         if buffactive['Copy Image'] then
                                 send_command('@wait 0.3; input //cancel Copy Image*')
                         end
-        end
- 
-        if spell.english == 'Utsusemi: Ni'  or spell.english == 'Utsusemi: San' then
+        elseif spell.english == 'Utsusemi: Ni'  or spell.english == 'Utsusemi: San' then
                 equip(sets.NINMagic.Utsusemi)
         end
 end	

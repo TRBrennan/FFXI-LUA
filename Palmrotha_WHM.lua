@@ -16,13 +16,13 @@ function get_sets()
 		
 	sets.aftercast_Idle_refresh ={ 
     main="Bolelabunga",
-    sub="Genbu's Shield",
+    sub="Genmei Shield",
     ammo="Incantor Stone",
-    head="Inyanga Tiara",
+    head="Inyanga Tiara +2",
     body="Ebers Bliaud +1",
-    hands="Inyanga Dastanas",
+    hands={ name="Chironic Gloves", augments={'Pet: Attack+25 Pet: Rng.Atk.+25','Blood Pact Dmg.+1','"Refresh"+1',}},
     legs="Assid. Pants +1",
-    feet="Inyanga Crackows",
+    feet="Inyan. Crackows +2",
     neck="Loricate Torque +1",
     waist="Fucho-no-Obi",
     left_ear="Lifestorm Earring",
@@ -40,7 +40,7 @@ function get_sets()
     sub="Sors Shield",
     ammo="Incantor Stone",
     head="Nahtirah Hat",
-    body="Shango Robe",
+    body="Inyanga Jubbah +1",
     hands={ name="Telchine Gloves", augments={'"Fast Cast"+3',}},
     legs="Assid. Pants +1",
     feet="Regal Pumps",
@@ -49,15 +49,13 @@ function get_sets()
     left_ear="Lifestorm Earring",
     right_ear="Spellbr. Earring",
     left_ring="Prolix Ring",
-    right_ring="Sirona's Ring",
-    back="Swith Cape",
-}
+    right_ring="Kishar Ring",
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},}
 		
-	sets.precast_FastCast =  {  main="Marin Staff +1",
-    sub="Vivid Strap",
+	sets.precast_FastCast =  {
     ammo="Incantor Stone",
     head="Nahtirah Hat",
-    body="Shango Robe",
+    body="Inyanga Jubbah +1",
     hands={ name="Telchine Gloves", augments={'"Fast Cast"+3',}},
     legs="Assid. Pants +1",
     feet="Regal Pumps",
@@ -66,9 +64,8 @@ function get_sets()
     left_ear="Lifestorm Earring",
     right_ear="Spellbr. Earring",
     left_ring="Prolix Ring",
-    right_ring="Sirona's Ring",
-    back="Swith Cape",
-
+    right_ring="Kishar Ring",
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 	
 	sets.precast_Haste = {    main="Queller Rod",
@@ -83,9 +80,9 @@ function get_sets()
     waist="Channeler's Stone",
     left_ear="Loquac. Earring",
     right_ear="Enchntr. Earring +1",
-    left_ring="Lebeche Ring",
+    left_ring="Prolix Ring",
     right_ring="Kishar Ring",
-       back="Solemnity Cape"
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 		
 	sets.midcast_Haste = {  main="Bolelabunga",
@@ -102,7 +99,7 @@ function get_sets()
     right_ear="Enchntr. Earring +1",
     left_ring="Sangoma Ring",
     right_ring="Kishar Ring",
-       back="Solemnity Cape"
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 	
 	sets.precast_Devotion = {}
@@ -115,7 +112,8 @@ function get_sets()
 	sets.midcast_EnfeeblingMagic = {main="Grioavolr",sub="Mephitis grip",ammo="Hydrocera",
 		head="Befouled crown",neck="Imbodla necklace",ear1="Lifestorm Earring",ear2="Psystorm Earring",
 		body="Chironic doublet",hands="Lurid mitts",ring1="Weatherspoon ring",ring2="Vertigo ring",
-		back="Refraction cape",waist="Rumination sash",legs="Chironic hose",feet="Medium's sabots"}
+		back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
+		waist="Rumination sash",legs="Chironic hose",feet="Medium's sabots"}
 	
 	sets.midcast_BarSpells_Solace = {
     main="Beneficus",
@@ -132,7 +130,7 @@ function get_sets()
     right_ear="Enchntr. Earring +1",
     left_ring="Rahab Ring",
     right_ring="Kishar Ring",
-    back="Solemnity Cape"
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 		
 	sets.midcast_Barspells_noSolace = sets.midcast_BarSpells_Solace
@@ -151,7 +149,7 @@ function get_sets()
     right_ear="Enchntr. Earring +1",
     left_ring="Sangoma Ring",
     right_ring="Kishar Ring",
-       back="Solemnity Cape"
+	back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 	
 	sets.midcast_MAB = {main="Grioavolr",sub="Niobid strap",ammo="Pemphredo tathlum",
@@ -167,7 +165,7 @@ function get_sets()
 	sets.midcast_Regen = {    main="Bolelabunga",
     sub="Sors Shield",
     ammo="Homiliary",
-    head="Inyanga Tiara",
+    head="Inyanga Tiara +2",
     Body ="Piety Briault",
     hands="Ebers Mitts",
     legs="Theophany Pantaloons +1",
@@ -178,7 +176,7 @@ function get_sets()
     right_ear="Enchntr. Earring +1",
     left_ring="Sangoma Ring",
     right_ring="Kishar Ring",
-    back="Solemnity Cape"
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 	sets.midcast_Auspice = {feet="Ebers Duckbills"}
 	
@@ -196,7 +194,7 @@ function get_sets()
     right_ear="Glorious Earring",
     left_ring="Lebeche Ring",
     right_ring="Sirona's Ring",
-       back="Solemnity Cape"
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 	
 	sets.midcast_Curaga = {    main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
@@ -213,7 +211,7 @@ function get_sets()
     right_ear="Glorious Earring",
     left_ring="Lebeche Ring",
     right_ring="Sirona's Ring",
-       back="Solemnity Cape"
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 		
 	sets.midcast_Stoneskin = sets.midcast_EnhancingMagic
@@ -232,7 +230,7 @@ function get_sets()
     right_ear="Loquac. Earring",
     left_ring="Ephedra Ring",
     right_ring="Ephedra Ring",
-       back="Solemnity Cape"
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 
 	sets.midcast_Cursna = {    main="Queller Rod",
@@ -249,7 +247,7 @@ function get_sets()
     right_ear="Loquac. Earring",
     left_ring="Ephedra Ring",
     right_ring="Ephedra Ring",
-    back="Solemnity Cape"
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 	
 

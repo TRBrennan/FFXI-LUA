@@ -99,7 +99,7 @@ function get_sets()
         sets.Requiescat.index = {'Attack'}
         Requiescat_ind = 1
        
-        sets.Requiescat.Attack = {ammo="Seething Bomblet +1",
+        sets.Requiescat.Attack = {ammo="Seeth. Bomblet +1",
                                           head="Carmine Mask +1",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Telos Earring",
                                           body="Adhemar Jacket",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Ilabrat Ring",ring2="Epona's ring",
                                           back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
@@ -209,9 +209,10 @@ function get_sets()
 		
 
 		sets.BlueMagic.BlueMagic = {ammo="Pemphredo Tathlum",
-                                   Head ="Jhakri Coronal +1",neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Regal Earring",
-                                 body="Jhakri Robe +1",hands="Jhakri Cuffs +2", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Eschan Stone",
-                                 back="Cornflower cape",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1" }
+                                   head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
+								   neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Regal Earring",
+                                 body="Amalric Doublet",hands="Jhakri Cuffs +2", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Eschan Stone",
+                                 back="Cornflower cape",legs="Amalric Slops",feet="Amalric Nails" }
 
         
 		sets.BlueMagic.PhysStun = {ammo ="Floestone",

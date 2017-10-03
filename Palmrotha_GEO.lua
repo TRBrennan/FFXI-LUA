@@ -47,11 +47,11 @@ function get_sets()
     -- Fast cast sets for spells
 
     sets.precast.FastCast = {
-		main="Sucellus", sub="Genbu's Shield",
+		main="Sucellus", sub="Genmei Shield",
 		range="Dunna",
         head="Nahtirah Hat",
 		neck="Voltsurge Torque",ear1="Etiolation Earring", ear2="Loquacious Earring",
-        body="Shango Robe", ring2="Prolix ring", hands="Telchine Gloves",ring1="Prolix Ring",
+        body="Shango Robe", ring2="Prolix ring", hands="Telchine Gloves",ring1="Kishar Ring",
         back="Lifestream Cape",waist="Channeler's Stone",legs="Geo. Pants +1",feet="Regal Pumps"
 		}
 
@@ -183,29 +183,29 @@ function get_sets()
 	
     -- Idle sets
 
-    sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
+    sets.idle = {main="Bolelabunga", sub="Genmei Shield", range="Dunna",head="Azimuth hood +1",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Azimuth Coat +1",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geo. Sandals +3"}
 
-    sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
+    sets.idle.PDT = {main="Bolelabunga", sub="Genmei Shield", range="Dunna",head="Azimuth hood +1",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Handler's Earring",
         body="Azimuth Coat +1",hands="Geo. Mitaines +2", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geo. Sandals +3"}
 
     -- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = {--main="Sucellus", 
-		main = "Solstice",sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
+		main = "Solstice",sub="Genmei Shield", range="Dunna",head="Azimuth hood +1",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Handler's Earring",
         body="Telchine Chasuble",hands="Geo. Mitaines +2", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Lifestream Cape",waist="Isa Belt",legs="Telchine Braconi",feet="Telchine Pigaches"}
+        back="Nantosuelta's Cape",waist="Isa Belt",legs="Telchine Braconi",feet="Telchine Pigaches"}
    
     sets.idle.PDT.Pet = {--main="Sucellus",
 		main = "Solstice",
-		sub="Genbu's Shield", range="Dunna",head="Azimuth hood +1",
+		sub="Genmei Shield", range="Dunna",head="Azimuth hood +1",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Handler's Earring",
         body="Telchine Chasuble",hands="Geo. Mitaines +2", ring1="Defending Ring", ring2="Vertigo Ring",
-        back="Lifestream Cape",waist="Isa Belt",legs="Telchine Braconi",feet="Telchine Pigaches"}
+        back="Nantosuelta's Cape",waist="Isa Belt",legs="Telchine Braconi",feet="Telchine Pigaches"}
 
     -- .Indi sets are for when an Indi-spell is active.
     sets.idle.Indi = set_combine(sets.idle, {})
@@ -213,12 +213,12 @@ function get_sets()
     sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {})
     sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {})
 
-    sets.idle.Town = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
+    sets.idle.Town = {main="Bolelabunga", sub="Genmei Shield", range="Dunna",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geo. Sandals +3"}
 
-    sets.idle.Weak = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
+    sets.idle.Weak = {main="Bolelabunga", sub="Genmei Shield", range="Dunna",
         neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Zennaroi Earring",
         body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geo. Sandals +3"}
@@ -246,7 +246,7 @@ function get_sets()
 		legs="Jhakri Slops +1",
 		feet="Jhakri Pigaches +1",
 		ring1="Enlivened Ring", ring2="Petrov Ring",
-        back="Lifestream Cape",waist="Fucho-no-obi"}
+        back="Nantosuelta's Cape",waist="Fucho-no-obi"}
 	
 	
 end
@@ -620,7 +620,7 @@ end
 -------------------------------------------------------------------------------------------------------------------
 
 function job_get_spell_map(spell, default_spell_map)
-    if spell.action_type == 'Magic' then
+    if spell.type == 'Magic' then
         if spell.skill == 'Enfeebling Magic' then
             if spell.type == 'WhiteMagic' then
                 return 'MndEnfeebles'
@@ -672,7 +672,7 @@ function display_current_job_state(eventArgs)
 end
 
 function job_post_midcast(spell, action, spellMap, eventArgs)
-	if spell.action_type == "Magic" then
+	if spell.type == "Magic" then
         if spell.element == world.weather_element or spell.element == world.day_element then
             equip(sets.obi[spell.element])
         end

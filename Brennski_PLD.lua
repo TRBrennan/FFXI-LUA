@@ -40,8 +40,8 @@ function get_sets()
         --TP Sets--
         sets.TP = {}
  
-           sets.TP.index = { 'Tank','Standard'}
-                --1=Tank ,2 = Standard--
+           sets.TP.index = { 'Tank','Standard','DW'}
+                --1=Tank ,2 = Standard, 3= DW--
 				
                 TP_ind = 1				                                                                                         
 				sets.TP.Tank = { ammo="Staunch Tathlum",
@@ -60,9 +60,23 @@ function get_sets()
 									
 				sets.TP.Standard = {    ammo="Ginsen",
 										head="Flam. Zucchetto +1",
-										body="Valorous Mail",
+										body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},
 										hands="Flam. Manopolas +1",
 										legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
+										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
+										neck="Lissome Necklace",
+										waist="Kentarch Belt +1",
+										left_ear="Telos Earring",
+										right_ear="Cessance Earring",
+										left_ring="Petrov Ring",
+										right_ring="Chirich Ring",
+										back="Grounded Mantle",
+									}
+				sets.TP.DW = {    ammo="Ginsen",
+										head="Flam. Zucchetto +1",
+										body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},
+										hands="Flam. Manopolas +1",
+										legs="Carmine Cuisses +1",
 										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
 										neck="Lissome Necklace",
 										waist="Kentarch Belt +1",
@@ -101,13 +115,13 @@ function get_sets()
         SavageBlade_ind = 1
        
            
-		 sets.SavageBlade.Attack = {ammo="Sapience Orb",
-                                         ead={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}}, 
+		 sets.SavageBlade.Attack = {ammo="Floestone",
+                                    head={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}}, 
 									neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
                                     body={ name="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}},hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},
 									ring1="Niqmaddu Ring",ring2="Regal Ring",
-                                     back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
-									 waist="Grunfeld Rope",legs={ name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}},feet="Sulevia's Leggings +2"}
+                                    back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
+									waist="Grunfeld Rope",legs={ name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}},feet="Sulevia's Leggings +2"}
                                                            
         sets.ChantDuCygne = {}
        
@@ -115,7 +129,7 @@ function get_sets()
         ChantDuCygne_ind = 1
        
          sets.ChantDuCygne.Attack = {ammo="Jukukik Feather",
-                                            head="Sulevia's Mask +2",
+                                            head="Flam. Zucchetto +1",
 											neck="Fotia gorget",
 											ear1="Telos Earring",
 											ear2="Moonshade Earring",
@@ -276,7 +290,7 @@ function precast(spell)
                 equip(sets.Requiescat[sets.Requiescat.index[Requiescat_ind]])
         end
        
-        if spell.english == 'Chant du Cygne' then
+        if spell.english == 'Chant du Cygne' or spell.english == 'Resolution' then
                 equip(sets.ChantDuCygne[sets.ChantDuCygne.index[ChantDuCygne_ind]])
         end
 		

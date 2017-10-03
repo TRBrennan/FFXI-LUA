@@ -102,8 +102,7 @@ function get_sets()
 								 neck="Incanter's Torque",ear2="Dignitary's Earring", ear1="Regal Earring",
                                  body="Atrophy Tabard +2",hands="Kaykaus Cuffs", 
 								 ring1="Stikini Ring", ring2 ="Kishar Ring", waist ="Luminary Sash",
-                                 back="Sucellos's Cape",legs ="Chironic Hose",feet="Skaoi Boots"}
-								 
+                                 back="Sucellos's Cape",legs ="Chironic Hose",feet="Skaoi Boots"}								 
 								 
 			sets.Enfeebling.Pot = {main="Grioavolr", sub = "Enki Strap",ammo="Regal Gem",
                                  head="Carmine Mask +1",neck="Imbodla Necklace",ear2="Dignitary's Earring", ear1="Regal Earring",
