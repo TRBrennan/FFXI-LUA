@@ -19,27 +19,6 @@ function get_sets()
  
         end    
 		
-		--Weapons--
-		
-		sets.Weapons = {}
-		
-		sets.Weapons.Index = {'GS', 'GA', 'Polearm','AxeShield', 'SwordShield', 'ClubShield', 'DaggerShield'}
-		Weapons_ind = 1
-		
-		sets.Weapons.GS = {main ="Ragnarok", sub ="Utu Grip"}
-		
-		sets.Weapons.GA = {main ="Chango", sub ="Utu Grip"}
-		
-		sets.Weapons.Polearm = {main ="Blurred Lance", sub ="Utu Grip"}
-		
-		sets.Weapons.AxeShield = {main ="Purgation", sub ="Blurred Shield"}
-		
-		sets.Weapons.SwordShield = {main ="Tanmogayi +1", sub ="Blurred Shield"}
-		
-		sets.Weapons.ClubShield = {main ="Loxotic Mace", sub ="Blurred Shield"}
-		
-		sets.Weapons.ClubShield = {main ="Ternion Dagger +1", sub ="Blurred Shield"}
-               
         --Idle Sets--  
         sets.Idle = {}
        
@@ -358,11 +337,6 @@ function self_command(command)
                 if Idle_ind > #sets.Idle.index then Idle_ind = 1 end
                 send_command('@input /echo <----- Idle Set changed to '..sets.Idle.index[Idle_ind]..' ----->')
                 equip(sets.Idle[sets.Idle.index[Idle_ind]])
-		elseif command == 'toggle Weapons' then
-                Weapons_ind = Weapons_ind +1
-               if Weapons_ind > #sets.Weapons.Index then Weapons_ind = 1 end
-                send_command('@input /echo <----- Weapons Set changed to '..sets.Weapons.Index[Weapons_ind]..' ----->')
-                equip(sets.Weapons[sets.Weapons.Index[Weapons_ind]])
         elseif command == 'equip TP set' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
         elseif command == 'equip Idle set' then
