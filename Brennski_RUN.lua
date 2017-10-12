@@ -32,7 +32,7 @@ function get_sets()
                 Idle_ind = 1
                                
                 sets.Idle.Standard = {ammo="Homiliary",
-                                      head={ name="Herculean Helm", augments={'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},neck="Sanctity Necklace", ear1="Genmei earring",ear2="Infused Earring",
+                                      head={ name="Herculean Helm", augments={'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},neck="Sanctity Necklace", right_ear="Genmei earring",left_ear="Infused Earring",
                                       body="Runeist's Coat +3",hands="Regal Gauntlets",
 									  ring1="Defending ring",right_ring="Vocane Ring",
                                       back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},
@@ -77,8 +77,8 @@ function get_sets()
 				sets.TP.Standard = {ammo="Yamarang",
                                     head="Dampening Tam", 
 									neck="Lissome necklace", 
-									ear2="Telos Earring", 
-									ear1="Sherida earring", 
+									left_ear="Telos Earring", 
+									right_ear="Sherida earring", 
                                     body="Ashera Harness",
 									hands="Adhemar Wristbands",
 									left_ring="Epona's Ring",
@@ -91,8 +91,8 @@ function get_sets()
 				sets.TP.TankTP = { ammo="Yamarang",
                                     head="Dampening Tam", 
 									neck="Lissome necklace", 
-									ear2="Telos Earring", 
-									ear1="Sherida earring", 
+									left_ear="Telos Earring", 
+									right_ear="Sherida earring", 
                                     body="Ashera Harness",
 									hands="Adhemar Wristbands",
 									left_ring="Ilabrat Ring",
@@ -200,7 +200,7 @@ function get_sets()
                 Requiescat_ind = 1
                
                 sets.Requiescat.Attack = {ammo="Seeth. Bomblet +1",
-                                          head="Adhemar Bonnet",neck="Fotia gorget",ear1="Brutal earring",ear2="Moonshade earring",
+                                          head="Adhemar Bonnet",neck="Fotia gorget",right_ear="Brutal earring",left_ear="Moonshade earring",
                                           body="Adhemar Jacket",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},right_ring="Niqmaddu Ring",left_ring="Regal ring",
                                           back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 										  waist="Fotia belt",legs="Samnunha Tights",feet={ name="Herculean Boots", augments={'Attack+30','"Counter"+1','STR+8','Accuracy+10',}}}
@@ -232,7 +232,7 @@ function get_sets()
        
                 sets.SavageBlade.Attack = {ammo="Knobkierrie",
                                           head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
-										  neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
+										  neck="Caro Necklace",right_ear="Ishvara Earring",left_ear="Moonshade Earring",
                                           body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','Weapon skill damage +2%','STR+1','Attack+4',}},
 										  hands="Meg. Gloves +2",right_ring="Niqmaddu Ring",left_ring="Regal Ring",
                                             back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}},
@@ -242,23 +242,23 @@ function get_sets()
                 --Utility Sets--
                 sets.Utility = {}
                                                                        
-                sets.Utility.Phalanx = {ammo ="Sapience Orb", head="Futhark bandeau +1",neck="Incanter's Torque",ear2 ="Andoaa Earring", ear1="Genmei earring",
+                sets.Utility.Phalanx = {ammo ="Sapience Orb", head="Futhark bandeau +1",neck="Incanter's Torque",left_ear ="Andoaa Earring", right_ear="Genmei earring",
                                             body="Emet harness +1",hands="Regal Gauntlets", waist ="Olympus Sash", ring1="Stikini Ring", right_ring='Supershear Ring',
                                             legs="Carmine Cuisses +1",feet="Erilaz Greaves +1", back="Evasionist's cape"}
                                                          
-                sets.Utility.Regen = {head="Runeist Bandeau",neck="Incanter's Torque",ear1="Genmei earring",ear2="Augment. earring",
+                sets.Utility.Regen = {head="Runeist Bandeau",neck="Incanter's Torque",right_ear="Genmei earring",left_ear="Augment. earring",
                                       body="Futhark coat +1",hands="Runeist's Mitons +3",ring1="Rahab ring", right_ring='Supershear Ring',
                                       back="Moonbeam Cape",waist="Pythia sash +1",legs="Futhark trousers",feet="Runeist bottes"}
                                                          
-                sets.Utility.SID = {ammo ="Staunch Tathlum", head="Herculean Helm",neck="Incanter's Torque",ear1="Genmei earring", ear2 = "Halasz Earring",
+                sets.Utility.SID = {ammo ="Staunch Tathlum", head="Herculean Helm",neck="Incanter's Torque",right_ear="Genmei earring", left_ear = "Halasz Earring",
                                          body="Emet Harness +1",hands="Herculean Gloves",ring1="Evanescence Ring", right_ring='Supershear Ring',
                                          back="Evasionist cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Erilaz Greaves +1" }
 										 
 				sets.Utility.Enmity = {ammo="Sapience Orb",head="Rabid Visor",neck="Unmoving Collar",right_ear ="Friomisi Earring", left_ear="Odnowa Earring +1",
                                             body="Emet harness +1",hands="Kurys Gloves", waist ="Trance belt", ring1='Supershear Ring', right_ring='Petrov Ring',
-                                            legs="Erilaz Leg Guards +1",feet="Ashoi Leggings", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},}						
+                                            legs="Erilaz Leg Guards +1",feet="Ahosi Leggings", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},}						
 				
-				sets.Utility.Enhancing = {ammo="Sapience Orb",head="Erilaz Galea +1",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear1="Genmei earring",
+				sets.Utility.Enhancing = {ammo="Sapience Orb",head="Erilaz Galea +1",neck="Incanter's Torque",right_ear ="Andoaa Earring", right_ear="Genmei earring",
                                             body="Emet harness +1",hands="Regal Gauntlets", waist ="Olympus Sash", ring1='"Stikini Ring"', right_ring='Supershear Ring',
                                             legs="Carmine Cuisses +1",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},}	
 				
@@ -277,7 +277,7 @@ function get_sets()
 												back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},
 											}
 				
-				sets.Utility.Refresh =	{ammo="Sapience Orb",head="Erilaz Galea +1",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear1="Genmei earring",
+				sets.Utility.Refresh =	{ammo="Sapience Orb",head="Erilaz Galea +1",neck="Incanter's Torque",right_ear ="Andoaa Earring", right_ear="Genmei earring",
                                             body="Emet harness +1",hands="Regal Gauntlets", waist ="Gishdubar Sash", ring1='"Stikini Ring"', right_ring='Supershear Ring',
                                             legs="Carmine Cuisses +1",feet="Erilaz Greaves +1", back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},}
 				
@@ -297,8 +297,8 @@ function get_sets()
                 sets.JA.Lunge = {ammo="Seeth. Bomblet +1",
                                  head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 								 neck="Sanctity Necklace",
-								 ear2="Friomisi earring", 
-								 ear1="Hecate's Earring",
+								 left_ear="Friomisi earring", 
+								 right_ear="Hecate's Earring",
                                  body="Samnuha Coat",
 								 hands="Leyline Gloves",
 								 ring1="Acumen Ring", 
@@ -326,17 +326,17 @@ function get_sets()
        
                 sets.precast.FC = {}
        
-                sets.precast.FC.Standard = {ammo="Sapience Orb",head="Carmine Mask +1",neck="Voltsurge Torque", ear1="Loquac. Earring",ear2="Etiolation Earring",
+                sets.precast.FC.Standard = {ammo="Sapience Orb",head="Carmine Mask +1",neck="Voltsurge Torque", right_ear="Loquac. Earring",left_ear="Etiolation Earring",
                                             body="Ashera Harness",hands="Regal Gauntlets", waist ="Flume Belt +1",left_ring="Defending Ring",right_ring="Vocane Ring",
                                             legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},feet="Carmine Greaves +1", 
 											back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},}
                                                                        
-                sets.precast.FC.Enhancing = {ammo="Sapience Orb",head="Carmine Mask +1",neck="Voltsurge Torque", ear1="Loquac. Earring", ear2="Etiolation Earring",
+                sets.precast.FC.Enhancing = {ammo="Sapience Orb",head="Carmine Mask +1",neck="Voltsurge Torque", right_ear="Loquac. Earring", left_ear="Etiolation Earring",
                                              body="Ashera Harness",hands="Regal Gauntlets", waist ="Flume Belt +1",left_ring="Defending Ring",right_ring="Vocane Ring",
                                              legs="Futhark trousers",feet="Carmine Greaves +1",
 											 back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},}
 				
-				sets.precast.FC.Enmity = {ammo="Sapience Orb",head="Carmine Mask +1",neck="Unmoving Collar", ear1="Loquac. Earring", ear2="Etiolation Earring",
+				sets.precast.FC.Enmity = {ammo="Sapience Orb",head="Carmine Mask +1",neck="Unmoving Collar", right_ear="Loquac. Earring", left_ear="Etiolation Earring",
                                             body="Ashera Harness",hands="Regal Gauntlets", waist ="Flume Belt +1",left_ring="Defending Ring",right_ring="Vocane Ring",
                                             legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},feet="Carmine Greaves +1", 
 											back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},}							 

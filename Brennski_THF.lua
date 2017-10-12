@@ -86,8 +86,7 @@ function get_sets()
                                                          
 									
        --Weaponskill Sets--
-        sets.WS = {}
-       
+        sets.WS = {}      
        
         sets.WS.Rudras = {ammo="Yetshila",
                                 head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},

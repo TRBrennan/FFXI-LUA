@@ -69,7 +69,7 @@ function get_sets()
                                     head="Flam. Zucchetto +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
                                     body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},hands="Flam. Manopolas +1",ring1="Niqmaddu Ring",ring2="Petrov Ring",
                                     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},waist="Ioskeha Belt",
-									 legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
+									 legs="Pummeler's cuisses +3",
 									feet="Pummeler's Calligae +3"}
                                                        
                                                        
@@ -78,7 +78,7 @@ function get_sets()
 										neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
 										body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},hands="Flam. Manopolas +1",ring1="Niqmaddu Ring",ring2="Petrov Ring",
                                         back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
-										 waist="Ioskeha Belt",legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
+										 waist="Ioskeha Belt",legs="Pummeler's cuisses +3",
 										feet="Pummeler's Calligae +3"}
        
                 sets.TP.AccuracyFull = {ammo="Seeth. Bomblet +1",
@@ -86,7 +86,7 @@ function get_sets()
 										,neck="Sanctity Necklace", ear1="Dignitary's Earring", ear2="Telos Earring",
                                         body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},hands="Flam. Manopolas +1",ring1="Cacoethic Ring",ring2="Regal Ring",
                                         back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
-										 waist="Ioskeha Belt",legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
+										 waist="Ioskeha Belt",legs="Pummeler's cuisses +3"7,
 										feet="Pummeler's Calligae +3"}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
