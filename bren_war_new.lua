@@ -2,7 +2,24 @@
 --Idle set toggle input: //gs c toggle Idle set----1 Standard, 2 DT--
 enmity_spells = S{"Provoke","Animated Flourish"}
 function get_sets()
+	 send_command('bind f10 gs c toggle Idle set')
+	 send_command('bind f9 gs c toggle TP set')
+	 send_command('bind f11 gs c equip DT set')
+         function file_unload()
+    
+        send_command('unbind ^f9')
+        send_command('unbind ^f10')
+		send_command('unbind ^f11')
+
+        send_command('unbind !f9')
+        send_command('unbind !f10')
+		send_command('unbind !f11')
 		
+        send_command('unbind f9')
+        send_command('unbind f10')
+		send_command('unbind f11')
+ 
+        end
 	--Idle Sets--	
 	sets.Idle = {}
 	
@@ -16,24 +33,28 @@ function get_sets()
 	TPBonus = 0
 	
 	DA_Back = {name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}}
-	WSD_Back = {name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Accuracy+10','Weapon skill damage +10%',}}
-	Crit_Back = {name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','Crit.hit rate+10',}}
-	STR_Back = {name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
-	Acc_Head = {name="Valorous Mask", augments={'Accuracy+25 Attack+25','Crit. hit damage +1%','DEX+7','Accuracy+15','Attack+10',}}
+	WSD_Back = {name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+5','Weapon skill damage +10%',}}
+	Crit_Back = {name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}}
+	STR_Back = {name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+5','Weapon skill damage +10%',}}
+	Acc_Head = {name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}}
+	TH_Head = {name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}}
 	WS_Head = {name="Valorous Mask", augments={'Accuracy+25 Attack+25','Enmity+2','STR+12','Accuracy+6',}}
 	WSD_Head = {name="Valorous Mask", augments={'Accuracy+17 Attack+17','Weapon skill damage +4%','STR+8','Accuracy+9','Attack+2',}}
-	TP_Legs={name="Odyssean Cuisses", augments={'Accuracy+18 Attack+18','"Store TP"+6','AGI+7','Accuracy+8',}}
-	WSD_Legs={name="Odyssean Cuisses", augments={'Accuracy+29','Weapon skill damage +5%','Attack+5',}}
+	TP_Legs = {name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}}
+	TP_Body = {name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}}
+	WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
+	WSD_Hands ={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}}
 	
 	sets.Idle.Standard = {ammo="Staunch Tathlum",
-			    head=Acc_Head,neck="Loricate torque +1", ear1="Hearty earring", ear2="Sanare earring",
-		        body="Souveran cuirass +1",hands="Sulevia's gauntlets +2",ring1="Moonbeam ring",ring2="Defending Ring",
-			    back="Agema cape",waist="Asklepian belt",legs="Sulevia's cuisses +2",feet="Hermes' sandals"}
+			    head=TH_Head,neck="Sanctity Necklace", 
+				ear1="Genmei earring", ear2="Infused Earring",
+                body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring2="Defending ring",ring1="Vocane Ring",
+                waist="Flume Belt +1",legs="Sulevia's Cuisses +2",feet="Hermes' Sandals", back ="Moonbeam Cape"}
 						  
 	sets.Idle.DT = {ammo="Staunch Tathlum",
-			    head="Sulevia's mask +1",neck="Loricate torque +1", ear1="Hearty earring", ear2="Sanare earring",
-		        body="Souveran cuirass +1",hands="Sulevia's gauntlets +2",ring1="Moonbeam ring",ring2="Defending Ring",
-			    back="Agema cape",waist="Asklepian belt",legs="Sulevia's cuisses +2",feet="Amm greaves"}							
+			    head="Sulevia's Mask +2",neck="Loricate Torque +1", ear1="Genmei earring", ear2="Hearty Earring",
+                body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending Ring",
+                back="Moonbeam Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}}							
 							
 							
 	
@@ -47,23 +68,23 @@ function get_sets()
 	TP_ind = 1
 	
 	sets.TP.Standard = {ammo="Yetshila",
-			    head="Flamma zucchetto +1",neck="Ainia collar", ear1="Brutal earring", ear2="Telos earring",
-			    body="Emicho haubert +1",hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Petrov ring",
-			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Pummeler's calligae +3"}
+			    head="Flamma zucchetto +1",neck="Lissome Necklace", ear1="Brutal earring", ear2="Telos earring",
+			    body=TP_Body,hands="Flam. Manopolas +1",ring1="Niqmaddu ring",ring2="Petrov ring",
+			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 						
 	sets.TP.OH = {ammo="Ginsen",
-			    head="Argosy celata +1",neck="Ainia collar", ear1="Brutal earring", ear2="Cessance earring",
+			    head="Argosy celata +1",neck="Lissome Necklace", ear1="Brutal earring", ear2="Cessance earring",
 			    body="Valorous mail",hands="Argosy mufflers +1",ring1="Petrov ring",ring2="Chirich ring",
 			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 				
 	sets.TP.Chango = {ammo="Ginsen",
 			    head="Flamma zucchetto +1",neck="Lissome necklace", ear1="Brutal earring", ear2="Cessance earring",
-			    body="Emicho haubert +1",hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Hetairoi ring",
+			    body=TP_Body,hands="Flam. Manopolas +1",ring1="Niqmaddu ring",ring2="Hetairoi ring",
 			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 				
 	sets.TP.H2H = {ammo="Yetshila",
 			    head="Flamma zucchetto +1",neck="Lissome necklace", ear1="Brutal earring", ear2="Cessance earring",
-			    body="Emicho haubert +1",hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Hetairoi ring",
+			    body=TP_Body,hands="Flam. Manopolas +1",ring1="Niqmaddu ring",ring2="Hetairoi ring",
 			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 
 	sets.TP.Zulfiqar = {ammo="Ginsen",
@@ -74,27 +95,27 @@ function get_sets()
 					
 	sets.TP.AccuracyLite = {ammo="Ginsen",
 			    head=Acc_Head,neck="Lissome necklace", ear1="Dignitary's earring", ear2="Telos earring",
-			    body="Emicho haubert +1",hands="Emicho Gauntlets +1",ring1="Ramuh ring +1",ring2="Chirich ring",
-			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Valorous greaves"}
+			    body=TP_Body,hands="Flam. Manopolas +1",ring1="Regal Ring",ring2="Chirich ring",
+			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's Calligae +3""}
 	
 	sets.TP.AccuracyFull = {ammo="Seething bomblet +1",
 			    head=Acc_Head,neck="Subtlety spectacles", ear1="Dignitary's earring", ear2="Telos earring",
-			    body="Emicho haubert +1",hands="Emicho Gauntlets +1",ring1="Ramuh ring +1",ring2="Chirich ring",
-			    back=DA_Back,waist="Kentarch belt +1",legs=TP_Legs,feet="Valorous greaves"}
+			    body=TP_Body,hands="Flam. Manopolas +1",ring1="Regal Ring",ring2="Chirich ring",
+			    back=DA_Back,waist="Kentarch belt +1",legs="Pummeler's cuisses +3",	feet="Pummeler's Calligae +3"}
 				
 	sets.TP.DT = {ammo="Staunch Tathlum",
 			    head="Sulevia's mask +1",neck="Loricate torque +1", ear1="Hearty earring", ear2="Telos earring",
-		        body="Souveran cuirass +1",hands="Sulevia's gauntlets +2",ring1="Moonbeam ring",ring2="Defending Ring",
+		        body="Souveran cuirass +1",hands="Sulevia's gauntlets +2",ring1="Vocane ring",ring2="Defending Ring",
 			    back=DA_Back,waist="Ioskeha belt",legs="Sulevia's cuisses +2",feet="Amm greaves"}					
 							
 	sets.TP.DTAM = {ammo="Staunch Tathlum",
-			    head=Acc_Head,neck="Loricate torque +1", ear1="Cessance earring", ear2="Telos earring",
-			    body="Souveran cuirass +1",hands="Emicho Gauntlets +1",ring1="Moonbeam ring",ring2="Defending Ring",
-			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Valorous greaves"}
+			    head="Flamma zucchetto +1",neck="Loricate torque +1", ear1="Cessance earring", ear2="Telos earring",
+			    body="Souveran cuirass",hands="Sulv. Gauntlets +2",ring1="Niqmaddu ring",ring2="Defending Ring",
+			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",	feet="Pummeler's Calligae +3"}
 	
 	sets.TP.DW = {ammo="Yetshila",
 			    head="Flamma zucchetto +1",neck="Lissome necklace", ear1="Suppanomimi",ear2="Cessance earring",
-			    body="Emicho haubert +1",hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Hetairoi ring",
+			    body=TP_Body,hands="Flam. Manopolas +1",ring1="Niqmaddu ring",ring2="Hetairoi ring",
 			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 	
 				  
@@ -105,27 +126,27 @@ function get_sets()
 	
 	sets.UpheavalA = {ammo="Knobkierrie",
 			     head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	 body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	 body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
 			   	 back=WSD_Back,waist="Fotia belt",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 	
 	sets.UpheavalB = {ammo="Knobkierrie",
-			     head="Odyssean helm",neck="Fotia gorget",ear1="Telos earring",ear2="Moonshade earring",
+			     head="Sulevia's Mask +2",neck="Fotia gorget",ear1="Telos earring",ear2="Moonshade earring",
 			 	 body="Pummeler's lorica +3",hands="Sulevia's gauntlets +2",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	 back=WSD_Back,waist="Fotia belt",legs="Sulevia's cuisses +2",feet="Pummeler's calligae +3"}
 				  
 	sets.UF = {ammo="Yetshila",
 			    head="Argosy celata +1",neck="Rancor collar",ear1="Telos earring",ear2="Moonshade earring",
-			 	body="Argosy hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=Crit_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Valorous greaves"}
 	
 	sets.RR = {ammo="Yetshila",
 			    head="Boii mask +1",neck="Fotia gorget",ear1="Telos earring",ear2="Cessance earring",
-			 	body="Argosy hauberk +1",hands="Flamma manopolas +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
+			 	body=TP_Body,hands="Flamma manopolas +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
 			   	back=Crit_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 				
 	sets.Steelcyclone = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Moonshade earring",ear2="Telos earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 	
 	sets.Break = {ammo="Pemphredo tathlum",
@@ -145,23 +166,23 @@ function get_sets()
 				
 	sets.FellCleave = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Ifrit ring +1",ring2="Regal ring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Ifrit ring +1",ring2="Regal ring",
 			   	back=STR_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Sulevia's leggings +2"}
 	
 	sets.MT = 	{ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Ishvara earring", ear2="Telos Earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Fotia Belt",legs=WSD_Legs,feet="Sulevia's leggings +2"}	
 	
 	sets.Savage = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal Ring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal Ring",
 			   	back=STR_Back,waist="Grunfeld rope",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 	
 	
 	sets.SavageCrit = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Prosilio belt +1",legs=WSD_Legs,feet="Boii calligae +1"}
 				
 	
@@ -172,23 +193,23 @@ function get_sets()
 				
 	sets.Requiescat = {ammo="Seething bomblet +1",
 			    head=WS_Head,neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade earring",
-			 	body="Emicho haubert +1",hands="Valorous mitts",ring1="Ifrit ring +1",ring2="Regal ring",
+			 	body=TP_Body,hands="Valorous mitts",ring1="Ifrit ring +1",ring2="Regal ring",
 			   	back=DA_Back,waist="Fotia belt",legs=TP_Legs,feet="Pummeler's calligae +3"}			
 	
 				
 	sets.Vorpal = {ammo="Yetshila",
 			    head="Argosy celata +1",neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade earring",
-			 	body="Argosy hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
+			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
 			   	back=Crit_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 	
 	sets.Rampage = {ammo="Yetshila",
 			    head="Argosy celata +1",neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade earring",
-			 	body="Argosy hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
+			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
 			   	back=Crit_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 				
 	sets.Ruinator = {ammo="Seething bomblet +1",
 			    head="Argosy Celata +1",neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade earring",
-			 	body="Argosy hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}	
 				
 	sets.Cloud = {ammo="Knobkierrie",
@@ -198,43 +219,43 @@ function get_sets()
 				
 	sets.Mistral = {ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Ishvara earring", ear2="Moonshade earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal Ring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal Ring",
 			   	back=STR_Back,waist="Prosilio Belt +1",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 				
 	sets.MistralCrit = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Ifrit ring +1",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Ifrit ring +1",
 			   	back=STR_Back,waist="Prosilio belt +1",legs=WSD_Legs,feet="Boii calligae +1"}
 	
 	sets.Decimation = {ammo="Seething bomblet +1",
 			    head="Argosy Celata +1",neck="Fotia gorget",ear1="Cessance earring",ear2="Moonshade earring",
-			 	body="Argosy hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}		  
 								  
 	sets.Resolution = {ammo="Seething bomblet +1",
 			    head="Argosy Celata +1",neck="Fotia gorget",ear1="Moonshade earring",ear2="Cessance earring",
-			 	body="Argosy hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 	
 	sets.Scourge = {ammo="Knobkierrie",	
-			    head=WSD_Head,neck="Ainia collar",ear1="Cessance earring", ear2="Telos earring",
-			 	body="Flamma korazin +1",hands="Odyssean gauntlets",ring1="Petrov ring",ring2="Rajas ring",
-			   	back=STR_Back,waist="Fotia Belt",legs=WSD_Legs,feet="Valorous greaves"}		
+			    head=WSD_Head,neck="Lissome Necklace",ear1="Cessance earring", ear2="Telos earring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Petrov ring",ring2="Regal ring",
+			   	back=STR_Back,waist="Fotia Belt",legs=WSD_Legs,feet="Sulevia's Leggings +2"}		
 	
 	sets.Shockwave = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade earring",
-			 	body="Emicho haubert +1",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
-				back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Argosy sollerets +1"}
+			 	body=TP_Body,hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
+				back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Pummeler's Calligae +3"}
 				
 	sets.Groundstrike = {ammo="Knobkierrie",	
 			    head=WS_Head,neck="Fotia Gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Valorous greaves"}
 	
 	sets.CrescentMoon = {ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
-			   	back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Valorous greaves"}
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
+			   	back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Sulevia's Leggings +2"}
 	
 	sets.Herculean = {ammo="Knobkierrie",
 			    head="Jumalik helm",neck="Baetyl pendant",ear1="Friomisi earring",ear2="Crematio earring",
@@ -243,7 +264,7 @@ function get_sets()
 					
 	sets.Evisceration = {ammo="Yetshila",
 			    head="Boii mask +1",neck="Fotia Gorget",ear1="Brutal earring",ear2="Cessance earring",
-			 	body="Argosy hauberk +1",hands="Flamma manopolas +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
+			 	body=TP_Body,hands="Flamma manopolas +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
 			   	back=Crit_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 					
 	sets.Truestrike = {ammo="Yetshila",
@@ -253,12 +274,12 @@ function get_sets()
 				
 	sets.Judgment = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Regal Ring",ring2="Rufescent ring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Regal Ring",ring2="Rufescent ring",
 			   	back=STR_Back,waist="Prosilio belt +1",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 				
 	sets.BH = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	body="Odyssean chestplate",hands="Odyssean gauntlets",ring1="Regal Ring",ring2="Rufescent ring",
+			 	body="Odyssean chestplate",hands=WSD_Hands,ring1="Regal Ring",ring2="Rufescent ring",
 			   	back=STR_Back,waist="Prosilio belt +1",legs=WSD_Legs,feet="Sulevia's leggings +2"}			
 	
 	sets.Hexa = {ammo="Yetshila",
@@ -268,17 +289,17 @@ function get_sets()
 	
 	sets.Penta = {ammo="Seething bomblet +1",
 			    head="Argosy Celata +1",neck="Fotia gorget",ear1="Moonshade earring",ear2="Cessance earring",
-			 	body="Argosy hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 				
 	sets.StarDiver = {ammo="Seething bomblet +1",
 			    head="Argosy Celata +1",neck="Fotia gorget",ear1="Moonshade earring",ear2="Cessance earring",
-			 	body="Argosy hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 	
 	sets.Sonic = {ammo="Knobkierrie",
 			    head="Argosy Celata +1",neck="Fotia gorget",ear1="Moonshade earring",ear2="Cessance earring",
-			 	body="Argosy hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 	
 	sets.Wheeling = {ammo="Knobkierrie",
@@ -288,44 +309,65 @@ function get_sets()
 	
 	sets.CR = 	{ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Ishvara earring", ear2="Telos Earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Fotia Belt",legs=WSD_Legs,feet="Sulevia's leggings +2"}	
 				
 	sets.Retribution = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal Ring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal Ring",
 			   	back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 				
 	sets.FullSwing = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal Ring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal Ring",
 			   	back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 				
 	sets.TK = {ammo="Knobkierrie",
 			     head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	 body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	 body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
 			   	 back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 				 
 	sets.DK = {ammo="Knobkierrie",
 			     head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
-			 	 body="Pummeler's lorica +3",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	 body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
 			   	 back=WSD_Back,waist="Caudata belt",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 				 
 	sets.RF = {ammo="Seething bomblet +1",
 			    head="Argosy Celata +1",neck="Caro necklace",ear1="Moonshade earring",ear2="Cessance earring",
-			 	body="Argosy hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 				
 	
 	
 	--Job Ability Sets--
+       
+        sets.JA = {}
+               
+		sets.JA.Berserk ={back = "Cichol's Mantle",feet = "Agoge Calligae", body = "Pumm. Lorica +3"}
+
+		sets.JA.Aggressor = { body = "Agoge Lorcia", head ="Pummeler's mask +2"}
+		
+		sets.JA.Warcry = {head = "Agoge Mask"}		
+		
+		sets.JA.MightyStrikes = {hands = "Warrior's Muffler +2"}
+		
+		sets.JA.Ret ={feet = "Ravager's Calligae +1"}
+		
+		sets.JA.BloodRage ={body ="Ravager's Lorica +2"}
+		
+		sets.JA.Tomahawk = {ammo = "Throwing Tomahawk",
+						feet = "Agoge Calligae", waist ="Chaac Belt", 
+						head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}}}
+				
+	sets.Utility = {}
+	sets.Utility.Sleeping = {neck="Opo-Opo Necklace"}
 	
-	sets.JA = {}	
+	sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
+		
 			
-	sets.enmity = {ammo="Iron gobbet",
-			    head="Pummeler's Mask +3",neck="Atzintli necklace", ear1="Friomisi earring", ear2="Sanare earring",
-			    body="Souveran cuirass +1",hands="Pummeler's mufflers +1",ring1="Petrov ring",ring2="Supershear ring",
-			    back="Fravashi mantle",waist="Sinew belt",legs="Souveran diechlings",feet=""}
+	sets.enmity = {ammo="Sapience Orb",	ear2 ="Friomisi Earring", back ="Weard Mantle",waist ="Trance belt",
+				   ring2="Supershear Ring",neck = "Unmoving Collar",hands="Souveran Handschuhs",feet="Souveran Schuhs",body="Souveran Cuirass",
+				   ring1="Petrov Ring",legs="Souveran Diechlings +1",head="Souveran Schaller"}
 			
 			
 	--Precast Sets--
@@ -570,20 +612,18 @@ function precast(spell)
 		if spell.english == "Provoke" or spell.english == "Animated Flourish" or spell.english == "Flash" or spell.english == "stun" then
 			equip(sets.enmity)
 			send_command('@input /echo Enmity Set')
-		elseif spell.english == 'Berserk' then		
-			equip({body="Pummeler's lorica +3",back=DA_Back,feet="Agoge Calligae +1"})
-		elseif spell.english == 'Aggressor' then
-			equip({head="Pummeler's Mask +3",body="Agoge Lorica +1"})
-		elseif spell.english == 'Tomahawk' then
-			equip({ammo="Thr. Tomahawk",feet="Agoge Calligae +1"})
-		elseif spell.english == "Warcry" then
---			equip(sets.enmity)
-			equip({head="Agoge mask +1"})
-		elseif spell.english == "Blood Rage" then
---			equip(sets.enmity)
-			equip({body="Boii lorica +1"})	
-		elseif spell.english == "Mighty Strikes" then
-			equip({hands="Agoge mufflers +1"})
+		elseif spell.english =='Berserk' then
+			equip(set_combine(sets.Utility.Enmity,sets.JA.Berserk))
+		elseif spell.english =='Aggressor' then
+			equip(set_combine(sets.Utility.Enmity,sets.JA.Aggressor))
+		elseif spell.english =='Warcry' then
+			equip(set_combine(sets.Utility.Enmity,sets.JA.Warcry))
+		elseif spell.english =='Tomahawk' then
+			equip(set_combine(sets.Utility.Enmity,sets.JA.Tomahawk))
+		elseif spell.english =='Bloodrage' then
+			equip(set_combine(sets.Utility.Enmity,sets.JA.BloodRage))
+		elseif spell.english =='Mighty Strikes' then
+			equip(set_combine(sets.Utility.Enmity,sets.JA.MightyStrikes))
 		end	
 	end	
 end
@@ -606,9 +646,21 @@ function aftercast(spell)
 			TP_ind = 7
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command('@input /echo Bravura DT Set')
+			if buffactive['doom'] then
+					equip(sets.Utility.Doom)
+				end
+				if buffactive['terror'] or buffactive['stun'] or buffactive['sleep']	then 
+					equip(sets.TP.DT)
+				end
 		else
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command('@input /echo TP Set')
+			if buffactive['doom'] then
+					equip(sets.Utility.Doom)
+				end
+				if buffactive['terror'] or buffactive['stun'] or buffactive['sleep']	then 
+					equip(sets.TP.DT)
+				end
 		end
 	else
 		if Gear_Debug == 0 then
