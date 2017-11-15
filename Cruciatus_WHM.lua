@@ -16,19 +16,19 @@ function get_sets()
 		
 	sets.aftercast_Idle_refresh ={ 
     main="Bolelabunga",
-    sub="Genmei Shield",
-    ammo="Incantor Stone",
-    head="Inyanga Tiara +2",
-    body="Ebers Bliaud +1",
-    hands={ name="Chironic Gloves", augments={'Pet: Attack+25 Pet: Rng.Atk.+25','Blood Pact Dmg.+1','"Refresh"+1',}},
+    sub="Genbu's Shield",
+    ammo="Homiliary",
+    head="Befouled Crown",
+    body="Kaykaus Bliaut",
+    hands={ name="Chironic Gloves", augments={'Magic burst dmg.+1%','DEX+2','Damage taken-4%','Accuracy+6 Attack+6','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
     legs="Assid. Pants +1",
-    feet="Inyan. Crackows +2",
-    neck="Loricate Torque +1",
+    feet="Aya. Gambieras +1",
+    neck="Sanctity Necklace",
     waist="Fucho-no-Obi",
     left_ear="Lifestorm Earring",
     right_ear="Spellbr. Earring",
-    left_ring="Vertigo Ring",
-    right_ring="Inyanga Ring",
+    left_ring="Defending Ring",
+    right_ring="Shneddick Ring",
     back="Solemnity Cape",
 }
 	
@@ -42,11 +42,11 @@ function get_sets()
     head="Nahtirah Hat",
     body="Inyanga Jubbah +1",
     hands={ name="Telchine Gloves", augments={'"Fast Cast"+3',}},
-    legs="Assid. Pants +1",
+    legs="Ebers Pant. +1",
     feet="Regal Pumps",
     neck="Voltsurge Torque",
     waist="Channeler's Stone",
-    left_ear="Lifestorm Earring",
+    left_ear="Mendicant's Earring",
     right_ear="Spellbr. Earring",
     left_ring="Prolix Ring",
     right_ring="Kishar Ring",
@@ -69,7 +69,7 @@ function get_sets()
 }
 	
 	sets.precast_Haste = {    main="Queller Rod",
-    sub="Sors Shield",
+    sub="Ammurapi Shield",
     ammo="Impatiens",
     head="Vanya Hood",
     body="Inyanga Jubbah +1",
@@ -86,13 +86,13 @@ function get_sets()
 }
 		
 	sets.midcast_Haste = {  main="Bolelabunga",
-    sub="Sors Shield",
+    sub="Ammurapi Shield",
     ammo="Homiliary",
     head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
-    body={ name="Telchine Chas.", augments={'Evasion+8','"Cure" spellcasting time -5%','Enh. Mag. eff. dur. +9',}},
-    hands="Dynasty Mitts",
-    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +8',}},
-    feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +7',}},
+    body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +7',}},
+    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +5',}},
+    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +9',}},
+    feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +3',}},
     neck="Voltsurge Torque",
     waist="Channeler's Stone",
     left_ear="Loquac. Earring",
@@ -104,12 +104,12 @@ function get_sets()
 	
 	sets.precast_Devotion = {}
 
-	sets.Resting = {main="Queller rod",sub="Genmei shield",ammo="Incantor Stone",
+	sets.Resting = {main="Queller rod",sub="Genbu's shield",ammo="Incantor Stone",
 		head="Befouled crown",neck="Loricate torque +1",ear1="Sanare earring",ear2="Spellbreaker Earring",
 		body="Piety briault +1",hands="Gendewitha gages +1",ring1="Patricius Ring",ring2="Defending ring",
 		back="Solemnity cape",waist="Fucho-no-obi",legs="Lengo pants",feet="Inspirited boots"}
 	
-	sets.midcast_EnfeeblingMagic = {main="Grioavolr",sub="Mephitis grip",ammo="Hydrocera",
+	sets.midcast_EnfeeblingMagic = {main ="Queller Rod",sub="Ammurapi Shield",ammo="Hydrocera",
 		head="Befouled crown",neck="Imbodla necklace",ear1="Lifestorm Earring",ear2="Psystorm Earring",
 		body="Chironic doublet",hands="Lurid mitts",ring1="Weatherspoon ring",ring2="Vertigo ring",
 		back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
@@ -117,15 +117,15 @@ function get_sets()
 	
 	sets.midcast_BarSpells_Solace = {
     main="Beneficus",
-    sub="Sors Shield",
+    sub="Ammurapi Shield",
     ammo="Homiliary",
     head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
-    body="Ebers Bliaud +1",
+    body="Ebers Bliaud",
     hands="Dynasty Mitts",
     legs={ name="Piety Pantaln. +1", augments={'Enhances "Shellra V" effect',}},
     feet="Ebers Duckbills",
     neck="Incanter's Torque",
-    waist="Channeler's Stone",
+    waist="Cascade Belt",
     left_ear="Andoaa Earring",
     right_ear="Enchntr. Earring +1",
     left_ring="Rahab Ring",
@@ -135,37 +135,53 @@ function get_sets()
 		
 	sets.midcast_Barspells_noSolace = sets.midcast_BarSpells_Solace
 
-	sets.midcast_EnhancingMagic = {    main="Beneficus",
-    sub="Sors Shield",
+	sets.midcast_EnhancingMagic = {main="Beneficus",
+    sub="Ammurapi Shield",
     ammo="Homiliary",
-    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
-    Body ="Piety Briault",
-    hands="Dynasty Mitts",
-    legs={ name="Piety Pantaln. +1", augments={'Enhances "Shellra V" effect',}},
-    feet="Piety Duckbills",
+	head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
+    body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +7',}},
+    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +5',}},
+    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +9',}},
+    feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +3',}},    
     neck="Incanter's Torque",
-    waist="Channeler's Stone",
+    waist="Cascade Belt",
     left_ear="Andoaa Earring",
     right_ear="Enchntr. Earring +1",
     left_ring="Sangoma Ring",
     right_ring="Kishar Ring",
 	back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
+	set.midcast_Shellra = { main="Beneficus",
+    sub="Ammurapi Shield",
+    ammo="Homiliary",
+	head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
+    body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +7',}},
+    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +5',}},
+    legs={ name="Piety Pantaln. +1", augments={'Enhances "Shellra V" effect',}},
+    feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +3',}},    
+    neck="Incanter's Torque",
+    waist="Cascade Belt",
+    left_ear="Andoaa Earring",
+    right_ear="Enchntr. Earring +1",
+    left_ring="Sangoma Ring",
+    right_ring="Kishar Ring",
+	back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},	
+	}
 	
-	sets.midcast_MAB = {main="Grioavolr",sub="Niobid strap",ammo="Pemphredo tathlum",
+	sets.midcast_MAB = {main ="Queller Rod",sub="Ammurapi Shield",ammo="Pemphredo tathlum",
 		head="Helios band",neck="Sanctity necklace",ear1="Friomisi Earring",ear2="Crematio Earring",
 		body="Vedic coat",hands="Helios gloves",ring1="Weatherspoon ring",ring2="Acumen ring",
 		back="Toro cape",waist="Eschan stone",legs="Chironic hose",feet="Navon crackows"}
 		
-	sets.midcast_Impact = {main="Grioavolr",sub="Mephitis grip",ammo="Pemphredo tathlum",
+	sets.midcast_Impact = {main ="Queller Rod",sub="Ammurapi Shield",ammo="Pemphredo tathlum",
 		neck="Sanctity necklace",ear1="Friomisi Earring",ear2="Crematio Earring",
 		body="Twilight cloak",hands="Chironic gloves",ring1="Weatherspoon ring",ring2="Archon ring",
 		back="Toro cape",waist="Eschan stone",legs="Chironic hose",feet="Helios boots"}	
 		
-	sets.midcast_Regen = {    main="Bolelabunga",
-    sub="Sors Shield",
+	sets.midcast_Regen = {main="Bolelabunga",
+    sub="Ammurapi Shield",
     ammo="Homiliary",
-    head="Inyanga Tiara +2",
+    head="Inyanga Tiara +1",
     Body ="Piety Briault",
     hands="Ebers Mitts",
     legs="Theophany Pantaloons +1",
@@ -184,10 +200,10 @@ function get_sets()
     sub="Sors Shield",
     ammo="Esper Stone",
     head="Vanya Hood",
-    body="Ebers Bliaud +1",
+    body="Kaykaus Bliaut",
     hands="Theophany Mitts +2",
     legs="Ebers Pant. +1",
-    feet ="Vanya Clogs",
+    feet ="Kaykaus Boots",
     neck="Nodens Gorget",
     waist="Channeler's Stone",
     left_ear="Nourish. Earring +1",
@@ -201,10 +217,10 @@ function get_sets()
     sub="Sors Shield",
     ammo="Esper Stone",
     head="Vanya Hood",
-    body="Ebers Bliaud +1",
+    body="Kaykaus Bliaut",
     hands="Theophany Mitts +2",
     legs="Ebers Pant. +1",
-    feet={ name="Kaykaus Boots", augments={'MP+60','"Cure" spellcasting time -5%','Enmity-5',}},
+    feet="Kaykaus Boots",
     neck="Nodens Gorget",
     waist="Channeler's Stone",
     left_ear="Nourish. Earring +1",
@@ -220,7 +236,7 @@ function get_sets()
     sub="Sors Shield",
     ammo="Esper Stone",
     head="Ebers Cap",
-    body="Ebers Bliaud +1",
+    body="Ebers Bliaud",
     hands={ name="Fanatic Gloves", augments={'MP+50','Healing magic skill +10','"Conserve MP"+7','"Fast Cast"+7',}},
     legs="Theophany Pantaloons +1",
     feet ="Vanya Clogs",
@@ -237,7 +253,7 @@ function get_sets()
     sub="Sors Shield",
     ammo="Esper Stone",
     head="Ebers Cap",
-    body="Ebers Bliaud +1",
+    body="Ebers Bliaud",
     hands={ name="Fanatic Gloves", augments={'MP+50','Healing magic skill +10','"Conserve MP"+7','"Fast Cast"+7',}},
     legs="Theophany Pantaloons +1",
     feet ="Vanya Clogs",
@@ -304,9 +320,13 @@ function midcast(spell)
 		elseif FC_Spells:contains(spell.name) then		
 			equip(sets.midcast_Haste)
 				send_command('@input /echo Enhancing Duration Set')
+		elseif spell.name == 'Shellra V' then
+			    equip(set.midcast_Shellra)
+				send_command('@input /echo Shellra 5 Set')
 		else
 			equip(sets.midcast_EnhancingMagic)
 				send_command('@input /echo Enhancing Set')
+							
 		end	
 	elseif Holy_Spells:contains(spell.name) then
 		equip(sets.midcast_MAB)

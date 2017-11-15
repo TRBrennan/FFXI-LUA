@@ -59,9 +59,9 @@ function get_sets()
 									feet="Souveran Schuhs"}
 									
 				sets.TP.Standard = {    ammo="Ginsen",
-										head="Flam. Zucchetto +1",
+										head="Flam. Zucchetto +2",
 										body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},
-										hands="Flam. Manopolas +1",
+										hands="Flam. Manopolas +2",
 										legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
 										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
 										neck="Lissome Necklace",
@@ -73,9 +73,9 @@ function get_sets()
 										back="Grounded Mantle",
 									}
 				sets.TP.DW = {    ammo="Ginsen",
-										head="Flam. Zucchetto +1",
+										head="Flam. Zucchetto +2",
 										body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},
-										hands="Flam. Manopolas +1",
+										hands="Flam. Manopolas +2",
 										legs="Carmine Cuisses +1",
 										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
 										neck="Lissome Necklace",
@@ -129,12 +129,12 @@ function get_sets()
         ChantDuCygne_ind = 1
        
          sets.ChantDuCygne.Attack = {ammo="Jukukik Feather",
-                                            head="Flam. Zucchetto +1",
+                                            head="Flam. Zucchetto +2",
 											neck="Fotia gorget",
 											ear1="Telos Earring",
 											ear2="Moonshade Earring",
                                             body="Sulevia's Plate. +2",
-											hands="Flam. Manopolas +1",
+											hands="Flam. Manopolas +2",
 											ring2="Rajas ring",
 											ring1="Petrov Ring",
                                             back="Grounded Mantle",

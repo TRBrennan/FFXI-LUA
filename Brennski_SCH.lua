@@ -32,7 +32,7 @@ function get_sets()
        
         sets.Idle.Standard = {main ="Akademos",sub ="Enki Strap",ammo="Homiliary",
                                       head="Hike Khat",neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Jhakri Robe +1",
+                                      body="Jhakri Robe +2",
 									  hands={ name="Merlinic Dastanas", augments={'DEX+3','Mag. Acc.+16 "Mag.Atk.Bns."+16','"Refresh"+1',}},
 									  ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Moonbeam Cape"}

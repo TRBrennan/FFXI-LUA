@@ -39,7 +39,7 @@ function get_sets()
         sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap", 
                                 head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
                                         body="Emet Harness +1",hands="Garden Bangles",ring1="Dark ring",ring2="Succor ring",
-                                        back="Moonbeam Cape",waist="Flume belt +1",legs="Osmium Cuisses",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+                                        back="Moonbeam Cape",waist="Flume belt +1",legs="Mummu Kecks +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 										
 		sets.Idle.Cleave = { 
 										head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Etiolation earring +1", ear2="Handler's earring +1",
@@ -54,33 +54,33 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = {  
                                     head="Dampening Tam", neck="Lissome necklace", ear1="Suppanomimi", ear2="Telos Earring",
-                                    body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Chirich Ring",ring2="Epona's Ring",
+                                    body="Adhemar Jacket",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Chirich Ring",ring2="Epona's Ring",
                                     back="Grounded Mantle",waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                        
                                                        
                 sets.TP.AccuracyLite = { 
                                         head="Dampening Tam",neck="Asperity necklace", ear1="Suppanomimi", ear2="Cessance Earring",                            
-										body="Thaumas coat",hands="Adhemar Wristbands",ring1="Cacoethic Ring",ring2="Epona's ring",
+										body="Thaumas coat",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Cacoethic Ring",ring2="Epona's ring",
                                         back="Lupine Cape",waist="windbuffet belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
                 sets.TP.AccuracyFull = {
                                         head="Dampening Tam",neck="Sanctity Necklace", ear1="Cessance Earring", ear2="Telos Earring",
-                                        body="Adhemar Jacket",hands="Adhemar Wristbands",ring2="Chirich Ring",ring1="Cacoethic Ring",
+                                        body="Adhemar Jacket",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring2="Chirich Ring",ring1="Cacoethic Ring",
                                         back="Lupine Cape",waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                        
                 sets.TP.DT = { 
                               head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Genmei Earring", ear2="Dignitary's Earring",
-                              body="Emet harness +1",hands="Adhemar Wristbands",ring1="Dark ring",ring2="Epona's ring",
-                              back="Moonbeam Cape",waist="Flume belt +1",legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+                              body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Dark ring",ring2="Epona's ring",
+                              back="Moonbeam Cape",waist="Flume belt +1",legs ="Mummu Kecks +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                  
                 sets.TP.DTAccuracy = { 
                                       head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Suppanomimi", ear2="Dignitary's Earring",     
-									  body="Emet harness +1",hands="Adhemar Wristbands",ring1="Dark ring",ring2="Mars's ring",
-                                      back="Moonbeam Cape",waist="Flume belt +1",legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+									  body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Dark ring",ring2="Mars's ring",
+                                      back="Moonbeam Cape",waist="Flume belt +1",legs ="Mummu Kecks +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                          
 				sets.TP.CP = { 
                                     head="Dampening Tam", neck="Asperity Necklace", ear1="Suppanomimi", ear2="Dignitary's Earring",
-                                    body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Enlivened Ring",ring2="Epona's Ring",
+                                    body="Adhemar Jacket",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Enlivened Ring",ring2="Epona's Ring",
                                     back="Mecistopins mantle",waist="windbuffet belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }  
 
 									
@@ -117,7 +117,7 @@ function get_sets()
         VorpalBlade_ind = 1
         sets.VorpalBlade = {
                                           head="Dampening Tam",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Telos Earring",
-                                          body="Adhemar Jacket",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Petrov ring",ring2="Regal Ring",
+                                          body="Adhemar Jacket",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Petrov ring",ring2="Regal Ring",
                                           back="Buquwik cape",waist="Grunfeld Rope",legs="Quiahuiz leggings",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }						 
                
 	    sets.Leaden = {}
@@ -205,7 +205,7 @@ function get_sets()
 							back="Izdubar Mantle",   legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},  feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
        
         sets.JA.PhantomRoll = {head="Lanun Tricorne",neck="Regal Necklace", ear1="Etiolation earring", ear2="Genmei Earring",
-                              body="Emet Hareness +1",hands="Chasseur's Gants",ring2="Luzaf's Ring",ring1="Defending Ring",
+                              body="Emet Hareness +1",hands="Navarch's Gants +1",ring2="Luzaf's Ring",ring1="Defending Ring",
                               back="Camulus's Mantle",waist="Flume belt +1",legs="Desultor Tassets",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
         sets.JA.LightDarkShot= {ammo ="Animikii Bullet",head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
@@ -229,7 +229,7 @@ function get_sets()
 								
 	    sets.NINMagic.Utsusemi ={
                               head="Dampening Tam",neck="Loricate Torque", ar1="Brutal Earring",ear2="Cessance Earring",
-                              body="Emet harness +1",hands="Adhemar Wristbands",ring1="Vocane Ring",ring2="Petrov Ring",
+                              body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Vocane Ring",ring2="Petrov Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
 end
@@ -279,7 +279,7 @@ function precast(spell)
 		 or spell.english == "Monk's Roll" or spell.english == "Beast Roll" or spell.english == "Samurai Roll" or spell.english == "Evoker's Roll" 
 		 or spell.english == "Rogue's Roll" or spell.english == "Warlock's Roll" or spell.english == "Fighter's Roll" or spell.english == "Puppet Roll"
 		 or spell.english == "Gallant's Roll" or spell.english == "Wizard's Roll" or spell.english == "Dancer's Roll" or spell.english == "Scholar's Roll" 
-		 or spell.english == "Bolter's Roll" or spell.english == "Allies' Roll" or spell.english == "Miser's Roll" 
+		 or spell.english == "Bolter's Roll" or spell.english == "Allies' Roll" or spell.english == "Miser's Roll" or spell.english == "Tactician's Roll"
 		 or spell.english == "Caster's Roll" or spell.english == "Companion's Roll" or spell.english == "Avenger's Roll" or spell.english == "Double Up" then
 			equip(sets.JA.PhantomRoll)
 		end
@@ -297,8 +297,7 @@ function precast(spell)
 			 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
-		end
-		
+		end	
 	   
         if spell.english == 'Box Step'  or spell.english =='Quick Step' then
                 equip(sets.Utility.Steps)
@@ -308,6 +307,10 @@ end
 
 
 function midcast(spell,act)
+		if spell.type == 'Ranged Attack' then
+			equip(sets.Ranged.RangedAttack)
+		end
+		
 	   if spell.english == 'Utsusemi: Ichi' then
                 equip(sets.NINMagic.Utsusemi)
                         if buffactive['Copy Image (3)'] then
@@ -326,8 +329,7 @@ function midcast(spell,act)
  
         if spell.english == 'Utsusemi: Ni'  or spell.english == 'Utsusemi: San' then
                 equip(sets.NINMagic.Utsusemi)
-        end
- 
+        end 
 end
        
 function aftercast(spell)

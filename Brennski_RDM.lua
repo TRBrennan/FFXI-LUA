@@ -36,15 +36,15 @@ function get_sets()
        
         sets.Idle.Standard = {main="Bolelabunga", sub ="Genmei Shield",ammo="Homiliary",
                                       head="Vitivation Chapeau +1",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Jhakri Robe +1",hands={ name="Merlinic Dastanas", augments={'DEX+3','Mag. Acc.+16 "Mag.Atk.Bns."+16','"Refresh"+1',}},
+                                      body="Jhakri Robe +2",hands={ name="Merlinic Dastanas", augments={'DEX+3','Mag. Acc.+16 "Mag.Atk.Bns."+16','"Refresh"+1',}},
 									  ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Carmine Cuisses +1",feet="Chironic Slippers", back ="Moonbeam Cape"}
 									  
-		sets.Idle.DT = {main="Bolelabunga", sub ="Genmei Shield", ammo="Hagneia stone",
-                                      head="Hike Khat",neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
-                                      body="Vrikodara Jupon",hands={ name="Merlinic Dastanas", augments={'DEX+3','Mag. Acc.+16 "Mag.Atk.Bns."+16','"Refresh"+1',}},
+		sets.Idle.DT = {main="Bolelabunga", sub ="Genmei Shield", ammo="Staunch Tathlum",
+									  neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
+                                      head ="Ayanmo Zucchetto +1", body ="Ayanmo Corazza +1",hands="Ayanmo Manopolas +1",
 									  ring2="Vocane Ring",ring1="Defending ring",
-                                      waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Chironic Slippers", back ="Moonbeam Cape"}							  
+                                      waist="Fucho-no-obi",legs="Ayanmo cosciales +1",feet="Ayanmo Gambieras +1", back ="Moonbeam Cape"}							  
                                                  
 		--TP Sets--
         sets.TP = {}
@@ -53,7 +53,9 @@ function get_sets()
                 --1=Standard--
 				
                 TP_ind = 1
-				sets.TP.Standard = {main="Sequence", sub ="Colada", ammo ="Ginsen", head ="Ayanmo Zucchetto +1", body ="Ayanmo Corazza", neck="Lissome Necklace", ear1 ="Suppanomimi", ear2 ="Telos Earring",ring1="Petrov Ring", ring2="Chirich Ring",
+				sets.TP.Standard = {main="Sequence", sub ="Colada", ammo ="Ginsen", head ="Ayanmo Zucchetto +1", 
+									body ="Ayanmo Corazza +1", neck="Lissome Necklace", ear1 ="Suppanomimi", ear2 ="Telos Earring",
+									ring1="Ilabrat Ring", ring2="Chirich Ring",
 									hands ="Ayanmo Manopolas +1", legs ="Carmine Cuisses +1", feet ="Carmine Greaves +1", back = "Grounded Mantle", waist ="Kentarch Belt +1" }
 	sets.MeleeMode ={}
 		sets.MeleeMode.Index ={'NotMelee','Melee'}
@@ -68,7 +70,7 @@ function get_sets()
 			
 			sets.Nuke.Standard = {main="Grioavolr", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
                                  hhead={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
-								 neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Hecate's Earring",
+								 neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Regal Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Jhakri Cuffs +2", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
                                  back="Sucellos's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
 								 feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}}
@@ -189,7 +191,7 @@ function get_sets()
 											neck="Fotia gorget",
 											ear1="Moonshade Earring",
 											ear2="Sherida Earring",
-                                            body="Jhakri Robe +1",
+                                            body="Ayanmo Corazza +1",
 											hands="Jhakri Cuffs +2",
 											ring1="Begrudging Ring",
 											ring2="Epona's Ring",
@@ -201,8 +203,8 @@ function get_sets()
 										  neck="Caro Necklace",
 										  ear1="Ishvara Earring",
 										  ear2="Moonshade Earring",
-                                          body="Jhakri Robe +1",hands="Jhakri Cuffs +2",
-										  ring1="Petrov Ring",ring2="Rajas Ring",
+                                          body="Jhakri Robe +2",hands="Jhakri Cuffs +2",
+										  ring1="Petrov Ring",ring2="Ilabrat Ring",
                                           back="Lupine Cape",
 										  waist="Grunfeld Rope",
 										  legs="Jhakri Slops +1",
@@ -213,8 +215,8 @@ function get_sets()
 										  neck="Caro Necklace",
 										  ear1="Ishvara Earring",
 										  ear2="Moonshade Earring",
-                                          body="Jhakri Robe +1",hands="Jhakri Cuffs +2",
-										  ring1="Petrov Ring",ring2="Rajas Ring",
+                                          body="Jhakri Robe +2",hands="Jhakri Cuffs +2",
+										  ring1="Begrudging Ring",ring2="Ilabrat Ring",
                                           back="Lupine Cape",
 										  waist="Grunfeld Rope",
 										  legs="Jhakri Slops +1",

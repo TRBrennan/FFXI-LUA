@@ -19,6 +19,13 @@ function get_sets()
  
         end    
 		
+		TP_Body = {name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}}
+		WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
+		WSD_Hands ={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}}
+		WSD_Body = {name ="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}}
+		WSD_Head = { name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}},}
+		WSD_Feet = { name="Valorous Greaves", augments={'Attack+21','Weapon skill damage +5%',}}
+		
         --Idle Sets--  
         sets.Idle = {}
        
@@ -55,8 +62,8 @@ function get_sets()
 				
                 TP_ind = 1
 				sets.TP.Standard = {ammo="Ginsen",
-                                    head="Flam. Zucchetto +1", neck="Moonbeam Nodowa", ear1="Cessance Earring",ear2="Telos Earring",
-                                    body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},hands="Flam. Manopolas +1",
+                                    head="Flam. Zucchetto +2", neck="Moonbeam Nodowa", ear1="Cessance Earring",ear2="Telos Earring",
+                                    body=TP_Body,hands="Flam. Manopolas +2",
 									right_ring="Niqmaddu Ring",left_ring="Ilabrat Ring",
                                      back="Takaha Mantle",waist="Ioskeha Belt",
 									 legs="Ken. Hakama",
@@ -64,18 +71,18 @@ function get_sets()
                                                        
                                                         
                 sets.TP.AccuracyMid = {ammo="Jukukik Feather",
-                                        head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}}, 
+                                        head="Flam. Zucchetto +2", 
 										neck="Moonbeam Nodowa", ear1="Cessance Earring",ear2="Telos Earring",
-										body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},hands="Flam. Manopolas +1",right_ring="Niqmaddu Ring",left_ring="Ilabrat Ring",
+										body=TP_Body,hands="Flam. Manopolas +2",right_ring="Niqmaddu Ring",left_ring="Ilabrat Ring",
                                          back="Takaha Mantle",
 										 waist="Ioskeha Belt",legs="Ken. Hakama",
 										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
        
                 sets.TP.AccuracyFull = {ammo="Jukukik Feather",
-                                       head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}},
+                                       head="Flam. Zucchetto +2",
 										neck="Moonbeam Nodowa", ear1="Dignitary's Earring", ear2="Telos Earring",
-                                        body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},
-										hands="Flam. Manopolas +1",right_ring="Cacoethic Ring",left_ring="Chirich Ring",
+                                        body=TP_Body,
+										hands="Flam. Manopolas +2",right_ring="Cacoethic Ring",left_ring="Flamma Ring",
                                         back="Takaha Mantle",
 										waist="Ioskeha Belt",
 										legs="Ken. Hakama",
@@ -90,7 +97,7 @@ function get_sets()
                                  
                 sets.TP.DTAccuracy = {ammo="Ginsen",
                                       head="Ynglinga Sallet",neck="Moonbeam Nodowa", ear2="Telos Earring",ear1="Odnowa Earring +1",    
-									  body="Emet Harness +1",hands="Flam. Manopolas +1",right_ring="Niqmaddu Ring",left_ring="Chirich Ring",
+									  body="Emet Harness +1",hands="Flam. Manopolas +2",right_ring="Niqmaddu Ring",left_ring="Chirich Ring",
                                        back="Takaha Mantle",
 									   waist="Ioskeha Belt",legs="Ken. Hakama",feet="Amm Greaves"}
                                                          
@@ -101,11 +108,11 @@ function get_sets()
 		sets.OneHit = {}
 		
 		sets.OneHit.Attack = {ammo="Knobkierrie",
-							head={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}},
-							body={ name="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}},
-							hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},
+							head=WSD_Head,
+							body=WSD_Body,
+							hands=WSD_Hands,
 							legs="Hiza. Hizayoroi +2",
-							feet={ name="Valorous Greaves", augments={'Attack+21','Weapon skill damage +5%',}},
+							feet=WSD_Feet,
 							neck="Caro Necklace",
 							waist="Grunfeld Rope",
 							left_ear="Ishvara Earring",
@@ -117,9 +124,9 @@ function get_sets()
 		sets.MultiHit = {}
 		
 		sets.MultiHit.Attack = { ammo="Knobkierrie",
-							head="Flam. Zucchetto +1", 
-							body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},
-							hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},
+							head="Flam. Zucchetto +2", 
+							body=TP_Body,
+							hands=WSD_Hands,
 							legs="Ken. Hakama",
 							feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
 							neck="Fotia Gorget",
@@ -133,9 +140,9 @@ function get_sets()
 		sets.HybridWS = {}
 		
 		sets.HybridWS.Attack = {ammo="Knobkierrie",
-							head={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}},
+							head=WSD_Head,
 							body="Found. Breastplate",
-							hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},
+							hands=WSD_Hands,
 							legs="Hiza. Hizayoroi +2",
 							feet="Founder's Greaves",
 							neck="Fotia Gorget",
@@ -172,7 +179,7 @@ function get_sets()
                                                         back="Swith cape",waist="Pythia sash +1",legs="Portent pants",feet="Valorous Greaves"}
                                                        
         sets.Utility.Steps = {ammo="Ginsen",
-							head="Boii Mask +1", body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}}, hands="Rawhide Gloves",legs=="Odyssean Cuisses",
+							head="Boii Mask +1", body=TP_Body, hands="Rawhide Gloves",legs=="Odyssean Cuisses",
 							feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",
 							right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",   back="Takaha Mantle",}
                                                  
