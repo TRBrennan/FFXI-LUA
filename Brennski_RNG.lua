@@ -103,7 +103,7 @@ TP_ind = 1
 sets.TP.Standard = {}
 sets.TP.Standard.index = {'Other','Ninja','Dancer'}
 sets.TP.Standard.Other = {
-			head="Adhemar Bonnet", 
+			head="Adhemar Bonnet +1", 
 			neck="Lissome necklace", 
 			ear1="Sherida Earring", 
 			ear2="Telos Earring",
@@ -117,7 +117,7 @@ sets.TP.Standard.Other = {
 			feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}
 }
 sets.TP.Standard.Ninja = {
-			head="Adhemar Bonnet", 
+			head="Adhemar Bonnet +1", 
 			neck="Lissome necklace", 
 			ear1="Sherida Earring", 
 			ear2="Telos Earring",
@@ -131,7 +131,7 @@ sets.TP.Standard.Ninja = {
 			feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}
 }
 sets.TP.Standard.Dancer = {
-			head="Adhemar Bonnet", 
+			head="Adhemar Bonnet +1", 
 			neck="Lissome necklace", 
 			ear1="Suppanomimi", 
 			ear2="Telos Earring",
@@ -148,7 +148,7 @@ sets.TP.Standard.Dancer = {
 sets.TP.MidAccuracy = {}
 sets.TP.MidAccuracy.index = {'Other','Ninja','Dancer'}
 sets.TP.MidAccuracy.Other = {
-			head="Adhemar Bonnet", 
+			head="Adhemar Bonnet +1", 
 			neck="Lissome necklace", 
 			ear1="Cessance Earring", 
 			ear2="Telos Earring",
@@ -162,7 +162,7 @@ sets.TP.MidAccuracy.Other = {
 			feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}
 }
 sets.TP.MidAccuracy.Ninja = {
-			head="Adhemar Bonnet", 
+			head="Adhemar Bonnet +1", 
 			neck="Lissome necklace", 
 			ear1="Cessance Earring", 
 			ear2="Telos Earring",
@@ -176,7 +176,7 @@ sets.TP.MidAccuracy.Ninja = {
 			feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}
 }
 sets.TP.MidAccuracy.Dancer = {
-			head="Adhemar Bonnet", 
+			head="Adhemar Bonnet +1", 
 			neck="Lissome necklace", 
 			ear1="Suppanomimi", 
 			ear2="Telos Earring",
@@ -350,7 +350,7 @@ WS_ind = 1
 			   
 sets.Ruinator = {}		
 sets.Ruinator.Attack = {
-	head={ name="Adhemar Bonnet", augments={'STR+10','DEX+10','Attack+15',}},
+	head={ name="Adhemar Bonnet +1", augments={'STR+10','DEX+10','Attack+15',}},
     body={ name="Herculean Vest", augments={'Pet: STR+1','STR+9','Quadruple Attack +2','Accuracy+19 Attack+19','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
     hands="Meg. Gloves +2",
     legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
@@ -410,7 +410,7 @@ sets.OtherAxe.Accuracy = {
 
 sets.Rampage = {}
 sets.Rampage.Attack = {
-    head={ name="Adhemar Bonnet", augments={'STR+10','DEX+10','Attack+15',}},
+    head={ name="Adhemar Bonnet +1", augments={'STR+10','DEX+10','Attack+15',}},
     body="Meg. Cuirie +1",
     hands="Mummu Wrists +1",
     legs="Mummu Kecks +1",
@@ -440,7 +440,7 @@ sets.Rampage.Accuracy = {
 
 sets.Evisceration = {}
 sets.Evisceration.Attack = {
-    head={ name="Adhemar Bonnet", augments={'STR+10','DEX+10','Attack+15',}},
+    head={ name="Adhemar Bonnet +1", augments={'STR+10','DEX+10','Attack+15',}},
     body="Meg. Cuirie +1",
     hands="Mummu Wrists +1",
     legs="Mummu Kecks +1",
@@ -561,7 +561,7 @@ sets.RangedWS.Accuracy = {
 
 sets.RangedWScrit = {}		
 sets.RangedWScrit.Attack = {
-	head={ name="Adhemar Bonnet", augments={'STR+10','DEX+10','Attack+15',}},
+	head={ name="Adhemar Bonnet +1", augments={'STR+10','DEX+10','Attack+15',}},
     body="Meg. Cuirie +1",
     hands="Mummu Wrists +1",
     legs="Darraigner's Brais",

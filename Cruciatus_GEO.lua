@@ -115,8 +115,8 @@ function get_sets()
 	-- main="Marin staff", sub="Niobid Strap", 
 	range="Dunna",
 				head="Befouled Crown", neck="Erra Pendant", left_ear="Influx Earring", right_ear="Barkarole Earring",
-                body="Shango Robe", hands="Azimuth Gloves", ring1="Vertigo Ring", ring2 ="Perception Ring",
-                back="Kumbira Cape", waist="Ovate Rope", legs="Psycloth Lappas", feet="Bagua Sandals +1"}
+                body="Shango Robe", hands="Lurid Mitts", ring1="Vertigo Ring", ring2 ="Perception Ring",
+                back="Nantosuelta's Cape", waist="Ovate Rope", legs="Psycloth Lappas", feet="Bagua Sandals +1"}
     
     sets.midcast['Elemental Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 
@@ -134,7 +134,7 @@ function get_sets()
 							right_ear="Friomisi Earring",
 							left_ring="Acumen Ring",
 							right_ring="Locus Ring",
-							back="Toro Cape",}
+							back="Nantosuelta's Cape",}
         
     sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
 
@@ -143,7 +143,7 @@ function get_sets()
 	range="Dunna",
 				head="Bagua Galero", neck="Erra Pendant", right_ear="Barkarole Earring", left_ear="Friomisi Earring",
                 body="Geomancy Tunic", hands="Jhakri Cuffs +1", ring1="Acumen Ring", ring2="Vertigo ring",
-                back="Lifestream Cape", waist="Cetl Belt", legs="Psycloth Lappas", feet="Merlinic Crackows"}
+                back="Nantosuelta's Cape", waist="Cetl Belt", legs="Psycloth Lappas", feet="Merlinic Crackows"}
 
     sets.magic_burst =     	{main="Marin Staff +1",
 							sub="Niobid Strap",
@@ -159,7 +159,7 @@ function get_sets()
 							right_ear="Friomisi Earring",
 							left_ring="Acumen Ring",
 							right_ring="Locus Ring",
-							back="Toro Cape",
+							back="Nantosuelta's Cape",
 	}
 				
 	sets.obi = {
@@ -180,7 +180,7 @@ function get_sets()
     -- Resting sets
     sets.resting = {main="Pluto's Staff", range="Dunna",
 				head="Azimuth Hood +1", neck="Incanter's Torque", rear="Etiolation Earring", lear="Etiolation Earring",
-                body="Azimuth Coat", hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
+                body="Jhakri Robe +2", hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
                 back="Toro Cape", waist="Refoccilation Stone", legs="Assiduity Pants +1", feet="Azimuth Gaiters +1"}
 	
     -- Idle sets
@@ -188,14 +188,14 @@ function get_sets()
     sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
 		head="Befouled Crown",
         neck="Sanctity Necklace", right_ear="Etiolation Earring", left_ear="Zennaroi Earring",
-        body="Azimuth Coat",hands="Bagua Mitaines", left_ring="Defending Ring",right_ring="Shneddick Ring",
-        back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        body="Jhakri Robe +2",hands="Bagua Mitaines", left_ring="Defending Ring",right_ring="Shneddick Ring",
+        back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Azimuth Gaiters +1"}
 
     sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
 		head="Befouled Crown",
         neck="Sanctity Necklace", right_ear="Etiolation Earring", left_ear="Handler's Earring",
         body="Mallquis Saio +2",hands="Geomancy Mitaines +1", left_ring="Defending Ring",right_ring="Shneddick Ring",
-        back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
+        back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Azimuth Gaiters +1"}
 
     -- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = {--main="Sucellus", 

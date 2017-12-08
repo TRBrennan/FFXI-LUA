@@ -42,7 +42,7 @@ function get_sets()
 	WS_Head = {name="Valorous Mask", augments={'Accuracy+25 Attack+25','Enmity+2','STR+12','Accuracy+6',}}
 	WSD_Head = { name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}}
 	TP_Legs = {name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}}
-	TP_Body = {name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}}
+	TP_Body = "Emicho Haubert +1"
 	WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
 	WSD_Hands ={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}}
 	
@@ -89,7 +89,7 @@ function get_sets()
 			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 
 	sets.TP.Zulfiqar = {ammo="Ginsen",
-			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear2="Brutal earring", ear="Cessance earring",
+			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear2="Brutal earring", ear1="Cessance earring",
 			    body="Valorous mail",hands="Sulevia's gauntlets +2",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 	
@@ -115,9 +115,9 @@ function get_sets()
 			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",	feet="Pummeler's Calligae +3"}
 	
 	sets.TP.DW = {ammo="Yetshila",
-			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear1="Suppanomimi",ear1="Cessance earring",
+			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear1="Telos Earring",ear1="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
+			    back=DA_Back,waist="Reiki Koshiobi",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 	
 				  
 	

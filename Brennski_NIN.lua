@@ -286,7 +286,7 @@ WS_ind = 1
 
 sets.MultiHit = {}
 sets.MultiHit.Attack = { 
-        head="Adhemar Bonnet",
+        head="Adhemar Bonnet +1",
         body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
         hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
         legs="Samnuha tights",

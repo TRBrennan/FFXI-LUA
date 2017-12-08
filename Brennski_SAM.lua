@@ -23,7 +23,7 @@ function get_sets()
 		WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
 		WSD_Hands ={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}}
 		WSD_Body = {name ="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}}
-		WSD_Head = { name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}},}
+		WSD_Head = { name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}}
 		WSD_Feet = { name="Valorous Greaves", augments={'Attack+21','Weapon skill damage +5%',}}
 		
         --Idle Sets--  
@@ -129,8 +129,8 @@ function get_sets()
 							hands=WSD_Hands,
 							legs="Ken. Hakama",
 							feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
-							neck="Fotia Gorget",
-							waist="Fotia Belt",
+							neck="Caro Necklace",
+							waist="Grunfeld Rope",
 							left_ear="Telos Earring",
 							right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
 							right_ring="Regal Ring",

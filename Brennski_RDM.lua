@@ -35,7 +35,7 @@ function get_sets()
         Idle_ind = 1                  
        
         sets.Idle.Standard = {main="Bolelabunga", sub ="Genmei Shield",ammo="Homiliary",
-                                      head="Vitivation Chapeau +1",neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
+                                      head={ name="Viti. Chapeau +1", augments={'Enhances "Dia III" effect','Enhances "Slow II" effect',}},neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
                                       body="Jhakri Robe +2",hands={ name="Merlinic Dastanas", augments={'DEX+3','Mag. Acc.+16 "Mag.Atk.Bns."+16','"Refresh"+1',}},
 									  ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Fucho-no-obi",legs="Carmine Cuisses +1",feet="Chironic Slippers", back ="Moonbeam Cape"}
@@ -44,7 +44,7 @@ function get_sets()
 									  neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
                                       head ="Ayanmo Zucchetto +1", body ="Ayanmo Corazza +1",hands="Ayanmo Manopolas +1",
 									  ring2="Vocane Ring",ring1="Defending ring",
-                                      waist="Fucho-no-obi",legs="Ayanmo cosciales +1",feet="Ayanmo Gambieras +1", back ="Moonbeam Cape"}							  
+                                      waist="Fucho-no-obi",legs="Aya. Cosciales +2",feet="Ayanmo Gambieras +1", back ="Moonbeam Cape"}							  
                                                  
 		--TP Sets--
         sets.TP = {}
@@ -68,14 +68,14 @@ function get_sets()
 			--1=Standard, 2= Magic Burst'--
 			Nuke_ind = 1
 			
-			sets.Nuke.Standard = {main="Grioavolr", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
+			sets.Nuke.Standard = {main="Grioavolr", sub = "Enki Strap",ammo="Pemphredo Tathlum",
                                  hhead={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
 								 neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Regal Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Jhakri Cuffs +2", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
                                  back="Sucellos's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
 								 feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','INT+10','"Mag.Atk.Bns."+1',}}}
 										
-			sets.Nuke.MagicBurst = {main="Grioavolr", sub = "Niobid Strap",ammo="Pemphredo Tathlum",
+			sets.Nuke.MagicBurst = {main="Grioavolr", sub = "Enki Strap",ammo="Pemphredo Tathlum",
                                   neck="Mizukage-no-Kubikazari",ear2="Friomisi earring", ear1="Static Earring", ring1="Locus Ring", ring2 ="Mujin Band", waist ="Refoccilation Stone",
                                  back="Sucellos's Cape",
 								 head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst dmg.+7%','CHR+7','Mag. Acc.+12',}},
@@ -87,7 +87,7 @@ function get_sets()
 		--Enhancing Sets--					
 		sets.Enhancing ={}
 								
-			sets.Enhancing.Normal = { main ="Oranyan", sub = "Niobid Strap", ammo="Regal Gem",
+			sets.Enhancing.Normal = { main ="Oranyan", sub = "Enki Strap", ammo="Regal Gem",
                                  head="Telchine Cap",neck="Incanter's Torque",ear1 ="Andoaa Earring", ear2="Regal Earring",
                                  body="Telchine Chasuble",hands="Atrophy Gloves +1", ring1="Stikini Ring", ring2 ="Sirona's Ring", waist ="Olympus Sash",
                                  back="Ghostfyre Cape",legs="Telchine Braconi",feet="Lethargy Houseaux +1"}
@@ -129,7 +129,7 @@ function get_sets()
 			sets.Magic.Dark = {main="Grioavolr", sub ="Enki Strap", ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Incanter's Torque",ear2="Friomisi earring", ear1="Hecate's Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Shiva Ring", waist ="Refoccilation Stone",
-                                 back="Sucellos's Cape",llegs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
+                                 back="Sucellos's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
 								 feet="Merlinic Crackows"}
 								 
 			sets.Magic.Stun ={main="Grioavolr",sub ="Enki Strap",ammo="Pemphredo Tathlum",head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
@@ -223,7 +223,7 @@ function get_sets()
 										  feet="Thereoid Greaves"}
 		
 		sets.WS.Req = {ammo="Floestone",
-                                            head="Adhemar Bonnet",
+                                            head="Adhemar Bonnet +1",
 											neck="Fotia gorget",
 											ear1="Moonshade Earring",
 											ear2="Telos Earring",

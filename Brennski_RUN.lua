@@ -75,7 +75,7 @@ function get_sets()
                 --1=Standard,2=DT, 3=MDTtank, 4=HPB, 5=StatusResist--
  			   TP_ind = 1
 				sets.TP.Standard = {ammo="Yamarang",
-                                    head="Dampening Tam", 
+                                    head="Adhemar Bonnet +1", 
 									neck="Lissome necklace", 
 									left_ear="Telos Earring", 
 									right_ear="Sherida earring", 
@@ -89,7 +89,7 @@ function get_sets()
 									feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 									
 				sets.TP.TankTP = { ammo="Yamarang",
-                                    head="Dampening Tam", 
+                                    head="Adhemar Bonnet +1", 
 									neck="Lissome necklace", 
 									left_ear="Telos Earring", 
 									right_ear="Sherida earring", 
@@ -160,7 +160,7 @@ function get_sets()
                 Resolution_ind = 1
        
                 sets.Resolution.Attack = {  ammo="Seeth. Bomblet +1",
-											head="Adhemar Bonnet",
+											head="Adhemar Bonnet +1",
 											body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
 											hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 											legs="Samnuha Tights",
@@ -200,7 +200,7 @@ function get_sets()
                 Requiescat_ind = 1
                
                 sets.Requiescat.Attack = {ammo="Seeth. Bomblet +1",
-                                          head="Adhemar Bonnet",neck="Fotia gorget",right_ear="Brutal earring",left_ear="Moonshade earring",
+                                          head="Adhemar Bonnet +1",neck="Fotia gorget",right_ear="Brutal earring",left_ear="Moonshade earring",
                                           body="Adhemar Jacket",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},right_ring="Niqmaddu Ring",left_ring="Regal ring",
                                           back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 										  waist="Fotia belt",legs="Samnunha Tights",feet={ name="Herculean Boots", augments={'Attack+30','"Counter"+1','STR+8','Accuracy+10',}}}
@@ -212,7 +212,7 @@ function get_sets()
                 FellCleave_ind = 1
        
                 sets.FellCleave.Attack = {   ammo="Seeth. Bomblet +1",
-											head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+											head="Adhemar Bonnet +1",
 											body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
 											hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 											legs="Samnuha Tights",
@@ -318,7 +318,7 @@ function get_sets()
        
                 sets.JA.Pflug = {feet="Runeist's Boots +3",}
 											
-				sets.JA.Ryake = {feet = "Futhark Boots", waist ="Chaac Belt"}
+				sets.JA.Rayke = {feet = "Futhark Boots", waist ="Chaac Belt"}
 				
 				sets.JA.Steps = {ammo="Staunch Tathlum",
 								head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
@@ -343,7 +343,7 @@ function get_sets()
        
                 sets.precast.FC.Standard = {ammo="Sapience Orb",head="Carmine Mask +1",neck="Voltsurge Torque", right_ear="Loquac. Earring",left_ear="Etiolation Earring",
                                             body="Ashera Harness",hands="Regal Gauntlets", waist ="Flume Belt +1",left_ring="Defending Ring",right_ring="Vocane Ring",
-                                            legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},feet="Carmine Greaves +1", 
+                                            legs="Aya. Cosciales +2",feet="Carmine Greaves +1", 
 											back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},}
                                                                        
                 sets.precast.FC.Enhancing = {ammo="Sapience Orb",head="Carmine Mask +1",neck="Voltsurge Torque", right_ear="Loquac. Earring", left_ear="Etiolation Earring",
@@ -353,7 +353,7 @@ function get_sets()
 				
 				sets.precast.FC.Enmity = {ammo="Sapience Orb",head="Carmine Mask +1",neck="Unmoving Collar", right_ear="Loquac. Earring", left_ear="Etiolation Earring",
                                             body="Ashera Harness",hands="Regal Gauntlets", waist ="Flume Belt +1",left_ring="Defending Ring",right_ring="Vocane Ring",
-                                            legs={ name="Herculean Trousers", augments={'Mag. Acc.+21','"Fast Cast"+5','CHR+3',}},feet="Carmine Greaves +1", 
+                                            legs="Aya. Cosciales +2",feet="Carmine Greaves +1", 
 											back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},}							 
 end
     
@@ -380,7 +380,13 @@ function precast(spell)
         elseif spell.english == 'Pflug' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Pflug))				
         elseif spell.english == 'Gambit' then
-                equip(set_combine(sets.Utility.Enmity,sets.JA.Gambit))				
+                equip(set_combine(sets.Utility.Enmity,sets.JA.Gambit))		
+				send_command('timers delete "Gambit"')
+				send_command('timers create "Gambit" 90 down;wait 60;input /party Gambit [WEARING OFF IN 30 SEC.];wait 30;input /party Gambit [OFF];timers delete "Gambit"')
+		elseif spell.english == 'Rayke' then
+                equip(set_combine(sets.Utility.Enmity,sets.JA.Rayke))
+				send_command('timers delete "Rayke"')
+				send_command('timers create "Rayke" 47 down;wait 32;input /party Rayke [WEARING OFF IN 15 SEC.];wait 15;input /party Rayke [OFF];timers delete "Rayke"')
         elseif spell.english == 'Resolution' or spell.english == 'Shockwave' then
                 equip(sets.Resolution[sets.Resolution.index[Resolution_ind]])				
         elseif spell.english == 'Dimidiation' then
