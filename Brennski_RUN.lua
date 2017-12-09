@@ -371,7 +371,8 @@ function precast(spell)
         elseif spell.english == 'Vallation' or spell.english == 'Valiance' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Vallation))
         elseif spell.english=='Flash'  or spell.skill == 'Enfeebling Magic' or spell.english == 'Foil' or spell.skill =='Dark Magic' or spell.skill =="Blue Magic" or spell.english =='Tellus'
-				or spell.english =='Lux' or spell.english =='Gelus' or spell.english =='Tenebrae' or spell.english =='Sulpor' or spell.english =='Ignis' or spell.english =='Unda' or spell.english =='Flabra' then	
+				or spell.english =='Lux' or spell.english =='Gelus' or spell.english =='Tenebrae' or spell.english =='Sulpor' or spell.english =='Ignis' or spell.english =='Unda' or spell.english =='Flabra'
+				or spell.english =='Weapon Bash' or spell.english =='Last Resort' or spell.english == 'Souleater' then	
 				equip(sets.precast.FC.Enmity)				
 		elseif spell.english == 'Battuta' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Battuta))			
@@ -410,7 +411,7 @@ function midcast(spell,act)
 				if buffactive['Embolden'] then
 					equip(set_combine(sets.Utility.Enhancing,sets.JA.Embolen))
 				end
-				if string.find(spell.name,'Bar') or spell.name=="Temper" or spell.name == "Phalanx" then
+				if string.find(spell.name,'Bar') or spell.name=="Temper" then
                     equip(sets.Utility.Enhancing)
                 end
        end       
@@ -426,8 +427,7 @@ function midcast(spell,act)
 		end
 		
 		if spell.english =='Phalanx' then
-			equip(sets.Utility.Phalanx)
-			
+			equip(sets.Utility.Phalanx)			
 		end
              
         if spell.english == 'Regen' or spell.english == 'Regen II' or spell.english =='Regen III' or spell.english == 'Regen IV' then
