@@ -117,7 +117,7 @@ function get_sets()
 	sets.TP.DW = {ammo="Yetshila",
 			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear1="Telos Earring",ear1="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Reiki Koshiobi",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
+			    back=DA_Back,waist="Reiki Yotai",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 	
 				  
 	

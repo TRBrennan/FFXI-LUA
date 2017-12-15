@@ -54,9 +54,9 @@ function get_sets()
 				
                 TP_ind = 1
 				sets.TP.Standard = {main="Sequence", sub ="Colada", ammo ="Ginsen", head ="Ayanmo Zucchetto +1", 
-									body ="Ayanmo Corazza +1", neck="Lissome Necklace", ear1 ="Suppanomimi", ear2 ="Telos Earring",
+									body ="Ayanmo Corazza +1", neck="Lissome Necklace", ear1 ="Cessance Earring", ear2 ="Telos Earring",
 									ring1="Ilabrat Ring", ring2="Chirich Ring",
-									hands ="Ayanmo Manopolas +1", legs ="Carmine Cuisses +1", feet ="Carmine Greaves +1", back = "Grounded Mantle", waist ="Kentarch Belt +1" }
+									hands ="Ayanmo Manopolas +1", legs ="Carmine Cuisses +1", feet ="Carmine Greaves +1", back = "Grounded Mantle", waist ="Reiki Yotai" }
 	sets.MeleeMode ={}
 		sets.MeleeMode.Index ={'NotMelee','Melee'}
 		MeleeMode_ind =1
@@ -169,7 +169,7 @@ function get_sets()
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Evanescence Ring", ring2 ='Shiva Ring', waist ="Fucho-no-obi",
                                  back="Izdubar Mantle",legs="Merlinic Shalwar",feet="Merlinic Crackows"}
 								 
-		sets.Utility.Dia = {head = "Vitivation Chapeau +1"}
+		sets.Utility.Dia = {head={ name="Viti. Chapeau +1", augments={'Enhances "Dia III" effect','Enhances "Slow II" effect',}},}
 		
 		
 		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}

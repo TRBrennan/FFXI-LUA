@@ -189,7 +189,7 @@ sets.TP.HighAccuracy.Mid = {
     back="Andartia's Mantle",
 	waist="Kentarch belt +1",
 	legs="Samnuha Tights",
-	feet={ name="Herculean Boots", augments={'Accuracy+25 Attack+25','"Dual Wield"+2','STR+13','Accuracy+6',}}, 
+	feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}, 
 }
 sets.TP.HighAccuracy.High = {
 	head="Ken. Jinpachi", 
@@ -203,7 +203,7 @@ sets.TP.HighAccuracy.High = {
     back="Andartia's Mantle",
 	waist="Kentarch belt +1",
 	legs="Hiza. Hizayoroi +2",
-    feet={ name="Herculean Boots", augments={'Accuracy+25 Attack+25','"Dual Wield"+2','STR+13','Accuracy+6',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
 }
 
 sets.TP.Hybrid = {}
@@ -320,7 +320,7 @@ sets.OneHit.Attack ={
 		body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','Weapon skill damage +2%','STR+1','Attack+4',}},
 		hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},
 		legs="Hiza. Hizayoroi +2",
-		feet={ name="Herculean Boots", augments={'Accuracy+21','Weapon skill damage +4%','Attack+12',}},
+		feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}},
 		neck="Caro Necklace",
 		waist="Grunfeld Rope",
 		left_ear="Ishvara Earring",
@@ -334,11 +334,11 @@ sets.OneHit.Accuracy ={
 		body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','Weapon skill damage +2%','STR+1','Attack+4',}},
 		hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},
 		legs="Hiza. Hizayoroi +2",
-		feet={ name="Herculean Boots", augments={'Accuracy+21','Weapon skill damage +4%','Attack+12',}},
+		feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}},
 		neck="Caro Necklace",
 		waist="Grunfeld Rope",
 		left_ear="Ishvara Earring",
-		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},\
 		right_ring="Regal Ring",	
 		right_ring="Ilabrat Ring",
 		back="Yokaze Mantle"
@@ -350,7 +350,7 @@ sets.OtherWS.Attack ={
         body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
         hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},
         legs="Hiza. Hizayoroi +2",
-        feet={ name="Herculean Boots", augments={'Accuracy+25 Attack+25','"Dual Wield"+2','STR+13','Accuracy+6',}},
+        feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
         neck="Caro Necklace",
         waist="Grunfeld Rope",
         right_ear="Moonshade Earring",
@@ -364,7 +364,7 @@ sets.OtherWS.Accuracy = {
         body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
         hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},
         legs="Hiza. Hizayoroi +2",
-        feet={ name="Herculean Boots", augments={'Accuracy+25 Attack+25','"Dual Wield"+2','STR+13','Accuracy+6',}},
+        feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
         neck="Caro Necklace",
         waist="Grunfeld Rope",
         right_ear="Moonshade Earring",

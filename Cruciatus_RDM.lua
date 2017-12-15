@@ -64,10 +64,10 @@ function get_sets()
                 --1=Standard--
 				
                 TP_ind = 1
-				sets.TP.Standard = {main="Sequence", sub ="Colada", aammo="Homiliary",
-									  neck="Sanctity Necklace", ear1="Etiolation Earring", ear2="Infused Earring",
+				sets.TP.Standard = {main="Sequence", sub ="Colada", ammo="Homiliary",
+									  neck="Sanctity Necklace", ear1="Sherida Earring", ear2="Suppanomimi",
                                       head ="Ayanmo Zucchetto +1", body ="Ayanmo Corazza +1",hands="Ayanmo Manopolas +1",
-									  ring2="Vocane Ring",ring1="Defending ring",
+									  ring2="Petrov Ring",ring1="Defending ring",
                                       waist="Fucho-no-obi",legs="Ayanmo cosciales +1",feet="Ayanmo Gambieras +1", back ="Moonbeam Cape"}
 	sets.MeleeMode ={}
 		sets.MeleeMode.Index ={'NotMelee','Melee'}
@@ -107,7 +107,7 @@ function get_sets()
 									body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +7',}},
 									hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +5',}},
 									legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +9',}},
-									feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +3',}},    
+									feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +9',}},   
 									back="Sucellos's Cape",
 									neck="Incanter's Torque",
 									waist="Cascade Belt",
@@ -222,7 +222,7 @@ function get_sets()
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Amalric Gages", ring1="Evanescence Ring", ring2 ='Shiva Ring', waist ="Fucho-no-obi",
                                  back="Izdubar Mantle",legs="Merlinic Shalwar",feet="Merlinic Crackows"}
 								 
-		sets.Utility.Dia = {head = "Vitivation Chapeau +1"}
+		sets.Utility.Dia = {head={ name="Viti. Chapeau +1", augments={'Enhances "Dia III" effect','Enhances "Slow II" effect',}},}
 		
 		
 		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}

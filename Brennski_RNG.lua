@@ -654,7 +654,7 @@ sets.snapshot = {
 end
 
 function precast(spell)
-	if spell.type == 'Ranged Attack' then
+	if spell.english == 'Ranged' then
 		equip(sets.snapshot)
 	elseif spell.type == 'WeaponSkill' 
 		then if player.tp >= 1000 
@@ -716,7 +716,7 @@ function precast(spell)
 end
 	
 function midcast(spell,act)
-	if spell.type == 'Ranged Attack' 
+	if spell.english == 'Ranged'
 		then equip(sets.Ranged[sets.Ranged.index[WS_ind]])
 		if buffactive['Velocity Shot'] 
 			then equip(sets.JA.VShot)

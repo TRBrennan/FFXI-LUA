@@ -104,7 +104,7 @@ function get_sets()
 									body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +7',}},
 									hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +5',}},
 									legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +9',}},
-									feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +3',}},
+									feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +9',}},
 									neck="Incanter's Torque",right_ear ="Lifestorm Earring", left_ear="Spellbreaker Earring",
 									ring1="Metamorph Ring", ring2 ="Sirona's Ring", waist ="Cascade Belt",
 									back="Fi follet cape +1"}

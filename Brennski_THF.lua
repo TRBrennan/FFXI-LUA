@@ -56,7 +56,7 @@ function get_sets()
 				sets.TP.Standard = { ammo="Ginsen",
                                     head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Suppanomimi",ear2="Telos Earring",
                                     body="Ashera Harness",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Epona's Ring",
-                                    back="Canny Cape",waist="Reiki Koshiobi",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+                                    back="Canny Cape",waist="Reiki Yotai",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                        
                                                        
                 sets.TP.AccuracyMid = {ammo="Ginsen",
@@ -93,7 +93,7 @@ function get_sets()
 								neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
                                 body="Herculean Vest",hands="Meg. Gloves +2",ring1="Ilabrat Ring",ring2="Regal Ring",
                                 back="Canny Cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
-								feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}} }							
+								feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}}, }							
                
         sets.WS.Exenterator = {}              
                        
@@ -116,7 +116,7 @@ function get_sets()
 										  neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Herculean Vest",hands="Meg. Gloves +2",ring1="Ilabrat Ring",ring2="Regal Ring",
                                           back="Canny Cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
-										  feet={ name="Herculean Boots", augments={'Attack+29','Weapon skill damage +2%','STR+2','Accuracy+10',}} }		
+										  feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}}, }		
 										  
 		sets.WS,AeolianEdge = {
 							head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
