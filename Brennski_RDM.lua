@@ -246,6 +246,8 @@ function precast(spell)
                 equip(sets.precast.FC.Standard)
 		elseif spell.skill == 'Dark Magic' then
                 equip(sets.precast.FC.Standard)
+		elseif spell.skill == 'Healing Magic' then
+                equip(sets.precast.FC.Standard)
 		elseif spell.english == 'Regen' or spell.english == 'Regen II' or spell.english == 'Regen III' or spell.english == 'Regen IV' or spell.english == 'Regen V' then	
 			equip(sets.precast.FC.Regen)
 		elseif spell.english == 'Chainspell' then

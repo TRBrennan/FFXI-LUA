@@ -195,6 +195,8 @@ function precast(spell)
                 equip(sets.precast.FC.Standard)
 		elseif spell.skill == 'Dark Magic' then
                 equip(sets.precast.FC.Standard)
+		elseif spell.skill == 'Healing Magic' then
+                equip(sets.precast.FC.Standard)
 		elseif spell.english =='Stun' then
 			equip(sets.Magic.Stun)
 		elseif spell.english == 'Death' then
