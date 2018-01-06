@@ -63,30 +63,34 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = {ammo="Ginsen",
                                     head="Flam. Zucchetto +2", neck="Moonbeam Nodowa", ear1="Cessance Earring",ear2="Telos Earring",
-                                    body=TP_Body,hands="Flam. Manopolas +2",
+                                    body=TP_Body,
+									hands="Wakido Kote +2",
 									right_ring="Niqmaddu Ring",left_ring="Ilabrat Ring",
                                      back="Takaha Mantle",waist="Ioskeha Belt",
 									 legs="Ken. Hakama",
-									feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
+									feet="Flam. Gambieras +2",}
                                                        
                                                         
-                sets.TP.AccuracyMid = {ammo="Jukukik Feather",
+                sets.TP.AccuracyMid = {ammo="Ginsen",
                                         head="Flam. Zucchetto +2", 
 										neck="Moonbeam Nodowa", ear1="Cessance Earring",ear2="Telos Earring",
-										body=TP_Body,hands="Flam. Manopolas +2",right_ring="Niqmaddu Ring",left_ring="Ilabrat Ring",
+										body=TP_Body,
+										hands="Wakido Kote +2",
+										right_ring="Niqmaddu Ring",left_ring="Ilabrat Ring",
                                          back="Takaha Mantle",
 										 waist="Ioskeha Belt",legs="Ken. Hakama",
-										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
+										feet="Flam. Gambieras +2",}
        
-                sets.TP.AccuracyFull = {ammo="Jukukik Feather",
+                sets.TP.AccuracyFull = {ammo="Ginsen",
                                        head="Flam. Zucchetto +2",
 										neck="Moonbeam Nodowa", ear1="Dignitary's Earring", ear2="Telos Earring",
                                         body=TP_Body,
-										hands="Flam. Manopolas +2",right_ring="Cacoethic Ring",left_ring="Flamma Ring",
+										hands="Wakido Kote +2",
+										right_ring="Cacoethic Ring",left_ring="Flamma Ring",
                                         back="Takaha Mantle",
 										waist="Ioskeha Belt",
 										legs="Ken. Hakama",
-										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
+										feet="Flam. Gambieras +2",}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
                               head="Ynglinga Sallet",
@@ -128,7 +132,7 @@ function get_sets()
 							body=TP_Body,
 							hands=WSD_Hands,
 							legs="Ken. Hakama",
-							feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
+							feet="Flam. Gambieras +2",
 							neck="Caro Necklace",
 							waist="Grunfeld Rope",
 							left_ear="Telos Earring",

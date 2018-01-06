@@ -163,7 +163,7 @@ function get_sets()
 											head="Adhemar Bonnet +1",
 											body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
 											hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
-											legs="Samnuha Tights",
+											legs="Meg. Chausses +2",
 											feet="Lustra. Leggings +1",
 											neck="Fotia Gorget",
 											waist="Fotia Belt",
@@ -374,10 +374,12 @@ function precast(spell)
                 equip(sets.JA.Lunge)				
         elseif spell.english == 'Vallation' or spell.english == 'Valiance' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Vallation))
-        elseif spell.english=='Flash'  or spell.skill == 'Enfeebling Magic' or spell.english == 'Foil' or spell.skill =='Dark Magic' or spell.skill =="Blue Magic" or spell.english =='Tellus'
+        elseif spell.english=='Flash'  or spell.skill == 'Enfeebling Magic' or spell.english == 'Foil' or spell.skill =='Dark Magic' or spell.skill =="Blue Magic"  then
+			equip(sets.precast.FC.Enmity)
+		elseif spell.english =='Tellus'
 				or spell.english =='Lux' or spell.english =='Gelus' or spell.english =='Tenebrae' or spell.english =='Sulpor' or spell.english =='Ignis' or spell.english =='Unda' or spell.english =='Flabra'
 				or spell.english =='Weapon Bash' or spell.english =='Last Resort' or spell.english == 'Souleater' then	
-				equip(sets.precast.FC.Enmity)				
+					equip(sets.Utility.Enmity)			
 		elseif spell.english == 'Battuta' then
                 equip(set_combine(sets.Utility.Enmity,sets.JA.Battuta))			
         elseif spell.english == 'Leiment' or spell.english == 'Elemental Sforzo' then

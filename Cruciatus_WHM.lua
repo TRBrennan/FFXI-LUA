@@ -110,7 +110,7 @@ function get_sets()
 		back="Solemnity cape",waist="Fucho-no-obi",legs="Lengo pants",feet="Inspirited boots"}
 	
 	sets.midcast_EnfeeblingMagic = {main ="Queller Rod",sub="Ammurapi Shield",ammo="Hydrocera",
-		head="Befouled crown",neck="Imbodla necklace",ear1="Lifestorm Earring",ear2="Psystorm Earring",
+		head="Befouled crown",neck="Imbodla necklace",ear1="Lifestorm Earring",ear2="Regal Earring",
 		body="Chironic doublet",hands="Lurid mitts",ring1="Weatherspoon ring",ring2="Vertigo ring",
 		back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 		waist="Rumination sash",legs="Chironic hose",feet="Medium's sabots"}
@@ -169,7 +169,7 @@ function get_sets()
 	}
 	
 	sets.midcast_MAB = {main ="Queller Rod",sub="Ammurapi Shield",ammo="Pemphredo tathlum",
-		head="Helios band",neck="Sanctity necklace",ear1="Friomisi Earring",ear2="Crematio Earring",
+		head="Helios band",neck="Sanctity necklace",ear1="Friomisi Earring",ear2="Regal Earring",
 		body="Vedic coat",hands="Helios gloves",ring1="Weatherspoon ring",ring2="Acumen ring",
 		back="Toro cape",waist="Eschan stone",legs="Chironic hose",feet="Navon crackows"}
 		

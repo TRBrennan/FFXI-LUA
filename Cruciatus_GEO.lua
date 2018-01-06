@@ -114,7 +114,7 @@ function get_sets()
     sets.midcast['Enfeebling Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 
 	range="Dunna",
-				head="Befouled Crown", neck="Erra Pendant", left_ear="Influx Earring", right_ear="Barkarole Earring",
+				head="Befouled Crown", neck="Erra Pendant", left_ear="Regal Earring", right_ear="Barkarole Earring",
                 body="Shango Robe", hands="Lurid Mitts", ring1="Vertigo Ring", ring2 ="Perception Ring",
                 back="Nantosuelta's Cape", waist="Ovate Rope", legs="Psycloth Lappas", feet="Bagua Sandals +1"}
     
@@ -141,7 +141,7 @@ function get_sets()
     sets.midcast['Dark Magic'] = {
 	-- main="Marin staff", sub="Niobid Strap", 
 	range="Dunna",
-				head="Bagua Galero", neck="Erra Pendant", right_ear="Barkarole Earring", left_ear="Friomisi Earring",
+				head="Bagua Galero", neck="Erra Pendant", right_ear="Barkarole Earring", left_ear="Regal Earring",
                 body="Geomancy Tunic", hands="Jhakri Cuffs +1", ring1="Acumen Ring", ring2="Vertigo ring",
                 back="Nantosuelta's Cape", waist="Cetl Belt", legs="Psycloth Lappas", feet="Merlinic Crackows"}
 

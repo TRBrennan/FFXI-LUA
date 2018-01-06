@@ -66,7 +66,7 @@ function get_sets()
 									back={ name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10',}},}
                                                                                           
                 sets.TP.AccuracyMid = { 
-                                    head="Adhemar Bonnet +1",
+                                    head="Dampening Tam",
 									body="Ashera Harness",
 									hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 									legs="Samnuha Tights",
@@ -112,33 +112,35 @@ function get_sets()
        --Weaponskill Sets--
         sets.WS = {}
               
-        sets.WS.SP = { head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}}, neck="Caro Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
-                                body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Begrudging Ring",ring2="Epona's Ring",
+        sets.WS.SP = { head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}}, 
+							neck="Caro Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
+                                body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Begrudging Ring",ring2="Epona's Ring",
                                 back="Visucius's Mantle",waist="Grunfeld Rope",legs="Samnuha Tights",
 								feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14'}} }							          
                        
-        sets.WS.VS = {  head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}}, neck="Rancor Collar",ear1="Moonshade Earring",ear2="Telos Earring",
-                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},
-										  ring1="Niqmaddu Ring",ring2="Epona's Ring",
+        sets.WS.VS = {  head="Adhemar Bonnet +1",
+								neck="Rancor Collar",ear1="Moonshade Earring",ear2="Telos Earring",
+                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+										  ring1="Niqmaddu Ring",ring2="Regal Ring",
                                           back="Visucius's Mantle",waist="Grunfeld Rope",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14'}} }
                                                                           
         sets.WS.SS = { head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}}, neck="caro Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
-                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Niqmaddu Ring",ring2="Epona's Ring",
+                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Niqmaddu Ring",ring2="Epona's Ring",
                                           back="Visucius's Mantle",waist="Grunfeld Rope",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+21','Crit.hit rate+1','DEX+14','Attack+14'}} }
 
         sets.WS.AF = { head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 						neck="Caro Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
-                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Niqmaddu Ring",ring2="Rajas Ring",
+                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Niqmaddu Ring",ring2="Rajas Ring",
                                           back="Visucius's mantle",waist="Grunfeld Rope",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Attack+30','"Counter"+1','STR+8','Accuracy+10',}}}
 										  
 		sets.WS.RF = { head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 						neck="Caro Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
-                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Niqmaddu Ring",ring2="Rajas Ring",
+                                          body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Niqmaddu Ring",ring2="Rajas Ring",
                                           back="Visucius's mantle",waist="Grunfeld Rope",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Attack+30','"Counter"+1','STR+8','Accuracy+10',}} }																	  
                                                                                                
 		sets.WS.HF = {    head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 						body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','Weapon skill damage +2%','STR+1','Attack+4',}},
-						hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},
+						hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 						legs="Hiza. Hizayoroi +2",
 						feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
 						neck="Caro Necklace",

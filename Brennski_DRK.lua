@@ -93,12 +93,12 @@ function get_sets()
 	sets.TP.AccuracyLite = {ammo="Ginsen",
 			    head=DA_Head,neck="Lissome Necklace", ear1="Brutal earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Flam. Manopolas +2",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
+			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Flam. Gambieras +2",}
 	
 	sets.TP.AccuracyFull = {ammo="Ginsen",
 			    head=Acc_Head,neck="Lissome Necklace", ear1="Brutal earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Flam. Manopolas +2",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
+			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Flam. Gambieras +2",}
 				
 	sets.TP.DT = {ammo="Staunch Tathlum",
 			    head="Sulevia's mask +2",neck="Loricate torque +1", ear1="Hearty earring", ear2="Sanare earring",

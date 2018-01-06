@@ -112,7 +112,7 @@ function get_sets()
 									neck="Incanter's Torque",
 									waist="Cascade Belt",
 									left_ear="Andoaa Earring",
-									right_ear="Enchntr. Earring +1",
+									right_ear="Regal Earring",
 									left_ring="Sangoma Ring",
 									right_ring="Kishar Ring",}
 								 
@@ -134,7 +134,7 @@ function get_sets()
 									neck="Incanter's Torque",
 									waist="Ovate Rope",
 									left_ear="Mendi. Earring",
-									right_ear="Loquac. Earring",
+									right_ear="Regal Earring",
 									left_ring="Perception Ring",
 									right_ring="Kishar Ring",
 									back="Sucellos's Cape",}									 
@@ -150,7 +150,7 @@ function get_sets()
 									neck="Incanter's Torque",
 									waist="Ovate Rope",
 									left_ear="Mendi. Earring",
-									right_ear="Loquac. Earring",
+									right_ear="Regal Earring",
 									left_ring="Perception Ring",
 									right_ring="Kishar Ring",
 									back="Sucellos's Cape",}		
@@ -170,7 +170,7 @@ function get_sets()
 								neck="Nodens Gorget",
 								waist="Ovate Rope",
 								left_ear="Mendi. Earring",
-								right_ear="Loquac. Earring",
+								right_ear="Regal Earring",
 								left_ring="Lebeche Ring",
 								right_ring="Sirona's Ring",}
 												 
@@ -180,7 +180,7 @@ function get_sets()
                                  back="Sucellos's Cape",legs="Telchine Braconi",feet="Telchine Pigaches"}
 			
 			sets.Magic.Dark = {main="Grioavolr", sub ="Enki Strap", ammo="Pemphredo Tathlum",
-                                 head="Pixie Hairpin +1",neck="Incanter's Torque",ear2="Friomisi earring", ear1="Hecate's Earring",
+                                 head="Pixie Hairpin +1",neck="Incanter's Torque",ear2="Friomisi earring", ear1="Regal Earring",
                                  body="Shango Robe",hands="Amalric Gages", ring1="Evanescence Ring", ring2 ="Shiva Ring", waist ="Refoccilation Stone",
                                  back="Sucellos's Cape",legs="Merlinic Shalwar",
 								 feet="Merlinic Crackows"}
@@ -291,35 +291,31 @@ function get_sets()
 end
 
 function precast(spell)
-        if spell.english == 'Regen' or spell.english == 'Regen II' or spell.english == 'Regen III' or spell.english == 'Regen IV' or spell.english == 'Regen V' then	
-			equip(sets.precast.FC.Regen)
-		end
-		if spell.english == 'Chainspell' then
-			equip(sets.JA.CS)
-		end
-		if spell.english =='Stun' then
-			equip(sets.magic.Stun)
-		end
-		if spell.type == 'Magic' then
+          if spell.skill == 'Elemental Magic' then
                 equip(sets.precast.FC.Standard)
-         end
-		
-		if spell.english == 'Chant du Cygne' then
+		elseif spell.skill == 'Enfeebling Magic' then
+                equip(sets.precast.FC.Standard)
+		elseif spell.skill == 'Enhancing Magic' then
+                equip(sets.precast.FC.Standard)
+		elseif spell.skill == 'Dark Magic' then
+                equip(sets.precast.FC.Standard)
+		elseif spell.english == 'Regen' or spell.english == 'Regen II' or spell.english == 'Regen III' or spell.english == 'Regen IV' or spell.english == 'Regen V' then	
+			equip(sets.precast.FC.Regen)
+		elseif spell.english == 'Chainspell' then
+			equip(sets.JA.CS)
+		elseif spell.english =='Stun' then
+			equip(sets.magic.Stun)
+		elseif spell.english == 'Chant du Cygne' then
                 equip(sets.WS.CDC)
-        end		
-		if spell.english == 'Savage Blade' then
+        elseif spell.english == 'Savage Blade' then
 			equip(sets.WS.Savage)
-		end
-		if spell.english == 'Vorpal Blade' then
+		elseif spell.english == 'Vorpal Blade' then
 			equip(sets.WS.Vorpal)
-		end
-		if spell.english == 'Requiescat' then
+		elseif spell.english == 'Requiescat' then
 			equip(sets.WS.Req)
-		end
-		if spell.english == 'Sanguine Blade' then
+		elseif spell.english == 'Sanguine Blade' then
 			equip(sets.Magic.Dark)
-		end
-		if spell.english =='Composure' then
+		elseif spell.english =='Composure' then
 			equip(sets.JA.Composure)
 		end
 		

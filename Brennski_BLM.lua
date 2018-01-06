@@ -187,17 +187,21 @@ end
 
 function precast(spell)
 
-		if spell.english =='Stun' then
-			equip(sets.Magic.Stun)
-		end
-		if spell.english == 'Death' then
-			equip(sets.precast.FC.Death)
-		end
-		if spell.type == 'Magic' then
+		 if spell.skill == 'Elemental Magic' then
                 equip(sets.precast.FC.Standard)
-         end
-		
-		if spell.english == 'Myrkr' then
+		elseif spell.skill == 'Enfeebling Magic' then
+                equip(sets.precast.FC.Standard)
+		elseif spell.skill == 'Enhancing Magic' then
+                equip(sets.precast.FC.Standard)
+		elseif spell.skill == 'Dark Magic' then
+                equip(sets.precast.FC.Standard)
+		elseif spell.english =='Stun' then
+			equip(sets.Magic.Stun)
+		elseif spell.english == 'Death' then
+			equip(sets.precast.FC.Death)
+		elseif spell.type == 'Magic' then
+                equip(sets.precast.FC.Standard)
+		elseif spell.english == 'Myrkr' then
 			equip(sets.WS.Myrkr)
 		end
 		

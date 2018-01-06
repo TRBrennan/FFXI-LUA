@@ -195,17 +195,20 @@ function get_sets()
 end
 
 function precast(spell)
-        if spell.english == 'Regen' or spell.english == 'Regen II' or spell.english == 'Regen III' or spell.english == 'Regen IV' or spell.english == 'Regen V' then	
-			equip(sets.precast.FC.Regen)
-		end
-		if spell.english == 'Tabula Rasa' then
-			equip(sets.Utility.Tabula)
-		end
-		if spell.english =='Stun' then
-			equip(sets.Magic.Stun)
-		end
-		if spell.type == 'Magic' then
+        if spell.skill == 'Elemental Magic' then
                 equip(sets.precast.FC.Standard)
+		elseif spell.skill == 'Enfeebling Magic' then
+                equip(sets.precast.FC.Standard)
+		elseif spell.skill == 'Enhancing Magic' then
+                equip(sets.precast.FC.Standard)
+		elseif spell.skill == 'Dark Magic' then
+                equip(sets.precast.FC.Standard)
+		elseif spell.english == 'Regen' or spell.english == 'Regen II' or spell.english == 'Regen III' or spell.english == 'Regen IV' or spell.english == 'Regen V' then	
+			equip(sets.precast.FC.Regen)
+		elseif spell.english == 'Tabula Rasa' then
+			equip(sets.Utility.Tabula)		
+		elseif spell.english =='Stun' then
+			equip(sets.Magic.Stun)	
          end
 		
 end
