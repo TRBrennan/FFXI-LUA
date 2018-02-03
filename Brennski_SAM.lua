@@ -85,7 +85,7 @@ function get_sets()
                                        head="Flam. Zucchetto +2",
 										neck="Moonbeam Nodowa", ear1="Dignitary's Earring", ear2="Telos Earring",
                                         body=TP_Body,
-										hands="Wakido Kote +2",
+										hands="Wakido Kote +3",
 										right_ring="Cacoethic Ring",left_ring="Flamma Ring",
                                         back="Takaha Mantle",
 										waist="Ioskeha Belt",
@@ -101,7 +101,7 @@ function get_sets()
                                  
                 sets.TP.DTAccuracy = {ammo="Ginsen",
                                       head="Ynglinga Sallet",neck="Moonbeam Nodowa", ear2="Telos Earring",ear1="Odnowa Earring +1",    
-									  body="Emet Harness +1",hands="Flam. Manopolas +2",right_ring="Niqmaddu Ring",left_ring="Chirich Ring",
+									  body="Emet Harness +1",hands="Wakido Kote +3",right_ring="Niqmaddu Ring",left_ring="Chirich Ring",
                                        back="Takaha Mantle",
 									   waist="Ioskeha Belt",legs="Ken. Hakama",feet="Amm Greaves"}
                                                          
@@ -115,7 +115,7 @@ function get_sets()
 							head=WSD_Head,
 							body=WSD_Body,
 							hands=WSD_Hands,
-							legs="Hiza. Hizayoroi +2",
+							legs="Wakido Haidate +3",
 							feet=WSD_Feet,
 							neck="Caro Necklace",
 							waist="Grunfeld Rope",
@@ -147,7 +147,7 @@ function get_sets()
 							head=WSD_Head,
 							body="Found. Breastplate",
 							hands=WSD_Hands,
-							legs="Hiza. Hizayoroi +2",
+							legs="Wakido Haidate +3",
 							feet="Founder's Greaves",
 							neck="Fotia Gorget",
 							waist="Fotia Belt",

@@ -70,8 +70,8 @@ function get_sets()
 	
 	sets.TP.Standard = {ammo="Yetshila",
 			    head="Flam. Zucchetto +2",neck="Lissome Necklace", ear2="Brutal earring", ear1="Telos earring",
-			    body=TP_Body,hands="Flam. Manopolas +2",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
+			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
+			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Pummeler's calligae +3"}
 						
 	sets.TP.OH = {ammo="Ginsen",
 			    head="Flam. Zucchetto +2",neck="Lissome Necklace", ear2="Brutal earring", ear1="Cessance earring",
@@ -80,28 +80,28 @@ function get_sets()
 				
 	sets.TP.Chango = {ammo="Ginsen",
 			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear2="Brutal earring", ear1="Telos earring",
-			    body=TP_Body,hands="Flam. Manopolas +2",ring1="Niqmaddu ring",ring2="Flamma ring",
+			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 				
 	sets.TP.H2H = {ammo="Yetshila",
 			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear2="Brutal earring", ear1="Telos earring",
-			    body=TP_Body,hands="Flam. Manopolas +2",ring1="Niqmaddu ring",ring2="Flamma ring",
+			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 
 	sets.TP.Zulfiqar = {ammo="Ginsen",
 			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear2="Brutal earring", ear1="Cessance earring",
-			    body="Valorous mail",hands="Sulevia's gauntlets +2",ring1="Niqmaddu ring",ring2="Flamma ring",
+			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 	
 					
 	sets.TP.AccuracyLite = {ammo="Ginsen",
 			    head=Acc_Head,neck="Lissome necklace", ear1="Dignitary's earring", ear1="Telos earring",
-			    body=TP_Body,hands="Flam. Manopolas +2",ring1="Regal Ring",ring2="Chirich ring",
+			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Regal Ring",ring2="Chirich ring",
 			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's Calligae +3"}
 	
 	sets.TP.AccuracyFull = {ammo="Seething bomblet +1",
 			    head=Acc_Head,neck="Subtlety spectacles", ear1="Dignitary's earring", ear1="Telos earring",
-			    body=TP_Body,hands="Flam. Manopolas +2",ring1="Regal Ring",ring2="Chirich ring",
+			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Regal Ring",ring2="Chirich ring",
 			    back=DA_Back,waist="Kentarch belt +1",legs="Pummeler's cuisses +3",	feet="Pummeler's Calligae +3"}
 				
 	sets.TP.DT = {ammo="Staunch Tathlum",
@@ -687,7 +687,7 @@ function self_command(command)
 			TP_ind = 3
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command('@input /echo Chango Set')
-		elseif player.equipment.main == 'Zulfiqar' then
+		elseif player.equipment.main == 'Zulfiqar' or player.equipment.main == 'Montante +1' then
 			TP_ind = 9
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command('@input /echo Zulfiqar Set')

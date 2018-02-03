@@ -71,7 +71,7 @@ function get_sets()
 	
 	sets.TP.Standard = {ammo="Ginsen",
 			    head=Acc_Head,neck="Lissome Necklace", ear1="Telos earring", ear2="Cessance earring",
-			    body=TP_Body,hands="Flam. Manopolas +2",ring1="Niqmaddu ring",ring2="Flamma ring",
+			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}}}
 	
 	sets.TP.DW ={ammo="Ginsen",
@@ -81,7 +81,7 @@ function get_sets()
 	
 	sets.TP.Anguta = {ammo="Ginsen",
 			    head=Acc_Head,neck="Ainia collar", ear1="Telos earring", ear2="Cessance earring",
-			    body=TP_Body,hands="Flam. Manopolas +2",ring1="Niqmaddu ring",ring2="Flamma ring",
+			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}}}
 				
 --	sets.TP.Anguta = {ammo="Hasty pinion +1",
@@ -92,12 +92,12 @@ function get_sets()
 					
 	sets.TP.AccuracyLite = {ammo="Ginsen",
 			    head=DA_Head,neck="Lissome Necklace", ear1="Brutal earring", ear2="Cessance earring",
-			    body=TP_Body,hands="Flam. Manopolas +2",ring1="Niqmaddu ring",ring2="Flamma ring",
+			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Flam. Gambieras +2",}
 	
 	sets.TP.AccuracyFull = {ammo="Ginsen",
 			    head=Acc_Head,neck="Lissome Necklace", ear1="Brutal earring", ear2="Cessance earring",
-			    body=TP_Body,hands="Flam. Manopolas +2",ring1="Niqmaddu ring",ring2="Flamma ring",
+			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Flam. Gambieras +2",}
 				
 	sets.TP.DT = {ammo="Staunch Tathlum",

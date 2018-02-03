@@ -263,7 +263,7 @@ function get_sets()
 										  legs="Jhakri Slops +1",
 										  feet="Thereoid Greaves" }
 		
-		sets.WS.Vorpal = {mmo="Floestone",
+		sets.WS.Vorpal = {ammo="Floestone",
                                           head="Jhakri Coronal +1",
 										  neck="Caro Necklace",
 										  ear1="Ishvara Earring",
@@ -285,7 +285,7 @@ function get_sets()
 											ring1="Petrov Ring",
 											ring2="Epona's Ring",
                                             back="Lupine Cape",
-											waist="Fotia belt",legs="Carmine Legs +1",feet="Carmine Greaves +1"}
+											waist="Fotia belt",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 		
 		
 end
@@ -336,7 +336,7 @@ function midcast(spell,act)
         
 		end
 		if spell.english =='Stun' then
-			equip(sets.magic.Stun)
+			equip(sets.Magic.Stun)
 		end
 		if spell.skill =='Healing Magic' then
 			equip(sets.Magic.Healing)

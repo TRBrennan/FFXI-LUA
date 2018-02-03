@@ -60,7 +60,7 @@ function get_sets()
 				sets.TP.Standard = {ammo="Ginsen",
 									head="Flam. Zucchetto +2",
 									body=TP_Body, 
-									hands="Flam. Manopolas +2",
+									hands="Emicho Gauntlets +1",
 									legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
 									feet="Flam. Gambieras +2",
 									neck="Lissome Necklace",
@@ -75,7 +75,7 @@ function get_sets()
                 sets.TP.AccuracyFull = {ammo="Seeth. Bomblet +1",
                                         head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}},
 										neck="Sanctity Necklace", ear1="Dignitary's Earring", ear2="Telos Earring",
-                                        body=TP_Body,hands="Flam. Manopolas +2",ring1="Cacoethic Ring",ring2="Flamma Ring",
+                                        body=TP_Body,hands="Emicho Gauntlets +1",ring1="Cacoethic Ring",ring2="Flamma Ring",
                                         back ="Brigantia's Mantle",waist="Ioskeha Belt",legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},feet="Valorous Greaves"}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",

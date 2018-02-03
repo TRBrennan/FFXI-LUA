@@ -69,7 +69,7 @@ function get_sets()
 			Nuke_ind = 1
 			
 			sets.Nuke.Standard = {main="Grioavolr", sub = "Enki Strap",ammo="Pemphredo Tathlum",
-                                 hhead={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
+                                 head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst mdg.+7%','CHR+7','Mag. Acc.+12',}},
 								 neck="Sanctity Necklace",ear2="Friomisi earring", ear1="Regal Earring",
                                  body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Jhakri Cuffs +2", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Refoccilation Stone",
                                  back="Sucellos's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
@@ -210,7 +210,7 @@ function get_sets()
 										  legs="Jhakri Slops +1",
 										  feet="Thereoid Greaves" }
 		
-		sets.WS.Vorpal = {mmo="Floestone",
+		sets.WS.Vorpal = {ammo="Floestone",
                                           head="Jhakri Coronal +1",
 										  neck="Caro Necklace",
 										  ear1="Ishvara Earring",
@@ -232,7 +232,7 @@ function get_sets()
 											ring1="Petrov Ring",
 											ring2="Epona's Ring",
                                             back="Lupine Cape",
-											waist="Fotia belt",legs="Carmine Legs +1",feet="Carmine Greaves +1"}
+											waist="Fotia belt",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 		
 		
 end
@@ -283,7 +283,7 @@ function midcast(spell,act)
         
 		end
 		if spell.english =='Stun' then
-			equip(sets.magic.Stun)
+			equip(sets.Magic.Stun)
 		end
 		if spell.skill =='Healing Magic' then
 			equip(sets.Magic.Healing)

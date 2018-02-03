@@ -60,10 +60,10 @@ function get_sets()
 									
 				sets.TP.Standard = {    ammo="Ginsen",
 										head="Flam. Zucchetto +2",
-										body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},
-										hands="Flam. Manopolas +2",
+										body="Emicho Haubert +1",
+										hands="Emicho Gauntlets +1",
 										legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
-										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
+										feet="Flam. Gambieras +2",
 										neck="Lissome Necklace",
 										waist="Kentarch Belt +1",
 										left_ear="Telos Earring",
