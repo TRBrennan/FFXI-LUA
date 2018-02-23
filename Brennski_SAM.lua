@@ -36,7 +36,7 @@ function get_sets()
 							head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
 							body="Hizamaru haramaki +1",
 							hands="Rao kote",
-							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
+							legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
 							feet="Rao sune-ate",
 							neck="Sanctity necklace",
 							waist="Flume Belt +1",
@@ -65,7 +65,7 @@ function get_sets()
                                     head="Flam. Zucchetto +2", neck="Moonbeam Nodowa", ear1="Cessance Earring",ear2="Telos Earring",
                                     body=TP_Body,
 									hands="Wakido Kote +2",
-									right_ring="Niqmaddu Ring",left_ring="Ilabrat Ring",
+									right_ring="Niqmaddu Ring",left_ring="Flamma Ring",
                                      back="Takaha Mantle",waist="Ioskeha Belt",
 									 legs="Ken. Hakama",
 									feet="Flam. Gambieras +2",}
@@ -76,7 +76,7 @@ function get_sets()
 										neck="Moonbeam Nodowa", ear1="Cessance Earring",ear2="Telos Earring",
 										body=TP_Body,
 										hands="Wakido Kote +2",
-										right_ring="Niqmaddu Ring",left_ring="Ilabrat Ring",
+										right_ring="Niqmaddu Ring",left_ring="Flamma Ring",
                                          back="Takaha Mantle",
 										 waist="Ioskeha Belt",legs="Ken. Hakama",
 										feet="Flam. Gambieras +2",}

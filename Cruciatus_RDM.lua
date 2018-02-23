@@ -66,7 +66,7 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = {main="Sequence", sub ="Colada", ammo="Homiliary",
 									  neck="Sanctity Necklace", ear1="Sherida Earring", ear2="Suppanomimi",
-                                      head ="Ayanmo Zucchetto +1", body ="Ayanmo Corazza +1",hands="Ayanmo Manopolas +1",
+                                      head ="Ayanmo Zucchetto", body ="Ayanmo Corazza +1",hands="Ayanmo Manopolas +1",
 									  ring2="Petrov Ring",ring1="Defending ring",
                                       waist="Fucho-no-obi",legs="Ayanmo cosciales +1",feet="Ayanmo Gambieras +1", back ="Moonbeam Cape"}
 	sets.MeleeMode ={}
@@ -130,7 +130,7 @@ function get_sets()
 									body="Shango Robe",
 									hands="Lurid Mitts",
 									legs ="Chironic Hose",
-									feet={ name="Merlinic Crackows", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic Damage +8','Mag. Acc.+4','"Mag.Atk.Bns."+12',}},
+									feet="Merlinic Crackows",
 									neck="Incanter's Torque",
 									waist="Ovate Rope",
 									left_ear="Mendi. Earring",
@@ -146,7 +146,7 @@ function get_sets()
 									body="Shango Robe",
 									hands="Lurid Mitts",
 									legs ="Chironic Hose",
-									feet={ name="Merlinic Crackows", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic Damage +8','Mag. Acc.+4','"Mag.Atk.Bns."+12',}},
+									feet="Merlinic Crackows",
 									neck="Incanter's Torque",
 									waist="Ovate Rope",
 									left_ear="Mendi. Earring",
@@ -168,11 +168,12 @@ function get_sets()
 								legs ="Chironic Hose",
 								feet={ name="Kaykaus Boots", augments={'Mag. Acc.+15','"Cure" potency +5%','"Fast Cast"+3',}},
 								neck="Nodens Gorget",
-								waist="Ovate Rope",
+								waist="Cascade Belt",
 								left_ear="Mendi. Earring",
 								right_ear="Regal Earring",
 								left_ring="Lebeche Ring",
-								right_ring="Sirona's Ring",}
+								right_ring="Sirona's Ring",
+								back="Solemnity Cape",}
 												 
 			sets.Magic.Regen = {main="Bolelabunga", ammo="Savant's Treatise",
                                  head="Telchine Cap",neck="Incanter's Torque ",ear1 ="Regal Earring", ear2="Regal Earring",
@@ -198,7 +199,7 @@ function get_sets()
 			sets.precast.FC = {}
        
 			sets.precast.FC.Standard = {ammo="Sapience Orb",
-							head="Carmine Mask +1",
+							head="Nahtirah Hat",
 							body="Shango Robe", 
 							hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}}, 
 							legs="Psycloth Lappas",
@@ -280,7 +281,7 @@ function get_sets()
 											neck="Fotia gorget",
 											ear1="Moonshade Earring",
 											ear2="Telos Earring",
-                                            body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+                                            body="Adhemar Jacket +1",
 											hands="Jhakri Cuffs +2",
 											ring1="Petrov Ring",
 											ring2="Epona's Ring",

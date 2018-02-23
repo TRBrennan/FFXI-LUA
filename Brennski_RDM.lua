@@ -227,7 +227,7 @@ function get_sets()
 											neck="Fotia gorget",
 											ear1="Moonshade Earring",
 											ear2="Telos Earring",
-                                            body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+                                            body="Adhemar Jacket +1",
 											hands="Jhakri Cuffs +2",
 											ring1="Petrov Ring",
 											ring2="Epona's Ring",

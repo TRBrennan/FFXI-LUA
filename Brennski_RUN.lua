@@ -161,7 +161,7 @@ function get_sets()
        
                 sets.Resolution.Attack = {  ammo="Seeth. Bomblet +1",
 											head="Adhemar Bonnet +1",
-											body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+											body="Adhemar Jacket +1",
 											hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 											legs="Meg. Chausses +2",
 											feet="Lustra. Leggings +1",
@@ -201,7 +201,7 @@ function get_sets()
                
                 sets.Requiescat.Attack = {ammo="Seeth. Bomblet +1",
                                           head="Adhemar Bonnet +1",neck="Fotia gorget",right_ear="Brutal earring",left_ear="Moonshade earring",
-                                          body="Adhemar Jacket",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},right_ring="Niqmaddu Ring",left_ring="Regal ring",
+                                          body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},right_ring="Niqmaddu Ring",left_ring="Regal ring",
                                           back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 										  waist="Fotia belt",legs="Samnuha Tights",
 										  feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},}
@@ -214,7 +214,7 @@ function get_sets()
        
                 sets.FellCleave.Attack = {   ammo="Seeth. Bomblet +1",
 											head="Adhemar Bonnet +1",
-											body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+											body="Adhemar Jacket +1",
 											hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 											legs="Samnuha Tights",
 											feet="Lustra. Leggings +1",
@@ -307,8 +307,8 @@ function get_sets()
 								 right_ring ='Supershear Ring', 
 								 waist ="Eschan Stone",
                                  back="Evasionist's cape",
-								 legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
-								 feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
+								 legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
+								 feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
        
                 sets.JA.Vallation = {body="Runeist's Coat +3",																
 									back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},

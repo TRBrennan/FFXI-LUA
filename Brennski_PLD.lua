@@ -218,7 +218,7 @@ function get_sets()
  
                                                             
         sets.Utility.Steps = {ammo="Falcon Eye",
-							head="Dampening Tam", body="Adhemar Jacket", hands="Rawhide Gloves",legs=="Founder's Hose", feet="Odyssean Greaves",  neck="Subtlety Spec.",
+							head="Dampening Tam", body="Adhemar Jacket +1", hands="Rawhide Gloves",legs=="Founder's Hose", feet="Odyssean Greaves",  neck="Subtlety Spec.",
 							waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Steelflash Earring",  left_ring="Yacuruna Ring",  right_ring="Rajas Ring",  back="Grounded Mantle",}
                                                  
         sets.Utility.PDT = {head="Sulevia's Mask +2",neck="Loricate Torque +1",ear1="Ethereal earring",

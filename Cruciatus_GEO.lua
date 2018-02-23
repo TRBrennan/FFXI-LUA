@@ -47,10 +47,10 @@ function get_sets()
     sets.precast.FastCast = {
 		main="Sucellus", sub="Genbu's Shield",
 		range="Dunna",
-        head={ name="Merlinic Hood", augments={'"Cure" potency +7%','Rng.Atk.+5','"Refresh"+1','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+        head="Nahtirah Hat",
 		neck="Voltsurge Torque",right_ear="Etiolation Earring", left_ear="Loquacious Earring",
         body="Shango Robe", ring2="Prolix ring", hands="Telchine Gloves",ring1="Kishar Ring",
-        back="Lifestream Cape",waist="Channeler's Stone",legs="Geomancy Pants",feet="Regal Pumps +1"
+        back="Lifestream Cape",waist="Channeler's Stone",legs="Geo. Pants +1",feet="Regal Pumps +1"
 		}
 		
     sets.precast.FastCast.Cure = set_combine(sets.precast.FC, {main="Vadose Rod",sub="Sors Shield",back="Pahtli Cape"})
@@ -98,8 +98,10 @@ function get_sets()
     sets.midcast.Protectra = {ring1="Sheltered Ring"}
 
     sets.midcast.Shellra = {ring1="Sheltered Ring"}
+	
 
-    sets.midcast['Enhancing Magic'] = { sub ="Ammurapi Shield", range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    sets.midcast['Enhancing Magic'] = {main={ name="Gada", augments={'Enh. Mag. eff. dur. +4','VIT+5','Mag. Acc.+18','"Mag.Atk.Bns."+4',}},
+									sub ="Ammurapi Shield", range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
 									head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
 									body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +7',}},
 									hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +5',}},
@@ -119,48 +121,47 @@ function get_sets()
                 back="Nantosuelta's Cape", waist="Ovate Rope", legs="Psycloth Lappas", feet="Bagua Sandals +1"}
     
     sets.midcast['Elemental Magic'] = {
-	-- main="Marin staff", sub="Niobid Strap", 
-	main = "Solstice",
-	sub="Ammurapi Shield",
-	range="Dunna",
-							head={ name="Merlinic Hood", augments={'"Cure" potency +7%','Rng.Atk.+5','"Refresh"+1','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-							body="Azimuth Coat",
-							hands="Jhakri Cuffs +1",
-							legs="Psycloth Lappas",
+							main = "Solstice",
+							sub="Ammurapi Shield",
+							range="Dunna",
+							head="Merlinic Hood",
+							body="Jhakri Robe +2",
+							hands="Amalric Gages",
+							legs="Merlinic Shalwar",
 							feet="Merlinic Crackows",
 							neck="Mizu. Kubikazari",
 							waist="Refoccilation Stone",
 							left_ear="Barkarole Earring",
 							right_ear="Friomisi Earring",
-							left_ring="Acumen Ring",
+							left_ring="Mujin Band",
 							right_ring="Locus Ring",
 							back="Nantosuelta's Cape",}
         
     sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
 
     sets.midcast['Dark Magic'] = {
-	-- main="Marin staff", sub="Niobid Strap", 
-	range="Dunna",
+				main = "Solstice",
+				sub="Ammurapi Shield",
+				range="Dunna",
 				head="Bagua Galero", neck="Erra Pendant", right_ear="Barkarole Earring", left_ear="Regal Earring",
                 body="Geomancy Tunic", hands="Jhakri Cuffs +1", ring1="Acumen Ring", ring2="Vertigo ring",
                 back="Nantosuelta's Cape", waist="Cetl Belt", legs="Psycloth Lappas", feet="Merlinic Crackows"}
 
-    sets.magic_burst =     	{main="Marin Staff +1",
-							sub="Niobid Strap",
-							range="Dunna",
-							head={ name="Merlinic Hood", augments={'"Cure" potency +7%','Rng.Atk.+5','"Refresh"+1','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-							body="Azimuth Coat",
-							hands="Jhakri Cuffs +1",
-							legs="Psycloth Lappas",
+    sets.magic_burst ={	main = "Solstice",
+						sub="Ammurapi Shield",
+						range="Dunna",
+							head="Merlinic Hood",
+							body="Jhakri Robe +2",
+							hands="Amalric Gages",
+							legs="Merlinic Shalwar",
 							feet="Merlinic Crackows",
 							neck="Mizu. Kubikazari",
 							waist="Refoccilation Stone",
 							left_ear="Barkarole Earring",
 							right_ear="Friomisi Earring",
-							left_ring="Acumen Ring",
+							left_ring="Mujin Band",
 							right_ring="Locus Ring",
-							back="Nantosuelta's Cape",
-	}
+							back="Nantosuelta's Cape",}
 				
 	sets.obi = {
 		Fire = {waist="Karin Obi"},

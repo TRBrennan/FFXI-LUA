@@ -287,7 +287,7 @@ WS_ind = 1
 sets.MultiHit = {}
 sets.MultiHit.Attack = { 
         head="Adhemar Bonnet +1",
-        body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+        body="Adhemar Jacket +1",
         hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
         legs="Samnuha tights",
         feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
@@ -301,7 +301,7 @@ sets.MultiHit.Attack = {
 }			   
 sets.MultiHit.Accuracy = {
 		head="Ken. Jinpachi",
-        body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+        body="Adhemar Jacket +1",
         hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
         legs="Samnuha tights",
         feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
@@ -338,7 +338,7 @@ sets.OneHit.Accuracy ={
 		neck="Caro Necklace",
 		waist="Grunfeld Rope",
 		left_ear="Ishvara Earring",
-		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},\
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
 		right_ring="Regal Ring",	
 		right_ring="Ilabrat Ring",
 		back="Yokaze Mantle"
@@ -347,7 +347,7 @@ sets.OneHit.Accuracy ={
 sets.OtherWS = {}
 sets.OtherWS.Attack ={
 		head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
-        body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+        body="Adhemar Jacket +1",
         hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},
         legs="Hiza. Hizayoroi +2",
         feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
@@ -361,7 +361,7 @@ sets.OtherWS.Attack ={
 	} 
 sets.OtherWS.Accuracy = {
 		head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
-        body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+        body="Adhemar Jacket +1",
         hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},
         legs="Hiza. Hizayoroi +2",
         feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
@@ -387,7 +387,7 @@ sets.AeolianEdge = {
 		waist ="Eschan Stone",
 		back="Yokaze Mantle",   
 		legs="Hiza. Hizayoroi +2",
-		feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}
+		feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
 }
 
 	
@@ -403,7 +403,7 @@ sets.Magic.Self = {
 		head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
         body="Ashera Harness",
         hands="Leyline Gloves",
-        legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
+        legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
         neck="Voltsurge Torque",
         waist="Flume Belt +1",
         left_ear="Etiolation Earring",
@@ -424,8 +424,8 @@ sets.Magic.Nuke = {
 	   ring2 ="Acumen Ring",
 	   waist ="Eschan Stone",
 	   back="Izdubar Mantle",
-	   legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
-	   feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
+	   legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
+	   feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}}
 
 sets.Magic.Debuff={}
 	--Low special gear--
@@ -445,7 +445,7 @@ sets.snapshot = {
             back="Lutian Cape", -- 2
             legs="Adhemar Kecks",
             waist="Impulse Belt", -- 2
-            feet="Meg. Jam. +1" -- 8
+            feet="Meg. Jam. +2" -- 8
 }	
 sets.precast = {}	
 sets.precast.FC = {

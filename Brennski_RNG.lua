@@ -63,7 +63,7 @@ sets.Idle.index = {'Standard','DT'}
 Idle_ind = 1
 sets.Idle.Standard = {
     head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
-    body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+    body="Meg. Cuirie +1",
     hands="Kurys Gloves",
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
     feet="Ahosi Leggings",
@@ -77,7 +77,7 @@ sets.Idle.Standard = {
 }
 sets.Idle.DT = {
 	head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
-    body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+    body="Meg. Cuirie +1",
     hands="Kurys Gloves",
     legs="Mummu Kecks +1",
     feet="Ahosi Leggings",
@@ -107,7 +107,7 @@ sets.TP.Standard.Other = {
 			neck="Lissome necklace", 
 			ear1="Sherida Earring", 
 			ear2="Telos Earring",
-			body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+			body="Adhemar Jacket +1",
 			hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 			ring1="Chirich Ring",
 			ring2="Epona's Ring",
@@ -121,7 +121,7 @@ sets.TP.Standard.Ninja = {
 			neck="Lissome necklace", 
 			ear1="Sherida Earring", 
 			ear2="Telos Earring",
-			body="Adhemar Jacket",
+			body="Adhemar Jacket +1",
 			hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 			ring1="Chirich Ring",
 			ring2="Epona's Ring",
@@ -135,7 +135,7 @@ sets.TP.Standard.Dancer = {
 			neck="Lissome necklace", 
 			ear1="Suppanomimi", 
 			ear2="Telos Earring",
-			body="Adhemar Jacket",
+			body="Adhemar Jacket +1",
 			hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 			ring1="Chirich Ring",
 			ring2="Epona's Ring",
@@ -152,7 +152,7 @@ sets.TP.MidAccuracy.Other = {
 			neck="Lissome necklace", 
 			ear1="Cessance Earring", 
 			ear2="Telos Earring",
-			body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+			body="Adhemar Jacket +1",
 			hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 			ring1="Chirich Ring",
 			ring2="Epona's Ring",
@@ -166,7 +166,7 @@ sets.TP.MidAccuracy.Ninja = {
 			neck="Lissome necklace", 
 			ear1="Cessance Earring", 
 			ear2="Telos Earring",
-			body="Adhemar Jacket",
+			body="Adhemar Jacket +1",
 			hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 			ring1="Chirich Ring",
 			ring2="Epona's Ring",
@@ -180,7 +180,7 @@ sets.TP.MidAccuracy.Dancer = {
 			neck="Lissome necklace", 
 			ear1="Suppanomimi", 
 			ear2="Telos Earring",
-			body="Adhemar Jacket",
+			body="Adhemar Jacket +1",
 			hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 			ring1="Chirich Ring",
 			ring2="Epona's Ring",
@@ -197,7 +197,7 @@ sets.TP.HighAccuracy.Other = {
 			neck="Lissome necklace", 
 			ear1="Cessance Earring", 
 			ear2="Telos Earring",
-			body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+			body="Adhemar Jacket +1",
 			hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 			ring1="Chirich Ring",
 			ring2="Cacoethic Ring",
@@ -211,7 +211,7 @@ sets.TP.HighAccuracy.Ninja = {
 			neck="Lissome necklace", 
 			ear1="Cessance Earring", 
 			ear2="Telos Earring",
-			body="Adhemar Jacket",
+			body="Adhemar Jacket +1",
 			hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 			ring1="Chirich Ring",
 			ring2="Cacoethic Ring",
@@ -225,7 +225,7 @@ sets.TP.HighAccuracy.Dancer = {
 			neck="Lissome necklace", 
 			ear1="Suppanomimi", 
 			ear2="Telos Earring",
-			body="Adhemar Jacket",
+			body="Adhemar Jacket +1",
 			hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 			ring1="Chirich Ring",
 			ring2="Cacoethic Ring",
@@ -242,7 +242,7 @@ sets.TP.Hybride.Other = {
 			neck="Lissome necklace", 
 			ear1="Cessance Earring", 
 			ear2="Telos Earring",
-			body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','"Triple Atk."+2','STR+8','Attack+15',}},
+			body="Adhemar Jacket +1",
 			hands="Kurys Gloves",
 			ring1="Defending Ring",
 			ring2="Vocane Ring",
@@ -256,7 +256,7 @@ sets.TP.Hybride.Ninja = {
 			neck="Lissome necklace", 
 			ear1="Cessance Earring", 
 			ear2="Telos Earring",
-			body="Adhemar Jacket",
+			body="Adhemar Jacket +1",
 			hands="Kurys Gloves",
 			ring1="Defending Ring",
 			ring2="Vocane Ring",
@@ -270,7 +270,7 @@ sets.TP.Hybride.Dancer = {
 			neck="Lissome necklace", 
 			ear1="Suppanomimi", 
 			ear2="Telos Earring",
-			body="Adhemar Jacket",
+			body="Adhemar Jacket +1",
 			hands="Kurys Gloves",
 			ring1="Defending Ring",
 			ring2="Vocane Ring",
@@ -283,7 +283,7 @@ sets.TP.Hybride.Dancer = {
 sets.Ranged = {}
 sets.Ranged.index = {'Standard','HighAccuracy'}
 sets.Ranged.Standard = {
-							head="Meghanada Visor +1",
+							head="Meghanada Visor +2",
 							neck="Iskur Gorget", 
 							ear2="Telos Earring", 
 							ear1="Volley Earring",
@@ -294,10 +294,10 @@ sets.Ranged.Standard = {
 							waist ="Yemaya Belt",
 							back="Belenus's Cape",   
 							legs="Adhemar Kecks",
-							feet="Meg. Jam. +1"
+							feet="Meg. Jam. +2"
 }
 sets.Ranged.HighAccuracy = {
-							head="Meghanada Visor +1",
+							head="Meghanada Visor +2",
 							neck="Iskur Gorget", 
 							ear2="Telos Earring", 
 							ear1="Volley Earring",
@@ -308,7 +308,7 @@ sets.Ranged.HighAccuracy = {
 							waist ="Yemaya Belt",
 							back="Belenus's Cape",   
 							legs="Adhemar Kecks",
-							feet="Meg. Jam. +1"
+							feet="Meg. Jam. +2"
 }
 
 
@@ -364,11 +364,11 @@ sets.Ruinator.Attack = {
     back={ name="Belenus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},
 }
 sets.Ruinator.Accuracy = {
-	head="Meghanada Visor +1",
+	head="Meghanada Visor +2",
     body="Meg. Cuirie +1",
     hands="Meg. Gloves +2",
     legs="Meg. Chausses +1",
-    feet="Meg. Jam. +1",
+    feet="Meg. Jam. +2",
     neck="Fotia Gorget",
     waist="Fotia Belt",
     left_ear="Telos Earring",
@@ -481,8 +481,8 @@ sets.MagicGun.Attack = {
 							ring2 ='Dingir Ring',
 							waist ="Eschan Stone",
 							back="Belenus's Cape",   
-							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
-							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}
+							legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}}, 
+							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
 }
 sets.MagicGun.Accuracy = {
 							head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
@@ -495,8 +495,8 @@ sets.MagicGun.Accuracy = {
 							ring2 ='Dingir Ring',
 							waist ="Eschan Stone",
 							back="Belenus's Cape",   
-							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
-							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}
+							legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}}, 
+							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
 }
 
 sets.OtherWS = {}		
@@ -505,33 +505,33 @@ sets.OtherWS.Attack = {
 						neck="Fotia gorget",
 						ear1="Sherida Earring",
 						ear2="Moonshade Earring",
-                        body="Adhemar Jacket",
+                        body="Adhemar Jacket +1",
 						hands="Meg. Gloves +2",
 						ring1="Dingir Ring",
 						ring2="Regal Ring",
                         back="Belenus's Cape",
 						waist="Fotia Belt",
 						legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
-						feet="Meg. Jam. +1",
+						feet="Meg. Jam. +2",
 }	
 sets.OtherWS.Accuracy = {
 						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 						neck="Fotia gorget",
 						ear1="Sherida Earring",
 						ear2="Moonshade Earring",
-                        body="Adhemar Jacket",
+                        body="Adhemar Jacket +1",
 						hands="Meg. Gloves +2",
 						ring1="Dingir Ring",
 						ring2="Regal Ring",
                         back="Belenus's Cape",
 						waist="Fotia Belt",
 						legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
-						feet="Meg. Jam. +1",
+						feet="Meg. Jam. +2",
 }
 
 sets.RangedWS = {}		
 sets.RangedWS.Attack = {
-						head="Meghanada Visor +1",
+						head="Meghanada Visor +2",
 						neck="Iskur Gorget",
 						ear1="Telos Earring",
 						ear2="Moonshade Earring",
@@ -542,10 +542,10 @@ sets.RangedWS.Attack = {
                         back="Belenus's Cape",
 						waist="Yemaya Belt",
 						legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
-						feet="Meg. Jam. +1",
+						feet="Meg. Jam. +2",
 }	
 sets.RangedWS.Accuracy = {
-						head="Meghanada Visor +1",
+						head="Meghanada Visor +2",
 						neck="Iskur Gorget",
 						ear1="Telos Earring",
 						ear2="Moonshade Earring",
@@ -556,7 +556,7 @@ sets.RangedWS.Accuracy = {
                         back="Belenus's Cape",
 						waist="Yemaya Belt",
 						legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
-						feet="Meg. Jam. +1",
+						feet="Meg. Jam. +2",
 }
 
 sets.RangedWScrit = {}		
@@ -601,8 +601,8 @@ sets.AeolianEdge = {
 							ring2 ='Dingir Ring',
 							waist ="Eschan Stone",
 							back="Belenus's Cape",   
-							legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
-							feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}
+							legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}}, 
+							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
 }
 
 	
@@ -614,7 +614,7 @@ sets.JA.SBind = {hands="Orion Bracers +1",}
 sets.JA.Camo = {body="Orion Jerkin +1",}
 sets.JA.SShot = {legs="Orion Braccae +1",}
 sets.JA.Barrage = {ear1="Sherida Earring",
-        head="Meghanada Visor +1",
+        head="Meghanada Visor +2",
 	    neck="Sanctity Necklace", 
 	    ear2="Telos Earring", 
 	    body="Oshosi Vest",
@@ -646,7 +646,7 @@ sets.snapshot = {
             back="Lutian Cape", -- 2
             legs="Adhemar Kecks",
             waist="Impulse Belt", -- 2
-            feet="Meg. Jam. +1" -- 8
+            feet="Meg. Jam. +2" -- 8
 }	
 	
 	--send_command('input /macro book 1;wait .1;input /macro set 1')	

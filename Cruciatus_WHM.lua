@@ -68,7 +68,7 @@ function get_sets()
     back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 	
-	sets.precast_Haste = {    main="Queller Rod",
+	sets.precast_Haste = {    main={ name="Gada", augments={'Enh. Mag. eff. dur. +4','VIT+5','Mag. Acc.+18','"Mag.Atk.Bns."+4',}},
     sub="Ammurapi Shield",
     ammo="Impatiens",
     head="Vanya Hood",
@@ -85,7 +85,7 @@ function get_sets()
     back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
 		
-	sets.midcast_Haste = {  main="Bolelabunga",
+	sets.midcast_Haste = {  main={ name="Gada", augments={'Enh. Mag. eff. dur. +4','VIT+5','Mag. Acc.+18','"Mag.Atk.Bns."+4',}},
     sub="Ammurapi Shield",
     ammo="Homiliary",
     head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
@@ -120,7 +120,7 @@ function get_sets()
     sub="Ammurapi Shield",
     ammo="Homiliary",
     head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
-    body="Ebers Bliaud",
+    body="Ebers Bliaud +1",
     hands="Dynasty Mitts",
     legs={ name="Piety Pantaln. +1", augments={'Enhances "Shellra V" effect',}},
     feet="Ebers Duckbills",
@@ -135,7 +135,7 @@ function get_sets()
 		
 	sets.midcast_Barspells_noSolace = sets.midcast_BarSpells_Solace
 
-	sets.midcast_EnhancingMagic = {main="Beneficus",
+	sets.midcast_EnhancingMagic = {main={ name="Gada", augments={'Enh. Mag. eff. dur. +4','VIT+5','Mag. Acc.+18','"Mag.Atk.Bns."+4',}},
     sub="Ammurapi Shield",
     ammo="Homiliary",
 	head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
@@ -151,7 +151,7 @@ function get_sets()
     right_ring="Kishar Ring",
 	back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
 }
-	set.midcast_Shellra = { main="Beneficus",
+	set.midcast_Shellra = { main={ name="Gada", augments={'Enh. Mag. eff. dur. +4','VIT+5','Mag. Acc.+18','"Mag.Atk.Bns."+4',}},
     sub="Ammurapi Shield",
     ammo="Homiliary",
 	head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
@@ -200,8 +200,8 @@ function get_sets()
     sub="Sors Shield",
     ammo="Esper Stone",
     head="Vanya Hood",
-    body="Kaykaus Bliaut",
-    hands="Theophany Mitts +2",
+    body="Ebers Bliaud +1",
+    hands="Theophany Mitts",
     legs="Ebers Pant. +1",
     feet ="Kaykaus Boots",
     neck="Nodens Gorget",
@@ -218,7 +218,7 @@ function get_sets()
     ammo="Esper Stone",
     head="Vanya Hood",
     body="Kaykaus Bliaut",
-    hands="Theophany Mitts +2",
+    hands="Theophany Mitts",
     legs="Ebers Pant. +1",
     feet="Kaykaus Boots",
     neck="Nodens Gorget",

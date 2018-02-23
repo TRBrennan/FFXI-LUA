@@ -40,7 +40,7 @@ function get_sets()
 	Acc_head = "Flam. Zucchetto +2"
 	TH_Head = {name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}}
 	WS_Head = {name="Valorous Mask", augments={'Accuracy+25 Attack+25','Enmity+2','STR+12','Accuracy+6',}}
-	WSD_Head = { name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}}
+	WSD_Head = "Agoge Mask +2"
 	TP_Legs = {name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}}
 	TP_Body = "Emicho Haubert +1"
 	WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
@@ -161,7 +161,7 @@ function get_sets()
 			   	back=DA_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 	
 	sets.KingsJusticeB = {ammo="Seething bomblet +1",
-			    head=WSD_Head,neck="Fotia gorget",ear2="Brutal earring",ear2="Moonshade earring",
+			    head=WSD_Head,neck="Fotia gorget",ear2="Ishvara earring",ear2="Moonshade earring",
 			 	body="Pummeler's lorica +3",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 				
@@ -234,7 +234,7 @@ function get_sets()
 			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}		  
 								  
 	sets.Resolution = {ammo="Seething bomblet +1",
-			    head="Flam. Zucchetto +2",neck="Fotia gorget",ear1="Moonshade earring",ear2="Cessance earring",
+			    head="Flam. Zucchetto +2",neck="Fotia gorget",ear2="Moonshade earring",ear1="Cessance earring",
 			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 	
@@ -347,7 +347,7 @@ function get_sets()
 		sets.JA.Berserk ={back = "Cichol's Mantle",feet = "Agoge Calligae +1", body = "Pumm. Lorica +3"}
 		sets.JA.Aggressor = { body = "Agoge Lorcia", head ="Pummeler's mask +2"}
 		
-		sets.JA.Warcry = {head = "Agoge Mask"}		
+		sets.JA.Warcry = {head = "Agoge Mask +2"}		
 		
 		sets.JA.MightyStrikes = {hands = "Warrior's Muffler +2"}
 		
@@ -434,8 +434,19 @@ function precast(spell)
 				equip(sets.FellCleave)
 				send_command('@input /echo FC Set')
 			elseif spell.english == 'King\'s Justice' then		
+				--equip(sets.KingsJusticeA)
+				--send_command('@input /echo KJ Set')
+				TPBonus = TPBonus + 250
+				CurrentTP = player.tp + TPBonus
+				send_command('@input /echo TP Bonus '..TPBonus.. ' CurrentTP '..CurrentTP)
+				
+				if CurrentTP > 2000 then
+				equip(sets.KingsJusticeB)
+				send_command('@input /echo KJ WSD Set')
+				else
 				equip(sets.KingsJusticeA)
-				send_command('@input /echo KJ Set')
+				send_command('@input /echo KJ DA Set')
+				end				
 			elseif spell.english == 'Steel Cyclone' then
 				equip(sets.Steelcyclone)
 				send_command('@input /echo Steel Cyclone Set')
