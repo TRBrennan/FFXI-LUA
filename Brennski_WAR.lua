@@ -694,11 +694,11 @@ function status_change(new,old)
 end
 function self_command(command)	
 	if command == 'equip TP set' then
-		if player.equipment.main == 'Chango' then
+		if player.equipment.main == 'Chango' or player.equipment.main == 'Montante +1' then
 			TP_ind = 3
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command('@input /echo Chango Set')
-		elseif player.equipment.main == 'Zulfiqar' or player.equipment.main == 'Montante +1' then
+		elseif player.equipment.main == 'Zulfiqar' then
 			TP_ind = 9
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command('@input /echo Zulfiqar Set')
