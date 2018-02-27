@@ -136,25 +136,19 @@ function get_sets()
                                             head="Adhemar Bonnet +1",neck="Fotia gorget",ear2="Moonshade Earring",ear1="Telos Earring",
                                             body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Begrudging Ring",ring2="Epona's Ring",
                                             back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Crit.hit rate+10',}},waist="Fotia belt",legs="Samnuha Tights",feet="Thereoid Greaves"}		
-
-                                                                                                                   
-        sets.WS.SanguineBlade = {}
        
-        sets.WS.SanguineBlade = {ammo="Pemphredo Tathlum",
+        sets.SanguineBlade = {ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Sanctity Necklace",rear="Friomisi earring", ear1="Novio Earring",
                                  body="Jhakri Robe +2",hands="Jhakri Cuffs +2", ring1="Shiva Ring", ring2 ='Shiva Ring', waist ="Eschan Stone",
                                  back="Cornflower cape",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1" }
                
-        sets.WS.CircleBlade = {}              
-                       
-        sets.WS.CircleBlade = {ammo="Floestone",
+          sets.CircleBlade = {ammo="Floestone",
                                           head="Adhemar Bonnet +1",neck="Fotia gorget",ear2="Moonshade Earring",ear1="Telos Earring",
                                           body="Adhemar Jacket +1",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},ring1="Ilabrat Ring",ring2="Epona's Ring",
                                           back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},waist="Fotia belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
-                                                   
-        sets.WS.Expiacion = {}        
+                                                  
                        
-        sets.WS.Expiacion = {ammo="Floestone",
+        sets.Expiacion = {ammo="Floestone",
                                           head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 										  neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
                                           body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','Weapon skill damage +2%','STR+1','Attack+4',}},
@@ -162,10 +156,8 @@ function get_sets()
                                           back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},waist="Grunfeld Rope",
 										  legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
 										  feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}}, }
- 
-        sets.WS.VorpalBlade = {}
        
-        sets.WS.VorpalBlade = {ammo="Floestone",
+        sets.VorpalBlade = {ammo="Floestone",
                                           head="Adhemar Bonnet +1",neck="Fotia gorget",ear2="Moonshade Earring",ear1="Telos Earring",
                                           body="Adhemar Jacket +1",hands={ name="Herculean Gloves", augments={'Accuracy+21 Attack+21','"Triple Atk."+2','STR+11','Accuracy+9',}},
 										  ring1="Ilabrat Ring",ring2="Epona's Ring",
@@ -183,9 +175,8 @@ function get_sets()
                                                           body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Epona's ring",
                                                           back="Lupine Cape",waist="Fotia belt",legs="Telchine Braconi",feet="Rawhide Boots"}
                                                                                                                 
-        sets.WS.FlashNova = {}
        
-        sets.WS.FlashNova = {ammo="Pemphredo Tathlum",
+        sets.FlashNova = {ammo="Pemphredo Tathlum",
                                    Head ="Jhakri Coronal +1",
 								   neck="Sanctity Necklace",rear="Friomisi earring", ear1="Novio Earring",
                                  body="Adhemar Jacket +1",hands="Amalric Gages", ring1="Shiva Ring", ring2 ='Shiva Ring', waist ="Eschan Stone",
@@ -346,11 +337,11 @@ function precast(spell)
         elseif spell.english == 'Savage Blade' then
                 equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
         elseif spell.english == 'Circle Blade' then
-                equip(sets.WS.CircleBlade)
+                equip(sets.CircleBlade)
         elseif spell.english == 'Expiacion' then
-                equip(sets.WS.Expiacion)
+                equip(sets.Expiacion)
         elseif spell.english == 'Vorpal Blade' then
-                equip(sets.WS.VorpalBlade)
+                equip(sets.VorpalBlade)
         elseif spell.english == 'Sanguine Blade' then
                 equip(sets.BlueMagic.Dark)
                 if spell.element == world.day_element or spell.element == world.weather_element then
@@ -361,7 +352,7 @@ function precast(spell)
         elseif spell.english == 'Realmrazer' then
                 equip(sets.Realmrazer[sets.Realmrazer.index[Realmrazer_ind]])
         elseif spell.english == 'Flash Nova' then
-                equip(sets.WS.FlashNova)
+                equip(sets.FlashNova)
                 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end

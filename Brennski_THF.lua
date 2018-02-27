@@ -55,14 +55,14 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = { ammo="Yamarang",
                                     head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
-                                    body="Ashera Harness",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Epona's Ring",
-                                    back="Canny Cape",waist="Reiki Yotai",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+                                    body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Epona's Ring",
+                                    back="Canny Cape",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                        
                                                        
                 sets.TP.AccuracyMid = {ammo="Yamarang",
                                         head="Dampening Tam", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
-										body="Ashera Harness",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Epona's ring",
-                                        back="Canny Cape",waist="Reiki Yotai",legs="Meg. Chausses +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+										body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Epona's ring",
+                                        back="Canny Cape",waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
                 sets.TP.AccuracyFull = {ammo="Yamarang",
                                         head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
@@ -88,7 +88,7 @@ function get_sets()
        --Weaponskill Sets--
         sets.WS = {}      
        
-        sets.WS.Rudras = {ammo="Yetshila",
+        sets.Rudras = {ammo="Yetshila",
                                 head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 								neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
                                 body={ name="Herculean Vest", augments={'Accuracy+25 Attack+25','Weapon skill damage +2%','STR+1','Attack+4',}},
@@ -96,30 +96,25 @@ function get_sets()
                                 back="Canny Cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
 								feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}}, }							
                
-        sets.WS.Exenterator = {}              
-                       
-        sets.WS.Exenterator = {ammo="Jukukik Feather",
+                               
+        sets.Exenterator = {ammo="Jukukik Feather",
                                           head="Adhemar Bonnet +1",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Cessance Earring",
                                           body="Herculean Vest",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Regal Ring",
                                           back="Canny Cape",waist="Fotia belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
-                                                   
-        sets.WS.Evisceration = {}        
-                       
-        sets.WS.Evisceration = {ammo="Jukukik Feather",
+                                                                          
+        sets.Evisceration = {ammo="Jukukik Feather",
                                           head="Adhemar Bonnet +1",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Cessance Earring",
                                           body="Herculean Vest",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Regal Ring",
                                           back="Canny Cape",waist="Fotia belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
- 
-        sets.WS.SharkBite = {}
        
-        sets.WS.SharkBite = {ammo="Jukukik Feather",
+        sets.SharkBite = {ammo="Jukukik Feather",
                                           head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 										  neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Herculean Vest",hands="Meg. Gloves +2",ring1="Ilabrat Ring",ring2="Regal Ring",
                                           back="Canny Cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
 										  feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}}, }		
 										  
-		sets.WS,AeolianEdge = {
+		sets.AeolianEdge = {
 							head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 							neck="Sanctity Necklace",  
 							ear2="Friomisi earring", 
@@ -203,41 +198,25 @@ end
 function precast(spell)
         if spell.action_type == 'Magic' then
                 equip(sets.precast.FC.Standard)
-         end
-              
-        if spell.english == 'Exenterator' then
-                equip(sets.WS.Exenterator)
-        end
-               
-        if spell.english == 'Evisceration' then
-                equip(sets.WS.Evisceration)
-        end
- 
-        if spell.english == 'Shark Bite' then
-                equip(sets.WS.SharkBite)
-        end
-		
-		if spell.english == "Rudra's Storm" then
-                equip(sets.WS.Rudras)
-        end
-       
-        if spell.english == 'Sanguine Blade' then
+        elseif spell.english == 'Exenterator' then
+                equip(sets.Exenterator)
+        elseif spell.english == 'Evisceration' then
+                equip(sets.Evisceration)
+        elseif spell.english == 'Shark Bite' then
+                equip(sets.SharkBite)
+        elseif spell.english == 'Rudra\'s Storm' then
+                equip(sets.Rudras)
+        elseif spell.english == 'Sanguine Blade' then
                 equip(sets.BlueMagic.Dark)
                 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
-        end
-       
-	   if spell.english == 'Aeolian Edge' then
-			equip(sets.WS.AeolianEdge)
-		end
-	   
-        if spell.english == 'Box Step' then
+        elseif spell.english == 'Aeolian Edge' then
+			equip(sets.AeolianEdge)
+		elseif spell.english == 'Box Step' then
                 equip(sets.Utility.Steps)
-        end
-       
-        if spell.english == 'Flash Nova' then
-                equip(sets.WS.FlashNova)
+        elseif spell.english == 'Flash Nova' then
+                equip(sets.FlashNova)
                 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
@@ -260,9 +239,7 @@ function midcast(spell,act)
                         if buffactive['Copy Image'] then
                                 send_command('@wait 0.3; input //cancel Copy Image*')
                         end
-        end
- 
-        if spell.english == 'Utsusemi: Ni'  or spell.english == 'Utsusemi: San' then
+        elseif spell.english == 'Utsusemi: Ni'  or spell.english == 'Utsusemi: San' then
                 equip(sets.NINMagic.Utsusemi)
         end
 end	

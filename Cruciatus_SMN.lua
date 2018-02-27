@@ -144,7 +144,7 @@ function init_gear_sets()
     sets.precast.JA['Elemental Siphon'] = {
 			main="Was",
 			sub="Vox grip",
-			ammo="Esper Stone +1",
+			ammo="Esper Stone",
 			head="Telchine cap",
 			ear1="Smn. earring",
 			ear2="Andoaa earring",
@@ -163,14 +163,14 @@ function init_gear_sets()
     -- Pact delay reduction gear
     sets.precast.BloodPactWard = {
     ammo="Sancus Sachet +1",
-    head="Helios Band",
-    body="Con. Doublet +3",
+    head="Glyphic Horn +1",
+    body="Con. Doublet +2",
     hands={ name="Glyphic Bracers +1", augments={'Inc. Sp. "Blood Pact" magic burst dmg.',}},
     legs="Baayami slops",
     feet={ name="Glyph. Pigaches +1", augments={'Inc. Sp. "Blood Pact" magic crit. dmg.',}},
     neck="Incanter's Torque",
     waist="Klouskap Sash",
-    left_ear="Lugalbanda Earring",
+    left_ear="Andoaa Earring",
     right_ear="Evans Earring",
     left_ring="Varar Ring",
     right_ring="Varar Ring",
@@ -212,7 +212,7 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Myrkr'] = {
         head="",ear1="Gifted Earring",ear2="Loquacious Earring",
-        body="Con. Doublet +3",hands="Beck. Bracers +1",ring1="Evoker's Ring",ring2="Sangoma Ring",
+        body="Con. Doublet +2",hands="Beck. Bracers +1",ring1="Evoker's Ring",ring2="Sangoma Ring",
         back="Pahtli Cape",waist="Fucho-no-Obi",legs="Assiduity Pants +1",feet=""}
 
     sets.precast.WS['Shattersoul'] = {
@@ -229,11 +229,11 @@ function init_gear_sets()
     --------------------------------------
 
     sets.midcast.FastRecast = {
-    head={ name="Merlinic Hood", augments={'Mag. Acc.+2','"Fast Cast"+6','DEX+1',}},
+    head="Merlinic Hood",
     body="Inyanga Jubbah +1",
     hands="Lamassu Mitts +1",
     legs="Psycloth Lappas",
-     feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},
+    feet="Regal Pumps +1",
     neck="Adad Amulet",
     waist="Channeler's Stone",
     left_ear="Loquac. Earring",
@@ -280,7 +280,7 @@ function init_gear_sets()
 		main="Was",
 		sub="Vox grip",
 		ammo="Sancus sachet +1",
-		head="Convoker's horn +3",
+		head="Convoker's horn +1",
 		ear1="Andoaa earring",
 		ear2="Smn. earring",
 		neck="Incanter's Torque",
@@ -290,14 +290,14 @@ function init_gear_sets()
 		ring2="Stikini Ring",
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: "Regen"+10',}},
 		waist="Kobo obi",
-		 feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},
+		feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},
 		legs="Beckoner's spats +1"}
 
 	sets.midcast.Pet.BloodPactWard = {
 		main="Was",
 		sub="Oneiros Grip",
 		ammo="Sancus sachet +1",
-		head="Convoker's horn +3",
+		head="Convoker's horn +1",
 		ear1="Andoaa earring",
 		ear2="Smn. earring",
 		neck="Incanter's Torque",
@@ -314,7 +314,7 @@ function init_gear_sets()
 		main="Was",
 		sub="Vox grip",
 		ammo="Sancus sachet +1",
-		head="Convoker's horn +3",
+		head="Convoker's horn +1",
 		ear1="Andoaa earring",
 		ear2="Smn. earring",
 		neck="Adad amulet",
@@ -325,16 +325,17 @@ function init_gear_sets()
 		back={ name="Campestres's Cape", augments={'Pet: Acc.+30 Pet: R.Acc.+30 Pet: Atk.+30 Pet: R.Atk.+30','Eva.+30 /Mag. Eva.+30','Pet: "Regen"+10',}},
 		waist="Klouskap Sash",
 		legs="Glyphic spats +1",
-		 feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},}
+		feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},}
 
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
 
     sets.midcast.Pet.PhysicalBloodPactRage = {
     ammo="Sancus Sachet +1",
     head="Helios Band",
-    body="Con. Doublet +3",
-	hands={ name="Merlinic Dastanas", augments={'Pet: Accuracy+28 Pet: Rng. Acc.+28','Blood Pact Dmg.+10','Pet: STR+2',}},
-    legs={ name="Apogee Slacks +1", augments={'Pet: STR+20','Blood Pact Dmg.+14','Pet: "Dbl. Atk."+4',}},
+    body="Con. Doublet +2",
+	hands={ name="Merlinic Dastanas", augments={'Pet: Accuracy+30 Pet: Rng. Acc.+30','Blood Pact Dmg.+8','Pet: INT+3',}},
+    --legs={ name="Apogee Slacks +1", augments={'Pet: STR+20','Blood Pact Dmg.+14','Pet: "Dbl. Atk."+4',}},
+	legs="Apogee Slacks +1",
 	feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},
     neck="Shulmanu collar",
     waist="Klouskap Sash",
@@ -356,7 +357,7 @@ function init_gear_sets()
     ammo="Sancus Sachet +1",
     head={ name="Apogee Crown +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},
     body={ name="Apo. Dalmatica +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},
-    hands={ name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+14 Pet: "Mag.Atk.Bns."+14','Blood Pact Dmg.+8','Pet: MND+7','Pet: Mag. Acc.+13','Pet: "Mag.Atk.Bns."+12',}},
+    hands={ name="Merlinic Dastanas", augments={'Pet: Accuracy+16 Pet: Rng. Acc.+16','Blood Pact Dmg.+10','Pet: DEX+5','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+3',}},
     --legs={ name="Apogee Slacks +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},
 	legs="Apogee Slacks +1",
     feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},
@@ -376,10 +377,10 @@ function init_gear_sets()
     sub="Elan Strap",
     ammo="Sancus Sachet +1",
     head={ name="Apogee Crown +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},
-    body="Con. Doublet +3",
-    hands={ name="Merlinic Dastanas", augments={'Pet: Accuracy+28 Pet: Rng. Acc.+28','Blood Pact Dmg.+10','Pet: STR+2',}},
+    body="Con. Doublet +2",
+    hands={ name="Merlinic Dastanas", augments={'Pet: Accuracy+16 Pet: Rng. Acc.+16','Blood Pact Dmg.+10','Pet: DEX+5','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+3',}},
     legs={ name="Apogee Slacks +1", augments={'Pet: STR+20','Blood Pact Dmg.+14','Pet: "Dbl. Atk."+4',}},
-    feet="Convo. Pigaches +3",
+    feet="Convo. Pigaches +1",
     neck="Adad Amulet",
     waist="Regal Belt",
     left_ear="Lugalbanda Earring",
@@ -427,7 +428,7 @@ function init_gear_sets()
 		main="Was",
 		sub="Oneiros Grip",
 		ammo="Sancus sachet +1",
-		head="Convoker's horn +3",
+		head="Convoker's horn +1",
 		neck="Sanctity neclace",
 		ear1="Moonshade earring",
 		ear2="Evans Earring",
@@ -451,7 +452,7 @@ function init_gear_sets()
     legs="Assiduity Pants +1",
     feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},
     neck="Adad Amulet",
-    waist="Klouskap Sash",
+    waist="Fucho-no-Obi",
     left_ear="Lugalbanda Earring",
     right_ear="Enmerkar Earring",
     left_ring="Defending Ring",
@@ -489,7 +490,7 @@ function init_gear_sets()
 	main="Was",
 	sub="Oneiros Grip",
     ammo="Sancus Sachet +1",
-    head="Convoker's horn +3",
+    head="Convoker's horn +1",
 	body="Apogee Dalmatica +1",
 	hands="Asteria mitts +1",
     legs="Assiduity Pants +1",
@@ -509,7 +510,7 @@ function init_gear_sets()
     sets.idle.Spirit = {
 		main="Was",
 		sub="Vox Grip",
-		head="Convoker's horn +3",
+		head="Convoker's horn +1",
 		ear1="Smn. earring",
 		ear2="Andoaa earring",
 		neck="Incanter's Torque",
@@ -527,7 +528,7 @@ function init_gear_sets()
 		sub="Oneiros Grip",
 		ammo="Sancus sachet +1",
         neck="Incanter's Torque",
-		head="Convoker's horn +3",
+		head="Convoker's horn +1",
 		ear1="Andoaa earring",
 		ear2="Smn. earring",
 		body="Beck. Doublet +1",
@@ -541,11 +542,11 @@ function init_gear_sets()
 		legs="Beck. spats +1"}
 
 	sets.idle.Avatar.Melee = {
-		main="Was",
-		sub="Oneiros Grip",
+	main="Was",
+	sub="Oneiros Grip",
     ammo="Sancus Sachet +1",
-   head="Convoker's horn +3",
-    body="Con. Doublet +3",
+	head="Convoker's horn +1",
+    body="Con. Doublet +2",
     hands={ name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+14 Pet: "Mag.Atk.Bns."+14','Blood Pact Dmg.+8','Pet: MND+7','Pet: Mag. Acc.+13','Pet: "Mag.Atk.Bns."+12',}},
     legs="Enticer's Pants",
     neck="Shulmanu collar",
@@ -562,7 +563,7 @@ function init_gear_sets()
     sets.perp.Carbuncle = {
 		main="Was",
 		sub="Oneiros Grip",
-        head="Convoker's horn +3",
+        head="Convoker's horn +1",
 		neck="Caller's pendant",
 		ear1="Moonshade earring",
 		ear2="Gifted earring",
@@ -592,7 +593,7 @@ function init_gear_sets()
     sets.engaged = {main="Was",
 		sub="Oneiros Grip",
     ammo="Sancus Sachet +1",
-    head="Convoker's horn +3",
+    head="Convoker's horn +1",
     body="Tali'ah Manteel +1",
     hands={ name="Merlinic Dastanas", augments={'Pet: Accuracy+28 Pet: Rng. Acc.+28','Blood Pact Dmg.+10','Pet: STR+2',}},
     legs="Tali'ah Sera. +1",

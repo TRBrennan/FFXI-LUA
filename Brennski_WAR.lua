@@ -184,7 +184,7 @@ function get_sets()
 	sets.SavageCrit = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
 			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
-			   	back=STR_Back,waist="Prosilio belt +1",legs=WSD_Legs,feet="Boii calligae +1"}
+			   	back=STR_Back,waist="Grunfeld Rope",legs=WSD_Legs,feet="Boii calligae +1"}
 				
 	
 	sets.Sanguine = {ammo="Knobkierrie",
@@ -214,19 +214,19 @@ function get_sets()
 			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}	
 				
 	sets.Cloud = {ammo="Knobkierrie",
-			    head="Jumalik helm",neck="Baetyl pendant",ear1="Friomisi earring",ear2="Moonshade earring",
-			 	body="Founder's breastplate",hands="Founder's Gauntlets",ring1="Shiva ring +1",ring2="Acumen ring",
-			   	back=STR_Back,waist="Eschan stone",legs="Eschite cuisses",feet="Founder's greaves"}	
+			    head=WS_Head,neck="Sanctity Necklace",ear1="Friomisi earring",ear2="Moonshade earring",
+			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Regal Ring",ring2="Acumen ring",
+			   	back=STR_Back,waist="Eschan stone",legs=WSD_Legs,feet="Founder's greaves"}	
 				
 	sets.Mistral = {ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Ishvara earring", ear2="Moonshade earring",
 			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal Ring",
-			   	back=STR_Back,waist="Prosilio Belt +1",legs=WSD_Legs,feet="Sulevia's leggings +2"}
+			   	back=STR_Back,waist="Grunfeld Rope",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 				
 	sets.MistralCrit = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
 			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Ifrit ring +1",
-			   	back=STR_Back,waist="Prosilio belt +1",legs=WSD_Legs,feet="Boii calligae +1"}
+			   	back=STR_Back,waist="Grunfeld Rope",legs=WSD_Legs,feet="Boii calligae +1"}
 	
 	sets.Decimation = {ammo="Seething bomblet +1",
 			    head="Flam. Zucchetto +2",neck="Fotia gorget",ear1="Cessance earring",ear2="Moonshade earring",
@@ -276,12 +276,12 @@ function get_sets()
 	sets.Judgment = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
 			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Regal Ring",ring2="Rufescent ring",
-			   	back=STR_Back,waist="Prosilio belt +1",legs=WSD_Legs,feet="Sulevia's leggings +2"}
+			   	back=STR_Back,waist="Grunfeld Rope",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 				
 	sets.BH = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
 			 	body="Odyssean chestplate",hands=WSD_Hands,ring1="Regal Ring",ring2="Rufescent ring",
-			   	back=STR_Back,waist="Prosilio belt +1",legs=WSD_Legs,feet="Sulevia's leggings +2"}			
+			   	back=STR_Back,waist="Grunfeld Rope",legs=WSD_Legs,feet="Sulevia's leggings +2"}			
 	
 	sets.Hexa = {ammo="Yetshila",
 			    head="Boii mask +1",neck="Fotia Gorget",ear2="Brutal earring",ear2="Moonshade earring",
