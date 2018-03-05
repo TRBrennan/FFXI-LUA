@@ -49,7 +49,8 @@ function get_sets()
 		range="Dunna",
         head="Nahtirah Hat",
 		neck="Voltsurge Torque",right_ear="Etiolation Earring", left_ear="Loquacious Earring",
-        body="Shango Robe", ring2="Prolix ring", hands="Telchine Gloves",ring1="Kishar Ring",
+        body="Shango Robe", ring2="Prolix ring", hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+24','"Fast Cast"+5','CHR+6','Mag. Acc.+5',}},
+		ring1="Kishar Ring",
         back="Lifestream Cape",waist="Channeler's Stone",legs="Geo. Pants +1",feet="Regal Pumps +1"
 		}
 		

@@ -78,10 +78,19 @@ function get_sets()
 			    body="Valorous mail",hands="Argosy mufflers +1",ring1="Flamma ring",ring2="Chirich ring",
 			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 				
-	sets.TP.Chango = {ammo="Ginsen",
-			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear2="Brutal earring", ear1="Telos earring",
-			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
+	sets.TP.Chango = {    ammo="Ginsen",
+    head="Flam. Zucchetto +2",
+    body={ name="Emicho Haubert +1", augments={'HP+65','DEX+12','Accuracy+20',}},
+    hands="Sulev. Gauntlets +2",
+    legs="Pumm. Cuisses +3",
+    feet="Pumm. Calligae +3",
+    neck="Lissome Necklace",
+    waist="Ioskeha Belt",
+    left_ear="Telos Earring",
+    right_ear="Cessance Earring",
+    left_ring="Niqmaddu Ring",
+    right_ring="Hetairoi Ring",
+    back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},}
 				
 	sets.TP.H2H = {ammo="Yetshila",
 			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear2="Brutal earring", ear1="Telos earring",
@@ -344,7 +353,8 @@ function get_sets()
        
         sets.JA = {}
                
-		sets.JA.Berserk ={back = "Cichol's Mantle",feet = "Agoge Calligae +1", body = "Pumm. Lorica +3"}
+		sets.JA.Berserk ={back = "Cichol's Mantle",feet = "Agoge Calligae +2", body = "Pumm. Lorica +3"}
+		
 		sets.JA.Aggressor = { body = "Agoge Lorcia", head ="Pummeler's mask +2"}
 		
 		sets.JA.Warcry = {head = "Agoge Mask +2"}		
@@ -356,7 +366,7 @@ function get_sets()
 		sets.JA.BloodRage ={body ="Ravager's Lorica +2"}
 		
 		sets.JA.Tomahawk = {ammo = "Throwing Tomahawk",
-						feet = "Agoge Calligae +1", waist ="Chaac Belt", 
+						feet = "Agoge Calligae +2", waist ="Chaac Belt", 
 						head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}}}
 				
 	sets.Utility = {}
@@ -366,7 +376,7 @@ function get_sets()
 		
 			
 	sets.enmity = {ammo="Sapience Orb",	ear2 ="Friomisi Earring", back ="Weard Mantle",waist ="Trance belt",
-				   ring2="Supershear Ring",neck = "Unmoving Collar",hands="Souveran Handschuhs",feet="Souveran Schuhs",body="Souveran Cuirass",
+				   ring2="Supershear Ring",neck = "Unmoving Collar +1",hands="Souveran Handschuhs",feet="Souveran Schuhs",body="Souveran Cuirass",
 				   ring1="Flamma Ring",legs="Souveran Diechlings +1",head="Souveran Schaller"}
 			
 			
@@ -382,7 +392,7 @@ function get_sets()
 			    back="Agema cape",waist="Ioskeha belt",legs="Sulevia's cuisses +2",feet="Amm greaves"}
 	
 	sets.AF1 = {main="Bravura",body="Pummeler's lorica +3",head="Pummeler's Mask +3"}
-	sets.AF2 = {main="Ragnarok",sub="Utu Grip",body="Agoge Lorica +1",head="Agoge mask +1",hands="Agoge mufflers +1",feet="Agoge Calligae +1",}
+	sets.AF2 = {main="Ragnarok",sub="Utu Grip",body="Agoge Lorica +1",head="Agoge mask +1",hands="Agoge mufflers +1",feet="Agoge Calligae +2",}
 	sets.AF3 = {main="Chango",ammo="Thr. Tomahawk",body="Boii lorica +1",}
 	
 end

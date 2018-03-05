@@ -19,7 +19,7 @@ function get_sets()
  
         end    
 		
-		TP_Body = {name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}}
+		TP_Body = { name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
 		WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
 		WSD_Hands ={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}}
 		WSD_Body = {name ="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}}
@@ -64,7 +64,7 @@ function get_sets()
 				sets.TP.Standard = {ammo="Ginsen",
                                     head="Flam. Zucchetto +2", neck="Moonbeam Nodowa", ear1="Cessance Earring",ear2="Telos Earring",
                                     body=TP_Body,
-									hands="Wakido Kote +2",
+									hands="Wakido Kote +3",
 									right_ring="Niqmaddu Ring",left_ring="Flamma Ring",
                                      back="Takaha Mantle",waist="Ioskeha Belt",
 									 legs="Ken. Hakama",
@@ -75,7 +75,7 @@ function get_sets()
                                         head="Flam. Zucchetto +2", 
 										neck="Moonbeam Nodowa", ear1="Cessance Earring",ear2="Telos Earring",
 										body=TP_Body,
-										hands="Wakido Kote +2",
+										hands="Wakido Kote +3",
 										right_ring="Niqmaddu Ring",left_ring="Flamma Ring",
                                          back="Takaha Mantle",
 										 waist="Ioskeha Belt",legs="Ken. Hakama",
@@ -194,7 +194,7 @@ function get_sets()
 								back ="Weard Mantle",
 								waist ="Trance belt",
 								left_ring="Supershear Ring",
-								neck = "Unmoving Collar",
+								neck = "Unmoving Collar +1",
 								hands="Souveran Handschuhs",
 								feet="Souveran Schuhs",
 								body="Souveran Cuirass",

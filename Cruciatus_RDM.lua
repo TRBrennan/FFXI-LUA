@@ -201,7 +201,7 @@ function get_sets()
 			sets.precast.FC.Standard = {ammo="Sapience Orb",
 							head="Nahtirah Hat",
 							body="Shango Robe", 
-							hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}}, 
+							hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+24','"Fast Cast"+5','CHR+6','Mag. Acc.+5',}},
 							legs="Psycloth Lappas",
 						    feet="Carmine Greaves +1",
 							neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
