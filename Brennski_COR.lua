@@ -91,7 +91,7 @@ function get_sets()
         sets.SavageBlade.Attack = {
                                           head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 										  neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                          body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
+                                          body="Laksa. Frac +3",
 										  hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Rajas Ring",
                                           back="Camulus's Mantle",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
 										  feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}}, }
@@ -122,7 +122,7 @@ function get_sets()
          
 		sets.Leaden ={ ammo ="Chrono Bullet", head="Pixie Hairpin +1",
 							neck="Sanctity Necklace",  ear2="Friomisi earring", ear1="Moonshade Earring",
-							body="Samnuha Coat",  hands="Carmine Finger Gauntlets",   ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
+							body="Laksa. Frac +3",  hands="Carmine Finger Gauntlets",   ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
 							back="Camulus's Mantle", legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},  
 							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
 							
@@ -133,7 +133,7 @@ function get_sets()
 			
 		sets.WildFire = {ammo ="Chrono Bullet",head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 							neck="Sanctity Necklace",   ear2="Friomisi earring", ear1="Moonshade Earring",
-							body="Samnuha Coat",hands="Carmine Finger Gauntlets", ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
+							body="Laksa. Frac +3",hands="Carmine Finger Gauntlets", ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
 							back="Camulus's Mantle",   legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}}, 
 							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
 		
@@ -143,12 +143,19 @@ function get_sets()
         LastStand_ind = 1					
 			
 		sets.LastStand = {ammo ="Chrono bullet", 
-										head="Meghanada Visor +2",
-										neck="Iskur Gorget",ear2="Telos Earring",ear1="Moonshade Earring",
-                                        body="Meg. Cuirie +1",hands="Meg. Gloves +2",ring1="Dingir Ring",ring2="Regal Ring",
-                                        back="Camulus's Mantle",waist="Yemaya Belt",
-										legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
-										feet="Meg. Jam. +2"}
+						head={ name="Herculean Helm", augments={'Rng.Acc.+23 Rng.Atk.+23','Weapon skill damage +2%','DEX+2','Rng.Acc.+12','Rng.Atk.+5',}},
+						body="Laksa. Frac +3",
+						hands="Meg. Gloves +2",
+						legs={ name="Herculean Trousers", augments={'Rng.Acc.+24 Rng.Atk.+24','Weapon skill damage +3%','Rng.Atk.+3',}},
+						feet={ name="Herculean Boots", augments={'Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +2%','STR+2','Rng.Acc.+7',}},
+						neck="Iskur Gorget",
+						waist="Yemaya Belt",
+						left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+						right_ear="Telos Earring",
+						left_ring="Dingir Ring",
+						right_ring="Regal Ring",
+						back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
+						}
 										  
 		--Ranged Attack ---
 			sets.Ranged = {}
@@ -202,7 +209,7 @@ function get_sets()
 							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
        
         sets.JA.PhantomRoll = {head="Lanun Tricorne",neck="Regal Necklace", ear1="Etiolation earring", ear2="Genmei Earring",
-                              body="Emet Hareness +1",hands="Navarch's Gants +1",ring2="Luzaf's Ring",ring1="Defending Ring",
+                              body="Emet Hareness +1",hands="Chasseur's gants",ring2="Luzaf's Ring",ring1="Defending Ring",
                               back="Camulus's Mantle",waist="Flume belt +1",legs="Desultor Tassets",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
         sets.JA.LightDarkShot= {ammo ="Animikii Bullet",head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},

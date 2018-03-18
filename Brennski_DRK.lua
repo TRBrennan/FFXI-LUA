@@ -44,7 +44,7 @@ function get_sets()
 	TP_Legs = {name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}}
 	TP_Body = "Emicho Haubert +1"
 	WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
-	WSD_Hands ={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}}
+	WSD_Hands ="Odyssean gauntlets",
 	WSD_Body ={ name="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}}
 	WSD_Head ={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}}
 
@@ -72,17 +72,17 @@ function get_sets()
 	sets.TP.Standard = {ammo="Ginsen",
 			    head=Acc_Head,neck="Lissome Necklace", ear1="Telos earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}}}
+			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Flam. Gambieras +2"}
 	
 	sets.TP.DW ={ammo="Ginsen",
 			    head=Acc_Head,neck="Lissome Necklace", ear1="Suppanomimi", ear2="Cessance earring",
-			    body=TP_Body,hands="Emicho Gauntlets",ring1="Flamma ring",ring2="Niqmaddu ring",
+			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Flamma ring",ring2="Niqmaddu ring",
 			    back=DA_Back,waist="Ioskeha belt",legs="Carmine cuisses +1",feet="Carmine greaves +1"}		
 	
 	sets.TP.Anguta = {ammo="Ginsen",
 			    head=Acc_Head,neck="Ainia collar", ear1="Telos earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}}}
+			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Flam. Gambieras +2"}
 				
 --	sets.TP.Anguta = {ammo="Hasty pinion +1",
 --			    head="Flamma zucchetto +1",neck="Lissome Necklace", ear1="Brutal earring", ear2="Cessance earring",
@@ -114,7 +114,7 @@ function get_sets()
 	sets.Resolution = {ammo="Seething bomblet +1",
 			    head="Flam. Zucchetto +2",neck="Fotia gorget",ear1="Moonshade earring",ear2="Cessance earring",
 			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
-			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Argosy sollerets +1"}
+			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Flam. Gambieras +2"}
 	
 	sets.Scourge = {ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Lissome Necklace",ear1="Ishvara Earring", ear2="Moonshade earring",
@@ -124,7 +124,7 @@ function get_sets()
 	sets.Shockwave =  {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade earring",
 			 	body="Emicho haubert +1",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
-				back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Argosy sollerets +1"}
+				back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Flam. Gambieras +2"}
 	
 	sets.Torcleaver = {ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Ishvara Earring", ear2="Moonshade earring",

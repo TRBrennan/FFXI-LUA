@@ -56,11 +56,19 @@ function get_sets()
                 --1=Standard--
 				
                 TP_ind = 1
-				sets.TP.Standard = {ammo ="Demonry Core", head={ name="Valorous Mask", augments={'Pet: Mag. Acc.+11','Pet: "Dbl.Atk."+2 Pet: Crit.hit rate +2','Pet: Accuracy+14 Pet: Rng. Acc.+14',}}, neck="Empath necklace", ear1="Sabong Earring",ear2="Cessance Earring",
-                                    body="Acro Surcoat",hands ="Regimen Mittens",ring1="Petrov Ring",ring2="Epona's Ring",
-									back="Pastoralist's Mantle",waist="Incarnation Sash",legs="Valorous Hose",feet ="Emicho Gambieras"}
-                                                       
-													   
+				sets.TP.Standard = {ammo ="Demonry Core",    
+									head="Meghanada Visor +2",
+									body={ name="Emicho Haubert +1", augments={'HP+65','DEX+12','Accuracy+20',}},
+									hands={ name="Emicho Gauntlets", augments={'Accuracy+20','"Dual Wield"+5','Pet: Accuracy+20',}},
+									legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
+									feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
+									neck="Lissome Necklace",
+									waist="Reiki Yotai",
+									left_ear="Odnowa Earring",
+									right_ear="Cessance Earring",
+									left_ring="Petrov Ring",
+									right_ring="Epona's Ring",
+									}                                                     
 		--Ready Sets---
 		
 		sets.Ready = {}
@@ -82,31 +90,52 @@ function get_sets()
         sets.Ruinator.index = {'Attack'}
         Ruinator_ind = 1
        
-        sets.Ruinator.Attack = {
-                                          head="Dampening Tam",neck="Fotia gorget",ear1="Steelflash Earring",ear2="Bladeborn earring",
-                                          body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's ring",ring2="Epona's Ring",
-                                          back="Lupine Cape",waist="Dynamic belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
-										  
+        sets.Ruinator.Attack = {head="Meghanada Visor +2",
+								body={ name="Emicho Haubert +1", augments={'HP+65','DEX+12','Accuracy+20',}},
+								hands={ name="Argosy Mufflers +1", augments={'STR+12','DEX+12','Attack+20',}},
+								legs={ name="Argosy Breeches +1", augments={'STR+12','DEX+12','Attack+20',}},
+								feet="Meg. Jam. +2",
+								neck="Fotia Gorget",
+								waist="Fotia Belt",
+								left_ear="Telos Earring",
+								right_ear="Cessance Earring",
+								left_ring="Petrov Ring",
+								right_ring="Regal Ring", }
+																	  
 	    sets.Rampage = {}
        
         sets.Rampage.index = {'Attack'}
         Rampage_ind = 1
        
-        sets.Rampage.Attack = {
-                                          head="Dampening Tam",neck="Fotia gorget",ear1="Steelflash Earring",ear2="Bladeborn earring",
-                                          body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's ring",ring2="Epona's Ring",
-                                          back="Lupine Cape",waist="Dynamic belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+        sets.Rampage.Attack = {head="Meghanada Visor +2",
+								body={ name="Emicho Haubert +1", augments={'HP+65','DEX+12','Accuracy+20',}},
+								hands={ name="Argosy Mufflers +1", augments={'STR+12','DEX+12','Attack+20',}},
+								legs={ name="Argosy Breeches +1", augments={'STR+12','DEX+12','Attack+20',}},
+								feet="Meg. Jam. +2",
+								neck="Fotia Gorget",
+								waist="Fotia Belt",
+								left_ear="Telos Earring",
+								right_ear="Cessance Earring",
+								left_ring="Petrov Ring",
+								right_ring="Regal Ring", }
 										  
 		sets.MistralAxe = {}
        
         sets.MistralAxe.index = {'Attack'}
         MistralAxe_ind = 1
        
-        sets.MistralAxe.Attack = {
-                                          head="Dampening Tam",neck="Fotia gorget",ear1="Steelflash Earring",ear2="Bladeborn earring",
-                                          body="Adhemar Jacket",hands="Adhemar Wristbands",ring1="Epona's ring",ring2="Epona's Ring",
-                                          back="Lupine Cape",waist="Dynamic belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
-										  
+        sets.MistralAxe.Attack = { 	head={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}},
+									body={ name="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}},
+									hands="Meg. Gloves +2",
+									legs={ name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}},
+									feet={ name="Valorous Greaves", augments={'Attack+21','Weapon skill damage +5%',}},
+									neck="Caro Necklace",
+									waist="Grunfeld Rope",
+									left_ear="Ishvara Earring",
+									right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+									left_ring="Petrov Ring",
+									right_ring="Regal Ring",}
+																		  
 		 --Utility Sets--
         sets.Utility = {}
        
@@ -172,45 +201,27 @@ end
 function precast(spell)
         if spell.action_type == 'Magic' then
                 equip(sets.precast.FC.Standard)
-         end
-	         if spell.english == 'Ruinator' then
+         elseif  spell.english == 'Ruinator' then
                 equip(sets.Ruinator[sets.Ruinator.index[Ruinator_ind]])
-        end
-       
-        if spell.english == 'Mistral Axe' then
+		elseif  spell.english == 'Mistral Axe'  or spell.english == 'Cloudsplitter' then
                 equip(sets.MistralAxe[sets.MistralAxe.index[MistralAxe_ind]])
-        end
-		
-		if spell.english == 'Rampage' then
+       elseif spell.english == 'Rampage'  or if spell.english == 'Decimation' then
                 equip(sets.Rampage[sets.Rampage.index[Rampage_ind]])
-        end
-		
-        if spell.english == 'Box Step' then
+		elseif  spell.english == 'Box Step' then
                 equip(sets.Utility.Steps)
-        end
-	    if spell.english =="Spur" then
+		elseif  spell.english =="Spur" then
 		     equip(sets.JA.Spur)
-		end
-		
-		if spell.english =="Tame" then
+		elseif spell.english =="Tame" then
 		   equip(sets.JA.Tame)
-		end
-		
-		if spell.english =="Reward" then
+		elseif spell.english =="Reward" then
 		   equip(sets.JA.Reward)
-		end
-		
-		if spell.english =="Call Beast" or spell.english == "Bestial Loyalty" then
+		elseif spell.english =="Call Beast" or spell.english == "Bestial Loyalty" then
 		   equip(sets.JA.CB)
-		end
-		
-		if spell.english == "Familiar" then
+		elseif spell.english == "Familiar" then
 			equip(sets.JA.Familiar)
-		end
-		
-		if spell.english =="Ready" then
+		elseif spell.english =="Ready" then
 			equip(sets.Precast.Ready)
-		end
+	end
 		
 end
 
@@ -229,22 +240,16 @@ function midcast(spell,act)
                         if buffactive['Copy Image'] then
                                 send_command('@wait 0.3; input //cancel Copy Image*')
                         end
-        end
- 
-        if spell.english == 'Utsusemi: Ni'  or spell.english == 'Utsusemi: San' then
+		elseif  spell.english == 'Utsusemi: Ni'  or spell.english == 'Utsusemi: San' then
                 equip(sets.NINMagic.Utsusemi)
-        end
-		
-		if spell.english == 'Cursed Sphere'or spell.english =='Venom'or spell.english =='Toxic Spit'or spell.english =='Venom Spray'or spell.english =='Bubble Shower'or spell.english ==
+       elseif spell.english == 'Cursed Sphere'or spell.english =='Venom'or spell.english =='Toxic Spit'or spell.english =='Venom Spray'or spell.english =='Bubble Shower'or spell.english ==
          'Fireball'or spell.english =='Plague Breath'or spell.english =='Snow Cloud'or spell.english =='Acid Spray'or spell.english =='Silence Gas'or spell.english =='Dark Spore'or spell.english ==
          'Charged Whisker'or spell.english =='Purulent Ooze'or spell.english =='Aqua Breath'or spell.english =='Stink Bomb'or spell.english =='Nectarous Deluge'or spell.english =='Nepenthic Plunge'or spell.english =='Foul Waters'or spell.english =='Dust Cloud'or spell.english =='Sheep Song'or spell.english =='Scream'or spell.english =='Dream Flower'or spell.english =='Roar'or spell.english =='Gloeosuccus'or spell.english =='Palsy Pollen'or spell.english ==
          'Soporific'or spell.english =='Geist Wall'or spell.english =='Numbing Noise'or spell.english =='Spoil'or spell.english =='Hi-Freq Field'or spell.english =='Sandpit'or spell.english =='Sandblast'or spell.english =='Filamented Hold'or spell.english ==
          'Spore'or spell.english =='Infrasonics'or spell.english =='Chaotic Eye'or spell.english =='Blaster'or spell.english =='Intimidate'or spell.english =='Noisome Powder'or spell.english =='TP Drainkiss'or spell.english =='Jettatura'or spell.english =='Spider Web'or spell.english ==
          'Corrosive Ooze'or spell.english =='Molting Plumage'or spell.english =='Swooping Frenzy'or spell.english =='Pestilent Plume' then
 		     equip(sets.Ready.Magical)
-		end
-		
-		if spell.english == 'Sic'or spell.english =='Whirl Claws'or spell.english =='Dust Cloud'or spell.english =='Foot Kick'or spell.english =='Sheep Song'or spell.english =='Sheep Charge'or spell.english =='Lamb Chop'or spell.english ==
+		elseif spell.english == 'Sic' or spell.english =='Whirl Claws'or spell.english =='Dust Cloud'or spell.english =='Foot Kick'or spell.english =='Sheep Song'or spell.english =='Sheep Charge'or spell.english =='Lamb Chop'or spell.english ==
 			'Rage'or spell.english =='Head Butt'or spell.english =='Scream'or spell.english =='Dream Flower'or spell.english =='Wild Oats'or spell.english =='Leaf Dagger'or spell.english =='Claw Cyclone'or spell.english =='Razor Fang'or spell.english ==
 			'Roar'or spell.english =='Gloeosuccus'or spell.english =='Palsy Pollen'or spell.english =='Soporific'or spell.english =='Cursed Sphere'or spell.english =='Venom'or spell.english =='Geist Wall'or spell.english =='Toxic Spit'or spell.english ==
 			'Numbing Noise'or spell.english =='Nimble Snap'or spell.english =='Cyclotail'or spell.english =='Spoil'or spell.english =='Rhino Guard'or spell.english =='Rhino Attack'or spell.english =='Power Attack'or spell.english ==
@@ -272,11 +277,9 @@ function aftercast(spell)
 				
         else
                 equip(sets.Idle[sets.Idle.index[Idle_ind]])
-        end
-		if buffactive['doom'] then
+        elseif  buffactive['doom'] then
 					equip(sets.Utility.Doom)
-		end
-		if buffactive['terror'] or buffactive['stun'] or buffactive['sleep']	then 
+		elseif buffactive['terror'] or buffactive['stun'] or buffactive['sleep']	then 
 					equip(sets.TP.DT)
 		end
 end
