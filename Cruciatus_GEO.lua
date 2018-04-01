@@ -51,7 +51,7 @@ function get_sets()
 		neck="Voltsurge Torque",right_ear="Etiolation Earring", left_ear="Loquacious Earring",
         body="Shango Robe", ring2="Prolix ring", hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+24','"Fast Cast"+5','CHR+6','Mag. Acc.+5',}},
 		ring1="Kishar Ring",
-        back="Lifestream Cape",waist="Channeler's Stone",legs="Geo. Pants +1",feet="Regal Pumps +1"
+        back="Lifestream Cape",waist="Witful Belt",legs="Geo. Pants +1",feet="Regal Pumps +1"
 		}
 		
     sets.precast.FastCast.Cure = set_combine(sets.precast.FC, {main="Vadose Rod",sub="Sors Shield",back="Pahtli Cape"})
@@ -119,7 +119,7 @@ function get_sets()
 	range="Dunna",
 				head="Befouled Crown", neck="Erra Pendant", left_ear="Regal Earring", right_ear="Barkarole Earring",
                 body="Shango Robe", hands="Lurid Mitts", ring1="Vertigo Ring", ring2 ="Perception Ring",
-                back="Nantosuelta's Cape", waist="Ovate Rope", legs="Psycloth Lappas", feet="Bagua Sandals +1"}
+                back="Nantosuelta's Cape", waist="Ovate Rope", legs="Psycloth Lappas", feet="Medium's Sabots"}
     
     sets.midcast['Elemental Magic'] = {
 							main = "Solstice",
@@ -536,15 +536,15 @@ function relaxed_play_mode()
 				and check_recasts(s('Blaze of Glory'))
 				and check_recasts(s('Dematerialize')) then
 					if geo_mode == 'Frailty' then
-						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Frailty <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;frazzle <bt>')
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Frailty <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia II <bt>')
 					elseif geo_mode == 'Vex' then
-						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Vex <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;frazzle <bt>')
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Vex <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia II<bt>')
 					elseif geo_mode == 'Malaise' then
-						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Malaise <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;frazzle <bt>')
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Malaise <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia II <bt>')
 					elseif geo_mode == 'Torpor' then
-						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Torpor <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;frazzle <bt>')
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Torpor <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia II <bt>')
 					elseif geo_mode == 'Languor' then
-						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Languor <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;frazzle <bt>')
+						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Languor <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>;wait 1;Dia II <bt>')
 					elseif geo_mode == 'Wilt' then
 						windower.send_command('Radial Arcana <me>;wait 1;Blaze of Glory <me>;wait 2;Geo-Wilt <bt>;wait 6;Dematerialize <me>;wait 1;Life Cycle <me>;wait 1;Lasting Emanation <me>')
 					elseif geo_mode == 'Attunement' then

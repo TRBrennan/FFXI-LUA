@@ -19,7 +19,8 @@ function get_sets()
  
         end    
 		
-		TP_Body = { name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
+		--TP_Body = { name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
+		TP_Body = "Ken. Samue"
 		WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
 		WSD_Hands ={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}}
 		WSD_Body = {name ="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}}
@@ -196,7 +197,7 @@ function get_sets()
 								left_ring="Supershear Ring",
 								neck = "Unmoving Collar +1",
 								hands="Souveran Handschuhs",
-								feet="Souveran Schuhs",
+								feet="Souveran Schuhs +1",
 								body="Souveran Cuirass",
 								right_ring="Petrov Ring",
 								legs="Souveran Diechlings +1",

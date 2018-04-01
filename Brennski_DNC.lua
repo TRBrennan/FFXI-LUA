@@ -49,19 +49,19 @@ function get_sets()
         --TP Sets--
         sets.TP = {}
  
-           sets.TP.index = {'Standard', 'AccuracyMid', 'AccuracyFull', 'DT', 'DTAccuracy', 'TH'}
-                --1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy, 6 = TH
+           sets.TP.index = {'Standard', 'AccuracyMid', 'AccuracyFull', 'DT', 'DTAccuracy'}
+                --1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy, 
 				
                 TP_ind = 1
 				sets.TP.Standard = { ammo="Yamarang",
                                     head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Sherida Earring",ear2="Telos Earring",
-                                    body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Epona's Ring",
+                                    body="Ashera Harness",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Epona's Ring",
                                     back="Canny Cape",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                        
                                                        
                 sets.TP.AccuracyMid = {ammo="Yamarang",
                                         head="Dampening Tam", neck="Lissome necklace", ear1="Sherida Earring",ear2="Telos Earring",
-										body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Epona's ring",
+										body="Ashera Harness",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Epona's ring",
                                         back="Canny Cape",waist="Windbuffet Belt +1",legs="Meg. Chausses +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
                 sets.TP.AccuracyFull = {ammo="Yamarang",
@@ -79,11 +79,6 @@ function get_sets()
 									  body="Ashera Harness",hands="Herculean Gloves",ring1="Dark ring",ring2="Vocane Ring",
                                       back="Canny Cape",waist="Flume belt +1",legs="Mummu Kecks +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
 									  
-				sets.TP.TH = { ammo="Yamarang",
-                                    head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Suppanomimi",ear2="Telos Earring",
-                                    body="Ashera Harness",hands="Plunderer's Armlets +1",ring1="Ilabrat Ring",ring2="Epona's Ring",
-                                    back="Canny Cape",waist="Chaac Belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
-                                                         
 									
        --Weaponskill Sets--
         sets.WS = {}      

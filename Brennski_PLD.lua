@@ -26,17 +26,17 @@ function get_sets()
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
 									  neck="Coatl Gorget +1", ear1="Odnowa Earring +1", ear2="Infused Earring",
                                       body="Reverence Surcoat +3",hands="Regal Gauntlets",ring1="Defending ring",ring2="Vocane Ring",
-                                      waist="Fucho-no-obi",legs="Carmine Cuisses +1",feet="Souveran Schuhs", back ="Moonbeam Cape"}
+                                      waist="Fucho-no-obi",legs="Carmine Cuisses +1",feet="Souveran Schuhs +1", back ="Moonbeam Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum",
                                     head="Souveran Schaller", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Thureous Earring",
                                     body="Reverence Surcoat +3",hands="Regal Gauntlets",ring1="Defending ring",ring2="Vocane Ring",
-                                    back="Moonbeam Cape",waist="Flume Belt +1",legs="Souveran Diechlings +1",feet="Souveran Schuhs"}
+                                    back="Moonbeam Cape",waist="Flume Belt +1",legs="Souveran Diechlings +1",feet="Souveran Schuhs +1"}
 										
 		sets.Idle.Cleave = {ammo="Staunch Tathlum",
                                     head="Souveran Schaller", neck="Loricate Torque +1", ear1="Odnowa Earring +1",ear2="Thureous Earring",
                                     body="Reverence Surcoat +3",hands="Souveran Handschuhs",ring1="Defending ring",ring2="Vocane Ring",
-                                    back="Moonbeam Cape",waist="Flume Belt +1",feet="Souveran Schuhs",legs="Carmine Cuisses +1"}								
+                                    back="Moonbeam Cape",waist="Flume Belt +1",feet="Souveran Schuhs +1",legs="Carmine Cuisses +1"}								
         --TP Sets--
         sets.TP = {}
  
@@ -56,7 +56,7 @@ function get_sets()
                                     back="Moonbeam Cape",
 									waist="Flume Belt +1",
 									legs="Souveran Diechlings +1",
-									feet="Souveran Schuhs"}
+									feet="Souveran Schuhs +1"}
 									
 				sets.TP.Standard = {    ammo="Ginsen",
 										head="Flam. Zucchetto +2",
@@ -153,7 +153,7 @@ function get_sets()
 		sets.WS.Atonement = {ammo="Floestone",
                                     head="Sulevia's Mask +2", neck="Asperity necklace", ear1="Brutal Earring",ear2="Cessance Earring",
                                     body="Souveran Cuirass",hands="Valorous Mitts",ring1="Petrov Ring",ring2="Rajas Ring",
-                                    back="Weard Mantle",waist="windbuffet belt +1",legs="Sulevia's Cuisses +2",feet="Souveran Schuhs"}
+                                    back="Weard Mantle",waist="windbuffet belt +1",legs="Sulevia's Cuisses +2",feet="Souveran Schuhs +1"}
                                                                                        
         --Magic Sets--
         sets.Magic = {}
@@ -169,7 +169,7 @@ function get_sets()
 								ring2="Supershear Ring",
 								neck = "Incanter's Torque",
 								hands ="Regal Gauntlets",
-								feet="Souveran Schuhs",
+								feet="Souveran Schuhs +1",
 								body ="Shabti Cruissas",
 								ring1 = "Stikini Ring",
 								legs ="Carmine Cuisses +1",
@@ -184,7 +184,7 @@ function get_sets()
 								ring2="Supershear Ring",
 								neck = "Incanter's Torque",
 								hands ="Regal Gauntlets",
-								feet="Souveran Schuhs",
+								feet="Souveran Schuhs +1",
 								body ="Shabti Cruissas",
 								ring1 = "Stikini Ring",
 								legs ="Carmine Cuisses +1",
@@ -198,7 +198,7 @@ function get_sets()
 								ring2="Supershear Ring",
 								neck = "Unmoving Collar +1",
 								hands ="Regal Gauntlets",
-								feet="Souveran Schuhs",
+								feet="Souveran Schuhs +1",
 								body="Reverence Surcoat +3",
 								ring1 = "Stikini Ring",
 								legs="Souveran Diechlings +1",
@@ -236,7 +236,7 @@ function get_sets()
 								ring2="Supershear Ring",
 								neck = "Unmoving Collar +1",
 								hands="Souveran Handschuhs",
-								feet="Souveran Schuhs",
+								feet="Souveran Schuhs +1",
 								body="Reverence Surcoat +3",
 								ring1="Petrov Ring",
 								legs="Souveran Diechlings +1",

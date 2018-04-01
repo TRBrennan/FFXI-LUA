@@ -113,7 +113,7 @@ function get_sets()
 	  		  
 	sets.Resolution = {ammo="Seething bomblet +1",
 			    head="Flam. Zucchetto +2",neck="Fotia gorget",ear1="Moonshade earring",ear2="Cessance earring",
-			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Flam. Gambieras +2"}
 	
 	sets.Scourge = {ammo="Knobkierrie",	
@@ -123,7 +123,7 @@ function get_sets()
 				
 	sets.Shockwave =  {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade earring",
-			 	body="Emicho haubert +1",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body=""Argosy Hauberk +1"",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
 				back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Flam. Gambieras +2"}
 	
 	sets.Torcleaver = {ammo="Knobkierrie",	
@@ -167,7 +167,7 @@ function get_sets()
 				
 	sets.Vorpal = {ammo="Yetshila",
 			    head=Acc_Head,neck="Fotia Gorget",ear1="Cessance earring",ear2="Moonshade earring",
-			 	body=TP_Body,hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
+			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
 			   	back=DA_Back,waist="Fotia belt",legs="Argosy Breeches +1",feet="Valorous greaves"}
 	
 	sets.Upheaval = {ammo="Knobkierrie",

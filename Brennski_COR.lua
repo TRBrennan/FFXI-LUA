@@ -44,7 +44,7 @@ function get_sets()
 										
 		sets.Idle.Cleave = { 
 										head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Etiolation earring +1", ear2="Handler's earring +1",
-                                        body="Emet Hareness +1",hands="Garden Bangles",ring1="Dark ring",ring2="Succor ring",
+                                        body="Emet Hareness +1",hands="Garden Bangles",ring1="Defending ring",ring2="Vocane Ring",
                                         back="Mecistopins mantle",waist="Flume belt +1",legs="Osmium Cuisses",feet="Ahosi Leggings",}								
         --TP Sets--
         sets.TP = {}
@@ -71,7 +71,7 @@ function get_sets()
                                                        
                 sets.TP.DT = { 
                               head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Genmei Earring", ear2="Dignitary's Earring",
-                              body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Dark ring",ring2="Epona's ring",
+                              body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Defending ring",ring2="Vocane Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs ="Mummu Kecks +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                  
                 sets.TP.DTAccuracy = { 
@@ -242,44 +242,30 @@ end
 function precast(spell)
         if spell.type == 'Magic' then
                 equip(sets.precast.FC.Standard)
-         end
-       if spell.english == 'Ranged' then
+		elseif spell.english == 'Ranged' then
 			equip(sets.Ranged.PreShot)
-		end
-		
-		if spell.english == 'Savage Blade' then
+		elseif spell.english == 'Savage Blade' then
                 equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
-        end
-        if spell.english == 'Vorpal Blade' then
+		elseif spell.english == 'Vorpal Blade' then
                 equip(sets.VorpalBlade)
-        end
-       
-        if spell.english == 'Sanguine Blade' or spell.english =='Aeolian Edge' then
+		elseif spell.english == 'Sanguine Blade' or spell.english =='Aeolian Edge' then
                 equip(sets.SanguineBlade)
                 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
-        end
-				
-		if spell.english == 'Leaden Salute' then
+        elseif spell.english == 'Leaden Salute' then
 			equip(sets.Leaden)
 			 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
-		end
-		
-		if spell.english == 'Wildfire' then
+		elseif spell.english == 'Wildfire' then
 			equip(sets.WildFire)
 			 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
-		end
-		
-		if spell.english == 'Last Stand' then	
+		elseif spell.english == 'Last Stand' then	
 			equip(sets.LastStand)
-		end
-       
-        if spell.english == "Corsair's Roll" or spell.english == "Ninja's Roll" or spell.english == "Hunter's Roll" or spell.english == "Chaos Roll" 
+		elseif spell.english == "Corsair's Roll" or spell.english == "Ninja's Roll" or spell.english == "Hunter's Roll" or spell.english == "Chaos Roll" 
 		 or spell.english == "Magus's Roll" or spell.english == "Healer's Roll" or spell.english == "Drachen Roll" or spell.english == "Choral Roll" 
 		 or spell.english == "Monk's Roll" or spell.english == "Beast Roll" or spell.english == "Samurai Roll" or spell.english == "Evoker's Roll" 
 		 or spell.english == "Rogue's Roll" or spell.english == "Warlock's Roll" or spell.english == "Fighter's Roll" or spell.english == "Puppet Roll"
@@ -287,24 +273,18 @@ function precast(spell)
 		 or spell.english == "Bolter's Roll" or spell.english == "Allies' Roll" or spell.english == "Miser's Roll" or spell.english == "Tactician's Roll"
 		 or spell.english == "Caster's Roll" or spell.english == "Companion's Roll" or spell.english == "Avenger's Roll" or spell.english == "Double Up" then
 			equip(sets.JA.PhantomRoll)
-		end
-		
-		if spell.english == 'Fire Shot' or spell.english =='Water Shot' or spell.english =='Thunder Shot' or spell.english =='Earth Shot'
+		elseif spell.english == 'Fire Shot' or spell.english =='Water Shot' or spell.english =='Thunder Shot' or spell.english =='Earth Shot'
 		or spell.english =='Wind Shot' or spell.english =='Ice Shot' then
 			equip(sets.JA.QuickDraw)
 			 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
-		end
-		
-		if spell.english =='Light Shot'or spell.english == 'Dark Shot' then
+		elseif spell.english =='Light Shot'or spell.english == 'Dark Shot' then
 			equip(sets.JA.LightDarkShot)
 			 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
-		end	
-	   
-        if spell.english == 'Box Step'  or spell.english =='Quick Step' then
+		elseif spell.english == 'Box Step'  or spell.english =='Quick Step' then
                 equip(sets.Utility.Steps)
         end
        
@@ -314,9 +294,7 @@ end
 function midcast(spell,act)
 		if spell.english == 'Ranged' then
 			equip(sets.Ranged.RangedAttack)
-		end
-		
-	   if spell.english == 'Utsusemi: Ichi' then
+		elseif spell.english == 'Utsusemi: Ichi' then
                 equip(sets.NINMagic.Utsusemi)
                         if buffactive['Copy Image (3)'] then
                                 send_command('@wait 0.3; input //cancel Copy Image*')
@@ -330,9 +308,7 @@ function midcast(spell,act)
                         if buffactive['Copy Image'] then
                                 send_command('@wait 0.3; input //cancel Copy Image*')
                         end
-        end
- 
-        if spell.english == 'Utsusemi: Ni'  or spell.english == 'Utsusemi: San' then
+        elseif spell.english == 'Utsusemi: Ni'  or spell.english == 'Utsusemi: San' then
                 equip(sets.NINMagic.Utsusemi)
         end 
 end
@@ -346,8 +322,8 @@ function aftercast(spell)
         end
 		if buffactive['doom'] then
 					equip(sets.Utility.Doom)
-		end
-		if buffactive['terror'] or buffactive['stun'] or buffactive['sleep']	then 
+		
+		elseif  buffactive['terror'] or buffactive['stun'] or buffactive['sleep']	then 
 					equip(sets.TP.DT)
 		end
 

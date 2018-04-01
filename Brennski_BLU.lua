@@ -310,7 +310,7 @@ function get_sets()
        
         sets.JA.AzureLore = {hands="Luh. bazubands +1"}
        
-        sets.JA.Diffusion = {feet="Mirage charuqs +2"}                                                
+        sets.JA.Diffusion = {feet="Luhlaza Charuqs"}                                                
 
         --Precast Sets--
         sets.precast = {}

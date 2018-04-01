@@ -37,17 +37,19 @@ function get_sets()
         sets.Idle.Standard = {ammo="Demonry Core",
                                       head={ name="Herculean Helm", augments={'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},neck="Sanctity Necklace", ear1="Genmei earring", ear2="Handler's earring",
                                       body="Emet Harness +1",hands="Ankusa Gloves",ring1="Vocane Ring",ring2="Defending ring",
-                                      waist="Flume Belt +1",legs="Herculean Trousers",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}}, back ="Mecistopins mantle"}
+                                      waist="Flume Belt +1",legs="Herculean Trousers",feet="Amm Greaves", back ="Mecistopins mantle"}
                                                  
         sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap",ammo="Amar Cluster",
                                 head={ name="Herculean Helm", augments={'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
                                         body="Emet Harness +1",hands="Adhemar Wristbands",ring1="Defending ring",ring2="Succor ring",
-                                        back="Cornflower Cape",waist="Flume belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+                                        back="Cornflower Cape",waist="Flume belt +1",legs="Samnuha Tights",feet="Amm Greaves"}
 										
 		sets.Idle.PetEngaged = {ammo ="Demonry Core",
 							  head="Awing Salade", 
-							  body="Taeon Tabard", legs="Valorous Hose", feet ="Emicho Gambieras", hands ="Regimen Mittens", legs ="Taeon Tights",
-							  back="Pastoralist's Mantle", neck="Empath necklace", ear1="Handler's Earring", ear2="Rimeice earring", waist ="Isa Belt"}								
+							  body="Emicho Haubert +1",legs={ name="Valor. Hose", augments={'Pet: Accuracy+30 Pet: Rng. Acc.+30','"Dbl.Atk."+1','Pet: INT+6','Pet: Attack+11 Pet: Rng.Atk.+11',}},
+							  feet ="Emicho Gambieras", hands ="Regimen Mittens", legs ="Taeon Tights",
+							  back="Pastoralist's Mantle", neck="Shulmanu Collar", left_ear="Sabong Earring",
+								right_ear="Enmerkar Earring", waist ="Isa Belt"}								
 							
         --TP Sets--
         sets.TP = {}
@@ -62,21 +64,29 @@ function get_sets()
 									hands={ name="Emicho Gauntlets", augments={'Accuracy+20','"Dual Wield"+5','Pet: Accuracy+20',}},
 									legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
 									feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
-									neck="Lissome Necklace",
+									neck="Shulmanu Collar",
 									waist="Reiki Yotai",
-									left_ear="Odnowa Earring",
+									left_ear="Telos Earring",
 									right_ear="Cessance Earring",
-									left_ring="Petrov Ring",
+									left_ring="Ilabrat Ring",
 									right_ring="Epona's Ring",
 									}                                                     
 		--Ready Sets---
 		
 		sets.Ready = {}
 		
-		sets.Ready.Physical ={main ="Kerehcatl", sub="Arktoi",ammo ="Demonry Core",
-							  head="Despair Helm",
-							  body="Acro Surcoat", legs="Valorous Hose", feet ="Emicho Gambieras", hands ="Regimen Mittens",
-							  back="Pastoralist's Mantle", neck="Empath necklace", ear1="Hija Earring", ear2= "Sabong Earring",waist="Incarnation Sash"}
+		sets.Ready.Physical ={main={ name="Digirbalag", augments={'Pet: VIT+8','Pet: Accuracy+20 Pet: Rng. Acc.+20','Pet: Attack+20 Pet: Rng.Atk.+20',}}, 
+							    sub="Arktoi",
+								ammo="Demonry Core",
+								head={ name="Valorous Mask", augments={'Pet: Mag. Acc.+11','Pet: "Dbl.Atk."+2 Pet: Crit.hit rate +2','Pet: Accuracy+14 Pet: Rng. Acc.+14',}},
+								body={ name="Acro Surcoat", augments={'Pet: Attack+23 Pet: Rng.Atk.+23','Pet: "Store TP"+4','CHR+4',}},
+								hands="Regimen Mittens",
+								legs={ name="Valor. Hose", augments={'Pet: Accuracy+30 Pet: Rng. Acc.+30','"Dbl.Atk."+1','Pet: INT+6','Pet: Attack+11 Pet: Rng.Atk.+11',}},
+								feet={ name="Emicho Gambieras", augments={'Pet: Accuracy+15','Pet: Attack+15','Pet: "Dbl. Atk."+3',}},
+								neck="Shulmanu Collar",
+								waist="Flume Belt +1",
+								left_ear="Sabong Earring",
+								right_ear="Enmerkar Earring",}
 		
 		sets.Ready.Magical ={main ="Mdomo Axe", sub ="Arktoi",ammo ="Demonry Core",
 							 head={ name="Valorous Mask", augments={'Pet: Mag. Acc.+11','Pet: "Dbl.Atk."+2 Pet: Crit.hit rate +2','Pet: Accuracy+14 Pet: Rng. Acc.+14',}},
@@ -90,15 +100,15 @@ function get_sets()
         sets.Ruinator.index = {'Attack'}
         Ruinator_ind = 1
        
-        sets.Ruinator.Attack = {head="Meghanada Visor +2",
-								body={ name="Emicho Haubert +1", augments={'HP+65','DEX+12','Accuracy+20',}},
+        sets.Ruinator.Attack = {head="Argosy Celata +1",
+								body="Argosy Hauberk +1",
 								hands={ name="Argosy Mufflers +1", augments={'STR+12','DEX+12','Attack+20',}},
 								legs={ name="Argosy Breeches +1", augments={'STR+12','DEX+12','Attack+20',}},
-								feet="Meg. Jam. +2",
+								feet="Argosy Sollerets +1",
 								neck="Fotia Gorget",
 								waist="Fotia Belt",
 								left_ear="Telos Earring",
-								right_ear="Cessance Earring",
+								right_ear="Moonshade Earring",
 								left_ring="Petrov Ring",
 								right_ring="Regal Ring", }
 																	  
@@ -107,15 +117,15 @@ function get_sets()
         sets.Rampage.index = {'Attack'}
         Rampage_ind = 1
        
-        sets.Rampage.Attack = {head="Meghanada Visor +2",
-								body={ name="Emicho Haubert +1", augments={'HP+65','DEX+12','Accuracy+20',}},
+        sets.Rampage.Attack = {head="Argosy Celata +1",
+								body="Argosy Hauberk +1",
 								hands={ name="Argosy Mufflers +1", augments={'STR+12','DEX+12','Attack+20',}},
 								legs={ name="Argosy Breeches +1", augments={'STR+12','DEX+12','Attack+20',}},
-								feet="Meg. Jam. +2",
+								feet="Argosy Sollerets +1",
 								neck="Fotia Gorget",
 								waist="Fotia Belt",
 								left_ear="Telos Earring",
-								right_ear="Cessance Earring",
+								right_ear="Moonshade Earring",
 								left_ring="Petrov Ring",
 								right_ring="Regal Ring", }
 										  
@@ -205,7 +215,7 @@ function precast(spell)
                 equip(sets.Ruinator[sets.Ruinator.index[Ruinator_ind]])
 		elseif  spell.english == 'Mistral Axe'  or spell.english == 'Cloudsplitter' then
                 equip(sets.MistralAxe[sets.MistralAxe.index[MistralAxe_ind]])
-       elseif spell.english == 'Rampage'  or if spell.english == 'Decimation' then
+       elseif spell.english == 'Rampage' or spell.english == 'Decimation' then
                 equip(sets.Rampage[sets.Rampage.index[Rampage_ind]])
 		elseif  spell.english == 'Box Step' then
                 equip(sets.Utility.Steps)
@@ -275,13 +285,14 @@ function aftercast(spell)
     if player.status == 'Engaged' then
                 equip(sets.TP[sets.TP.index[TP_ind]])
 				
-        else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
-        elseif  buffactive['doom'] then
+		elseif  buffactive['doom'] then
 					equip(sets.Utility.Doom)
 		elseif buffactive['terror'] or buffactive['stun'] or buffactive['sleep']	then 
 					equip(sets.TP.DT)
-		end
+	else
+                equip(sets.Idle[sets.Idle.index[Idle_ind]])
+		
+	end
 end
 
  
