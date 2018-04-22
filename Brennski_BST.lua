@@ -54,11 +54,25 @@ function get_sets()
         --TP Sets--
         sets.TP = {}
  
-           sets.TP.index = {'Standard'}
-                --1=Standard--
+           sets.TP.index = {'Standard', 'DW'}
+                --1=Standard, 2=DW--
 				
                 TP_ind = 1
 				sets.TP.Standard = {ammo ="Demonry Core",    
+									head="Meghanada Visor +2",
+									body={ name="Emicho Haubert +1", augments={'HP+65','DEX+12','Accuracy+20',}},
+									hands="Emicho Gauntlets +1",
+									legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
+									feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},
+									neck="Shulmanu Collar",
+									waist="Kentarch Belt +1",
+									left_ear="Telos Earring",
+									right_ear="Cessance Earring",
+									left_ring="Ilabrat Ring",
+									right_ring="Epona's Ring",
+									}
+									
+				sets.TP.DW = {ammo ="Demonry Core",    
 									head="Meghanada Visor +2",
 									body={ name="Emicho Haubert +1", augments={'HP+65','DEX+12','Accuracy+20',}},
 									hands={ name="Emicho Gauntlets", augments={'Accuracy+20','"Dual Wield"+5','Pet: Accuracy+20',}},
@@ -70,7 +84,7 @@ function get_sets()
 									right_ear="Cessance Earring",
 									left_ring="Ilabrat Ring",
 									right_ring="Epona's Ring",
-									}                                                     
+									}  
 		--Ready Sets---
 		
 		sets.Ready = {}
@@ -109,7 +123,7 @@ function get_sets()
 								waist="Fotia Belt",
 								left_ear="Telos Earring",
 								right_ear="Moonshade Earring",
-								left_ring="Petrov Ring",
+								left_ring="Ilabrat Ring",
 								right_ring="Regal Ring", }
 																	  
 	    sets.Rampage = {}
@@ -126,7 +140,7 @@ function get_sets()
 								waist="Fotia Belt",
 								left_ear="Telos Earring",
 								right_ear="Moonshade Earring",
-								left_ring="Petrov Ring",
+								left_ring="Ilabrat Ring",
 								right_ring="Regal Ring", }
 										  
 		sets.MistralAxe = {}
@@ -143,7 +157,7 @@ function get_sets()
 									waist="Grunfeld Rope",
 									left_ear="Ishvara Earring",
 									right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
-									left_ring="Petrov Ring",
+									left_ring="Ilabrat Ring",
 									right_ring="Regal Ring",}
 																		  
 		 --Utility Sets--

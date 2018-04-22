@@ -9,6 +9,7 @@ send_command('bind !f9 gs c toggle Melee Weapon set;')  -- Alt F9 swap melee wea
 send_command('bind !f8 gs c toggle Range Weapon set;') -- Alt F8 swap range weapon from Gun to Xbow to Bow
 send_command('bind !f7 gs c toggle DW set;') -- Alt F7 swap DW 
 send_command('bind !f6 gs c status check;') -- Alt F6 return sets status
+send_command('bind !f5 gs equip sets.Idle.DT;')
 
 
 	--SubJob list--

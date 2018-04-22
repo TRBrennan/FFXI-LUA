@@ -76,7 +76,7 @@ function get_sets()
                                         head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}},
 										neck="Sanctity Necklace", ear1="Dignitary's Earring", ear2="Telos Earring",
                                         body=TP_Body,hands="Emicho Gauntlets +1",ring1="Cacoethic Ring",ring2="Flamma Ring",
-                                        back ="Brigantia's Mantle",waist="Ioskeha Belt",legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},feet="Valorous Greaves"}
+                                        back ="Brigantia's Mantle",waist="Ioskeha Belt",legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},feet="Flam. Gambieras +2"}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
                               head="Sulevia's Mask +2",neck="Loricate Torque +1", left_ear="Sherida earring",right_ear="Telos Earring",
@@ -100,9 +100,9 @@ function get_sets()
 		
 		sets.Stardiver.Attack = {ammo="Floestone",
                                     head="Flam. Zucchetto +2", neck="Fotia Gorget", ear2="Moonshade Earring",ear1="Sherida Earring",
-                                    body="Sulevia's Plate. +2",
+                                    body="Emicho Haubert +1",
 									hands="Sulev. Gauntlets +2",ring1="Niqmaddu Ring",ring2="Regal Ring",
-                                    back ="Brigantia's Mantle",waist="Fotia Belt",legs="Sulevia's Cuisses +2",feet="Valorous Greaves"}
+                                    back ="Brigantia's Mantle",waist="Fotia Belt",legs="Sulevia's Cuisses +2",feet="Flam. Gambieras +2"}
 		
 		sets.ImpulseDrive = {}
 		

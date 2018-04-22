@@ -164,7 +164,7 @@ function get_sets()
 											head="Adhemar Bonnet +1",
 											body="Adhemar Jacket +1",
 											hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
-											legs="Meg. Chausses +2",
+											legs="Samnuha Tights",
 											feet="Lustra. Leggings +1",
 											neck="Fotia Gorget",
 											waist="Fotia Belt",
