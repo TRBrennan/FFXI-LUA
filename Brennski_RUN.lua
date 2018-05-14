@@ -362,13 +362,13 @@ function get_sets()
 											back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},}							 
 end
     
-function precast(spell)       
-        if spell.skill == 'Enhancing Magic' then
+function precast(spell) 
+		if spell.type == 'Magic' then
+                equip(sets.precast.FC.Standard)	      
+        elseif spell.skill == 'Enhancing Magic' then
                 equip(sets.precast.FC.Enhancing)				
         elseif spell.skill == 'Ninjutsu' then
                 equip(sets.precast.FC.Standard)				
-        elseif spell.type == 'Magic' then
-                equip(sets.precast.FC.Standard)	
         elseif spell.english =='Vivacious Pulse' then
 			equip(set_combine(sets.Utility.Enmity,sets.JA.VP))
 		elseif spell.english == 'Lunge' or spell.english == 'Swipe' or spell.english == "Herculean Slash" then
