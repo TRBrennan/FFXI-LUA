@@ -36,9 +36,9 @@ function get_sets()
         sets.Idle.Standard = {ammo="Staunch Tathlum", 
 							head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
 							body="Hizamaru haramaki +1",
-							hands="Rao kote",
+							hands="Kurys Gloves",
 							legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
-							feet="Rao sune-ate",
+							feet="Amm Greaves",
 							neck="Sanctity necklace",
 							waist="Flume Belt +1",
 							left_ear="Infused Earring", right_ear="Genmei Earring",   
@@ -67,7 +67,7 @@ function get_sets()
                                     body=TP_Body,
 									hands="Wakido Kote +3",
 									right_ring="Niqmaddu Ring",left_ring="Flamma Ring",
-                                     back="Takaha Mantle",waist="Ioskeha Belt",
+                                     back="Takaha Mantle",waist="Ioskeha belt +1",
 									 legs="Ken. Hakama",
 									feet="Flam. Gambieras +2",}
                                                        
@@ -79,7 +79,7 @@ function get_sets()
 										hands="Wakido Kote +3",
 										right_ring="Niqmaddu Ring",left_ring="Flamma Ring",
                                          back="Takaha Mantle",
-										 waist="Ioskeha Belt",legs="Ken. Hakama",
+										 waist="Ioskeha belt +1",legs="Ken. Hakama",
 										feet="Flam. Gambieras +2",}
        
                 sets.TP.AccuracyFull = {ammo="Ginsen",
@@ -89,7 +89,7 @@ function get_sets()
 										hands="Wakido Kote +3",
 										right_ring="Cacoethic Ring",left_ring="Flamma Ring",
                                         back="Takaha Mantle",
-										waist="Ioskeha Belt",
+										waist="Ioskeha belt +1",
 										legs="Ken. Hakama",
 										feet="Flam. Gambieras +2",}
                                                        
@@ -104,7 +104,7 @@ function get_sets()
                                       head="Ynglinga Sallet",neck="Moonbeam Nodowa", ear2="Telos Earring",ear1="Odnowa Earring +1",    
 									  body="Emet Harness +1",hands="Wakido Kote +3",right_ring="Niqmaddu Ring",left_ring="Chirich Ring",
                                        back="Takaha Mantle",
-									   waist="Ioskeha Belt",legs="Ken. Hakama",feet="Amm Greaves"}
+									   waist="Ioskeha belt +1",legs="Ken. Hakama",feet="Amm Greaves"}
                                                          
 									
        --Weaponskill Sets--

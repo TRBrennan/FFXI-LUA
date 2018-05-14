@@ -66,7 +66,7 @@ function get_sets()
                 TP_ind = 1
 				sets.TP.Standard = {main="Sequence", sub ="Colada", ammo="Homiliary",
 									  neck="Sanctity Necklace", ear1="Sherida Earring", ear2="Suppanomimi",
-                                      head ="Ayanmo Zucchetto", body ="Ayanmo Corazza +1",hands="Ayanmo Manopolas +1",
+                                      head ="Ayanmo Zucchetto +1", body="Jhakri Robe +2",hands="Ayanmo Manopolas +1",
 									  ring2="Petrov Ring",ring1="Defending ring",
                                       waist="Fucho-no-obi",legs="Ayanmo cosciales +1",feet="Ayanmo Gambieras +1", back ="Moonbeam Cape"}
 	sets.MeleeMode ={}

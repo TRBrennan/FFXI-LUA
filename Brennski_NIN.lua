@@ -387,7 +387,7 @@ sets.AeolianEdge = {
 		waist ="Eschan Stone",
 		back="Yokaze Mantle",   
 		legs="Hiza. Hizayoroi +2",
-		feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
+		feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},
 }
 
 	

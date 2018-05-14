@@ -214,9 +214,15 @@ function get_sets()
        
         sets.JA.LightDarkShot= {ammo ="Animikii Bullet",head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 							neck="Sanctity Necklace",   ear2="Friomisi earring", ear1="Dignitary's Earring",
-							body="Samnuha Coat",    hands="Leyline Gloves", ring1="Sangoma Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
+							body="Samnuha Coat",  hands="Leyline Gloves", ring1="Sangoma Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
 							back="Izdubar Mantle",   legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},  
 							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
+							
+		sets.JA.SnakeEye = {legs =" Lanun trews"}
+		
+		sets.JA.RandomDeal = {body ="Lanun Frac"}
+		
+		sets.JA.WildCard = {Feet = "Lanun Bottes +1"}
                                                     
 
         --Precast Sets--
@@ -279,14 +285,21 @@ function precast(spell)
 			 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
-		elseif spell.english =='Light Shot'or spell.english == 'Dark Shot' then
+		elseif spell.english =='Light Shot' or spell.english == 'Dark Shot' then
 			equip(sets.JA.LightDarkShot)
 			 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
 		elseif spell.english == 'Box Step'  or spell.english =='Quick Step' then
                 equip(sets.Utility.Steps)
-        end
+		elseif spell.english == 'Wild Card' then
+				equip(sets.JA.WildCard)
+		elseif spell.english == 'Random deal' then
+				equip(sets.JA.RandomDeal)
+		elseif spell.english == 'Snake Eye' then
+				equip(sets.JA.SnakeEye)		
+		end
+		
        
 end
 

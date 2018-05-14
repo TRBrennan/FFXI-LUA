@@ -85,7 +85,7 @@ function get_sets()
 									left_ring="Epona's Ring",
 									right_ring="Niqmaddu Ring",
                                     back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
-									waist="Ioskeha Belt",
+									waist="Ioskeha belt +1",
 									legs="Samnuha Tights",
 									feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 									
@@ -99,9 +99,9 @@ function get_sets()
 									left_ring="Epona's Ring",
 									right_ring="Niqmaddu Ring",
                                     back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
-									waist="Ioskeha Belt",
+									waist="Ioskeha belt +1",
 									legs="Samnuha Tights",
-									feet="Turms Leggings"}                                                       
+									feet="Turms Leggings +1"}                                                       
 		
 				sets.TP.MDTank = {
 								ammo="Staunch Tathlum",
@@ -110,7 +110,7 @@ function get_sets()
 								--hands="Regal Gauntlets",
 								hands ="Runeist's Mitons +3",
 								legs="Eri. Leg Guards +1",
-								feet="Turms Leggings",
+								feet="Turms Leggings +1",
 								neck="Loricate Torque +1",
 								waist="Flume Belt +1",
 								left_ear="Odnowa Earring +1",
@@ -124,7 +124,7 @@ function get_sets()
 							body="Ashera Harness",
 							hands="Regal Gauntlets",
 							legs="Eri. Leg Guards +1",
-							feet="Turms Leggings",
+							feet="Turms Leggings +1",
 							neck="Loricate Torque +1",
 							waist="Flume Belt +1",
 							left_ear="Odnowa Earring +1",
@@ -141,7 +141,7 @@ function get_sets()
 							legs="Rune. Trousers +3",
 							feet="Erilaz Greaves +1",
 							neck="Loricate Torque +1",
-							waist="Flume Belt +1",
+							waist="Engraved Belt",
 							right_ear="Hearty Earring",
 							left_ear="Odnowa Earring +1",
 							left_ring="Vocane Ring",
@@ -418,31 +418,22 @@ function midcast(spell,act)
 				if buffactive['Embolden'] then
 					equip(set_combine(sets.Utility.Enhancing,sets.JA.Embolen))
 				end
-				if string.find(spell.name,'Bar') or spell.name=="Temper" then
-                    equip(sets.Utility.Enhancing)
-                end
-       end       
-	   if spell.english == 'Stoneskin' then
+		elseif string.find(spell.name,'Bar') or spell.name=="Temper" then
+                    equip(sets.Utility.EnhancingSkill)          
+       elseif spell.english == 'Stoneskin' then
                 equip(sets.Utility.SID)
                             if buffactive['Stoneskin'] then
                                 send_command('@wait 0.7; input //cancel Stoneskin; input /echo Refreshing Stoneskin.')
                             end
 				
-        end
-		if spell.english =="Refresh" then
+        elseif spell.english =="Refresh" then
 			equip(sets.Utility.Refresh)
-		end
-		
-		if spell.english =='Phalanx' then
+		elseif spell.english =='Phalanx' then
 			equip(sets.Utility.Phalanx)			
-		end
-             
-        if spell.english == 'Regen' or spell.english == 'Regen II' or spell.english =='Regen III' or spell.english == 'Regen IV' then
+		elseif spell.english == 'Regen' or spell.english == 'Regen II' or spell.english =='Regen III' or spell.english == 'Regen IV' then
                 equip(sets.Utility.Regen)
 				
-        end
-       
-        if spell.english == 'Utsusemi: Ichi' then
+        elseif spell.english == 'Utsusemi: Ichi' then
                 equip(sets.Utility.SID)
                         if buffactive['Copy Image (3)'] then
                                 send_command('@wait 0.3; input //cancel Copy Image*')
@@ -457,12 +448,10 @@ function midcast(spell,act)
                                 send_command('@wait 0.3; input //cancel Copy Image*')
                         end
 				
-        end 
-        if spell.english == 'Utsusemi: Ni' then
+        elseif spell.english == 'Utsusemi: Ni' then
                 equip(sets.Utility.SID)
 			
-        end		
-		if spell.english =='Flash' or spell.english == 'Crusade' or spell.english == 'Foil' or spell.skill =='Blue Magic' or spell.skill == 'Enfeebling Magic' or spell.skill == 'Dark Magic' then	
+        elseif spell.english =='Flash' or spell.english == 'Crusade' or spell.english == 'Foil' or spell.skill =='Blue Magic' or spell.skill == 'Enfeebling Magic' or spell.skill == 'Dark Magic' then	
 				equip(sets.Utility.Enmity)
 				
 		end	

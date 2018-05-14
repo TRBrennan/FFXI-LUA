@@ -71,21 +71,21 @@ function get_sets()
 	sets.TP.Standard = {ammo="Yetshila",
 			    head="Flam. Zucchetto +2",neck="Lissome Necklace", ear2="Brutal earring", ear1="Telos earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Pummeler's calligae +3"}
+			    back=DA_Back,waist="Ioskeha belt +1",legs=TP_Legs,feet="Pummeler's calligae +3"}
 						
 	sets.TP.OH = {ammo="Ginsen",
 			    head="Flam. Zucchetto +2",neck="Lissome Necklace", ear2="Brutal earring", ear1="Cessance earring",
-			    body="Valorous mail",hands="Argosy mufflers +1",ring1="Flamma ring",ring2="Chirich ring",
-			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
+			    body="Agoge Lorica +3", hands="Sulev. Gauntlets +2",ring1="Flamma ring",ring2="Chirich ring",
+			    back=DA_Back,waist="Ioskeha belt +1",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 				
 	sets.TP.Chango = {    ammo="Ginsen",
     head="Flam. Zucchetto +2",
-    body={ name="Emicho Haubert +1", augments={'HP+65','DEX+12','Accuracy+20',}},
+    body="Agoge Lorica +3",
     hands="Sulev. Gauntlets +2",
     legs="Pumm. Cuisses +3",
     feet="Pumm. Calligae +3",
     neck="Lissome Necklace",
-    waist="Ioskeha Belt",
+    waist="Ioskeha belt +1",
     left_ear="Telos Earring",
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
@@ -95,18 +95,18 @@ function get_sets()
 	sets.TP.H2H = {ammo="Yetshila",
 			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear2="Brutal earring", ear1="Telos earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
+			    back=DA_Back,waist="Ioskeha belt +1",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 
 	sets.TP.Zulfiqar = {ammo="Ginsen",
 			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear2="Brutal earring", ear1="Cessance earring",
-			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
+			    body="Agoge Lorica +3",hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
+			    back=DA_Back,waist="Ioskeha belt +1",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 	
 					
 	sets.TP.AccuracyLite = {ammo="Ginsen",
 			    head=Acc_Head,neck="Lissome necklace", ear1="Dignitary's earring", ear1="Telos earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Regal Ring",ring2="Chirich ring",
-			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",feet="Pummeler's Calligae +3"}
+			    back=DA_Back,waist="Ioskeha belt +1",legs="Pummeler's cuisses +3",feet="Pummeler's Calligae +3"}
 	
 	sets.TP.AccuracyFull = {ammo="Seething bomblet +1",
 			    head=Acc_Head,neck="Subtlety spectacles", ear1="Dignitary's earring", ear1="Telos earring",
@@ -116,12 +116,12 @@ function get_sets()
 	sets.TP.DT = {ammo="Staunch Tathlum",
 			    head="Sulevia's mask +2",neck="Loricate torque +1", ear1="Hearty earring", ear1="Telos earring",
 		        body="Souveran cuirass",hands="Sulevia's gauntlets +2",ring1="Vocane ring",ring2="Defending Ring",
-			    back=DA_Back,waist="Ioskeha belt",legs="Sulevia's cuisses +2",feet="Amm greaves"}					
+			    back=DA_Back,waist="Ioskeha belt +1",legs="Sulevia's cuisses +2",feet="Amm greaves"}					
 							
 	sets.TP.DTAM = {ammo="Staunch Tathlum",
 			    head="Flam. Zucchetto +2",neck="Loricate torque +1", ear1="Cessance earring", ear1="Telos earring",
 			    body="Souveran cuirass",hands="Sulev. Gauntlets +2",ring1="Niqmaddu ring",ring2="Defending Ring",
-			    back=DA_Back,waist="Ioskeha belt",legs="Pummeler's cuisses +3",	feet="Pummeler's Calligae +3"}
+			    back=DA_Back,waist="Ioskeha belt +1",legs="Pummeler's cuisses +3",	feet="Pummeler's Calligae +3"}
 	
 	sets.TP.DW = {ammo="Yetshila",
 			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear1="Telos Earring",ear1="Cessance earring",
@@ -355,7 +355,7 @@ function get_sets()
                
 		sets.JA.Berserk ={back = "Cichol's Mantle",feet = "Agoge Calligae +2", body = "Pumm. Lorica +3"}
 		
-		sets.JA.Aggressor = { body = "Agoge Lorcia", head ="Pummeler's mask +2"}
+		sets.JA.Aggressor = { body = "Agoge Lorica +3", head ="Pummeler's mask +2"}
 		
 		sets.JA.Warcry = {head = "Agoge Mask +3"}		
 		
@@ -389,7 +389,7 @@ function get_sets()
 	sets.midcast = {ammo="Staunch Tathlum",
 			    head="Sulevia's mask +1",neck="Loricate torque +1", ear1="Hearty earring", ear2="Sanare earring",
 		        body="Souveran cuirass +1",hands="Sulevia's gauntlets +2",ring1="Moonbeam ring",ring2="Defending Ring",
-			    back="Agema cape",waist="Ioskeha belt",legs="Sulevia's cuisses +2",feet="Amm greaves"}
+			    back="Agema cape",waist="Ioskeha belt +1",legs="Sulevia's cuisses +2",feet="Amm greaves"}
 	
 	sets.AF1 = {main="Bravura",body="Pummeler's lorica +3",head="Pummeler's Mask +3"}
 	sets.AF2 = {main="Ragnarok",sub="Utu Grip",body="Agoge Lorica +1",head="Agoge mask +1",hands="Agoge mufflers +1",feet="Agoge Calligae +2",}

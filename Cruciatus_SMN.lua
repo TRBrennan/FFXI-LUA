@@ -353,7 +353,7 @@ function init_gear_sets()
 	}
 
     sets.midcast.Pet.MagicalBloodPactRage = {
-    main="Grioavolr",
+    main={ name="Grioavolr", augments={'Blood Pact Dmg.+6','Pet: VIT+7','Pet: Mag. Acc.+25','Pet: "Mag.Atk.Bns."+21',}},
     sub="Elan Strap",
     ammo="Sancus Sachet +1",
     head={ name="Apogee Crown +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},
@@ -374,7 +374,7 @@ function init_gear_sets()
     sets.midcast.Pet.MagicalBloodPactRage.Acc = sets.midcast.Pet.MagicalBloodPactRage
 
 	sets.midcast.Pet.HybridBloodPactRage = {
-    main="Grioavolr",
+    main={ name="Grioavolr", augments={'Blood Pact Dmg.+6','Pet: VIT+7','Pet: Mag. Acc.+25','Pet: "Mag.Atk.Bns."+21',}},
     sub="Elan Strap",
     ammo="Sancus Sachet +1",
     head={ name="Apogee Crown +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},

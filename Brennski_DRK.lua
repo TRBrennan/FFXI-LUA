@@ -72,38 +72,38 @@ function get_sets()
 	sets.TP.Standard = {ammo="Ginsen",
 			    head=Acc_Head,neck="Lissome Necklace", ear1="Telos earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Flam. Gambieras +2"}
+			    back=DA_Back,waist="Ioskeha belt +1",legs=TP_Legs,feet="Flam. Gambieras +2"}
 	
 	sets.TP.DW ={ammo="Ginsen",
 			    head=Acc_Head,neck="Lissome Necklace", ear1="Suppanomimi", ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Flamma ring",ring2="Niqmaddu ring",
-			    back=DA_Back,waist="Ioskeha belt",legs="Carmine cuisses +1",feet="Carmine greaves +1"}		
+			    back=DA_Back,waist="Ioskeha belt +1",legs="Carmine cuisses +1",feet="Carmine greaves +1"}		
 	
 	sets.TP.Anguta = {ammo="Ginsen",
 			    head=Acc_Head,neck="Ainia collar", ear1="Telos earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Flam. Gambieras +2"}
+			    back=DA_Back,waist="Ioskeha belt +1",legs=TP_Legs,feet="Flam. Gambieras +2"}
 				
 --	sets.TP.Anguta = {ammo="Hasty pinion +1",
 --			    head="Flamma zucchetto +1",neck="Lissome Necklace", ear1="Brutal earring", ear2="Cessance earring",
 --			    body="Valorous mail",hands="Sulevia's gauntlets +2",ring1="Niqmaddu ring",ring2="Hetairoi ring",
---			    back=DA_Back,waist="Ioskeha belt",legs="Argosy Breeches +1",feet="Flamma gambieras +1"}
+--			    back=DA_Back,waist="Ioskeha belt +1",legs="Argosy Breeches +1",feet="Flamma gambieras +1"}
 	
 					
 	sets.TP.AccuracyLite = {ammo="Ginsen",
 			    head=DA_Head,neck="Lissome Necklace", ear1="Brutal earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Flam. Gambieras +2",}
+			    back=DA_Back,waist="Ioskeha belt +1",legs=TP_Legs,feet="Flam. Gambieras +2",}
 	
 	sets.TP.AccuracyFull = {ammo="Ginsen",
 			    head=Acc_Head,neck="Lissome Necklace", ear1="Brutal earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
-			    back=DA_Back,waist="Ioskeha belt",legs=TP_Legs,feet="Flam. Gambieras +2",}
+			    back=DA_Back,waist="Ioskeha belt +1",legs=TP_Legs,feet="Flam. Gambieras +2",}
 				
 	sets.TP.DT = {ammo="Staunch Tathlum",
 			    head="Sulevia's mask +2",neck="Loricate torque +1", ear1="Hearty earring", ear2="Sanare earring",
 		        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Niqmaddu ring",ring2="Defending Ring",
-			    back="Moonbeam cape",waist="Ioskeha belt",legs="Sulevia's cuisses +2",feet="Amm greaves"}	
+			    back="Moonbeam cape",waist="Ioskeha belt +1",legs="Sulevia's cuisses +2",feet="Amm greaves"}	
 
 				  
 	
@@ -173,7 +173,7 @@ function get_sets()
 	sets.Upheaval = {ammo="Knobkierrie",
 			     head=WSD_Head,neck="Fotia gorget",ear1="Moonshade earring",ear2="Cessance earring",
 			 	 body=WSD_Body,hands="Sulevia's gauntlets +2",ring1="Niqmaddu ring",ring2="Regal ring",
-			   	 back=WSD_Back,waist="Ioskeha belt",legs="Argosy Breeches +1",feet="Sulevia's leggings +2"}
+			   	 back=WSD_Back,waist="Ioskeha belt +1",legs="Argosy Breeches +1",feet="Sulevia's leggings +2"}
 				 
 	sets.FellCleave = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
