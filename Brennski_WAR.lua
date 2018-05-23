@@ -155,7 +155,7 @@ function get_sets()
 			   	back=Crit_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 				
 	sets.Steelcyclone = {ammo="Knobkierrie",
-			    head=WSD_Head,neck="Fotia gorget",ear1="Moonshade earring",ear1="Telos earring",
+			    head=WSD_Head,neck="Fotia gorget",ear2="Moonshade earring",ear1="Telos earring",
 			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 	

@@ -122,7 +122,7 @@ function get_sets()
          
 		sets.Leaden ={ ammo ="Chrono Bullet", head="Pixie Hairpin +1",
 							neck="Sanctity Necklace",  ear2="Friomisi earring", ear1="Moonshade Earring",
-							body="Laksa. Frac +3",  hands="Carmine Finger Gauntlets",   ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
+							body="Laksa. Frac +3",  hands="Carmine Finger Gauntlets +1",   ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
 							back="Camulus's Mantle", legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},  
 							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
 							
@@ -133,7 +133,7 @@ function get_sets()
 			
 		sets.WildFire = {ammo ="Chrono Bullet",head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 							neck="Sanctity Necklace",   ear2="Friomisi earring", ear1="Moonshade Earring",
-							body="Laksa. Frac +3",hands="Carmine Finger Gauntlets", ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
+							body="Laksa. Frac +3",hands="Carmine Finger Gauntlets +1", ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
 							back="Camulus's Mantle",   legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}}, 
 							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
 		
@@ -204,7 +204,7 @@ function get_sets()
        
         sets.JA.QuickDraw = {ammo ="Animikii Bullet",head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 							neck="Sanctity Necklace",   ear2="Friomisi earring", ear1="Hecate's Earring",
-							body="Samnuha Coat",    hands="Carmine Finger Gauntlets", ring1="Acumen Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
+							body="Samnuha Coat",    hands="Carmine Finger Gauntlets +1", ring1="Acumen Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
 							back="Izdubar Mantle",   legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},  
 							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
        

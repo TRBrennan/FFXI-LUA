@@ -303,7 +303,7 @@ function get_sets()
 								 right_ear="Friomisi earring", 
 								 left_ear="Odnowa Earring +1",
                                  body="Samnuha Coat",
-								 hands="Leyline Gloves",
+								 hands="Carmine Finger Gauntlets +1",
 								 ring1="Acumen Ring", 
 								 right_ring ='Supershear Ring', 
 								 waist ="Eschan Stone",
