@@ -318,7 +318,7 @@ function get_sets()
         sets.precast.FC = {}
        
        sets.precast.FC.Standard = { ammo="Sapience Orb",
-							head="Carmine Mask +1",  body="Vrikodara Jupon",  hands="Leyline Gloves", legs="Aya. Cosciales +2",
+							head="Carmine Mask +1",  body="Adhemar Jacket",  hands="Leyline Gloves", legs="Aya. Cosciales +2",
 						    feet="Carmine Greaves +1",  neck="Voltsurge Torque", waist="Witful Belt", left_ear="Etiolation Earring",
 						    right_ear="Loquac. Earring", left_ring="Rahab Ring", right_ring="Kishar Ring", back="Swith Cape"}
        

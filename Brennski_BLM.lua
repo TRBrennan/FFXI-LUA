@@ -92,7 +92,7 @@ function get_sets()
 									body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
 									hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
 									legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+12 "Mag.Atk.Bns."+12','Magic burst dmg.+8%','MND+5','"Mag.Atk.Bns."+12',}},
-									feet={ name="Merlinic Crackows", augments={'Magic burst dmg.+8%','Mag. Acc.+13','"Mag.Atk.Bns."+12',}}}
+									feet={ name="Merlinic Crackows", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst dmg.+9%','MND+9','Mag. Acc.+15',}}, }
 			
 
 		--Enhancing Sets--					

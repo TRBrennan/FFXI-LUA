@@ -32,7 +32,7 @@ function get_sets()
 	CurrentTP = 0
 	TPBonus = 0
 	
-	DA_Back = {name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}}
+	DA_Back = {name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10', 'Phys. dmg. taken-10%',}}
 	WSD_Back = {name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%',}}
 	Crit_Back = {name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}}
 	STR_Back = {name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%',}}
@@ -104,27 +104,27 @@ function get_sets()
 	
 					
 	sets.TP.AccuracyLite = {ammo="Ginsen",
-			    head=Acc_Head,neck="Lissome necklace", ear1="Dignitary's earring", ear1="Telos earring",
+			    head=Acc_Head,neck="Lissome necklace", ear2="Dignitary's earring", ear1="Telos earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Regal Ring",ring2="Chirich ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs="Pummeler's cuisses +3",feet="Pummeler's Calligae +3"}
 	
 	sets.TP.AccuracyFull = {ammo="Seething bomblet +1",
-			    head=Acc_Head,neck="Subtlety spectacles", ear1="Dignitary's earring", ear1="Telos earring",
+			    head=Acc_Head,neck="Subtlety spectacles", ear2="Dignitary's earring", ear1="Telos earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Regal Ring",ring2="Chirich ring",
 			    back=DA_Back,waist="Kentarch belt +1",legs="Pummeler's cuisses +3",	feet="Pummeler's Calligae +3"}
 				
 	sets.TP.DT = {ammo="Staunch Tathlum",
-			    head="Sulevia's mask +2",neck="Loricate torque +1", ear1="Hearty earring", ear1="Telos earring",
+			    head="Sulevia's mask +2",neck="Loricate torque +1", ear2="Hearty earring", ear1="Telos earring",
 		        body="Souveran cuirass",hands="Sulevia's gauntlets +2",ring1="Vocane ring",ring2="Defending Ring",
-			    back=DA_Back,waist="Ioskeha belt +1",legs="Sulevia's cuisses +2",feet="Amm greaves"}					
+			    back=DA_Back,waist="Ioskeha belt +1",legs="Sulevia's cuisses +2",feet="Pummeler's calligae +3"}					
 							
 	sets.TP.DTAM = {ammo="Staunch Tathlum",
-			    head="Flam. Zucchetto +2",neck="Loricate torque +1", ear1="Cessance earring", ear1="Telos earring",
+			    head="Flam. Zucchetto +2",neck="Loricate torque +1", ear2="Cessance earring", ear1="Telos earring",
 			    body="Souveran cuirass",hands="Sulev. Gauntlets +2",ring1="Niqmaddu ring",ring2="Defending Ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs="Pummeler's cuisses +3",	feet="Pummeler's Calligae +3"}
 	
 	sets.TP.DW = {ammo="Yetshila",
-			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear1="Telos Earring",ear1="Cessance earring",
+			    head="Flam. Zucchetto +2",neck="Lissome necklace", ear1="Telos Earring",ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Reiki Yotai",legs="Pummeler's cuisses +3",feet="Pummeler's calligae +3"}
 	
@@ -169,7 +169,7 @@ function get_sets()
 			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Flam. Gambieras +2"}
 	
-	sets.KingsJusticeB = {ammo="Seething bomblet +1",
+	sets.KingsJusticeB = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Ishvara earring",ear2="Moonshade earring",
 			 	body="Pummeler's lorica +3",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Sulevia's leggings +2"}
@@ -347,6 +347,20 @@ function get_sets()
 			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
 				
+	sets.ResoWSD = { ammo="Knobkierrie",
+    head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
+    body="Pumm. Lorica +3",
+    hands="Argosy mufflers +1",
+    legs="Pummeler's cuisses +3",
+    feet="Sulev. Leggings +2",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Regal Ring",
+    right_ring="Niqmaddu Ring",
+    back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%',}},}
+				
 	
 	
 	--Job Ability Sets--
@@ -431,7 +445,8 @@ function precast(spell)
 				equip(sets.UpheavalA)
 				send_command('@input /echo Upheaval WSD Set')
 				else
-				equip(sets.UpheavalB)
+				--equip(sets.UpheavalB)
+				equip(sets.UpheavalA)
 				send_command('@input /echo Upheaval DA Set')
 				end				
 			elseif spell.english == 'Ukko\'s Fury' then		
@@ -469,7 +484,8 @@ function precast(spell)
 		---Great Sword Weapon Skills---		
 			
 			elseif spell.english == 'Resolution' then
-				equip(sets.Resolution)			
+				--equip(sets.Resolution)			
+				equip(sets.ResoWSD)
 				if world.day == 'Lightningsday' or world.day == 'Windsday' or world.day == 'Earthsday' then
 					equip({head="Gavialis Helm"})
 					send_command('@input /echo Resolution Day Set')		
@@ -522,7 +538,8 @@ function precast(spell)
 					send_command('@input /echo Decimation Set')
 				end		
 			elseif spell.english == 'Rampage' then
-				equip(sets.Rampage)
+				--equip(sets.Rampage)
+				equip(sets.ResoWSD)
 				if world.day == 'Earthsday' then
 					equip({head="Gavialis Helm"})
 					send_command('@input /echo Rampage Day Set')		
@@ -578,10 +595,12 @@ function precast(spell)
 		---Pole Arm Weapon Skills---
 			
 			elseif spell.english == 'Penta Thrust' then
-				equip(sets.Penta)
+				--equip(sets.Penta)
+				equip(sets.ResoWSD)
 				send_command('@input /echo Penta Set')
 			elseif spell.english == 'Stardiver' then
-				equip(sets.StarDiver)
+				--equip(sets.StarDiver)
+				equip(sets.ResoWSD)
 				send_command('@input /echo StarDiver Set')
 			elseif spell.english == 'Sonic Thrust' then
 				equip(sets.Sonic)
@@ -704,7 +723,7 @@ function status_change(new,old)
 end
 function self_command(command)	
 	if command == 'equip TP set' then
-		if player.equipment.main == 'Chango' or player.equipment.main == 'Montante +1' or player.equipment.main == 'Raetic Algol' then
+		if player.equipment.main == 'Chango' or player.equipment.main == 'Montante +1' or player.equipment.main == 'Raetic Algol +1' then
 			TP_ind = 3
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command('@input /echo Chango Set')
@@ -712,7 +731,7 @@ function self_command(command)
 			TP_ind = 9
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command('@input /echo Zulfiqar Set')
-		elseif player.equipment.main == 'Exalted Spear' then
+		elseif player.equipment.main == 'Exalted Spear' or player.equipment.main == 'Exalted Spear +1' then
 			TP_ind = 3
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command('@input /echo Spear Set')

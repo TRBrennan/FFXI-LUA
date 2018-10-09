@@ -64,7 +64,7 @@ function get_sets()
 									legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
 									feet="Flam. Gambieras +2",
 									neck="Lissome Necklace",
-									waist="Ioskeha Belt",
+									waist="Ioskeha Belt +1",
 									left_ear="Sherida earring",
 									right_ear="Telos Earring",
 									left_ring="Niqmaddu Ring",
@@ -76,7 +76,7 @@ function get_sets()
                                         head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}},
 										neck="Sanctity Necklace", ear1="Dignitary's Earring", ear2="Telos Earring",
                                         body=TP_Body,hands="Emicho Gauntlets +1",ring1="Cacoethic Ring",ring2="Flamma Ring",
-                                        back ="Brigantia's Mantle",waist="Ioskeha Belt",legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},feet="Flam. Gambieras +2"}
+                                        back ="Brigantia's Mantle",waist="Ioskeha Belt +1",legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},feet="Flam. Gambieras +2"}
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
                               head="Sulevia's Mask +2",neck="Loricate Torque +1", left_ear="Sherida earring",right_ear="Telos Earring",
@@ -86,7 +86,7 @@ function get_sets()
                 sets.TP.DTAccuracy = {ammo="Ginsen",
                                       head="Sulevia's Mask +2",neck="Lissome Necklace", left_ear="Sherida earring",	right_ear="Telos Earring",   
 									  body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Flamma Ring",
-                                      back ="Brigantia's Mantle",waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
+                                      back ="Brigantia's Mantle",waist="Ioskeha Belt +1",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
                                                          
 									
        --Weaponskill Sets--
@@ -187,7 +187,7 @@ function get_sets()
 						legs={ name="Valor. Hose", augments={'Accuracy+23 Attack+23','"Dbl.Atk."+3','VIT+4','Attack+5',}},
 						feet="Flam. Gambieras +2",
 						neck="Lissome Necklace",
-						waist="Ioskeha Belt",
+						waist="Ioskeha Belt +1",
 						left_ear="Cessance Earring",
 						right_ear="Telos Earring",
 						left_ring="Petrov Ring",

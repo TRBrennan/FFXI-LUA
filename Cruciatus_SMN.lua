@@ -46,7 +46,7 @@ function job_setup()
         'Holy Mist','Lunar Bay','Night Terror','Level ? Holy','Conflag Strike'}
 
 	doubleRagePacts = S{
-		'Elciplse Bite','Double Punch','Predator Claw','Rush','Chaotic Strike','Volt Strike'}
+		'Eclipse Bite','Double Punch','Predator Claw','Rush','Chaotic Strike','Volt Strike'}
 		
 	HybridRagePacts = S{
 		'Burning Strike','Flaming Crush'}
@@ -164,7 +164,7 @@ function init_gear_sets()
     sets.precast.BloodPactWard = {
     ammo="Sancus Sachet +1",
     head="Beckoner's Horn +1",
-    body="Con. Doublet +2",
+    body="Con. Doublet +3",
     hands={ name="Glyphic Bracers +1", augments={'Inc. Sp. "Blood Pact" magic burst dmg.',}},
     legs="Baayami slops",
     feet={ name="Glyph. Pigaches +1", augments={'Inc. Sp. "Blood Pact" magic crit. dmg.',}},
@@ -179,6 +179,8 @@ function init_gear_sets()
 }
 
     sets.precast.BloodPactRage = sets.precast.BloodPactWard
+	
+	sets.precast.doubleRagePacts = sets.precast.BloodPactWard
 
     -- Fast cast sets for spells
 
@@ -213,7 +215,7 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Myrkr'] = {
         head="",ear1="Gifted Earring",ear2="Loquacious Earring",
-        body="Con. Doublet +2",hands="Beck. Bracers +1",ring1="Evoker's Ring",ring2="Sangoma Ring",
+        body="Con. Doublet +3",hands="Beck. Bracers +1",ring1="Evoker's Ring",ring2="Sangoma Ring",
         back="Pahtli Cape",waist="Fucho-no-Obi",legs="Assiduity Pants +1",feet=""}
 
     sets.precast.WS['Shattersoul'] = {
@@ -333,7 +335,7 @@ function init_gear_sets()
     sets.midcast.Pet.PhysicalBloodPactRage = {
     ammo="Sancus Sachet +1",
     head="Helios Band",
-    body="Con. Doublet +2",
+    body="Con. Doublet +3",
 	hands={ name="Merlinic Dastanas", augments={'Pet: Attack+30 Pet: Rng.Atk.+30','Blood Pact Dmg.+10','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+12',}},
     --legs={ name="Apogee Slacks +1", augments={'Pet: STR+20','Blood Pact Dmg.+14','Pet: "Dbl. Atk."+4',}},
 	legs="Apogee Slacks +1",
@@ -378,7 +380,7 @@ function init_gear_sets()
     sub="Elan Strap",
     ammo="Sancus Sachet +1",
     head={ name="Apogee Crown +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},
-    body="Con. Doublet +2",
+    body="Con. Doublet +3",
     hands={ name="Merlinic Dastanas", augments={'Pet: Attack+30 Pet: Rng.Atk.+30','Blood Pact Dmg.+10','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+12',}},
     legs={ name="Apogee Slacks +1", augments={'Pet: STR+20','Blood Pact Dmg.+14','Pet: "Dbl. Atk."+4',}},
     feet="Convo. Pigaches +2",
@@ -547,7 +549,7 @@ function init_gear_sets()
 	sub="Oneiros Grip",
     ammo="Sancus Sachet +1",
 	head="Beckoner's Horn +1",
-    body="Con. Doublet +2",
+    body="Con. Doublet +3",
     hands={ name="Merlinic Dastanas", augments={'Pet: Attack+30 Pet: Rng.Atk.+30','Blood Pact Dmg.+10','Pet: Mag. Acc.+15','Pet: "Mag.Atk.Bns."+12',}},
     legs="Enticer's Pants",
     neck="Caller's pendant",
