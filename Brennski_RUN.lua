@@ -308,7 +308,7 @@ function get_sets()
 								 right_ring ='Supershear Ring', 
 								 waist ="Eschan Stone",
                                  back="Evasionist's cape",
-								 legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
+								 legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}},
 								 feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
        
                 sets.JA.Vallation = {body="Runeist's Coat +3",																

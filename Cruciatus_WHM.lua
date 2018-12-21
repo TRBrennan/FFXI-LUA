@@ -240,7 +240,7 @@ function get_sets()
     hands={ name="Fanatic Gloves", augments={'MP+50','Healing magic skill +10','"Conserve MP"+7','"Fast Cast"+7',}},
     legs="Theophany Pantaloons +2",
     feet ="Vanya Clogs",
-    neck="Malison Medallion",
+    neck="Cleric's Torque",
     waist="Channeler's Stone",
     left_ear="Nourish. Earring +1",
     right_ear="Loquac. Earring",
@@ -296,12 +296,20 @@ end
 function midcast(spell)
 	if ST_Cure_Spells:contains(spell.name) then 
 		equip(sets.midcast_Cure)
-		weathercheck(spell.element)
+		--weathercheck(spell.element)
 		send_command('@input /echo ST Cure Set')
+		if spell_element == world.weather_element or spell_element == world.day_element then
+		equip({waist="Korin Obi"})
+		send_command('@input /echo Using Element Obi')
+		end
 	elseif MT_Cure_Spells:contains(spell.name) then
 		equip(sets.midcast_Curaga)
-		weathercheck(spell.element)
+		--weathercheck(spell.element)
 		send_command('@input /echo MT Cure Set')
+		if spell_element == world.weather_element or spell_element == world.day_element then
+		equip({waist="Korin Obi"})
+		send_command('@input /echo Using Element Obi')
+		end
 	elseif naSpells:contains(spell.name) then
 		equip(sets.midcast_DebuffRemoval)
 		send_command('@input /echo NA Cure Set')
@@ -389,7 +397,7 @@ end
 function weathercheck(spell_element)
 	if spell_element == world.weather_element or spell_element == world.day_element then
 		equip({waist="Hachirin-no-Obi"})
-		send_command('@input /echo Using Element Obi')
-	else		
+		send_command('@input /echo Using Element Obi')		
 	end
 end
+

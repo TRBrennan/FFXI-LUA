@@ -125,7 +125,7 @@ function get_sets()
 							ring2 ='Dingir Ring',
 							waist ="Chaac Belt",
 							back="Belenus's Cape",   
-							legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}}, 
+							legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}}, 
 							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}                                                  
                                                           
         --Ninja Magic Sets--
@@ -135,7 +135,7 @@ function get_sets()
 							neck="Sanctity Necklace", ear2="Friomisi earring", ear1="Hecate's Earring",
 							body="Samnuha Coat", hands="Leyline Gloves", ring1="Shiva Ring", ring2 ="Acumen Ring", waist ="Eschan Stone",
 							back="Gunslinger's Cape", 
-							legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}}, 
+							legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}}, 
 							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
 							
 	    sets.NINMagic.Utsusemi ={

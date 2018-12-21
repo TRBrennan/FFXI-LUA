@@ -403,7 +403,7 @@ sets.Magic.Self = {
 		head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
         body="Ashera Harness",
         hands="Leyline Gloves",
-        legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
+        legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}},
         neck="Voltsurge Torque",
         waist="Flume Belt +1",
         left_ear="Etiolation Earring",
@@ -424,7 +424,7 @@ sets.Magic.Nuke = {
 	   ring2 ="Acumen Ring",
 	   waist ="Eschan Stone",
 	   back="Izdubar Mantle",
-	   legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
+	   legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}},
 	   feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},}
 
 sets.Magic.Debuff={}

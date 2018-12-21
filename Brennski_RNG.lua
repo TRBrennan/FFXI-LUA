@@ -471,7 +471,7 @@ sets.Evisceration.Accuracy = {
 
 
 sets.MagicGun = {}
-sets.MagicGun.Attack = {
+sets.MagicGun.Attack = {	ammo="Orichalc. Bullet",
 							head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 							neck="Sanctity Necklace",  
 							ear2="Friomisi earring", 
@@ -482,10 +482,10 @@ sets.MagicGun.Attack = {
 							ring2 ='Dingir Ring',
 							waist ="Eschan Stone",
 							back="Belenus's Cape",   
-							legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}}, 
+							legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}}, 
 							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},
 }
-sets.MagicGun.Accuracy = {
+sets.MagicGun.Accuracy = {	ammo="Orichalc. Bullet",
 							head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 							neck="Sanctity Necklace",  
 							ear2="Friomisi earring", 
@@ -496,7 +496,7 @@ sets.MagicGun.Accuracy = {
 							ring2 ='Dingir Ring',
 							waist ="Eschan Stone",
 							back="Belenus's Cape",   
-							legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}}, 
+							legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}}, 
 							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},
 }
 
@@ -602,7 +602,7 @@ sets.AeolianEdge = {
 							ring2 ='Dingir Ring',
 							waist ="Eschan Stone",
 							back="Belenus's Cape",   
-							legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}}, 
+							legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}}, 
 							feet={ name="Herculean Boots", augments={'"Mag.Atk.Bns."+27','Weapon skill damage +4%','Quadruple Attack +1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},
 }
 

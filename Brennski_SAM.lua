@@ -37,7 +37,7 @@ function get_sets()
 							head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
 							body="Hizamaru haramaki +1",
 							hands="Kurys Gloves",
-							legs={ name="Herculean Trousers", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
+							legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}},
 							feet="Amm Greaves",
 							neck="Sanctity necklace",
 							waist="Flume Belt +1",
