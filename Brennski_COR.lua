@@ -34,13 +34,15 @@ function get_sets()
         sets.Idle.Standard = {
                                       head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
 									  neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Emet Harness +1",hands="Herculean gloves",ring1="Defending ring",ring2="Vocane Ring",
+                                      body="Emet Harness +1",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},
+									  ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Ahosi Leggings", back ="Moonbeam Cape"}
                                                  
         sets.Idle.DT = {	          head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
 										neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
-                                        body="Emet Harness +1",hands="Herculean gloves",ring1="Defending ring",ring2="Vocane Ring",
-                                        back="Moonbeam Cape",waist="Flume belt +1",legs="Mummu Kecks +1",feet="Ahosi Leggings", }
+                                        body="Emet Harness +1",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},
+										ring1="Defending ring",ring2="Vocane Ring",
+                                        back="Moonbeam Cape",waist="Flume belt +1",legs="Mummu Kecks +2",feet="Ahosi Leggings", }
 										
 		sets.Idle.Cleave = { 
 										head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Etiolation earring +1", ear2="Handler's earring +1",
@@ -67,17 +69,17 @@ function get_sets()
                 sets.TP.AccuracyFull = {
                                         head="Adhemar Bonnet +1",neck="Sanctity Necklace", ear1="Cessance Earring", ear2="Telos Earring",
                                         body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring2="Chirich Ring",ring1="Cacoethic Ring",
-                                        back="Lupine Cape",waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1" }
+                                        back="Grounded Mantle",waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1" }
                                                        
                 sets.TP.DT = { 
                               head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Genmei Earring", ear2="Dignitary's Earring",
                               body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Defending ring",ring2="Vocane Ring",
-                              back="Moonbeam Cape",waist="Flume belt +1",legs ="Mummu Kecks +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+                              back="Moonbeam Cape",waist="Flume belt +1",legs ="Mummu Kecks +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                  
                 sets.TP.DTAccuracy = { 
                                       head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Suppanomimi", ear2="Dignitary's Earring",     
 									  body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Dark ring",ring2="Mars's ring",
-                                      back="Moonbeam Cape",waist="Reiki Yotai",legs ="Mummu Kecks +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+                                      back="Moonbeam Cape",waist="Reiki Yotai",legs ="Mummu Kecks +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                          				
        --Weaponskill Sets--
         sets.WS = {}
@@ -94,7 +96,7 @@ function get_sets()
                                           body="Laksa. Frac +3",
 										  hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Rajas Ring",
                                           back="Camulus's Mantle",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
-										  feet="Lanun Bottes +2" }
+										  feet="Lanun Bottes +3" }
                                                            
                                                                                                                        
         sets.SanguineBlade = {}
@@ -122,9 +124,9 @@ function get_sets()
          
 		sets.Leaden ={ ammo="Orichalc. Bullet", head="Pixie Hairpin +1",
 							neck="Sanctity Necklace",  ear2="Friomisi earring", ear1="Moonshade Earring",
-							body="Laksa. Frac +3",  hands="Carmine Finger Gauntlets +1",   ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
+							body="Lanun Frac +2",  hands="Carmine Finger Gauntlets +1",   ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
 							back="Camulus's Mantle", legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}},  
-							feet="Lanun Bottes +2"}
+							feet="Lanun Bottes +3"}
 							
 		sets.WildFire = {}
        
@@ -133,9 +135,9 @@ function get_sets()
 			
 		sets.WildFire = {ammo="Orichalc. Bullet", head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 							neck="Sanctity Necklace",   ear2="Friomisi earring", ear1="Moonshade Earring",
-							body="Laksa. Frac +3",hands="Carmine Finger Gauntlets +1", ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
+							body="Lanun Frac +2",hands="Carmine Finger Gauntlets +1", ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
 							back="Camulus's Mantle",   legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}}, 
-							feet="Lanun Bottes +2"}
+							feet="Lanun Bottes +3"}
 		
 	    sets.LastStand = {}
        
@@ -204,9 +206,9 @@ function get_sets()
        
         sets.JA.QuickDraw = {ammo ="Animikii Bullet",head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 							neck="Sanctity Necklace",   ear2="Friomisi earring", ear1="Hecate's Earring",
-							body="Samnuha Coat",    hands="Carmine Finger Gauntlets +1", ring1="Acumen Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
+							body="Lanun Frac +2",    hands="Carmine Finger Gauntlets +1", ring1="Acumen Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
 							back="Izdubar Mantle",   legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}},  
-							feet="Lanun Bottes +2"}
+							feet="Lanun Bottes +3"}
        
         sets.JA.PhantomRoll = {head="Lanun Tricorne",neck="Regal Necklace", ear1="Etiolation earring", ear2="Genmei Earring",
                               body="Emet Hareness +1",hands="Chasseur's gants",ring2="Luzaf's Ring",ring1="Defending Ring",
@@ -216,13 +218,13 @@ function get_sets()
 							neck="Sanctity Necklace",   ear2="Friomisi earring", ear1="Dignitary's Earring",
 							body="Samnuha Coat",  hands="Leyline Gloves", ring1="Sangoma Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
 							back="Izdubar Mantle",   legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}},  
-							feet="Lanun Bottes +2"}
+							feet="Lanun Bottes +3"}
 							
-		sets.JA.SnakeEye = {legs =" Lanun trews"}
+		sets.JA.SnakeEye = {legs ="Lanun trews"}
 		
-		sets.JA.RandomDeal = {body ="Lanun Frac +1"}
+		sets.JA.RandomDeal = {body ="Lanun Frac +2"}
 		
-		sets.JA.WildCard = {Feet = "Lanun Bottes +2"}
+		sets.JA.WildCard = {Feet = "Lanun Bottes +3"}
                                                     
 
         --Precast Sets--

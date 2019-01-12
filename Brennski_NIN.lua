@@ -36,7 +36,7 @@ sets.Idle.Standard = {
 	head="Rao kabuto",
     body="Hizamaru haramaki +1",
     hands="Rao kote",
-    legs="Mummu Kecks +1",
+    legs="Mummu Kecks +2",
     feet="Amm Greaves",
     neck="Sanctity necklace",
     waist="Flume Belt +1",
@@ -49,7 +49,7 @@ sets.Idle.DT = {
 	head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
     body="Ashera Harness",
     hands="Kurys Gloves",
-    legs="Mummu Kecks +1",
+    legs="Mummu Kecks +2",
     feet="Amm Greaves",
     neck="loricate torque +1",
     waist="Flume Belt +1",
@@ -105,7 +105,8 @@ sets.TP.Standard.High = {
 	neck="Moonbeam Nodowa",
 	left_ear="Telos Earring", 
 	right_ear="Cessance earring", 
-    body="Ashera Harness",
+    --body="Ashera Harness",
+	body="Ken. Samue",
 	hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 	left_ring="Epona's Ring",
 	right_ring="Ilabrat Ring",
@@ -219,7 +220,7 @@ sets.TP.Hybrid.Low = {
 	right_ring="Vocane Ring",
     back="Andartia's Mantle",
 	waist="Windbuffet Belt +1",
-	legs="Mummu Kecks +1",
+	legs="Mummu Kecks +2",
 	feet="Hiza. Sune-Ate +1",
 }
 sets.TP.Hybrid.Mid = {
@@ -233,7 +234,7 @@ sets.TP.Hybrid.Mid = {
 	right_ring="Ilabrat Ring",
     back="Andartia's Mantle",
 	waist="Windbuffet Belt +1",
-	legs="Mummu Kecks +1",
+	legs="Mummu Kecks +2",
     feet="Ahosi Leggings",
 }
 sets.TP.Hybrid.High = {
@@ -247,7 +248,7 @@ sets.TP.Hybrid.High = {
 	right_ring="Ilabrat Ring",
     back="Andartia's Mantle",
 	waist="Windbuffet Belt +1",
-	legs="Mummu Kecks +1",
+	legs="Mummu Kecks +2",
     feet="Ahosi Leggings",
 }
 	--Defence Sets--
@@ -255,7 +256,7 @@ set.PDT = {
 	head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
     body="Ashera Harness",
     hands="Kurys Gloves",
-    legs="Mummu Kecks +1",
+    legs="Mummu Kecks +2",
     feet="Amm Greaves",
     neck="loricate torque +1",
     waist="Flume Belt +1",
@@ -269,7 +270,7 @@ set.MDT = {
 	head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
     body="Ashera Harness",
     hands="Kurys Gloves",
-    legs="Mummu Kecks +1",
+    legs="Mummu Kecks +2",
     feet="Amm Greaves",
     neck="loricate torque +1",
     waist="Flume Belt +1",
