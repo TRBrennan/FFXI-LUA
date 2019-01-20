@@ -385,7 +385,7 @@ function init_gear_sets()
     legs={ name="Apogee Slacks +1", augments={'Pet: STR+20','Blood Pact Dmg.+14','Pet: "Dbl. Atk."+4',}},
     feet="Convo. Pigaches +3",
     neck="Summoner's Collar +1",
-    waist="Klouskap Sash",
+    waist="Regal Belt",
     left_ear="Lugalbanda Earring",
     right_ear="Gelos Earring",
     left_ring="Varar Ring",

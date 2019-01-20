@@ -138,7 +138,8 @@ function get_sets()
 			
 			sets.Magic.Dark = { ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Incanter's Torque",ear2="Friomisi earring", ear1="Barkarole Earring",
-                                 body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Jhakri Cuffs +2", ring1="Evanescence Ring", ring2 ="Shiva Ring", waist ="Refoccilation Stone",
+                                 body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},hands="Jhakri Cuffs +2", ring1="Evanescence Ring", ring2 ="Archon Ring", 
+								 waist ="Refoccilation Stone",
                                  back="Lugh's Cape",legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Mag. crit. hit dmg. +1%','Mag. Acc.+11','"Mag.Atk.Bns."+13',}},
 								 feet="Merlinic Crackows"}
 								 

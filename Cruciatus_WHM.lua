@@ -256,7 +256,7 @@ function get_sets()
     body="Ebers Bliaud",
     hands={ name="Fanatic Gloves", augments={'MP+50','Healing magic skill +10','"Conserve MP"+7','"Fast Cast"+7',}},
     legs="Theophany Pantaloons +2",
-    feet ="Vanya Clogs",
+    feet ="Gende. Galosh. +1",
     neck="Malison Medallion",
     waist="Channeler's Stone",
     left_ear="Nourish. Earring +1",

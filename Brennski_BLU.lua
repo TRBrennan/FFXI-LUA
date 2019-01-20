@@ -139,7 +139,7 @@ function get_sets()
        
         sets.SanguineBlade = {ammo="Pemphredo Tathlum",
                                  head="Pixie Hairpin +1",neck="Sanctity Necklace",rear="Friomisi earring", ear1="Novio Earring",
-                                 body="Jhakri Robe +2",hands="Jhakri Cuffs +2", ring1="Shiva Ring", ring2 ='Shiva Ring', waist ="Eschan Stone",
+                                 body="Jhakri Robe +2",hands="Jhakri Cuffs +2", ring1="Shiva Ring", ring2 ='Archon Ring', waist ="Eschan Stone",
                                  back="Cornflower cape",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1" }
                
           sets.CircleBlade = {ammo="Floestone",

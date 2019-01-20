@@ -46,7 +46,7 @@ function get_sets()
 							ear1="Genmei Earring", ear2="Infused Earring", body="Ashera Harness",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},
 							ring1="Defending ring",ring2="Vocane Ring",
                                         back="Moonbeam Cape",waist="Moobow Belt",legs="Mummu Kecks +2", 
-										feet="Ashoi Leggings" }    			
+										feet="Ahosi Leggings" }    			
         --TP Sets--
         sets.TP = {}
  
@@ -106,7 +106,7 @@ function get_sets()
 								body="Ashera Harness",
 								hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 								legs="Mummu Kecks +2",
-								feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
+								feet="Ahosi Leggings",
 								neck="Mnk. Nodowa +1",
 								waist="Moonbow Belt",
 								left_ear="Cessance Earring",
@@ -136,7 +136,7 @@ function get_sets()
         sets.WS.VS = { ammo="Knobkierrie",
 						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
-						hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+						hands="Anchorite's Gloves +2",
 						legs="Ken. Hakama",
 						feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
 						neck="Mnk. Nodowa +1",
@@ -150,7 +150,7 @@ function get_sets()
         sets.WS.SS = {  ammo="Knobkierrie",
 						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
-						hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+						hands="Anchorite's Gloves +2",
 						legs="Ken. Hakama",
 						feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
 						neck="Mnk. Nodowa +1",
@@ -169,7 +169,7 @@ function get_sets()
 		sets.WS.RF = {  ammo="Knobkierrie",
 						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
-						hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+						hands="Anchorite's Gloves +2",
 						legs="Hiza. Hizayoroi +2",
 						feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}},
 						neck="Mnk. Nodowa +1",
@@ -183,7 +183,7 @@ function get_sets()
 		sets.WS.HF = { ammo="Knobkierrie",
 						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
-						hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+						hands="Anchorite's Gloves +2",
 						legs="Hiza. Hizayoroi +2",
 						feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}},
 						neck="Mnk. Nodowa +1",
@@ -197,7 +197,7 @@ function get_sets()
 		sets.WS.TK ={ammo="Knobkierrie",
 						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
-						hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+						hands="Anchorite's Gloves +2",
 						legs="Hiza. Hizayoroi +2",
 						feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}},
 						neck="Mnk. Nodowa +1",
@@ -253,7 +253,7 @@ function get_sets()
 	
         sets.JA.Footwork ={}    
 			
-		sets.JA.Counterstance = {}
+		sets.JA.Counterstance = {feet = "Hesychast's Gaiters"}
 		
 		sets.JA.ChiBlast = {waist ='Chaac Belt'}
 
