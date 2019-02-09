@@ -23,7 +23,7 @@ function get_sets()
 		TP_Body = "Ken. Samue"
 		WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
 		WSD_Hands ={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}}
-		WSD_Body = {name ="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}}
+		WSD_Body = "Sakonji Domaru +3"
 		WSD_Head = { name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}}
 		WSD_Feet = { name="Valorous Greaves", augments={'Attack+21','Weapon skill damage +5%',}}
 		
@@ -50,7 +50,7 @@ function get_sets()
         sets.Idle.DT = { ammo="Staunch Tathlum",
                               head="Ynglinga Sallet",
 							  neck="Loricate Torque +1", left_ear="Infused Earring", right_ear="Genmei Earring", 
-                              body="Emet Harness +1",hands="Kurys Gloves",right_ring="Vocane Ring",left_ring="Defending Ring",
+                              body="Tartarus Platemail",hands="Kurys Gloves",right_ring="Vocane Ring",left_ring="Defending Ring",
                                back="Moonbeam Cape",
 							   waist="Flume Belt +1",legs="Ken. Hakama",feet="Amm Greaves"}	
 										
@@ -96,13 +96,13 @@ function get_sets()
                 sets.TP.DT = {ammo="Staunch Tathlum",
                               head="Ynglinga Sallet",
 							  neck="Loricate Torque +1", ear1="Cessance Earring",ear2="Telos Earring",
-                              body="Emet Harness +1",hands="Kurys Gloves",right_ring="Vocane Ring",left_ring="Defending Ring",
+                              body="Tartarus Platemail",hands="Kurys Gloves",right_ring="Vocane Ring",left_ring="Defending Ring",
                                back="Moonbeam Cape",
 							   waist="Flume Belt +1",legs="Ken. Hakama",feet="Amm Greaves"}
                                  
                 sets.TP.DTAccuracy = {ammo="Ginsen",
                                       head="Ynglinga Sallet",neck="Moonbeam Nodowa", ear2="Telos Earring",ear1="Odnowa Earring +1",    
-									  body="Emet Harness +1",hands="Wakido Kote +3",right_ring="Niqmaddu Ring",left_ring="Chirich Ring",
+									  body="Tartarus Platemail",hands="Wakido Kote +3",right_ring="Niqmaddu Ring",left_ring="Chirich Ring",
                                        back="Takaha Mantle",
 									   waist="Ioskeha belt +1",legs="Ken. Hakama",feet="Amm Greaves"}
                                                          
@@ -146,7 +146,7 @@ function get_sets()
 		
 		sets.HybridWS.Attack = {ammo="Knobkierrie",
 							head=WSD_Head,
-							body="Found. Breastplate",
+							body=WSD_Body,
 							hands=WSD_Hands,
 							legs="Wakido Haidate +3",
 							feet="Founder's Greaves",

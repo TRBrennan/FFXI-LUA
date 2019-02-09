@@ -134,7 +134,7 @@ function get_sets()
         sets.WS = {}						          
                        
         sets.WS.VS = { ammo="Knobkierrie",
-						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
+						head="Adhemar Bonnet +1",
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
 						hands="Anchorite's Gloves +2",
 						legs="Ken. Hakama",
@@ -148,7 +148,7 @@ function get_sets()
 						back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}, }
                                                                           
         sets.WS.SS = {  ammo="Knobkierrie",
-						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
+						head="Hes. Crown +3",
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
 						hands="Anchorite's Gloves +2",
 						legs="Ken. Hakama",
@@ -161,13 +161,13 @@ function get_sets()
 						right_ring="Niqmaddu Ring",
 						back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}, }
 
-        sets.WS.AF = {ammp="Floestone", head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
+        sets.WS.AF = {ammp="Floestone", head="Hes. Crown +3",
 						neck="Caro Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
                         body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Niqmaddu Ring",ring2="Rajas Ring",
                         back="Visucius's mantle",waist="Grunfeld Rope",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Attack+30','"Counter"+1','STR+8','Accuracy+10',}}}
 										  
 		sets.WS.RF = {  ammo="Knobkierrie",
-						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
+						head="Hes. Crown +3",
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
 						hands="Anchorite's Gloves +2",
 						legs="Hiza. Hizayoroi +2",
@@ -181,7 +181,7 @@ function get_sets()
 						back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},}																	  
 																												   
 		sets.WS.HF = { ammo="Knobkierrie",
-						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
+						head="Hes. Crown +3",
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
 						hands="Anchorite's Gloves +2",
 						legs="Hiza. Hizayoroi +2",
@@ -195,7 +195,7 @@ function get_sets()
 						back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},}	
 						
 		sets.WS.TK ={ammo="Knobkierrie",
-						head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
+						head="Hes. Crown +3",
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
 						hands="Anchorite's Gloves +2",
 						legs="Hiza. Hizayoroi +2",

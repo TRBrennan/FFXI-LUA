@@ -333,6 +333,8 @@ function init_gear_sets()
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
 
     sets.midcast.Pet.PhysicalBloodPactRage = {
+	main="Was",
+	sub="Elan Strap",
     ammo="Sancus Sachet +1",
     head="Helios Band",
     body="Con. Doublet +3",

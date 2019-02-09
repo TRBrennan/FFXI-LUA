@@ -405,7 +405,7 @@ function precast(spell)
                 equip(sets.FellCleave[sets.FellCleave.index[FellCleave_ind]])				
        elseif spell.english == 'Savage Blade' or  spell.english == 'Ground Strike' then
                 equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])				
-		elseif spell.type == 'Weaponskill' then
+		elseif spell.type == 'WeaponSkill' then
 			equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])		
 		elseif spell.english == 'Box Step' or spell.english == 'Quickstep' or spell.english == 'Stutter Step' then
 			equip(sets.JA.Steps)

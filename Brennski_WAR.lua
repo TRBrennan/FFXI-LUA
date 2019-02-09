@@ -49,12 +49,12 @@ function get_sets()
 	sets.Idle.Standard = {ammo="Staunch Tathlum",
 			    head=TH_Head,neck="Sanctity Necklace", 
 				ear1="Genmei earring", ear2="Infused Earring",
-                body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring2="Defending ring",ring1="Vocane Ring",
+                body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring2="Defending ring",ring1="Vocane Ring",
                 waist="Flume Belt +1",legs="Sulevia's Cuisses +2",feet="Hermes' Sandals", back ="Moonbeam Cape"}
 						  
 	sets.Idle.DT = {ammo="Staunch Tathlum",
 			    head="Sulevia's Mask +2",neck="Loricate Torque +1", ear1="Genmei earring", ear2="Hearty Earring",
-                body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending Ring",
+                body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending Ring",
                 back="Moonbeam Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}					
 							
 							
@@ -81,7 +81,8 @@ function get_sets()
 	sets.TP.Chango = {    ammo="Ginsen",
     head="Flam. Zucchetto +2",
     body="Agoge Lorica +3",
-    hands="Emicho Gauntlets +1",
+    --hands="Emicho Gauntlets +1",
+	hands="Sulev. Gauntlets +2",
     legs="Pumm. Cuisses +3",
     feet="Pumm. Calligae +3",
     neck="Warrior's bead necklace +1",
@@ -115,12 +116,12 @@ function get_sets()
 				
 	sets.TP.DT = {ammo="Staunch Tathlum",
 			    head="Sulevia's mask +2",neck="Loricate torque +1", ear2="Hearty earring", ear1="Telos earring",
-		        body="Souveran cuirass",hands="Sulevia's gauntlets +2",ring1="Vocane ring",ring2="Defending Ring",
+		        body="Tartarus Platemail",hands="Sulevia's gauntlets +2",ring1="Vocane ring",ring2="Defending Ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs="Sulevia's cuisses +2",feet="Pummeler's calligae +3"}					
 							
 	sets.TP.DTAM = {ammo="Staunch Tathlum",
 			    head="Flam. Zucchetto +2",neck="Loricate torque +1", ear2="Cessance earring", ear1="Telos earring",
-			    body="Souveran cuirass",hands="Sulev. Gauntlets +2",ring1="Niqmaddu ring",ring2="Defending Ring",
+			    body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Niqmaddu ring",ring2="Defending Ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs="Pummeler's cuisses +3",	feet="Pummeler's Calligae +3"}
 	
 	sets.TP.DW = {ammo="Yetshila",
@@ -159,10 +160,19 @@ function get_sets()
 			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Sulevia's leggings +2"}
 	
-	sets.Break = {ammo="Pemphredo tathlum",
-			    head="Flam. Zucchetto +2",neck="Sanctity necklace",ear1="Dignitary's earring",ear1="Telos earring",
-			 	body="Found. Breastplate",hands="Flamma manopolas +2",ring2="Regal ring",ring1="Niqmaddu ring",
-			   	back=STR_Back,waist="Eschan stone",legs="Flamma dirs +1",feet="Flam. Gambieras +2"}
+	sets.Break = {  ammo="Pemphredo Tathlum",
+					head="Flam. Zucchetto +2",
+					body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
+					hands="Flam. Manopolas +2",
+					legs="Pumm. Cuisses +3",
+					feet="Flam. Gambieras +2",
+					neck="Sanctity Necklace",
+					waist="Eschan Stone",
+					left_ear="Digni. Earring",
+					right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+					left_ring="Niqmaddu Ring",
+					right_ring="Regal Ring",
+					back="Izdubar Mantle",}
 				
 	sets.KingsJusticeA = {ammo="Seething bomblet +1",
 			    head="Flam. Zucchetto +2",neck="Warrior's bead necklace +1",ear1="Brutal earring",ear2="Moonshade earring",

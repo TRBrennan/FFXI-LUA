@@ -475,7 +475,7 @@ function precast(spell)
 					then equip(sets.MultiHit[sets.WS.index[WS_ind]])
 				elseif spell.english == 'Blade: Hi' or spell.english == 'Blade: Ten' or spell.english == 'Blade: Chi'  or spell.english == 'Blade: Kamu' or spell.english == 'Blade: Yu' 
 					then equip(sets.OneHit[sets.WS.index[WS_ind]])
-				elseif spell.type == 'Weaponskill' 
+				elseif spell.type == 'WeaponSkill' 
 					then equip(sets.OtherWS[sets.WS.index[WS_ind]])
 				end
 			else cancel_spell(); windower.add_to_chat(121, 'Canceled '..spell.name..' '..spell.target.name..' is Too Far')

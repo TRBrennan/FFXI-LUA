@@ -46,7 +46,7 @@ function get_sets()
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum", 
 							head="Sulevia's Mask +2",neck="Loricate Torque +1", ear1="Genmei Earring",ear2="Cessance Earring",
-                              body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending  Ring",
+                              body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending  Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +1",feet="Sulevia's Leggings +2"}
 										
 							
@@ -80,12 +80,12 @@ function get_sets()
                                                        
                 sets.TP.DT = {ammo="Staunch Tathlum",
                               head="Sulevia's Mask +2",neck="Loricate Torque +1", left_ear="Sherida earring",right_ear="Telos Earring",
-                              body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending Ring",
+                              body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
                                  
                 sets.TP.DTAccuracy = {ammo="Ginsen",
                                       head="Sulevia's Mask +2",neck="Lissome Necklace", left_ear="Sherida earring",	right_ear="Telos Earring",   
-									  body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Flamma Ring",
+									  body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Petrov Ring",ring2="Flamma Ring",
                                       back ="Brigantia's Mantle",waist="Ioskeha Belt +1",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
                                                          
 									
@@ -272,7 +272,7 @@ function precast(spell)
 			end
 		end
 		equip(sets.JA.Jump)
-		elseif spell.type == 'Weaponskill' then
+		elseif spell.type == 'WeaponSkill' then
 			equip(sets.Drakesbane.Attack)
         end
 end

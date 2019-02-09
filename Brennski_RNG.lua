@@ -695,7 +695,7 @@ function precast(spell)
 					then equip(sets.Evisceration[sets.WS.index[WS_ind]])
 				elseif spell.english == 'Bora Axe' or spell.english == 'Decimation' or spell.english == 'Avalanche' or spell.english == 'Gale Axe' or spell.english == 'Smash Axe' or spell.english == 'Raging Axe'
 					then equip(sets.OtherAxe[sets.WS.index[WS_ind]])
-				elseif spell.type == 'Weaponskill' 
+				elseif spell.type == 'WeaponSkill' 
 					then equip(sets.OtherWS[sets.WS.index[WS_ind]])
 				end
 			else cancel_spell(); windower.add_to_chat(121, 'Canceled '..spell.name..' '..spell.target.name..' is Too Far')

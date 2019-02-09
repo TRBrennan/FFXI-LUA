@@ -356,7 +356,7 @@ function precast(spell)
                 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
-		elseif spell.type == 'Weaponskill' then
+		elseif spell.type == 'WeaponSkill' then
 			equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
         end
 end

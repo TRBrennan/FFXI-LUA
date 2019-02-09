@@ -55,32 +55,32 @@ function get_sets()
                 --1=Standard, 2 = DNCSub, 3=AccuracyFull, 4=DT, 5=DTAccuracy,--
 				
                 TP_ind = 1
-				sets.TP.StandardNIN = {  
+				sets.TP.StandardNIN = {  ammo ="Chrono bullet",
                                     head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Cessance Earring", ear2="Telos Earring",
                                     body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Chirich Ring",ring2="Epona's Ring",
                                     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 									waist="Reiki Yotai",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                                        
                                                        
-                sets.TP.DNCSub = { 
+                sets.TP.DNCSub = { ammo ="Chrono bullet",
                                         head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Suppanomimi", ear2="Telos Earring",
                                     body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Chirich Ring",ring2="Epona's Ring",
                                     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 									waist="Reiki Yotai",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
-                sets.TP.AccuracyFull = {
+                sets.TP.AccuracyFull = {ammo ="Chrono bullet",
                                         head="Adhemar Bonnet +1",neck="Sanctity Necklace", ear1="Cessance Earring", ear2="Telos Earring",
                                         body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring2="Chirich Ring",ring1="Cacoethic Ring",
                                         back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 										waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1" }
                                                        
-                sets.TP.DT = { 
+                sets.TP.DT = { ammo ="Chrono bullet",
                               head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Genmei Earring", ear2="Dignitary's Earring",
                               body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Defending ring",ring2="Vocane Ring",
                               back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 							  waist="Flume belt +1",legs ="Mummu Kecks +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
                                  
-                sets.TP.DTAccuracy = { 
+                sets.TP.DTAccuracy = { ammo ="Chrono bullet",
                                       head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Suppanomimi", ear2="Dignitary's Earring",     
 									  body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Dark ring",ring2="Mars's ring",
                                       back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -95,7 +95,7 @@ function get_sets()
         sets.SavageBlade.index = {'Attack'}
         SavageBlade_ind = 1
        
-        sets.SavageBlade.Attack = {
+        sets.SavageBlade.Attack = {ammo ="Chrono bullet",
                                           head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 										  neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Laksa. Frac +3",
@@ -109,7 +109,7 @@ function get_sets()
        
 	    sets.SanguineBlade.index = {'Attack'}
         SanguineBlade_ind = 1
-        sets.SanguineBlade = {
+        sets.SanguineBlade = {ammo ="Chrono bullet",
                                  head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},neck="Commodore Charm +1",
 								 rear="Friomisi earring", ear1="Novio Earring",
                                  body="Lanun Frac +3",hands="Leyline Gloves", ring1="Acumen Ring", ring2 ='Fenrir Ring', waist ="Eschan Stone",
@@ -120,7 +120,7 @@ function get_sets()
        
 	    sets.VorpalBlade.index = {'Attack'}
         VorpalBlade_ind = 1
-        sets.VorpalBlade = {
+        sets.VorpalBlade = {ammo ="Chrono bullet",
                                           head="Adhemar Bonnet +1",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Telos Earring",
                                           body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Petrov ring",ring2="Regal Ring",
                                           back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -131,7 +131,8 @@ function get_sets()
         sets.Leaden.index = {'Attack'}
         Leaden_ind = 1
          
-		sets.Leaden ={ ammo="Orichalc. Bullet", head="Pixie Hairpin +1",
+		sets.Leaden ={ ammo="Orichalc. Bullet", 
+						head="Pixie Hairpin +1",
 							neck="Commodore Charm +1",  ear2="Friomisi earring", ear1="Moonshade Earring",
 							body="Lanun Frac +3",  hands="Carmine Finger Gauntlets +1",   ring1="Dingir Ring", ring2 ='Archon Ring', waist ="Eschan Stone",
 							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
@@ -143,7 +144,8 @@ function get_sets()
         sets.WildFire.index = {'Attack'}
         WildFire_ind = 1					
 			
-		sets.WildFire = {ammo="Orichalc. Bullet", head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
+		sets.WildFire = {ammo="Orichalc. Bullet", 
+							head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},
 							neck="Commodore Charm +1",   ear2="Friomisi earring", ear1="Moonshade Earring",
 							body="Lanun Frac +3",hands="Carmine Finger Gauntlets +1", ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
 							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
@@ -289,6 +291,8 @@ function precast(spell)
                         end
 		elseif spell.english == 'Last Stand' then	
 			equip(sets.LastStand)
+		elseif spell.type == 'WeaponSkill' then
+			equip(sets.LastStand)
 		elseif spell.english == "Corsair's Roll" or spell.english == "Ninja's Roll" or spell.english == "Hunter's Roll" or spell.english == "Chaos Roll" 
 		 or spell.english == "Magus's Roll" or spell.english == "Healer's Roll" or spell.english == "Drachen Roll" or spell.english == "Choral Roll" 
 		 or spell.english == "Monk's Roll" or spell.english == "Beast Roll" or spell.english == "Samurai Roll" or spell.english == "Evoker's Roll" 
@@ -359,7 +363,7 @@ function aftercast(spell)
 		end
 
        
-        if spell.type == 'Weaponskill' then
+        if spell.type == 'WeaponSkill' then
                 add_to_chat(158,'TP Return: ['..tostring(player.tp)..']')
         end
 end
