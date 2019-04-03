@@ -49,14 +49,17 @@ function get_sets()
 		--TP Sets--
         sets.TP = {}
  
-           sets.TP.index = {'Standard'}
-                --1=Standard--
+           sets.TP.index = {'Standard', 'Acc'}
+                --1=Standard, 2=Acc--
 				
                 TP_ind = 1
 				sets.TP.Standard = {main="Sequence", sub ="Colada", ammo ="Ginsen", head ="Ayanmo Zucchetto +1", 
 									body ="Ayanmo Corazza +1", neck="Lissome Necklace", ear1 ="Cessance Earring", ear2 ="Telos Earring",
 									ring1="Ilabrat Ring", ring2="Chirich Ring",
 									hands ="Ayanmo Manopolas +1", legs ="Carmine Cuisses +1", feet ="Carmine Greaves +1", back = "Grounded Mantle", waist ="Reiki Yotai" }
+									
+				sets.TP.Acc = {}
+									
 	sets.MeleeMode ={}
 		sets.MeleeMode.Index ={'NotMelee','Melee'}
 		MeleeMode_ind =1
@@ -82,7 +85,7 @@ function get_sets()
 									body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
 									hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
 									legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+12 "Mag.Atk.Bns."+12','Magic burst dmg.+8%','MND+5','"Mag.Atk.Bns."+12',}},
-									feet={ name="Merlinic Crackows", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst dmg.+9%','MND+9','Mag. Acc.+15',}},
+									feet={ name="Merlinic Crackows", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst dmg.+9%','MND+9','Mag. Acc.+15',}},}
 			
 		--Enhancing Sets--					
 		sets.Enhancing ={}

@@ -41,7 +41,7 @@ function get_sets()
 							neck="Sanctity Necklace",
 							waist="Fucho-no-Obi",
 							left_ear="Lifestorm Earring",
-							right_ear="Spellbr. Earring",
+							right_ear="Hearty Earring",
 							left_ring="Defending Ring",
 							right_ring="Shneddick Ring",
 							back="Solemnity Cape"}
@@ -57,7 +57,7 @@ function get_sets()
 							neck="Sanctity Necklace",
 							waist="Fucho-no-Obi",
 							left_ear="Lifestorm Earring",
-							right_ear="Spellbr. Earring",
+							right_ear="Hearty Earring",
 							left_ring="Defending Ring",
 							right_ring="Shneddick Ring",
 							back="Solemnity Cape"}							  

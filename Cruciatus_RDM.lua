@@ -45,14 +45,14 @@ function get_sets()
 							neck="Sanctity Necklace",
 							waist="Fucho-no-Obi",
 							left_ear="Lifestorm Earring",
-							right_ear="Spellbr. Earring",
+							right_ear="Hearty Earring",
 							left_ring="Defending Ring",
 							right_ring="Shneddick Ring",
 							back="Solemnity Cape",}
 	
 									  
 		sets.Idle.DT = {main="Bolelabunga", sub ="Genmei Shield", ammo="Staunch Tathlum",
-									  neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Infused Earring",
+									  neck="Loricate Torque +1", ear1="Etiolation Earring", ear2="Hearty Earring",
                                       head ="Ayanmo Zucchetto +1", body ="Ayanmo Corazza +1",hands="Ayanmo Manopolas +1",
 									  ring2="Vocane Ring",ring1="Defending ring",
                                       waist="Fucho-no-obi",legs="Ayanmo cosciales +1",feet="Ayanmo Gambieras +1", back ="Moonbeam Cape"}							  

@@ -39,14 +39,14 @@ function get_sets()
 									  waist="Fucho-no-obi",legs="Carmine Cuisses +1",feet={ name="Herculean Boots", augments={'CHR+6','STR+14','"Refresh"+1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}}}
 				
 				sets.Idle.DT = { ammo ="Staunch Tathlum",
-                                      head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", left_ear="Odnowa Earring +1",
+                                      head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Futhark Torque +1", left_ear="Odnowa Earring +1",
 									  right_ear="Hearty Earring", body="Ashera Harness",hands="Regal Gauntlets",ring1="Defending ring",right_ring="Vocane Ring",
                                       back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},
 									  waist="Flume Belt +1",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
                 
 				
 			    sets.Idle.Cleave = { ammo ="Staunch Tathlum",
-                                      head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", left_ear="Odnowa Earring +1",
+                                      head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Futhark Torque +1", left_ear="Odnowa Earring +1",
 									  right_ear="Etiolation Earring", body="Ashera Harness",hands="Regal Gauntlets",ring1="Defending ring",right_ring="Vocane Ring",
                                       back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10',}},
 									  waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Erilaz Greaves +1"}
@@ -111,7 +111,7 @@ function get_sets()
 								hands ="Runeist's Mitons +3",
 								legs="Eri. Leg Guards +1",
 								feet="Turms Leggings +1",
-								neck="Loricate Torque +1",
+								neck="Futhark Torque +1",
 								waist="Flume Belt +1",
 								left_ear="Odnowa Earring +1",
 								right_ear="Etiolation Earring",
@@ -125,7 +125,7 @@ function get_sets()
 							hands="Regal Gauntlets",
 							legs="Eri. Leg Guards +1",
 							feet="Turms Leggings +1",
-							neck="Loricate Torque +1",
+							neck="Futhark Torque +1",
 							waist="Flume Belt +1",
 							left_ear="Odnowa Earring +1",
 							right_ear="Odnowa Earring",
@@ -137,10 +137,10 @@ function get_sets()
                 sets.TP.StatusResist = {ammo="Staunch Tathlum",
 							head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
 							body="Ashera Harness",
-							hands="Erilaz Gauntlets +1",
+							Hands="Volte Bracers",
 							legs="Rune. Trousers +3",
 							feet="Erilaz Greaves +1",
-							neck="Loricate Torque +1",
+							neck="Futhark Torque +1",
 							waist="Engraved Belt",
 							right_ear="Hearty Earring",
 							left_ear="Odnowa Earring +1",
@@ -323,7 +323,7 @@ function get_sets()
        
                 sets.JA.Pflug = {feet="Runeist's Boots +3",}
 											
-				sets.JA.Rayke = {feet={ name="Futhark Boots", augments={'Enhances "Rayke" effect',}}, waist ="Chaac Belt"}
+				sets.JA.Rayke = {feet={ name="Futhark Boots", augments={'Enhances "Rayke" effect',}}, waist ="Chaac Belt", Hands="Volte Bracers",}
 				
 				sets.JA.Steps = {ammo="Staunch Tathlum",
 								head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
@@ -331,7 +331,7 @@ function get_sets()
 								hands="Runeist's Mitons +3",
 								legs="Rune. Trousers +3",
 								feet="Ahosi Leggings",
-								neck="Loricate Torque +1",
+								neck="Futhark Torque +1",
 								waist="Flume Belt +1",
 								left_ear="Odnowa Earring +1",
 								right_ear="Hearty Earring",

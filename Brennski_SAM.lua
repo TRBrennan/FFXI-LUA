@@ -212,7 +212,7 @@ function get_sets()
 
 		sets.JA.Hasso = {}
 		
-		sets.JA.BladeBash= {waist ="Chaac Belt", 
+		sets.JA.BladeBash= {waist ="Chaac Belt", Hands="Volte Bracers",
 						head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}}}		
 		
 		sets.JA.Sekkanoki = {}
@@ -222,7 +222,7 @@ function get_sets()
 		sets.JA.BloodRage ={}
 		
 		sets.JA.Tomahawk = {ammo = "Throwing Tomahawk",
-						feet = "Agoge Calligae", waist ="Chaac Belt", 
+						feet = "Agoge Calligae", waist ="Chaac Belt",  Hands="Volte Bracers",
 						head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}}}
 
 		sets.JA.Restraint ={}

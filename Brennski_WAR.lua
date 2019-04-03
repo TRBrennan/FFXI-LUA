@@ -43,7 +43,8 @@ function get_sets()
 	WSD_Head = "Agoge Mask +3"
 	TP_Legs = {name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}}
 	TP_Body = "Emicho Haubert +1"
-	WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
+	--WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
+	WSD_Legs={ name="Odyssean Cuisses", augments={'Accuracy+20','Weapon skill damage +4%','VIT+5',}}
 	WSD_Hands ="Odyssean gauntlets"
 	
 	sets.Idle.Standard = {ammo="Staunch Tathlum",
@@ -146,9 +147,9 @@ function get_sets()
 			   	 back=WSD_Back,waist="Fotia belt",legs="Sulevia's cuisses +2",feet="Pummeler's calligae +3"}
 				  
 	sets.UF = {ammo="Yetshila",
-			    head="Flam. Zucchetto +2",neck="Rancor collar",ear1="Telos earring",ear2="Moonshade earring",
-			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
-			   	back=Crit_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Valorous greaves"}
+			    head="Flam. Zucchetto +2",neck="Warrior's bead necklace +1",ear1="Telos earring",ear2="Moonshade earring",
+			 	body="Argosy Hauberk +1",hands="Flamma Manopolas +2",ring1="Niqmaddu ring",ring2="Regal ring",
+			   	back=Crit_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Boii Calligae +1"}
 	
 	sets.RR = {ammo="Yetshila",
 			    head="Boii mask +1",neck="Fotia gorget",ear1="Telos earring",ear2="Cessance earring",
@@ -175,7 +176,7 @@ function get_sets()
 					back="Izdubar Mantle",}
 				
 	sets.KingsJusticeA = {ammo="Seething bomblet +1",
-			    head="Flam. Zucchetto +2",neck="Warrior's bead necklace +1",ear1="Brutal earring",ear2="Moonshade earring",
+			    head="Flam. Zucchetto +2",neck="Warrior's bead necklace +1",ear1="Telos earring",ear2="Moonshade earring",
 			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Flam. Gambieras +2"}
 	
@@ -219,13 +220,13 @@ function get_sets()
 				
 	sets.Vorpal = {ammo="Yetshila",
 			    head="Flam. Zucchetto +2",neck="Fotia Gorget",ear2="Brutal earring",ear2="Moonshade earring",
-			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
-			   	back=Crit_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Flam. Gambieras +2"}
+			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
+			   	back=Crit_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Boii Calligae +1"}
 	
 	sets.Rampage = {ammo="Yetshila",
 			    head="Flam. Zucchetto +2",neck="Fotia Gorget",ear2="Brutal earring",ear2="Moonshade earring",
-			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
-			   	back=Crit_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Flam. Gambieras +2"}
+			 	body="Argosy Hauberk +1",hands="Flam. Manopolas +2",ring1="Niqmaddu ring",ring2="Regal ring",
+			   	back=Crit_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Boii Calligae +1"}
 				
 	sets.Ruinator = {ammo="Seething bomblet +1",
 			    head="Flam. Zucchetto +2",neck="Fotia Gorget",ear2="Brutal earring",ear2="Moonshade earring",
@@ -248,17 +249,17 @@ function get_sets()
 			   	back=STR_Back,waist="Grunfeld Rope",legs=WSD_Legs,feet="Boii calligae +1"}
 	
 	sets.Decimation = {ammo="Seething bomblet +1",
-			    head="Flam. Zucchetto +2",neck="Fotia gorget",ear1="Cessance earring",ear2="Moonshade earring",
+			    head="Flam. Zucchetto +2",neck="Fotia gorget",ear1="Telos earring",ear2="Moonshade earring",
 			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
-			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}		  
+			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Flam. Gambieras +2"}		  
 								  
 	sets.Resolution = {ammo="Seething bomblet +1",
-			    head="Flam. Zucchetto +2",neck="Fotia gorget",ear2="Moonshade earring",ear1="Cessance earring",
+			    head="Flam. Zucchetto +2",neck="Fotia gorget",ear2="Moonshade earring",ear1="Telos earring",
 			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Flam. Gambieras +2"}
 	
 	sets.Scourge = {ammo="Knobkierrie",	
-			    head=WSD_Head,neck="Warrior's bead necklace +1",ear1="Cessance earring", ear1="Telos earring",
+			    head=WSD_Head,neck="Warrior's bead necklace +1",ear1="Telos earring", ear1="Telos earring",
 			 	body="Pummeler's lorica +3",hands=WSD_Hands,ring1="Flamma ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Fotia Belt",legs=WSD_Legs,feet="Sulevia's Leggings +2"}		
 	
@@ -356,7 +357,39 @@ function get_sets()
 			    head="Flam. Zucchetto +2",neck="Caro necklace",ear1="Moonshade earring",ear2="Cessance earring",
 			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	back=DA_Back,waist="Grunfeld rope",legs="Argosy breeches +1",feet="Pummeler's calligae +3"}
-				
+	
+	sets.ID = {
+			ammo="Yetshila",
+			head="Flam. Zucchetto +2",
+			body={ name="Agoge Lorica +3", augments={'Enhances "Aggressive Aim" effect',}},
+			hands="Flam. Manopolas +2",
+			legs="Pumm. Cuisses +3",
+			feet="Boii Calligae +1",
+			neck="War. Beads +1",
+			waist="Ioskeha Belt +1",
+			left_ear="Telos Earring",
+			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			left_ring="Niqmaddu Ring",
+			right_ring="Regal Ring",
+			back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+			}
+
+	sets.UpheavalCrit = {
+					ammo="Yetshila",
+					head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
+					body="Pumm. Lorica +3",
+					hands={ name="Valorous Mitts", augments={'Accuracy+19 Attack+19','Crit. hit damage +4%','AGI+1','Accuracy+14','Attack+9',}},
+					legs={ name="Valor. Hose", augments={'Accuracy+17','Crit. hit damage +3%','VIT+8','Attack+9',}},
+					feet="Boii Calligae +1",
+					neck="War. Beads +1",
+					waist="Fotia Belt",
+					left_ear="Ishvara Earring",
+					right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+					left_ring="Niqmaddu Ring",
+					right_ring="Regal Ring",
+					back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%',}},
+					}
+					
 	sets.ResoWSD = { ammo="Knobkierrie",
     head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
     body="Pumm. Lorica +3",
@@ -385,12 +418,12 @@ function get_sets()
 		
 		sets.JA.MightyStrikes = {hands = "Warrior's Muffler +2"}
 		
-		sets.JA.Ret ={feet = "Ravager's Calligae +1"}
+		sets.JA.Ret ={feet = "Boii Calligae +1"}
 		
-		sets.JA.BloodRage ={body ="Ravager's Lorica +2"}
+		sets.JA.BloodRage ={body ="Boii lorica"}
 		
 		sets.JA.Tomahawk = {ammo = "Throwing Tomahawk",
-						feet = "Agoge Calligae +2", waist ="Chaac Belt", 
+						feet = "Agoge Calligae +2", waist ="Chaac Belt", Hands="Volte Bracers",
 						head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}}}
 				
 	sets.Utility = {}
@@ -450,15 +483,29 @@ function precast(spell)
 				TPBonus = TPBonus + 250
 				CurrentTP = player.tp + TPBonus
 				send_command('@input /echo TP Bonus '..TPBonus.. ' CurrentTP '..CurrentTP)
-				
-				if CurrentTP > 1500 then
+				if buffactive['Mighty Strike'] then
+				equip(sets.UpheavalCrit)
+				send_command('@input /echo Upheavel Crit Set')
+				elseif CurrentTP > 1500 then
 				equip(sets.UpheavalA)
 				send_command('@input /echo Upheaval WSD Set')
 				else
 				equip(sets.UpheavalB)
 				--equip(sets.UpheavalA)
 				send_command('@input /echo Upheaval DA Set')
-				end				
+				end	
+			elseif spell.english == 'Impulse Drive' then
+				TPBonus = TPBonus + 250
+				CurrentTP = player.tp + TPBonus
+				send_command('@input /echo TP Bonus '..TPBonus.. ' CurrentTP '..CurrentTP)
+				if CurrentTP > 1500 then
+				equip(sets.UpheavalCrit)
+				send_command('@input /echo ID Crit Damage WSD Set')
+				else
+				equip(sets.ID)
+				--equip(sets.UpheavalA)
+				send_command('@input /echo ID Crit Rate DA Set')
+				end	
 			elseif spell.english == 'Ukko\'s Fury' then		
 				equip(sets.UF)
 				send_command('@input /echo UF Set')

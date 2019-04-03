@@ -136,7 +136,7 @@ function get_sets()
         sets.WS.VS = { ammo="Knobkierrie",
 						head="Adhemar Bonnet +1",
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
-						hands="Anchorite's Gloves +2",
+						hands="Anchorite's Gloves +3",
 						legs="Ken. Hakama",
 						feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
 						neck="Mnk. Nodowa +1",
@@ -150,7 +150,7 @@ function get_sets()
         sets.WS.SS = {  ammo="Knobkierrie",
 						head="Hes. Crown +3",
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
-						hands="Anchorite's Gloves +2",
+						hands="Anchorite's Gloves +3",
 						legs="Ken. Hakama",
 						feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
 						neck="Mnk. Nodowa +1",
@@ -169,7 +169,7 @@ function get_sets()
 		sets.WS.RF = {  ammo="Knobkierrie",
 						head="Hes. Crown +3",
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
-						hands="Anchorite's Gloves +2",
+						hands="Anchorite's Gloves +3",
 						legs="Hiza. Hizayoroi +2",
 						feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}},
 						neck="Mnk. Nodowa +1",
@@ -183,7 +183,7 @@ function get_sets()
 		sets.WS.HF = { ammo="Knobkierrie",
 						head="Hes. Crown +3",
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
-						hands="Anchorite's Gloves +2",
+						hands="Anchorite's Gloves +3",
 						legs="Hiza. Hizayoroi +2",
 						feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}},
 						neck="Mnk. Nodowa +1",
@@ -197,7 +197,7 @@ function get_sets()
 		sets.WS.TK ={ammo="Knobkierrie",
 						head="Hes. Crown +3",
 						body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
-						hands="Anchorite's Gloves +2",
+						hands="Anchorite's Gloves +3",
 						legs="Hiza. Hizayoroi +2",
 						feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}},
 						neck="Mnk. Nodowa +1",
@@ -255,7 +255,7 @@ function get_sets()
 			
 		sets.JA.Counterstance = {feet = "Hesychast's Gaiters"}
 		
-		sets.JA.ChiBlast = {waist ='Chaac Belt'}
+		sets.JA.ChiBlast = {waist ='Chaac Belt', Hands ='Volte Bracers'}
 
         --Precast Sets--
         sets.precast = {}

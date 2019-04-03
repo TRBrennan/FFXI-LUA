@@ -48,7 +48,7 @@ function get_sets()
                                     head="Souveran Schaller",
 									neck="Loricate Torque +1",
 									ear1="Odnowa Earring +1",
-									ear2="Thureous Earring",
+									ear2="Etiolation Earring",
                                     body="Reverence Surcoat +3",
 									hands="Regal Gauntlets",
 									ring1="Defending ring",

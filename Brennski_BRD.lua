@@ -11,22 +11,43 @@ function get_sets()
     
     sets.precast.FC = {}
     
-    sets.precast.FC.Song = {main="Felibre's dague",sub="Genmei shield",range="",ammo=empty,
-    head="Fili Calot +1",neck="Moonbow whistle +1",ear1="Enchanter Earring +1",ear2="Loquac. Earring",
-		body="Brioso Justau. +3",hands="Bewegt cuffs",ring1="kishar Ring",ring2="Rahab Ring",
-	 back={ name="Intarabus's Cape", augments={'CHR+20','System: 1 ID: 80 Val: 19','Mag. Acc.+10','"Fast Cast"+10',}},waist="Witful belt",legs="Doyen pants",feet="Bihu Slippers"}
+    sets.precast.FC.Song = {    head="Aya. Zucchetto +1",
+    body="Vrikodara Jupon",
+    hands={ name="Leyline Gloves", augments={'Accuracy+12','Mag. Acc.+14','"Mag.Atk.Bns."+15','"Fast Cast"+2',}},
+    legs="Aya. Cosciales +2",
+    feet="Aya. Gambieras +1",
+    neck="Voltsurge Torque",
+    waist="Witful Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Kishar Ring",
+    right_ring="Rahab Ring",}
         
-    sets.precast.FC.Normal = {main="Grioavolr",sub="Fulcio grip",
-		head="Vanya hood",neck="Voltsurge torque",ear1="Enchanter Earring +1",ear2="Loquacious Earring",
-		body="Inyanga jubbah +1",hands="Gendewitha Gages +1",ring1="Rahab Ring",ring2="kishar Ring",
-		  back={ name="Intarabus's Cape", augments={'CHR+20','System: 1 ID: 80 Val: 19','Mag. Acc.+10','"Fast Cast"+10',}},waist="Witful Belt",legs="Doyen pants",feet="chelona boots"}
+    sets.precast.FC.Normal = {    head="Aya. Zucchetto +1",
+    body="Vrikodara Jupon",
+    hands={ name="Leyline Gloves", augments={'Accuracy+12','Mag. Acc.+14','"Mag.Atk.Bns."+15','"Fast Cast"+2',}},
+    legs="Aya. Cosciales +2",
+    feet="Aya. Gambieras +1",
+    neck="Voltsurge Torque",
+    waist="Witful Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Kishar Ring",
+    right_ring="Rahab Ring",}
         
     sets.precast.EnhancingMagic = {waist="Siegel Sash"}
     	
-		sets.precast.Cure = {main="Grioavolr",sub="Fulcio grip",
-		head="Vanya hood",neck="Voltsurge torque",ear1="Enchanter Earring +1",ear2="Loquacious Earring",
-		body="Heka's Kalasiris",hands="Gendewitha Gages +1",ring1="Rahab Ring",ring2="kishar Ring",
-		 back={ name="Intarabus's Cape", augments={'CHR+20','System: 1 ID: 80 Val: 19','Mag. Acc.+10','"Fast Cast"+10',}},waist="Witful Belt",legs="Doyen pants",feet="chelona boots"}
+		sets.precast.Cure = {    head="Aya. Zucchetto +1",
+    body="Vrikodara Jupon",
+    hands={ name="Leyline Gloves", augments={'Accuracy+12','Mag. Acc.+14','"Mag.Atk.Bns."+15','"Fast Cast"+2',}},
+    legs="Aya. Cosciales +2",
+    feet="Aya. Gambieras +1",
+    neck="Voltsurge Torque",
+    waist="Witful Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Kishar Ring",
+    right_ring="Rahab Ring",}
     
     sets.precast.WS = {}
     sets.MordantRime= { head="Brioso roundlet +3",
@@ -45,7 +66,7 @@ function get_sets()
 	
 	
 	    sets.precast.WS = {}
-    sets.Rudra = { ammo="Jukukik Feather",
+    sets.Rudra = { 
     head="Aya. Zucchetto +1",
     body="Ashera Harness",
     hands="Aya. Manopolas +1",
@@ -56,7 +77,7 @@ function get_sets()
     left_ear="Ishvara Earring",
     right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     left_ring="Ilabrat Ring",
-    right_ring="Chirich Ring",
+    right_ring="Petrov Ring",
     back={ name="Mecisto. Mantle", augments={'Cap. Point+48%','MP+13','"Mag.Atk.Bns."+3','DEF+5',}},
 }
 
@@ -92,10 +113,10 @@ function get_sets()
 	
 		
 
-    sets.TP = {     ammo="Ginsen",
+    sets.TP = {
     head="Aya. Zucchetto +1",
     body="Ashera Harness",
-    hands="Aya. Manopolas +1",
+    hands="Volte Bracers",
     legs="Aya. Cosciales +2",
     feet="Aya. Gambieras +1",
     neck="Lissome Necklace",

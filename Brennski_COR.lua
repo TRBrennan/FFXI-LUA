@@ -112,7 +112,7 @@ function get_sets()
         sets.SanguineBlade = {ammo ="Chrono bullet",
                                  head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},neck="Commodore Charm +1",
 								 rear="Friomisi earring", ear1="Novio Earring",
-                                 body="Lanun Frac +3",hands="Leyline Gloves", ring1="Acumen Ring", ring2 ='Fenrir Ring', waist ="Eschan Stone",
+                                 body="Lanun Frac +3",hands="Leyline Gloves", ring1="Dignir Ring", ring2 ='Fenrir Ring', waist ="Eschan Stone",
                                  back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 								 legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}},feet="Lanun Bottes +3" }
 								 

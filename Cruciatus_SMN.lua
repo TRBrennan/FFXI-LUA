@@ -357,7 +357,7 @@ function init_gear_sets()
 	}
 
     sets.midcast.Pet.MagicalBloodPactRage = {
-    main={ name="Grioavolr", augments={'Blood Pact Dmg.+6','Pet: VIT+7','Pet: Mag. Acc.+25','Pet: "Mag.Atk.Bns."+21',}},
+    main={ name="Grioavolr", augments={'Blood Pact Dmg.+9','Pet: INT+1','Pet: Mag. Acc.+25','Pet: "Mag.Atk.Bns."+24','DMG:+14',}},
     sub="Elan Strap",
     ammo="Sancus Sachet +1",
     head={ name="Apogee Crown +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},
@@ -378,7 +378,7 @@ function init_gear_sets()
     sets.midcast.Pet.MagicalBloodPactRage.Acc = sets.midcast.Pet.MagicalBloodPactRage
 
 	sets.midcast.Pet.HybridBloodPactRage = {
-    main={ name="Grioavolr", augments={'Blood Pact Dmg.+6','Pet: VIT+7','Pet: Mag. Acc.+25','Pet: "Mag.Atk.Bns."+21',}},
+    main={ name="Grioavolr", augments={'Blood Pact Dmg.+9','Pet: INT+1','Pet: Mag. Acc.+25','Pet: "Mag.Atk.Bns."+24','DMG:+14',}},
     sub="Elan Strap",
     ammo="Sancus Sachet +1",
     head={ name="Apogee Crown +1", augments={'MP+80','Pet: "Mag.Atk.Bns."+35','Blood Pact Dmg.+8',}},
@@ -432,55 +432,55 @@ function init_gear_sets()
     sets.resting = {
 		main="Was",
 		sub="Oneiros Grip",
-		ammo="Sancus sachet +1",
-		head="Beckoner's Horn +1",
-		neck="Sanctity neclace",
-		ear1="Moonshade earring",
-		ear2="Evans Earring",
-		body="Shomonjijoe",
-		hands="Asteria mitts +1",
-		ring1="Evoker's Ring",
-		ring2="Globidonta Ring",
-		back="Solemnity Cape",
-		waist="Fucho-no-Obi",
-		legs="Assiduity Pants +1",
-		 feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},}
+	ammo="Sancus Sachet +1",
+    head="Beckoner's Horn +1",
+    body="Shomonjijoe",
+    hands="Asteria Mitts +1",
+    legs="Assid. Pants +1",
+    feet="Inyan. Crackows +1",
+    neck="Smn. Collar +1",
+    waist="Fucho-no-Obi",
+    left_ear="Lugalbanda Earring",
+    right_ear="Enmerkar Earring",
+    left_ring="Defending Ring",
+    right_ring="Shneddick Ring",
+    back="Solemnity Cape",}
 
     -- Idle sets
     sets.idle = {
 	main="Was",
 	sub="Oneiros Grip",
     ammo="Sancus Sachet +1",
-	head="Beckoner's Horn +1",
-	body="Shomonjijoe",
-	hands="Asteria mitts +1",
-    legs="Assiduity Pants +1",
-    feet={ name="Apogee Pumps +1", augments={'MP+80','Pet: Attack+35','Blood Pact Dmg.+8',}},
-    neck="Adad Amulet",
+    head="Beckoner's Horn +1",
+    body="Shomonjijoe",
+    hands="Asteria Mitts +1",
+    legs="Assid. Pants +1",
+    feet="Inyan. Crackows +1",
+    neck="Smn. Collar +1",
     waist="Fucho-no-Obi",
     left_ear="Lugalbanda Earring",
     right_ear="Enmerkar Earring",
     left_ring="Defending Ring",
-	right_ring="Shneddick Ring",
+    right_ring="Shneddick Ring",
     back="Solemnity Cape",
 }
 
 	sets.idle.Town = {
 	main="Was",
 	sub="Oneiros Grip",
-	ammo="Sancus Sachet +1",
+    ammo="Sancus Sachet +1",
     head="Beckoner's Horn +1",
-	body="Shomonjijoe",
-	hands="Asteria mitts +1",
-    legs="Assiduity Pants +1",
-    feet="Herald's gaiters",
-    neck="Adad Amulet",
+    body="Shomonjijoe",
+    hands="Asteria Mitts +1",
+    legs="Assid. Pants +1",
+    feet="Inyan. Crackows +1",
+    neck="Smn. Collar +1",
     waist="Fucho-no-Obi",
     left_ear="Lugalbanda Earring",
     right_ear="Enmerkar Earring",
-	left_ring="Defending Ring",
-	right_ring="Shneddick Ring",
-    back={ name="Campestres's Cape", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: "Regen"+10',}},
+    left_ring="Defending Ring",
+    right_ring="Shneddick Ring",
+    back="Solemnity Cape",
 }
 
     sets.idle.PDT = {}

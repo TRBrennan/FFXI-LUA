@@ -181,7 +181,7 @@ function get_sets()
 	
     -- Resting sets
     sets.resting = {main="Pluto's Staff", range="Dunna",
-				head="Azimuth Hood +1", neck="Incanter's Torque", rear="Etiolation Earring", lear="Etiolation Earring",
+				head="Azimuth Hood +1", neck="Incanter's Torque", rear="Etiolation Earring", lear="Hearty Earring",
                 body="Jhakri Robe +2", hands="Bagua Mitaines", lring="Paguroidea Ring", rring="Renaye Ring",
                 back="Toro Cape", waist="Refoccilation Stone", legs="Assiduity Pants +1", feet="Azimuth Gaiters +1"}
 	
@@ -189,7 +189,7 @@ function get_sets()
 
     sets.idle = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
 		head="Befouled Crown",
-        neck="Sanctity Necklace", right_ear="Etiolation Earring", left_ear="Zennaroi Earring",
+        neck="Sanctity Necklace", right_ear="Etiolation Earring", left_ear="Hearty Earring",
         body="Jhakri Robe +2",hands="Bagua Mitaines", left_ring="Defending Ring",right_ring="Shneddick Ring",
         back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Azimuth Gaiters +1"}
 
@@ -230,13 +230,13 @@ function get_sets()
 
     sets.idle.Town = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
 		head={ name="Merlinic Hood", augments={'"Cure" potency +7%','Rng.Atk.+5','"Refresh"+1','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-        neck="Sanctity Necklace", right_ear="Etiolation Earring", left_ear="Zennaroi Earring",
+        neck="Sanctity Necklace", right_ear="Etiolation Earring", left_ear="Hearty Earring",
         body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
 
     sets.idle.Weak = {main="Bolelabunga", sub="Genbu's Shield", range="Dunna",
 		head={ name="Merlinic Hood", augments={'"Cure" potency +7%','Rng.Atk.+5','"Refresh"+1','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-        neck="Sanctity Necklace", right_ear="Etiolation Earring", left_ear="Zennaroi Earring",
+        neck="Sanctity Necklace", right_ear="Etiolation Earring", left_ear="Hearty Earring",
         body="Geomancy Tunic",hands="Bagua Mitaines", ring1="Defending Ring", ring2="Vertigo Ring",
         back="Solemnity Cape",waist="Fucho-no-obi",legs="Assiduity Pants +1",feet="Geomancy Sandals"}
 		

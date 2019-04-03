@@ -41,7 +41,7 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Staunch Tathlum",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", ear1="Genmei earring", ear2="Infused Earring",
-                                      body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Defending ring",ring2="Vocane Ring",
+                                      body="Tartarus Platemail",hands="Sulev. Gauntlets +2",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Sulevia's Leggings +2", back ="Moonbeam Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum", 
@@ -194,7 +194,7 @@ function get_sets()
 						right_ring="Flamma Ring",
 						back ="Brigantia's Mantle"}
 	
-		sets.JA.Angon = {ammo="Angon",ear1="Dragoon's Earring",hands="Ptero. Fin. G. +1"} -- Angon, Relic Hands, and that dumb earring in Mamook if you feel like it
+		sets.JA.Angon = {ammo="Angon",ear1="Dragoon's Earring",hands="Ptero. Fin. G. +1",waist ='Chaac Belt', Hands ='Volte Bracers'} -- Angon, Relic Hands, and that dumb earring in Mamook if you feel like it
 		sets.JA.AncientCircle = {legs="Vishap Brais +1"} -- Artifact Legs
 	
 		sets.JA.SpiritLink = {head="Vishap Armet +1",ear1="Pratik Earring",hands="Pel. Vambraces +1",feet="Ptero. Greaves +1"} -- Spirit Link/Empathy gear go here
