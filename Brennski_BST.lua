@@ -486,7 +486,7 @@ function get_sets()
 		body = "Taeon Tabard",
 		hands = "Leyline Gloves",
 		legs = "Orvail Pants +1",
-		feet = "Amalric Nails",
+		feet = "Amalric Nails +1",
 		neck = "Voltsurge Torque",
 		waist = "Witful Belt",
 		left_ear = "Etiolation Earring",

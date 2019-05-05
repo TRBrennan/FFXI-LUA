@@ -328,7 +328,7 @@ function get_sets()
 		neck = "Incanter's Torque",
 		left_ear = "Andoaa Earring",
 		right_ear = "Genmei earring",
-		body = "Emet harness +1",
+		body={ name="Taeon Tabard", augments={'"Conserve MP"+5','Phalanx +3',}},
 		hands = "Regal Gauntlets",
 		waist = "Olympus Sash",
 		ring1 = "Stikini Ring",
@@ -689,7 +689,7 @@ function aftercast(spell)
 		end
 	else
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
-		if buffactive["doom"] or buffactive["curse"] or buffactive["cursed"] then
+		if buffactive["doom"] or buffactive["curse"] then
 			equip(sets.Utility.Doomed)
 		end
 	end
@@ -722,7 +722,7 @@ function buff_change(buff, gain)
 			end
 		end
 	end
-	if buff == "doom" then
+	if buff == "doom" or buff == "curse" then
 		if gain then
 			equip(sets.Utility.Doomed)
 		else

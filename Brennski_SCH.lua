@@ -96,7 +96,7 @@ function get_sets()
 		ear2 = "Etiolation Earring",
 		ear1 = "Barkarole Earring",
 		body = "Amalric Doublet",
-		hands = "Amalric Gages",
+		hands = "Amalric Gages +1",
 		ring1 = "Mephitas's Ring",
 		ring2 = "Rahab Ring",
 		waist = "Refoccilation Stone",

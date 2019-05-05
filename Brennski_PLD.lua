@@ -200,7 +200,7 @@ function get_sets()
 		rear = "Friomisi earring",
 		ear1 = "Novio Earring",
 		body = "Founder's Breastplate",
-		hands = "Amalric Gages",
+		hands = "Amalric Gages +1",
 		ring1 = "Acumen Ring",
 		ring2 = "Fenrir Ring",
 		waist = "Eschan Stone",

@@ -61,7 +61,7 @@ function get_sets()
         ring1 = "Kishar Ring",
         back = "Lifestream Cape",
         waist = "Witful Belt",
-        legs = "Geo. Pants +1",
+        legs = "Geo. Pants +2",
         feet = "Regal Pumps +1"
     }
 
@@ -80,7 +80,7 @@ function get_sets()
         right_ear = "Etiolation Earring",
         left_ear = "Brutal Earring",
         body = "Azimuth Coat",
-        hands = "Amalric gages",
+        hands = "Amalric Gages +1",
         ring1 = "Rajas Ring",
         ring2 = "Rufescent Ring",
         back = "Buquwik Cape",
@@ -97,7 +97,7 @@ function get_sets()
         right_ear = "Friomisi Earring",
         left_ear = "Strophadic Earring",
         body = "Azimuth Coat",
-        hands = "Amalric gages",
+        hands = "Amalric Gages +1",
         ring1 = "Acumen Ring",
         ring2 = "Etana ring",
         back = "Toro Cape",
@@ -118,33 +118,39 @@ function get_sets()
     sets.midcast = {}
 
     sets.midcast.Geomancy = {
-        main = "Solstice",
-        sub = "Ammurapi Shield",
-        range = "Dunna",
-        head = "Azimuth Hood +1",
-        body = "Bagua Tunic",
-        hands = "Geomancy Mitaines +1",
-        right_ear = "Mendicant's Earring",
-        left_ear = "Gifted Earring",
-        neck = "Incanter's Torque",
-        ring2 = "Renaye Ring",
-        feet = "Merlinic Crackows",
-        back = "Lifestream Cape"
+    main="Idris",
+    sub="Ammurapi Shield",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Azimuth Hood +1",
+    body="Azimuth Coat",
+    hands="Azimuth Gloves",
+    legs="Azimuth Tights",
+    feet="Azimuth Gaiters +1",
+    neck="Incanter's Torque",
+    waist="Austerity Belt",
+    left_ear="Calamitous Earring",
+    right_ear="Mendi. Earring",
+    left_ring="Defending Ring",
+    right_ring="Stikini Ring",
+    back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +18','Pet: Damage taken -4%',}},
     }
 
     sets.midcast.Geomancy.Indi = {
-        main = "Solstice",
-        sub = "Ammurapi Shield",
-        range = "Dunna",
-        head = "Azimuth Hood +1",
-        body = "Bagua Tunic",
-        right_ear = "Mendicant's Earring",
-        left_ear = "Gifted Earring",
-        neck = "Incanter's Torque",
-        legs = "Bagua Pants +1",
-        hands = "Geomancy Mitaines +1",
-        feet = "Azimuth Gaiters +1",
-        back = "Lifestream Cape"
+    main="Idris",
+    sub="Ammurapi Shield",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
+    body={ name="Bagua Tunic", augments={'Enhances "Bolster" effect',}},
+    hands="Geo. Mitaines +2",
+    legs={ name="Bagua Pants +1", augments={'Enhances "Mending Halation" effect',}},
+    feet="Azimuth Gaiters +1",
+    neck="Incanter's Torque",
+    waist="Austerity Belt",
+    left_ear="Calamitous Earring",
+    right_ear="Mendi. Earring",
+    left_ring="Defending Ring",
+    right_ring="Stikini Ring",
+    back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
     }
 
     sets.midcast.Cure = {
@@ -174,7 +180,7 @@ function get_sets()
         range = {name = "Dunna", augments = {"MP+20", "Mag. Acc.+10", '"Fast Cast"+3'}},
         head = {name = "Telchine Cap", augments = {"Enh. Mag. eff. dur. +9"}},
         body = {name = "Telchine Chas.", augments = {"Enh. Mag. eff. dur. +7"}},
-        hands = {name = "Telchine Gloves", augments = {"Enh. Mag. eff. dur. +5"}},
+        hands = {name = "Telchine Gloves", augments = {"Enh. Mag. eff. dur. +10"}},
         legs = {name = "Telchine Braconi", augments = {"Enh. Mag. eff. dur. +9"}},
         feet = {name = "Telchine Pigaches", augments = {"Enh. Mag. eff. dur. +9"}},
         neck = "Incanter's Torque",
@@ -193,14 +199,14 @@ function get_sets()
         -- main="Marin staff", sub="Niobid Strap",
         range = "Dunna",
         head = "Befouled Crown",
-        neck = "Erra Pendant",
+        neck = "Bagua Charm +1",
         left_ear = "Regal Earring",
         right_ear = "Barkarole Earring",
         body = "Shango Robe",
         hands = "Lurid Mitts",
-        ring1 = "Vertigo Ring",
-        ring2 = "Perception Ring",
-        back = "Nantosuelta's Cape",
+        ring1 = "Kishar Ring",
+        ring2 = "Stikini Ring",
+        back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
         waist = "Ovate Rope",
         legs = "Psycloth Lappas",
         feet = "Medium's Sabots"
@@ -212,7 +218,7 @@ function get_sets()
         range = "Dunna",
         head = "Merlinic Hood",
         body = "Jhakri Robe +2",
-        hands = "Amalric Gages",
+        hands = "Amalric Gages +1",
         legs = "Merlinic Shalwar",
         feet = "Merlinic Crackows",
         neck = "Mizu. Kubikazari",
@@ -221,7 +227,7 @@ function get_sets()
         right_ear = "Friomisi Earring",
         left_ring = "Mujin Band",
         right_ring = "Locus Ring",
-        back = "Nantosuelta's Cape"
+        back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
     }
 
     sets.midcast.Impact = set_combine(sets.midcast["Elemental Magic"], {head = empty, body = "Twilight Cloak"})
@@ -236,10 +242,10 @@ function get_sets()
         left_ear = "Regal Earring",
         body = "Geomancy Tunic",
         hands = "Jhakri Cuffs +1",
-        ring1 = "Acumen Ring",
-        ring2 = "Vertigo ring",
-        back = "Nantosuelta's Cape",
-        waist = "Cetl Belt",
+        ring1 = "Stikini Ring",
+        ring2 = "Evanescence ring",
+        back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
+        waist = "Refoccilation Stone",
         legs = "Psycloth Lappas",
         feet = "Merlinic Crackows"
     }
@@ -250,7 +256,7 @@ function get_sets()
         range = "Dunna",
         head = "Merlinic Hood",
         body = "Jhakri Robe +2",
-        hands = "Amalric Gages",
+        hands = "Amalric Gages +1",
         legs = "Merlinic Shalwar",
         feet = "Merlinic Crackows",
         neck = "Mizu. Kubikazari",
@@ -259,7 +265,7 @@ function get_sets()
         right_ear = "Friomisi Earring",
         left_ring = "Mujin Band",
         right_ring = "Locus Ring",
-        back = "Nantosuelta's Cape"
+        back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
     }
 
     sets.obi = {
@@ -309,7 +315,7 @@ function get_sets()
         hands = "Bagua Mitaines",
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",
-        back = "Solemnity Cape",
+        back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
         waist = "Fucho-no-obi",
         legs = "Assiduity Pants +1",
         feet = "Azimuth Gaiters +1"
@@ -320,14 +326,14 @@ function get_sets()
         sub = "Genbu's Shield",
         range = "Dunna",
         head = "Befouled Crown",
-        neck = "Sanctity Necklace",
+        neck = "Bagua Charm +1",
         right_ear = "Etiolation Earring",
         left_ear = "Handler's Earring",
         body = "Mallquis Saio +2",
         hands = "Geomancy Mitaines +1",
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",
-        back = "Solemnity Cape",
+        back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
         waist = "Fucho-no-obi",
         legs = "Assiduity Pants +1",
         feet = "Azimuth Gaiters +1"
@@ -336,15 +342,15 @@ function get_sets()
     -- .Pet sets are for when Luopan is present.
     sets.idle.Pet = {
         --main="Sucellus",
-        main = "Solstice",
+        main = "Idris",
         sub = "Genbu's Shield",
         range = "Dunna",
         head = "Azimuth Hood +1",
         body = "Mallquis Saio +2",
-        hands = "Geo. Mitaines +1",
+        hands = "Geo. Mitaines +2",
         legs = {name = "Telchine Braconi", augments = {'Pet: "Regen"+3'}},
         feet = {name = "Bagua Sandals +1", augments = {'Enhances "Radial Arcana" effect'}},
-        neck = "Sanctity Necklace",
+        neck = "Bagua Charm +1",
         right_ear = "Etiolation Earring",
         left_ear = "Handler's Earring",
         left_ring = "Defending Ring",
@@ -355,20 +361,20 @@ function get_sets()
 
     sets.idle.PDT.Pet = {
         --main="Sucellus",
-        main = "Solstice",
+        main = "Idris",
         sub = "Genbu's Shield",
         range = "Dunna",
         head = "Azimuth Hood +1",
         body = "Mallquis Saio +2",
-        hands = "Geo. Mitaines +1",
+        hands = "Geo. Mitaines +2",
         legs = {name = "Telchine Braconi", augments = {'Pet: "Regen"+3'}},
         feet = {name = "Bagua Sandals +1", augments = {'Enhances "Radial Arcana" effect'}},
-        neck = "Sanctity Necklace",
+        neck = "Bagua Charm +1",
         right_ear = "Etiolation Earring",
         left_ear = "Handler's Earring",
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",
-        back = "Lifestream Cape",
+        back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
         waist = "Isa Belt"
     }
 
@@ -393,7 +399,7 @@ function get_sets()
         hands = "Bagua Mitaines",
         ring1 = "Defending Ring",
         ring2 = "Vertigo Ring",
-        back = "Solemnity Cape",
+        back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
         waist = "Fucho-no-obi",
         legs = "Assiduity Pants +1",
         feet = "Geomancy Sandals"
@@ -414,7 +420,7 @@ function get_sets()
         hands = "Bagua Mitaines",
         ring1 = "Defending Ring",
         ring2 = "Vertigo Ring",
-        back = "Solemnity Cape",
+        back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
         waist = "Fucho-no-obi",
         legs = "Assiduity Pants +1",
         feet = "Geomancy Sandals"

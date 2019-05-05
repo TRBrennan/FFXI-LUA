@@ -452,7 +452,7 @@ function get_sets()
                 body = "Vrikodara Jupon",
                 hands = "Leyline Gloves",
                 legs = {name = "Herculean Trousers", augments = {"Mag. Acc.+21", '"Fast Cast"+5', "CHR+3"}},
-                feet = "Amalric Nails",
+                feet = "Amalric Nails +1",
                 neck = "Voltsurge Torque",
                 waist = "Witful Belt",
                 left_ear = "Etiolation Earring",

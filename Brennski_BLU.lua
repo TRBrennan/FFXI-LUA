@@ -433,7 +433,7 @@ function get_sets()
             }
         },
         legs = "Jhakri Slops +1",
-        feet = "Jhakri Pigaches +2"
+        feet = "Amarlic Nails +1"
     }
 
     sets.CircleBlade = {
@@ -563,7 +563,7 @@ function get_sets()
         rear = "Friomisi earring",
         ear1 = "Novio Earring",
         body = "Adhemar Jacket +1",
-        hands = "Amalric Gages",
+        hands = "Amalric Gages +1",
         ring1 = "Shiva Ring",
         ring2 = 'Shiva Ring',
         waist = "Eschan Stone",
@@ -650,12 +650,12 @@ function get_sets()
             name = "Amalric Doublet",
             augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}
         },
-        hands = "Jhakri Cuffs +2",
+        hands = "Amalric Gages",
         legs = {
             name = "Amalric Slops",
             augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}
         },
-        feet = "Jhakri Pigaches +2",
+        feet = "Amalric Nails +1",
         neck = "Sanctity Necklace",
         waist = "Eschan Stone",
         left_ear = "Regal Earring",
@@ -766,7 +766,7 @@ function get_sets()
             name = "Amalric Slops",
             augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}
         },
-        feet = "Jhakri Pigaches +2",
+        feet = "Amarlic Nails +1"
         neck = "Sanctity Necklace",
         waist = "Chaac Belt",
         left_ear = "Regal Earring",
@@ -826,7 +826,7 @@ function get_sets()
         ear2 = "Friomisi earring",
         ear1 = "Regal Earring",
         body = "Jhakri Robe +2",
-        hands = "Amalric Gages",
+        hands = "Amalric Gages +1",
         ring1 = "Shiva Ring",
         ring2 = 'Shiva Ring',
         waist = "Eschan Stone",

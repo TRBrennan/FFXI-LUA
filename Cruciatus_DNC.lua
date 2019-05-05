@@ -37,13 +37,12 @@ function get_sets()
         sets.Idle.Standard = {ammo="Staunch Tathlum",
                                       head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Sanctity Necklace",ear1="Genmei Earring", ear2="Infused Earring", 
 									  body="Ashera Harness",hands="Herculean gloves",ring1="Defending ring",right_ring="Shneddick Ring",
-                                      back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-									  waist="Flume belt +1",legs="Mummu Kecks +2",feet="Turms Leggings +1"}
+                                      waist="Flume belt +1",legs="Mummu Kecks +2",feet="Turms Leggings +1"}
                                                  
         sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap",ammo="Staunch Tathlum",
                                 head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring", 
 								body="Ashera Harness",hands="Herculean gloves",ring1="Defending ring",ring2="Vocane Ring",
-                                        back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},waist="Flume belt +1",legs="Mummu Kecks +2",
+                                        back="Moonbeam Cape",waist="Flume belt +1",legs="Mummu Kecks +2",
 										feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
 										
 					
@@ -66,7 +65,7 @@ function get_sets()
 									right_ear="Suppanomimi",
 									left_ring="Mummu Ring",
 									right_ring="Petrov Ring",
-									back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},}
+									back={ name="Canny Cape", augments={'DEX+2','AGI+1','Crit. hit damage +2%',}},}
 																					   
                                                        
                 sets.TP.AccuracyMid = {ammo="Yamarang",
@@ -81,7 +80,7 @@ function get_sets()
 									right_ear="Suppanomimi",
 									left_ring="Mummu Ring",
 									right_ring="Petrov Ring",
-									back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},}
+									back={ name="Canny Cape", augments={'DEX+2','AGI+1','Crit. hit damage +2%',}},}
        
                 sets.TP.AccuracyFull = {ammo="Yamarang",
                                         head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
@@ -91,19 +90,17 @@ function get_sets()
                 sets.TP.DT = {ammo="Staunch Tathlum",
                               head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Ethereal", ear2="Genmei Earring",
                               body="Ashera Harness",hands="Herculean Gloves",ring1="Vocane Ring",ring2="Ilabrat Ring",
-                              back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-							  waist="Flume belt +1",legs="Mummu Kecks +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
+                              back="Moonbeam Cape",waist="Flume belt +1",legs="Mummu Kecks +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
                                  
                 sets.TP.DTAccuracy = {ammo="Yamarang",
                                       head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Suppanomimi", ear2="Genmei Earring",     
 									  body="Ashera Harness",hands="Herculean Gloves",ring1="Dark ring",ring2="Vocane Ring",
-                                      back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-									  waist="Flume belt +1",legs="Mummu Kecks +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
+                                      back="Canny Cape",waist="Flume belt +1",legs="Mummu Kecks +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
 									  
 				sets.TP.TH = { ammo="Yamarang",
 									head="Skormoth Mask",
 									body="Mummu Jacket +2",
-									hands = "Plunderer's Armlets +1",
+									hands="Mummu Wrists +2",
 									legs="Meg. Chausses +2",
 									feet={ name="Herculean Boots", augments={'Accuracy+14 Attack+14','"Triple Atk."+2','DEX+2','Accuracy+12','Attack+11',}},
 									neck="Anu Torque",
@@ -112,7 +109,7 @@ function get_sets()
 									right_ear="Suppanomimi",
 									left_ring="Mummu Ring",
 									right_ring="Petrov Ring",
-									back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},}
+									back={ name="Canny Cape", augments={'DEX+2','AGI+1','Crit. hit damage +2%',}},}
                                                          
 									
        --Weaponskill Sets--
@@ -143,8 +140,7 @@ function get_sets()
 								right_ear="Bladeborn Earring",
 								left_ring="Mummu Ring",
 								right_ring="Petrov Ring",
-								waist ="Kentarch Belt +1",
-								back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},}
+								waist ="Kentarch Belt +1"}
        
         sets.SharkBite = {ammo="Jukukik Feather",
                                           head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},

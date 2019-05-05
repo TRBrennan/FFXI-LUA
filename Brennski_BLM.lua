@@ -48,7 +48,7 @@ function get_sets()
         ring2 = "Vocane Ring",
         waist = "Fucho-no-obi",
         legs = "Assiduity Pants +1",
-        feet = "Amalric Nails",
+        feet = "Amalric Nails +1",
         back = "Moonbeam Cape"
     }
 
@@ -73,7 +73,7 @@ function get_sets()
         ring2 = "Defending ring",
         waist = "Fucho-no-obi",
         legs = "Assiduity Pants +1",
-        feet = "Amalric Nails",
+        feet = "Amalric Nails +1",
         back = "Moonbeam Cape"
     }
 
@@ -86,7 +86,7 @@ function get_sets()
         ear2 = "Etiolation Earring",
         ear1 = "Barkarole Earring",
         body = "Amalric Doublet",
-        hands = "Amalric Gages",
+        hands = "Amalric Gages +1",
         ring1 = "Mephitas's Ring",
         ring2 = "Defending Ring",
         waist = "Fucho-no-obi",
@@ -122,7 +122,7 @@ function get_sets()
         ring2 = "Vocane Ring",
         waist = "Fucho-no-obi",
         legs = "Assiduity Pants",
-        feet = "Amalric Nails",
+        feet = "Amalric Nails +1",
         back = "Moonbeam Cape"
     }
 
@@ -137,7 +137,7 @@ function get_sets()
         ear2 = "Etiolation Earring",
         ear1 = "Barkarole Earring",
         body = "Amalric Doublet",
-        hands = "Amalric Gages",
+        hands = "Amalric Gages +1",
         ring1 = "Mephitas's Ring",
         ring2 = "Rahab Ringd",
         waist = "Refoccilation Stone",
@@ -354,7 +354,7 @@ function get_sets()
                 '"Mag.Atk.Bns."+14',
             }
         },
-        hands = "Amalric Gages",
+        hands = "Amalric Gages +1",
         ring1 = "Evanescence Ring",
         ring2 = "Archon Ring",
         waist = "Refoccilation Stone",
@@ -378,7 +378,7 @@ function get_sets()
         ear2 = "Static Earring",
         ear1 = "Barkarole Earring",
         body = "Amalric Doublet",
-        hands = "Amalric Gages",
+        hands = "Amalric Gages +1",
         ring1 = "Mephitas's Ring",
         ring2 = "Mujin Band",
         waist = "Refoccilation Stone",
@@ -489,7 +489,7 @@ function get_sets()
             }
         },
         legs = "Psycloth Lappas",
-        feet = "Amalric Nails",
+        feet = "Amalric Nails +1",
         neck = "Voltsurge Torque",
         waist = "Witful Belt",
         left_ear = "Etiolation Earring",
@@ -521,7 +521,7 @@ function get_sets()
                 '"Mag.Atk.Bns."+14',
             }
         },
-        hands = "Amalric Gages",
+        hands = "Amalric Gages +1",
         ring1 = "Evanescence Ring",
         ring2 = "Mephitas's Ring",
         waist = "Fucho-no-obi",

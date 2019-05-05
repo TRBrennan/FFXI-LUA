@@ -72,21 +72,19 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		main = "Sequence",
-		sub = "Colada",
-		ammo = "Ginsen",
-		head = "Ayanmo Zucchetto +1",
-		body = "Ayanmo Corazza +1",
-		neck = "Lissome Necklace",
-		ear1 = "Cessance Earring",
-		ear2 = "Telos Earring",
-		ring1 = "Ilabrat Ring",
-		ring2 = "Chirich Ring",
-		hands = "Ayanmo Manopolas +1",
-		legs = "Carmine Cuisses +1",
-		feet = "Carmine Greaves +1",
-		back = "Grounded Mantle",
-		waist = "Reiki Yotai"
+    ammo="Ginsen",
+    head={ name="Taeon Chapeau", augments={'Accuracy+22','"Triple Atk."+1','AGI+4',}},
+    body="Ayanmo Corazza +2",
+    hands="Aya. Manopolas +1",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Carmine Greaves +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    neck="Lissome Necklace",
+    waist="Reiki Yotai",
+    left_ear="Cessance Earring",
+    right_ear="Telos Earring",
+    left_ring="Ilabrat Ring",
+    right_ring="Chirich Ring",
+    back="Grounded Mantle",
 	}
 
 	sets.TP.Acc = {}
@@ -276,7 +274,7 @@ function get_sets()
 			name = "Merlinic Jubbah",
 			augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}
 		},
-		hands = "Amalric Gages",
+		hands = "Amalric Gages +1",
 		ring1 = "Evanescence Ring",
 		ring2 = "Shiva Ring",
 		waist = "Refoccilation Stone",
@@ -370,7 +368,7 @@ function get_sets()
 			name = "Merlinic Jubbah",
 			augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}
 		},
-		hands = "Amalric Gages",
+		hands = "Amalric Gages +1",
 		ring1 = "Evanescence Ring",
 		ring2 = "Shiva Ring",
 		waist = "Fucho-no-obi",

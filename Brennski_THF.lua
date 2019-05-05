@@ -43,7 +43,7 @@ function get_sets()
                 hands = "Herculean gloves",
                 ring1 = "Defending ring",
                 ring2 = "Vocane Ring",
-                back = "Moonbeam Cape",
+                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Flume belt +1",
                 legs = "Mummu Kecks +2",
                 feet = "Turms Leggings +1"
@@ -64,7 +64,7 @@ function get_sets()
                 hands = "Herculean gloves",
                 ring1 = "Defending ring",
                 ring2 = "Vocane Ring",
-                back = "Moonbeam Cape",
+                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Flume belt +1",
                 legs = "Mummu Kecks +2",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
@@ -87,7 +87,7 @@ function get_sets()
                 hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
                 ring1 = "Ilabrat Ring",
                 ring2 = "Epona's Ring",
-                back = "Canny Cape",
+                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Windbuffet Belt +1",
                 legs = "Samnuha Tights",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
@@ -103,7 +103,7 @@ function get_sets()
                 hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
                 ring1 = "Ilabrat Ring",
                 ring2 = "Epona's ring",
-                back = "Canny Cape",
+                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Windbuffet Belt +1",
                 legs = "Meg. Chausses +2",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
@@ -119,7 +119,7 @@ function get_sets()
                 hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
                 ring1 = "Cacoethic Ring",
                 ring2 = "Chirich Ring",
-                back = "Canny Cape",
+                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Kentarch Belt +1",
                 legs = "Carmine Cuisses +1",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
@@ -157,7 +157,7 @@ function get_sets()
                 hands = "Herculean Gloves",
                 ring1 = "Dark ring",
                 ring2 = "Vocane Ring",
-                back = "Canny Cape",
+                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Flume belt +1",
                 legs = "Mummu Kecks +2",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
@@ -173,7 +173,7 @@ function get_sets()
                 hands = "Plunderer's Armlets +1",
                 ring1 = "Ilabrat Ring",
                 ring2 = "Epona's Ring",
-                back = "Canny Cape",
+                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Chaac Belt",
                 legs = "Samnuha Tights",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
@@ -198,7 +198,7 @@ function get_sets()
                 hands = "Meg. Gloves +2",
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
-                back = "Canny Cape",
+                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Grunfeld Rope",
                 legs = {
                         name = "Herculean Trousers",
@@ -220,7 +220,7 @@ function get_sets()
                 hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
-                back = "Canny Cape",
+                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Fotia belt",
                 legs = "Samnuha Tights",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
@@ -236,7 +236,7 @@ function get_sets()
                 hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
-                back = "Canny Cape",
+                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Fotia belt",
                 legs = "Samnuha Tights",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
@@ -255,7 +255,7 @@ function get_sets()
                 hands = "Meg. Gloves +2",
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
-                back = "Canny Cape",
+                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Grunfeld Rope",
                 legs = {
                         name = "Herculean Trousers",
