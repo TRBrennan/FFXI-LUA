@@ -357,7 +357,7 @@ function get_sets()
 
 	sets.JA = {}
 
-	sets.JA.Footwork = {}
+	sets.JA.Footwork = { feet ="Shukuyu Sune-Ate"}
 
 	sets.JA.Counterstance = {feet = "Hesychast's Gaiters"}
 
@@ -454,6 +454,9 @@ end
 function status_change(new, old)
 	if player.status == "Engaged" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
+		if buffactive["Impetus"] then
+			equip({Body = "Bhikku Cyclas +1"})
+		end
 	else
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 	end

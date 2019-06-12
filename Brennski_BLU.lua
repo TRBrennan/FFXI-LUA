@@ -362,15 +362,7 @@ function get_sets()
             }
         },
         waist = "Grunfeld Rope",
-        legs = {
-            name = "Herculean Trousers",
-            augments = {
-                'Accuracy+12 Attack+12',
-                'Weapon skill damage +3%',
-                'DEX+9',
-                'Accuracy+13',
-            }
-        },
+        legs="Luhlaza Shalwar +2",
         feet = {
             name = "Herculean Boots",
             augments = {
@@ -432,7 +424,7 @@ function get_sets()
                 'Weapon skill damage +10%',
             }
         },
-        legs = "Jhakri Slops +1",
+        legs="Luhlaza Shalwar +2",
         feet = "Amarlic Nails +1"
     }
 
@@ -464,7 +456,7 @@ function get_sets()
             }
         },
         waist = "Fotia belt",
-        legs = "Samnuha Tights",
+        legs="Luhlaza Shalwar +2",
         feet = {
             name = "Herculean Boots",
             augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}
@@ -505,15 +497,7 @@ function get_sets()
             }
         },
         waist = "Grunfeld Rope",
-        legs = {
-            name = "Herculean Trousers",
-            augments = {
-                'Accuracy+12 Attack+12',
-                'Weapon skill damage +3%',
-                'DEX+9',
-                'Accuracy+13',
-            }
-        },
+        legs="Luhlaza Shalwar +2",
         feet = {
             name = "Herculean Boots",
             augments = {
@@ -568,7 +552,7 @@ function get_sets()
         ring2 = 'Shiva Ring',
         waist = "Eschan Stone",
         back = "Cornflower cape",
-        legs = "Jhakri Slops +1",
+        legs="Luhlaza Shalwar +2",
         feet = "Jhakri Pigaches +1"
     }
 
@@ -651,10 +635,7 @@ function get_sets()
             augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}
         },
         hands = "Amalric Gages",
-        legs = {
-            name = "Amalric Slops",
-            augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}
-        },
+        legs="Luhlaza Shalwar +2",
         feet = "Amalric Nails +1",
         neck = "Sanctity Necklace",
         waist = "Eschan Stone",
@@ -695,7 +676,7 @@ function get_sets()
         ring1 = "Kishar Ring",
         ring2 = "Stikini Ring",
         ack = "Cornflower cape",
-        legs = "Amalric Slops",
+        legs="Luhlaza Shalwar +2",
         feet = {
             name = "Herculean Boots",
             augments = {
@@ -762,11 +743,8 @@ function get_sets()
             augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}
         },
         hands = "Volte Bracers",
-        legs = {
-            name = "Amalric Slops",
-            augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}
-        },
-        feet = "Amarlic Nails +1"
+        legs="Luhlaza Shalwar +2",
+        feet = "Amarlic Nails +1",
         neck = "Sanctity Necklace",
         waist = "Chaac Belt",
         left_ear = "Regal Earring",
@@ -792,7 +770,7 @@ function get_sets()
             name = "Adhemar Wristbands",
             augments = {'DEX+10', 'AGI+10', 'Accuracy+15',}
         },
-        legs = "Samnuha Tights",
+        legs="Luhlaza Shalwar +2",
         feet = "Rawhide Boots",
         neck = "Mirage Stole +1",
         waist = "Chuq'aba Belt",

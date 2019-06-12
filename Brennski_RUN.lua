@@ -324,7 +324,7 @@ function get_sets()
 
 	sets.Utility.Phalanx = {
 		ammo = "Sapience Orb",
-		head = {name = "Fu. Bandeau +1", augments = {'Enhances "Battuta" effect'}},
+		Head ="Fu. Bandeau +2",
 		neck = "Incanter's Torque",
 		left_ear = "Andoaa Earring",
 		right_ear = "Genmei earring",
@@ -483,7 +483,7 @@ function get_sets()
 		legs = {name = "Futhark Trousers +1", augments = {'Enhances "Inspire" effect'}}
 	}
 
-	sets.JA.Battuta = {head = {name = "Fu. Bandeau +1", augments = {'Enhances "Battuta" effect'}}, hands = "Turms Mittens"}
+	sets.JA.Battuta = {Head ="Fu. Bandeau +2", hands = "Turms Mittens"}
 
 	sets.JA.BattutaActive = {hands = "Turms Mittens"}
 

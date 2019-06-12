@@ -119,7 +119,7 @@ function get_sets()
 		neck = "Warrior's bead necklace +1",
 		ear2 = "Brutal earring",
 		ear1 = "Cessance earring",
-		body = "Agoge Lorica +3",
+		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
 		hands = "Sulev. Gauntlets +2",
 		ring1 = "Flamma ring",
 		ring2 = "Chirich ring",
@@ -132,7 +132,7 @@ function get_sets()
 	sets.TP.Chango = {
 		ammo = "Ginsen",
 		head = "Flam. Zucchetto +2",
-		body = "Agoge Lorica +3",
+		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
 		--hands="Emicho Gauntlets +1",
 		hands = "Sulev. Gauntlets +2",
 		legs = "Pumm. Cuisses +3",
@@ -168,7 +168,7 @@ function get_sets()
 		neck = "Warrior's bead necklace +1",
 		ear2 = "Brutal earring",
 		ear1 = "Cessance earring",
-		body = "Agoge Lorica +3",
+		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
 		hands = "Emicho Gauntlets +1",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Flamma ring",
@@ -272,7 +272,7 @@ function get_sets()
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = WSD_Back,
-		waist = "Fotia belt",
+		waist = "Ioskeha Belt +1",
 		legs = WSD_Legs,
 		feet = "Sulevia's leggings +2"
 	}

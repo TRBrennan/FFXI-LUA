@@ -524,6 +524,8 @@ function midcast(spell, act)
                 end
         elseif spell.english == "Utsusemi: Ni" or spell.english == "Utsusemi: San" then
                 equip(sets.NINMagic.Utsusemi)
+		elseif spell.action_type =="Magic" then
+			equip(sets.TP.TH)
         end
 end
 
