@@ -223,7 +223,7 @@ function init_gear_sets()
     sets.precast.JA["Astral Flow"] = {head = "Glyphic Horn +1"}
 
     sets.precast.JA["Elemental Siphon"] = {
-        main = "Was",
+        main = "Gridarvor",
         sub = "Vox grip",
         ammo = "Esper Stone",
         head = "Telchine cap",
@@ -502,7 +502,7 @@ function init_gear_sets()
     sets.midcast.Pet.DebuffBloodPactWard.Acc = sets.midcast.Pet.DebuffBloodPactWard
 
     sets.midcast.Pet.PhysicalBloodPactRage = {
-        main = "Was",
+        main = "Gridarvor",
         sub = "Elan Strap",
         ammo = "Sancus Sachet +1",
         head = "Helios Band",
@@ -537,7 +537,7 @@ function init_gear_sets()
 
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = sets.midcast.Pet.PhysicalBloodPactRage
 
-    sets.midcast.Pet.DoubleRagePacts = {}
+    sets.midcast.Pet.DoubleRagePacts = sets.midcast.Pet.PhysicalBloodPactRage
 
     sets.midcast.Pet.MagicalBloodPactRage = {
         main = {

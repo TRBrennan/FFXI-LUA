@@ -49,7 +49,7 @@ function get_sets()
 
     sets.precast.FastCast = {
         main = "Sucellus",
-        sub = "Genbu's Shield",
+        sub = "Genmei Shield",
         range = "Dunna",
         head = "Nahtirah Hat",
         neck = "Voltsurge Torque",
@@ -305,7 +305,7 @@ function get_sets()
 
     sets.idle = {
         main = "Bolelabunga",
-        sub = "Genbu's Shield",
+        sub = "Genmei Shield",
         range = "Dunna",
         head = "Befouled Crown",
         neck = "Sanctity Necklace",
@@ -323,7 +323,7 @@ function get_sets()
 
     sets.idle.PDT = {
         main = "Bolelabunga",
-        sub = "Genbu's Shield",
+        sub = "Genmei Shield",
         range = "Dunna",
         head = "Befouled Crown",
         neck = "Bagua Charm +1",
@@ -343,7 +343,7 @@ function get_sets()
     sets.idle.Pet = {
         --main="Sucellus",
         main = "Idris",
-        sub = "Genbu's Shield",
+        sub = "Genmei Shield",
         range = "Dunna",
         head = "Azimuth Hood +1",
         body = "Mallquis Saio +2",
@@ -362,7 +362,7 @@ function get_sets()
     sets.idle.PDT.Pet = {
         --main="Sucellus",
         main = "Idris",
-        sub = "Genbu's Shield",
+        sub = "Genmei Shield",
         range = "Dunna",
         head = "Azimuth Hood +1",
         body = "Mallquis Saio +2",
@@ -386,7 +386,7 @@ function get_sets()
 
     sets.idle.Town = {
         main = "Bolelabunga",
-        sub = "Genbu's Shield",
+        sub = "Genmei Shield",
         range = "Dunna",
         head = {
             name = "Merlinic Hood",
@@ -407,7 +407,7 @@ function get_sets()
 
     sets.idle.Weak = {
         main = "Bolelabunga",
-        sub = "Genbu's Shield",
+        sub = "Genmei Shield",
         range = "Dunna",
         head = {
             name = "Merlinic Hood",

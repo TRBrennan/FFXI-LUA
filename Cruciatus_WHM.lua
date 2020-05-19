@@ -28,7 +28,7 @@ Gear_Debug = 0
 function get_sets()
     sets.aftercast_Idle_refresh = {
         main = "Bolelabunga",
-        sub = "Genbu's Shield",
+        sub = "Genmei Shield",
         ammo = "Homiliary",
         head = "Befouled Crown",
         body = "Kaykaus Bliaut",
@@ -56,6 +56,8 @@ function get_sets()
     sets.aftercast_Move = sets.aftercast_Idle_refresh
 
     sets.aftercast_Idle = sets.aftercast_Idle_refresh
+	
+	sets.aftercast_engaged = sets.aftercast_Idle_refresh
 
     sets.precast_Cure = {
         main = {
@@ -137,7 +139,7 @@ function get_sets()
 
     sets.Resting = {
         main = "Queller rod",
-        sub = "Genbu's shield",
+        sub = "Genmei Shield",
         ammo = "Incantor Stone",
         head = "Befouled crown",
         neck = "Loricate torque +1",
@@ -454,17 +456,23 @@ end
 -- --- Aftercast ---
 
 function aftercast(spell)
-    if Gear_Debug == 0 then
+    if player.status == "Engaged" then
+        equip(sets["sets.aftercast.engaged"])
+    elseif Gear_Debug == 0 then
         equip(sets.aftercast_Idle)
         send_command("@input /echo Idle Set")
     else
+		equip(sets.aftercast_Idle)
+        send_command("@input /echo Idle Set")
     end
 end
 
 -- Status Change - ie. Resting
 
 function status_change(new, tab)
-    if new == "Resting" then
+    if player.status == "Engaged" then
+        equip(sets["sets.aftercast_engaged"])
+    elseif new == "Resting" then
         equip(sets["Resting"])
     else
         equip(sets["aftercast_Idle"])

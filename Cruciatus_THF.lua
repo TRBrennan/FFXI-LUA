@@ -134,7 +134,7 @@ function get_sets()
                                                                           
         sets.Evisceration = {    ammo="Yamarang",
 								head="Mummu Bonnet +1",
-								body="Mummu Jacket +2",
+								body="Meg. Cuirie +1",
 								hands="Mummu Wrists +2",
 								legs="Mummu Kecks +2",
 								feet="Mummu Gamash. +2",

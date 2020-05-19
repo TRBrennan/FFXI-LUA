@@ -26,7 +26,7 @@ function get_sets()
 
 	sets.Idle.Standard = {
 		main = "Bolelabunga",
-		sub = "Genbu's Shield",
+		sub = "Genmei Shield",
 		ammo = "Homiliary",
 		head = "Befouled Crown",
 		body = "Jhakri Robe +2",
@@ -47,7 +47,7 @@ function get_sets()
 
 	sets.Idle.DT = {
 		main = "Bolelabunga",
-		sub = "Genbu's Shield",
+		sub = "Genmei Shield",
 		ammo = "Homiliary",
 		head = "Befouled Crown",
 		body = "Jhakri Robe +2",
