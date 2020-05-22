@@ -22,6 +22,7 @@ function get_sets()
 	sets.Weapon_melee.Prange = {}
 	sets.Weapon_melee.Mrange = {}
 	
+	sets.Utility ={}
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
 	--Idle Sets--
 	sets.Idle = {}
