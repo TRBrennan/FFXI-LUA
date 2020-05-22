@@ -21,6 +21,8 @@ function get_sets()
 	sets.Weapon_melee.Melee = {}
 	sets.Weapon_melee.Prange = {}
 	sets.Weapon_melee.Mrange = {}
+	
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
 	--Idle Sets--
 	sets.Idle = {}
 	sets.Idle.index = {"Standard", "DT"}
@@ -554,6 +556,45 @@ function status_change(new, old)
 		)
 	else
 		equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]]))
+	end
+end
+
+function buff_change(buff, gain)
+	if (buff == "terror" or buff == "stun" or (buff == "sleep" or buff == "lullaby")) then
+		if gain then
+			if player.status == "Engaged" then
+				equip(sets.Idle.DT)
+			elseif player.status == "Idle" then
+				equip(sets.Idle.DT)
+			end
+		else
+			if player.status == "Engaged" then
+				equip(
+				set_combine(
+				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]],
+				sets.Weapon_melee[sets.Weapon_melee.index[Wm_ind]]
+			)
+		)
+			elseif player.status == "Idle" then
+				equip(sets.Idle[sets.Idle.index[Idle_ind]])
+			end
+		end
+	end
+	if buff == "doom" or buff == "curse" then
+		if gain then
+			equip(sets.Utility.Doomed)
+		else
+			if player.status == "Engaged" then
+			equip(
+				set_combine(
+				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]],
+				sets.Weapon_melee[sets.Weapon_melee.index[Wm_ind]]
+			)
+		)
+			elseif player.status == "Idle" then
+				equip(sets.Idle[sets.Idle.index[Idle_ind]])
+			end
+		end
 	end
 end
 
