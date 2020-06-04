@@ -80,7 +80,7 @@ function get_sets()
         back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}}
     }
 
-    sets.precast_FastCast = {
+    sets.precast_FastCafcurest = {
         ammo = "Incantor Stone",
         head = "Nahtirah Hat",
         body = "Inyanga Jubbah +2",
@@ -294,7 +294,7 @@ function get_sets()
         hands = "Theophany Mitts +2",
         legs = "Ebers Pant. +1",
         feet = "Kaykaus Boots",
-        neck = "Nodens Gorget",
+        neck = "Cleric's Torque",
         waist = "Channeler's Stone",
         left_ear = "Nourish. Earring +1",
         right_ear = "Glorious Earring",

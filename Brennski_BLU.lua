@@ -997,7 +997,7 @@ function get_sets()
 end
 
 function precast(spell)
-    if spell.type == 'Magic' then
+    if spell.action_type == 'Magic' then
         equip(sets.precast.FC.Standard)
     elseif spell.english == 'Azure Lore' then
         equip(sets.JA.AzureLore)
@@ -1029,7 +1029,7 @@ function precast(spell)
 end
 
 function midcast(spell, act)
-    if spell.english == 'magic' then
+    if spell.action_type == 'magic' then
         equip(sets.BlueMagic.BlueMagic)
     elseif spell.english == 'Vertical Cleave' or spell.english == 'Death Scissors' or spell.english == 'Empty Thrash' or spell.english == 'Dimensional Death' or spell.english == 'Quadrastrike' or spell.english == 'Bloodrake' or spell.english == 'Disseverment' or spell.english == 'Hysteric Barrage' or spell.english == 'Frenetic Rip' or spell.english == 'Seedspray' or spell.english == 'Vanity Dive' or spell.english == 'Goblin Rush' or spell.english == 'Paralyzing Triad' or spell.english == 'Thrashing Assault' or spell.english == 'Benthic Typhoon' or spell.english == 'Final Sting' or spell.english == 'Spiral Spin' or spell.english == 'Whirl of Rage' or spell.english == 'Quad. Continuum' or spell.english == 'Delta Thrust' or spell.english == 'Cannonball' or spell.english == 'Heavy Strike' or spell.english == 'Sinker Drill' then
         equip(sets.BlueMagic.Physical)

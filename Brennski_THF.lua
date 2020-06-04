@@ -177,6 +177,7 @@ function get_sets()
                 waist = "Chaac Belt",
                 legs = "Samnuha Tights",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+				
         }
 
         --Weaponskill Sets--
@@ -232,7 +233,7 @@ function get_sets()
                 neck = "Fotia gorget",
                 ear1 = "Moonshade Earring",
                 ear2 = "Sherida Earring",
-                body = "Herculean Vest",
+                body = "Adhemar Jacket +1",
                 hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",

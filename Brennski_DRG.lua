@@ -396,7 +396,7 @@ function get_sets()
 end
 
 function precast(spell)
-	if spell.type == "Magic" then
+	if spell.action_type =="Magic" then
 		equip(sets.precast.FC.Standard)
 	elseif spell.english == "Stardiver" then
 		equip(sets.Stardiver.Attack)

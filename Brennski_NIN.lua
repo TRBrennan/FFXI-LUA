@@ -509,7 +509,7 @@ function precast(spell)
 			cancel_spell()
 			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
 		end
-	elseif spell.type == "Magic" then
+	elseif spell.action_type =="Magic" then
 		equip(sets.precast.FC)
 	end
 end
@@ -526,7 +526,7 @@ function midcast(spell, act)
 			spell.english == "Gekka: Ichi"
 	 then
 		equip(sets.Magic.Self)
-	elseif spell.type == "Magic" then
+	elseif spell.action_type =="Magic" then
 		equip(sets.Maigc.Nuke)
 		if spell.element == world.day_element or spell.element == world.weather_element then
 			equip(sets.Obi)

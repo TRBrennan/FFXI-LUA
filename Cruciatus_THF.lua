@@ -107,7 +107,7 @@ function get_sets()
 									legs="Meg. Chausses +2",
 									feet={ name="Herculean Boots", augments={'Accuracy+14 Attack+14','"Triple Atk."+2','DEX+2','Accuracy+12','Attack+11',}},
 									neck="Anu Torque",
-									waist="Kentarch Belt +1",
+									waist="Chaac Belt",
 									left_ear="Sherida Earring",
 									right_ear="Suppanomimi",
 									left_ring="Mummu Ring",

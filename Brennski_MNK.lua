@@ -70,11 +70,11 @@ function get_sets()
 	TP_ind = 1
 	sets.TP.Standard = {
 		ammo = "Ginsen",
-		head = {name = "Adhemar Bonnet +1", augments = {"DEX+12", "AGI+12", "Accuracy+20"}},
-		body = {name = "Adhemar Jacket +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
+		head ="Adhemar Bonnet +1",
+		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		legs = "Bhikku Hose +1",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		legs = "Hesychast's Hose +2",
+		feet = "Anchorite's Gaiters +3",
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
 		left_ear = "Sherida Earring",
@@ -87,10 +87,10 @@ function get_sets()
 	sets.TP.AccuracyMid = {
 		ammo = "Ginsen",
 		head = {name = "Dampening Tam", augments = {"DEX+8", "Accuracy+14", "Mag. Acc.+13", "Quadruple Attack +1"}},
-		body = {name = "Adhemar Jacket +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
+		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		legs = "Ken. Hakama",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		legs = "Hesychast's Hose +2",
+		feet = "Anchorite's Gaiters +3",
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
 		left_ear = "Cessance Earring",
@@ -105,13 +105,13 @@ function get_sets()
 		head = {name = "Dampening Tam", augments = {"DEX+8", "Accuracy+14", "Mag. Acc.+13", "Quadruple Attack +1"}},
 		body = "Ashera Harness",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		legs = "Ken. Hakama",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		legs = "Hesychast's Hose +2",
+		feet = "Anchorite's Gaiters +3",
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
 		left_ear = "Cessance Earring",
 		right_ear = "Telos Earring",
-		left_ring = "Ilabrat Ring",
+		left_ring = "Regal Ring",
 		right_ring = "Niqmaddu Ring",
 		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
 	}
@@ -138,7 +138,7 @@ function get_sets()
 		body = "Ashera Harness",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Mummu Kecks +2",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		feet = "Anchorite's Gaiters +3",
 		neck = "Loricate Torque +1",
 		waist = "Moonbow Belt",
 		left_ear = "Cessance Earring",
@@ -154,15 +154,15 @@ function get_sets()
 	sets.WS.VS = {
 		ammo = "Knobkierrie",
 		head = "Adhemar Bonnet +1",
-		body = {name = "Herculean Vest", augments = {"Accuracy+21 Attack+21", "Weapon skill damage +4%", "DEX+4", "Attack+5"}},
-		hands = "Anchorite's Gloves +3",
+		body = "Ken. Samue",
+		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Ken. Hakama",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
-		neck = "Mnk. Nodowa +1",
-		waist = "Moonbow Belt",
+		neck = "Fotia Gorget",
+		waist = "Foita Belt",
 		left_ear = "Sherida Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
-		left_ring = "Regal Ring",
+		left_ring = "Regal Ring1",
 		right_ring = "Niqmaddu Ring",
 		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
 	}
@@ -171,7 +171,7 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = "Hes. Crown +3",
 		body = {name = "Herculean Vest", augments = {"Accuracy+21 Attack+21", "Weapon skill damage +4%", "DEX+4", "Attack+5"}},
-		hands = "Anchorite's Gloves +3",
+		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Ken. Hakama",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
 		neck = "Mnk. Nodowa +1",
@@ -186,7 +186,7 @@ function get_sets()
 	sets.WS.AF = {
 		ammp = "Floestone",
 		head = "Hes. Crown +3",
-		neck = "Caro Necklace",
+		neck = "Mnk. Nodowa +1",
 		ear1 = "Moonshade Earring",
 		ear2 = "Telos Earring",
 		body = "Adhemar Jacket +1",
@@ -203,15 +203,12 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = "Hes. Crown +3",
 		body = {name = "Herculean Vest", augments = {"Accuracy+21 Attack+21", "Weapon skill damage +4%", "DEX+4", "Attack+5"}},
-		hands = "Anchorite's Gloves +3",
-		legs = "Hiza. Hizayoroi +2",
-		feet = {
-			name = "Herculean Boots",
-			augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}
-		},
+		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
+		legs = "Ken. Hakama",
+		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
-		left_ear = "Ishvara Earring",
+		left_ear = "Sherida Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
 		left_ring = "Regal Ring",
 		right_ring = "Niqmaddu Ring",
@@ -221,16 +218,13 @@ function get_sets()
 	sets.WS.HF = {
 		ammo = "Knobkierrie",
 		head = "Hes. Crown +3",
-		body = {name = "Herculean Vest", augments = {"Accuracy+21 Attack+21", "Weapon skill damage +4%", "DEX+4", "Attack+5"}},
-		hands = "Anchorite's Gloves +3",
-		legs = "Hiza. Hizayoroi +2",
-		feet = {
-			name = "Herculean Boots",
-			augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}
-		},
+		body = "Ken. Samue",
+		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
+		legs = "Ken. Hakama",
+		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
-		left_ear = "Ishvara Earring",
+		left_ear = "Sherida Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
 		left_ring = "Regal Ring",
 		right_ring = "Niqmaddu Ring",
@@ -240,16 +234,13 @@ function get_sets()
 	sets.WS.TK = {
 		ammo = "Knobkierrie",
 		head = "Hes. Crown +3",
-		body = {name = "Herculean Vest", augments = {"Accuracy+21 Attack+21", "Weapon skill damage +4%", "DEX+4", "Attack+5"}},
-		hands = "Anchorite's Gloves +3",
-		legs = "Hiza. Hizayoroi +2",
-		feet = {
-			name = "Herculean Boots",
-			augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}
-		},
+		body = "Ken. Samue",
+		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
+		legs = "Ken. Hakama",
+		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
-		left_ear = "Ishvara Earring",
+		left_ear = "Sherida Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
 		left_ring = "Regal Ring",
 		right_ring = "Niqmaddu Ring",
@@ -386,7 +377,7 @@ function get_sets()
 end
 
 function precast(spell)
-	if spell.type == "Magic" then
+	if spell.action_type =="Magic" then
 		equip(sets.precast.FC.Standard)
 	elseif spell.english == "Footwork" then
 		equip(sets.JA.Footwork)

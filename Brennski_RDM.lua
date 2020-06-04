@@ -67,27 +67,41 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "Acc"}
-	--1=Standard, 2=Acc--
+	sets.TP.index = {"Standard", "EnSpell"}
+	--1=Standard, 2=EnSpell--
 
 	TP_ind = 1
 	sets.TP.Standard = {
     ammo="Ginsen",
     head={ name="Taeon Chapeau", augments={'Accuracy+22','"Triple Atk."+1','AGI+4',}},
-    body="Ayanmo Corazza +2",
-    hands="Aya. Manopolas +1",
+     body="Ayanmo Corazza +2",
+    hands="Aya. Manopolas +2",
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
     feet={ name="Carmine Greaves +1", augments={'Accuracy+12','DEX+12','MND+20',}},
     neck="Lissome Necklace",
-    waist="Reiki Yotai",
+    waist="Kentarch Belt +1",
     left_ear="Cessance Earring",
     right_ear="Telos Earring",
     left_ring="Ilabrat Ring",
     right_ring="Chirich Ring",
-    back="Grounded Mantle",
+    back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 	}
 
-	sets.TP.Acc = {}
+	sets.TP.EnSpell = {
+	ammo="Ginsen",
+    head={ name="Taeon Chapeau", augments={'Accuracy+22','"Triple Atk."+1','AGI+4',}},
+    body="Ayanmo Corazza +2",
+    hands="Aya. Manopolas +2",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Carmine Greaves +1", augments={'Accuracy+12','DEX+12','MND+20',}},
+    neck="Lissome Necklace",
+    waist="Kentarch Belt +1",
+    left_ear="Sherida Earring",
+    right_ear="Hollow Earring",
+    left_ring="Ilabrat Ring",
+    right_ring="Chirich Ring",
+    back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
+	}
 
 	sets.MeleeMode = {}
 	sets.MeleeMode.Index = {"NotMelee", "Melee"}
@@ -119,7 +133,7 @@ function get_sets()
 		ring1 = "Shiva Ring",
 		ring2 = "Acumen Ring",
 		waist = "Refoccilation Stone",
-		back = "Sucellos's Cape",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		legs = {
 			name = "Merlinic Shalwar",
 			augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "Mag. crit. hit dmg. +1%", "Mag. Acc.+11", '"Mag.Atk.Bns."+13'}
@@ -136,11 +150,11 @@ function get_sets()
 		ammo = "Pemphredo Tathlum",
 		neck = "Mizukage-no-Kubikazari",
 		ear2 = "Friomisi earring",
-		ear1 = "Static Earring",
+		ear1 = "Regal Earring",
 		ring1 = "Locus Ring",
 		ring2 = "Mujin Band",
 		waist = "Refoccilation Stone",
-		back = "Sucellos's Cape",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		head = {
 			name = "Merlinic Hood",
 			augments = {'Mag. Acc.+18 "Mag.Atk.Bns."+18', "Magic burst dmg.+7%", "CHR+7", "Mag. Acc.+12"}
@@ -149,7 +163,7 @@ function get_sets()
 			name = "Merlinic Jubbah",
 			augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}
 		},
-		hands = {name = "Amalric Gages", augments = {"INT+10", "Mag. Acc.+15", '"Mag.Atk.Bns."+15'}},
+		hands = "Amalric Gages +1",
 		legs = {
 			name = "Merlinic Shalwar",
 			augments = {'Mag. Acc.+12 "Mag.Atk.Bns."+12', "Magic burst dmg.+8%", "MND+5", '"Mag.Atk.Bns."+12'}
@@ -176,7 +190,7 @@ function get_sets()
 		ring1 = "Stikini Ring",
 		ring2 = "Sirona's Ring",
 		waist = "Olympus Sash",
-		back = "Ghostfyre Cape",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		legs = "Telchine Braconi",
 		feet = "Lethargy Houseaux +1"
 	}
@@ -201,7 +215,7 @@ function get_sets()
 		ring1 = "Stikini Ring",
 		ring2 = "Kishar Ring",
 		waist = "Luminary Sash",
-		back = "Sucellos's Cape",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		legs = "Chironic Hose",
 		feet = "Skaoi Boots"
 	}
@@ -219,7 +233,7 @@ function get_sets()
 		ring1 = "Stikini Ring",
 		ring2 = "Kishar Ring",
 		waist = "Luminary Sash",
-		back = "Sucellos's Cape",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		legs = "Psycloth Lappas",
 		feet = "Skaoi Boots"
 	}
@@ -257,7 +271,7 @@ function get_sets()
 		ring1 = "Stikini Ring",
 		ring2 = "Kishar Ring",
 		waist = "Luminary Sash",
-		back = "Sucellos's Cape",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		legs = "Telchine Braconi",
 		feet = "Telchine Pigaches"
 	}
@@ -278,7 +292,7 @@ function get_sets()
 		ring1 = "Evanescence Ring",
 		ring2 = "Shiva Ring",
 		waist = "Refoccilation Stone",
-		back = "Sucellos's Cape",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		legs = {
 			name = "Merlinic Shalwar",
 			augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "Mag. crit. hit dmg. +1%", "Mag. Acc.+11", '"Mag.Atk.Bns."+13'}
@@ -306,7 +320,7 @@ function get_sets()
 			augments = {"Accuracy+6", '"Fast Cast"+6', "MND+8", "Mag. Acc.+15", '"Mag.Atk.Bns."+5'}
 		},
 		legs = "Psycloth Lappas",
-		back = "Sucellos's Cape"
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 	}
 
 	sets.Magic.Refresh = {legs = "Lethargy Fuseau", waist = "Gishdubar Sash", head = "", body = "Atrophy Tabard +2"}
@@ -355,13 +369,15 @@ function get_sets()
 	sets.Utility = {}
 
 	sets.Utility.Weather = {waist = "Hachirin-no-obi"}
+	
+	sets.Utility.TH = {waist = "Chaac Belt", Hands = "Volte Bracers"}
 
 	sets.Utility.DrainAspir = {
 		main = "Grioavolr",
 		ammo = "Pemphredo Tathlum",
 		sub = "Enki Strap",
 		head = "Pixie Hairpin +1",
-		neck = "Sanctity Necklace",
+		neck = "Erra Pendant",
 		ear2 = "Friomisi earring",
 		ear1 = "Hecate's Earring",
 		body = {
@@ -370,9 +386,9 @@ function get_sets()
 		},
 		hands = "Amalric Gages +1",
 		ring1 = "Evanescence Ring",
-		ring2 = "Shiva Ring",
+		ring2 = "Kishar Ring",
 		waist = "Fucho-no-obi",
-		back = "Izdubar Mantle",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		legs = "Merlinic Shalwar",
 		feet = "Merlinic Crackows"
 	}
@@ -385,7 +401,7 @@ function get_sets()
 
 	sets.JA = {}
 
-	sets.JA.CS = {body = "Duelist's Tabard +2"}
+	sets.JA.CS = {body = "Vitiation Tabard"}
 
 	sets.JA.Sab = {hands = "Lethargy Gantherots +1"}
 
@@ -404,8 +420,8 @@ function get_sets()
 		ammo = "Yetshila ",
 		head = "Taeon Chapeau",
 		neck = "Fotia gorget",
-		ear1 = "Moonshade Earring",
-		ear2 = "Sherida Earring",
+		right_ear = "Moonshade Earring",
+		left_ear = "Sherida Earring",
 		body = "Ayanmo Corazza +1",
 		hands = "Jhakri Cuffs +2",
 		ring1 = "Begrudging Ring",
@@ -536,6 +552,9 @@ function midcast(spell, act)
 		equip(sets.Nuke[sets.Nuke.index[Nuke_ind]])
 		if spell.element == world.day_element or spell.element == world.weather_element then
 			equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]], sets.Utility.Weather))
+		end
+		if spell.english == "Aero" then
+			equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]], sets.Utility.TH))
 		end
 	end
 

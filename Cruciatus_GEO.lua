@@ -792,7 +792,7 @@ end
 -------------------------------------------------------------------------------------------------------------------
 
 function job_get_spell_map(spell, default_spell_map)
-    if spell.type == "Magic" then
+    if spell.action_type =="Magic" then
         if spell.skill == "Enfeebling Magic" then
             if spell.type == "WhiteMagic" then
                 return "MndEnfeebles"
@@ -843,7 +843,7 @@ function display_current_job_state(eventArgs)
 end
 
 function job_post_midcast(spell, action, spellMap, eventArgs)
-    if spell.type == "Magic" then
+    if spell.action_type =="Magic" then
         if spell.element == world.weather_element or spell.element == world.day_element then
             equip(sets.obi[spell.element])
         end

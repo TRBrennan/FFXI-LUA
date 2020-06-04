@@ -126,7 +126,7 @@ function get_sets()
 	sets.TP.TankTP = {
 		ammo = "Yamarang",
 		head = "Adhemar Bonnet +1",
-		neck = "Lissome necklace",
+		neck = "Futhark Torque +1",
 		left_ear = "Telos Earring",
 		right_ear = "Sherida earring",
 		body = "Ashera Harness",
@@ -568,7 +568,7 @@ function get_sets()
 end
 
 function precast(spell)
-	if spell.type == "Magic" then
+	if spell.action_type =="Magic" then
 		equip(sets.precast.FC.Standard)
 	elseif spell.skill == "Enhancing Magic" then
 		equip(sets.precast.FC.Enhancing)
