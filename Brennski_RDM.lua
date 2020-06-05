@@ -177,7 +177,7 @@ function get_sets()
 	--Enhancing Sets--
 	sets.Enhancing = {}
 
-	sets.Enhancing.Normal = {
+	sets.Enhancing.Duration = {
 		main = "Oranyan",
 		sub = "Enki Strap",
 		ammo = "Regal Gem",
@@ -193,6 +193,22 @@ function get_sets()
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		legs = "Telchine Braconi",
 		feet = "Lethargy Houseaux +1"
+	}
+	
+	sets.Enhancing.Pot ={		
+		ammo="Regal Gem",
+		head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
+		body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},
+		hands={ name="Vitiation Gloves", augments={'Enhancing Magic duration',}},
+		legs={ name="Telchine Braconi", augments={'"Fast Cast"+2','Enh. Mag. eff. dur. +8',}},
+		feet="Leth. Houseaux +1",
+		neck="Incanter's Torque",
+		waist="Olympus Sash",
+		left_ear="Andoaa Earring",
+		right_ear="Etiolation Earring",
+		right_ring="Stikini Ring",
+		left_ring="Defending Ring",
+		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 	}
 
 	--Enfeebling Sets--
@@ -497,22 +513,31 @@ function precast(spell)
 			spell.english == "Regen V"
 	 then
 		equip(sets.precast.FC.Regen)
+		send_command("@input /echo Regen FC Set")
 	elseif spell.english == "Chainspell" then
 		equip(sets.JA.CS)
+		send_command("@input /echo Chainspell Set")
 	elseif spell.english == "Stun" then
 		equip(sets.magic.Stun)
+		send_command("@input /echo Stun Set")
 	elseif spell.english == "Chant du Cygne" then
 		equip(sets.WS.CDC)
+		send_command("@input /echo CDC Set")
 	elseif spell.english == "Savage Blade" then
 		equip(sets.WS.Savage)
+		send_command("@input /echo Savage Blade Set")
 	elseif spell.english == "Vorpal Blade" then
 		equip(sets.WS.Vorpal)
+		send_command("@input /echo Vorpal Blade Set")
 	elseif spell.english == "Requiescat" then
 		equip(sets.WS.Req)
+		send_command("@input /echo Requisecat Set")
 	elseif spell.english == "Sanguine Blade" then
 		equip(sets.Magic.Dark)
+		send_command("@input /echo Sanguine Blade Set")
 	elseif spell.english == "Composure" then
 		equip(sets.JA.Composure)
+		send_command("@input /echo Composure Set")
 	end
 end
 
@@ -520,21 +545,47 @@ function midcast(spell, act)
 	if spell.skill == "Enhancing Magic" then
 		equip(sets.Enhancing.Normal)
 		if buffactive["Composure"] and spell.target.type == "PLAYER" then
-			equip(set_combine(sets.Enhancing.Normal, sets.JA.Composure))
+			equip(set_combine(sets.Enhancing.Duration, sets.JA.Composure))
+			send_command("@input /echo Enhancing Duration + Composure Set")
 		end
 		if buffactive.Composure and spell.target.type == "PLAYER" then
-			equip(set_combine(sets.Enhancing.Normal, sets.JA.Composure))
+			equip(set_combine(sets.Enhancing.Duration, sets.JA.Composure))
+			send_command("@input /echo Enhancing Duration + Composure Set")
 		end
+		if
+		spell.english == "Regen" or spell.english == "Regen II" or spell.english == "Regen III" or spell.english == "Regen IV" or
+			spell.english == "Regen V"
+		then
+		equip(set_combine(sets.Enhancing.Duration, sets.Magic.Regen))
+		send_command("@input /echo Enhancing Duration + Regen Set")
+		end
+		
+		if spell.english == "Refresh" or spell.english == "Refresh II" or spell.english == "Refresh III" then
+			equip(set_combine(sets.Enhancing.Duration, sets.Magic.Refresh))
+			send_command("@input /echo Enhancing Duration + Refresh Set")
+		end
+	
+		if spell.english == "Temper" or spell.english == "Temper II" or spell.english == "Phalanx" or spell.english == "Phalanx II" or spell.english =="Enblizzard" or spell.english =="Enfire" 
+		or spell.english =="Enaero" or spell.english =="Enthunder" or spell.english =="Enstone" or spell.english =="Enwater" or spell.english =="Enblizzard II" or spell.english =="Enfire II" 
+		or spell.english =="Enaero II" or spell.english =="Enthunder II" or spell.english =="Enstone II" or spell.english =="Enwater II" then
+			equip(sets.Enhancing.Pot)
+			send_command("@input /echo Enhancing Potency Set")
+		end
+		
 	end
+	
 	if spell.english == "Stun" then
 		equip(sets.Magic.Stun)
+		send_command("@input /echo Stun MidCast Set")
 	end
 	if spell.skill == "Healing Magic" then
 		equip(sets.Magic.Healing)
+		send_command("@input /echo Healing Set")
 	end
 
 	if spell.skill == "Dark Magic" then
 		equip(sets.Magic.Dark)
+		send_command("@input /echo Dark Set")
 	end
 
 	if spell.skill == "Enfeebling Magic" then
@@ -542,11 +593,10 @@ function midcast(spell, act)
 		if buffactive["Saboteur"] then
 			equip(set_combine(sets.Enfeebling.Pot, sets.JA.Sab))
 		end
-	end
-
-	if spell.english == "Dia III" or spell.english == "Slow II" then
+		if spell.english == "Dia III" or spell.english == "Slow II" then
 		equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]], sets.Utility.Dia))
-	end
+		end
+	end	
 
 	if spell.skill == "Elemental Magic" then
 		equip(sets.Nuke[sets.Nuke.index[Nuke_ind]])
@@ -558,42 +608,37 @@ function midcast(spell, act)
 		end
 	end
 
-	if
-		spell.english == "Regen" or spell.english == "Regen II" or spell.english == "Regen III" or spell.english == "Regen IV" or
-			spell.english == "Regen V"
-	 then
-		equip(set_combine(sets.Enhancing.Normal, sets.Magic.Regen))
-	end
-
-	if spell.english == "Refresh" or spell.english == "Refresh II" or spell.english == "Refresh III" then
-		equip(set_combine(sets.Enhancing.Normal, sets.Magic.Refresh))
-	end
-
 	if spell.english == "Drain" or spell.english == "Drain II" or spell.english == "Aspir II" or spell.english == "Aspir" then
 		equip(sets.Utility.DrainAspir)
+		send_command("@input /echo DarinAspir Set")
 	end
 end
 
 function aftercast(spell)
 	if player.status == "Engaged" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
+		send_command("@input /echo TP Set")
 		if buffactive["doom"] or buffactive["curse"] then
 			equip(set_combine(sets.TP[sets.TP.index[TP_ind]], sets.Utility.Doomed))
 			status_change(player.status)
+			send_command("@input /echo TP + Doomed Set")
 		end
 		if buffactive["Terror"] then
 			equip(sets.TP.DT)
 			status_change(player.status)
+			send_command("@input /echo TPDT Set")
 		end
 	else
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 		if buffactive["doom"] or buffactive["curse"] then
 			equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]], sets.Utility.Doomed))
 			status_change(player.status)
+			send_command("@input /echo Idle + Doomed Set")
 		end
 		if buffactive["Terror"] then
 			equip(sets.TP.DT)
 			status_change(player.status)
+			send_command("@input /echo TSet")
 		end
 	end
 end
@@ -601,13 +646,23 @@ end
 function status_change(new, old)
 	if player.status == "Engaged" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
+		send_command("@input /echo TP Set")
 		if buffactive["doom"] or buffactive["curse"] then
-			equip(sets.Utility.Doom)
+			equip(set_combine(sets.TP[sets.TP.index[TP_ind]], sets.Utility.Doomed))
+			status_change(player.status)
+			send_command("@input /echo TP + Doomed Set")
+		end
+		if buffactive["Terror"] then
+			equip(sets.TP.DT)
+			status_change(player.status)
+			send_command("@input /echo TPDT Set")
 		end
 	else
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 		if buffactive["doom"] or buffactive["curse"] then
-			equip(sets.Utility.Doom)
+			equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]], sets.Utility.Doomed))
+			status_change(player.status)
+			send_command("@input /echo Idle + Doomed Set")
 		end
 	end
 end
