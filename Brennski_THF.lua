@@ -215,8 +215,8 @@ function get_sets()
                 ammo = "Jukukik Feather",
                 head = "Adhemar Bonnet +1",
                 neck = "Fotia gorget",
-                ear1 = "Moonshade Earring",
-                ear2 = "Sherida Earring",
+                ear2 = "Moonshade Earring",
+                ear1 = "Sherida Earring",
                 body = "Herculean Vest",
                 hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
                 ring1 = "Ilabrat Ring",
@@ -228,20 +228,20 @@ function get_sets()
         }
 
         sets.Evisceration = {
-                ammo = "Jukukik Feather",
-                head = "Adhemar Bonnet +1",
-                neck = "Fotia gorget",
-                ear1 = "Moonshade Earring",
-                ear2 = "Sherida Earring",
-                body = "Adhemar Jacket +1",
-                hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-                ring1 = "Ilabrat Ring",
-                ring2 = "Regal Ring",
-                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-                waist = "Fotia belt",
-                legs = "Samnuha Tights",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
-        }
+			ammo="Yetshila",
+			head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+			body="Meg. Cuirie +1",
+			hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+			legs="Mummu Kecks +2",
+			feet={ name="Lustra. Leggings +1", augments={'HP+65','STR+15','DEX+15',}},
+			neck="Fotia Gorget",
+			waist ="Fotia Belt",
+			left_ear="Sherida Earring",
+			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			left_ring="Ilabrat Ring",
+			right_ring="Regal Ring",
+			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+	}
 
         sets.SharkBite = {
                 ammo = "Jukukik Feather",

@@ -640,6 +640,9 @@ function midcast(spell, act)
 		end
 	elseif string.find(spell.name, "Bar") or spell.name == "Temper" then
 		equip(sets.Utility.EnhancingSkill)
+		if buffactive["Embolden"] then
+			equip(set_combine(sets.Utility.EnhancingSkill, sets.JA.Embolen))
+		end
 	elseif spell.english == "Stoneskin" then
 		equip(sets.Utility.SID)
 		if buffactive["Stoneskin"] then
@@ -649,6 +652,9 @@ function midcast(spell, act)
 		equip(sets.Utility.Refresh)
 	elseif spell.english == "Phalanx" then
 		equip(sets.Utility.Phalanx)
+		if buffactive["Embolden"] then
+			equip(set_combine(sets.Utility.Phalanx, sets.JA.Embolen))
+		end
 	elseif
 		spell.english == "Regen" or spell.english == "Regen II" or spell.english == "Regen III" or spell.english == "Regen IV"
 	 then

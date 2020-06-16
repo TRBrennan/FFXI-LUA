@@ -150,7 +150,7 @@ function get_sets()
     right_ear="Mendi. Earring",
     left_ring="Defending Ring",
     right_ring="Stikini Ring",
-    back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
+    back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +18','Pet: Damage taken -4%',}},
     }
 
     sets.midcast.Cure = {
@@ -188,7 +188,7 @@ function get_sets()
         left_ear = "Andoaa Earring",
         ring1 = "Metamorph Ring",
         ring2 = "Sirona's Ring",
-        waist = "Cascade Belt",
+        waist = "Embla Sash",
         back = "Fi follet cape +1"
     }
 
@@ -207,7 +207,7 @@ function get_sets()
         ring1 = "Kishar Ring",
         ring2 = "Stikini Ring",
         back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
-        waist = "Ovate Rope",
+        waist = "Embla Sash",
         legs = "Psycloth Lappas",
         feet = "Medium's Sabots"
     }

@@ -151,22 +151,38 @@ function get_sets()
 	--Enhancing Sets--
 	sets.Enhancing = {}
 
-	sets.Enhancing.Normal = {
-		main = "Beneficus",
-		sub = "Ammurapi Shield",
-		ammo = "Homiliary",
-		head = {name = "Telchine Cap", augments = {"Enh. Mag. eff. dur. +9"}},
-        body = {name = "Telchine Chas.", augments = {"Enh. Mag. eff. dur. +7"}},
-        hands = {name = "Telchine Gloves", augments = {"Enh. Mag. eff. dur. +10"}},
-		legs = {name = "Telchine Braconi", augments = {"Enh. Mag. eff. dur. +9"}},
-		feet = {name = "Telchine Pigaches", augments = {"Enh. Mag. eff. dur. +9"}},
-		back = "Sucellos's Cape",
+	sets.Enhancing.Duration = {
+		main = "Oranyan",
+		sub = "Enki Strap",
+		ammo = "Regal Gem",
+		head = "Telchine Cap",
 		neck = "Incanter's Torque",
-		waist = "Cascade Belt",
-		left_ear = "Andoaa Earring",
-		right_ear = "Regal Earring",
-		left_ring = "Sangoma Ring",
-		right_ring = "Kishar Ring"
+		ear1 = "Andoaa Earring",
+		ear2 = "Regal Earring",
+		body = "Telchine Chasuble",
+		hands = "Atrophy Gloves +1",
+		ring1 = "Stikini Ring",
+		ring2 = "Sirona's Ring",
+		waist = "Embla Sash",
+		back = "Ghostfyre Cape",
+		legs = "Telchine Braconi",
+		feet = "Lethargy Houseaux +1"
+	}
+	
+	sets.Enhancing.Pot ={		
+		ammo="Regal Gem",
+		head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
+		body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},
+		hands={ name="Vitiation Gloves +1", augments={'Enhancing Magic duration',}},
+		legs={ name="Telchine Braconi", augments={'"Fast Cast"+2','Enh. Mag. eff. dur. +8',}},
+		feet="Leth. Houseaux +1",
+		neck="Incanter's Torque",
+		waist="Embla Sash",
+		left_ear="Andoaa Earring",
+		right_ear="Etiolation Earring",
+		right_ring="Stikini Ring",
+		left_ring="Defending Ring",
+		back = "Ghostfyre Cape",
 	}
 
 	--Enfeebling Sets--
@@ -380,16 +396,16 @@ function get_sets()
 	sets.WS = {}
 
 	sets.WS.CDC = {
-		ammo = "Yetshila ",
+		ammo = "Yetshila",
 		head = "Taeon Chapeau",
 		neck = "Fotia gorget",
-		ear1 = "Moonshade Earring",
-		ear2 = "Sherida Earring",
-		body = "Ayanmo Corazza +1",
+		right_ear = "Moonshade Earring",
+		left_ear = "Sherida Earring",
+		body = "Ayanmo Corazza +2",
 		hands = "Jhakri Cuffs +2",
-		ring1 = "Begrudging Ring",
+		ring1 = "Ilabrat Ring",
 		ring2 = "Epona's Ring",
-		back = "Lupine Cape",
+		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 		waist = "Fotia belt",
 		legs = "Jhakri Slops +1",
 		feet = "Thereoid Greaves"
@@ -405,44 +421,46 @@ function get_sets()
 		hands = "Jhakri Cuffs +2",
 		ring1 = "Petrov Ring",
 		ring2 = "Ilabrat Ring",
-		back = "Lupine Cape",
+		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 		waist = "Grunfeld Rope",
 		legs = "Jhakri Slops +1",
 		feet = "Thereoid Greaves"
 	}
-
-	sets.WS.Vorpal = {
-		ammo = "Floestone",
-		head = "Jhakri Coronal +1",
-		neck = "Caro Necklace",
-		ear1 = "Ishvara Earring",
-		ear2 = "Moonshade Earring",
-		body = "Jhakri Robe +2",
+	
+	sets.WS.Sang ={
+		ammo = "Pemphredo Tathlum",
+		head = "Pixie Hairpin +1",
+		neck = "Incanter's Torque",
+		ear2 = "Malignance Earring",
+		ear1 = "Regal Earring",
+		body = { name = "Merlinic Jubbah", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
 		hands = "Jhakri Cuffs +2",
-		ring1 = "Begrudging Ring",
-		ring2 = "Ilabrat Ring",
-		back = "Lupine Cape",
-		waist = "Grunfeld Rope",
-		legs = "Jhakri Slops +1",
-		feet = "Thereoid Greaves"
+		ring1 = "Evanescence Ring",
+		ring2 = "Shiva Ring",
+		waist = "Refoccilation Stone",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
+		legs = { name = "Merlinic Shalwar",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "Mag. crit. hit dmg. +1%", "Mag. Acc.+11", '"Mag.Atk.Bns."+13'}},
+		feet = "Amalric Nails +1",
 	}
 
-	sets.WS.Req = {
-		ammo = "Floestone",
-		head = "Adhemar Bonnet +1",
-		neck = "Fotia gorget",
-		ear1 = "Moonshade Earring",
-		ear2 = "Telos Earring",
-		body = "Adhemar Jacket +1",
+	
+	sets.WS.Light ={
+		ammo = "Pemphredo Tathlum",
+		head = { name = "Merlinic Hood",augments = {'Mag. Acc.+18 "Mag.Atk.Bns."+18', "Magic burst mdg.+7%", "CHR+7", "Mag. Acc.+12"}},
+		neck = "Incanter's Torque",
+		ear2 = "Malignance Earring",
+		ear1 = "Regal Earring",
+		body = { name = "Merlinic Jubbah", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
 		hands = "Jhakri Cuffs +2",
-		ring1 = "Petrov Ring",
-		ring2 = "Epona's Ring",
-		back = "Lupine Cape",
-		waist = "Fotia belt",
-		legs = "Carmine Cuisses +1",
-		feet = "Carmine Greaves +1"
+		ring1 = "Evanescence Ring",
+		ring2 = "Shiva Ring",
+		waist = "Refoccilation Stone",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
+		legs = { name = "Merlinic Shalwar",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "Mag. crit. hit dmg. +1%", "Mag. Acc.+11", '"Mag.Atk.Bns."+13'}},
+		feet = "Amalric Nails +1",
 	}
-end
+	
+end1
 
 function precast(spell)
 	if spell.skill == "Elemental Magic" then
@@ -460,100 +478,145 @@ function precast(spell)
 			spell.english == "Regen V"
 	 then
 		equip(sets.precast.FC.Regen)
+		send_command("@input /echo Regen FC Set")
 	elseif spell.english == "Chainspell" then
 		equip(sets.JA.CS)
+		send_command("@input /echo Chainspell Set")
 	elseif spell.english == "Stun" then
 		equip(sets.magic.Stun)
-	elseif spell.english == "Chant du Cygne" then
+		send_command("@input /echo Stun Set")
+	elseif spell.english == "Chant du Cygne" or spell.english == "Requiescat" or spell.english == "Vorpal Blade" or spell.english == "Evisceration" then
 		equip(sets.WS.CDC)
-	elseif spell.english == "Savage Blade" then
+		send_command("@input /echo CDC Set")
+	elseif spell.english == "Savage Blade"  or spell.english == "Death Blossom" or spell.english == "Knights of Round" then
 		equip(sets.WS.Savage)
-	elseif spell.english == "Vorpal Blade" then
-		equip(sets.WS.Vorpal)
-	elseif spell.english == "Requiescat" then
-		equip(sets.WS.Req)
+		send_command("@input /echo Savage Blade Set")
 	elseif spell.english == "Sanguine Blade" then
-		equip(sets.Magic.Dark)
+		equip(sets.WS.Sang)
+		send_command("@input /echo Sanguine Blade Set")
+	elseif spell.english == "Serpah Blade" or spell.english == "Red Lotus Blade" or spell.english == "Burning Blade" or spell.english == "Shining Blade" then
+		equip(sets.WS.Light)
+		send_command("@input /echo Light/Magic WS Set")
 	elseif spell.english == "Composure" then
 		equip(sets.JA.Composure)
+		send_command("@input /echo Composure Set")
+	  elseif spell.type == 'WeaponSkill' then
+		equip(sets.WS.Savage)
+		send_command ("@input /echo WS Set")
 	end
 end
 
 function midcast(spell, act)
-	if spell.skill == "Enhancing Magic" then
-		equip(sets.Enhancing.Normal)
+	if spell.skill == "Enhancing Magic"  then
+		equip(sets.Enhancing.Duration)
 		if buffactive["Composure"] and spell.target.type == "PLAYER" then
-			equip(set_combine(sets.Enhancing.Normal, sets.JA.Composure))
+			equip(set_combine(sets.Enhancing.Duration, sets.JA.Composure))
+			send_command("@input /echo Enhancing Duration + Composure Set")
 		end
 		if buffactive.Composure and spell.target.type == "PLAYER" then
-			equip(set_combine(sets.Enhancing.Normal, sets.JA.Composure))
+			equip(set_combine(sets.Enhancing.Duration, sets.JA.Composure))
+			send_command("@input /echo Enhancing Duration + Composure Set")
+		end
+		
+		if spell.english == "Haste II" or  spell.english == "Haste" then
+			equip(sets.Enhancing.Duration)
+			send_command("@input /echo Enchancing Duration")
+			if buffactive["Composure"] and spell.target.type == "PLAYER" then
+				equip(set_combine(sets.Enhancing.Duration, sets.JA.Composure))
+				send_command("@input /echo Enhancing Duration + Composure Set")
+			end
+			if buffactive.Composure and spell.target.type == "PLAYER" then
+				equip(set_combine(sets.Enhancing.Duration, sets.JA.Composure))
+				send_command("@input /echo Enhancing Duration + Composure Set")
+			end
+		end
+		
+		if
+		spell.english == "Regen" or spell.english == "Regen II" or spell.english == "Regen III" or spell.english == "Regen IV" or
+			spell.english == "Regen V"
+		then
+		equip(set_combine(sets.Enhancing.Duration, sets.Magic.Regen))
+		send_command("@input /echo Enhancing Duration + Regen Set")
+		end
+		
+		if spell.english == "Refresh" or spell.english == "Refresh II" or spell.english == "Refresh III" then
+			equip(set_combine(sets.Enhancing.Duration, sets.Magic.Refresh))
+			send_command("@input /echo Enhancing Duration + Refresh Set")
+		end
+	
+		if spell.english == "Temper" or spell.english == "Temper II" or spell.english == "Phalanx" or spell.english == "Phalanx II" or spell.english =="Enblizzard" or spell.english =="Enfire" 
+		or spell.english =="Enaero" or spell.english =="Enthunder" or spell.english =="Enstone" or spell.english =="Enwater" or spell.english =="Enblizzard II" or spell.english =="Enfire II" 
+		or spell.english =="Enaero II" or spell.english =="Enthunder II" or spell.english =="Enstone II" or spell.english =="Enwater II" then
+			equip(sets.Enhancing.Pot)
+			send_command("@input /echo Enhancing Potency Set")
 		end
 	end
-	if spell.english == "Stun" then
-		equip(sets.Magic.Stun)
-	end
+	
 	if spell.skill == "Healing Magic" then
 		equip(sets.Magic.Healing)
+		send_command("@input /echo Healing Set")
 	end
 
 	if spell.skill == "Dark Magic" then
 		equip(sets.Magic.Dark)
+		send_command("@input /echo Dark Set")
+		if spell.english == "Stun" then
+			equip(sets.Magic.Stun)
+			send_command("@input /echo Stun MidCast Set")
+		end
 	end
-
+	
 	if spell.skill == "Enfeebling Magic" then
 		equip(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]])
 		if buffactive["Saboteur"] then
 			equip(set_combine(sets.Enfeebling.Pot, sets.JA.Sab))
 		end
-	end
-
-	if spell.english == "Dia III" or spell.english == "Slow II" then
+		if spell.english == "Dia III" or spell.english == "Slow II" then
 		equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]], sets.Utility.Dia))
-	end
+		end
+	end	
 
 	if spell.skill == "Elemental Magic" then
 		equip(sets.Nuke[sets.Nuke.index[Nuke_ind]])
 		if spell.element == world.day_element or spell.element == world.weather_element then
 			equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]], sets.Utility.Weather))
 		end
-	end
-
-	if
-		spell.english == "Regen" or spell.english == "Regen II" or spell.english == "Regen III" or spell.english == "Regen IV" or
-			spell.english == "Regen V"
-	 then
-		equip(set_combine(sets.Enhancing.Normal, sets.Magic.Regen))
-	end
-
-	if spell.english == "Refresh" or spell.english == "Refresh II" or spell.english == "Refresh III" then
-		equip(set_combine(sets.Enhancing.Normal, sets.Magic.Refresh))
+		if spell.english == "Aero" then
+			equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]], sets.Utility.TH))
+		end
 	end
 
 	if spell.english == "Drain" or spell.english == "Drain II" or spell.english == "Aspir II" or spell.english == "Aspir" then
 		equip(sets.Utility.DrainAspir)
+		send_command("@input /echo DarinAspir Set")
 	end
 end
 
 function aftercast(spell)
 	if player.status == "Engaged" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
+		send_command("@input /echo TP Set")
 		if buffactive["doom"] or buffactive["curse"] then
 			equip(set_combine(sets.TP[sets.TP.index[TP_ind]], sets.Utility.Doomed))
 			status_change(player.status)
+			send_command("@input /echo TP + Doomed Set")
 		end
 		if buffactive["Terror"] then
 			equip(sets.TP.DT)
 			status_change(player.status)
+			send_command("@input /echo TPDT Set")
 		end
 	else
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 		if buffactive["doom"] or buffactive["curse"] then
 			equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]], sets.Utility.Doomed))
 			status_change(player.status)
+			send_command("@input /echo Idle + Doomed Set")
 		end
 		if buffactive["Terror"] then
 			equip(sets.TP.DT)
 			status_change(player.status)
+			send_command("@input /echo TSet")
 		end
 	end
 end
@@ -561,13 +624,23 @@ end
 function status_change(new, old)
 	if player.status == "Engaged" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
+		send_command("@input /echo TP Set")
 		if buffactive["doom"] or buffactive["curse"] then
-			equip(sets.Utility.Doom)
+			equip(set_combine(sets.TP[sets.TP.index[TP_ind]], sets.Utility.Doomed))
+			status_change(player.status)
+			send_command("@input /echo TP + Doomed Set")
+		end
+		if buffactive["Terror"] then
+			equip(sets.TP.DT)
+			status_change(player.status)
+			send_command("@input /echo TPDT Set")
 		end
 	else
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 		if buffactive["doom"] or buffactive["curse"] then
-			equip(sets.Utility.Doom)
+			equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]], sets.Utility.Doomed))
+			status_change(player.status)
+			send_command("@input /echo Idle + Doomed Set")
 		end
 	end
 end
