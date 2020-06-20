@@ -387,6 +387,9 @@ function precast(spell)
 		equip(sets.JA.ChiBlast)
 	elseif spell.english == "Victory Smite" then
 		equip(sets.WS.VS)
+		if buffactive["Impetus"] then
+			equip({Body = "Bhikku Cyclas +1"})
+		end
 	elseif spell.english == "Shijin Spiral" then
 		equip(sets.WS.SS)
 	elseif spell.english == "Asuran Fists" then

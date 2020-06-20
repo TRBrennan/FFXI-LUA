@@ -76,7 +76,7 @@ function get_sets()
     head="Malignance Chapeau",
     body="Ayanmo Corazza +2",
     hands="Aya. Manopolas +2",
-    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Lissome Necklace",
     waist="Kentarch Belt +1",
@@ -88,13 +88,13 @@ function get_sets()
 	}
 
 	sets.TP.EnSpell = {
-	ammo="Ginsen",
+	ammo="Regal Gem",
     head="Malignance Chapeau",
     body="Ayanmo Corazza +2",
     hands="Aya. Manopolas +2",
-    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    legs="Malignance Tights",
     feet="Malignance Boots",
-    neck="Lissome Necklace",
+    neck="Sanctity Necklace",
     waist="Kentarch Belt +1",
     left_ear="Sherida Earring",
     right_ear="Hollow Earring",
@@ -108,7 +108,7 @@ function get_sets()
     head="Malignance Chapeau",
     body="Ayanmo Corazza +2",
     hands="Aya. Manopolas +2",
-    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    legs="Malignance Tights",
     feet="Malignance Boots",
     neck="Lissome Necklace",
     waist = "Reiki Yotai",
@@ -120,13 +120,13 @@ function get_sets()
 	}
 	
 	sets.TP.LowHasteEnSpell = {
-	ammo="Ginsen",
+	ammo="Regal Gem",
     head="Malignance Chapeau",
     body="Ayanmo Corazza +2",
     hands="Aya. Manopolas +2",
-    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    legs="Malignance Tights",
     feet="Malignance Boots",
-    neck="Lissome Necklace",
+    neck="Sanctity Necklace",
 	waist = "Reiki Yotai",
     left_ear="Sherida Earring",
     right_ear="Hollow Earring",
@@ -196,7 +196,7 @@ function get_sets()
 		ear1 = "Andoaa Earring",
 		ear2 = "Regal Earring",
 		body = "Telchine Chasuble",
-		hands = "Atrophy Gloves +1",
+		hands = "Atrophy Gloves +2",
 		ring1 = "Stikini Ring",
 		ring2 = "Sirona's Ring",
 		waist = "Embla Sash",
@@ -243,7 +243,7 @@ function get_sets()
 		waist = "Luminary Sash",
 		back= {name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		legs = "Chironic Hose",
-		feet = "Skaoi Boots"
+		feet = "Vitiation Boots +2",
 	}
 
 	sets.Enfeebling.Pot = {
@@ -260,8 +260,8 @@ function get_sets()
 		ring2 = "Kishar Ring",
 		waist = "Luminary Sash",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
-		legs = "Psycloth Lappas",
-		feet = "Skaoi Boots"
+		legs = "Chironic Hose",
+		feet = "Vitiation Boots +2",
 	}
 
 	--Magic Sets--
@@ -436,7 +436,7 @@ function get_sets()
 		ring2 = "Epona's Ring",
 		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 		waist = "Fotia belt",
-		legs = "Jhakri Slops +2",
+		legs = "Zoar Subligar +1",
 		feet = "Thereoid Greaves"
 	}
 
@@ -538,12 +538,11 @@ end
 function midcast(spell, act)
 	if spell.skill == "Enhancing Magic"  then
 		equip(sets.Enhancing.Duration)
-		 if buffactive['Composure'] then 
-            if  spell.target.type ~= 'SELF' and spell.target.type == 'PLAYER' then
+		    if buffactive.composure and spell.target.type == 'PLAYER' then
             		equip(set_combine(sets.Enhancing.Duration, sets.JA.Composure))
 					send_command("@input /echo Enhancing Duration + Composure Set")
             end
-		end
+	
 		if
 		spell.english == "Regen" or spell.english == "Regen II" or spell.english == "Regen III" or spell.english == "Regen IV" or
 			spell.english == "Regen V"
