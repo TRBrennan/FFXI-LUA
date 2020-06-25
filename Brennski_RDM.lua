@@ -32,7 +32,7 @@ function get_sets()
 		main = "Bolelabunga",
 		sub = "Genmei Shield",
 		ammo = "Homiliary",
-		head = {name = "Viti. Chapeau +1", augments = {'Enhances "Dia III" effect', 'Enhances "Slow II" effect'}},
+		head = "Vitiation chapeau +2",
 		neck = "Sanctity Necklace",
 		ear1 = "Genmei Earring",
 		ear2 = "Infused Earring",
@@ -53,14 +53,14 @@ function get_sets()
 		neck = "Loricate Torque +1",
 		ear1 = "Etiolation Earring",
 		ear2 = "Infused Earring",
-		head = "Ayanmo Zucchetto +1",
-		body = "Ayanmo Corazza +1",
-		hands = "Ayanmo Manopolas +1",
+		head = "Vitiation chapeau +2",
 		ring2 = "Vocane Ring",
 		ring1 = "Defending ring",
 		waist = "Fucho-no-obi",
-		legs = "Aya. Cosciales +2",
-		feet = "Malignance Boots",
+		body="Ayanmo Corazza +2",
+		hands="Aya. Manopolas +2",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
 		back = "Moonbeam Cape"
 	}
 
@@ -82,7 +82,7 @@ function get_sets()
     waist="Kentarch Belt +1",
     left_ear="Sherida Earring",
     right_ear="Telos Earring",
-    left_ring="Ilabrat Ring",
+    left_ring="Hetairoi Ring",
     right_ring="Chirich Ring",
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 	}
@@ -98,7 +98,7 @@ function get_sets()
     waist="Kentarch Belt +1",
     left_ear="Sherida Earring",
     right_ear="Hollow Earring",
-    left_ring="Ilabrat Ring",
+    left_ring="Hetairoi Ring",
     right_ring="Chirich Ring",
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 	}
@@ -114,7 +114,7 @@ function get_sets()
     waist = "Reiki Yotai",
     left_ear="Sherida Earring",
     right_ear="Telos Earring",
-    left_ring="Ilabrat Ring",
+    left_ring="Hetairoi Ring",
     right_ring="Chirich Ring",
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 	}
@@ -130,7 +130,7 @@ function get_sets()
 	waist = "Reiki Yotai",
     left_ear="Sherida Earring",
     right_ear="Hollow Earring",
-    left_ring="Ilabrat Ring",
+    left_ring="Hetairoi Ring",
     right_ring="Chirich Ring",
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 	}
@@ -210,7 +210,7 @@ function get_sets()
 		head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
 		body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},
 		hands={ name="Vitiation Gloves +1", augments={'Enhancing Magic duration',}},
-		legs={ name="Telchine Braconi", augments={'"Fast Cast"+2','Enh. Mag. eff. dur. +8',}},
+		legs = "Carmine Cuisses +1",
 		feet="Leth. Houseaux +1",
 		neck="Incanter's Torque",
 		waist="Embla Sash",
@@ -232,7 +232,7 @@ function get_sets()
 		main = "Grioavolr",
 		sub = "Enki Strap",
 		ammo = "Regal Gem",
-		head = "Vitiation chapeau +1",
+		head = "Vitiation chapeau +2",
 		neck = "Incanter's Torque",
 		ear2 = "Snotra Earring",
 		ear1 = "Malignance Earring",
@@ -250,7 +250,7 @@ function get_sets()
 		main = "Grioavolr",
 		sub = "Enki Strap",
 		ammo = "Regal Gem",
-		head = "Vitiation chapeau +1",
+		head = "Vitiation chapeau +2",
 		neck = "Imbodla Necklace",
 		ear2 = "Snotra Earring",
 		ear1 = "Regal Earring",
@@ -268,26 +268,26 @@ function get_sets()
 	sets.Magic = {}
 
 	sets.Magic.Healing = {
-		main = "Oranyan",
-		sub = "Enki Strap",
-		ammo = "Regal Gem",
-		head = "Vanya Hood",
-		neck = "Incanter's Torque",
-		ear1 = "Regal Earring",
-		ear2 = "Snotra Earring",
-		body = "Vrikodara Jupon",
-		hands = "Kaykaus Cuffs",
-		ring1 = "Ephedra Ring",
-		ring2 = "Sirona's Ring",
-		waist = "Luminary Sash",
-		back = "Solemnity Cape",
-		legs = "Chironic Hose",
-		feet = "Vanya Clogs"
+		main="Daybreak",
+		sub="Genmei Shield",
+		ammo="Regal Gem",
+		head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		body="Atrophy Tabard +3",
+		hands={ name="Kaykaus Cuffs", augments={'MP+60','MND+10','Mag. Acc.+15',}},
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
+		feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		neck="Incanter's Torque",
+		waist="Luminary Sash",
+		left_ear="Regal Earring",
+		right_ear="Snotra Earring",
+		left_ring="Ephedra Ring",
+		right_ring="Sirona's Ring",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
 	}
 
 	sets.Magic.Regen = {
 		main = "Bolelabunga",
-		ammo = "Savant's Treatise",
+		ammo="Regal Gem",
 		head = "Telchine Cap",
 		neck = "Incanter's Torque ",
 		ear1 = "Regal Earring",
@@ -331,6 +331,7 @@ function get_sets()
 		right_ear = "Loquac. Earring",
 		left_ring = "Rahab Ring",
 		right_ring = "Kishar Ring",
+		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}},
 		feet = "Amalric Nails +1",
 		body = {name = "Merlinic Jubbah", augments = {"Accuracy+6", '"Fast Cast"+6', "MND+8", "Mag. Acc.+15", '"Mag.Atk.Bns."+5'}},
 		legs = "Psycloth Lappas",
@@ -401,10 +402,6 @@ function get_sets()
 		feet = "Merlinic Crackows"
 	}
 
-	sets.Utility.Dia = {
-		head = {name = "Viti. Chapeau +1", augments = {'Enhances "Dia III" effect', 'Enhances "Slow II" effect'}}
-	}
-
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
 
 	sets.JA = {}
@@ -413,7 +410,7 @@ function get_sets()
 
 	sets.JA.Sab = {hands = "Lethargy Gantherots +1"}
 
-	sets.JA.Composure = {
+	sets.JA.Composure = { 
 		Feet = "Lethargy Houseaux +1",
 		body = "Lethargy Sayon +1",
 		legs = "Lethargy Fuseau",
@@ -426,14 +423,14 @@ function get_sets()
 
 	sets.WS.CDC = {
 		ammo = "Yetshila",
-		head = "Taeon Chapeau",
+		head = "Jhakri Coronal +2",
 		neck = "Fotia gorget",
 		right_ear = "Moonshade Earring",
 		left_ear = "Sherida Earring",
 		body = "Ayanmo Corazza +2",
 		hands = "Jhakri Cuffs +2",
-		ring1 = "Ilabrat Ring",
-		ring2 = "Epona's Ring",
+		ring1 = "Petrov Ring",
+		ring2 = "Ilabrat Ring",
 		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 		waist = "Fotia belt",
 		legs = "Zoar Subligar +1",
@@ -442,7 +439,7 @@ function get_sets()
 
 	sets.WS.Savage = {
 		ammo = "Floestone",
-		head = "Jhakri Coronal +2",
+		head = "Vitiation chapeau +2",
 		neck = "Caro Necklace",
 		ear1 = "Ishvara Earring",
 		ear2 = "Moonshade Earring",
@@ -475,7 +472,7 @@ function get_sets()
 	
 	sets.WS.Light ={
 		ammo = "Pemphredo Tathlum",
-		head = { name = "Merlinic Hood",augments = {'Mag. Acc.+18 "Mag.Atk.Bns."+18', "Magic burst mdg.+7%", "CHR+7", "Mag. Acc.+12"}},
+		head = "Vitiation chapeau +2",
 		neck = "Incanter's Torque",
 		ear2 = "Malignance Earring",
 		ear1 = "Regal Earring",
@@ -508,6 +505,8 @@ function precast(spell)
 	 then
 		equip(sets.precast.FC.Regen)
 		send_command("@input /echo Regen FC Set")
+	elseif spell.skill == "Ninjutsu" then
+		equip(sets.precast.FC.Standard)
 	elseif spell.english == "Chainspell" then
 		equip(sets.JA.CS)
 		send_command("@input /echo Chainspell Set")
@@ -582,9 +581,6 @@ function midcast(spell, act)
 		equip(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]])
 		if buffactive["Saboteur"] then
 			equip(set_combine(sets.Enfeebling.Pot, sets.JA.Sab))
-		end
-		if spell.english == "Dia III" or spell.english == "Slow II" then
-		equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]], sets.Utility.Dia))
 		end
 	end	
 
