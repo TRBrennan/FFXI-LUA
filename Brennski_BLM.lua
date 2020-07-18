@@ -140,7 +140,7 @@ function get_sets()
         hands = "Amalric Gages +1",
         ring1 = "Mephitas's Ring",
         ring2 = "Rahab Ringd",
-        waist = "Refoccilation Stone",
+        waist = "Sacro Cord",
         back = "Taranus's Cape",
         legs = "Amalric Slops",
         feet = "Amalric Nails"
@@ -181,7 +181,7 @@ function get_sets()
         hands = "Jhakri Cuffs +2",
         ring1 = "Shiva Ring",
         ring2 = "Acumen Ring",
-        waist = "Refoccilation Stone",
+        waist = "Sacro Cord",
         back = "Taranus's Cape",
         legs = {
             name = "Merlinic Shalwar",
@@ -212,7 +212,7 @@ function get_sets()
         ear1 = "Barkarole Earring",
         ring1 = "Locus Ring",
         ring2 = "Mujin Band",
-        waist = "Refoccilation Stone",
+        waist = "Sacro Cord",
         back = "Taranus's Cape",
         head = {
             name = "Merlinic Hood",
@@ -357,7 +357,7 @@ function get_sets()
         hands = "Amalric Gages +1",
         ring1 = "Evanescence Ring",
         ring2 = "Archon Ring",
-        waist = "Refoccilation Stone",
+        waist = "Sacro Cord",
         back = "Taranus's Cape",
         legs = {
             name = "Merlinic Shalwar",
@@ -381,7 +381,7 @@ function get_sets()
         hands = "Amalric Gages +1",
         ring1 = "Mephitas's Ring",
         ring2 = "Mujin Band",
-        waist = "Refoccilation Stone",
+        waist = "Sacro Cord",
         back = "Taranus's Cape",
         legs = {
             name = "Merlinic Shalwar",

@@ -32,20 +32,17 @@ function get_sets()
 
         sets.Idle.Standard = {
                 ammo = "Staunch Tathlum",
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
+				head="Malignance Chapeau",
                 neck = "Sanctity Necklace",
                 ear1 = "Genmei Earring",
                 ear2 = "Infused Earring",
                 body = "Ashera Harness",
-                hands = "Herculean gloves",
+                hands = "Malignance gloves",
                 ring1 = "Defending ring",
                 ring2 = "Vocane Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Flume belt +1",
-                legs = "Mummu Kecks +2",
+                legs="Malignance Tights",
                 feet = "Turms Leggings +1"
         }
 
@@ -53,21 +50,18 @@ function get_sets()
                 main = "Terra's Staff",
                 sub = "Umbra strap",
                 ammo = "Staunch Tathlum",
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
+				head="Malignance Chapeau",
                 neck = "Loricate Torque +1",
                 ear1 = "Genmei Earring",
                 ear2 = "Infused Earring",
                 body = "Ashera Harness",
-                hands = "Herculean gloves",
+                hands = "Malignance gloves",
                 ring1 = "Defending ring",
                 ring2 = "Vocane Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Flume belt +1",
-                legs = "Mummu Kecks +2",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+				legs="Malignance Tights",
+				feet="Malignance Boots",
         }
 
         --TP Sets--
@@ -85,7 +79,7 @@ function get_sets()
                 ear2 = "Telos Earring",
                 body = "Adhemar Jacket +1",
                 hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-                ring1 = "Ilabrat Ring",
+                ring1 = "Gere Ring",
                 ring2 = "Epona's Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Windbuffet Belt +1",
@@ -101,7 +95,7 @@ function get_sets()
                 ear2 = "Telos Earring",
                 body = "Adhemar Jacket +1",
                 hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-                ring1 = "Ilabrat Ring",
+                ring1 = "Gere Ring",
                 ring2 = "Epona's ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Windbuffet Belt +1",
@@ -127,40 +121,34 @@ function get_sets()
 
         sets.TP.DT = {
                 ammo = "Staunch Tathlum",
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
+				head="Malignance Chapeau",
                 neck = "Loricate Torque +1",
                 ear1 = "Ethereal",
                 ear2 = "Genmei Earring",
                 body = "Ashera Harness",
-                hands = "Herculean Gloves",
+                hands = "Malignance Gloves",
                 ring1 = "Vocane Ring",
-                ring2 = "Ilabrat Ring",
+                ring2 = "Defending Ring",
                 back = "Moonbeam Cape",
                 waist = "Flume belt +1",
-                legs = "Mummu Kecks +2",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+				legs="Malignance Tights",
+				feet="Malignance Boots",
         }
 
         sets.TP.DTAccuracy = {
                 ammo = "Yamarang",
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
+				head="Malignance Chapeau",
                 neck = "Loricate Torque +1",
                 ear1 = "Suppanomimi",
                 ear2 = "Genmei Earring",
                 body = "Ashera Harness",
-                hands = "Herculean Gloves",
-                ring1 = "Dark ring",
-                ring2 = "Vocane Ring",
+                hands = "Malignance Gloves",
+                ring1 = "Gere ring",
+                ring2 = "defending Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Flume belt +1",
-                legs = "Mummu Kecks +2",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+ 				legs="Malignance Tights",
+				feet="Malignance Boots",
         }
 
         sets.TP.TH = {
@@ -171,7 +159,7 @@ function get_sets()
                 ear2 = "Telos Earring",
                 body = "Ashera Harness",
                 hands = "Plunderer's Armlets +1",
-                ring1 = "Ilabrat Ring",
+                ring1 = "Gere Ring",
                 ring2 = "Epona's Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Chaac Belt",
@@ -219,7 +207,7 @@ function get_sets()
                 ear1 = "Sherida Earring",
                 body = "Herculean Vest",
                 hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-                ring1 = "Ilabrat Ring",
+                ring1 = "Gere Ring",
                 ring2 = "Regal Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Fotia belt",
@@ -238,7 +226,7 @@ function get_sets()
 			waist ="Fotia Belt",
 			left_ear="Sherida Earring",
 			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-			left_ring="Ilabrat Ring",
+			left_ring="Gere Ring",
 			right_ring="Regal Ring",
 			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
@@ -350,10 +338,7 @@ function get_sets()
         }
 
         sets.NINMagic.Utsusemi = {
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
+head="Malignance Chapeau",
                 neck = "Loricate Torque",
                 ar1 = "Brutal Earring",
                 ear2 = "Cessance Earring",
@@ -509,7 +494,9 @@ function precast(spell)
 end
 
 function midcast(spell, act)
-        if spell.english == "Utsusemi: Ichi" then
+		if spell.english == 'Ranged' then
+			equip(sets.TP.TH)
+        elseif spell.english == "Utsusemi: Ichi" then
                 equip(sets.NINMagic.Utsusemi)
                 if buffactive["Copy Image (3)"] then
                         send_command("@wait 0.3; input //cancel Copy Image*")

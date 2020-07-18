@@ -180,12 +180,12 @@ function get_sets()
 		hands = {name = "Telchine Gloves", augments = {"Enh. Mag. eff. dur. +5"}},
 		legs = {name = "Telchine Braconi", augments = {"Enh. Mag. eff. dur. +9"}},
 		feet = {name = "Telchine Pigaches", augments = {"Enh. Mag. eff. dur. +9"}},
-		back = "Sucellos's Cape",
+		back = "Fi Follet Cape +1",
 		neck = "Incanter's Torque",
 		waist = "Cascade Belt",
 		left_ear = "Andoaa Earring",
-		right_ear = "Regal Earring",
-		left_ring = "Sangoma Ring",
+		right_ear = "Mimir Earring",
+		left_ring = "Stikini Ring",
 		right_ring = "Kishar Ring"
 	}
 
@@ -198,12 +198,12 @@ function get_sets()
 		hands = {name = "Telchine Gloves", augments = {"Enh. Mag. eff. dur. +5"}},
 		legs = {name = "Telchine Braconi", augments = {"Enh. Mag. eff. dur. +9"}},
 		feet = {name = "Telchine Pigaches", augments = {"Enh. Mag. eff. dur. +9"}},
-		back = "Sucellos's Cape",
+		back = "Fi Follet Cape +1",
 		neck = "Incanter's Torque",
 		waist = "Cascade Belt",
 		left_ear = "Andoaa Earring",
-		right_ear = "Regal Earring",
-		left_ring = "Sangoma Ring",
+		right_ear = "Mimir Earring",
+		left_ring = "Stikini Ring",
 		right_ring = "Kishar Ring"
 	}
 

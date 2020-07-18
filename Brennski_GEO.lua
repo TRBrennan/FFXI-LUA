@@ -222,7 +222,7 @@ function get_sets()
         legs = "Merlinic Shalwar",
         feet = "Merlinic Crackows",
         neck = "Mizu. Kubikazari",
-        waist = "Refoccilation Stone",
+        waist = "Sacro Cord",
         left_ear = "Barkarole Earring",
         right_ear = "Friomisi Earring",
         left_ring = "Mujin Band",
@@ -245,7 +245,7 @@ function get_sets()
         ring1 = "Stikini Ring",
         ring2 = "Evanescence ring",
         back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
-        waist = "Refoccilation Stone",
+        waist = "Sacro Cord",
         legs = "Psycloth Lappas",
         feet = "Merlinic Crackows"
     }
@@ -260,7 +260,7 @@ function get_sets()
         legs = "Merlinic Shalwar",
         feet = "Merlinic Crackows",
         neck = "Mizu. Kubikazari",
-        waist = "Refoccilation Stone",
+        waist = "Sacro Cord",
         left_ear = "Barkarole Earring",
         right_ear = "Friomisi Earring",
         left_ring = "Mujin Band",
@@ -296,7 +296,7 @@ function get_sets()
         lring = "Paguroidea Ring",
         rring = "Renaye Ring",
         back = "Toro Cape",
-        waist = "Refoccilation Stone",
+        waist = "Sacro Cord",
         legs = "Assiduity Pants +1",
         feet = "Azimuth Gaiters +1"
     }

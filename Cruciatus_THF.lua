@@ -263,8 +263,9 @@ function precast(spell)
 end
        
 function midcast(spell,act)
-		
-	    if spell.english == 'Utsusemi: Ichi' then
+		if spell.english == 'Ranged' then
+			equip(sets.TP.TH)
+	    elseif spell.english == 'Utsusemi: Ichi' then
                 equip(sets.NINMagic.Utsusemi)
                         if buffactive['Copy Image (3)'] then
                                 send_command('@wait 0.3; input //cancel Copy Image*')

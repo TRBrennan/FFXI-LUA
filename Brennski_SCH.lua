@@ -99,7 +99,7 @@ function get_sets()
 		hands = "Amalric Gages +1",
 		ring1 = "Mephitas's Ring",
 		ring2 = "Rahab Ring",
-		waist = "Refoccilation Stone",
+		waist = "Sacro Cord",
 		back = "Bane Cape",
 		legs = "Amalric Slops",
 		feet = "Amalric Nails"
@@ -128,9 +128,9 @@ function get_sets()
 			augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}
 		},
 		hands = "Jhakri Cuffs +2",
-		ring1 = "Shiva Ring",
+		ring1 = "Freke Ring",
 		ring2 = "Acumen Ring",
-		waist = "Refoccilation Stone",
+		waist = "Sacro Cord",
 		back = "Lugh's Cape",
 		legs = {
 			name = "Merlinic Shalwar",
@@ -161,7 +161,7 @@ function get_sets()
 		},
 		feet = {name = "Merlinic Crackows", augments = {"Magic burst dmg.+8%", "Mag. Acc.+13", '"Mag.Atk.Bns."+12'}},
 		neck = "Mizu. Kubikazari",
-		waist = "Refoccilation Stone",
+		waist = "Sacro Cord",
 		left_ear = "Barkaro. Earring",
 		right_ear = "Friomisi Earring",
 		left_ring = "Locus Ring",
@@ -282,7 +282,7 @@ function get_sets()
 		hands = "Jhakri Cuffs +2",
 		ring1 = "Evanescence Ring",
 		ring2 = "Archon Ring",
-		waist = "Refoccilation Stone",
+		waist = "Sacro Cord",
 		back = "Lugh's Cape",
 		legs = {
 			name = "Merlinic Shalwar",
@@ -386,7 +386,7 @@ function get_sets()
 		},
 		hands = "Jhakri Cuffs +2",
 		ring1 = "Evanescence Ring",
-		ring2 = "Shiva Ring",
+		ring2 = "Freke Ring",
 		waist = "Fucho-no-obi",
 		back = "Lugh's Cape",
 		legs = {

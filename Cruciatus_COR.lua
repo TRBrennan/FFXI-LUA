@@ -344,7 +344,7 @@ function get_sets()
 
         sets.JA.PhantomRoll = {
                 head = "Commodore Tricorne +2",
-                neck = "Loricate Torque +1",
+                neck = "Regal Necklace",
                 ear1 = "Etiolation earring",
                 ear2 = "Genmei Earring",
                 body = "Emet Hareness",

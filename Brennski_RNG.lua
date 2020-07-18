@@ -285,10 +285,10 @@ function get_sets()
 		neck = "Iskur Gorget",
 		ear2 = "Telos Earring",
 		ear1 = "Volley Earring",
-		body = "Oshosi Vest",
+		body = "Nisroch Jerkin",
 		hands = {name = "Adhemar Wristbands", augments = {"AGI+10", "Rng.Acc.+15", "Rng.Atk.+15"}},
-		ring1 = "Dingir Ring",
-		ring2 = "Cacoethic Ring",
+		ring2= "Dingir Ring",
+		ring1 = "Cacoethic Ring",
 		waist = "Yemaya Belt",
 		back = "Belenus's Cape",
 		legs = "Adhemar Kecks",
@@ -299,7 +299,7 @@ function get_sets()
 		neck = "Iskur Gorget",
 		ear2 = "Telos Earring",
 		ear1 = "Volley Earring",
-		body = "Oshosi Vest",
+		body = "Nisroch Jerkin",
 		hands = {name = "Adhemar Wristbands", augments = {"AGI+10", "Rng.Acc.+15", "Rng.Atk.+15"}},
 		ring1 = "Dingir Ring",
 		ring2 = "Cacoethic Ring",
@@ -692,7 +692,7 @@ function get_sets()
 		head = "Meghanada Visor +2",
 		neck = "Sanctity Necklace",
 		ear2 = "Telos Earring",
-		body = "Oshosi Vest",
+		body = "Nisroch Jerkin",
 		hands = "Orion Bracers +1",
 		ring1 = "Apate Ring",
 		ring2 = "Cacoethic Ring",
@@ -716,7 +716,7 @@ function get_sets()
 	--Precast Sets--
 	sets.snapshot = {
 		head = "Amini Gapette", -- 7
-		body = "Oshosi Vest", -- 7
+		body = "Nisroch Jerkin", -- 7
 		hands = "Carmine Finger Gauntlets +1", --8
 		back = "Lutian Cape", -- 2
 		legs = "Adhemar Kecks",

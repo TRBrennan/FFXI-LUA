@@ -32,16 +32,7 @@ function get_sets()
         ammo = "Homiliary",
         head = "Befouled Crown",
         body = "Kaykaus Bliaut",
-        hands = {
-            name = "Chironic Gloves",
-            augments = {
-                "Magic burst dmg.+1%",
-                "DEX+2",
-                "Damage taken-4%",
-                "Accuracy+6 Attack+6",
-                'Mag. Acc.+7 "Mag.Atk.Bns."+7'
-            }
-        },
+        hands = {name = "Chironic Gloves", augments = {"Magic burst dmg.+1%","DEX+2","Damage taken-4%", "Accuracy+6 Attack+6",'Mag. Acc.+7 "Mag.Atk.Bns."+7'}},
         legs = "Assid. Pants +1",
         feet = "Aya. Gambieras +1",
         neck = "Sanctity Necklace",
@@ -60,10 +51,7 @@ function get_sets()
 	sets.aftercast_engaged = sets.aftercast_Idle_refresh
 
     sets.precast_Cure = {
-        main = {
-            name = "Queller Rod",
-            augments = {"Healing magic skill +15", '"Cure" potency +10%', '"Cure" spellcasting time -7%'}
-        },
+        main = { name = "Queller Rod", augments = {"Healing magic skill +15", '"Cure" potency +10%', '"Cure" spellcasting time -7%'}},
         sub = "Sors Shield",
         ammo = "Incantor Stone",
         head = "Nahtirah Hat",
@@ -102,10 +90,7 @@ function get_sets()
         ammo = "Impatiens",
         head = "Vanya Hood",
         body = "Inyanga Jubbah +2",
-        hands = {
-            name = "Fanatic Gloves",
-            augments = {"MP+50", "Healing magic skill +10", '"Conserve MP"+7', '"Fast Cast"+7'}
-        },
+        hands = { name = "Fanatic Gloves", augments = {"MP+50", "Healing magic skill +10", '"Conserve MP"+7', '"Fast Cast"+7'}},
         legs = "Aya. Cosciales +1",
         feet = "Chelona Boots",
         neck = "Voltsurge Torque",
@@ -132,7 +117,7 @@ function get_sets()
         right_ear = "Enchntr. Earring +1",
         left_ring = "Sangoma Ring",
         right_ring = "Kishar Ring",
-        back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}}
+        back = "Fi Follet Cape +1"
     }
 
     sets.precast_Devotion = {}
@@ -185,10 +170,10 @@ function get_sets()
         neck = "Incanter's Torque",
         waist = "Embla Sash",
         left_ear = "Andoaa Earring",
-        right_ear = "Enchntr. Earring +1",
-        left_ring = "Rahab Ring",
+        right_ear = "Mimir Earring",
+        left_ring = "Stinki Ring",
         right_ring = "Kishar Ring",
-        back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}}
+        back = "Fi Follet Cape +1"
     }
 
     sets.midcast_Barspells_noSolace = sets.midcast_BarSpells_Solace
@@ -205,10 +190,10 @@ function get_sets()
         neck = "Incanter's Torque",
         waist = "Embla Sash",
         left_ear = "Andoaa Earring",
-        right_ear = "Enchntr. Earring +1",
-        left_ring = "Sangoma Ring",
+        right_ear = "Mimir Earring",
+        left_ring = "Stinki Ring",
         right_ring = "Kishar Ring",
-        back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}}
+        back = "Fi Follet Cape +1"
     }
     set.midcast_Shellra = {
         main = {name = "Gada", augments = {"Enh. Mag. eff. dur. +4", "VIT+5", "Mag. Acc.+18", '"Mag.Atk.Bns."+4'}},
@@ -222,10 +207,10 @@ function get_sets()
         neck = "Incanter's Torque",
         waist = "Embla Sash",
         left_ear = "Andoaa Earring",
-        right_ear = "Enchntr. Earring +1",
-        left_ring = "Sangoma Ring",
+        right_ear = "Mimir Earring",
+        left_ring = "Stinki Ring",
         right_ring = "Kishar Ring",
-        back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}}
+        back = "Fi Follet Cape +1"
     }
 
     sets.midcast_MAB = {
@@ -278,20 +263,17 @@ function get_sets()
         right_ear = "Enchntr. Earring +1",
         left_ring = "Sangoma Ring",
         right_ring = "Kishar Ring",
-        back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}}
+        back = "Fi Follet Cape +1"
     }
     sets.midcast_Auspice = {feet = "Ebers Duckbills"}
 
     sets.midcast_Cure = {
-        main = {
-            name = "Queller Rod",
-            augments = {"Healing magic skill +15", '"Cure" potency +10%', '"Cure" spellcasting time -7%'}
-        },
+		main = { name = "Queller Rod",augments = {"Healing magic skill +15", '"Cure" potency +10%', '"Cure" spellcasting time -7%'}},
         sub = "Sors Shield",
         ammo = "Esper Stone",
         head = "Vanya Hood",
         body = "Ebers Bliaud +1",
-        hands = "Theophany Mitts +2",
+        hands = "Theophany Mitts +3",
         legs = "Ebers Pant. +1",
         feet = "Kaykaus Boots",
         neck = "Cleric's Torque",
@@ -304,15 +286,12 @@ function get_sets()
     }
 
     sets.midcast_Curaga = {
-        main = {
-            name = "Queller Rod",
-            augments = {"Healing magic skill +15", '"Cure" potency +10%', '"Cure" spellcasting time -7%'}
-        },
+        main = { name = "Queller Rod",augments = {"Healing magic skill +15", '"Cure" potency +10%', '"Cure" spellcasting time -7%'}},
         sub = "Sors Shield",
         ammo = "Esper Stone",
         head = "Vanya Hood",
         body = "Kaykaus Bliaut",
-        hands = "Theophany Mitts +2",
+        hands = "Theophany Mitts +3",
         legs = "Ebers Pant. +1",
         feet = "Kaykaus Boots",
         neck = "Nodens Gorget",
@@ -331,11 +310,8 @@ function get_sets()
         sub = "Sors Shield",
         ammo = "Esper Stone",
         head = "Ebers Cap",
-        body = "Ebers Bliaud",
-        hands = {
-            name = "Fanatic Gloves",
-            augments = {"MP+50", "Healing magic skill +10", '"Conserve MP"+7', '"Fast Cast"+7'}
-        },
+        body = "Ebers Bliaud +1",
+        hands = { name = "Fanatic Gloves",augments = {"MP+50", "Healing magic skill +10", '"Conserve MP"+7', '"Fast Cast"+7'}},
         legs = "Theophany Pantaloons +2",
         feet = "Vanya Clogs",
         neck = "Cleric's Torque",
@@ -353,10 +329,7 @@ function get_sets()
         ammo = "Esper Stone",
         head = "Ebers Cap",
         body = "Ebers Bliaud +1",
-        hands = {
-            name = "Fanatic Gloves",
-            augments = {"MP+50", "Healing magic skill +10", '"Conserve MP"+7', '"Fast Cast"+7'}
-        },
+		hands = { name = "Fanatic Gloves",augments = {"MP+50", "Healing magic skill +10", '"Conserve MP"+7', '"Fast Cast"+7'}},
         legs = "Theophany Pantaloons +2",
         feet = "Gende. Galosh. +1",
         neck = "Malison Medallion",

@@ -35,95 +35,52 @@ function get_sets()
 
     sets.Idle.Standard = {
         ammo = "Staunch Tathlum",
-        head = {
-            name = "Herculean Helm",
-            augments = {
-                'Pet: CHR+2',
-                'Potency of "Cure" effect received+3%',
-                '"Refresh"+2',
-                'Mag. Acc.+1 "Mag.Atk.Bns."+1',
-            }
-        },
+        head = { name = "Herculean Helm", augments = { 'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},
         neck = "Sanctity Necklace",
         ear1 = "Genmei Earring",
         ear2 = "Infused Earring",
         body = "Jhakri Robe +2",
-        hands = {
-            name = "Herculean Gloves",
-            augments = {'DEX+9', 'Magic dmg. taken -3%', '"Refresh"+1',}
-        },
+        hands = { name = "Herculean Gloves",augments = {'DEX+9', 'Magic dmg. taken -3%', '"Refresh"+1',}},
         ring1 = "Defending ring",
         ring2 = "Vocane Ring",
         waist = "Fucho-no-obi",
         legs = "Carmine Cuisses +1",
-        feet = {
-            name = "Herculean Boots",
-            augments = {
-                'CHR+6',
-                'STR+14',
-                '"Refresh"+1',
-                'Mag. Acc.+14 "Mag.Atk.Bns."+14',
-            }
-        },
+        feet = {name = "Herculean Boots",augments = {'CHR+6','STR+14','"Refresh"+1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},
         back = "Moonbeam Cape"
     }
 
     sets.Idle.DT = {
-        main = "Terra's Staff",
-        sub = "Umbra strap",
         ammo = "Staunch Tathlum",
-        head = {
-            name = "Herculean Helm",
-            augments = {
-                'Accuracy+19 Attack+19',
-                'Damage taken-3%',
-                'AGI+3',
-                'Accuracy+2',
-            }
-        },
+         head="Malignance Chapeau",
         neck = "Loricate Torque +1",
         ear1 = "Genmei Earring",
         ear2 = "Infused Earring",
         body = "Ayanmo Corazza +2",
-        hands = {
-            name = "Herculean Gloves",
-            augments = {'DEX+9', 'Magic dmg. taken -3%', '"Refresh"+1',}
-        },
+        hands="Malignance Gloves",
         ring1 = "Defending ring",
         ring2 = "Vocane Ring",
         back = "Moonbeam Cape",
         waist = "Flume belt +1",
-        legs = "Aya. Cosciales +2",
-        feet = "Ahosi Leggings"
+        legs = "Malignance Tights",
+		feet="Malignance Boots",	
     }
 
     sets.Idle.Cleave = {
         main = "Terra's Staff",
         sub = "Umbra strap",
         ammo = "Staunch Tathlum",
-        head = {
-            name = "Herculean Helm",
-            augments = {
-                'Accuracy+19 Attack+19',
-                'Damage taken-3%',
-                'AGI+3',
-                'Accuracy+2',
-            }
-        },
-        neck = "Loricate Torque +1",
+        head="Malignance Chapeau",
+		neck = "Loricate Torque +1",
         ear1 = "Genmei Earring",
         ear2 = "Infused Earring",
         body = "Ayanmo Corazza +2",
-        hands = {
-            name = "Herculean Gloves",
-            augments = {'DEX+9', 'Magic dmg. taken -3%', '"Refresh"+1',}
-        },
+		hands="Malignance Gloves",
         ring1 = "Defending ring",
         ring2 = "Vocane Ring",
         back = "Moonbeam Cape",
         waist = "Flume belt +1",
         legs = "Carmine Cuisses +1",
-        feet = "Ahosi Leggings"
+        feet="Malignance Boots",
     }
 
     -- TP Sets--
@@ -146,10 +103,7 @@ function get_sets()
         ear1 = "Telos Earring",
         ear2 = "Brutal Earring",
         body = "Adhemar Jacket +1",
-        hands = {
-            name = "Adhemar Wrist. +1",
-            augments = {'STR+12', 'DEX+12', 'Attack+20',}
-        },
+        hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         ring1 = "Ilabrat Ring",
         ring2 = "Epona's Ring",
         back = {
@@ -176,21 +130,10 @@ function get_sets()
         ear1 = "Telos Earring",
         ear2 = "Cessance Earring",
         body = "Adhemar Jacket +1",
-        hands = {
-            name = "Adhemar Wrist. +1",
-            augments = {'STR+12', 'DEX+12', 'Attack+20',}
-        },
+		hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         ring1 = "Ilabrat Ring",
         ring2 = "Epona's ring",
-        back = {
-            name = "Rosmerta's Cape",
-            augments = {
-                'DEX+20',
-                'Accuracy+20 Attack+20',
-                '"Dbl.Atk."+10',
-                'Phys. dmg. taken-10%',
-            }
-        },
+		back = { name = "Rosmerta's Cape",augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10', 'Phys. dmg. taken-10%', }},
         waist = "Reiki Yotai",
         legs = "Samnuha Tights",
         feet = {
@@ -206,97 +149,46 @@ function get_sets()
         ear2 = "Telos Earring",
         body = "Adhemar Jacket +1",
         neck = "Mirage Stole +1",
-        hands = {
-            name = "Adhemar Wrist. +1",
-            augments = {'STR+12', 'DEX+12', 'Attack+20',}
-        },
+        hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         ring1 = "Cacoethic Ring",
         ring2 = "Ilabrat Ring",
-        back = {
-            name = "Rosmerta's Cape",
-            augments = {
-                'DEX+20',
-                'Accuracy+20 Attack+20',
-                '"Dbl.Atk."+10',
-                'Phys. dmg. taken-10%',
-            }
-        },
+		back = { name = "Rosmerta's Cape",augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10', 'Phys. dmg. taken-10%', }},
         waist = "Kentarch Belt +1",
         legs = "Carmine Cuisses +1",
         feet = "Carmine Greaves +1"
     }
 
     sets.TP.DT = {
-        ammo = "Staunch Tathlum",
-        head = {
-            name = "Herculean Helm",
-            augments = {
-                'Accuracy+19 Attack+19',
-                'Damage taken-3%',
-                'AGI+3',
-                'Accuracy+2',
-            }
-        },
-        body = "Ayanmo Corazza +2",
-        hands = {
-            name = "Herculean Gloves",
-            augments = {'DEX+9', 'Magic dmg. taken -3%', '"Refresh"+1',}
-        },
-        legs = "Aya. Cosciales +2",
-        feet = "Ahosi Leggings",
-        neck = "Loricate Torque +1",
-        waist = "Flume Belt +1",
-        left_ear = "Odnowa Earring +1",
-        right_ear = "Genmei Earring",
-        left_ring = "Vocane Ring",
-        right_ring = "Defending Ring",
-        back = {
-            name = "Rosmerta's Cape",
-            augments = {
-                'DEX+20',
-                'Accuracy+20 Attack+20',
-                '"Dbl.Atk."+10',
-                'Phys. dmg. taken-10%',
-            }
-        },
-    }
+        ammo="Staunch Tathlum",
+		head="Malignance Chapeau",
+		body="Ayanmo Corazza +2",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Loricate Torque +1",
+		waist="Flume Belt +1",
+		left_ear="Odnowa Earring +1",
+		right_ear="Genmei Earring",
+		left_ring="Vocane Ring",
+		right_ring="Defending Ring",
+		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+	}
+    
 
     sets.TP.DTAccuracy = {
-        ammo = "Staunch Tathlum",
-        head = {
-            name = "Herculean Helm",
-            augments = {
-                'Accuracy+19 Attack+19',
-                'Damage taken-3%',
-                'AGI+3',
-                'Accuracy+2',
-            }
-        },
-        body = "Ayanmo Corazza +2",
-        hands = {
-            name = "Herculean Gloves",
-            augments = {'DEX+9', 'Magic dmg. taken -3%', '"Refresh"+1',}
-        },
-        legs = "Aya. Cosciales +2",
-        feet = {
-            name = "Herculean Boots",
-            augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}
-        },
-        neck = "Mirage Stole +1",
-        waist = "Reiki Yotai",
-        right_ear = "Suppanomimi",
-        left_ear = "Telos Earring",
-        left_ring = "Ilabrat Ring",
-        right_ring = "Defending Ring",
-        back = {
-            name = "Rosmerta's Cape",
-            augments = {
-                'DEX+20',
-                'Accuracy+20 Attack+20',
-                '"Dbl.Atk."+10',
-                'Phys. dmg. taken-10%',
-            }
-        },
+        ammo="Ginsen",
+		head="Malignance Chapeau",
+		body="Ayanmo Corazza +2",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck={ name="Mirage Stole +1", augments={'Path: A',}},
+		waist="Reiki Yotai",
+		left_ear="Telos Earring",
+		right_ear="Brutal Earring",
+		left_ring="Ilabrat Ring",
+		right_ring="Epona's Ring",
+		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
     }
 
     -- Weaponskill Sets--
@@ -415,7 +307,7 @@ function get_sets()
         hands = "Jhakri Cuffs +2",
         ring1 = "Shiva Ring",
         ring2 = 'Archon Ring',
-        waist = "Eschan Stone",
+        waist = "Sacro Cord",
         back = {
             name = "Rosmerta's Cape",
             augments = {
@@ -542,7 +434,7 @@ function get_sets()
         hands = "Amalric Gages +1",
         ring1 = "Shiva Ring",
         ring2 = 'Shiva Ring',
-        waist = "Eschan Stone",
+        waist = "Sacro Cord",
         back = "Cornflower cape",
         legs="Luhlaza Shalwar +3",
         feet = "Jhakri Pigaches +1"
@@ -630,7 +522,7 @@ function get_sets()
         legs="Luhlaza Shalwar +3",
         feet = "Amalric Nails +1",
         neck = "Sanctity Necklace",
-        waist = "Eschan Stone",
+        waist = "Sacro Cord",
         left_ear = "Regal Earring",
         right_ear = "Friomisi Earring",
         ring1 = "Shiva Ring",
@@ -678,7 +570,7 @@ function get_sets()
                 'Mag. Acc.+14 "Mag.Atk.Bns."+14',
             }
         },
-        waist = "Eschan Stone"
+        waist = "Sacro Cord"
     }
 
     sets.BlueMagic.BuffSkill = {
@@ -799,7 +691,7 @@ function get_sets()
         hands = "Amalric Gages +1",
         ring1 = "Shiva Ring",
         ring2 = 'Shiva Ring',
-        waist = "Eschan Stone",
+        waist = "Sacro Cord",
         back = "Cornflower cape",
         legs = "Jhakri Slops +1",
         feet = "Jhakri Pigaches +1"
@@ -817,7 +709,7 @@ function get_sets()
         hands = "Leyline Gloves",
         ring1 = "Shiva Ring",
         ring2 = "Acumen Ring",
-        waist = "Eschan Stone",
+        waist = "Sacro Cord",
         back = "Gunslinger's Cape",
         legs = "Herculean Trousers",
         feet = {

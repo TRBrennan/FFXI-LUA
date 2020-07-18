@@ -32,22 +32,28 @@ function get_sets()
         Idle_ind = 1                  
        
         sets.Idle.Standard = {
-                                      head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
+                                      head="Malignance Chapeau",
 									  neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Emet Harness +1",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},
+                                      body="Emet Harness +1",
+									  hands="Malignance Gloves",
 									  ring1="Defending ring",ring2="Vocane Ring",
-                                      waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Ahosi Leggings", back ="Moonbeam Cape"}
+                                      waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots", 
+									  back ="Moonbeam Cape"}
+							
                                                  
-        sets.Idle.DT = {	          head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
+        sets.Idle.DT = {	          head="Malignance Chapeau",
 										neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
                                         body="Emet Harness +1",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},
 										ring1="Defending ring",ring2="Vocane Ring",
-                                        back="Moonbeam Cape",waist="Flume belt +1",legs="Mummu Kecks +2",feet="Ahosi Leggings", }
+                                        back="Moonbeam Cape",waist="Flume belt +1",    
+										legs="Malignance Tights",
+										feet="Malignance Boots", }
 										
 		sets.Idle.Cleave = { 
-										head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Etiolation earring +1", ear2="Handler's earring +1",
+										head="Malignance Chapeau",
+										neck="Loricate Torque +1", ear1="Etiolation earring +1", ear2="Handler's earring +1",
                                         body="Emet Hareness +1",hands="Garden Bangles",ring1="Defending ring",ring2="Vocane Ring",
-                                        back="Mecistopins mantle",waist="Flume belt +1",legs="Osmium Cuisses",feet="Ahosi Leggings",}								
+                                        back="Mecistopins mantle",waist="Flume belt +1",legs="Osmium Cuisses",feet="Malignance Boots", }								
         --TP Sets--
         sets.TP = {}
  
@@ -75,16 +81,22 @@ function get_sets()
 										waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1" }
                                                        
                 sets.TP.DT = { ammo ="Chrono bullet",
-                              head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Genmei Earring", ear2="Dignitary's Earring",
-                              body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Defending ring",ring2="Vocane Ring",
+                              head="Malignance Chapeau",
+							  neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Dignitary's Earring",
+                              body="Emet harness +1",hands="Malignance Gloves",
+							  ring1="Defending ring",ring2="Vocane Ring",
                               back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
-							  waist="Flume belt +1",legs ="Mummu Kecks +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+							  waist="Flume belt +1",										
+							  legs="Malignance Tights",
+							  feet="Malignance Boots", }
                                  
                 sets.TP.DTAccuracy = { ammo ="Chrono bullet",
-                                      head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque", ear1="Suppanomimi", ear2="Dignitary's Earring",     
+                                      head="Malignance Chapeau",neck="Loricate Torque +1", ear1="Suppanomimi", ear2="Dignitary's Earring",     
 									  body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Dark ring",ring2="Mars's ring",
                                       back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
-									  waist="Reiki Yotai",legs ="Mummu Kecks +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+									  waist="Reiki Yotai",							
+									  legs="Malignance Tights",
+							  feet="Malignance Boots",  }
                                                          				
        --Weaponskill Sets--
         sets.WS = {}
@@ -176,7 +188,7 @@ function get_sets()
 			sets.Ranged = {}
 			sets.Ranged.PreShot = {
             head="Amini Gapette", -- 7
-            body="Oshosi Vest", -- 7
+            body="Nisroch Jerkin", -- 7
 			hands ="Carmine Finger Gauntlets",
             back="Lutian Cape", -- 2
             legs="Adhemar Kecks",
@@ -187,7 +199,7 @@ function get_sets()
 			
 			sets.Ranged.RangedAttack =  { ammo ="Chrono bullet", head="Meghanada Visor +2",
 							neck="Iskur Gorget", ear2="Telos Earring", ear1="Volley Earring",
-							body="Oshosi Vest",hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
+							body="Nisroch Jerkin",hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
 							ring1="Dingir Ring",ring2="Cacoethic Ring", waist ="Yemaya Belt",
 							back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 							legs="Adhemar Kecks",feet="Meg. Jam. +2",} 

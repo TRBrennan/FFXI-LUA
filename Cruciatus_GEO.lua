@@ -184,10 +184,10 @@ function get_sets()
         legs = {name = "Telchine Braconi", augments = {"Enh. Mag. eff. dur. +9"}},
         feet = {name = "Telchine Pigaches", augments = {"Enh. Mag. eff. dur. +9"}},
         neck = "Incanter's Torque",
-        right_ear = "Lifestorm Earring",
+        right_ear = "Mimir Earring",
         left_ear = "Andoaa Earring",
         ring1 = "Metamorph Ring",
-        ring2 = "Sirona's Ring",
+        ring2 = "Stinki Ring",
         waist = "Embla Sash",
         back = "Fi follet cape +1"
     }

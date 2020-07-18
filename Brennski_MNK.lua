@@ -32,12 +32,12 @@ function get_sets()
 
 	sets.Idle.Standard = {
 		ammo = "Staunch Tathlum",
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
+		head="Malignance Chapeau",
 		neck = "Sanctity Necklace",
 		ear1 = "Genmei Earring",
 		ear2 = "Infused Earring",
-		body = "Hizamaru haramaki +1",
-		hands = {name = "Herculean Gloves", augments = {"DEX+9", "Magic dmg. taken -3%", '"Refresh"+1'}},
+		body = "Ashera Harness",
+		hands="Malignance Gloves",
 		ring1 = "Defending ring",
 		ring2 = "Vocane Ring",
 		back = "Moonbeam Cape",
@@ -48,18 +48,18 @@ function get_sets()
 
 	sets.Idle.DT = {
 		ammo = "Staunch Tathlum",
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
+		head="Malignance Chapeau",
 		neck = "Loricate Torque +1",
 		ear1 = "Genmei Earring",
 		ear2 = "Infused Earring",
 		body = "Ashera Harness",
-		hands = {name = "Herculean Gloves", augments = {"DEX+9", "Magic dmg. taken -3%", '"Refresh"+1'}},
+		hands="Malignance Gloves",
 		ring1 = "Defending ring",
 		ring2 = "Vocane Ring",
 		back = "Moonbeam Cape",
 		waist = "Moobow Belt",
 		legs = "Mummu Kecks +2",
-		feet = "Ahosi Leggings"
+		feet = "Malignance Boots"
 	}
 	--TP Sets--
 	sets.TP = {}
@@ -79,7 +79,7 @@ function get_sets()
 		waist = "Moonbow Belt",
 		left_ear = "Sherida Earring",
 		right_ear = "Telos Earring",
-		left_ring = "Epona's Ring",
+		left_ring = "Gere Ring",
 		right_ring = "Niqmaddu Ring",
 		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
 	}
@@ -95,7 +95,7 @@ function get_sets()
 		waist = "Moonbow Belt",
 		left_ear = "Cessance Earring",
 		right_ear = "Telos Earring",
-		left_ring = "Ilabrat Ring",
+		left_ring = "Gere Ring",
 		right_ring = "Niqmaddu Ring",
 		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
 	}
@@ -117,35 +117,35 @@ function get_sets()
 	}
 
 	sets.TP.DT = {
-		ammo = "Staunch Tathlum",
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		body = "Ashera Harness",
-		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		legs = "Mummu Kecks +2",
-		feet = "Ahosi Leggings",
-		neck = "Mnk. Nodowa +1",
-		waist = "Moonbow Belt",
-		left_ear = "Cessance Earring",
-		right_ear = "Telos Earring",
-		left_ring = "Ilabrat Ring",
-		right_ring = "Niqmaddu Ring",
-		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
+	ammo = "Staunch Tathlum",
+    head="Malignance Chapeau",
+    body="Ashera Harness",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
+    waist="Moonbow Belt",
+	left_ear = "Sherida Earring",
+	right_ear = "Telos Earring",
+    left_ring="Gere Ring",
+    right_ring="Niqmaddu Ring",
+    back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.TP.DTAccuracy = {
-		ammo = "Staunch Tathlum",
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		body = "Ashera Harness",
-		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		legs = "Mummu Kecks +2",
-		feet = "Anchorite's Gaiters +3",
-		neck = "Loricate Torque +1",
-		waist = "Moonbow Belt",
-		left_ear = "Cessance Earring",
-		right_ear = "Telos Earring",
-		left_ring = "Defending Ring",
-		right_ring = "Niqmaddu Ring",
-		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
+	ammo = "Ginsen",
+    head="Malignance Chapeau",
+    body="Ashera Harness",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
+    waist="Moonbow Belt",
+	left_ear = "Sherida Earring",
+	right_ear = "Telos Earring",
+    left_ring="Gere Ring",
+    right_ring="Niqmaddu Ring",
+    back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	--Weaponskill Sets--
@@ -162,7 +162,7 @@ function get_sets()
 		waist = "Foita Belt",
 		left_ear = "Sherida Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
-		left_ring = "Regal Ring1",
+		left_ring = "Gere Ring",
 		right_ring = "Niqmaddu Ring",
 		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
 	}
@@ -178,7 +178,7 @@ function get_sets()
 		waist = "Moonbow Belt",
 		left_ear = "Sherida Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
-		left_ring = "Regal Ring",
+		left_ring = "Gere Ring",
 		right_ring = "Niqmaddu Ring",
 		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
 	}
@@ -191,8 +191,8 @@ function get_sets()
 		ear2 = "Telos Earring",
 		body = "Adhemar Jacket +1",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		ring1 = "Niqmaddu Ring",
-		ring2 = "Rajas Ring",
+		left_ring = "Gere Ring",
+		right_ring = "Niqmaddu Ring",
 		back = "Visucius's mantle",
 		waist = "Grunfeld Rope",
 		legs = "Samnuha Tights",
@@ -210,7 +210,7 @@ function get_sets()
 		waist = "Moonbow Belt",
 		left_ear = "Sherida Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
-		left_ring = "Regal Ring",
+		left_ring = "Gere Ring",
 		right_ring = "Niqmaddu Ring",
 		back = {name = "Segomo's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "Weapon skill damage +10%"}}
 	}

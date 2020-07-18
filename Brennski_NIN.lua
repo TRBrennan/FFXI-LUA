@@ -461,7 +461,7 @@ function get_sets()
 	--Precast Sets--
 	sets.snapshot = {
 		head = "Amini Gapette", -- 7
-		body = "Oshosi Vest", -- 7
+		body = "Nisroch Jerkin", -- 7
 		hands = "Carmine Finger Gauntlets +1", --8
 		back = "Lutian Cape", -- 2
 		legs = "Adhemar Kecks",

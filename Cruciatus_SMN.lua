@@ -520,7 +520,7 @@ function init_gear_sets()
         legs = "Apogee Slacks +1",
         feet = {name = "Apogee Pumps +1", augments = {"MP+80", "Pet: Attack+35", "Blood Pact Dmg.+8"}},
         neck = "Summoner's Collar +1",
-        waist = "Klouskap Sash",
+        waist = "Regal Belt",
         left_ear = "Lugalbanda earring",
         right_ear = "Gelos Earring",
         left_ring = "Varar Ring",
@@ -627,8 +627,8 @@ function init_gear_sets()
         neck = "Voltsurge Torque",
         waist = "Channeler's Stone",
         left_ear = "Loquac. Earring",
-        right_ear = "Enchntr. Earring +1",
-        left_ring = "Sangoma Ring",
+        right_ear = "Mimir Earring",
+        left_ring = "stinki Ring",
         right_ring = "Kishar Ring",
         back = "Solemnity Cape"
     }
