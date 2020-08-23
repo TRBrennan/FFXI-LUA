@@ -221,7 +221,7 @@ function get_sets()
 		legs = {name = "Herculean Trousers",augments = {"Accuracy+12 Attack+12", "Weapon skill damage +3%", "DEX+9", "Accuracy+13"}	},
 		feet = { name = "Herculean Boots",augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}},
 		neck = "Caro Necklace",
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		left_ring = "Regal Ring",
@@ -290,7 +290,7 @@ function get_sets()
 		right_ring = "Niqmaddu Ring",
 		left_ring = "Regal Ring",
 		back = {name = "Ogma's cape", augments = {"DEX+20", "Accuracy+20 Attack+20", "DEX+10", "Weapon skill damage +10%"}},
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = { name = "Herculean Trousers",augments = {"Accuracy+12 Attack+12", "Weapon skill damage +3%", "DEX+9", "Accuracy+13"}},
 		feet = {name = "Herculean Boots", augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}}
 	}
@@ -415,7 +415,7 @@ function get_sets()
 	sets.JA = {}
 	sets.JA.VP = {legs = "Rune. Trousers +3", ring1 = "Stikini Ring", neck = "Incanter's Torque", head = "Erilaz Galea +1"}
 
-	sets.JA.Leiment = {body = {name = "Futhark Coat +1", augments = {'Enhances "Elemental Sforzo" effect'}}}
+	sets.JA.Liement = {body = {name = "Futhark Coat +1", augments = {'Enhances "Elemental Sforzo" effect'}}}
 
 	sets.JA.Embolen = {back = "Evasionist's cape"}
 
@@ -566,8 +566,8 @@ function precast(spell)
 		equip(sets.Utility.Enmity)
 	elseif spell.english == "Battuta" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Battuta))
-	elseif spell.english == "Leiment" or spell.english == "Elemental Sforzo" then
-		equip(set_combine(sets.Utility.Enmity, sets.JA.Leiment))
+	elseif spell.english == "Liement" or spell.english == "Elemental Sforzo" then
+		equip(set_combine(sets.Utility.Enmity, sets.JA.Liement))
 	elseif spell.english == "Pflug" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Pflug))
 	elseif spell.english == "Gambit" then
@@ -605,28 +605,34 @@ function midcast(spell, act)
 		if buffactive["Embolden"] then
 			equip(set_combine(sets.Utility.Enhancing, sets.JA.Embolen))
 		end
-	elseif string.find(spell.name, "Bar") or spell.name == "Temper" then
-		equip(sets.Utility.EnhancingSkill)
-		if buffactive["Embolden"] then
-			equip(set_combine(sets.Utility.EnhancingSkill, sets.JA.Embolen))
+		if string.find(spell.name, "Bar") or spell.name == "Temper" then
+			equip(sets.Utility.EnhancingSkill)
+			if buffactive["Embolden"] then
+				equip(set_combine(sets.Utility.EnhancingSkill, sets.JA.Embolen))
+			end
+		end	
+		if spell.english == "Stoneskin" then
+			equip(sets.Utility.SID)
+			if buffactive["Stoneskin"] then
+				send_command("@wait 0.7; input //cancel Stoneskin; input /echo Refreshing Stoneskin.")
+			end
 		end
-	elseif spell.english == "Stoneskin" then
-		equip(sets.Utility.SID)
-		if buffactive["Stoneskin"] then
-			send_command("@wait 0.7; input //cancel Stoneskin; input /echo Refreshing Stoneskin.")
+		if spell.english == "Refresh" then
+			equip(sets.Utility.Refresh)
 		end
-	elseif spell.english == "Refresh" then
-		equip(sets.Utility.Refresh)
-	elseif spell.english == "Phalanx" then
-		equip(sets.Utility.Phalanx)
-		if buffactive["Embolden"] then
-			equip(set_combine(sets.Utility.Phalanx, sets.JA.Embolen))
+		if spell.english == "Phalanx" then
+			equip(sets.Utility.Phalanx)
+			if buffactive["Embolden"] then
+				equip(set_combine(sets.Utility.Phalanx, sets.JA.Embolen))
+			end
 		end
-	elseif
+		if
 		spell.english == "Regen" or spell.english == "Regen II" or spell.english == "Regen III" or spell.english == "Regen IV"
-	 then
-		equip(sets.Utility.Regen)
-	elseif spell.english == "Utsusemi: Ichi" then
+		then
+			equip(sets.Utility.Regen)
+		end
+	end
+	if spell.english == "Utsusemi: Ichi" then
 		equip(sets.Utility.SID)
 		if buffactive["Copy Image (3)"] then
 			send_command("@wait 0.3; input //cancel Copy Image*")
@@ -640,9 +646,11 @@ function midcast(spell, act)
 		if buffactive["Copy Image"] then
 			send_command("@wait 0.3; input //cancel Copy Image*")
 		end
-	elseif spell.english == "Utsusemi: Ni" then
+	end
+	if spell.english == "Utsusemi: Ni" then
 		equip(sets.Utility.SID)
-	elseif
+	end
+	if
 		spell.english == "Flash" or spell.english == "Crusade" or spell.english == "Foil" or spell.skill == "Blue Magic" or
 			spell.skill == "Enfeebling Magic" or
 			spell.skill == "Dark Magic"

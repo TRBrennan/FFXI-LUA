@@ -1,11 +1,9 @@
 function get_sets()
 	send_command("bind f9 gs c toggle TP set")
 	send_command("bind f10 gs c toggle Idle set")
-	send_command("bind f11 gs c toggle CDC set")
-	send_command("bind f12 gs c toggle Req set")
-	send_command("bind !f12 gs c toggle Rea set")
-	send_command("bind ^` gs c toggle MB set")
-
+	send_command("bind ^f9 gs c equip TP set")
+	send_command("bind ^f10 gs c equip DT set")
+	
 	function file_unload()
 		send_command("unbind ^f9")
 		send_command("unbind ^f10")
@@ -69,7 +67,7 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head ="Adhemar Bonnet +1",
 		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
@@ -85,7 +83,7 @@ function get_sets()
 	}
 
 	sets.TP.AccuracyMid = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = {name = "Dampening Tam", augments = {"DEX+8", "Accuracy+14", "Mag. Acc.+13", "Quadruple Attack +1"}},
 		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
@@ -101,7 +99,7 @@ function get_sets()
 	}
 
 	sets.TP.AccuracyFull = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = {name = "Dampening Tam", augments = {"DEX+8", "Accuracy+14", "Mag. Acc.+13", "Quadruple Attack +1"}},
 		body = "Ashera Harness",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
@@ -133,7 +131,7 @@ function get_sets()
 	}
 
 	sets.TP.DTAccuracy = {
-	ammo = "Ginsen",
+	ammo = "Aurgelmir Orb",
     head="Malignance Chapeau",
     body="Ashera Harness",
     hands="Malignance Gloves",
@@ -184,7 +182,7 @@ function get_sets()
 	}
 
 	sets.WS.AF = {
-		ammp = "Floestone",
+		ammp = "Aurgelmir Orb",
 		head = "Hes. Crown +3",
 		neck = "Mnk. Nodowa +1",
 		ear1 = "Moonshade Earring",
@@ -194,7 +192,7 @@ function get_sets()
 		left_ring = "Gere Ring",
 		right_ring = "Niqmaddu Ring",
 		back = "Visucius's mantle",
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = "Samnuha Tights",
 		feet = {name = "Herculean Boots", augments = {"Attack+30", '"Counter"+1', "STR+8", "Accuracy+10"}}
 	}
@@ -473,7 +471,10 @@ function self_command(command)
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 	elseif command == "equip TP set" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
+	elseif command =="equip DT set" then
+		equip (sets.TP.DT)
 	elseif command == "equip Idle set" then
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 	end
 end
+

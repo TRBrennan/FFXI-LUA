@@ -5,6 +5,7 @@ function get_sets()
 	send_command("bind f10 gs c toggle Idle set")
 	send_command("bind f9 gs c equip TP set")
 	send_command("bind f11 gs c equip DT set")
+	
 	function file_unload()
 		send_command("unbind ^f9")
 		send_command("unbind ^f10")
@@ -75,7 +76,7 @@ function get_sets()
 
 	sets.Idle.DT = {
 		ammo = "Staunch Tathlum",
-		head = "Sulevia's Mask +2",
+		head="Hjarrandi Helm",
 		neck = "Loricate Torque +1",
 		ear1 = "Genmei earring",
 		ear2 = "Hearty Earring",
@@ -114,7 +115,7 @@ function get_sets()
 	}
 
 	sets.TP.OH = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Flam. Zucchetto +2",
 		neck = "Warrior's bead necklace +1",
 		ear2 = "Brutal earring",
@@ -122,7 +123,7 @@ function get_sets()
 		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
 		hands = "Sulev. Gauntlets +2",
 		ring1 = "Flamma ring",
-		ring2 = "Chirich ring",
+		ring2 = "Chirich Ring +1",
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
 		legs = "Pummeler's cuisses +3",
@@ -130,7 +131,7 @@ function get_sets()
 	}
 
 	sets.TP.Chango = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Flam. Zucchetto +2",
 		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
 		--hands="Emicho Gauntlets +1",
@@ -163,7 +164,7 @@ function get_sets()
 	}
 
 	sets.TP.Zulfiqar = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Flam. Zucchetto +2",
 		neck = "Warrior's bead necklace +1",
 		ear2 = "Brutal earring",
@@ -179,7 +180,7 @@ function get_sets()
 	}
 
 	sets.TP.AccuracyLite = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = Acc_Head,
 		neck = "Warrior's bead necklace +1",
 		ear2 = "Dignitary's earring",
@@ -187,7 +188,7 @@ function get_sets()
 		body = TP_Body,
 		hands = "Emicho Gauntlets +1",
 		ring1 = "Regal Ring",
-		ring2 = "Chirich ring",
+		ring2 = "Chirich Ring +1",
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
 		legs = "Pummeler's cuisses +3",
@@ -203,7 +204,7 @@ function get_sets()
 		body = TP_Body,
 		hands = "Emicho Gauntlets +1",
 		ring1 = "Regal Ring",
-		ring2 = "Chirich ring",
+		ring2 = "Chirich Ring +1",
 		back = DA_Back,
 		waist = "Kentarch belt +1",
 		legs = "Pummeler's cuisses +3",
@@ -212,7 +213,7 @@ function get_sets()
 
 	sets.TP.DT = {
     ammo="Staunch Tathlum",
-    head="Sulevia's Mask +2",
+    head="Hjarrandi Helm",
     body="Hjarrandi Breast.",
     hands="Sulev. Gauntlets +2",
     legs="Pumm. Cuisses +3",
@@ -304,23 +305,23 @@ function get_sets()
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = Crit_Back,
-		waist = "Grunfeld rope",
+		waist = "Sailfi Belt +1",
 		legs = "Argosy breeches +1",
 		feet = "Boii Calligae +1"
 	}
 
 	sets.RR = {
 		ammo = "Yetshila",
-		head = "Boii mask +1",
+		head = "Blistering Sallet +1",
 		neck = "Fotia gorget",
 		ear1 = "Telos earring",
 		ear2 = "Cessance earring",
 		body = "Argosy Hauberk +1",
-		hands = "Flamma manopolas +1",
+		hands = "Flamma manopolas +2",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Begrudging ring",
 		back = Crit_Back,
-		waist = "Grunfeld rope",
+		waist = "Sailfi Belt +1",
 		legs = "Argosy breeches +1",
 		feet = "Pummeler's calligae +3"
 	}
@@ -368,7 +369,7 @@ function get_sets()
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = DA_Back,
-		waist = "Grunfeld rope",
+		waist = "Sailfi Belt +1",
 		legs = "Argosy breeches +1",
 		feet = "Flam. Gambieras +2"
 	}
@@ -384,7 +385,7 @@ function get_sets()
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = STR_Back,
-		waist = "Grunfeld rope",
+		waist = "Sailfi Belt +1",
 		legs = "Argosy breeches +1",
 		feet = "Sulevia's leggings +2"
 	}
@@ -432,7 +433,7 @@ function get_sets()
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal Ring",
 		back = STR_Back,
-		waist = "Grunfeld rope",
+		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet = "Sulevia's leggings +2"
 	}
@@ -448,7 +449,7 @@ function get_sets()
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = STR_Back,
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet = "Boii calligae +1"
 	}
@@ -560,7 +561,7 @@ function get_sets()
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal Ring",
 		back = STR_Back,
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet = "Sulevia's leggings +2"
 	}
@@ -576,7 +577,7 @@ function get_sets()
 		ring1 = "Niqmaddu ring",
 		ring2 = "Ifrit ring +1",
 		back = STR_Back,
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet = "Boii calligae +1"
 	}
@@ -695,12 +696,12 @@ function get_sets()
 
 	sets.Evisceration = {
 		ammo = "Yetshila",
-		head = "Boii mask +1",
+		head = "Blistering Sallet +1",
 		neck = "Fotia Gorget",
 		ear2 = "Brutal earring",
 		ear2 = "Cessance earring",
 		body="Hjarrandi Breast.",
-		hands = "Flamma manopolas +1",
+		hands = "Flamma manopolas +2",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Begrudging ring",
 		back = Crit_Back,
@@ -736,7 +737,7 @@ function get_sets()
 		ring1 = "Regal Ring",
 		ring2 = "Rufescent ring",
 		back = STR_Back,
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet = "Sulevia's leggings +2"
 	}
@@ -752,19 +753,19 @@ function get_sets()
 		ring1 = "Regal Ring",
 		ring2 = "Rufescent ring",
 		back = STR_Back,
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet = "Sulevia's leggings +2"
 	}
 
 	sets.Hexa = {
 		ammo = "Yetshila",
-		head = "Boii mask +1",
+		head = "Blistering Sallet +1",
 		neck = "Fotia Gorget",
 		ear2 = "Brutal earring",
 		ear2 = "Moonshade earring",
 		body = "Argosy Hauberk +1",
-		hands = "Flamma manopolas +1",
+		hands = "Flamma manopolas +2",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Begrudging ring",
 		back = Crit_Back,
@@ -784,7 +785,7 @@ function get_sets()
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = DA_Back,
-		waist = "Grunfeld rope",
+		waist = "Sailfi Belt +1",
 		legs = "Argosy breeches +1",
 		feet = "Pummeler's calligae +3"
 	}
@@ -928,7 +929,7 @@ function get_sets()
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = DA_Back,
-		waist = "Grunfeld rope",
+		waist = "Sailfi Belt +1",
 		legs = "Argosy breeches +1",
 		feet = "Pummeler's calligae +3"
 	}
@@ -1168,8 +1169,8 @@ function precast(spell)
 			equip(sets.Break)
 			send_command("@input /echo Break Set")
 		elseif spell.english == "Resolution" then
-			--equip(sets.Resolution)
-			equip(sets.ResoWSD)
+			equip(sets.Resolution)
+			--equip(sets.ResoWSD)
 			if world.day == "Lightningsday" or world.day == "Windsday" or world.day == "Earthsday" then
 				equip({head = "Gavialis Helm"})
 				send_command("@input /echo Resolution Day Set")

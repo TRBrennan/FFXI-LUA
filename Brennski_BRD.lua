@@ -87,7 +87,7 @@ function get_sets()
         legs = "Brioso Cannions +3",
         feet = "Brioso Slippers +3",
         neck = "Fotia gorget",
-        waist = "Grunfeld rope",
+        waist = "Sailfi Belt +1",
         left_ear = "Brutal Earring",
         right_ear = "Telos Earring",
         left_ring = "Shukuyu Ring",
@@ -113,7 +113,7 @@ function get_sets()
             augments = {'HP+65', 'STR+15', 'DEX+15',}
         },
         neck = "Caro Necklace",
-        waist = "Grunfeld Rope",
+        waist = "Sailfi Belt +1",
         left_ear = "Ishvara Earring",
         right_ear = {
             name = "Moonshade Earring",
@@ -189,7 +189,7 @@ function get_sets()
         left_ear = "Telos Earring",
         right_ear = "Suppanomimi",
         left_ring = "Ilabrat Ring",
-        right_ring = "Chirich Ring",
+        right_ring = "Chirich Ring +1",
         back = {
             name = "Mecisto. Mantle",
             augments = {

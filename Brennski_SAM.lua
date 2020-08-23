@@ -79,7 +79,7 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Flam. Zucchetto +2",
 		neck = "Moonbeam Nodowa",
 		ear1 = "Cessance Earring",
@@ -95,7 +95,7 @@ function get_sets()
 	}
 
 	sets.TP.AccuracyMid = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Flam. Zucchetto +2",
 		neck = "Moonbeam Nodowa",
 		ear1 = "Cessance Earring",
@@ -111,7 +111,7 @@ function get_sets()
 	}
 
 	sets.TP.AccuracyFull = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Flam. Zucchetto +2",
 		neck = "Moonbeam Nodowa",
 		ear1 = "Dignitary's Earring",
@@ -143,7 +143,7 @@ function get_sets()
 	}
 
 	sets.TP.DTAccuracy = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Ynglinga Sallet",
 		neck = "Moonbeam Nodowa",
 		ear2 = "Telos Earring",
@@ -151,7 +151,7 @@ function get_sets()
 		body = "Tartarus Platemail",
 		hands = "Wakido Kote +3",
 		right_ring = "Niqmaddu Ring",
-		left_ring = "Chirich Ring",
+		left_ring = "Chirich Ring +1",
 		back = "Takaha Mantle",
 		waist = "Ioskeha belt +1",
 		legs = "Ken. Hakama",
@@ -171,7 +171,7 @@ function get_sets()
 		legs = "Wakido Haidate +3",
 		feet = WSD_Feet,
 		neck = "Caro Necklace",
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Regal Ring",
@@ -189,7 +189,7 @@ function get_sets()
 		legs = "Ken. Hakama",
 		feet = "Flam. Gambieras +2",
 		neck = "Caro Necklace",
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		left_ear = "Telos Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Regal Ring",
@@ -275,7 +275,7 @@ function get_sets()
 	}
 
 	sets.Utility.Steps = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Boii Mask +1",
 		body = TP_Body,
 		hands = "Rawhide Gloves",

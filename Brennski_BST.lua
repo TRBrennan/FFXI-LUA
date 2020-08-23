@@ -353,7 +353,7 @@ function get_sets()
 			augments = {"Attack+21", "Weapon skill damage +5%"}
 		},
 		neck = "Caro Necklace",
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
 		right_ear = {
 			name = "Moonshade Earring",

@@ -6,6 +6,8 @@ function get_sets()
     send_command('bind f12 gs c toggle Req set')
     send_command('bind !f12 gs c toggle Rea set')
     send_command('bind ^` gs c toggle MB set')
+	send_command("bind ^f9 gs c equip TP set")
+	send_command("bind ^f10 gs c equip DT set")
 
     function file_unload()
 
@@ -97,7 +99,7 @@ function get_sets()
 
     TP_ind = 1
     sets.TP.Standard = {
-        ammo = "Ginsen",
+        ammo = "Aurgelmir Orb",
         head = "Adhemar Bonnet +1",
         neck = "Mirage Stole +1",
         ear1 = "Telos Earring",
@@ -124,7 +126,7 @@ function get_sets()
     }
 
     sets.TP.AccuracyMid = {
-        ammo = "Ginsen",
+        ammo = "Aurgelmir Orb",
         head = "Carmine Mask +1",
         neck = "Mirage Stole +1",
         ear1 = "Telos Earring",
@@ -143,7 +145,7 @@ function get_sets()
     }
 
     sets.TP.AccuracyFull = {
-        ammo = "Floestone",
+        ammo = "Aurgelmir Orb",
         head = "Carmine Mask +1",
         ear1 = "Dignitary's Earring",
         ear2 = "Telos Earring",
@@ -176,7 +178,7 @@ function get_sets()
     
 
     sets.TP.DTAccuracy = {
-        ammo="Ginsen",
+        ammo="Aurgelmir Orb",
 		head="Malignance Chapeau",
 		body="Ayanmo Corazza +2",
 		hands="Malignance Gloves",
@@ -229,7 +231,7 @@ function get_sets()
     SavageBlade_ind = 1
 
     sets.SavageBlade.Attack = {
-        ammo = "Floestone",
+        ammo = "Aurgelmir Orb",
         head = {
             name = "Herculean Helm",
             augments = {
@@ -253,7 +255,7 @@ function get_sets()
                 'Weapon skill damage +10%',
             }
         },
-        waist = "Grunfeld Rope",
+        waist = "Sailfi Belt +1",
         legs="Luhlaza Shalwar +3",
         feet = {
             name = "Herculean Boots",
@@ -321,7 +323,7 @@ function get_sets()
     }
 
     sets.CircleBlade = {
-        ammo = "Floestone",
+        ammo = "Aurgelmir Orb",
         head = "Adhemar Bonnet +1",
         neck = "Fotia gorget",
         ear2 = "Moonshade Earring",
@@ -356,7 +358,7 @@ function get_sets()
     }
 
     sets.Expiacion = {
-        ammo = "Floestone",
+        ammo = "Aurgelmir Orb",
         head = {
             name = "Herculean Helm",
             augments = {
@@ -380,7 +382,7 @@ function get_sets()
                 'Weapon skill damage +10%',
             }
         },
-        waist = "Grunfeld Rope",
+        waist = "Sailfi Belt +1",
         legs="Luhlaza Shalwar +3",
         feet = {
             name = "Herculean Boots",
@@ -450,7 +452,7 @@ function get_sets()
     sets.BlueMagic = {}
 
     sets.BlueMagic.Physical = {
-        ammo = "Floestone",
+        ammo = "Aurgelmir Orb",
         head = "Jhakri Coronal +2",
         body = {
             name = "Adhemar Jacket +1",
@@ -468,7 +470,7 @@ function get_sets()
         },
         feet = "Jhakri Pigaches +2",
         neck = "Mirage Stole +1",
-        waist = "Grunfeld Rope",
+        waist = "Sailfi Belt +1",
         left_ear = "Digni. Earring",
         right_ear = "Telos Earring",
         ring1 = "Ilabrat Ring",
@@ -485,7 +487,7 @@ function get_sets()
     }
 
     sets.BlueMagic.Dart = {
-        ammo = "Floestone",
+        ammo = "Aurgelmir Orb",
         head = {
             name = "Herculean Helm",
             augments = {
@@ -539,7 +541,7 @@ function get_sets()
     }
 
     sets.BlueMagic.PhysStun = {
-        ammo = "Floestone",
+        ammo = "Aurgelmir Orb",
         ear1 = "Moonshade Earring",
         ear2 = "Mavi Earring",
         ring2 = "Stikini Ring",
@@ -601,7 +603,7 @@ function get_sets()
     }
 
     sets.BlueMagic.BlueCure = {
-        ammo = "Floestone",
+        ammo = "Aurgelmir Orb",
         head = "Telchine Cap",
         body = "Vrikodara Jupon",
         hands = "Telchine Gloves",
@@ -1028,9 +1030,11 @@ function self_command(command)
         if Idle_ind > #sets.Idle.index then Idle_ind = 1 end
         send_command('@input /echo <----- Idle Set changed to ' .. sets.Idle.index[Idle_ind] .. ' ----->')
         equip(sets.Idle[sets.Idle.index[Idle_ind]])
-    elseif command == 'equip TP set' then
-        equip(sets.TP[sets.TP.index[TP_ind]])
-    elseif command == 'equip Idle set' then
-        equip(sets.Idle[sets.Idle.index[Idle_ind]])
-    end
+	elseif command == "equip TP set" then
+		equip(sets.TP[sets.TP.index[TP_ind]])
+	elseif command =="equip DT set" then
+		equip (sets.TP.DT)
+	elseif command == "equip Idle set" then
+		equip(sets.Idle[sets.Idle.index[Idle_ind]])
+	end
 end

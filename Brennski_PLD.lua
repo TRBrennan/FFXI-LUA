@@ -93,7 +93,7 @@ function get_sets()
 	}
 
 	sets.TP.Standard = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Flam. Zucchetto +2",
 		body = "Emicho Haubert +1",
 		hands = "Emicho Gauntlets +1",
@@ -104,11 +104,11 @@ function get_sets()
 		left_ear = "Telos Earring",
 		right_ear = "Cessance Earring",
 		left_ring = "Petrov Ring",
-		right_ring = "Chirich Ring",
+		right_ring = "Chirich Ring +1",
 		back = "Grounded Mantle"
 	}
 	sets.TP.DW = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Flam. Zucchetto +2",
 		body = {name = "Valorous Mail", augments = {"Accuracy+20 Attack+20", '"Store TP"+8', "Accuracy+12", "Attack+8"}},
 		hands = "Flam. Manopolas +2",
@@ -119,7 +119,7 @@ function get_sets()
 		left_ear = "Telos Earring",
 		right_ear = "Cessance Earring",
 		left_ring = "Petrov Ring",
-		right_ring = "Chirich Ring",
+		right_ring = "Chirich Ring +1",
 		back = "Grounded Mantle"
 	}
 
@@ -152,7 +152,7 @@ function get_sets()
 	SavageBlade_ind = 1
 
 	sets.SavageBlade.Attack = {
-		ammo = "Floestone",
+		ammo = "Aurgelmir Orb",
 		head = {name = "Valorous Mask", augments = {"Accuracy+18", "Weapon skill damage +3%", "STR+4", "Attack+11"}},
 		neck = "Caro Necklace",
 		ear1 = "Ishvara Earring",
@@ -165,7 +165,7 @@ function get_sets()
 		ring1 = "Niqmaddu Ring",
 		ring2 = "Regal Ring",
 		back = {name = "Cichol's Mantle", augments = {"VIT+20", "Accuracy+20 Attack+20", "Weapon skill damage +10%"}},
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = {name = "Valor. Hose", augments = {"Attack+27", "Weapon skill damage +5%", "DEX+8", "Accuracy+15"}},
 		feet = "Sulevia's Leggings +2"
 	}
@@ -210,7 +210,7 @@ function get_sets()
 	}
 
 	sets.WS.Atonement = {
-		ammo = "Floestone",
+		ammo = "Aurgelmir Orb",
 		head = "Sulevia's Mask +2",
 		neck = "Asperity necklace",
 		ear1 = "Brutal Earring",

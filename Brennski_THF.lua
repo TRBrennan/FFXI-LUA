@@ -112,7 +112,7 @@ function get_sets()
                 body = "Ashera Harness",
                 hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
                 ring1 = "Cacoethic Ring",
-                ring2 = "Chirich Ring",
+                ring2 = "Chirich Ring +1",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Kentarch Belt +1",
                 legs = "Carmine Cuisses +1",
@@ -188,7 +188,7 @@ function get_sets()
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-                waist = "Grunfeld Rope",
+                waist = "Sailfi Belt +1",
                 legs = {
                         name = "Herculean Trousers",
                         augments = {"Accuracy+12 Attack+12", "Weapon skill damage +3%", "DEX+9", "Accuracy+13"}
@@ -245,7 +245,7 @@ function get_sets()
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-                waist = "Grunfeld Rope",
+                waist = "Sailfi Belt +1",
                 legs = {
                         name = "Herculean Trousers",
                         augments = {"Accuracy+12 Attack+12", "Weapon skill damage +3%", "DEX+9", "Accuracy+13"}

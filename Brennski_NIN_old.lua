@@ -151,7 +151,7 @@ function init_gear_sets()
         head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
         neck="Caro necklace",
         hands="Adhemar Wristbands",
-        waist="Grunfeld rope",
+        waist="Sailfi Belt +1",
         body="Herculean Vest",
         legs="Hiza. Hizayoroi +2",
         feet={ name="Herculean Boots", augments={'Accuracy+21','Weapon skill damage +4%','Attack+12',}},
@@ -180,7 +180,7 @@ function init_gear_sets()
         left_ear="Telos Earring",
         right_ear="Moonshade Earring",
         feet={ name="Herculean Boots", augments={'Accuracy+21','Weapon skill damage +4%','Attack+12',}},
-        waist="Grunfeld rope",
+        waist="Sailfi Belt +1",
         right_ring="Regal Ring",
         left_ring="Rajas Ring"})
  
@@ -443,7 +443,7 @@ function init_gear_sets()
         right_ring="Cacoethic Ring",})
          
     sets.engaged.HighAcc = set_combine(sets.engaged.ACC, {
-               left_ring="Chirich Ring",})
+               left_ring="Chirich Ring +1",})
          
     -- I dont use   
     sets.engaged.Evasion = {}
@@ -474,7 +474,7 @@ function init_gear_sets()
     sets.engaged.HighAcc.Haste_15 = set_combine(sets.engaged.Acc.Haste_15,{
         legs="Samnuha tights",
         right_ring="Cacoethic Ring",
-        left_ring="Chirich Ring",})
+        left_ring="Chirich Ring +1",})
      
     -- I dont use
     sets.engaged.Evasion.Haste_15 = {}
@@ -506,7 +506,7 @@ function init_gear_sets()
         waist="Kentarch belt +1",
         left_ear="Telos Earring",
         right_ring="Cacoethic Ring",
-        left_ring="Chirich Ring",})
+        left_ring="Chirich Ring +1",})
          
     -- I dont use
     sets.engaged.Evasion.Haste_30 = {}
@@ -570,7 +570,7 @@ function init_gear_sets()
         neck="Yarak Torque",
         waist="Kentarch Belt +1", 
         right_ring="Cacoethic Ring",
-        left_ring="Chirich Ring",})
+        left_ring="Chirich Ring +1",})
      
     -- I dont use
     sets.engaged.Evasion.MaxHaste = {}

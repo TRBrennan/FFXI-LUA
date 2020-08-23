@@ -69,17 +69,17 @@ function get_sets()
 	--1=Standard, 2=DW, 3=Anguta, 4=AccuracyLite, 5=AccuracyFull, 6=DT
 	TP_ind = 1
 	
-	sets.TP.Standard = {ammo="Ginsen",
+	sets.TP.Standard = {ammo="Aurgelmir Orb",
 			    head=Acc_Head,neck="Lissome Necklace", ear1="Telos earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs=TP_Legs,feet="Flam. Gambieras +2"}
 	
-	sets.TP.DW ={ammo="Ginsen",
+	sets.TP.DW ={ammo="Aurgelmir Orb",
 			    head=Acc_Head,neck="Lissome Necklace", ear1="Suppanomimi", ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Flamma ring",ring2="Niqmaddu ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs="Carmine cuisses +1",feet="Carmine greaves +1"}		
 	
-	sets.TP.Anguta = {ammo="Ginsen",
+	sets.TP.Anguta = {ammo="Aurgelmir Orb",
 			    head=Acc_Head,neck="Ainia collar", ear1="Telos earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs=TP_Legs,feet="Flam. Gambieras +2"}
@@ -90,12 +90,12 @@ function get_sets()
 --			    back=DA_Back,waist="Ioskeha belt +1",legs="Argosy Breeches +1",feet="Flamma gambieras +1"}
 	
 					
-	sets.TP.AccuracyLite = {ammo="Ginsen",
+	sets.TP.AccuracyLite = {ammo="Aurgelmir Orb",
 			    head=DA_Head,neck="Lissome Necklace", ear1="Brutal earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs=TP_Legs,feet="Flam. Gambieras +2",}
 	
-	sets.TP.AccuracyFull = {ammo="Ginsen",
+	sets.TP.AccuracyFull = {ammo="Aurgelmir Orb",
 			    head=Acc_Head,neck="Lissome Necklace", ear1="Brutal earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs=TP_Legs,feet="Flam. Gambieras +2",}

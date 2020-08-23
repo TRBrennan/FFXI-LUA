@@ -861,7 +861,7 @@ function init_gear_sets()
     waist="Olseni Belt",
     left_ear="Telos Earring",
     right_ear="Digni. Earring",
-    left_ring="Chirich Ring",
+    left_ring="Chirich Ring +1",
     right_ring="Petrov Ring",
     back={ name="Mecisto. Mantle", augments={'Cap. Point+48%','MP+13','"Mag.Atk.Bns."+3','DEF+5',}},
     }

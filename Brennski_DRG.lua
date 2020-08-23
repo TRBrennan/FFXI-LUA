@@ -81,7 +81,7 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Flam. Zucchetto +2",
 		body = TP_Body,
 		hands = "Emicho Gauntlets +1",
@@ -129,7 +129,7 @@ function get_sets()
 	}
 
 	sets.TP.DTAccuracy = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Sulevia's Mask +2",
 		neck = "Lissome Necklace",
 		left_ear = "Sherida earring",
@@ -154,7 +154,7 @@ function get_sets()
 	Stardiver_ind = 1
 
 	sets.Stardiver.Attack = {
-		ammo = "Floestone",
+		ammo = "Aurgelmir Orb",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia Gorget",
 		ear2 = "Moonshade Earring",
@@ -186,7 +186,7 @@ function get_sets()
 		ring1 = "Regal Ring",
 		ring2 = "Niqmaddu Ring",
 		back = "Brigantia's Mantle",
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet = "Sulevia's Leggings +2"
 	}
@@ -208,7 +208,7 @@ function get_sets()
 		ring1 = "Regal Ring",
 		ring2 = "Niqmaddu Ring",
 		back = "Brigantia's Mantle",
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet = "Sulevia's Leggings +2"
 	}
@@ -220,7 +220,7 @@ function get_sets()
 	Drakesbane = 1
 
 	sets.Drakesbane.Attack = {
-		ammo = "Floestone",
+		ammo = "Aurgelmir Orb",
 		head = "Flam. Zucchetto +2",
 		neck = "Caro Necklace",
 		ear2 = "Moonshade Earring",
@@ -230,7 +230,7 @@ function get_sets()
 		ring1 = "Niqmaddu Ring",
 		ring2 = "Regal Ring",
 		back = "Brigantia's Mantle",
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = "Sulevia's Cuisses +2",
 		feet = "Thereoid Greaves"
 	}
@@ -295,7 +295,7 @@ function get_sets()
 	}
 
 	sets.Utility.Steps = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Boii Mask +1",
 		body = TP_Body,
 		hands = "Rawhide Gloves",
@@ -317,7 +317,7 @@ function get_sets()
 
 	sets.JA = {}
 	sets.JA.Jump = {
-		ammo = "Ginsen",
+		ammo = "Aurgelmir Orb",
 		head = "Sulevia's Mask +2",
 		body = TP_Body,
 		hands = {name = "Emicho Gauntlets", augments = {"HP+50", "DEX+10", "Accuracy+15"}},

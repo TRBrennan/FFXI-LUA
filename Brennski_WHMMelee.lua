@@ -417,7 +417,7 @@ function get_sets()
 	}
 
 	sets.WS.Savage = {
-		ammo = "Floestone",
+		ammo = "Aurgelmir Orb",
 		head = "Jhakri Coronal +1",
 		neck = "Caro Necklace",
 		ear1 = "Ishvara Earring",
@@ -427,13 +427,13 @@ function get_sets()
 		ring1 = "Petrov Ring",
 		ring2 = "Ilabrat Ring",
 		back = "Lupine Cape",
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = "Jhakri Slops +1",
 		feet = "Thereoid Greaves"
 	}
 
 	sets.WS.Vorpal = {
-		ammo = "Floestone",
+		ammo = "Aurgelmir Orb",
 		head = "Jhakri Coronal +1",
 		neck = "Caro Necklace",
 		ear1 = "Ishvara Earring",
@@ -443,13 +443,13 @@ function get_sets()
 		ring1 = "Begrudging Ring",
 		ring2 = "Ilabrat Ring",
 		back = "Lupine Cape",
-		waist = "Grunfeld Rope",
+		waist = "Sailfi Belt +1",
 		legs = "Jhakri Slops +1",
 		feet = "Thereoid Greaves"
 	}
 
 	sets.WS.Req = {
-		ammo = "Floestone",
+		ammo = "Aurgelmir Orb",
 		head = "Adhemar Bonnet +1",
 		neck = "Fotia gorget",
 		ear1 = "Moonshade Earring",

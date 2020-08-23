@@ -110,7 +110,7 @@ function get_sets()
                 left_ear = "Cessance Earring",
                 right_ear = "Telos Earring",
                 left_ring = "Niqmaddu Ring",
-                right_ring = "Chirich Ring",
+                right_ring = "Chirich Ring +1",
                 back = {
                         name = "Visucius's Mantle",
                         augments = {
@@ -152,7 +152,7 @@ function get_sets()
                 left_ear = "Cessance Earring",
                 right_ear = "Telos Earring",
                 left_ring = "Niqmaddu Ring",
-                right_ring = "Chirich Ring",
+                right_ring = "Chirich Ring +1",
                 back = {
                         name = "Visucius's Mantle",
                         augments = {
@@ -180,7 +180,7 @@ function get_sets()
                 left_ear = "Cessance Earring",
                 right_ear = "Telos Earring",
                 left_ring = "Niqmaddu Ring",
-                right_ring = "Chirich Ring",
+                right_ring = "Chirich Ring +1",
                 back = {
                         name = "Visucius's Mantle",
                         augments = {
@@ -262,7 +262,7 @@ function get_sets()
                 ring1 = "Begrudging Ring",
                 ring2 = "Epona's Ring",
                 back = "Visucius's Mantle",
-                waist = "Grunfeld Rope",
+                waist = "Sailfi Belt +1",
                 legs = "Samnuha Tights",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+21", "Crit.hit rate+1", "DEX+14", "Attack+14"}}
         }
@@ -286,7 +286,7 @@ function get_sets()
                 ring1 = "Niqmaddu Ring",
                 ring2 = "Epona's Ring",
                 back = "Visucius's Mantle",
-                waist = "Grunfeld Rope",
+                waist = "Sailfi Belt +1",
                 legs = "Samnuha Tights",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+21", "Crit.hit rate+1", "DEX+14", "Attack+14"}}
         }
@@ -310,7 +310,7 @@ function get_sets()
                 ring1 = "Niqmaddu Ring",
                 ring2 = "Epona's Ring",
                 back = "Visucius's Mantle",
-                waist = "Grunfeld Rope",
+                waist = "Sailfi Belt +1",
                 legs = "Samnuha Tights",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+21", "Crit.hit rate+1", "DEX+14", "Attack+14"}}
         }
@@ -334,7 +334,7 @@ function get_sets()
                 ring1 = "Niqmaddu Ring",
                 ring2 = "Rajas Ring",
                 back = "Visucius's mantle",
-                waist = "Grunfeld Rope",
+                waist = "Sailfi Belt +1",
                 legs = "Samnuha Tights",
                 feet = {name = "Herculean Boots", augments = {"Attack+30", '"Counter"+1', "STR+8", "Accuracy+10"}}
         }
@@ -358,7 +358,7 @@ function get_sets()
                 ring1 = "Niqmaddu Ring",
                 ring2 = "Rajas Ring",
                 back = "Visucius's mantle",
-                waist = "Grunfeld Rope",
+                waist = "Sailfi Belt +1",
                 legs = "Samnuha Tights",
                 feet = {name = "Herculean Boots", augments = {"Attack+30", '"Counter"+1', "STR+8", "Accuracy+10"}}
         }
@@ -382,7 +382,7 @@ function get_sets()
                         augments = {"Accuracy+25 Attack+25", '"Dual Wield"+2', "STR+13", "Accuracy+6"}
                 },
                 neck = "Caro Necklace",
-                waist = "Grunfeld Rope",
+                waist = "Sailfi Belt +1",
                 left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
                 right_ear = "Ishvara Earring",
                 left_ring = "Niqmaddu Ring",

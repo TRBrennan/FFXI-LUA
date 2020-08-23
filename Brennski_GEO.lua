@@ -74,7 +74,7 @@ function get_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-        ammo = "Floestone",
+        ammo = "Aurgelmir Orb",
         head = "Welkin Crown",
         neck = "Sanctity Necklace",
         right_ear = "Etiolation Earring",
@@ -451,7 +451,7 @@ function get_sets()
     waist="Olseni Belt",
     left_ear="Cessance Earring",
     right_ear="Telos Earring",
-    left_ring="Chirich Ring",
+    left_ring="Chirich Ring +1",
     right_ring="Petrov Ring",
     back={ name="Mecisto. Mantle", augments={'Cap. Point+48%','MP+13','"Mag.Atk.Bns."+3','DEF+5',}},
     }
