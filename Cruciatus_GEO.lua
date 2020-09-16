@@ -53,7 +53,7 @@ function get_sets()
         range = "Dunna",
         head = "Nahtirah Hat",
         neck = "Voltsurge Torque",
-        right_ear = "Etiolation Earring",
+        right_ear = "Malignance Earring",
         left_ear = "Loquacious Earring",
         body = "Shango Robe",
         ring2 = "Prolix ring",
@@ -196,11 +196,12 @@ function get_sets()
         set_combine(sets.midcast["Enhancing Magic"], {waist = "Siegel Sash", neck = "Stone gorget"})
 
     sets.midcast["Enfeebling Magic"] = {
-        -- main="Marin staff", sub="Niobid Strap",
+        main = "Daybreak",
+        sub = "Ammurapi Shield",
         range = "Dunna",
         head = "Befouled Crown",
         neck = "Bagua Charm +1",
-        left_ear = "Regal Earring",
+        left_ear = "Malignance Earring",
         right_ear = "Barkarole Earring",
         body = "Shango Robe",
         hands = "Lurid Mitts",
@@ -213,7 +214,7 @@ function get_sets()
     }
 
     sets.midcast["Elemental Magic"] = {
-        main = "Solstice",
+        main = "Daybreak",
         sub = "Ammurapi Shield",
         range = "Dunna",
         head = "Merlinic Hood",
@@ -224,7 +225,7 @@ function get_sets()
         neck = "Mizu. Kubikazari",
         waist = "Refoccilation Stone",
         left_ear = "Barkarole Earring",
-        right_ear = "Friomisi Earring",
+        right_ear = "Malignance Earring",
         left_ring = "Mujin Band",
         right_ring = "Locus Ring",
         back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
@@ -233,13 +234,13 @@ function get_sets()
     sets.midcast.Impact = set_combine(sets.midcast["Elemental Magic"], {head = empty, body = "Twilight Cloak"})
 
     sets.midcast["Dark Magic"] = {
-        main = "Solstice",
+        main = "Daybreak",
         sub = "Ammurapi Shield",
         range = "Dunna",
         head = "Bagua Galero",
         neck = "Erra Pendant",
         right_ear = "Barkarole Earring",
-        left_ear = "Regal Earring",
+        left_ear = "Malignance Earring",
         body = "Geomancy Tunic",
         hands = "Jhakri Cuffs +1",
         ring1 = "Stikini Ring",
@@ -251,7 +252,7 @@ function get_sets()
     }
 
     sets.magic_burst = {
-        main = "Solstice",
+        main = "Daybreak",
         sub = "Ammurapi Shield",
         range = "Dunna",
         head = "Merlinic Hood",
@@ -262,7 +263,7 @@ function get_sets()
         neck = "Mizu. Kubikazari",
         waist = "Refoccilation Stone",
         left_ear = "Barkarole Earring",
-        right_ear = "Friomisi Earring",
+        right_ear = "Malignance Earring",
         left_ring = "Mujin Band",
         right_ring = "Locus Ring",
         back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
@@ -304,7 +305,7 @@ function get_sets()
     -- Idle sets
 
     sets.idle = {
-        main = "Bolelabunga",
+        main = "Daybeak",
         sub = "Genmei Shield",
         range = "Dunna",
         head = "Befouled Crown",
@@ -322,7 +323,7 @@ function get_sets()
     }
 
     sets.idle.PDT = {
-        main = "Bolelabunga",
+        main = "Daybreak",
         sub = "Genmei Shield",
         range = "Dunna",
         head = "Befouled Crown",
@@ -385,7 +386,7 @@ function get_sets()
     sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {})
 
     sets.idle.Town = {
-        main = "Bolelabunga",
+        main = "Daybreak",
         sub = "Genmei Shield",
         range = "Dunna",
         head = {
@@ -406,7 +407,7 @@ function get_sets()
     }
 
     sets.idle.Weak = {
-        main = "Bolelabunga",
+        main = "Daybreak",
         sub = "Genmei Shield",
         range = "Dunna",
         head = {

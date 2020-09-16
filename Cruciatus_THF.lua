@@ -44,7 +44,7 @@ function get_sets()
                                 head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring", 
 								body="Ashera Harness",hands="Herculean gloves",ring1="Defending ring",ring2="Vocane Ring",
                                         back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},waist="Flume belt +1",legs="Mummu Kecks +2",
-										feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
+										feet={ name="Herculean Boots", augments={'Pet: Phys. dmg. taken -1%','Pet: STR+1','Quadruple Attack +2','Accuracy+18 Attack+18',}}, }
 										
 					
         --TP Sets--
@@ -59,7 +59,7 @@ function get_sets()
 									body="Mummu Jacket +2",
 									hands="Mummu Wrists +2",
 									legs="Meg. Chausses +2",
-									feet={ name="Herculean Boots", augments={'Accuracy+14 Attack+14','"Triple Atk."+2','DEX+2','Accuracy+12','Attack+11',}},
+									feet={ name="Herculean Boots", augments={'Pet: Phys. dmg. taken -1%','Pet: STR+1','Quadruple Attack +2','Accuracy+18 Attack+18',}},
 									neck="Anu Torque",
 									waist="Kentarch Belt +1",
 									left_ear="Sherida Earring",
@@ -74,7 +74,7 @@ function get_sets()
 									body="Mummu Jacket +2",
 									hands="Mummu Wrists +2",
 									legs="Meg. Chausses +2",
-									feet={ name="Herculean Boots", augments={'Accuracy+14 Attack+14','"Triple Atk."+2','DEX+2','Accuracy+12','Attack+11',}},
+									feet={ name="Herculean Boots", augments={'Pet: Phys. dmg. taken -1%','Pet: STR+1','Quadruple Attack +2','Accuracy+18 Attack+18',}},
 									neck="Anu Torque",
 									waist="Kentarch Belt +1",
 									left_ear="Sherida Earring",
@@ -105,7 +105,7 @@ function get_sets()
 									body="Mummu Jacket +2",
 									hands = "Plunderer's Armlets +1",
 									legs="Meg. Chausses +2",
-									feet={ name="Herculean Boots", augments={'Accuracy+14 Attack+14','"Triple Atk."+2','DEX+2','Accuracy+12','Attack+11',}},
+									feet={ name="Herculean Boots", augments={'Pet: Phys. dmg. taken -1%','Pet: STR+1','Quadruple Attack +2','Accuracy+18 Attack+18',}},
 									neck="Anu Torque",
 									waist="Chaac Belt",
 									left_ear="Sherida Earring",

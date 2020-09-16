@@ -340,15 +340,7 @@ function get_sets()
         },
         ring1 = "Ilabrat Ring",
         ring2 = "Epona's Ring",
-        back = {
-            name = "Rosmerta's Cape",
-            augments = {
-                'DEX+20',
-                'Accuracy+20 Attack+20',
-                '"Dbl.Atk."+10',
-                'Phys. dmg. taken-10%',
-            }
-        },
+        back = { name = "Rosmerta's Cape",   augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
         waist = "Fotia belt",
         legs="Luhlaza Shalwar +3",
         feet = {
@@ -454,20 +446,9 @@ function get_sets()
     sets.BlueMagic.Physical = {
         ammo = "Aurgelmir Orb",
         head = "Jhakri Coronal +2",
-        body = {
-            name = "Adhemar Jacket +1",
-            augments = {'STR+12', 'DEX+12', 'Attack+20',}
-        },
+        body = {name = "Adhemar Jacket +1",augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         hands = "Jhakri Cuffs +2",
-        legs = {
-            name = "Samnuha Tights",
-            augments = {
-                'STR+10',
-                'DEX+10',
-                '"Dbl.Atk."+3',
-                '"Triple Atk."+3',
-            }
-        },
+        legs = {name = "Samnuha Tights",augments = {'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
         feet = "Jhakri Pigaches +2",
         neck = "Mirage Stole +1",
         waist = "Sailfi Belt +1",
@@ -475,28 +456,12 @@ function get_sets()
         right_ear = "Telos Earring",
         ring1 = "Ilabrat Ring",
         ring2 = "Petrov Ring",
-        back = {
-            name = "Cornflower Cape",
-            augments = {
-                'MP+16',
-                'DEX+3',
-                'Accuracy+2',
-                'Blue Magic skill +10',
-            }
-        },
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
     }
 
     sets.BlueMagic.Dart = {
         ammo = "Aurgelmir Orb",
-        head = {
-            name = "Herculean Helm",
-            augments = {
-                'Accuracy+19 Attack+19',
-                'Damage taken-3%',
-                'AGI+3',
-                'Accuracy+2',
-            }
-        },
+		head="Malignance Chapeau",
         neck = "Mirage Stole +1",
         ear1 = "Corybant Pearl",
         ear2 = "Kemas Earring",
@@ -506,20 +471,14 @@ function get_sets()
         ring2 = "Petrov Ring",
         back = "Cornflower Cape",
         waist = "Chaac Belt",
-        legs = "Samnuha Tights",
-        feet = {
-            name = "Herculean Boots",
-            augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}
-        }
+        legs = "Volte Hose",
+        feet="Malignance Boots",
     }
 
     sets.BlueMagic.BlueMagic = {
         ammo = "Pemphredo Tathlum",
         head = "Jhakri Coronal +2",
-        body = {
-            name = "Amalric Doublet",
-            augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}
-        },
+        body = {name = "Amalric Doublet",augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}},
         hands = "Amalric Gages",
         legs="Luhlaza Shalwar +3",
         feet = "Amalric Nails +1",
@@ -529,31 +488,26 @@ function get_sets()
         right_ear = "Friomisi Earring",
         ring1 = "Shiva Ring",
         ring2 = "Acumen Ring",
-        back = {
-            name = "Cornflower Cape",
-            augments = {
-                'MP+16',
-                'DEX+3',
-                'Accuracy+2',
-                'Blue Magic skill +10',
-            }
-        },
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
     }
 
     sets.BlueMagic.PhysStun = {
+		head="Malignance Chapeau",
         ammo = "Aurgelmir Orb",
         ear1 = "Moonshade Earring",
         ear2 = "Mavi Earring",
         ring2 = "Stikini Ring",
         Ring1 = "Kishar Ring",
-        back = "Cuchulain's Mantle",
+		legs="Luhlaza Shalwar +3",
+        back={ name="Aurist's Cape +1", augments={'Path: A',}},
         hands = "Jhakri Cuffs +2",
+		feet="Malignance Boots",
         neck = "Mirage Stole +1"
     }
 
     sets.BlueMagic.Debuff = {
         ammo = "Pemphredo Tathlum",
-        head = "Carmine Mask +1",
+        head="Malignance Chapeau",
         ear2 = "Regal Earring",
         ear1 = "Psystorm Earring",
         neck = "Mirage Stole +1",
@@ -637,15 +591,7 @@ function get_sets()
         right_ear = "Friomisi Earring",
         ring1 = "Shiva Ring",
         ring2 = "Acumen Ring",
-        back = {
-            name = "Cornflower Cape",
-            augments = {
-                'MP+16',
-                'DEX+3',
-                'Accuracy+2',
-                'Blue Magic skill +10',
-            }
-        },
+back={ name="Aurist's Cape +1", augments={'Path: A',}},
     }
 
     sets.BlueMagic.HeavyStrike = {

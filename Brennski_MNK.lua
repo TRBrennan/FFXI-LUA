@@ -40,7 +40,7 @@ function get_sets()
 		ring2 = "Vocane Ring",
 		back = "Moonbeam Cape",
 		waist = "Moobow Belt",
-		legs = "Mummu Kecks +2",
+		legs="Malignance Tights",
 		feet = "Hermes' Sandals"
 	}
 
@@ -56,7 +56,7 @@ function get_sets()
 		ring2 = "Vocane Ring",
 		back = "Moonbeam Cape",
 		waist = "Moobow Belt",
-		legs = "Mummu Kecks +2",
+		legs="Malignance Tights",
 		feet = "Malignance Boots"
 	}
 	--TP Sets--
@@ -71,7 +71,7 @@ function get_sets()
 		head ="Adhemar Bonnet +1",
 		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		legs = "Hesychast's Hose +2",
+		legs = "Hesychast's Hose +3",
 		feet = "Anchorite's Gaiters +3",
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
@@ -87,7 +87,7 @@ function get_sets()
 		head = {name = "Dampening Tam", augments = {"DEX+8", "Accuracy+14", "Mag. Acc.+13", "Quadruple Attack +1"}},
 		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		legs = "Hesychast's Hose +2",
+		legs = "Hesychast's Hose +3",
 		feet = "Anchorite's Gaiters +3",
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
@@ -103,7 +103,7 @@ function get_sets()
 		head = {name = "Dampening Tam", augments = {"DEX+8", "Accuracy+14", "Mag. Acc.+13", "Quadruple Attack +1"}},
 		body = "Ashera Harness",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		legs = "Hesychast's Hose +2",
+		legs = "Hesychast's Hose +3",
 		feet = "Anchorite's Gaiters +3",
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
@@ -168,7 +168,7 @@ function get_sets()
 	sets.WS.SS = {
 		ammo = "Knobkierrie",
 		head = "Hes. Crown +3",
-		body = {name = "Herculean Vest", augments = {"Accuracy+21 Attack+21", "Weapon skill damage +4%", "DEX+4", "Attack+5"}},
+		body = "Adhemar Jacket +1",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Ken. Hakama",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
@@ -235,7 +235,7 @@ function get_sets()
 		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Ken. Hakama",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		feet = "Anchorite's gaiters +3",
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
 		left_ear = "Sherida Earring",
@@ -249,10 +249,7 @@ function get_sets()
 	sets.NINMagic = {}
 
 	sets.NINMagic.Nuke = {
-		head = {
-			name = "Herculean Helm",
-			augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Dbl.Atk."+2', "Mag. Acc.+12", '"Mag.Atk.Bns."+4'}
-		},
+		head = {name = "Herculean Helm",augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Dbl.Atk."+2', "Mag. Acc.+12", '"Mag.Atk.Bns."+4'}},
 		neck = "Sanctity Necklace",
 		ear2 = "Friomisi earring",
 		ear1 = "Hecate's Earring",
@@ -350,7 +347,7 @@ function get_sets()
 
 	sets.JA.Counterstance = {feet = "Hesychast's Gaiters"}
 
-	sets.JA.ChiBlast = {waist = "Chaac Belt", Hands = "Volte Bracers"}
+	sets.JA.ChiBlast = {waist = "Chaac Belt", Hands = "Volte Bracers", Legs ="Volte Hose"}
 
 	--Precast Sets--
 	sets.precast = {}

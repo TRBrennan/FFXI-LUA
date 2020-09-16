@@ -27,22 +27,22 @@ Gear_Debug = 0
 -- Gear Sets
 function get_sets()
     sets.aftercast_Idle_refresh = {
-        main = "Bolelabunga",
-        sub = "Genmei Shield",
-        ammo = "Homiliary",
-        head = "Befouled Crown",
-        body = "Kaykaus Bliaut",
-        hands = {name = "Chironic Gloves", augments = {"Magic burst dmg.+1%","DEX+2","Damage taken-4%", "Accuracy+6 Attack+6",'Mag. Acc.+7 "Mag.Atk.Bns."+7'}},
-        legs = "Assid. Pants +1",
-        feet = "Aya. Gambieras +1",
-        neck = "Sanctity Necklace",
-        waist = "Fucho-no-Obi",
-        left_ear = "Lifestorm Earring",
-        right_ear = "Hearty Earring",
-        left_ring = "Defending Ring",
-        right_ring = "Shneddick Ring",
-        back = "Solemnity Cape"
-    }
+		main="Daybreak",
+		sub="Genmei Shield",
+		ammo="Homiliary",
+		head="Befouled Crown",
+		body="Inyanga Jubbah +2",
+		hands="Inyan. Dastanas +2",
+		legs="Assid. Pants +1",
+		feet="Inyan. Crackows +2",
+		neck="Sanctity Necklace",
+		waist="Fucho-no-Obi",
+		left_ear="Lifestorm Earring",
+		right_ear="Hearty Earring",
+		left_ring="Defending Ring",
+		right_ring="Shneddick Ring",
+		back="Alaunus's Cape",
+	}
 
     sets.aftercast_Move = sets.aftercast_Idle_refresh
 
@@ -62,7 +62,7 @@ function get_sets()
         neck = "Voltsurge Torque",
         waist = "Witful Belt",
         left_ear = "Mendicant's Earring",
-        right_ear = "Spellbr. Earring",
+        right_ear = "Malignance Earring",
         left_ring = "Prolix Ring",
         right_ring = "Kishar Ring",
         back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}}
@@ -77,7 +77,7 @@ function get_sets()
         feet = "Regal Pumps +1",
         neck = "Voltsurge Torque",
         waist = "Witful Belt",
-        left_ear = "Lifestorm Earring",
+        left_ear = "Malignance Earring",
         right_ear = "Spellbr. Earring",
         left_ring = "Prolix Ring",
         right_ring = "Kishar Ring",
@@ -96,7 +96,7 @@ function get_sets()
         neck = "Voltsurge Torque",
         waist = "Witful Belt",
         left_ear = "Loquac. Earring",
-        right_ear = "Enchntr. Earring +1",
+        right_ear = "Malignance Earring",
         left_ring = "Prolix Ring",
         right_ring = "Kishar Ring",
         back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}}
@@ -141,7 +141,7 @@ function get_sets()
     }
 
     sets.midcast_EnfeeblingMagic = {
-        main = "Queller Rod",
+        main = "Daybreak",
         sub = "Ammurapi Shield",
         ammo = "Hydrocera",
         head = "Befouled crown",
@@ -149,7 +149,7 @@ function get_sets()
         ear1 = "Lifestorm Earring",
         ear2 = "Regal Earring",
         body = "Chironic doublet",
-        hands = "Lurid mitts",
+        hands="Inyan. Dastanas +2",
         ring1 = "Stikini Ring",
         ring2 = "Kishar Ring",
         back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}},
@@ -214,12 +214,12 @@ function get_sets()
     }
 
     sets.midcast_MAB = {
-        main = "Queller Rod",
+        main = "Daybreak",
         sub = "Ammurapi Shield",
         ammo = "Pemphredo tathlum",
         head = "Helios band",
         neck = "Sanctity necklace",
-        ear1 = "Friomisi Earring",
+        ear1 = "Malignance Earring",
         ear2 = "Regal Earring",
         body = "Vedic coat",
         hands = "Helios gloves",
@@ -232,12 +232,12 @@ function get_sets()
     }
 
     sets.midcast_Impact = {
-        main = "Queller Rod",
+        main = "Daybreak",
         sub = "Ammurapi Shield",
         ammo = "Pemphredo tathlum",
         neck = "Sanctity necklace",
-        ear1 = "Friomisi Earring",
-        ear2 = "Crematio Earring",
+        ear1 = "Malignance Earring",
+        ear2 = "Regal Earring",
         body = "Twilight cloak",
         hands = "Chironic gloves",
         ring1 = "Weatherspoon ring",
@@ -390,6 +390,7 @@ function midcast(spell)
         send_command("@input /echo Regen Set")
     elseif spell.name == "Cursna" then
         equip(sets.midcast_Cursna)
+		send_command("@input /echo Cursna Cure Set")
     elseif spell.skill == "Enfeebling Magic" then
         equip(sets.midcast_EnfeeblingMagic)
         send_command("@input /echo Enfeebling Set")

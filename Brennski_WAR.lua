@@ -1009,6 +1009,7 @@ function get_sets()
 		feet = "Agoge Calligae +2",
 		waist = "Chaac Belt",
 		Hands = "Volte Bracers",
+		Legs ="Volte Hose",
 		head = {
 			name = "Valorous Mask",
 			augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}

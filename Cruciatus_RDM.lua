@@ -460,7 +460,7 @@ function get_sets()
 		feet = "Amalric Nails +1",
 	}
 	
-end1
+end
 
 function precast(spell)
 	if spell.skill == "Elemental Magic" then

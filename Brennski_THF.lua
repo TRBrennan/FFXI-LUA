@@ -27,7 +27,7 @@ function get_sets()
         --Idle Sets--
         sets.Idle = {}
 
-        sets.Idle.index = {"Standard", "DT"}
+        sets.Idle.index = {"Standard", "DT", "RefreshRegen"}
         Idle_ind = 1
 
         sets.Idle.Standard = {
@@ -63,6 +63,22 @@ function get_sets()
 				legs="Malignance Tights",
 				feet="Malignance Boots",
         }
+		
+		sets.Idle.RefreshRegen ={    
+			ammo="Staunch Tathlum",
+			head={ name="Herculean Helm", augments={'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},
+			body="Ashera Harness",
+			hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},
+			legs="Malignance Tights",
+			feet="Turms Leggings +1",
+			neck="Loricate Torque +1",
+			waist="Flume Belt +1",
+			left_ear="Genmei Earring",
+			right_ear="Infused Earring",
+			left_ring="Chirich Ring +1",
+			right_ring="Defending Ring",
+			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		}
 
         --TP Sets--
         sets.TP = {}

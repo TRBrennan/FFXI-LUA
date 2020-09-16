@@ -37,7 +37,7 @@ function get_sets()
 		main = "Daybreak",
 		sub = "Sacro Bulwark",
 		ammo = "Homiliary",
-		head = "Vitiation chapeau +2",
+		head = "Vitiation chapeau +3",
 		neck = "Sanctity Necklace",
 		ear1 = "Genmei Earring",
 		ear2 = "Infused Earring",
@@ -58,7 +58,7 @@ function get_sets()
 		neck = "Loricate Torque +1",
 		ear1 = "Etiolation Earring",
 		ear2 = "Infused Earring",
-		head = "Vitiation chapeau +2",
+		head = "Vitiation chapeau +3",
 		ring2 = "Vocane Ring",
 		ring1 = "Defending ring",
 		waist = "Fucho-no-obi",
@@ -174,7 +174,7 @@ function get_sets()
 		main="Daybreak",
 		sub="Ammurapi Shield",
 		ammo = "Pemphredo Tathlum",
-		head = { name = "Merlinic Hood",augments = {'Mag. Acc.+18 "Mag.Atk.Bns."+18', "Magic burst mdg.+7%", "CHR+7", "Mag. Acc.+12"}},
+		head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst dmg.+7%','CHR+7','Mag. Acc.+12',}},
 		neck = "Sanctity Necklace",
 		ear2 = "Malignance Earring",
 		ear1 = "Regal Earring",
@@ -199,7 +199,7 @@ function get_sets()
 		ring2 = "Mujin Band",
 		waist = "Sacro Cord",
 		back = {name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
-		head = {name = "Merlinic Hood", augments = {'Mag. Acc.+18 "Mag.Atk.Bns."+18', "Magic burst dmg.+7%", "CHR+7", "Mag. Acc.+12"}},
+		head={ name="Merlinic Hood", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst dmg.+7%','CHR+7','Mag. Acc.+12',}},
 		body = {name = "Merlinic Jubbah", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
 		hands = "Amalric Gages +1",
 		legs = {name = "Merlinic Shalwar", augments = {'Mag. Acc.+12 "Mag.Atk.Bns."+12', "Magic burst dmg.+8%", "MND+5", '"Mag.Atk.Bns."+12'}},
@@ -275,7 +275,7 @@ function get_sets()
 		main="Daybreak",
 		sub = "Ammurapi shield",
 		ammo = "Regal Gem",
-		head = "Vitiation chapeau +2",
+		head = "Vitiation chapeau +3",
 		neck = "Duelist's torque +2",
 		ear2 = "Snotra Earring",
 		ear1 = "Regal Earring",
@@ -284,7 +284,7 @@ function get_sets()
 		ring1 = "Stikini Ring",
 		ring2 = "Kishar Ring",
 		waist = "Luminary Sash",
-		back= {name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 		legs = "Chironic Hose",
 		feet = "Vitiation Boots +3",
 	}
@@ -293,7 +293,7 @@ function get_sets()
 		main="Daybreak",
 		sub = "Ammurapi shield",
 		ammo = "Regal Gem",
-		head = "Vitiation chapeau +2",
+		head = "Vitiation chapeau +3",
 		neck = "Duelist's torque +2",
 		ear2 = "Snotra Earring",
 		ear1 = "Regal Earring",
@@ -309,6 +309,24 @@ function get_sets()
 
 	--Magic Sets--
 	sets.Magic = {}
+	
+	sets.Magic.EnfeebleAcc = {
+	    main="Daybreak",
+		sub="Ammurapi Shield",
+		ammo="Regal Gem",
+		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+		body="Atrophy Tabard +3",
+		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
+		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
+		neck={ name="Dls. Torque +2", augments={'Path: A',}},
+		waist="Luminary Sash",
+		left_ear="Regal Earring",
+		right_ear="Snotra Earring",
+		left_ring="Stikini Ring",
+		right_ring="Kishar Ring",
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+	}
 
 	sets.Magic.Healing = {
 		main="Daybreak",
@@ -325,7 +343,7 @@ function get_sets()
 		right_ear="Meili Earring",
 		left_ring="Ephedra Ring",
 		right_ring="Sirona's Ring",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 
 	sets.Magic.Regen = {
@@ -341,7 +359,7 @@ function get_sets()
 		ring1 = "Stikini Ring",
 		ring2 = "Kishar Ring",
 		waist="Embla Sash",
-		back = {name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 		legs = "Telchine Braconi",
 		feet = "Telchine Pigaches"
 	}
@@ -378,7 +396,7 @@ function get_sets()
 		right_ear="Snotra Earring",
 		left_ring="Stikini Ring",
 		right_ring="Kishar Ring",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 	
 
@@ -397,7 +415,7 @@ function get_sets()
 		feet = "Amalric Nails +1",
 		body = "Vitiation tabard +3",
 		legs = "Psycloth Lappas",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 
 	sets.Magic.Refresh = {legs = "Lethargy Fuseau", waist = "Gishdubar Sash", body = "Atrophy Tabard +3"}
@@ -406,7 +424,7 @@ function get_sets()
 	    main={ name="Grioavolr", augments={'Enfb.mag. skill +15','MP+77','Mag. Acc.+24','"Mag.Atk.Bns."+21','Magic Damage +7',}},
 		sub="Mephitis Grip",
 		ammo="Regal Gem",
-		head={ name="Viti. Chapeau +2", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
 		body="Lethargy Sayon +1",
 		hands="Leth. Gantherots +1",
 		legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
@@ -477,7 +495,7 @@ function get_sets()
 
 	sets.Utility.Weather = {waist = "Hachirin-no-obi"}
 	
-	sets.Utility.TH = {waist = "Chaac Belt", Hands = "Volte Bracers"}
+	sets.Utility.TH = {waist = "Chaac Belt", Hands = "Volte Bracers", legs ="Volte Hose"}
 
 	sets.Utility.DrainAspir = {
 		main = "Grioavolr",
@@ -535,7 +553,7 @@ function get_sets()
 
 	sets.WS.Savage = {
 		ammo = "Aurgelmir Orb",
-		head = "Vitiation chapeau +2",
+		head = "Vitiation chapeau +3",
 		neck = "Caro Necklace",
 		ear1 = "Ishvara Earring",
 		ear2 = "Moonshade Earring",
@@ -569,7 +587,7 @@ function get_sets()
 	
 	sets.WS.Light ={
 		ammo = "Pemphredo Tathlum",
-		head = "Vitiation chapeau +2",
+		head = "Vitiation chapeau +3",
 		neck = "Duelist's torque +2",
 		ear2 = "Malignance Earring",
 		ear1 = "Regal Earring",
@@ -613,14 +631,11 @@ function precast(spell)
 		equip(sets.WS.Savage)
 		send_command("@input /echo Savage Blade Set")
 	elseif spell.english == "Sanguine Blade" then
-        if spell.element == world.day_element and spell.element == world.weather_element then
-        equip(set_combine(sets.WS.Sang, set.Utility.Weather))
-        send_command("@input /echo Sanguine Blade Set + Obi")
-      --  elseif spell.element == world.weather_element and world.weather_intensity == 2 then
-        --equip(set_combine(sets.WS.Sang, set.Utility.Weather))
-        --send_command("@input /echo Sanguine Blade Set + Obi")
+		if spell.element == world.weather_element and world.weather_intensity == 2 then
+			equip(set_combine(sets.WS.Sang, sets.Utility.Weather))
+			send_command("@input /echo Sanguine Blade Set + Obi")
         else equip(sets.WS.Sang)    
-        send_command("@input /echo Sanguine Blade Set")
+			send_command("@input /echo Sanguine Blade Set")
 		end
 	elseif spell.english == "Seraph Blade" or spell.english == "Red Lotus Blade" or spell.english == "Burning Blade" or spell.english == "Shining Blade" or spell.english == "Black Halo" or spell.english == "Aeolian Edge" then
 		equip(sets.WS.Light)
@@ -682,7 +697,7 @@ function midcast(spell, act)
 	
 	if spell.skill == "Enfeebling Magic" then
 		equip(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]])
-			if spell.name == "Silence" or spell.name == "Sleep" or spell.name == "Sleep II" or spell.name == "Sleepga" or spell.name == "Sleepga II" or spell.name == "Break" or spell.name == "Bind" then
+			if spell.name == "Silence" or spell.name == "Sleep" or spell.name == "Sleep II" or spell.name == "Sleepga" or spell.name == "Sleepga II" or spell.name == "Break" or spell.name == "Bind" or spell.name == "Dispel" then
 				equip(sets.Enfeebling.Acc)
 				send_command ("@input /echo Enfeeble Acc set")
 			end
@@ -692,7 +707,7 @@ function midcast(spell, act)
 			end
 		if buffactive["Saboteur"] then
 			equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]], sets.JA.Sab))
-			if spell.name == "Silence" or spell.name == "Sleep" or spell.name == "Sleep II" or spell.name == "Sleepga" or spell.name == "Sleepga II" or spell.name == "Break" or spell.name == "Bind" then
+			if spell.name == "Silence" or spell.name == "Sleep" or spell.name == "Sleep II" or spell.name == "Sleepga" or spell.name == "Sleepga II" or spell.name == "Break" or spell.name == "Bind" or spell.name == "Dispel" then
 				equip(sets.Enfeebling.Acc)
 				send_command ("@input /echo Enfeeble Acc set")
 			end

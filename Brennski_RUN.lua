@@ -7,6 +7,9 @@ function get_sets()
 	send_command("bind f9 gs c toggle TP set")
 	send_command("bind f10 gs c toggle Idle set")
 	send_command("bind f11 gs c toggle Weapons")
+	send_command("bind ^f9 gs c equip TP set")
+	send_command("bind ^f10 gs c equip DT set")
+	
 	function file_unload()
 		send_command("unbind ^f9")
 		send_command("unbind ^f10")
@@ -129,7 +132,7 @@ function get_sets()
 		right_ring = "Niqmaddu Ring",
 		back = { name = "Ogma's cape",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}	},
 		waist = "Ioskeha belt +1",
-		legs = "Meghanada Chausses +2",
+		legs = "Samnuha Tights",
 		feet = "Turms Leggings +1"
 	}
 
@@ -454,14 +457,15 @@ function get_sets()
 
 	sets.JA.BattutaActive = {hands = "Turms Mittens"}
 
-	sets.JA.Gambit = {hands = "Runeist's Mitons +3", waist = "Chaac Belt"}
+	sets.JA.Gambit = {hands = "Runeist's Mitons +3", waist = "Chaac Belt", Legs ="Volte Hose"}
 
 	sets.JA.Pflug = {feet = "Runeist's Boots +3"}
 
 	sets.JA.Rayke = {
 		feet = {name = "Futhark Boots", augments = {'Enhances "Rayke" effect'}},
 		waist = "Chaac Belt",
-		Hands = "Volte Bracers"
+		Hands = "Volte Bracers",
+		Legs ="Volte Hose"
 	}
 
 	sets.JA.Steps = {
@@ -752,6 +756,11 @@ function self_command(command)
 		send_command("@input /echo <----- Requiescat Set changed to " .. sets.Requiescat.index[Requiescat_ind] .. " ----->")
 	elseif command == "equip TP set" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
+
+	elseif command == "equip TP set" then
+		equip(sets.TP[sets.TP.index[TP_ind]])
+	elseif command =="equip DT set" then
+		equip (sets.TP.MDTank)
 	elseif command == "equip Idle set" then
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 	end
