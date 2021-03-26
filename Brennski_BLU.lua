@@ -57,7 +57,7 @@ function get_sets()
         neck = "Loricate Torque +1",
         ear1 = "Genmei Earring",
         ear2 = "Infused Earring",
-        body = "Ayanmo Corazza +2",
+        body="Malignance Tabard",
         hands="Malignance Gloves",
         ring1 = "Defending ring",
         ring2 = "Vocane Ring",
@@ -75,7 +75,7 @@ function get_sets()
 		neck = "Loricate Torque +1",
         ear1 = "Genmei Earring",
         ear2 = "Infused Earring",
-        body = "Ayanmo Corazza +2",
+        body="Malignance Tabard",
 		hands="Malignance Gloves",
         ring1 = "Defending ring",
         ring2 = "Vocane Ring",
@@ -99,7 +99,7 @@ function get_sets()
 
     TP_ind = 1
     sets.TP.Standard = {
-        ammo = "Aurgelmir Orb",
+        ammo = "Coiste Bodhar",
         head = "Adhemar Bonnet +1",
         neck = "Mirage Stole +1",
         ear1 = "Telos Earring",
@@ -126,7 +126,7 @@ function get_sets()
     }
 
     sets.TP.AccuracyMid = {
-        ammo = "Aurgelmir Orb",
+        ammo = "Coiste Bodhar",
         head = "Carmine Mask +1",
         neck = "Mirage Stole +1",
         ear1 = "Telos Earring",
@@ -145,7 +145,7 @@ function get_sets()
     }
 
     sets.TP.AccuracyFull = {
-        ammo = "Aurgelmir Orb",
+        ammo = "Coiste Bodhar",
         head = "Carmine Mask +1",
         ear1 = "Dignitary's Earring",
         ear2 = "Telos Earring",
@@ -178,7 +178,7 @@ function get_sets()
     
 
     sets.TP.DTAccuracy = {
-        ammo="Aurgelmir Orb",
+        ammo="Coiste Bodhar",
 		head="Malignance Chapeau",
 		body="Ayanmo Corazza +2",
 		hands="Malignance Gloves",
@@ -231,7 +231,7 @@ function get_sets()
     SavageBlade_ind = 1
 
     sets.SavageBlade.Attack = {
-        ammo = "Aurgelmir Orb",
+        ammo = "Coiste Bodhar",
         head = {
             name = "Herculean Helm",
             augments = {
@@ -323,7 +323,7 @@ function get_sets()
     }
 
     sets.CircleBlade = {
-        ammo = "Aurgelmir Orb",
+        ammo = "Coiste Bodhar",
         head = "Adhemar Bonnet +1",
         neck = "Fotia gorget",
         ear2 = "Moonshade Earring",
@@ -350,7 +350,7 @@ function get_sets()
     }
 
     sets.Expiacion = {
-        ammo = "Aurgelmir Orb",
+        ammo = "Coiste Bodhar",
         head = {
             name = "Herculean Helm",
             augments = {
@@ -444,7 +444,7 @@ function get_sets()
     sets.BlueMagic = {}
 
     sets.BlueMagic.Physical = {
-        ammo = "Aurgelmir Orb",
+        ammo = "Coiste Bodhar",
         head = "Jhakri Coronal +2",
         body = {name = "Adhemar Jacket +1",augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         hands = "Jhakri Cuffs +2",
@@ -460,7 +460,7 @@ function get_sets()
     }
 
     sets.BlueMagic.Dart = {
-        ammo = "Aurgelmir Orb",
+        ammo = "Coiste Bodhar",
 		head="Malignance Chapeau",
         neck = "Mirage Stole +1",
         ear1 = "Corybant Pearl",
@@ -479,21 +479,21 @@ function get_sets()
         ammo = "Pemphredo Tathlum",
         head = "Jhakri Coronal +2",
         body = {name = "Amalric Doublet",augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}},
-        hands = "Amalric Gages",
+        hands = "Amalric Gages +1",
         legs="Luhlaza Shalwar +3",
         feet = "Amalric Nails +1",
         neck = "Sanctity Necklace",
         waist = "Sacro Cord",
         left_ear = "Regal Earring",
         right_ear = "Friomisi Earring",
-        ring1 = "Shiva Ring",
+        ring1 = "Stikini Ring",
         ring2 = "Acumen Ring",
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
     }
 
     sets.BlueMagic.PhysStun = {
 		head="Malignance Chapeau",
-        ammo = "Aurgelmir Orb",
+        ammo = "Coiste Bodhar",
         ear1 = "Moonshade Earring",
         ear2 = "Mavi Earring",
         ring2 = "Stikini Ring",
@@ -557,7 +557,7 @@ function get_sets()
     }
 
     sets.BlueMagic.BlueCure = {
-        ammo = "Aurgelmir Orb",
+        ammo = "Coiste Bodhar",
         head = "Telchine Cap",
         body = "Vrikodara Jupon",
         hands = "Telchine Gloves",
@@ -598,10 +598,7 @@ back={ name="Aurist's Cape +1", augments={'Path: A',}},
         ammo = "Falcon Eye",
         head = "Adhemar Bonnet +1",
         body = "Adhemar Jacket +1",
-        hands = {
-            name = "Adhemar Wristbands",
-            augments = {'DEX+10', 'AGI+10', 'Accuracy+15',}
-        },
+        hands = {name = "Adhemar Wristbands",augments = {'DEX+10', 'AGI+10', 'Accuracy+15',}},
         legs="Luhlaza Shalwar +3",
         feet = "Rawhide Boots",
         neck = "Mirage Stole +1",

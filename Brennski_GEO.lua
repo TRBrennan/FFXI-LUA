@@ -74,7 +74,7 @@ function get_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-        ammo = "Aurgelmir Orb",
+        ammo = "Coiste Bodhar",
         head = "Welkin Crown",
         neck = "Sanctity Necklace",
         right_ear = "Etiolation Earring",

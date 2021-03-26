@@ -5,6 +5,7 @@ function get_sets()
 	send_command("bind f10 gs c toggle Idle set")
 	send_command("bind f9 gs c equip TP set")
 	send_command("bind f11 gs c equip DT set")
+	send_command("bind f12 gs c equip Hybrid set")
 	
 	function file_unload()
 		send_command("unbind ^f9")
@@ -55,8 +56,10 @@ function get_sets()
 	TP_Legs = {name = "Odyssean Cuisses", augments = {"Accuracy+16 Attack+16", '"Store TP"+7', "DEX+2", "Attack+8"}}
 	TP_Body = "Emicho Haubert +1"
 	--WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
-	WSD_Legs = {name = "Odyssean Cuisses", augments = {"Accuracy+20", "Weapon skill damage +4%", "VIT+5"}}
-	WSD_Hands = "Odyssean gauntlets"
+	--WSD_Legs = {name = "Odyssean Cuisses", augments = {"Accuracy+20", "Weapon skill damage +4%", "VIT+5"}}
+	WSD_Legs ="Sakpata's Cuisses"
+	--WSD_Hands = "Odyssean gauntlets"
+	WSD_Hands = "Sakpata Gauntlets"
 
 	sets.Idle.Standard = {
 		ammo = "Staunch Tathlum",
@@ -64,37 +67,37 @@ function get_sets()
 		neck = "Sanctity Necklace",
 		ear1 = "Genmei earring",
 		ear2 = "Infused Earring",
-		body="Hjarrandi Breast.",
-		hands = "Sulev. Gauntlets +2",
+		body="Sakpata's Plate",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		ring2 = "Defending ring",
 		ring1 = "Vocane Ring",
 		waist = "Flume Belt +1",
-		legs = "Sulevia's Cuisses +2",
+		legs= "Sakpata's Cuisses",
 		feet = "Hermes' Sandals",
 		back = "Moonbeam Cape"
 	}
 
 	sets.Idle.DT = {
 		ammo = "Staunch Tathlum",
-		head="Hjarrandi Helm",
 		neck = "Loricate Torque +1",
 		ear1 = "Genmei earring",
 		ear2 = "Hearty Earring",
-		body="Hjarrandi Breast.",
-		hands = "Sulev. Gauntlets +2",
+		head="Sakpata's Helm",
+		body="Sakpata's Plate",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Sakpata's Cuisses",
 		ring1 = "Vocane Ring",
 		ring2 = "Defending Ring",
 		back = "Moonbeam Cape",
 		waist = "Flume belt +1",
-		legs = "Sulevia's Cuisses +2",
 		feet = "Sulevia's Leggings +2"
 	}
 
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "OH", "Chango", "AccuracyLite", "AccuracyFull", "DT", "DTAM", "H2H", "Zulfiqar", "DW"}
-	--1=Standard, 2=One Handed, 3=Chango Set, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 7=DT After Math, 8=H2H, 9=Zulfiqar, 10=DW --
+	sets.TP.index = {"Standard", "OH", "Chango", "AccuracyLite", "AccuracyFull", "DT", "DTAM", "H2H", "Zulfiqar", "DW", "Hybrid"}
+	--1=Standard, 2=One Handed, 3=Chango Set, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 7=DT After Math, 8=H2H, 9=Zulfiqar, 10=DW, 11=Hybrid --
 	Melee_Default = 1
 	TP_ind = 1
 
@@ -105,7 +108,7 @@ function get_sets()
 		ear2 = "Brutal earring",
 		ear1 = "Telos earring",
 		body = TP_Body,
-		hands = "Emicho Gauntlets +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Flamma ring",
 		back = DA_Back,
@@ -115,28 +118,30 @@ function get_sets()
 	}
 
 	sets.TP.OH = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Warrior's bead necklace +1",
 		ear2 = "Brutal earring",
 		ear1 = "Cessance earring",
 		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
-		hands = "Sulev. Gauntlets +2",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Flamma ring",
 		ring2 = "Chirich Ring +1",
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
-		legs = "Pummeler's cuisses +3",
+		--legs = "Pummeler's cuisses +3",
+		legs="Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
 	}
 
 	sets.TP.Chango = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
-		--hands="Emicho Gauntlets +1",
-		hands = "Sulev. Gauntlets +2",
-		legs = "Pumm. Cuisses +3",
+		--hands = "Sakpata's Gauntlets",
+		hands = "Sakpata's Gauntlets",
+		--legs = "Pumm. Cuisses +3",
+		legs="Sakpata's Cuisses",
 		feet = "Pumm. Calligae +3",
 		neck = "Warrior's bead necklace +1",
 		waist = "Ioskeha belt +1",
@@ -154,109 +159,132 @@ function get_sets()
 		ear2 = "Brutal earring",
 		ear1 = "Telos earring",
 		body = TP_Body,
-		hands = "Emicho Gauntlets +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Flamma ring",
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
-		legs = "Pummeler's cuisses +3",
+		--legs = "Pummeler's cuisses +3",
+		legs="Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
 	}
 
 	sets.TP.Zulfiqar = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Warrior's bead necklace +1",
 		ear2 = "Brutal earring",
 		ear1 = "Cessance earring",
 		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
-		hands = "Emicho Gauntlets +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Flamma ring",
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
-		legs = "Pummeler's cuisses +3",
+		--legs = "Pummeler's cuisses +3",
+		legs="Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
 	}
 
 	sets.TP.AccuracyLite = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = Acc_Head,
 		neck = "Warrior's bead necklace +1",
 		ear2 = "Dignitary's earring",
 		ear1 = "Telos earring",
 		body = TP_Body,
-		hands = "Emicho Gauntlets +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Regal Ring",
 		ring2 = "Chirich Ring +1",
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
-		legs = "Pummeler's cuisses +3",
+		--legs = "Pummeler's cuisses +3",
+		legs="Sakpata's Cuisses",
 		feet = "Pummeler's Calligae +3"
 	}
 
 	sets.TP.AccuracyFull = {
-		ammo = "Seething bomblet +1",
+		ammo = "Coiste Bodhar",
 		head = Acc_Head,
 		neck = "Subtlety spectacles",
 		ear2 = "Dignitary's earring",
 		ear1 = "Telos earring",
 		body = TP_Body,
-		hands = "Emicho Gauntlets +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Regal Ring",
 		ring2 = "Chirich Ring +1",
 		back = DA_Back,
 		waist = "Kentarch belt +1",
-		legs = "Pummeler's cuisses +3",
+		--legs = "Pummeler's cuisses +3",
+		legs="Sakpata's Cuisses",
 		feet = "Pummeler's Calligae +3"
 	}
 
 	sets.TP.DT = {
-    ammo="Staunch Tathlum",
-    head="Hjarrandi Helm",
-    body="Hjarrandi Breast.",
-    hands="Sulev. Gauntlets +2",
-    legs="Pumm. Cuisses +3",
-    feet="Pumm. Calligae +3",
-    neck={ name="War. Beads +1", augments={'Path: A',}},
-    waist="Ioskeha Belt +1",
-    left_ear="Telos Earring",
-    right_ear="Hearty Earring",
-    left_ring="Niqmaddu Ring",
-    right_ring="Defending Ring",
-    back= DA_Back
+		ammo="Staunch Tathlum",
+		head="Sakpata's Helm",
+		body="Sakpata's Plate",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Sakpata's Cuisses",
+		feet="Sakpata's Leggings",
+		neck={ name="War. Beads +1", augments={'Path: A',}},
+		waist="Ioskeha Belt +1",
+		left_ear="Telos Earring",
+		right_ear="Hearty Earring",
+		left_ring="Niqmaddu Ring",
+		right_ring="Chirich Ring +1",
+		back= DA_Back
 	}
 
 	sets.TP.DTAM = {
 		ammo = "Staunch Tathlum",
 		head = "Flam. Zucchetto +2",
-		neck = "Loricate torque +1",
+		neck={ name="War. Beads +1", augments={'Path: A',}},
 		ear2 = "Cessance earring",
 		ear1 = "Telos earring",
-		body="Hjarrandi Breast.",
-		hands = "Sulev. Gauntlets +2",
+		body = "Sakpata's Plate",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Defending Ring",
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
-		legs = "Pummeler's cuisses +3",
+		legs="Sakpata's Cuisses",
+		----legs = "Pummeler's cuisses +3",
+		legs="Sakpata's Cuisses",
 		feet = "Pummeler's Calligae +3"
 	}
 
 	sets.TP.DW = {
-		ammo = "Yetshila",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Warrior's bead necklace +1",
 		ear1 = "Telos Earring",
 		ear2 = "Cessance earring",
 		body = TP_Body,
-		hands = "Emicho Gauntlets",
+		hands = "Emicho Gauntlets +1",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Flamma ring",
 		back = DA_Back,
 		waist = "Reiki Yotai",
-		legs = "Pummeler's cuisses +3",
+		--legs = "Pummeler's cuisses +3",
+		legs="Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
+	}
+	
+	sets.TP.Hybrid = {
+		ammo = "Coiste Bodhar",
+		head="Sakpata's Helm",
+		body="Sakpata's Plate",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Sakpata's Cuisses",
+		feet="Sakpata's Leggings",
+		neck={ name="War. Beads +1", augments={'Path: A',}},
+		waist="Ioskeha Belt +1",
+		left_ear="Telos Earring",
+		right_ear="Brutal Earring",
+		left_ring="Niqmaddu Ring",
+		right_ring="Chirich Ring +1",
+		back= DA_Back
 	}
 
 	--Weaponskill Sets--
@@ -280,17 +308,17 @@ function get_sets()
 
 	sets.UpheavalB = {
 		ammo = "Knobkierrie",
-		head = "Sulevia's Mask +2",
+		head = "Sakpata Helm",
 		neck = "Warrior's bead necklace +1",
 		ear1 = "Telos earring",
 		ear2 = "Moonshade earring",
 		body = "Pummeler's lorica +3",
-		hands = "Sulevia's gauntlets +2",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = WSD_Back,
 		waist = "Fotia belt",
-		legs = "Sulevia's cuisses +2",
+		legs = WSD_Legs,
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -306,7 +334,7 @@ function get_sets()
 		ring2 = "Regal ring",
 		back = Crit_Back,
 		waist = "Sailfi Belt +1",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Boii Calligae +1"
 	}
 
@@ -322,7 +350,7 @@ function get_sets()
 		ring2 = "Begrudging ring",
 		back = Crit_Back,
 		waist = "Sailfi Belt +1",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -345,32 +373,32 @@ function get_sets()
 	sets.Break = {
 		ammo = "Pemphredo Tathlum",
 		head = "Flam. Zucchetto +2",
-		body = {name = "Agoge Lorica +3", augments = {'Enhances "Aggressive Aim" effect'}},
+		body="Sakpata's Plate",
 		hands = "Flam. Manopolas +2",
-		legs = "Pumm. Cuisses +3",
+		legs="Sakpata's Cuisses",
 		feet = "Flam. Gambieras +2",
 		neck = "Sanctity Necklace",
 		waist = "Eschan Stone",
 		left_ear = "Digni. Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
-		left_ring = "Niqmaddu Ring",
-		right_ring = "Regal Ring",
+		left_ring = "Stikini Ring",
+		right_ring = "Flamma Ring",
 		back = "Izdubar Mantle"
 	}
 
 	sets.KingsJusticeA = {
-		ammo = "Seething bomblet +1",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Warrior's bead necklace +1",
 		ear1 = "Telos earring",
 		ear2 = "Moonshade earring",
 		body = "Argosy Hauberk +1",
-		hands = "Argosy mufflers +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = DA_Back,
 		waist = "Sailfi Belt +1",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Flam. Gambieras +2"
 	}
 
@@ -381,12 +409,12 @@ function get_sets()
 		ear1 = "Thrud Earring",
 		ear2 = "Moonshade earring",
 		body = "Pummeler's lorica +3",
-		hands = "Argosy mufflers +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Sulevia's leggings +2"
 	}
 
@@ -402,7 +430,7 @@ function get_sets()
 		ring2 = "Regal ring",
 		back = STR_Back,
 		waist = "Fotia belt",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Sulevia's leggings +2"
 	}
 
@@ -462,7 +490,7 @@ function get_sets()
 		ear2 = "Crematio earring",
 		body = "Founder's breastplate",
 		hands = "Founder's Gauntlets",
-		ring1 = "Shiva ring +1",
+		ring1 = "Acumen Ring",
 		ring2 = "Archon ring",
 		back = STR_Back,
 		waist = "Eschan stone",
@@ -471,7 +499,7 @@ function get_sets()
 	}
 
 	sets.Requiescat = {
-		ammo = "Seething bomblet +1",
+		ammo = "Coiste Bodhar",
 		head = WS_Head,
 		neck = "Fotia Gorget",
 		ear2 = "Brutal earring",
@@ -493,12 +521,12 @@ function get_sets()
 		ear2 = "Brutal earring",
 		ear2 = "Moonshade earring",
 		body="Hjarrandi Breast.",
-		hands = "Argosy mufflers +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = Crit_Back,
 		waist = "Fotia belt",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Boii Calligae +1"
 	}
 
@@ -514,23 +542,23 @@ function get_sets()
 		ring2 = "Regal ring",
 		back = Crit_Back,
 		waist = "Fotia belt",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Boii Calligae +1"
 	}
 
 	sets.Ruinator = {
-		ammo = "Seething bomblet +1",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia Gorget",
 		ear2 = "Brutal earring",
 		ear2 = "Moonshade earring",
 		body = "Argosy Hauberk +1",
-		hands = "Argosy mufflers +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = DA_Back,
 		waist = "Fotia belt",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Flam. Gambieras +2"
 	}
 
@@ -583,34 +611,34 @@ function get_sets()
 	}
 
 	sets.Decimation = {
-		ammo = "Seething bomblet +1",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
 		ear1 = "Telos earring",
 		ear2 = "Moonshade earring",
 		body = "Argosy Hauberk +1",
-		hands = "Argosy mufflers +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = DA_Back,
 		waist = "Fotia belt",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Flam. Gambieras +2"
 	}
 
 	sets.Resolution = {
-		ammo = "Seething bomblet +1",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
 		ear2 = "Moonshade earring",
 		ear1 = "Telos earring",
 		body = "Argosy Hauberk +1",
-		hands = "Argosy mufflers +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = DA_Back,
 		waist = "Fotia belt",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Flam. Gambieras +2"
 	}
 
@@ -706,7 +734,7 @@ function get_sets()
 		ring2 = "Begrudging ring",
 		back = Crit_Back,
 		waist = "Fotia belt",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -717,7 +745,7 @@ function get_sets()
 		ear1 = "Thrud Earring",
 		ear2 = "Moonshade earring",
 		body = "Pummeler's lorica +3",
-		hands = "Argosy mufflers +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal Ring",
 		back = STR_Back,
@@ -770,39 +798,40 @@ function get_sets()
 		ring2 = "Begrudging ring",
 		back = Crit_Back,
 		waist = "Fotia belt",
-		legs = "Pummeler's cuisses +3",
+		--legs = "Pummeler's cuisses +3",
+		legs="Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
 	}
 
 	sets.Penta = {
-		ammo = "Seething bomblet +1",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
 		ear1 = "Moonshade earring",
 		ear2 = "Cessance earring",
 		body = "Argosy Hauberk +1",
-		hands = "Argosy mufflers +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = DA_Back,
 		waist = "Sailfi Belt +1",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
 	}
 
 	sets.StarDiver = {
-		ammo = "Seething bomblet +1",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
 		ear1 = "Moonshade earring",
 		ear2 = "Cessance earring",
 		body = "Argosy Hauberk +1",
-		hands = "Argosy mufflers +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = DA_Back,
 		waist = "Fotia belt",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -813,12 +842,12 @@ function get_sets()
 		ear1 = "Moonshade earring",
 		ear2 = "Cessance earring",
 		body = "Argosy Hauberk +1",
-		hands = "Argosy mufflers +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = STR_Back,
 		waist = "Fotia belt",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -829,12 +858,12 @@ function get_sets()
 		ear1 = "Moonshade earring",
 		ear2 = "Thrud Earring",
 		body = "Pummeler's lorica +3",
-		hands = "Argosy mufflers +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = STR_Back,
 		waist = "Fotia belt",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Sulevia's leggings +2"
 	}
 
@@ -919,18 +948,18 @@ function get_sets()
 	}
 
 	sets.RF = {
-		ammo = "Seething bomblet +1",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Caro necklace",
 		ear1 = "Moonshade earring",
 		ear2 = "Cessance earring",
 		body = "Argosy Hauberk +1",
-		hands = "Argosy mufflers +1",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = DA_Back,
 		waist = "Sailfi Belt +1",
-		legs = "Argosy breeches +1",
+		legs = "Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -973,8 +1002,9 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = {name = "Agoge Mask +3", augments = {'Enhances "Savagery" effect'}},
 		body = "Pumm. Lorica +3",
-		hands = "Argosy mufflers +1",
-		legs = "Pummeler's cuisses +3",
+		hands = "Sakpata's Gauntlets",
+		--legs = "Pummeler's cuisses +3",
+		legs="Sakpata's Cuisses",
 		feet = "Sulev. Leggings +2",
 		neck = "Fotia Gorget",
 		waist = "Fotia Belt",
@@ -1060,7 +1090,7 @@ function get_sets()
 		ear1 = "Hearty earring",
 		ear2 = "Sanare earring",
 		body = "Souveran cuirass +1",
-		hands = "Sulevia's gauntlets +2",
+		hands = "Sakpata's Gauntlets",
 		ring1 = "Moonbeam ring",
 		ring2 = "Defending Ring",
 		back = "Agema cape",
@@ -1461,6 +1491,10 @@ function self_command(command)
 		TP_ind = 5
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		send_command("@input /echo Acc_Full Set")
+	elseif command == "equip Hybrid set" then
+		TP_ind = 11
+		equip(sets.TP.Hybrid)
+		send_command("@input /echo Hybrid Set")
 	elseif command == "change debug mode" then
 		if Gear_Debug == 1 then
 			Gear_Debug = 0

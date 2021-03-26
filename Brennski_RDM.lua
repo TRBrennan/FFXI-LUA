@@ -62,7 +62,8 @@ function get_sets()
 		ring2 = "Vocane Ring",
 		ring1 = "Defending ring",
 		waist = "Fucho-no-obi",
-		body="Ayanmo Corazza +2",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
 		hands="Aya. Manopolas +2",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
@@ -77,9 +78,9 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Standard = {
-    ammo="Aurgelmir Orb",
+    ammo="Coiste Bodhar",
     head="Malignance Chapeau",
-    body="Ayanmo Corazza +2",
+    body="Malignance Tabard",
     hands="Aya. Manopolas +2",
     legs="Malignance Tights",
     feet="Malignance Boots",
@@ -95,7 +96,7 @@ function get_sets()
 	sets.TP.EnSpell = {
 	ammo="Regal Gem",
     head="Malignance Chapeau",
-    body="Ayanmo Corazza +2",
+    body="Malignance Tabard",
     hands="Aya. Manopolas +2",
     legs="Malignance Tights",
     feet="Malignance Boots",
@@ -109,9 +110,9 @@ function get_sets()
 	}
 
 	sets.TP.LowHaste ={    
-	ammo="Aurgelmir Orb",
+	ammo="Coiste Bodhar",
     head="Malignance Chapeau",
-    body="Ayanmo Corazza +2",
+    body="Malignance Tabard",
     hands="Aya. Manopolas +2",
     legs="Malignance Tights",
     feet="Malignance Boots",
@@ -127,7 +128,7 @@ function get_sets()
 	sets.TP.LowHasteEnSpell = {
 	ammo="Regal Gem",
     head="Malignance Chapeau",
-    body="Ayanmo Corazza +2",
+    body="Malignance Tabard",
     hands="Aya. Manopolas +2",
     legs="Malignance Tights",
     feet="Malignance Boots",
@@ -145,7 +146,7 @@ function get_sets()
 	sub="Edgeless Knife",
 	ammo="Regal Gem",
     head="Malignance Chapeau",
-    body="Ayanmo Corazza +2",
+    body="Malignance Tabard",
     hands="Aya. Manopolas +2",
     legs="Malignance Tights",
     feet="Malignance Boots",
@@ -552,7 +553,7 @@ function get_sets()
 	}
 
 	sets.WS.Savage = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Vitiation chapeau +3",
 		neck = "Caro Necklace",
 		ear1 = "Ishvara Earring",
@@ -698,7 +699,7 @@ function midcast(spell, act)
 	if spell.skill == "Enfeebling Magic" then
 		equip(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]])
 			if spell.name == "Silence" or spell.name == "Sleep" or spell.name == "Sleep II" or spell.name == "Sleepga" or spell.name == "Sleepga II" or spell.name == "Break" or spell.name == "Bind" or spell.name == "Dispel" then
-				equip(sets.Enfeebling.Acc)
+				equip(sets.Magic.EnfeebleAcc)
 				send_command ("@input /echo Enfeeble Acc set")
 			end
 			if spell.name == "Frazzle III" or spell.name == "Distract III" then
@@ -708,7 +709,7 @@ function midcast(spell, act)
 		if buffactive["Saboteur"] then
 			equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]], sets.JA.Sab))
 			if spell.name == "Silence" or spell.name == "Sleep" or spell.name == "Sleep II" or spell.name == "Sleepga" or spell.name == "Sleepga II" or spell.name == "Break" or spell.name == "Bind" or spell.name == "Dispel" then
-				equip(sets.Enfeebling.Acc)
+				equip(sets.Magic.EnfeebleAcc)
 				send_command ("@input /echo Enfeeble Acc set")
 			end
 			if spell.name == "Frazzle III" or spell.name == "Distract III" then

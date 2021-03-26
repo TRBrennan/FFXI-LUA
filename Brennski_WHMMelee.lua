@@ -417,7 +417,7 @@ function get_sets()
 	}
 
 	sets.WS.Savage = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Jhakri Coronal +1",
 		neck = "Caro Necklace",
 		ear1 = "Ishvara Earring",
@@ -433,7 +433,7 @@ function get_sets()
 	}
 
 	sets.WS.Vorpal = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Jhakri Coronal +1",
 		neck = "Caro Necklace",
 		ear1 = "Ishvara Earring",
@@ -449,7 +449,7 @@ function get_sets()
 	}
 
 	sets.WS.Req = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Adhemar Bonnet +1",
 		neck = "Fotia gorget",
 		ear1 = "Moonshade Earring",

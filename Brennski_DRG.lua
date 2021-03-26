@@ -81,7 +81,7 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		body = TP_Body,
 		hands = "Emicho Gauntlets +1",
@@ -129,7 +129,7 @@ function get_sets()
 	}
 
 	sets.TP.DTAccuracy = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Sulevia's Mask +2",
 		neck = "Lissome Necklace",
 		left_ear = "Sherida earring",
@@ -154,7 +154,7 @@ function get_sets()
 	Stardiver_ind = 1
 
 	sets.Stardiver.Attack = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia Gorget",
 		ear2 = "Moonshade Earring",
@@ -220,7 +220,7 @@ function get_sets()
 	Drakesbane = 1
 
 	sets.Drakesbane.Attack = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Caro Necklace",
 		ear2 = "Moonshade Earring",
@@ -295,7 +295,7 @@ function get_sets()
 	}
 
 	sets.Utility.Steps = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Boii Mask +1",
 		body = TP_Body,
 		hands = "Rawhide Gloves",
@@ -317,7 +317,7 @@ function get_sets()
 
 	sets.JA = {}
 	sets.JA.Jump = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Sulevia's Mask +2",
 		body = TP_Body,
 		hands = {name = "Emicho Gauntlets", augments = {"HP+50", "DEX+10", "Accuracy+15"}},

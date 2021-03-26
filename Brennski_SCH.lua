@@ -154,12 +154,14 @@ function get_sets()
 			name = "Merlinic Jubbah",
 			augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}
 		},
-		hands = {name = "Amalric Gages", augments = {"INT+10", "Mag. Acc.+15", '"Mag.Atk.Bns."+15'}},
+		--hands = {name = "Amalric Gages", augments = {"INT+10", "Mag. Acc.+15", '"Mag.Atk.Bns."+15'}},
+		hands ="Amalric Gages +1",
 		legs = {
 			name = "Merlinic Shalwar",
 			augments = {'Mag. Acc.+12 "Mag.Atk.Bns."+12', "Magic burst dmg.+8%", "MND+5", '"Mag.Atk.Bns."+12'}
 		},
-		feet = {name = "Merlinic Crackows", augments = {"Magic burst dmg.+8%", "Mag. Acc.+13", '"Mag.Atk.Bns."+12'}},
+		--feet = {name = "Merlinic Crackows", augments = {"Magic burst dmg.+8%", "Mag. Acc.+13", '"Mag.Atk.Bns."+12'}},
+		feet = "Jharki pigaches +2",
 		neck = "Mizu. Kubikazari",
 		waist = "Sacro Cord",
 		left_ear = "Barkaro. Earring",
@@ -177,13 +179,13 @@ function get_sets()
 	Enhancing_ind = 1
 
 	sets.Enhancing.Normal = {
-		main = "Oranyan",
-		sub = "Enki Strap",
+		main = "Gada",
+		sub = "Ammurapi Shield",
 		ammo = "Savant's Treatise",
 		head = "Telchine Cap",
 		neck = "Incanter's Torque",
 		ear1 = "Andoaa Earring",
-		ear2 = "Regal Earring",
+		ear2 = "Mimir Earring",
 		body = "Telchine Chasuble",
 		hands = "Kaykaus Cuffs",
 		ring1 = "Stikini Ring",
@@ -195,13 +197,13 @@ function get_sets()
 	}
 
 	sets.Enhancing.Storms = {
-		main = "Oranyan",
-		sub = "Enki Strap",
+		main = "Gada",
+		sub = "Ammurapi Shield",
 		ammo = "Savant's Treatise",
 		head = "Telchine Cap",
 		neck = "Incanter's Torque",
 		ear1 = "Andoaa Earring",
-		ear2 = "Regal Earring",
+		ear2 = "Mimir Earring",
 		body = "Telchine Chasuble",
 		hands = "Kaykaus Cuffs",
 		ring1 = "Stikini Ring",
@@ -219,41 +221,44 @@ function get_sets()
 		main = "Grioavolr",
 		sub = "Enki Strap",
 		ammo = "Pemphredo Tathlum",
-		head = "Merlinic Hood",
-		neck = "Imbodla Necklace",
-		ear2 = "Dignitary's Earring",
+		head = "Befouled Crown",
+		neck = "Incanter's Torque",
+		ear2 = "Vor Earring",
 		ear1 = "Barkarole Earring",
 		body = {
 			name = "Merlinic Jubbah",
 			augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}
 		},
-		hands = "Kaykaus Cuffs",
+		hands = "Kaykaus Cuffs +1",
 		ring1 = "Stikini Ring",
 		ring2 = "Kishar Ring",
 		waist = "Luminary Sash",
-		back = "Lugh's Cape",
+		back = "Aurist's Cape +1",
 		legs = "Chironic Hose",
 		feet = "Skaoi Boots"
 	}
 
 	sets.Magic.Healing = {
-		sub = "Enki Strap",
-		ammo = "Kalboron Stone",
-		head = "Vanya Hood",
-		neck = "Incanter's Torque",
-		ear1 = "Regal Earring",
-		ear2 = "Medni. Earring",
-		body = "Vrikodara Jupon",
-		hands = "Kaykaus Cuffs",
-		ring1 = "Ephedra Ring",
-		ring2 = "Sirona's Ring",
-		waist = "Luminary Sash",
-		back = "Solemnity Cape",
-		legs = "Chironic Hose",
-		feet = "Vanya Clogs"
+		main="Daybreak",
+		sub="Ammurapi Shield",
+		ammo="Pemphredo Tathlum",
+		head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},
+		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
+		feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		neck="Incanter's Torque",
+		waist="Luminary Sash",
+		left_ear="Regal Earring",
+		right_ear="Vor Earring",
+		left_ring="Ephedra Ring",
+		right_ring="Sirona's Ring",
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 
 	sets.Magic.Regen = {
+		main = "Bolelabunga",
+		sub = "Ammurapi Shield",
 		ammo = "Savant's Treatise",
 		head = "Arbatel Bonnet",
 		neck = "Incanter's Torque ",

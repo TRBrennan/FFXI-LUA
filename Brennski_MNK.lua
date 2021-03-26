@@ -67,7 +67,7 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head ="Adhemar Bonnet +1",
 		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
@@ -83,7 +83,7 @@ function get_sets()
 	}
 
 	sets.TP.AccuracyMid = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = {name = "Dampening Tam", augments = {"DEX+8", "Accuracy+14", "Mag. Acc.+13", "Quadruple Attack +1"}},
 		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
@@ -99,7 +99,7 @@ function get_sets()
 	}
 
 	sets.TP.AccuracyFull = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = {name = "Dampening Tam", augments = {"DEX+8", "Accuracy+14", "Mag. Acc.+13", "Quadruple Attack +1"}},
 		body = "Ashera Harness",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
@@ -117,7 +117,7 @@ function get_sets()
 	sets.TP.DT = {
 	ammo = "Staunch Tathlum",
     head="Malignance Chapeau",
-    body="Ashera Harness",
+    body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
@@ -131,9 +131,9 @@ function get_sets()
 	}
 
 	sets.TP.DTAccuracy = {
-	ammo = "Aurgelmir Orb",
+	ammo = "Coiste Bodhar",
     head="Malignance Chapeau",
-    body="Ashera Harness",
+    body="Malignance Tabard",
     hands="Malignance Gloves",
     legs="Malignance Tights",
     feet="Malignance Boots",
@@ -150,7 +150,7 @@ function get_sets()
 	sets.WS = {}
 
 	sets.WS.VS = {
-		ammo = "Knobkierrie",
+		ammo = "Coiste Bodhar",
 		head = "Adhemar Bonnet +1",
 		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
@@ -182,7 +182,7 @@ function get_sets()
 	}
 
 	sets.WS.AF = {
-		ammp = "Aurgelmir Orb",
+		ammp = "Coiste Bodhar",
 		head = "Hes. Crown +3",
 		neck = "Mnk. Nodowa +1",
 		ear1 = "Moonshade Earring",
@@ -348,6 +348,8 @@ function get_sets()
 	sets.JA.Counterstance = {feet = "Hesychast's Gaiters"}
 
 	sets.JA.ChiBlast = {waist = "Chaac Belt", Hands = "Volte Bracers", Legs ="Volte Hose"}
+	
+	sets.JA.Chakra = {waist = "Chaac Belt", Hands = "Volte Bracers", Legs ="Volte Hose"}
 
 	--Precast Sets--
 	sets.precast = {}
@@ -383,8 +385,10 @@ function precast(spell)
 	elseif spell.english == "Victory Smite" then
 		equip(sets.WS.VS)
 		if buffactive["Impetus"] then
-			equip({Body = "Bhikku Cyclas +1"})
+			equip({Body = "Bhikku Cyclas +1", right_ear ="Brutal Earring"})
 		end
+	elseif spell.english == "Chakra" then
+		equip(sets.JA.Chakra)
 	elseif spell.english == "Shijin Spiral" then
 		equip(sets.WS.SS)
 	elseif spell.english == "Asuran Fists" then

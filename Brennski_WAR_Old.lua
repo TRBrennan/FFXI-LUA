@@ -65,7 +65,7 @@ function get_sets()
                 --1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy , 7 ==Tank--
 				
                 TP_ind = 1
-				sets.TP.Standard = {ammo="Aurgelmir Orb",
+				sets.TP.Standard = {ammo="Coiste Bodhar",
                                     head="Flam. Zucchetto +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
                                     body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}},hands="Flam. Manopolas +1",ring1="Niqmaddu Ring",ring2="Petrov Ring",
                                     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},waist="Ioskeha Belt",
@@ -215,7 +215,7 @@ function get_sets()
                                                     body="Assim. jubbah +1",hands="Ayao's gages",ring1="Rahab ring",
                                                         back="Swith cape",waist="Pythia sash +1",legs="Portent pants",feet="Valorous Greaves"}
                                                        
-        sets.Utility.Steps = {ammo="Aurgelmir Orb",
+        sets.Utility.Steps = {ammo="Coiste Bodhar",
 							head="Boii Mask +1", body={ name="Valorous Mail", augments={'Accuracy+20 Attack+20','"Store TP"+8','Accuracy+12','Attack+8',}}, hands="Rawhide Gloves",legs=="Odyssean Cuisses",
 							feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",
 							right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",  back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},}

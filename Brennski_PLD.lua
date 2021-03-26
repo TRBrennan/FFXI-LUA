@@ -43,7 +43,8 @@ function get_sets()
 		head = "Souveran Schaller",
 		neck = "Loricate Torque +1",
 		ear1 = "Odnowa Earring +1",
-		ear2 = "Thureous Earring",
+		--ear2 = "Thureous Earring",
+		ear2="Genmei Earring",
 		body = "Reverence Surcoat +3",
 		hands = "Regal Gauntlets",
 		ring1 = "Defending ring",
@@ -93,7 +94,7 @@ function get_sets()
 	}
 
 	sets.TP.Standard = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		body = "Emicho Haubert +1",
 		hands = "Emicho Gauntlets +1",
@@ -108,7 +109,7 @@ function get_sets()
 		back = "Grounded Mantle"
 	}
 	sets.TP.DW = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		body = {name = "Valorous Mail", augments = {"Accuracy+20 Attack+20", '"Store TP"+8', "Accuracy+12", "Attack+8"}},
 		hands = "Flam. Manopolas +2",
@@ -152,7 +153,7 @@ function get_sets()
 	SavageBlade_ind = 1
 
 	sets.SavageBlade.Attack = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = {name = "Valorous Mask", augments = {"Accuracy+18", "Weapon skill damage +3%", "STR+4", "Attack+11"}},
 		neck = "Caro Necklace",
 		ear1 = "Ishvara Earring",
@@ -210,7 +211,7 @@ function get_sets()
 	}
 
 	sets.WS.Atonement = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Sulevia's Mask +2",
 		neck = "Asperity necklace",
 		ear1 = "Brutal Earring",

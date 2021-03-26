@@ -79,7 +79,7 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Moonbeam Nodowa",
 		ear1 = "Cessance Earring",
@@ -95,7 +95,7 @@ function get_sets()
 	}
 
 	sets.TP.AccuracyMid = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Moonbeam Nodowa",
 		ear1 = "Cessance Earring",
@@ -111,7 +111,7 @@ function get_sets()
 	}
 
 	sets.TP.AccuracyFull = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Moonbeam Nodowa",
 		ear1 = "Dignitary's Earring",
@@ -143,7 +143,7 @@ function get_sets()
 	}
 
 	sets.TP.DTAccuracy = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Ynglinga Sallet",
 		neck = "Moonbeam Nodowa",
 		ear2 = "Telos Earring",
@@ -275,7 +275,7 @@ function get_sets()
 	}
 
 	sets.Utility.Steps = {
-		ammo = "Aurgelmir Orb",
+		ammo = "Coiste Bodhar",
 		head = "Boii Mask +1",
 		body = TP_Body,
 		hands = "Rawhide Gloves",
