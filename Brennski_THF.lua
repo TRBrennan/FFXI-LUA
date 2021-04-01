@@ -83,8 +83,8 @@ function get_sets()
         --TP Sets--
         sets.TP = {}
 
-        sets.TP.index = {"Standard", "AccuracyMid", "AccuracyFull", "DT", "DTAccuracy", "TH"}
-        --1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy, 6 = TH
+        sets.TP.index = {"Standard", "AccuracyMid", "AccuracyFull", "DT", "DTAccuracy", "TH", "THHybrid"}
+        --1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy, 6 = TH, 7 = TH Hybrid
 
         TP_ind = 1
         sets.TP.Standard = {
@@ -183,7 +183,22 @@ function get_sets()
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 				
         }
-
+		
+		sets.TP.THHybrid = {
+		    ammo="Yamarang",
+			head="Malignance Chapeau",
+			body="Malignance Tabard",
+			hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
+			legs="Malignance Tights",
+			feet="Malignance Boots",
+			neck="Lissome Necklace",
+			waist="Chaac Belt",
+			left_ear="Suppanomimi",
+			right_ear="Telos Earring",
+			left_ring="Gere Ring",
+			right_ring="Epona's Ring",
+			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		}
         --Weaponskill Sets--
         sets.WS = {}
 

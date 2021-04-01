@@ -298,7 +298,7 @@ function get_sets()
 		neck = "Duelist's torque +2",
 		ear2 = "Snotra Earring",
 		ear1 = "Regal Earring",
-		hands = "Kaykaus Cuffs",
+		hands = "Kaykaus Cuffs +1",
 		body = "Lethargy sayon +1",
 		ring1 = "Stikini Ring",
 		ring2 = "Kishar Ring",

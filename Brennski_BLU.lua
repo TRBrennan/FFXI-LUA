@@ -38,7 +38,7 @@ function get_sets()
     sets.Idle.Standard = {
         ammo = "Staunch Tathlum",
         head = { name = "Herculean Helm", augments = { 'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},
-        neck = "Sanctity Necklace",
+        neck = "Mirage Stole +1",
         ear1 = "Genmei Earring",
         ear2 = "Infused Earring",
         body = "Jhakri Robe +2",
@@ -163,7 +163,7 @@ function get_sets()
     sets.TP.DT = {
         ammo="Staunch Tathlum",
 		head="Malignance Chapeau",
-		body="Ayanmo Corazza +2",
+		body="Malignance Tabard",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
@@ -180,7 +180,7 @@ function get_sets()
     sets.TP.DTAccuracy = {
         ammo="Coiste Bodhar",
 		head="Malignance Chapeau",
-		body="Ayanmo Corazza +2",
+		body="Malignance Tabard",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
@@ -302,7 +302,7 @@ function get_sets()
     sets.SanguineBlade = {
         ammo = "Pemphredo Tathlum",
         head = "Pixie Hairpin +1",
-        neck = "Sanctity Necklace",
+        neck = "Mirage Stole +1",
         ear2 = "Friomisi earring",
         ear1 = "Regal Earring",
         body = "Jhakri Robe +2",
@@ -421,7 +421,7 @@ function get_sets()
     sets.FlashNova = {
         ammo = "Pemphredo Tathlum",
         Head = "Jhakri Coronal +1",
-        neck = "Sanctity Necklace",
+        neck = "Mirage Stole +1",
         rear = "Friomisi earring",
         ear1 = "Novio Earring",
         body = "Adhemar Jacket +1",
@@ -482,7 +482,7 @@ function get_sets()
         hands = "Amalric Gages +1",
         legs="Luhlaza Shalwar +3",
         feet = "Amalric Nails +1",
-        neck = "Sanctity Necklace",
+        neck = "Mirage Stole +1",
         waist = "Sacro Cord",
         left_ear = "Regal Earring",
         right_ear = "Friomisi Earring",
@@ -578,21 +578,34 @@ function get_sets()
     sets.BlueMagic.Sub = {
         ammo = "Pemphredo Tathlum",
         head = "Jhakri Coronal +2",
-        body = {
-            name = "Amalric Doublet",
-            augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}
-        },
+        body = {name = "Amalric Doublet",augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}},
         hands = "Volte Bracers",
         legs="Luhlaza Shalwar +3",
         feet = "Amarlic Nails +1",
-        neck = "Sanctity Necklace",
+        neck = "Mirage Stole +1",
         waist = "Chaac Belt",
         left_ear = "Regal Earring",
         right_ear = "Friomisi Earring",
         ring1 = "Shiva Ring",
         ring2 = "Acumen Ring",
-back={ name="Aurist's Cape +1", augments={'Path: A',}},
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
     }
+	
+	sets.BlueMagic.Macc = {
+	    ammo="Pemphredo Tathlum",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Sanctity Necklace",
+		waist="Sacro Cord",
+		left_ear="Regal Earring",
+		right_ear="Digni. Earring",
+		left_ring="Stikini Ring",
+		right_ring="Rahab Ring",
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+	}
 
     sets.BlueMagic.HeavyStrike = {
         ammo = "Falcon Eye",
@@ -629,7 +642,7 @@ back={ name="Aurist's Cape +1", augments={'Path: A',}},
     sets.BlueMagic.Dark = {
         ammo = "Pemphredo Tathlum",
         head = "Pixie Hairpin +1",
-        neck = "Sanctity Necklace",
+        neck = "Mirage Stole +1",
         ear2 = "Friomisi earring",
         ear1 = "Regal Earring",
         body = "Jhakri Robe +2",
@@ -647,7 +660,7 @@ back={ name="Aurist's Cape +1", augments={'Path: A',}},
 
     sets.NINMagic.Nuke = {
         Head = "Jhakri Coronal +1",
-        neck = "Sanctity Necklace",
+        neck = "Mirage Stole +1",
         ear2 = "Friomisi earring",
         ear1 = "Regal Earring",
         body = "Samnuha Coat",
@@ -873,7 +886,10 @@ function midcast(spell, act)
         if buffactive['Chain Affinity'] then equip(sets.JA.ChainAffinity) end
         if buffactive['Efflux'] then equip(sets.JA.Efflux) end
     elseif spell.english == 'Gates of Hades' or spell.english == 'Lunge' or spell.english == 'Swipe' or spell.english == 'Leafstorm' or spell.english == 'Firespit' or spell.english == 'Acrid Stream' or spell.english == 'Regurgitation' or spell.english == 'Corrosive Ooze' or spell.english == 'Thermal Pulse' or spell.english == 'Magic Hammer' or spell.english == 'Evryone. Grudge' or spell.english == 'Water Bomb' or spell.english == 'Dark Orb' or spell.english == 'Thunderbolt' or spell.english == 'Tem. Upheaval' or spell.english == 'Embalming Earth' or spell.english == 'Foul Waters' or spell.english == 'Rending Deluge' or spell.english == 'Droning Whirlwind' or spell.english == 'Anvil Lightning' or spell.english == 'Blinding Fulgor' or spell.english == 'Entomb' or spell.english == 'Palling Salvo' or spell.english == 'Scouring Spate' or spell.english == 'Searing Tempest' or spell.english == 'Silent Storm' or spell.english == 'Spectral Floe' or spell.english == 'Blazing Bound' or spell.english == 'Frightful Roar' or spell.english == 'Infrasonics' or spell.english == 'Chaotic Eye' or spell.english == 'Auroral Drape' or spell.english == 'Barbed Crescent' or spell.english == 'Tourbillion' or spell.english == 'Cimicine Discharge' or spell.english == 'Sub-zero smash' or spell.english == 'Filamented Hold' or spell.english == 'Mind Blast' or spell.english == 'Sandspin' or spell.english == 'Hecatomb Wave' or spell.english == 'Cold Wave' or spell.english == 'Terror Touch' or spell.english == 'Charged Whisker' then
-        equip(sets.BlueMagic.BlueMagic)
+		equip(sets.BlueMagic.BlueMagic)
+		if spell.english == 'Cruel Joke' then
+			equip(sets.BlueMagic.MAcc)
+		end
         if spell.element == world.day_element or spell.element == world.weather_element then
             equip(set_combine(sets.BlueMagic.BlueMagic, sets.Utility.Weather))
         end

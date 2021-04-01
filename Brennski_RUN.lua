@@ -9,6 +9,8 @@ function get_sets()
 	send_command("bind f11 gs c toggle Weapons")
 	send_command("bind ^f9 gs c equip TP set")
 	send_command("bind ^f10 gs c equip DT set")
+	send_command("bind !f9 gs c equip TP set")
+	send_command("bind !f10 gs c equip DT set")
 	
 	function file_unload()
 		send_command("unbind ^f9")
@@ -100,8 +102,8 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "TankTP", "MDTank", "HPB", "StatusResist"}
-	--1=Standard,2=DT, 3=MDTtank, 4=HPB, 5=StatusResist--
+	sets.TP.index = {"Standard", "TankTP", "MDTank", "HPB"}
+	--1=Standard,2=DT, 3=MDTtank, 4=HPB --
 	TP_ind = 1
 	sets.TP.Standard = {
 		ammo = "Yamarang",
@@ -132,7 +134,8 @@ function get_sets()
 		right_ring = "Niqmaddu Ring",
 		back = { name = "Ogma's cape",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}	},
 		waist = "Ioskeha belt +1",
-		legs = "Samnuha Tights",
+		--legs = "Samnuha Tights",
+		legs = "Meghanada Chausses +2",
 		feet = "Turms Leggings +1"
 	}
 
@@ -168,21 +171,21 @@ function get_sets()
 		back = "Moonbeam Cape"
 	}
 
-	sets.TP.StatusResist = {
-		ammo = "Staunch Tathlum",
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		body = "Ashera Harness",
-		Hands = "Volte Bracers",
-		legs = "Rune. Trousers +3",
-		feet = "Erilaz Greaves +1",
-		neck = "Futhark Torque +1",
-		waist = "Engraved Belt",
-		right_ear = "Hearty Earring",
-		left_ear = "Odnowa Earring +1",
-		left_ring = "Vocane Ring",
-		right_ring = "Defending Ring",
-		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
-	}
+	-- sets.TP.StatusResist = {
+		-- ammo = "Staunch Tathlum",
+		-- head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
+		-- body = "Ashera Harness",
+		-- Hands = "Volte Bracers",
+		-- legs = "Rune. Trousers +3",
+		-- feet = "Erilaz Greaves +1",
+		-- neck = "Futhark Torque +1",
+		-- waist = "Engraved Belt",
+		-- right_ear = "Hearty Earring",
+		-- left_ear = "Odnowa Earring +1",
+		-- left_ring = "Vocane Ring",
+		-- right_ring = "Defending Ring",
+		-- back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
+	-- }
 
 	--Weaponskill Sets--
 	sets.WS = {}
@@ -759,8 +762,10 @@ function self_command(command)
 
 	elseif command == "equip TP set" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
-	elseif command =="equip DT set" then
+		send_command("@input /echo  <--- Equipped TP Set ----->")
+	elseif command =="equip DT set" t hen
 		equip (sets.TP.MDTank)
+		send_command("@input /echo  <--- Equipped DT Set ----->")
 	elseif command == "equip Idle set" then
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 	end
