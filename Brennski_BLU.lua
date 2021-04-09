@@ -38,7 +38,7 @@ function get_sets()
     sets.Idle.Standard = {
         ammo = "Staunch Tathlum",
         head = { name = "Herculean Helm", augments = { 'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},
-        neck = "Mirage Stole +1",
+        neck = "Sanctity Necklace",
         ear1 = "Genmei Earring",
         ear2 = "Infused Earring",
         body = "Jhakri Robe +2",

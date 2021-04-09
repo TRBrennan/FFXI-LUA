@@ -763,7 +763,7 @@ function self_command(command)
 	elseif command == "equip TP set" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		send_command("@input /echo  <--- Equipped TP Set ----->")
-	elseif command =="equip DT set" t hen
+	elseif command =="equip DT set" then
 		equip (sets.TP.MDTank)
 		send_command("@input /echo  <--- Equipped DT Set ----->")
 	elseif command == "equip Idle set" then

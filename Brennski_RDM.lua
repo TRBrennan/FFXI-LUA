@@ -496,6 +496,24 @@ function get_sets()
 
 	sets.Utility.Weather = {waist = "Hachirin-no-obi"}
 	
+	sets.Utility.RangedAttack = {
+	    main="Naegling",
+		sub="Sacro Bulwark",
+		range="Exalted Bow",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Sanctity Necklace",
+		waist="Yemaya Belt",
+		left_ear="Digni. Earring",
+		right_ear="Telos Earring",
+		left_ring="Cacoethic Ring",
+		right_ring="Petrov Ring",
+		back="Moonbeam Cape",
+	}
+	
 	sets.Utility.TH = {waist = "Chaac Belt", Hands = "Volte Bracers", legs ="Volte Hose"}
 
 	sets.Utility.DrainAspir = {
@@ -641,6 +659,8 @@ function precast(spell)
 	elseif spell.english == "Seraph Blade" or spell.english == "Red Lotus Blade" or spell.english == "Burning Blade" or spell.english == "Shining Blade" or spell.english == "Black Halo" or spell.english == "Aeolian Edge" then
 		equip(sets.WS.Light)
 		send_command("@input /echo Light/Magic WS Set")
+	elseif spell.english == "Arching Arrow" then
+		equip(sets.Utility.RangedAttack)
 	elseif spell.english == "Composure" then
 		equip(sets.JA.Composure)
 		send_command("@input /echo Composure Set")
@@ -736,6 +756,9 @@ function midcast(spell, act)
 	if spell.english == "Impact" then
 			equip(sets.Magic.Impact)
 			send_command("@input /echo Impact Set")
+	end
+	if spell.english == "Ranged" then
+		equip(sets.Utility.RangedAttack)
 	end
 	
 end
