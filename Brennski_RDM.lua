@@ -329,6 +329,24 @@ function get_sets()
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 
+	sets.Magic.Dispelga = {
+	    main="Daybreak",
+		sub="Ammurapi Shield",
+		ammo="Regal Gem",
+		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+		body="Atrophy Tabard +3",
+		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
+		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
+		neck={ name="Dls. Torque +2", augments={'Path: A',}},
+		waist="Luminary Sash",
+		left_ear="Regal Earring",
+		right_ear="Snotra Earring",
+		left_ring="Stikini Ring",
+		right_ring="Kishar Ring",
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+	}
+
 	sets.Magic.Healing = {
 		main="Daybreak",
 		sub = "Ammurapi shield",
@@ -404,7 +422,7 @@ function get_sets()
 	sets.Magic.Stun = {
 		main = "Crocea Mors",
 		sub = "Ammurapi shield",
-		ammo = "Pemphredo Tathlum",
+		ammo = "Regal Gem",
 		head = "Carmine Mask +1",
 		neck = "Voltsurge Torque",
 		waist = "Luminary Sash",
@@ -412,7 +430,7 @@ function get_sets()
 		right_ear = "Loquac. Earring",
 		left_ring = "Rahab Ring",
 		right_ring = "Kishar Ring",
-		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}},
+		hands = "Leyline Gloves",
 		feet = "Amalric Nails +1",
 		body = "Vitiation tabard +3",
 		legs = "Psycloth Lappas",
@@ -448,7 +466,23 @@ function get_sets()
 		ammo = "Sapience Orb",
 		head = "Carmine Mask +1",
 		body = "Vitiation tabard +3",
-		hands = {name = "Merlinic Dastanas", augments = {'"Mag.Atk.Bns."+25', '"Fast Cast"+7', "Mag. Acc.+13"}},
+		hands="Leyline Gloves",
+		legs = "Psycloth Lappas",
+		feet = "Carmine Greaves +1",
+		neck = "Voltsurge Torque",
+		waist = "Embla Sash",
+		left_ear = "Etiolation Earring",
+		right_ear = "Loquac. Earring",
+		left_ring = "Rahab Ring",
+		right_ring = "Kishar Ring",
+		back = "Swith Cape"
+	}
+	
+	sets.precast.FC.Dispelga = {
+		ammo = "Sapience Orb",
+		head = "Carmine Mask +1",
+		body = "Vitiation tabard +3",
+		hands="Leyline Gloves",
 		legs = "Psycloth Lappas",
 		feet = "Carmine Greaves +1",
 		neck = "Voltsurge Torque",
@@ -637,6 +671,9 @@ function precast(spell)
 		if spell.english == "Stun" then
 			equip(sets.Magic.Stun)
 		end
+		if spell.english == "Dispelga" then
+			equip(sets.Precast.Dispelga)
+		end
 	elseif spell.english == "Chainspell" then
 		equip(sets.JA.CS)
 		send_command("@input /echo Chainspell Set")
@@ -691,12 +728,12 @@ function midcast(spell, act)
 			send_command("@input /echo Enhancing Duration + Refresh Set")
 		end
 		
-		if gainspells:contains(spell.name)   then
+		if gainspells:contains(spell.english)   then
 			equip(sets.Enhancing.SkillCappedGain)
 			send_command("@input /echo Enhancing Capped Gain Potency Set")
 		end
 		
-		if spell.english == "Temper" or spell.english == "Temper II" or enspells:contains(spell.name) then
+		if spell.english == "Temper" or spell.english == "Temper II" or enspells:contains(spell.english) then
 			equip(sets.Enhancing.SkillUnCapped)
 			send_command("@input /echo Enhancing Uncapped Potency Set")
 		end
@@ -718,24 +755,28 @@ function midcast(spell, act)
 	
 	if spell.skill == "Enfeebling Magic" then
 		equip(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]])
-			if spell.name == "Silence" or spell.name == "Sleep" or spell.name == "Sleep II" or spell.name == "Sleepga" or spell.name == "Sleepga II" or spell.name == "Break" or spell.name == "Bind" or spell.name == "Dispel" then
+			if spell.english == "Silence" or spell.english == "Sleep" or spell.english == "Sleep II" or spell.english == "Sleepga" or spell.english == "Sleepga II" or spell.english == "Break" or spell.english == "Bind" or spell.english == "Dispel" then
 				equip(sets.Magic.EnfeebleAcc)
 				send_command ("@input /echo Enfeeble Acc set")
 			end
-			if spell.name == "Frazzle III" or spell.name == "Distract III" then
+			if spell.english == "Frazzle III" or spell.english == "Distract III" then
 				equip (sets.Magic.Fraztract)
 				send_command ("@input /echo Frazzle 3/Distract 3 set")
 			end
 		if buffactive["Saboteur"] then
 			equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]], sets.JA.Sab))
-			if spell.name == "Silence" or spell.name == "Sleep" or spell.name == "Sleep II" or spell.name == "Sleepga" or spell.name == "Sleepga II" or spell.name == "Break" or spell.name == "Bind" or spell.name == "Dispel" then
+			if spell.english == "Silence" or spell.english == "Sleep" or spell.english == "Sleep II" or spell.english == "Sleepga" or spell.english == "Sleepga II" or spell.english == "Break" or spell.english == "Bind" or spell.english == "Dispel" then
 				equip(sets.Magic.EnfeebleAcc)
 				send_command ("@input /echo Enfeeble Acc set")
 			end
-			if spell.name == "Frazzle III" or spell.name == "Distract III" then
+			if spell.english == "Frazzle III" or spell.english == "Distract III" then
 				equip (sets.Magic.Fraztract)
 				send_command ("@input /echo Frazzle 3/Distract 3 set")
 			end
+		end
+		
+		if spell.english == "Dispelga" then
+			equip(sets.Magic.Dispelga)
 		end
 	end	
 

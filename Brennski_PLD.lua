@@ -436,14 +436,13 @@ function precast(spell)
 	end
 
 	if spell.english == "Shield Bash" then
-		equip(set_combine(sets.Utility.Enmity, sets.JA.ShieldBash))
 	end
 
 	if spell.english == "Sentinel" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Sentinel))
 	end
 
-	if spell.english == "Ramprt" then
+	if spell.english == "Rampart" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Rampart))
 	end
 

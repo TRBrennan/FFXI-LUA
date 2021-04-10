@@ -253,7 +253,7 @@ function get_sets()
 							
 		sets.JA.SnakeEye = {legs ="Lanun trews"}
 		
-		sets.JA.RandomDeal = {body ="Lanun Frac +2"}
+		sets.JA.RandomDeal = {body ="Lanun Frac +3"}
 		
 		sets.JA.WildCard = {Feet = "Lanun Bottes +3"}
                                                     

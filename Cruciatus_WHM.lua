@@ -153,7 +153,7 @@ function get_sets()
         ring1 = "Stikini Ring",
         ring2 = "Kishar Ring",
         back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}},
-        waist = "Rumination sash",
+        waist = "Ovate Rope",
         legs = "Chironic hose",
         feet = "Medium's sabots"
     }
