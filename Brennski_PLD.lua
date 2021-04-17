@@ -34,96 +34,83 @@ function get_sets()
 		ring2 = "Vocane Ring",
 		waist = "Fucho-no-obi",
 		legs = "Carmine Cuisses +1",
-		feet = "Souveran Schuhs +1",
+		feet="Sakpata's Leggings",
 		back = "Moonbeam Cape"
 	}
 
 	sets.Idle.DT = {
-		ammo = "Staunch Tathlum",
-		head = "Souveran Schaller",
-		neck = "Loricate Torque +1",
-		ear1 = "Odnowa Earring +1",
-		--ear2 = "Thureous Earring",
-		ear2="Genmei Earring",
-		body = "Reverence Surcoat +3",
-		hands = "Regal Gauntlets",
-		ring1 = "Defending ring",
-		ring2 = "Vocane Ring",
-		back = "Moonbeam Cape",
-		waist = "Flume Belt +1",
-		legs = "Souveran Diechlings +1",
-		feet = "Souveran Schuhs +1"
+		ammo="Staunch Tathlum",
+		head="Sakpata's Helm",
+		body="Sakpata's Plate",
+		hands="Regal Gauntlets",
+		legs="Sakpata's Cuisses",
+		feet="Sakpata's Leggings",
+		neck="Loricate Torque +1",
+		waist="Flume Belt +1",
+		left_ear="Odnowa Earring +1",
+		right_ear = "Thureous Earring",
+		--right_ear="Genmei Earring",
+		left_ring="Defending Ring",
+		right_ring="Vocane Ring",
+		back="Rudianos's Mantle",
 	}
 
 	sets.Idle.Cleave = {
-		ammo = "Staunch Tathlum",
-		head = "Souveran Schaller",
-		neck = "Loricate Torque +1",
-		ear1 = "Odnowa Earring +1",
-		ear2 = "Thureous Earring",
-		body = "Reverence Surcoat +3",
-		hands = "Souveran Handschuhs",
-		ring1 = "Defending ring",
-		ring2 = "Vocane Ring",
-		back = "Moonbeam Cape",
-		waist = "Flume Belt +1",
-		feet = "Souveran Schuhs +1",
-		legs = "Carmine Cuisses +1"
+		ammo="Staunch Tathlum",
+		head="Sakpata's Helm",
+		body="Sakpata's Plate",
+		hands="Regal Gauntlets",
+		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+		feet="Sakpata's Leggings",
+		neck="Loricate Torque +1",
+		waist="Flume Belt +1",
+		left_ear="Odnowa Earring +1",
+		right_ear = "Thureous Earring",
+		left_ring="Defending Ring",
+		right_ring="Vocane Ring",
+		back="Rudianos's Mantle",
+
 	}
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Tank", "Standard", "DW"}
-	--1=Tank ,2 = Standard, 3= DW--
+	sets.TP.index = {"Tank", "Standard",}
+	--1=Tank ,2 = Standard,--
 
 	TP_ind = 1
 	sets.TP.Tank = {
-		ammo = "Staunch Tathlum",
-		head = "Souveran Schaller",
-		neck = "Loricate Torque +1",
-		ear1 = "Odnowa Earring +1",
-		ear2 = "Etiolation Earring",
-		body = "Reverence Surcoat +3",
-		hands = "Regal Gauntlets",
-		ring1 = "Defending ring",
-		ring2 = "Vocane Ring",
-		back = "Moonbeam Cape",
-		waist = "Flume Belt +1",
-		legs = "Souveran Diechlings +1",
-		feet = "Souveran Schuhs +1"
+		ammo="Staunch Tathlum",
+		head="Sakpata's Helm",
+		body="Sakpata's Plate",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Sakpata's Cuisses",
+		feet="Sakpata's Leggings",
+		neck="Loricate Torque +1",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Odnowa Earring +1",
+		right_ear = "Thureous Earring",
+		left_ring="Defending Ring",
+		right_ring="Chirich Ring +1",
+		back="Rudianos's Mantle",
+
 	}
 
 	sets.TP.Standard = {
 		ammo = "Coiste Bodhar",
-		head = "Flam. Zucchetto +2",
-		body = "Emicho Haubert +1",
-		hands = "Emicho Gauntlets +1",
-		legs = {name = "Odyssean Cuisses", augments = {"Accuracy+16 Attack+16", '"Store TP"+7', "DEX+2", "Attack+8"}},
-		feet = "Flam. Gambieras +2",
+		head="Sakpata's Helm",
+		body="Sakpata's Plate",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Sakpata's Cuisses",
+		feet="Sakpata's Leggings",
+		neck="Loricate Torque +1",
 		neck = "Lissome Necklace",
-		waist = "Kentarch Belt +1",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear = "Telos Earring",
 		right_ear = "Cessance Earring",
 		left_ring = "Petrov Ring",
 		right_ring = "Chirich Ring +1",
-		back = "Grounded Mantle"
+		back = "Rudianos's Mantle"
 	}
-	sets.TP.DW = {
-		ammo = "Coiste Bodhar",
-		head = "Flam. Zucchetto +2",
-		body = {name = "Valorous Mail", augments = {"Accuracy+20 Attack+20", '"Store TP"+8', "Accuracy+12", "Attack+8"}},
-		hands = "Flam. Manopolas +2",
-		legs = "Carmine Cuisses +1",
-		feet = {name = "Valorous Greaves", augments = {"Accuracy+25 Attack+25", '"Dbl.Atk."+4', "CHR+8", "Attack+6"}},
-		neck = "Lissome Necklace",
-		waist = "Kentarch Belt +1",
-		left_ear = "Telos Earring",
-		right_ear = "Cessance Earring",
-		left_ring = "Petrov Ring",
-		right_ring = "Chirich Ring +1",
-		back = "Grounded Mantle"
-	}
-
 	--Weaponskill Sets--
 	sets.WS = {}
 
@@ -142,7 +129,7 @@ function get_sets()
 		ring2 = "Regal Ring",
 		ring1 = "Petrov Ring",
 		waist = "Fotia Belt",
-		back = "Grounded Mantle",
+		back = "Rudianos's Mantle",
 		legs = "Carmine Cuisses +1",
 		feet = "Carmine Greaves +1"
 	}
@@ -154,20 +141,17 @@ function get_sets()
 
 	sets.SavageBlade.Attack = {
 		ammo = "Coiste Bodhar",
-		head = {name = "Valorous Mask", augments = {"Accuracy+18", "Weapon skill damage +3%", "STR+4", "Attack+11"}},
 		neck = "Caro Necklace",
+		ear2 = "Telos Earring",
 		ear1 = "Ishvara Earring",
-		ear2 = "Moonshade Earring",
-		body = {name = "Valorous Mail", augments = {"Accuracy+25", "Weapon skill damage +4%", "DEX+8", "Attack+5"}},
-		hands = {
-			name = "Valorous Mitts",
-			augments = {"Accuracy+17 Attack+17", "Weapon skill damage +3%", "VIT+9", "Accuracy+3", "Attack+12"}
-		},
-		ring1 = "Niqmaddu Ring",
+		head="Sakpata's Helm",
+		body="Sakpata's Plate",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		ring1 = "Petrov Ring",
 		ring2 = "Regal Ring",
 		back = {name = "Cichol's Mantle", augments = {"VIT+20", "Accuracy+20 Attack+20", "Weapon skill damage +10%"}},
 		waist = "Sailfi Belt +1",
-		legs = {name = "Valor. Hose", augments = {"Attack+27", "Weapon skill damage +5%", "DEX+8", "Accuracy+15"}},
+		legs="Sakpata's Cuisses",
 		feet = "Sulevia's Leggings +2"
 	}
 
@@ -186,7 +170,7 @@ function get_sets()
 		hands = "Flam. Manopolas +2",
 		ring2 = "Rajas ring",
 		ring1 = "Petrov Ring",
-		back = "Grounded Mantle",
+		back = "Rudianos's Mantle",
 		waist = "Fotia Belt",
 		legs = "Sulevia's Cuisses +2",
 		feet = "Thereoid Greaves"
@@ -205,7 +189,7 @@ function get_sets()
 		ring1 = "Acumen Ring",
 		ring2 = "Fenrir Ring",
 		waist = "Eschan Stone",
-		back = "Grounded Mantle",
+		back = "Rudianos's Mantle",
 		legs = "Hagondes Pants",
 		feet = "Weatherspoon souliers +1"
 	}
@@ -244,7 +228,7 @@ function get_sets()
 		feet = "Souveran Schuhs +1",
 		body = "Shabti Cruissas",
 		ring1 = "Stikini Ring",
-		legs = "Carmine Cuisses +1",
+		legs="Sakpata's Cuisses",
 		head = "Carmine Mask +1"
 	}
 
@@ -274,7 +258,7 @@ function get_sets()
 		neck = "Unmoving Collar +1",
 		hands = "Regal Gauntlets",
 		feet = "Souveran Schuhs +1",
-		body = "Reverence Surcoat +3",
+		body = "Shabti Cruissas",
 		ring1 = "Stikini Ring",
 		legs = "Souveran Diechlings +1",
 		head = "Souveran Schaller"
@@ -316,7 +300,7 @@ function get_sets()
 		right_ear = "Steelflash Earring",
 		left_ring = "Yacuruna Ring",
 		right_ring = "Rajas Ring",
-		back = "Grounded Mantle"
+		back = "Rudianos's Mantle"
 	}
 
 	sets.Utility.PDT = {
@@ -376,7 +360,7 @@ function get_sets()
 		}
 	}
 
-	sets.JA.Sentinel = {feet = "Valor Leggings"}
+	sets.JA.Sentinel = {feet = "Caballarius Leggings +1"}
 
 	sets.JA.Cover = {}
 
@@ -436,6 +420,7 @@ function precast(spell)
 	end
 
 	if spell.english == "Shield Bash" then
+		equip(set_combine(sets.Utility.Enmity, sets.JA.ShieldBash))
 	end
 
 	if spell.english == "Sentinel" then

@@ -35,7 +35,7 @@ function get_sets()
         sets.Idle.Standard = {
                                       head="Malignance Chapeau",
 									  neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
-                                      body="Emet Harness +1",
+                                      body="Malignance Tabard",
 									  hands="Malignance Gloves",
 									  ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots", 
@@ -44,7 +44,7 @@ function get_sets()
                                                  
         sets.Idle.DT = {	          head="Malignance Chapeau",
 										neck="Loricate Torque +1", ear1="Etiolation earring", ear2="Handler's earring +1",
-                                        body="Emet Harness +1",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},
+                                        body="Malignance Tabard",hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},
 										ring1="Defending ring",ring2="Vocane Ring",
                                         back="Moonbeam Cape",waist="Flume belt +1",    
 										legs="Malignance Tights",
@@ -84,7 +84,7 @@ function get_sets()
                 sets.TP.DT = { ammo ="Chrono bullet",
                               head="Malignance Chapeau",
 							  neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Dignitary's Earring",
-                              body="Emet harness +1",hands="Malignance Gloves",
+                              body="Malignance Tabard",hands="Malignance Gloves",
 							  ring1="Defending ring",ring2="Vocane Ring",
                               back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 							  waist="Flume belt +1",										
@@ -93,7 +93,7 @@ function get_sets()
                                  
                 sets.TP.DTAccuracy = { ammo ="Chrono bullet",
                                       head="Malignance Chapeau",neck="Loricate Torque +1", ear1="Suppanomimi", ear2="Dignitary's Earring",     
-									  body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Dark ring",ring2="Mars's ring",
+									  body="Malignance Tabard",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Dark ring",ring2="Mars's ring",
                                       back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 									  waist="Reiki Yotai",							
 									  legs="Malignance Tights",
@@ -273,7 +273,7 @@ function get_sets()
 								
 	    sets.NINMagic.Utsusemi ={
                               head="Adhemar Bonnet +1",neck="Loricate Torque", ar1="Brutal Earring",ear2="Cessance Earring",
-                              body="Emet harness +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Vocane Ring",ring2="Petrov Ring",
+                              body="Malignance Tabard",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Vocane Ring",ring2="Petrov Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Weapon skill damage +2%','Mag. Acc.+14','"Mag.Atk.Bns."+13',}},feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
 end

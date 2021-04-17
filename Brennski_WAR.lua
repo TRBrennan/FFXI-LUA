@@ -54,7 +54,8 @@ function get_sets()
 	WS_Head = {name = "Valorous Mask", augments = {"Accuracy+25 Attack+25", "Enmity+2", "STR+12", "Accuracy+6"}}
 	WSD_Head = "Agoge Mask +3"
 	TP_Legs = {name = "Odyssean Cuisses", augments = {"Accuracy+16 Attack+16", '"Store TP"+7', "DEX+2", "Attack+8"}}
-	TP_Body = "Emicho Haubert +1"
+	--TP_Body = "Emicho Haubert +1"
+	TP_Body ={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
 	--WSD_Legs ={name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}}
 	--WSD_Legs = {name = "Odyssean Cuisses", augments = {"Accuracy+20", "Weapon skill damage +4%", "VIT+5"}}
 	WSD_Legs ="Sakpata's Cuisses"
@@ -123,7 +124,8 @@ function get_sets()
 		neck = "Warrior's bead necklace +1",
 		ear2 = "Brutal earring",
 		ear1 = "Cessance earring",
-		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
+		--body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
+		body = TP_Body,
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Flamma ring",
 		ring2 = "Chirich Ring +1",
@@ -137,7 +139,8 @@ function get_sets()
 	sets.TP.Chango = {
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
-		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
+		--body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
+		body = TP_Body,
 		--hands = "Sakpata's Gauntlets",
 		hands = "Sakpata's Gauntlets",
 		--legs = "Pumm. Cuisses +3",
@@ -1385,7 +1388,7 @@ function aftercast(spell)
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command("@input /echo Bravura DT Set")
 			if buffactive["doom"] or buffactive["curse"] then
-				equip(sets.Utility.Doom)
+				equip(sets.Utility.Doomed)
 			end
 			if buffactive["terror"] or buffactive["stun"] or buffactive["sleep"] then
 				equip(sets.TP.DT)
@@ -1394,7 +1397,7 @@ function aftercast(spell)
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command("@input /echo TP Set")
 			if buffactive["doom"] or buffactive["curse"] then
-				equip(sets.Utility.Doom)
+				equip(sets.Utility.Doomed)
 			end
 			if buffactive["terror"] or buffactive["stun"] or buffactive["sleep"] then
 				equip(sets.TP.DT)
@@ -1505,6 +1508,36 @@ function self_command(command)
 		end
 	end
 end
+
+function buff_change(buff, gain)
+	if (buff == "terror" or buff == "stun" or (buff == "sleep" or buff == "lullaby")) then
+		if gain then
+			if player.status == "Engaged" then
+				equip(sets.TP.DT)
+			elseif player.status == "Idle" then
+				equip(sets.TP.DT)
+			end
+		else
+			if player.status == "Engaged" then
+				equip(sets.TP[sets.TP.index[TP_ind]])
+			elseif player.status == "Idle" then
+				equip(sets.Idle[sets.Idle.index[Idle_ind]])
+			end
+		end
+	end
+	if buff == "doom" or buff == "curse" then
+		if gain then
+			equip(sets.Utility.Doomed)
+		else
+			if player.status == "Engaged" then
+				equip(sets.TP[sets.TP.index[TP_ind]])
+			elseif player.status == "Idle" then
+				equip(sets.Idle[sets.Idle.index[Idle_ind]])
+			end
+		end
+	end
+end
+
 windower.register_event(
 	"zone change",
 	function()

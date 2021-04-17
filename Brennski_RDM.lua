@@ -436,6 +436,24 @@ function get_sets()
 		legs = "Psycloth Lappas",
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
+	sets.Magic.StunAcc = {
+		main = "Crocea Mors",
+		sub = "Ammurapi shield",
+		ammo = "Regal Gem",
+		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+		neck={ name="Dls. Torque +2", augments={'Path: A',}},
+		waist = "Luminary Sash",
+		left_ear="Regal Earring",
+		right_ear="Snotra Earring",
+		left_ring = "Rahab Ring",
+		right_ring = "Kishar Ring",
+		hands = "Leyline Gloves",
+		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
+		body = "Vitiation tabard +3",
+		legs = "Psycloth Lappas",
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+	}
+
 
 	sets.Magic.Refresh = {legs = "Lethargy Fuseau", waist = "Gishdubar Sash", body = "Atrophy Tabard +3"}
 	
@@ -670,6 +688,9 @@ function precast(spell)
 		end
 		if spell.english == "Stun" then
 			equip(sets.Magic.Stun)
+			if buffactive['Chainspell'] then
+				equip(sets.Magic.StunAcc)
+			end
 		end
 		if spell.english == "Dispelga" then
 			equip(sets.Precast.Dispelga)
@@ -750,6 +771,10 @@ function midcast(spell, act)
 		if spell.english == "Stun" then
 			equip(sets.Magic.Stun)
 			send_command("@input /echo Stun MidCast Set")
+			if buffactive['Chainspell'] then
+				equip(sets.Magic.StunAcc)
+				send_command("@input /echo Stun Acc Set")
+			end
 		end
 	end
 	
