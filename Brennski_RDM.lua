@@ -771,11 +771,10 @@ function midcast(spell, act)
 		if spell.english == "Stun" then
 			equip(sets.Magic.Stun)
 			send_command("@input /echo Stun MidCast Set")
-			if buffactive['Chainspell'] then
+		elseif buffactive['Chainspell'] and spell.english == "Stun" then
 				equip(sets.Magic.StunAcc)
 				send_command("@input /echo Stun Acc Set")
-			end
-		end
+		end		
 	end
 	
 	if spell.skill == "Enfeebling Magic" then

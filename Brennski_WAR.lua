@@ -105,7 +105,7 @@ function get_sets()
 	sets.TP.Standard = {
 		ammo = "Yetshila",
 		head = "Flam. Zucchetto +2",
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear2 = "Brutal earring",
 		ear1 = "Telos earring",
 		body = TP_Body,
@@ -121,7 +121,7 @@ function get_sets()
 	sets.TP.OH = {
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear2 = "Brutal earring",
 		ear1 = "Cessance earring",
 		--body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
@@ -146,7 +146,7 @@ function get_sets()
 		--legs = "Pumm. Cuisses +3",
 		legs="Sakpata's Cuisses",
 		feet = "Pumm. Calligae +3",
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		waist = "Ioskeha belt +1",
 		left_ear = "Telos Earring",
 		right_ear = "Cessance Earring",
@@ -158,7 +158,7 @@ function get_sets()
 	sets.TP.H2H = {
 		ammo = "Yetshila",
 		head = "Flam. Zucchetto +2",
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear2 = "Brutal earring",
 		ear1 = "Telos earring",
 		body = TP_Body,
@@ -175,7 +175,7 @@ function get_sets()
 	sets.TP.Zulfiqar = {
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear2 = "Brutal earring",
 		ear1 = "Cessance earring",
 		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
@@ -192,7 +192,7 @@ function get_sets()
 	sets.TP.AccuracyLite = {
 		ammo = "Coiste Bodhar",
 		head = Acc_Head,
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear2 = "Dignitary's earring",
 		ear1 = "Telos earring",
 		body = TP_Body,
@@ -260,7 +260,7 @@ function get_sets()
 	sets.TP.DW = {
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear1 = "Telos Earring",
 		ear2 = "Cessance earring",
 		body = TP_Body,
@@ -281,7 +281,7 @@ function get_sets()
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs="Sakpata's Cuisses",
 		feet="Sakpata's Leggings",
-		neck={ name="War. Beads +1", augments={'Path: A',}},
+		neck={ name="War. Beads +2", augments={'Path: A',}},
 		waist="Ioskeha Belt +1",
 		left_ear="Telos Earring",
 		right_ear="Brutal Earring",
@@ -296,7 +296,7 @@ function get_sets()
 	sets.UpheavalA = {
 		ammo = "Knobkierrie",
 		head = WSD_Head,
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear1 = "Thrud Earring",
 		ear2 = "Moonshade earring",
 		body = "Pummeler's lorica +3",
@@ -312,7 +312,7 @@ function get_sets()
 	sets.UpheavalB = {
 		ammo = "Knobkierrie",
 		head = "Sakpata Helm",
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear1 = "Telos earring",
 		ear2 = "Moonshade earring",
 		body = "Pummeler's lorica +3",
@@ -328,7 +328,7 @@ function get_sets()
 	sets.UF = {
 		ammo = "Yetshila",
 		head = "Flam. Zucchetto +2",
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear1 = "Telos earring",
 		ear2 = "Moonshade earring",
 		body="Hjarrandi Breast.",
@@ -392,7 +392,7 @@ function get_sets()
 	sets.KingsJusticeA = {
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear1 = "Telos earring",
 		ear2 = "Moonshade earring",
 		body = "Argosy Hauberk +1",
@@ -408,7 +408,7 @@ function get_sets()
 	sets.KingsJusticeB = {
 		ammo = "Knobkierrie",
 		head = WSD_Head,
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear1 = "Thrud Earring",
 		ear2 = "Moonshade earring",
 		body = "Pummeler's lorica +3",
@@ -456,7 +456,7 @@ function get_sets()
 	sets.Savage = {
 		ammo = "Knobkierrie",
 		head = WSD_Head,
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear1 = "Thrud Earring",
 		ear2 = "Moonshade earring",
 		body = "Pummeler's lorica +3",
@@ -648,7 +648,7 @@ function get_sets()
 	sets.Scourge = {
 		ammo = "Knobkierrie",
 		head = WSD_Head,
-		neck = "Warrior's bead necklace +1",
+		neck = "Warrior's bead necklace +2",
 		ear1 = "Telos earring",
 		ear1 = "Telos earring",
 		body = "Pummeler's lorica +3",
@@ -1025,7 +1025,7 @@ function get_sets()
 
 	sets.JA = {}
 
-	sets.JA.Berserk = {back = "Cichol's Mantle", feet = "Agoge Calligae +2", body = "Pumm. Lorica +3"}
+	sets.JA.Berserk = {back = "Cichol's Mantle", feet = "Agoge Calligae +3", body = "Pumm. Lorica +3"}
 
 	sets.JA.Aggressor = {body = "Agoge Lorica +3", head = "Pummeler's mask +2"}
 
@@ -1063,7 +1063,7 @@ function get_sets()
 		neck = "Unmoving Collar +1",
 		hands = "Souveran Handschuhs",
 		feet = "Souveran Schuhs +1",
-		body = "Souveran Cuirass",
+		body = "Pummeler's lorica +3",
 		ring1 = "Flamma Ring",
 		legs = "Souveran Diechlings +1",
 		head = "Souveran Schaller"
@@ -1148,7 +1148,7 @@ function precast(spell)
 				equip(sets.UpheavalB)
 				--equip(sets.UpheavalA)
 				send_command("@input /echo Upheaval DA Set")
-				if buffactive["Mighty Strike"] then
+				if buffactive["Mighty Strikes"] then
 					equip(sets.UpheavalCrit)
 					send_command("@input /echo Upheavel Crit Set")
 					end
@@ -1205,12 +1205,7 @@ function precast(spell)
 		elseif spell.english == "Resolution" then
 			equip(sets.Resolution)
 			--equip(sets.ResoWSD)
-			if world.day == "Lightningsday" or world.day == "Windsday" or world.day == "Earthsday" then
-				equip({head = "Gavialis Helm"})
-				send_command("@input /echo Resolution Day Set")
-			else
-				send_command("@input /echo Resolution Set")
-			end
+			send_command("@input /echo Resolution Set")
 		elseif spell.english == "Scourge" then
 			equip(sets.Scourge)
 			send_command("@input /echo Scourge Set")
@@ -1229,12 +1224,7 @@ function precast(spell)
 			send_command("@input /echo Herculean Set")
 		elseif spell.english == "Ruinator" then
 			equip(sets.Ruinator)
-			if world.day == "Iceday" or world.day == "Windsday" or world.day == "Watersday" then
-				equip({head = "Gavialis Helm"})
-				send_command("@input /echo Ruinator Day Set")
-			else
-				send_command("@input /echo Ruinator Set")
-			end
+			send_command("@input /echo Ruinator Set")
 		elseif spell.english == "Mistral Axe" then
 			if buffactive["Sneak Attack"] then
 				equip(sets.MistralCrit)
@@ -1248,22 +1238,12 @@ function precast(spell)
 			send_command("@input /echo Magic WS Set")
 		elseif spell.english == "Decimation" then
 			equip(sets.Decimation)
-			if world.day == "Lightsday" or world.day == "Firesday" or world.day == "Watersday" then
-				equip({head = "Gavialis Helm"})
-				send_command("@input /echo Decimation Day Set")
-			else
-				send_command("@input /echo Decimation Set")
-			end
+			send_command("@input /echo Decimation Set")
 		elseif spell.english == "Rampage" then
 			---Sword Weapon Skills---
-			--equip(sets.Rampage)
-			equip(sets.ResoWSD)
-			if world.day == "Earthsday" then
-				equip({head = "Gavialis Helm"})
-				send_command("@input /echo Rampage Day Set")
-			else
-				send_command("@input /echo Rampage Set")
-			end
+			equip(sets.Rampage)
+			--equip(sets.ResoWSD)
+			send_command("@input /echo Rampage Set")
 		elseif spell.english == "Savage Blade" then
 			if buffactive["Sneak Attack"] then
 				equip(sets.SavageCrit)
@@ -1274,24 +1254,14 @@ function precast(spell)
 			end
 		elseif spell.english == "Requiescat" then
 			equip(sets.Requiescat)
-			if world.day == "Darksday" or world.day == "Earthsday" then
-				equip({head = "Gavialis Helm"})
-				send_command("@input /echo Requiescat Day Set")
-			else
 				send_command("@input /echo Requiescat Set")
-			end
 		elseif spell.english == "Sanguine Blade" then
 			equip(sets.Sanguine)
 			send_command("@input /echo Sanguine Blade Set")
 		elseif spell.english == "Vorpal Blade" then
 			---Club Weapon Skills---
 			equip(sets.Vorpal)
-			if world.day == "Lightningsday" or world.day == "Earthsday" then
-				equip({head = "Gavialis Helm"})
-				send_command("@input /echo Vorpal Day Set")
-			else
-				send_command("@input /echo Vorpal Blade Set")
-			end
+			send_command("@input /echo Vorpal Blade Set")
 		elseif spell.english == "Black Halo" then
 			equip(sets.BH)
 			send_command("@input /echo BH Set")
@@ -1363,7 +1333,7 @@ function precast(spell)
 			equip(set_combine(sets.enmity, sets.JA.Warcry))
 		elseif spell.english == "Tomahawk" then
 			equip(set_combine(sets.enmity, sets.JA.Tomahawk))
-		elseif spell.english == "Bloodrage" then
+		elseif spell.english == "Blood Rage" then
 			equip(set_combine(sets.enmity, sets.JA.BloodRage))
 		elseif spell.english == "Mighty Strikes" then
 			equip(set_combine(sets.enmity, sets.JA.MightyStrikes))

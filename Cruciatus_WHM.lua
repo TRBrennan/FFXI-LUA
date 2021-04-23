@@ -346,21 +346,21 @@ end
 
 function precast(spell)
     if ST_Cure_Spells:contains(spell.name) then
-        --send_command('@input /echo Cure Precast Set')
+        send_command('@input /echo Cure Precast Set')
         equip(sets.precast_Cure)
     elseif MT_Cure_Spells:contains(spell.name) then
-        --send_command('@input /echo Cure Precast Set')
+        send_command('@input /echo Cure Precast Set')
         equip(sets.precast_Cure)
     elseif naSpells:contains(spell.name) then
-        --send_command('@input /echo NA Precast Set')
+        send_command('@input /echo NA Precast Set')
         equip(sets.precast_FastCast)
     elseif FC_Spells:contains(spell.name) then
-        --send_command('@input /echo Haste Precast Set')
+        send_command('@input /echo Haste Precast Set')
         equip(sets.precast_Haste)
-    elseif spell.name == "Impact" then
+    elseif spell.english == "Impact" then
         equip({body = "Twilight cloak"})
     else
-        --send_command('@input /echo Precast Set')
+        send_command('@input /echo Precast Set')
         equip(sets.precast_FastCast)
     end
 end
