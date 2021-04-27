@@ -92,12 +92,19 @@ function get_sets()
 							  feet="Malignance Boots", }
                                  
                 sets.TP.DTAccuracy = { ammo ="Chrono bullet",
-                                      head="Malignance Chapeau",neck="Loricate Torque +1", ear1="Suppanomimi", ear2="Dignitary's Earring",     
-									  body="Malignance Tabard",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Dark ring",ring2="Mars's ring",
-                                      back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
-									  waist="Reiki Yotai",							
-									  legs="Malignance Tights",
-							  feet="Malignance Boots",  }
+                                         head="Malignance Chapeau",
+										body="Malignance Tabard",
+										hands="Malignance Gloves",
+										legs="Malignance Tights",
+										feet="Malignance Boots",
+										neck="Lissome Necklace",
+										waist="Reiki Yotai",
+										left_ear="Suppanomimi",
+										right_ear="Digni. Earring",
+										left_ring="Chirich Ring +1",
+										right_ring="Epona's Ring",
+										back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+										}
                                                          				
        --Weaponskill Sets--
         sets.WS = {}

@@ -21,10 +21,7 @@ function get_sets()
 
 	sets.Idle.Standard = {
 		ammo = "Homiliary",
-		head = {
-			name = "Valorous Mask",
-			augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}
-		},
+		head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}},
 		neck = "Coatl Gorget +1",
 		ear1 = "Odnowa Earring +1",
 		ear2 = "Infused Earring",
@@ -120,18 +117,18 @@ function get_sets()
 	Requiescat_ind = 1
 
 	sets.Requiescat.Attack = {
-		head = "Carmine Mask +1",
 		neck = "Fotia Gorget",
 		ear2 = "Moondshade earring",
 		ear1 = "Telos Earring",
-		body = "Sulevia's Plate. +2",
-		hands = "Sulev. Gauntlets +2",
+		head="Sakpata's Helm",
+		body="Sakpata's Plate",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Sakpata's Cuisses",
+		feet="Sakpata's Leggings",
 		ring2 = "Regal Ring",
 		ring1 = "Petrov Ring",
 		waist = "Fotia Belt",
 		back = "Rudianos's Mantle",
-		legs = "Carmine Cuisses +1",
-		feet = "Carmine Greaves +1"
 	}
 
 	sets.SavageBlade = {}
@@ -166,13 +163,13 @@ function get_sets()
 		neck = "Fotia gorget",
 		ear1 = "Telos Earring",
 		ear2 = "Moonshade Earring",
-		body = "Sulevia's Plate. +2",
+		body="Hjarrandi Breast.",
 		hands = "Flam. Manopolas +2",
 		ring2 = "Rajas ring",
 		ring1 = "Petrov Ring",
 		back = "Rudianos's Mantle",
 		waist = "Fotia Belt",
-		legs = "Sulevia's Cuisses +2",
+		legs="Sakpata's Cuisses",
 		feet = "Thereoid Greaves"
 	}
 
@@ -215,23 +212,6 @@ function get_sets()
 
 	sets.Magic.Divine = {neck = "Incanter's Torque", ring1 = "Stikini Ring"}
 
-	sets.Magic.Phalanx = {
-		ear2 = "Andoaa Earring",
-		waist = "Olympus Sash",
-		ammo = "Sapience Orb",
-		ear2 = "Andoaa Earring",
-		back = "Weard Mantle",
-		waist = "Olympus Sash",
-		ring2 = "Supershear Ring",
-		neck = "Incanter's Torque",
-		hands = "Regal Gauntlets",
-		feet = "Souveran Schuhs +1",
-		body = "Shabti Cruissas",
-		ring1 = "Stikini Ring",
-		legs="Sakpata's Cuisses",
-		head = "Carmine Mask +1"
-	}
-
 	sets.Magic.Enhancing = {
 		ear2 = "Andoaa Earring",
 		waist = "Olympus Sash",
@@ -243,25 +223,58 @@ function get_sets()
 		neck = "Incanter's Torque",
 		hands = "Regal Gauntlets",
 		feet = "Souveran Schuhs +1",
-		body = "Shabti Cruissas",
+		body="Rev. Surcoat +3",
 		ring1 = "Stikini Ring",
 		legs = "Carmine Cuisses +1",
 		head = "Carmine Mask +1"
 	}
+	
+	sets.Magic.Phalanx ={
+	    ammo="Staunch Tathlum",
+		head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+		body="Rev. Surcoat +3",
+		hands={ name="Souv. Handschuhs", augments={'HP+50','Shield skill +10','Phys. dmg. taken -3',}},
+		legs="Sakpata's Cuisses",
+		feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+		neck="Incanter's Torque",
+		waist="Olympus Sash",
+		left_ear="Odnowa Earring +1",
+		right_ear="Thureous Earring",
+		left_ring="Defending Ring",
+		right_ring="Stikini Ring",
+		back="Moonbeam Cape",
+	}
 
 	sets.Magic.Reprisal = {
 		ammo = "Sapience Orb",
-		ear2 = "Andoaa Earring",
-		back = "Weard Mantle",
-		waist = "Olympus Sash",
+		ear1 = "Odnowa Earring +1",
+		ear2 = "Etiolation Earring",
+		back = "Moonbeam Cape",
+		waist = "Trance Belt",
 		ring2 = "Supershear Ring",
 		neck = "Unmoving Collar +1",
 		hands = "Regal Gauntlets",
 		feet = "Souveran Schuhs +1",
-		body = "Shabti Cruissas",
+		body = "Rev. Surcoat +3",
 		ring1 = "Stikini Ring",
 		legs = "Souveran Diechlings +1",
-		head = "Souveran Schaller"
+		head = "Souveran Schaller +1"
+	}
+	
+	sets.Magic.SIRD ={
+	    ammo="Staunch Tathlum",
+		head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+		body="Rev. Surcoat +3",
+		hands="Regal Gauntlets",
+		legs={ name="Founder's Hose", augments={'MND+10','Mag. Acc.+15','Attack+15','Breath dmg. taken -5%',}},
+		feet={ name="Odyssean Greaves", augments={'Attack+17','"Fast Cast"+4','STR+1','Accuracy+10',}},
+		neck="Moonbeam Necklace",
+		waist="Trance Belt",
+		left_ear="Odnowa Earring +1",
+		right_ear="Friomisi Earring",
+		left_ring="Petrov Ring",
+		right_ring="Supershear Ring",
+		back="Moonbeam Cape",
 	}
 
 	sets.Magic.Flash = {neck = "Incanter's Torque", ring1 = "Stikini Ring"}
@@ -276,16 +289,6 @@ function get_sets()
 
 	--Utility Sets--
 	sets.Utility = {}
-
-	sets.Utility.Weather = {waist = "Hachirin-no-obi", back = "Twilight Cape"}
-
-	sets.Utility.MB = {
-		head = "Helios Band",
-		body = "Samnuha Coat",
-		ear1 = "Static Earring",
-		ring1 = "Locus Ring",
-		ring2 = "Mujin Band"
-	}
 
 	sets.Utility.Steps = {
 		ammo = "Falcon Eye",
@@ -341,7 +344,7 @@ function get_sets()
 		body = "Reverence Surcoat +3",
 		ring1 = "Petrov Ring",
 		legs = "Souveran Diechlings +1",
-		head = "Souveran Schaller"
+		head = "Souveran Schaller +1"
 	}
 
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
@@ -461,7 +464,7 @@ function midcast(spell, act)
 		equip(sets.Magic.Phalanx)
 	end
 	if spell.skill == "Blue Magic" then
-		equip(sets.Utility.Enmity)
+		equip(sets.Magic.SIRD)
 	end
 end
 

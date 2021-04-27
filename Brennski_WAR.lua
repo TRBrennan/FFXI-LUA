@@ -104,23 +104,23 @@ function get_sets()
 
 	sets.TP.Standard = {
 		ammo = "Yetshila",
-		head = "Flam. Zucchetto +2",
+		head = "Hjarrandi Helm",
 		neck = "Warrior's bead necklace +2",
 		ear2 = "Brutal earring",
 		ear1 = "Telos earring",
 		body = TP_Body,
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
-		ring2 = "Flamma ring",
+		ring2 = "Petrov ring",
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
-		legs = TP_Legs,
+		legs = "Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
 	}
 
 	sets.TP.OH = {
 		ammo = "Coiste Bodhar",
-		head = "Flam. Zucchetto +2",
+		head = "Hjarrandi Helm",
 		neck = "Warrior's bead necklace +2",
 		ear2 = "Brutal earring",
 		ear1 = "Cessance earring",
@@ -138,7 +138,7 @@ function get_sets()
 
 	sets.TP.Chango = {
 		ammo = "Coiste Bodhar",
-		head = "Flam. Zucchetto +2",
+		head = "Hjarrandi Helm",
 		--body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
 		body = TP_Body,
 		--hands = "Sakpata's Gauntlets",
@@ -151,13 +151,13 @@ function get_sets()
 		left_ear = "Telos Earring",
 		right_ear = "Cessance Earring",
 		left_ring = "Niqmaddu Ring",
-		right_ring = "Hetairoi Ring",
+		right_ring = "Petrov Ring",
 		back = {name = "Cichol's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10'}}
 	}
 
 	sets.TP.H2H = {
 		ammo = "Yetshila",
-		head = "Flam. Zucchetto +2",
+		head = "Hjarrandi Helm",
 		neck = "Warrior's bead necklace +2",
 		ear2 = "Brutal earring",
 		ear1 = "Telos earring",
@@ -174,14 +174,14 @@ function get_sets()
 
 	sets.TP.Zulfiqar = {
 		ammo = "Coiste Bodhar",
-		head = "Flam. Zucchetto +2",
+		head = "Hjarrandi Helm",
 		neck = "Warrior's bead necklace +2",
 		ear2 = "Brutal earring",
 		ear1 = "Cessance earring",
 		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
-		ring2 = "Flamma ring",
+		ring2 = "Petrov ring",
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
 		--legs = "Pummeler's cuisses +3",
@@ -241,11 +241,11 @@ function get_sets()
 
 	sets.TP.DTAM = {
 		ammo = "Staunch Tathlum",
-		head = "Flam. Zucchetto +2",
+		head = "Hjarrandi Helm",
 		neck={ name="War. Beads +1", augments={'Path: A',}},
 		ear2 = "Cessance earring",
 		ear1 = "Telos earring",
-		body = "Sakpata's Plate",
+		body = TP_Body,
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Defending Ring",
@@ -259,7 +259,7 @@ function get_sets()
 
 	sets.TP.DW = {
 		ammo = "Coiste Bodhar",
-		head = "Flam. Zucchetto +2",
+		head = "Hjarrandi Helm",
 		neck = "Warrior's bead necklace +2",
 		ear1 = "Telos Earring",
 		ear2 = "Cessance earring",
@@ -1066,7 +1066,7 @@ function get_sets()
 		body = "Pummeler's lorica +3",
 		ring1 = "Flamma Ring",
 		legs = "Souveran Diechlings +1",
-		head = "Souveran Schaller"
+		head = "Souveran Schaller +1"
 	}
 
 	--Precast Sets--
@@ -1107,7 +1107,7 @@ function get_sets()
 		main = "Ragnarok",
 		sub = "Utu Grip",
 		body = "Agoge Lorica +1",
-		head = "Agoge mask +1",
+		head = "Agoge mask +3",
 		hands = "Agoge mufflers +1",
 		feet = "Agoge Calligae +2"
 	}
