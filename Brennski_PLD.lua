@@ -27,8 +27,8 @@ function get_sets()
 		ear2 = "Infused Earring",
 		body = "Reverence Surcoat +3",
 		hands = "Regal Gauntlets",
-		ring1 = "Defending ring",
-		ring2 = "Vocane Ring",
+		left_ring = "Moonlight Ring",
+		right_ring = "Moonbeam Ring",		
 		waist = "Fucho-no-obi",
 		legs = "Carmine Cuisses +1",
 		feet="Sakpata's Leggings",
@@ -47,8 +47,8 @@ function get_sets()
 		left_ear="Odnowa Earring +1",
 		right_ear = "Thureous Earring",
 		--right_ear="Genmei Earring",
-		left_ring="Defending Ring",
-		right_ring="Vocane Ring",
+		left_ring = "Moonlight Ring",
+		right_ring = "Moonbeam Ring",
 		back="Rudianos's Mantle",
 	}
 
@@ -63,8 +63,8 @@ function get_sets()
 		waist="Flume Belt +1",
 		left_ear="Odnowa Earring +1",
 		right_ear = "Thureous Earring",
-		left_ring="Defending Ring",
-		right_ring="Vocane Ring",
+		left_ring = "Moonlight Ring",
+		right_ring = "Moonbeam Ring",
 		back="Rudianos's Mantle",
 
 	}
@@ -86,8 +86,8 @@ function get_sets()
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Odnowa Earring +1",
 		right_ear = "Thureous Earring",
-		left_ring="Defending Ring",
-		right_ring="Chirich Ring +1",
+		left_ring = "Moonlight Ring",
+		right_ring = "Moonbeam Ring",
 		back="Rudianos's Mantle",
 
 	}
@@ -183,8 +183,8 @@ function get_sets()
 		ear1 = "Novio Earring",
 		body = "Founder's Breastplate",
 		hands = "Amalric Gages +1",
-		ring1 = "Acumen Ring",
-		ring2 = "Fenrir Ring",
+		left_ring = "Moonlight Ring",
+		right_ring = "Moonbeam Ring",
 		waist = "Eschan Stone",
 		back = "Rudianos's Mantle",
 		legs = "Hagondes Pants",
@@ -240,7 +240,7 @@ function get_sets()
 		waist="Olympus Sash",
 		left_ear="Odnowa Earring +1",
 		right_ear="Thureous Earring",
-		left_ring="Defending Ring",
+		left_ring="Moonlight Ring",
 		right_ring="Stikini Ring",
 		back="Moonbeam Cape",
 	}
@@ -251,7 +251,8 @@ function get_sets()
 		ear2 = "Etiolation Earring",
 		back = "Moonbeam Cape",
 		waist = "Trance Belt",
-		ring2 = "Supershear Ring",
+		left_ring = "Moonlight Ring",
+		right_ring = "Moonbeam Ring",
 		neck = "Unmoving Collar +1",
 		hands = "Regal Gauntlets",
 		feet = "Souveran Schuhs +1",
@@ -354,7 +355,7 @@ function get_sets()
 	sets.JA = {}
 
 	sets.JA.ShieldBash = {
-		ring1 = "Fenin Ring",
+		Legs = "Volte Hose",
 		hands = "Valor Gauntlets",
 		waist = "Chaac Belt",
 		Head = {
@@ -379,10 +380,6 @@ function get_sets()
 		head = "Carmine Mask +1",
 		body = "Reverence Surcoat +3",
 		hands = "Souveran Handschuhs",
-		legs = {
-			name = "Odyssean Cuisses",
-			augments = {'Mag. Acc.+15 "Mag.Atk.Bns."+15', '"Fast Cast"+3', "INT+1", "Mag. Acc.+9", '"Mag.Atk.Bns."+3'}
-		},
 		feet = "Carmine Greaves +1",
 		neck = "Voltsurge Torque",
 		waist = "Witful Belt",

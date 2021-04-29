@@ -41,8 +41,8 @@ function get_sets()
 		left_ear = "Infused Earring",
 		body = "Runeist's Coat +3",
 		hands = "Regal Gauntlets",
-		ring1 = "Defending ring",
-		right_ring = "Vocane Ring",
+		left_ring = "Moonlight ring",
+		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Fucho-no-obi",
 		legs = "Carmine Cuisses +1",
@@ -57,8 +57,8 @@ function get_sets()
 		right_ear = "Hearty Earring",
 		body = "Ashera Harness",
 		hands = "Regal Gauntlets",
-		ring1 = "Defending ring",
-		right_ring = "Vocane Ring",
+		left_ring = "Moonlight ring",
+		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Flume Belt +1",
 		legs = "Eri. Leg Guards +1",
@@ -73,8 +73,8 @@ function get_sets()
 		right_ear = "Etiolation Earring",
 		body = "Ashera Harness",
 		hands = "Regal Gauntlets",
-		ring1 = "Defending ring",
-		right_ring = "Vocane Ring",
+		left_ring = "Moonlight ring",
+		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Flume Belt +1",
 		legs = "Carmine Cuisses +1",
@@ -130,7 +130,7 @@ function get_sets()
 		right_ear = "Sherida earring",
 		body = "Ashera Harness",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		left_ring = "Epona's Ring",
+		left_ring = "Moonlight Ring",
 		right_ring = "Niqmaddu Ring",
 		back = { name = "Ogma's cape",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}	},
 		waist = "Ioskeha belt +1",
@@ -151,8 +151,8 @@ function get_sets()
 		waist = "Flume Belt +1",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Etiolation Earring",
-		left_ring = "Defending Ring",
-		right_ring = "Vocane Ring",
+		right_ring = "Defending Ring",
+		left_ring = "Moonlight Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 	sets.TP.HPB = {
@@ -166,8 +166,8 @@ function get_sets()
 		waist = "Flume Belt +1",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Odnowa Earring",
-		left_ring = "Defending Ring",
-		right_ring = "Vocane Ring",
+		left_ring = "Moonlight Ring",
+		right_ring = "Moonbeam Ring",
 		back = "Moonbeam Cape"
 	}
 
