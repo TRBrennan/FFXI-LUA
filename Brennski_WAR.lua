@@ -393,7 +393,7 @@ function get_sets()
 		back = "Izdubar Mantle"
 	}
 
-	sets.KingsJusticeA = {
+	sets.KingsJusticeDA = {
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Warrior's bead necklace +2",
@@ -409,7 +409,7 @@ function get_sets()
 		feet = "Flam. Gambieras +2"
 	}
 
-	sets.KingsJusticeB = {
+	sets.KingsJusticeWSD = {
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Warrior's bead necklace +2",
@@ -1179,17 +1179,17 @@ function precast(spell)
 			equip(sets.FellCleave)
 			send_command("@input /echo FC Set")
 		elseif spell.english == "King's Justice" then
-			--equip(sets.KingsJusticeA)
+			--equip(sets.KingsJusticeDA)
 			--send_command('@input /echo KJ Set')
 			TPBonus = TPBonus + 250
 			CurrentTP = player.tp + TPBonus
 			send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
 
 			if CurrentTP > 1500 then
-				equip(sets.KingsJusticeB)
+				equip(sets.KingsJusticeWSD)
 				send_command("@input /echo KJ WSD Set")
 			else
-				equip(sets.KingsJusticeA)
+				equip(sets.KingsJusticeDA)
 				send_command("@input /echo KJ DA Set")
 			end
 		elseif spell.english == "Steel Cyclone" then
