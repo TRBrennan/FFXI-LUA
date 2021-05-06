@@ -371,7 +371,7 @@ function get_sets()
         legs = {name = "Telchine Braconi", augments = {'Pet: "Regen"+3'}},
         feet = {name = "Bagua Sandals +1", augments = {'Enhances "Radial Arcana" effect'}},
         neck = "Bagua Charm +1",
-        right_ear = "Etiolation Earring",
+        right_ear = "Hearty Earring",
         left_ear = "Handler's Earring",
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",

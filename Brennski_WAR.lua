@@ -147,7 +147,8 @@ function get_sets()
 		legs="Sakpata's Cuisses",
 		feet = "Pumm. Calligae +3",
 		neck = "Warrior's bead necklace +2",
-		waist = "Ioskeha belt +1",
+		--waist = "Ioskeha belt +1",
+		waist = "Sailfi Belt +1",
 		left_ear = "Telos Earring",
 		--right_ear = "Cessance Earring",
 		right_ear = "Schere Earring",
@@ -262,14 +263,15 @@ function get_sets()
 		ammo = "Coiste Bodhar",
 		head = "Hjarrandi Helm",
 		neck = "Warrior's bead necklace +2",
-		ear1 = "Telos Earring",
+		ear1 = "Suppanomimi",
 		ear2 = "Schere Earring",
 		body = TP_Body,
 		hands = "Emicho Gauntlets +1",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Petrov ring",
 		back = DA_Back,
-		waist = "Reiki Yotai",
+		--waist = "Reiki Yotai",
+		waist = "Sailfi Belt +1",
 		--legs = "Pummeler's cuisses +3",
 		legs="Sakpata's Cuisses",
 		feet = "Pummeler's calligae +3"
@@ -286,7 +288,7 @@ function get_sets()
 		waist="Ioskeha Belt +1",
 		left_ear="Telos Earring",
 		right_ear="Schere Earring",
-		left_ring="Niqmaddu Ring",
+		left_ring="Moonlight Ring",
 		right_ring="Chirich Ring +1",
 		back= DA_Back
 	}
@@ -294,7 +296,7 @@ function get_sets()
 	--Weaponskill Sets--
 	sets.WS = {}
 
-	sets.UpheavalA = {
+	sets.UpheavalWSD = {
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Warrior's bead necklace +2",
@@ -305,12 +307,13 @@ function get_sets()
 		ring1 = "Niqmaddu ring",
 		ring2 = "Regal ring",
 		back = WSD_Back,
-		waist = "Ioskeha Belt +1",
+		--waist = "Ioskeha Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet = "Sulevia's leggings +2"
 	}
 
-	sets.UpheavalB = {
+	sets.UpheavalDA = {
 		ammo = "Knobkierrie",
 		head = "Sakpata's Helm",
 		neck = "Warrior's bead necklace +2",
@@ -972,9 +975,9 @@ function get_sets()
 		head = "Flam. Zucchetto +2",
 		body= "Hjarrandi Breast.",
 		hands = "Flam. Manopolas +2",
-		legs = "Pumm. Cuisses +3",
+		legs = "Sakpata's Cuisses",
 		feet = "Boii Calligae +1",
-		neck = "War. Beads +1",
+		neck = "War. Beads +2",
 		waist = "Ioskeha Belt +1",
 		ear2= "Schere Earring",
 		ear1 = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
@@ -1139,15 +1142,15 @@ function precast(spell)
 			CurrentTP = player.tp + TPBonus
 			send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
 			if CurrentTP > 1500 then
-				equip(sets.UpheavalA)
+				equip(sets.UpheavalWSD)
 				send_command("@input /echo Upheaval WSD Set")
 				if buffactive["Mighty Strikes"] then
 					equip(sets.UpheavalCrit)
 					send_command("@input /echo Upheavel Crit Set")
 					end
 			else
-				equip(sets.UpheavalB)
-				--equip(sets.UpheavalA)
+				equip(sets.UpheavalDA)
+				--equip(sets.UpheavalWSD)
 				send_command("@input /echo Upheaval DA Set")
 				if buffactive["Mighty Strikes"] then
 					equip(sets.UpheavalCrit)
@@ -1163,7 +1166,7 @@ function precast(spell)
 				send_command("@input /echo ID Crit Damage WSD Set")
 			else
 				equip(sets.ID)
-				--equip(sets.UpheavalA)
+				--equip(sets.UpheavalWSD)
 				send_command("@input /echo ID Crit Rate DA Set")
 			end
 		elseif spell.english == "Ukko's Fury" then

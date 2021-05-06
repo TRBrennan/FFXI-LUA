@@ -192,19 +192,18 @@ function get_sets()
 	}
 
 	sets.WS.Atonement = {
-		ammo = "Coiste Bodhar",
-		head = "Sulevia's Mask +2",
-		neck = "Asperity necklace",
-		ear1 = "Brutal Earring",
-		ear2 = "Cessance Earring",
-		body = "Souveran Cuirass",
-		hands = "Valorous Mitts",
-		ring1 = "Petrov Ring",
-		ring2 = "Rajas Ring",
+		ammo = "Sapience Orb",
+		ear2 = "Friomisi Earring",
 		back = "Weard Mantle",
-		waist = "windbuffet belt +1",
-		legs = "Sulevia's Cuisses +2",
-		feet = "Souveran Schuhs +1"
+		waist = "Fotia Belt",
+		ring2 = "Supershear Ring",
+		neck = "Fotia Gorget",
+		hands = "Souveran Handschuhs",
+		feet = "Souveran Schuhs +1",
+		body = "Reverence Surcoat +3",
+		ring1 = "Petrov Ring",
+		legs = "Souveran Diechlings +1",
+		head = "Souveran Schaller +1"
 	}
 
 	--Magic Sets--
@@ -268,7 +267,7 @@ function get_sets()
 		body="Rev. Surcoat +3",
 		hands="Regal Gauntlets",
 		legs={ name="Founder's Hose", augments={'MND+10','Mag. Acc.+15','Attack+15','Breath dmg. taken -5%',}},
-		feet={ name="Odyssean Greaves", augments={'Attack+17','"Fast Cast"+4','STR+1','Accuracy+10',}},
+		feet="Odyssean Greaves",
 		neck="Moonbeam Necklace",
 		waist="Trance Belt",
 		left_ear="Odnowa Earring +1",
@@ -380,7 +379,8 @@ function get_sets()
 		head = "Carmine Mask +1",
 		body = "Reverence Surcoat +3",
 		hands = "Souveran Handschuhs",
-		feet = "Carmine Greaves +1",
+		legs = "Sakpata Cuisses",
+		feet = "Odyssean Greaves",
 		neck = "Voltsurge Torque",
 		waist = "Witful Belt",
 		left_ear = "Etiolation Earring",
