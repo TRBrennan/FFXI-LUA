@@ -63,7 +63,7 @@ function get_sets()
 	WSD_Hands = "Sakpata Gauntlets"
 
 	sets.Idle.Standard = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head = TH_Head,
 		neck = "Sanctity Necklace",
 		ear1 = "Genmei earring",
@@ -79,7 +79,7 @@ function get_sets()
 	}
 
 	sets.Idle.DT = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		neck = "Loricate Torque +1",
 		ear1 = "Genmei earring",
 		ear2 = "Hearty Earring",
@@ -103,19 +103,24 @@ function get_sets()
 	TP_ind = 1
 
 	sets.TP.Standard = {
-		ammo = "Yetshila",
+		ammo = "Coiste Bodhar",
 		head = "Hjarrandi Helm",
-		neck = "Warrior's bead necklace +2",
-		ear2 = "Schere Earring",
-		ear1 = "Telos earring",
+		--body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
 		body = TP_Body,
+		--hands = "Sakpata's Gauntlets",
 		hands = "Sakpata's Gauntlets",
-		ring1 = "Niqmaddu ring",
-		ring2 = "Petrov ring",
-		back = DA_Back,
-		waist = "Ioskeha belt +1",
-		legs = "Sakpata's Cuisses",
-		feet = "Pummeler's calligae +3"
+		--legs = "Pumm. Cuisses +3",
+		legs="Sakpata's Cuisses",
+		feet = "Pumm. Calligae +3",
+		neck = "Warrior's bead necklace +2",
+		--waist = "Ioskeha belt +1",
+		waist = "Sailfi Belt +1",
+		left_ear = "Telos Earring",
+		--right_ear = "Cessance Earring",
+		right_ear = "Schere Earring",
+		left_ring = "Niqmaddu Ring",
+		right_ring = "Petrov Ring",
+		back = {name = "Cichol's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10'}}
 	}
 
 	sets.TP.OH = {
@@ -226,7 +231,7 @@ function get_sets()
 	}
 
 	sets.TP.DT = {
-		ammo="Staunch Tathlum",
+		ammo="Staunch Tathlum +1",
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
@@ -242,7 +247,7 @@ function get_sets()
 	}
 
 	sets.TP.DTAM = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head = "Hjarrandi Helm",
 		neck={ name="War. Beads +1", augments={'Path: A',}},
 		ear2 = "Schere Earring",
@@ -576,13 +581,13 @@ function get_sets()
 		ear1 = "Friomisi earring",
 		ear2 = "Moonshade earring",
 		body = "Pummeler's lorica +3",
-		hands = WSD_Hands,
+		hands = "Leyline Gloves",
 		ring1 = "Regal Ring",
 		ring2 = "Acumen ring",
 		back = STR_Back,
 		waist = "Eschan stone",
 		legs = WSD_Legs,
-		feet = "Founder's greaves"
+		feet = "Sulevia Leggings +2"
 	}
 
 	sets.Mistral = {
@@ -1076,7 +1081,7 @@ function get_sets()
 	--Precast Sets--
 	sets.precast = {}
 	sets.fastcast = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head = "Cizin helm +1",
 		neck = "Loricate torque +1",
 		ear1 = "Loquac. Earring",
@@ -1091,7 +1096,7 @@ function get_sets()
 		feet = "Odyssean greaves"
 	}
 	sets.midcast = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head = "Sulevia's mask +1",
 		neck = "Loricate torque +1",
 		ear1 = "Hearty earring",

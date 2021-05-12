@@ -28,7 +28,7 @@ function get_sets()
     Idle_ind = 1
 
     sets.Idle.Standard = {
-        ammo = "Staunch Tathlum",
+        ammo = "Staunch Tathlum +1",
         main = "Lathi",
         sub = "Enki Strap",
         head = "Hike Khat",
@@ -104,7 +104,7 @@ function get_sets()
     TP_ind = 1
     sets.TP.Standard = {
         main = "Lathi",
-        ammo = "Staunch Tathlum",
+        ammo = "Staunch Tathlum +1",
         head = "Hike Khat",
         neck = "Sanctity Necklace",
         ear1 = "Genmei Earring",

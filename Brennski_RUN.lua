@@ -50,7 +50,7 @@ function get_sets()
 	}
 
 	sets.Idle.DT = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		Head ="Fu. Bandeau +2",
 		neck = "Futhark Torque +1",
 		left_ear = "Odnowa Earring +1",
@@ -66,7 +66,7 @@ function get_sets()
 	}
 
 	sets.Idle.Cleave = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		Head ="Fu. Bandeau +2",
 		neck = "Futhark Torque +1",
 		left_ear = "Odnowa Earring +1",
@@ -140,7 +140,7 @@ function get_sets()
 	}
 
 	sets.TP.MDTank = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head = "Fu. Bandeau +2",
 		body = "Ashera Harness",
 		--hands="Regal Gauntlets",
@@ -156,7 +156,7 @@ function get_sets()
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 	sets.TP.HPB = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head = "Erilaz galea +1",
 		body = "Ashera Harness",
 		hands = "Regal Gauntlets",
@@ -172,7 +172,7 @@ function get_sets()
 	}
 
 	-- sets.TP.StatusResist = {
-		-- ammo = "Staunch Tathlum",
+		-- ammo = "Staunch Tathlum +1",
 		-- head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
 		-- body = "Ashera Harness",
 		-- Hands = "Volte Bracers",
@@ -336,7 +336,7 @@ function get_sets()
 	}
 
 	sets.Utility.SID = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head = "Herculean Helm",
 		neck = "Incanter's Torque",
 		right_ear = "Genmei earring",
@@ -472,7 +472,7 @@ function get_sets()
 	}
 
 	sets.JA.Steps = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
 		body = "Ashera Harness",
 		hands = "Runeist's Mitons +3",

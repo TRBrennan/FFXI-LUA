@@ -49,7 +49,7 @@ function get_sets()
 	sets.Idle.DT = {
 		main = "Bolelabunga",
 		sub = "Genmei Shield",
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		neck = "Loricate Torque +1",
 		ear1 = "Etiolation Earring",
 		ear2 = "Infused Earring",
@@ -104,10 +104,7 @@ function get_sets()
 		main = "Grioavolr",
 		sub = "Enki Strap",
 		ammo = "Pemphredo Tathlum",
-		head = {
-			name = "Merlinic Hood",
-			augments = {'Mag. Acc.+18 "Mag.Atk.Bns."+18', "Magic burst mdg.+7%", "CHR+7", "Mag. Acc.+12"}
-		},
+head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
 		neck = "Sanctity Necklace",
 		ear2 = "Friomisi earring",
 		ear1 = "Regal Earring",

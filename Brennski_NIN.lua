@@ -470,7 +470,7 @@ function get_sets()
 	}
 	sets.precast = {}
 	sets.precast.FC = {
-		--ammo="Staunch Tathlum",
+		--ammo="Staunch Tathlum +1",
 		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
 		body = "Adhemar Jacket",
 		hands = "Leyline Gloves",

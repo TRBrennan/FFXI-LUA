@@ -31,7 +31,7 @@ function get_sets()
         Idle_ind = 1
 
         sets.Idle.Standard = {
-                ammo = "Staunch Tathlum",
+                ammo = "Staunch Tathlum +1",
                 head = {
                         name = "Herculean Helm",
                         augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
@@ -52,7 +52,7 @@ function get_sets()
         sets.Idle.DT = {
                 main = "Terra's Staff",
                 sub = "Umbra strap",
-                ammo = "Staunch Tathlum",
+                ammo = "Staunch Tathlum +1",
                 head = {
                         name = "Herculean Helm",
                         augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
@@ -126,7 +126,7 @@ function get_sets()
         }
 
         sets.TP.DT = {
-                ammo = "Staunch Tathlum",
+                ammo = "Staunch Tathlum +1",
                 head = {
                         name = "Herculean Helm",
                         augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}

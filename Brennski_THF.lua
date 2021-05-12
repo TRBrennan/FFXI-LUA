@@ -31,7 +31,7 @@ function get_sets()
         Idle_ind = 1
 
         sets.Idle.Standard = {
-                ammo = "Staunch Tathlum",
+                ammo = "Staunch Tathlum +1",
 				head="Malignance Chapeau",
                 neck = "Sanctity Necklace",
                 ear1 = "Genmei Earring",
@@ -49,7 +49,7 @@ function get_sets()
         sets.Idle.DT = {
                 main = "Terra's Staff",
                 sub = "Umbra strap",
-                ammo = "Staunch Tathlum",
+                ammo = "Staunch Tathlum +1",
 				head="Malignance Chapeau",
                 neck = "Loricate Torque +1",
                 ear1 = "Genmei Earring",
@@ -65,7 +65,7 @@ function get_sets()
         }
 		
 		sets.Idle.RefreshRegen ={    
-			ammo="Staunch Tathlum",
+			ammo="Staunch Tathlum +1",
 			head={ name="Herculean Helm", augments={'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},
 			body="Ashera Harness",
 			hands={ name="Herculean Gloves", augments={'DEX+9','Magic dmg. taken -3%','"Refresh"+1',}},
@@ -136,7 +136,7 @@ function get_sets()
         }
 
         sets.TP.DT = {
-                ammo = "Staunch Tathlum",
+                ammo = "Staunch Tathlum +1",
 				head="Malignance Chapeau",
                 neck = "Loricate Torque +1",
                 ear1 = "Ethereal",

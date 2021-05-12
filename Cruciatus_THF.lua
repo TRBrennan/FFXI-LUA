@@ -34,18 +34,36 @@ function get_sets()
         sets.Idle.index = {'Standard','DT'}
         Idle_ind = 1                  
        
-        sets.Idle.Standard = {ammo="Staunch Tathlum",
-                                      head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Sanctity Necklace",ear1="Genmei Earring", ear2="Infused Earring", 
-									  body="Ashera Harness",hands="Herculean gloves",ring1="Defending ring",right_ring="Shneddick Ring",
-                                      back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-									  waist="Flume belt +1",legs="Mummu Kecks +2",feet="Turms Leggings +1"}
+        sets.Idle.Standard = {
+			ammo="Staunch Tathlum",
+			head="Mummu Bonnet +1",
+			body="Mummu Jacket +2",
+			hands="Mummu Wrists +2",
+			legs="Mummu Kecks +2",
+			feet="Mummu Gamash. +2",
+			neck="Loricate Torque",
+			waist="Chaac Belt",
+			left_ear="Sherida Earring",
+			right_ear="Hearty Earring",
+			left_ring="Defending Ring",
+			right_ring="Shneddick Ring",
+			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		}
                                                  
-        sets.Idle.DT = {main="Terra's Staff",sub="Umbra strap",ammo="Staunch Tathlum",
-                                head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Infused Earring", 
-								body="Ashera Harness",hands="Herculean gloves",ring1="Defending ring",ring2="Vocane Ring",
-                                        back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},waist="Flume belt +1",legs="Mummu Kecks +2",
-										feet={ name="Herculean Boots", augments={'Pet: Phys. dmg. taken -1%','Pet: STR+1','Quadruple Attack +2','Accuracy+18 Attack+18',}}, }
-										
+        sets.Idle.DT = {ammo="Staunch Tathlum",
+			head="Mummu Bonnet +1",
+			body="Mummu Jacket +2",
+			hands="Mummu Wrists +2",
+			legs="Mummu Kecks +2",
+			feet="Mummu Gamash. +2",
+			neck="Loricate Torque",
+			waist="Chaac Belt",
+			left_ear="Sherida Earring",
+			right_ear="Hearty Earring",
+			left_ring="Defending Ring",
+			right_ring="Shneddick Ring",
+			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		}
 					
         --TP Sets--
         sets.TP = {}

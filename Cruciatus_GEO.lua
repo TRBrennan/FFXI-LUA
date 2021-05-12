@@ -356,7 +356,8 @@ function get_sets()
         left_ear = "Lugalbanda Earring",
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",
-        back = "Lifestream Cape",
+        --back = "Lifestream Cape",
+		back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
         waist = "Isa Belt"
     }
 

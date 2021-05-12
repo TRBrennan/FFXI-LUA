@@ -36,7 +36,7 @@ function get_sets()
     Idle_ind = 1
 
     sets.Idle.Standard = {
-        ammo = "Staunch Tathlum",
+        ammo = "Staunch Tathlum +1",
         head = { name = "Herculean Helm", augments = { 'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},
         neck = "Sanctity Necklace",
         ear1 = "Genmei Earring",
@@ -52,7 +52,7 @@ function get_sets()
     }
 
     sets.Idle.DT = {
-        ammo = "Staunch Tathlum",
+        ammo = "Staunch Tathlum +1",
          head="Malignance Chapeau",
         neck = "Loricate Torque +1",
         ear1 = "Genmei Earring",
@@ -70,7 +70,7 @@ function get_sets()
     sets.Idle.Cleave = {
         main = "Terra's Staff",
         sub = "Umbra strap",
-        ammo = "Staunch Tathlum",
+        ammo = "Staunch Tathlum +1",
         head="Malignance Chapeau",
 		neck = "Loricate Torque +1",
         ear1 = "Genmei Earring",
@@ -161,7 +161,7 @@ function get_sets()
     }
 
     sets.TP.DT = {
-        ammo="Staunch Tathlum",
+        ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
@@ -723,41 +723,7 @@ function get_sets()
         ring2 = "Mujin Band"
     }
 
-    sets.Utility.Stoneskin = {
-        head = "Haruspex hat",
-        neck = "Stone Gorget",
-        ear1 = "Loquac. earring",
-        ear2 = "Earthcry earring",
-        body = "Assim. jubbah +2",
-        hands = "Stone Mufflers",
-        ring1 = "Rahab ring",
-        back = "Swith cape",
-        waist = "Siegel sash",
-        legs = "Haven hose",
-        feet = {
-            name = "Herculean Boots",
-            augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}
-        }
-    }
-
-    sets.Utility.Phalanx = {
-        head = "Haruspex hat",
-        neck = "Colossus's torque",
-        ear1 = "Loquac. earring",
-        ear2 = "Augment. earring",
-        body = "Assim. jubbah +2",
-        hands = "Ayao's gages",
-        ring1 = "Rahab ring",
-        back = "Swith cape",
-        waist = "Pythia sash +1",
-        legs = "Portent pants",
-        feet = {
-            name = "Herculean Boots",
-            augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}
-        }
-    }
-
-    sets.Utility.Steps = {
+     sets.Utility.Steps = {
         ammo = "Falcon Eye",
         head = "Adhemar Bonnet +1",
         body = "Adhemar Jacket +1",
@@ -774,35 +740,6 @@ function get_sets()
         ring1 = "Yacuruna Ring",
         ring2 = "Epona's Ring",
         back = "Grounded Mantle",
-    }
-
-    sets.Utility.PDT = {
-        head = "Adhemar Bonnet +1",
-        neck = "Loricate Torque +1",
-        ear1 = "Etiolation Earring",
-        body = "Iuitl vest",
-        hands = "Umuthi gloves",
-        ring1 = "Dark ring",
-        ring2 = "Dark ring",
-        back = "Moonbeam Cape",
-        waist = "Flume belt",
-        legs = "Iuitl Tights +1",
-        feet = {
-            name = "Herculean Boots",
-            augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}
-        }
-    }
-
-    sets.Utility.MDT = {
-        head = "Adhemar Bonnet +1",
-        neck = "Loricate Torque +1",
-        body = "Assim. jubbah +2",
-        hands = "Umuthi gloves",
-        ring1 = "Dark ring",
-        ring2 = "Dark ring",
-        back = "Moonbeam Cape",
-        legs = "Quiahuiz trousers",
-        feet = "Luhlaza charuqs"
     }
 
     sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}

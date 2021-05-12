@@ -46,13 +46,13 @@ function get_sets()
         sets.Idle.index = {'Standard','DT'}
         Idle_ind = 1                  
        
-        sets.Idle.Standard = {ammo="Staunch Tathlum",
+        sets.Idle.Standard = {ammo="Staunch Tathlum +1",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", 
 									  ear1="Genmei earring", ear2="Infused Earring",
                                       body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Flume Belt +1",legs="Sulevia's Cuisses +2",feet="Hermes' Sandals", back ="Moonbeam Cape"}
                                                  
-        sets.Idle.DT = { ammo="Staunch Tathlum", 
+        sets.Idle.DT = { ammo="Staunch Tathlum +1", 
 							head="Sulevia's Mask +2",neck="Loricate Torque +1", ear1="Genmei earring", ear2="Infused Earring",
                               body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring2="Vocane Ring",ring1="Defending Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
@@ -89,7 +89,7 @@ function get_sets()
 										 waist="Ioskeha Belt",legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
 										feet="Pummeler's Calligae +3"}
                                                        
-                sets.TP.DT = {ammo="Staunch Tathlum",
+                sets.TP.DT = {ammo="Staunch Tathlum +1",
                               head ="Sulevia's Mask +2", 
 							  neck="Loricate Torque +1", ear1="Cessance Earring",ear2="Telos Earring",
                               body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending Ring",
@@ -102,7 +102,7 @@ function get_sets()
                                        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 									   waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Pummeler's Calligae +3"}
 									   
-				sets.TP.Tank = { ammo="Staunch Tathlum",
+				sets.TP.Tank = { ammo="Staunch Tathlum +1",
                                     head="Souveran Schaller",
 									neck="Loricate Torque +1",
 									ear1="Odnowa Earring +1",

@@ -20,13 +20,13 @@ function get_sets()
         sets.Idle.index = {'Standard','DT'}
         Idle_ind = 1                  
        
-        sets.Idle.Standard = {ammo="Staunch Tathlum",
+        sets.Idle.Standard = {ammo="Staunch Tathlum +1",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", 
 									  ear1="Genmei earring", ear2="Infused Earring",
                                       body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Sulevia's Leggings +2", back ="Moonbeam Cape"}
                                                  
-        sets.Idle.DT = { ammo="Staunch Tathlum", 
+        sets.Idle.DT = { ammo="Staunch Tathlum +1", 
 							head="Sulevia's Mask +2",neck="Loricate Torque +1", ear1="Genmei earring", ear2="Infused Earring",
                               body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring2="Vocane Ring",ring1="Defending  Ring",
                               back="Moonbeam Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
@@ -63,7 +63,7 @@ function get_sets()
 										 waist="Ioskeha Belt",legs={ name="Odyssean Cuisses", augments={'Accuracy+16 Attack+16','"Store TP"+7','DEX+2','Attack+8',}},
 										feet={ name="Valorous Greaves", augments={'Accuracy+25 Attack+25','"Dbl.Atk."+4','CHR+8','Attack+6',}},}
                                                        
-                sets.TP.DT = {ammo="Staunch Tathlum",
+                sets.TP.DT = {ammo="Staunch Tathlum +1",
                               head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}}, 
 							  neck="Loricate Torque +1", ear1="Cessance Earring",ear2="Telos Earring",
                               body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending Ring",

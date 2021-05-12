@@ -85,7 +85,7 @@ function init_gear_sets()
  
     -- Fast cast sets for spells
     sets.precast.FC = {
-        --ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum +1",
         head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
         body="Taeon Tabard",
         hands="Leyline Gloves",
@@ -207,7 +207,7 @@ function init_gear_sets()
         ear2="Loquacious Earring",ring1="Kishar Ring"}
          
     sets.midcast.SelfNinjutsu = {
-        --ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum +1",
         head="Hachiya hatsuburi +1",
         body="Foppish Tunica",
         hands="Rawhide Gloves",
@@ -222,7 +222,7 @@ function init_gear_sets()
         back="Mujin Mantle",}
      
     sets.midcast.Utsusemi = set_combine(sets.midcast.SelfNinjutsu,{
-        --ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum +1",
        head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
         body="Foppish Tunica",
         hands="Leyline Gloves",
@@ -274,7 +274,7 @@ function init_gear_sets()
         back="Izdubar Mantle"}
  
     sets.midcast.NinjutsuBuff = {
-        --ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum +1",
 		head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
 		neck="Loricate Torque+1", 
 		ear1="Genmei Earring",ear2="Infused Earring",
@@ -308,7 +308,7 @@ function init_gear_sets()
      
     -- Resting sets
     sets.resting = {
-        --ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum +1",
         head="Rao kabuto",
         body="Hizamaru haramaki +1",
         hands="Rao kote",
@@ -323,7 +323,7 @@ function init_gear_sets()
          
     -- Idle sets
     sets.idle = {
-        --ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum +1",
         head="Rao kabuto",
         body="Hizamaru haramaki +1",
         hands="Rao kote",
@@ -337,7 +337,7 @@ function init_gear_sets()
         back="Moonbeam Cape"}
  
     sets.idle.Town = {
-        --ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum +1",
         head="Skormoth mask",
         body="Councilor's Garb",
         hands="Ryuo Tekko",
@@ -351,7 +351,7 @@ function init_gear_sets()
         back="Moonbeam Cape"}
      
     sets.idle.Weak = {
-        --ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum +1",
         head="Rao kabuto",
         body="Hizamaru haramaki +1",
         hands="Rao kote",
@@ -368,7 +368,7 @@ function init_gear_sets()
     sets.defense.Evasion = {neck="Yarak Torque", back="Yokaze Mantle"}
  
     sets.defense.PDT = {
-        --ammo="Staunch Tathlum",
+        --ammo="Staunch Tathlum +1",
         head="Ryuo Somen",
         body="Ashera Harness",
         hands="Herculean Gloves",

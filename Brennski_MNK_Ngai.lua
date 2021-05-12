@@ -29,7 +29,7 @@ function get_sets()
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head="Malignance Chapeau",
 		neck = "Sanctity Necklace",
 		ear1 = "Genmei Earring",
@@ -45,7 +45,7 @@ function get_sets()
 	}
 
 	sets.Idle.DT = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head="Malignance Chapeau",
 		neck = "Loricate Torque +1",
 		ear1 = "Genmei Earring",

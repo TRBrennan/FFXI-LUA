@@ -39,7 +39,7 @@ function get_sets()
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head = {
 			name = "Valorous Mask",
 			augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}
@@ -58,7 +58,7 @@ function get_sets()
 	}
 
 	sets.Idle.DT = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head = "Sulevia's Mask +2",
 		neck = "Loricate Torque +1",
 		ear1 = "Genmei Earring",
@@ -113,7 +113,7 @@ function get_sets()
 	}
 
 	sets.TP.DT = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head = "Sulevia's Mask +2",
 		neck = "Loricate Torque +1",
 		left_ear = "Sherida earring",
@@ -381,7 +381,7 @@ function get_sets()
 	}
 
 	sets.Breath = {
-		ammo = "Staunch Tathlum",
+		ammo = "Staunch Tathlum +1",
 		head = "Ptero. Armet +1",
 		neck = "Lancer's Torque",
 		ear1 = "Anastasi Earring",

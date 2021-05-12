@@ -49,12 +49,12 @@ function get_sets()
 	WSD_Head ={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}}
 
 	
-	sets.Idle.Standard = {ammo="Staunch Tathlum",
+	sets.Idle.Standard = {ammo="Staunch Tathlum +1",
 			    head=TH_Head,neck="Coatl Gorget +1", ear1="Hearty earring", ear2="Infused earring",
 		        body="Tartarus Platemail",hands="Sulevia's gauntlets +2",ring1="Vocane Ring",ring2="Defending Ring",
 			    back="Moonbeam cape",waist="Flume Belt +1",legs="Carmine cuisses +1",feet="Amm greaves"}
 						  
-	sets.Idle.DT = {ammo="Staunch Tathlum",
+	sets.Idle.DT = {ammo="Staunch Tathlum +1",
 			    head="Sulevia's mask +2",neck="Loricate torque +1", ear1="Hearty earring", ear2="Sanare earring",
 		        body="Tartarus Platemail",hands="Sulevia's gauntlets +2",ring1="Vocan Ring",ring2="Defending Ring",
 			    back="Moonbeam cape",waist="Flume Belt +1",legs="Sulevia's cuisses +2",feet="Amm greaves"}							
@@ -100,7 +100,7 @@ function get_sets()
 			    body=TP_Body,hands="Emicho Gauntlets +1",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs=TP_Legs,feet="Flam. Gambieras +2",}
 				
-	sets.TP.DT = {ammo="Staunch Tathlum",
+	sets.TP.DT = {ammo="Staunch Tathlum +1",
 			    head="Sulevia's mask +2",neck="Loricate torque +1", ear1="Hearty earring", ear2="Sanare earring",
 		        body="Tartarus Platemail",hands="Sulevia's gauntlets +2",ring1="Niqmaddu ring",ring2="Defending Ring",
 			    back="Moonbeam cape",waist="Ioskeha belt +1",legs="Sulevia's cuisses +2",feet="Amm greaves"}	

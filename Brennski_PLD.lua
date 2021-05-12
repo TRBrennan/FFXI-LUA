@@ -36,7 +36,7 @@ function get_sets()
 	}
 
 	sets.Idle.DT = {
-		ammo="Staunch Tathlum",
+		ammo="Staunch Tathlum +1",
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
 		hands="Regal Gauntlets",
@@ -53,7 +53,7 @@ function get_sets()
 	}
 
 	sets.Idle.Cleave = {
-		ammo="Staunch Tathlum",
+		ammo="Staunch Tathlum +1",
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
 		hands="Regal Gauntlets",
@@ -76,7 +76,7 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Tank = {
-		ammo="Staunch Tathlum",
+		ammo="Staunch Tathlum +1",
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
@@ -229,7 +229,7 @@ function get_sets()
 	}
 	
 	sets.Magic.Phalanx ={
-	    ammo="Staunch Tathlum",
+	    ammo="Staunch Tathlum +1",
 		head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
 		body="Rev. Surcoat +3",
 		hands={ name="Souv. Handschuhs", augments={'HP+50','Shield skill +10','Phys. dmg. taken -3',}},
@@ -262,7 +262,7 @@ function get_sets()
 	}
 	
 	sets.Magic.SIRD ={
-	    ammo="Staunch Tathlum",
+	    ammo="Staunch Tathlum +1",
 		head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
 		body="Rev. Surcoat +3",
 		hands="Regal Gauntlets",
@@ -274,7 +274,7 @@ function get_sets()
 		right_ear="Friomisi Earring",
 		left_ring="Petrov Ring",
 		right_ring="Supershear Ring",
-		back="Moonbeam Cape",
+		back = "Reiki Cloak",
 	}
 
 	sets.Magic.Flash = {neck = "Incanter's Torque", ring1 = "Stikini Ring"}
@@ -306,36 +306,10 @@ function get_sets()
 		back = "Rudianos's Mantle"
 	}
 
-	sets.Utility.PDT = {
-		head = "Sulevia's Mask +2",
-		neck = "Loricate Torque +1",
-		ear1 = "Ethereal earring",
-		body = "Iuitl vest",
-		hands = "Umuthi gloves",
-		ring1 = "Dark ring",
-		ring2 = "Dark ring",
-		back = "Moonbeam Cape",
-		waist = "Flume belt",
-		legs = "Iuitl Tights +1",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
-	}
-
-	sets.Utility.MDT = {
-		head = "Sulevia's Mask +2",
-		neck = "Loricate Torque +1",
-		body = "Assim. jubbah +1",
-		hands = "Umuthi gloves",
-		ring1 = "Dark ring",
-		ring2 = "Dark ring",
-		back = "Moonbeam Cape",
-		legs = "Quiahuiz trousers",
-		feet = "Luhlaza charuqs"
-	}
-
 	sets.Utility.Enmity = {
 		ammo = "Sapience Orb",
 		ear2 = "Friomisi Earring",
-		back = "Weard Mantle",
+		back = "Reiki Cloak",
 		waist = "Trance belt",
 		ring2 = "Supershear Ring",
 		neck = "Unmoving Collar +1",
@@ -344,7 +318,7 @@ function get_sets()
 		body = "Reverence Surcoat +3",
 		ring1 = "Petrov Ring",
 		legs = "Souveran Diechlings +1",
-		head = "Souveran Schaller +1"
+		head = "Loess Barbuta +1"
 	}
 
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
@@ -355,7 +329,7 @@ function get_sets()
 
 	sets.JA.ShieldBash = {
 		Legs = "Volte Hose",
-		hands = "Valor Gauntlets",
+		hands = "Volte Bracers",
 		waist = "Chaac Belt",
 		Head = {
 			name = "Valorous Mask",
@@ -367,7 +341,7 @@ function get_sets()
 
 	sets.JA.Cover = {}
 
-	sets.JA.Rampart = {}
+	sets.JA.Rampart = { head = "Caballarius Coronet"}
 
 	--Precast Sets--
 	sets.precast = {}
