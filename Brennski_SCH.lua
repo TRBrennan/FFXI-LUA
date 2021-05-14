@@ -54,7 +54,7 @@ function get_sets()
 		hands = {name = "Merlinic Dastanas", augments = {"DEX+3", 'Mag. Acc.+16 "Mag.Atk.Bns."+16', '"Refresh"+1'}},
 		ring1 = "Vocane Ring",
 		ring2 = "Defending ring",
-		waist = "Fucho-no-obi",
+		waist = "Carrier's Sash",
 		legs = "Assiduity Pants +1",
 		feet = "Chironic Slippers",
 		back = "Moonbeam Cape"
@@ -113,34 +113,25 @@ function get_sets()
 	Nuke_ind = 1
 
 	sets.Nuke.Standard = {
-		main="Daybreak",
+		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
 		ammo = "Pemphredo Tathlum",
 		head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
-		neck = "Sanctity Necklace",
+		neck="Argute Stole +2",
 		left_ear="Regal Earring",
 		right_ear="Malignance Earring",
-		body = {
-			name = "Merlinic Jubbah",
-			augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}
-		},
+		body = {name = "Merlinic Jubbah",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
 		hands = "Jhakri Cuffs +2",
 		ring1 = "Freke Ring",
 		ring2 = "Acumen Ring",
 		waist = "Sacro Cord",
 		back = "Lugh's Cape",
-		legs = {
-			name = "Merlinic Shalwar",
-			augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "Mag. crit. hit dmg. +1%", "Mag. Acc.+11", '"Mag.Atk.Bns."+13'}
-		},
-		feet = {
-			name = "Merlinic Crackows",
-			augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Fast Cast"+3', "INT+10", '"Mag.Atk.Bns."+1'}
-		}
+		legs = {name = "Merlinic Shalwar",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "Mag. crit. hit dmg. +1%", "Mag. Acc.+11", '"Mag.Atk.Bns."+13'}},
+		feet = {name = "Merlinic Crackows",augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Fast Cast"+3', "INT+10", '"Mag.Atk.Bns."+1'}}
 	}
 
 	sets.Nuke.MagicBurst = {
-    main="Daybreak",
+    main="Bunzi's Rod",
     sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
@@ -148,7 +139,7 @@ function get_sets()
     hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','INT+10','"Mag.Atk.Bns."+2',}},
     feet = {name = "Merlinic Crackows",	augments = {'Mag. Acc.+19 "Mag.Atk.Bns."+19', "Magic burst dmg.+9%", "MND+9", "Mag. Acc.+15"}},
-    neck="Mizu. Kubikazari",
+    neck="Argute Stole +2",
     waist="Sacro Cord",
     left_ear="Regal Earring",
     right_ear="Malignance Earring",
@@ -210,9 +201,9 @@ function get_sets()
 		sub="Ammurapi Shield",
 		ammo = "Pemphredo Tathlum",
 		head = "Befouled Crown",
-		neck = "Incanter's Torque",
+		neck = "Argute Stole +2",
 		ear2 = "Vor Earring",
-		ear1 = "Barkarole Earring",
+		ear1 = "Malignance Earring",
 		body = {name = "Merlinic Jubbah",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
 		hands = "Kaykaus Cuffs +1",
 		ring1 = "Stikini Ring",
@@ -260,6 +251,7 @@ function get_sets()
 	}
 
 	sets.Magic.Dark = {
+		main = "Bunzi's Rod",
 		ammo = "Pemphredo Tathlum",
 		head = "Pixie Hairpin +1",
 		neck = "Incanter's Torque",
@@ -276,6 +268,7 @@ function get_sets()
 	}
 
 	sets.Magic.Stun = {
+		main = "Bunzi's Rod",
 		ammo = "Pemphredo Tathlum",
 		head = {name = "Merlinic Hood", augments = {'"Fast Cast"+5', "Mag. Acc.+10"}},
 		neck = "Voltsurge Torque",
@@ -291,26 +284,27 @@ function get_sets()
 	}
 	
 	sets.Magic.HelixMB ={
-		main="Daybreak",
+		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
 		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+10%','CHR+4','Mag. Acc.+2','"Mag.Atk.Bns."+13',}},
-		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','INT+7','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
+		head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
 		hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
 		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','INT+10','"Mag.Atk.Bns."+2',}},
 		feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
-		neck="Argute Stole +1",
+		neck="Argute Stole +2",
 		waist = "Orpheus's Sash",
 		left_ear="Regal Earring",
 		right_ear="Malignance Earring",
-		left_ring="Locus Ring",
+		--left_ring="Locus Ring",
+		left_ring="Freke Ring",
 		right_ring="Mujin Band",
 		--back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		back = "Bookworm's Cape"
 	}
 	
 	sets.Magic.DarkHelixMB ={
-		main="Daybreak",
+		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
 		head = "Pixie Hairpin +1",
@@ -318,7 +312,7 @@ function get_sets()
 		hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
 		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','INT+10','"Mag.Atk.Bns."+2',}},
 		feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
-		neck="Argute Stole +1",
+		neck="Argute Stole +2s",
 		waist = "Orpheus's Sash",
 		left_ear="Regal Earring",
 		right_ear="Malignance Earring",

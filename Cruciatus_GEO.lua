@@ -41,7 +41,7 @@ function get_sets()
     sets.precast = {}
     sets.precast.JA = {}
     sets.precast.JA.Bolster = {body = "Bagua Tunic"}
-    sets.precast.JA["Life cycle"] = {body = "Geomancy Tunic"}
+    sets.precast.JA["Life cycle"] = {body = "Geomancy Tunic +2"}
     sets.precast.JA["Full cycle"] = {head = "Azimuth Hood +1"}
     sets.precast.JA["Radial Arcana"] = {feet = "Bagua Sandals +1"}
 
@@ -203,7 +203,7 @@ function get_sets()
         neck = "Bagua Charm +1",
         left_ear = "Malignance Earring",
         right_ear = "Barkarole Earring",
-        body = "Shango Robe",
+        body = "Geomancy Tunic +2",
         hands = "Lurid Mitts",
         ring1 = "Kishar Ring",
         ring2 = "Stikini Ring",
@@ -292,7 +292,7 @@ function get_sets()
         neck = "Incanter's Torque",
         rear = "Etiolation Earring",
         lear = "Hearty Earring",
-        body = "Jhakri Robe +2",
+        body = "Geomancy Tunic +2",
         hands = "Bagua Mitaines",
         lring = "Paguroidea Ring",
         rring = "Renaye Ring",
@@ -312,12 +312,12 @@ function get_sets()
         neck = "Sanctity Necklace",
         right_ear = "Hearty Earring",
         left_ear = "Lugalbanda Earring",
-        body = "Jhakri Robe +2",
+        body = "Geomancy Tunic +2",
         hands = "Bagua Mitaines",
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",
         back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
-        waist = "Fucho-no-obi",
+        waist = "Carrier's Sash",
         legs = "Assiduity Pants +1",
         feet = "Azimuth Gaiters +1"
     }
@@ -335,7 +335,7 @@ function get_sets()
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",
         back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
-        waist = "Fucho-no-obi",
+        waist = "Carrier's Sash",
         legs = "Assiduity Pants +1",
         feet = "Azimuth Gaiters +1"
     }
@@ -397,7 +397,7 @@ function get_sets()
         neck = "Sanctity Necklace",
         right_ear = "Hearty Earring",
         left_ear = "Lugalbanda Earring",
-        body = "Geomancy Tunic",
+        body = "Geomancy Tunic +2",
         hands = "Bagua Mitaines",
         ring1 = "Defending Ring",
         ring2 = "Vertigo Ring",

@@ -58,13 +58,12 @@ function get_sets()
 		neck = "Loricate Torque +1",
 		ear1 = "Etiolation Earring",
 		ear2 = "Infused Earring",
-		head = "Vitiation chapeau +3",
 		ring2 = "Vocane Ring",
 		ring1 = "Defending ring",
-		waist = "Fucho-no-obi",
+		waist = "Carrier's Sash",
 		head="Malignance Chapeau",
 		body="Malignance Tabard",
-		hands="Aya. Manopolas +2",
+		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
 		back = "Moonbeam Cape"
@@ -172,7 +171,7 @@ function get_sets()
 	Nuke_ind = 1
 
 	sets.Nuke.Standard = {
-		main="Daybreak",
+		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
 		ammo = "Pemphredo Tathlum",
 		head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
@@ -191,7 +190,7 @@ function get_sets()
 	}
 
 	sets.Nuke.MagicBurst = {
-		main="Daybreak",
+		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
 		ammo = "Pemphredo Tathlum",
 		neck = "Mizukage-no-Kubikazari",
@@ -385,7 +384,7 @@ function get_sets()
 	}
 
 	sets.Magic.Dark = {
-		main="Maxentius",
+		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
 		ammo = "Pemphredo Tathlum",
 		head = "Pixie Hairpin +1",
@@ -403,7 +402,7 @@ function get_sets()
 	}
 	
 	sets.Magic.Impact = {   
-		main="Maxentius",
+		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
 		ammo="Regal Gem",
 		body="Twilight Cloak",
@@ -498,6 +497,7 @@ function get_sets()
 	}
 	
 	sets.precast.FC.Dispelga = {
+		main = "Daybreak",
 		ammo = "Sapience Orb",
 		head = "Carmine Mask +1",
 		body = "Vitiation tabard +3",

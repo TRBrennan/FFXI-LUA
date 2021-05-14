@@ -36,7 +36,7 @@ function get_sets()
 		legs="Assid. Pants +1",
 		feet="Inyan. Crackows +2",
 		neck="Sanctity Necklace",
-		waist="Fucho-no-Obi",
+		waist="Carrier's Sash",
 		left_ear="Lifestorm Earring",
 		right_ear="Hearty Earring",
 		left_ring="Defending Ring",

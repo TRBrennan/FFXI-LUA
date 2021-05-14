@@ -43,7 +43,7 @@ function get_sets()
 		legs="Sakpata's Cuisses",
 		feet="Sakpata's Leggings",
 		neck="Loricate Torque +1",
-		waist="Flume Belt +1",
+		waist="Carrier's Sash",
 		left_ear="Odnowa Earring +1",
 		right_ear = "Thureous Earring",
 		--right_ear="Genmei Earring",
@@ -60,7 +60,7 @@ function get_sets()
 		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 		feet="Sakpata's Leggings",
 		neck="Loricate Torque +1",
-		waist="Flume Belt +1",
+		waist="Carrier's Sash",
 		left_ear="Odnowa Earring +1",
 		right_ear = "Thureous Earring",
 		left_ring = "Moonlight Ring",
@@ -71,8 +71,8 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Tank", "Standard",}
-	--1=Tank ,2 = Standard,--
+	sets.TP.index = {"Tank", "Turtle",}
+	--1=Tank ,2 = Turtle,--
 
 	TP_ind = 1
 	sets.TP.Tank = {
@@ -82,7 +82,7 @@ function get_sets()
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs="Sakpata's Cuisses",
 		feet="Sakpata's Leggings",
-		neck="Loricate Torque +1",
+		neck="Unmoving Collar +1",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Odnowa Earring +1",
 		right_ear = "Thureous Earring",
@@ -92,20 +92,19 @@ function get_sets()
 
 	}
 
-	sets.TP.Standard = {
-		ammo = "Coiste Bodhar",
+	sets.TP.Turtle = {
+		ammo="Staunch Tathlum +1",
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs="Sakpata's Cuisses",
 		feet="Sakpata's Leggings",
-		neck="Loricate Torque +1",
-		neck = "Lissome Necklace",
-		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ear = "Telos Earring",
-		right_ear = "Cessance Earring",
-		left_ring = "Petrov Ring",
-		right_ring = "Chirich Ring +1",
+		neck = "Unmoving Collar +1",
+		waist= "Carrier's Sash",
+		left_ear="Odnowa Earring +1",
+		right_ear = "Hearty Earring",
+		left_ring = "Moonlight Ring",
+		right_ring = "Moonbeam Ring",
 		back = "Rudianos's Mantle"
 	}
 	--Weaponskill Sets--
@@ -209,7 +208,7 @@ function get_sets()
 	--Magic Sets--
 	sets.Magic = {}
 
-	sets.Magic.Divine = {neck = "Incanter's Torque", ring1 = "Stikini Ring"}
+	sets.Magic.Divine = {neck = "Incanter's Torque", ring2 = "Stikini Ring"}
 
 	sets.Magic.Enhancing = {
 		ear2 = "Andoaa Earring",

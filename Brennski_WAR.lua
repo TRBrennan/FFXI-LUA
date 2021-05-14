@@ -72,7 +72,7 @@ function get_sets()
 		hands = { name="Sakpata's Gauntlets", augments={'Path: A',}},
 		ring2 = "Defending ring",
 		ring1 = "Moonlight Ring",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		legs = "Sakpata's Cuisses",
 		feet = "Hermes' Sandals",
 		back = "Moonbeam Cape"
@@ -1149,18 +1149,18 @@ function precast(spell)
 			if CurrentTP > 1500 then
 				equip(sets.UpheavalWSD)
 				send_command("@input /echo Upheaval WSD Set")
-				if buffactive["Mighty Strikes"] then
-					equip(sets.UpheavalCrit)
-					send_command("@input /echo Upheavel Crit Set")
-					end
+				-- if buffactive["Mighty Strikes"] then
+					-- equip(sets.UpheavalCrit)
+					-- send_command("@input /echo Upheavel Crit Set")
+					-- end
 			else
 				equip(sets.UpheavalDA)
 				--equip(sets.UpheavalWSD)
 				send_command("@input /echo Upheaval DA Set")
-				if buffactive["Mighty Strikes"] then
-					equip(sets.UpheavalCrit)
-					send_command("@input /echo Upheavel Crit Set")
-					end
+				-- if buffactive["Mighty Strikes"] then
+					-- equip(sets.UpheavalCrit)
+					-- send_command("@input /echo Upheavel Crit Set")
+					-- end
 			end
 		elseif spell.english == "Impulse Drive" then
 			TPBonus = TPBonus + 250
