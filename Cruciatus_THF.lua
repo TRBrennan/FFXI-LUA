@@ -35,102 +35,76 @@ function get_sets()
         Idle_ind = 1                  
        
         sets.Idle.Standard = {
-			ammo="Staunch Tathlum",
-			head="Mummu Bonnet +1",
-			body="Mummu Jacket +2",
-			hands="Mummu Wrists +2",
-			legs="Mummu Kecks +2",
-			feet="Mummu Gamash. +2",
-			neck="Loricate Torque",
-			waist="Chaac Belt",
-			left_ear="Sherida Earring",
-			right_ear="Hearty Earring",
-			left_ring="Defending Ring",
-			right_ring="Shneddick Ring",
-			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		ammo="Staunch Tathlum",
+		head="Nyame Helm",
+		body="Nyame Mail",
+		hands="Nyame Gauntlets",
+		legs="Nyame Flanchard",
+		feet="Nyame Sollerets",
+		neck="Loricate Torque",
+		waist="Carrier's Sash",
+		left_ear="Sherida Earring",
+		right_ear="Hearty Earring",
+		left_ring="Defending Ring",
+		right_ring="Shneddick Ring",
+		back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 		}
                                                  
         sets.Idle.DT = {ammo="Staunch Tathlum",
-			head="Mummu Bonnet +1",
-			body="Mummu Jacket +2",
-			hands="Mummu Wrists +2",
-			legs="Mummu Kecks +2",
-			feet="Mummu Gamash. +2",
-			neck="Loricate Torque",
-			waist="Chaac Belt",
-			left_ear="Sherida Earring",
-			right_ear="Hearty Earring",
-			left_ring="Defending Ring",
-			right_ring="Shneddick Ring",
-			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		head="Nyame Helm",
+		body="Nyame Mail",
+		hands="Nyame Gauntlets",
+		legs="Nyame Flanchard",
+		feet="Nyame Sollerets",
+		neck="Loricate Torque",
+		waist="Carrier's Sash",
+		left_ear="Sherida Earring",
+		right_ear="Hearty Earring",
+		left_ring="Defending Ring",
+		right_ring="Shneddick Ring",
+		back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 		}
 					
         --TP Sets--
         sets.TP = {}
  
-           sets.TP.index = {'Standard', 'AccuracyMid', 'AccuracyFull', 'DT', 'DTAccuracy', 'TH'}
-                --1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy, 6 = TH
+           sets.TP.index = {'Standard', 'TH'}
+                --1=Standard, 6 = TH
 				
                 TP_ind = 1
-				sets.TP.Standard =  {ammo="Yamarang",
-									head="Skormoth Mask",
-									body="Mummu Jacket +2",
-									hands="Mummu Wrists +2",
-									legs="Meg. Chausses +2",
-									feet={ name="Herculean Boots", augments={'Pet: Phys. dmg. taken -1%','Pet: STR+1','Quadruple Attack +2','Accuracy+18 Attack+18',}},
-									neck="Anu Torque",
-									waist="Kentarch Belt +1",
-									left_ear="Sherida Earring",
-									right_ear="Suppanomimi",
-									left_ring="Mummu Ring",
-									right_ring="Petrov Ring",
-									back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},}
-																					   
-                                                       
-                sets.TP.AccuracyMid = {ammo="Yamarang",
-									head="Skormoth Mask",
-									body="Mummu Jacket +2",
-									hands="Mummu Wrists +2",
-									legs="Meg. Chausses +2",
-									feet={ name="Herculean Boots", augments={'Pet: Phys. dmg. taken -1%','Pet: STR+1','Quadruple Attack +2','Accuracy+18 Attack+18',}},
-									neck="Anu Torque",
-									waist="Kentarch Belt +1",
-									left_ear="Sherida Earring",
-									right_ear="Suppanomimi",
-									left_ring="Mummu Ring",
-									right_ring="Petrov Ring",
-									back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},}
-       
-                sets.TP.AccuracyFull = {ammo="Yamarang",
-                                        head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Cessance Earring",ear2="Telos Earring",
-                                        body="Ashera Harness",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Cacoethic Ring",ring2="Chirich Ring",
-                                         back="Canny Cape",waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
-                                                       
-                sets.TP.DT = {ammo="Staunch Tathlum",
-                              head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Ethereal", ear2="Genmei Earring",
-                              body="Ashera Harness",hands="Herculean Gloves",ring1="Vocane Ring",ring2="Ilabrat Ring",
-                              back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-							  waist="Flume belt +1",legs="Mummu Kecks +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
-                                 
-                sets.TP.DTAccuracy = {ammo="Yamarang",
-                                      head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},neck="Loricate Torque +1", ear1="Suppanomimi", ear2="Genmei Earring",     
-									  body="Ashera Harness",hands="Herculean Gloves",ring1="Dark ring",ring2="Vocane Ring",
-                                      back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-									  waist="Flume belt +1",legs="Mummu Kecks +2",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
+					sets.TP.Standard =  {    
+						ammo="Yamarang",
+						head="Nyame Helm",
+						body="Nyame Mail",
+						hands="Nyame Gauntlets",
+						legs="Nyame Flanchard",
+						feet="Nyame Sollerets",
+						neck="Anu Torque",
+						waist="Kentarch Belt +1",
+						left_ear="Sherida Earring",
+						right_ear="Suppanomimi",
+						left_ring="Mummu Ring",
+						right_ring="Petrov Ring",
+						back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+					}
+		
+		
 									  
-				sets.TP.TH = { ammo="Yamarang",
-									head="Skormoth Mask",
-									body="Mummu Jacket +2",
-									hands = "Plunderer's Armlets +1",
-									legs="Meg. Chausses +2",
-									feet={ name="Herculean Boots", augments={'Pet: Phys. dmg. taken -1%','Pet: STR+1','Quadruple Attack +2','Accuracy+18 Attack+18',}},
-									neck="Anu Torque",
-									waist="Chaac Belt",
-									left_ear="Sherida Earring",
-									right_ear="Suppanomimi",
-									left_ring="Mummu Ring",
-									right_ring="Petrov Ring",
-									back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},}
+				sets.TP.TH = {					
+						ammo="Yamarang",
+						head="Nyame Helm",
+						body="Nyame Mail",
+						hands = "Plunderer's Armlets +1",
+						legs="Nyame Flanchard",
+						feet="Nyame Sollerets",
+						neck="Anu Torque",
+						waist="Chaac Belt",
+						left_ear="Sherida Earring",
+						right_ear="Suppanomimi",
+						left_ring="Mummu Ring",
+						right_ring="Petrov Ring",
+						back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+					}
                                                          
 									
        --Weaponskill Sets--
@@ -157,8 +131,8 @@ function get_sets()
 								legs="Mummu Kecks +2",
 								feet="Mummu Gamash. +2",
 								neck="Anu Torque",
-								left_ear="Steelflash Earring",
-								right_ear="Bladeborn Earring",
+								left_ear="Sherida Earring",
+								right_ear="Moonshade Earring",
 								left_ring="Mummu Ring",
 								right_ring="Petrov Ring",
 								waist ="Kentarch Belt +1",

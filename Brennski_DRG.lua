@@ -1,10 +1,10 @@
 function get_sets()
 	send_command("bind f9 gs c toggle TP set")
 	send_command("bind f10 gs c toggle Idle set")
-	send_command("bind f11 gs c toggle CDC set")
-	send_command("bind f12 gs c toggle Req set")
-	send_command("bind !f12 gs c toggle Rea set")
-	send_command("bind ^` gs c toggle MB set")
+	send_command("bind ^f11 gs c equip TP set")
+	send_command("bind ^f10 gs c equip DT set")
+	send_command("bind f12 gs c equip TP set")
+	send_command("bind !f10 gs c equip DT set")
 
 	function file_unload()
 		send_command("unbind ^f9")
@@ -26,10 +26,7 @@ function get_sets()
 
 	TP_Body = "Emicho Haubert +1"
 	WSD_Legs = {name = "Valor. Hose", augments = {"Attack+27", "Weapon skill damage +5%", "DEX+8", "Accuracy+15"}}
-	WSD_Hands = {
-		name = "Valorous Mitts",
-		augments = {"Accuracy+17 Attack+17", "Weapon skill damage +3%", "VIT+9", "Accuracy+3", "Attack+12"}
-	}
+	WSD_Hands = {name = "Valorous Mitts",augments = {"Accuracy+17 Attack+17", "Weapon skill damage +3%", "VIT+9", "Accuracy+3", "Attack+12"}}
 	WSD_Body = {name = "Valorous Mail", augments = {"Accuracy+25", "Weapon skill damage +4%", "DEX+8", "Attack+5"}}
 	WSD_Head = {name = "Valorous Mask", augments = {"Accuracy+18", "Weapon skill damage +3%", "STR+4", "Attack+11"}}
 	--Idle Sets--
@@ -40,20 +37,17 @@ function get_sets()
 
 	sets.Idle.Standard = {
 		ammo = "Staunch Tathlum +1",
-		head = {
-			name = "Valorous Mask",
-			augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}
-		},
+		head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}},
 		neck = "Sanctity Necklace",
 		ear1 = "Genmei earring",
 		ear2 = "Infused Earring",
-		body = "Tartarus Platemail",
-		hands = "Sulev. Gauntlets +2",
+		body="Nyame Mail",
+		hands = "Nyame Gauntlets",
 		ring1 = "Defending ring",
 		ring2 = "Vocane Ring",
 		waist = "Flume Belt +1",
 		legs = "Carmine Cuisses +1",
-		feet = "Sulevia's Leggings +2",
+		feet="Nyame Sollerets",
 		back = "Moonbeam Cape"
 	}
 
@@ -76,24 +70,24 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "AccuracyFull", "DT", "DTAccuracy"}
-	--1=Standard, 2 =AccuracyFull, 3=DT, 4=DTAccuracy--
+	sets.TP.index = {"Standard", "AccuracyFull", "DT"}
+	--1=Standard, 2 =AccuracyFull, 3=DT--
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo = "Coiste Bodhar",
-		head = "Flam. Zucchetto +2",
-		body = TP_Body,
-		hands = "Emicho Gauntlets +1",
-		legs = {name = "Valor. Hose", augments = {"Accuracy+23 Attack+23", '"Dbl.Atk."+3', "VIT+4", "Attack+5"}},
-		feet = "Flam. Gambieras +2",
-		neck = "Lissome Necklace",
-		waist = "Ioskeha Belt +1",
-		left_ear = "Sherida earring",
-		right_ear = "Telos Earring",
-		left_ring = "Niqmaddu Ring",
-		right_ring = "Flamma Ring",
-		back = "Brigantia's Mantle"
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Flam. Zucchetto +2",
+		body="Hjarrandi Breast.",
+		hands="Flam. Manopolas +2",
+		legs="Nyame Flanchard",
+		feet="Flam. Gambieras +2",
+		neck="Lissome Necklace",
+		waist="Ioskeha Belt +1",
+		left_ear="Sherida Earring",
+		right_ear="Telos Earring",
+		left_ring="Niqmaddu Ring",
+		right_ring="Flamma Ring",
+		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 	}
 
 	sets.TP.AccuracyFull = {
@@ -113,35 +107,19 @@ function get_sets()
 	}
 
 	sets.TP.DT = {
-		ammo = "Staunch Tathlum +1",
-		head = "Sulevia's Mask +2",
-		neck = "Loricate Torque +1",
-		left_ear = "Sherida earring",
-		right_ear = "Telos Earring",
-		body = "Tartarus Platemail",
-		hands = "Sulev. Gauntlets +2",
-		ring1 = "Vocane Ring",
-		ring2 = "Defending Ring",
-		back = "Moonbeam Cape",
-		waist = "Flume belt +1",
-		legs = "Sulevia's Cuisses +2",
-		feet = "Sulevia's Leggings +2"
-	}
-
-	sets.TP.DTAccuracy = {
-		ammo = "Coiste Bodhar",
-		head = "Sulevia's Mask +2",
-		neck = "Lissome Necklace",
-		left_ear = "Sherida earring",
-		right_ear = "Telos Earring",
-		body = "Tartarus Platemail",
-		hands = "Sulev. Gauntlets +2",
-		ring1 = "Petrov Ring",
-		ring2 = "Flamma Ring",
-		back = "Brigantia's Mantle",
-		waist = "Ioskeha Belt +1",
-		legs = "Sulevia's Cuisses +2",
-		feet = "Sulevia's Leggings +2"
+		ammo="Staunch Tathlum +1",
+		head="Nyame Helm",
+		body="Nyame Mail",
+		hands="Nyame Gauntlets",
+		legs="Nyame Flanchard",
+		feet="Nyame Sollerets",
+		neck="Lissome Necklace",
+		waist="Ioskeha Belt +1",
+		left_ear="Sherida Earring",
+		right_ear="Telos Earring",
+		left_ring="Moonlight Ring",
+		right_ring="Niqmaddu Ring",
+		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
 	}
 
 	--Weaponskill Sets--
@@ -234,6 +212,22 @@ function get_sets()
 		legs = "Sulevia's Cuisses +2",
 		feet = "Thereoid Greaves"
 	}
+	
+	sets.WS.OneHit ={
+	    ammo="Knobkierrie",
+		head="Nyame Helm",
+		body="Nyame Mail",
+		hands="Nyame Gauntlets",
+		legs = "Vishap Brais +2",
+		feet="Sulev. Leggings +2",
+		neck="Caro Necklace",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Thrud Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		left_ring="Niqmaddu Ring",
+		right_ring="Regal Ring",
+		 back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+	}
 
 	--Ninja Magic Sets--
 	sets.NINMagic = {}
@@ -258,88 +252,24 @@ function get_sets()
 
 	sets.Utility.Weather = {waist = "Hachirin-no-obi", back = "Twilight Cape"}
 
-	sets.Utility.MB = {
-		head = "Herculean Helm",
-		body = "Amalric Doublet",
-		ear1 = "Static Earring",
-		ring1 = "Locus Ring",
-		ring2 = "Mujin Band"
-	}
-
-	sets.Utility.Stoneskin = {
-		head = "Haruspex hat",
-		neck = "Stone Gorget",
-		ear1 = "Loquac. earring",
-		ear2 = "Earthcry earring",
-		body = "Assim. jubbah +1",
-		hands = "Stone Mufflers",
-		ring1 = "Rahab ring",
-		back = "Swith cape",
-		waist = "Siegel sash",
-		legs = "Haven hose",
-		feet = "Valorous Greaves"
-	}
-
-	sets.Utility.Phalanx = {
-		head = "Haruspex hat",
-		neck = "Colossus's torque",
-		ear1 = "Loquac. earring",
-		ear2 = "Augment. earring",
-		body = "Assim. jubbah +1",
-		hands = "Ayao's gages",
-		ring1 = "Rahab ring",
-		back = "Swith cape",
-		waist = "Pythia sash +1",
-		legs = "Portent pants",
-		feet = "Valorous Greaves"
-	}
-
-	sets.Utility.Steps = {
-		ammo = "Coiste Bodhar",
-		head = "Boii Mask +1",
-		body = TP_Body,
-		hands = "Rawhide Gloves",
-		legs == "Odyssean Cuisses",
-		feet = "Valorous Greaves",
-		neck = "Subtlety Spec.",
-		waist = "Chaac Belt",
-		left_ear = "Heartseeker Earring",
-		right_ear = "Dignitary's Earring",
-		left_ring = "Yacuruna Ring",
-		right_ring = "Cacoethic Ring",
-		back = "Brigantia's Mantle"
-	}
-
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
 
 	sets.Utility.Sleeping = {neck = "Opo-Opo Necklace"}
 	--Job Ability Sets--
 
 	sets.JA = {}
-	sets.JA.Jump = {
-		ammo = "Coiste Bodhar",
-		head = "Sulevia's Mask +2",
-		body = TP_Body,
-		hands = {name = "Emicho Gauntlets", augments = {"HP+50", "DEX+10", "Accuracy+15"}},
-		legs = {name = "Valor. Hose", augments = {"Accuracy+23 Attack+23", '"Dbl.Atk."+3', "VIT+4", "Attack+5"}},
-		feet = "Flam. Gambieras +2",
-		neck = "Lissome Necklace",
-		waist = "Ioskeha Belt +1",
-		left_ear = "Cessance Earring",
-		right_ear = "Telos Earring",
-		left_ring = "Petrov Ring",
-		right_ring = "Flamma Ring",
-		back = "Brigantia's Mantle"
-	}
+	sets.JA.Jump = sets.TP.Standard
 
 	sets.JA.Angon = {
+		head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}},
 		ammo = "Angon",
 		ear1 = "Dragoon's Earring",
-		hands = "Ptero. Fin. G. +1",
+		legs = "Volte Hose",
 		waist = "Chaac Belt",
 		Hands = "Volte Bracers"
 	} -- Angon, Relic Hands, and that dumb earring in Mamook if you feel like it
-	sets.JA.AncientCircle = {legs = "Vishap Brais +1"} -- Artifact Legs
+	
+	sets.JA.AncientCircle = {legs = "Vishap Brais +2"} -- Artifact Legs
 
 	sets.JA.SpiritLink = {
 		head = "Vishap Armet +1",
@@ -447,7 +377,7 @@ function precast(spell)
 		end
 		equip(sets.JA.Jump)
 	elseif spell.type == "WeaponSkill" then
-		equip(sets.Drakesbane.Attack)
+		equip(sets.WS.OneHit)
 	end
 end
 
@@ -501,7 +431,7 @@ function aftercast(spell)
 	if player.status == "Engaged" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		if buffactive["doom"] or buffactive["curse"] then
-			equip(sets.Utility.Doom)
+			equip(sets.Utility.Doomed)
 		end
 		if buffactive["terror"] or buffactive["stun"] or buffactive["sleep"] then
 			equip(sets.TP.DT)
@@ -509,7 +439,7 @@ function aftercast(spell)
 	else
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 		if buffactive["doom"] or buffactive["curse"] then
-			equip(sets.Utility.Doom)
+			equip(sets.Utility.Doomed)
 		end
 		if buffactive["terror"] or buffactive["stun"] or buffactive["sleep"] then
 			equip(sets.TP.DT)
@@ -543,5 +473,11 @@ function self_command(command)
 		equip(sets.TP[sets.TP.index[TP_ind]])
 	elseif command == "equip Idle set" then
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
+	elseif command == "equip TP set" then
+		equip(sets.TP[sets.TP.index[TP_ind]])
+		send_command("@input /echo  <--- Equipped TP Set ----->")
+	elseif command =="equip DT set" then
+		equip (sets.TP.DT)
+		send_command("@input /echo  <--- Equipped DT Set ----->")	
 	end
 end

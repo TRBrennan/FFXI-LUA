@@ -2,12 +2,8 @@ function get_sets()
 
     send_command('bind f9 gs c toggle TP set')
     send_command('bind f10 gs c toggle Idle set')
-    send_command('bind f11 gs c toggle CDC set')
-    send_command('bind f12 gs c toggle Req set')
-    send_command('bind !f12 gs c toggle Rea set')
-    send_command('bind ^` gs c toggle MB set')
-	send_command("bind ^f9 gs c equip TP set")
-	send_command("bind ^f10 gs c equip DT set")
+	send_command("bind f11 gs c equip TP set")
+	send_command("bind f12 gs c equip DT set")
 
     function file_unload()
 
@@ -93,9 +89,10 @@ function get_sets()
         'AccuracyMid',
         'AccuracyFull',
         'DT',
-        'DTAccuracy'
+        'DTAccuracy',
+		'DTSB'
     }
-    -- 1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy--
+    -- 1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy,6=DTSubtleBlow--
 
     TP_ind = 1
     sets.TP.Standard = {
@@ -108,21 +105,10 @@ function get_sets()
         hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         ring1 = "Ilabrat Ring",
         ring2 = "Epona's Ring",
-        back = {
-            name = "Rosmerta's Cape",
-            augments = {
-                'DEX+20',
-                'Accuracy+20 Attack+20',
-                '"Dbl.Atk."+10',
-                'Phys. dmg. taken-10%',
-            }
-        },
+        back = { name = "Rosmerta's Cape",augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10', 'Phys. dmg. taken-10%', }},
         waist = "Reiki Yotai",
         legs = "Samnuha Tights",
-        feet = {
-            name = "Herculean Boots",
-            augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}
-        }
+		feet = {name = "Herculean Boots",augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}}
     }
 
     sets.TP.AccuracyMid = {
@@ -138,10 +124,7 @@ function get_sets()
 		back = { name = "Rosmerta's Cape",augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10', 'Phys. dmg. taken-10%', }},
         waist = "Reiki Yotai",
         legs = "Samnuha Tights",
-        feet = {
-            name = "Herculean Boots",
-            augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}
-        }
+        feet = {name = "Herculean Boots",augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}}
     }
 
     sets.TP.AccuracyFull = {
@@ -192,6 +175,22 @@ function get_sets()
 		right_ring="Epona's Ring",
 		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
     }
+	
+	sets.TP.DTSB = {
+	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck={ name="Mirage Stole +1", augments={'Path: A',}},
+		waist="Reiki Yotai",
+		left_ear="Digni. Earring",
+		right_ear="Telos Earring",
+		left_ring="Chirich Ring +1",
+		right_ring="Chirich Ring",
+		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+	}
 
     -- Weaponskill Sets--
     sets.WS = {}
@@ -506,27 +505,19 @@ function get_sets()
     }
 
     sets.BlueMagic.Debuff = {
-        ammo = "Pemphredo Tathlum",
-        head="Malignance Chapeau",
-        ear2 = "Regal Earring",
-        ear1 = "Psystorm Earring",
-        neck = "Mirage Stole +1",
-        body = "Amalric Doublet",
-        hands = "Jhakri Cuffs +2",
-        ring1 = "Kishar Ring",
-        ring2 = "Stikini Ring",
-        ack = "Cornflower cape",
-        legs="Luhlaza Shalwar +3",
-        feet = {
-            name = "Herculean Boots",
-            augments = {
-                '"Mag.Atk.Bns."+27',
-                'Weapon skill damage +4%',
-                'Quadruple Attack +1',
-                'Mag. Acc.+14 "Mag.Atk.Bns."+14',
-            }
-        },
-        waist = "Sacro Cord"
+		ammo="Pemphredo Tathlum",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck={ name="Mirage Stole +1", augments={'Path: A',}},
+		waist="Sacro Cord",
+		left_ear="Digni. Earring",
+		right_ear="Regal Earring",
+		left_ring="Rahab Ring",
+		right_ring="Stikini Ring",
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
     }
 
     sets.BlueMagic.BuffSkill = {
@@ -550,10 +541,7 @@ function get_sets()
         back = "Gigant Mantle",
         waist = "Lieutenant's Sash",
         legs = "Mavi Tayt +2",
-        feet = {
-            name = "Herculean Boots",
-            augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}
-        }
+        feet = {name = "Herculean Boots",augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}}
     }
 
     sets.BlueMagic.BlueCure = {
@@ -561,10 +549,7 @@ function get_sets()
         head = "Telchine Cap",
         body = "Vrikodara Jupon",
         hands = "Telchine Gloves",
-        legs = {
-            name = "Telchine Braconi",
-            augments = {'"Fast Cast"+2', 'Enh. Mag. eff. dur. +8',}
-        },
+        legs = {name = "Telchine Braconi",augments = {'"Fast Cast"+2', 'Enh. Mag. eff. dur. +8',}},
         feet = "Jhakri Pigaches +2",
         neck = "Incanter's Torque",
         waist = "Luminary Sash",
@@ -682,32 +667,18 @@ function get_sets()
     }
 
     sets.NINMagic.Utsusemi = {
-        head = {
-            name = "Herculean Helm",
-            augments = {
-                'Accuracy+19 Attack+19',
-                'Damage taken-3%',
-                'AGI+3',
-                'Accuracy+2',
-            }
-        },
+        head = {name = "Herculean Helm",augments = {'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
         neck = "Loricate Torque",
         ar1 = "Brutal Earring",
         ear2 = "Cessance Earring",
         body = "Emet harness +1",
-        hands = {
-            name = "Adhemar Wrist. +1",
-            augments = {'STR+12', 'DEX+12', 'Attack+20',}
-        },
+		hands = {name = "Adhemar Wrist. +1",augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         ring1 = "Vocane Ring",
         ring2 = "Petrov Ring",
         back = "Moonbeam Cape",
         waist = "Flume belt +1",
         legs = "Herculean Trousers",
-        feet = {
-            name = "Herculean Boots",
-            augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}
-        }
+        feet = {name = "Herculean Boots",augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}  }
     }
 
     -- Utility Sets--
@@ -729,10 +700,7 @@ function get_sets()
         body = "Adhemar Jacket +1",
         hands = "Rawhide Gloves",
         legs == "Samnuha Tights",
-        feet = {
-            name = "Herculean Boots",
-            augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}
-        },
+        feet = {name = "Herculean Boots",augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}},
         neck = "Subtlety Spec.",
         waist = "Chaac Belt",
         left_ear = "Heartseeker Earring",
@@ -818,7 +786,7 @@ end
 function midcast(spell, act)
     if spell.action_type == 'magic' then
         equip(sets.BlueMagic.BlueMagic)
-    elseif spell.english == 'Vertical Cleave' or spell.english == 'Death Scissors' or spell.english == 'Empty Thrash' or spell.english == 'Dimensional Death' or spell.english == 'Quadrastrike' or spell.english == 'Bloodrake' or spell.english == 'Disseverment' or spell.english == 'Hysteric Barrage' or spell.english == 'Frenetic Rip' or spell.english == 'Seedspray' or spell.english == 'Vanity Dive' or spell.english == 'Goblin Rush' or spell.english == 'Paralyzing Triad' or spell.english == 'Thrashing Assault' or spell.english == 'Benthic Typhoon' or spell.english == 'Final Sting' or spell.english == 'Spiral Spin' or spell.english == 'Whirl of Rage' or spell.english == 'Quad. Continuum' or spell.english == 'Delta Thrust' or spell.english == 'Cannonball' or spell.english == 'Heavy Strike' or spell.english == 'Sinker Drill' then
+    elseif spell.english == 'Vertical Cleave' or spell.english == 'Death Scissors' or spell.english == 'Empty Thrash' or spell.english == 'Dimensional Death' or spell.english == 'Quadrastrike' or spell.english == 'Bloodrake' or spell.english == 'Disseverment' or spell.english == 'Hysteric Barrage' or spell.english == 'Frenetic Rip' or spell.english == 'Seedspray' or spell.english == 'Vanity Dive' or spell.english == 'Goblin Rush' or spell.english == 'Paralyzing Triad' or spell.english == 'Thrashing Assault' or spell.english == 'Benthic Typhoon' or spell.english == 'Final Sting' or spell.english == 'Spiral Spin' or spell.english == 'Whirl of Rage' or spell.english == 'Quad. Continuum'  or spell.english == 'Cannonball' or spell.english == 'Heavy Strike' or spell.english == 'Sinker Drill' then
         equip(sets.BlueMagic.Physical)
         if buffactive['Chain Affinity'] then equip(sets.JA.ChainAffinity) end
         if buffactive['Efflux'] then equip(sets.JA.Efflux) end
@@ -844,12 +812,13 @@ function midcast(spell, act)
         end
     elseif spell.english == 'Subduction' or spell.english == 'Dream Flower' then
         equip(sets.BlueMagic.Sub)
-    elseif spell.english == 'Sheep Song' or spell.english == 'Blood Drain' or spell.english == 'Soporific' or spell.english == 'Soud Blast' or spell.english == 'Chaotic Eye' or spell.english == 'Digest' or spell.english == 'Blank Gaze' or spell.english == 'Venom Shell' or spell.english == 'MP Drainkiss' or spell.english == 'Stinking Gas' or spell.english == 'Geist Wall' or spell.english == 'Awful Eye' or spell.english == 'Blood Saber' or spell.english == 'Jettatura' or spell.english == 'Frightful Roar' or spell.english == 'Filamented Hold' or spell.english == 'Cold Wave' or spell.english == 'Light of Penance' or spell.english == '1000 Needles' or spell.english == 'Feather Tickle' or spell.english == 'Yawn' or spell.english == 'Voracious Trunk' or spell.english == 'Infrasonics' or spell.english == 'Sandspray' or spell.english == 'Corrosive Ooze' or spell.english == 'Enervation' or spell.english == 'Lowing' or spell.english == 'Triumphant Roar' or spell.english == 'Actinic Burst' or spell.english == 'Osmosis' or spell.english == 'Cimicine Discharge' or spell.english == 'Demoralizing Roar' or spell.english == 'Auroral Drape' or spell.english == 'Reaving Wind' or spell.english == 'Mortal Ray' or spell.english == 'Absolute Terror' or spell.english == 'Blistering Roar' then
+    elseif spell.english == 'Sheep Song' or  spell.english == 'Delta Thrust' or spell.english == 'Blood Drain' or spell.english == 'Soporific' or spell.english == 'Soud Blast' or spell.english == 'Chaotic Eye' or spell.english == 'Digest' or spell.english == 'Blank Gaze' or spell.english == 'Venom Shell' or spell.english == 'MP Drainkiss' or spell.english == 'Stinking Gas' or spell.english == 'Geist Wall' or spell.english == 'Awful Eye' or spell.english == 'Blood Saber' or spell.english == 'Jettatura' or spell.english == 'Frightful Roar' or spell.english == 'Filamented Hold' or spell.english == 'Cold Wave' or spell.english == 'Light of Penance' or spell.english == '1000 Needles' or spell.english == 'Feather Tickle' or spell.english == 'Yawn' or spell.english == 'Voracious Trunk' or spell.english == 'Infrasonics' or spell.english == 'Sandspray' or spell.english == 'Corrosive Ooze' or spell.english == 'Enervation' or spell.english == 'Lowing' or spell.english == 'Triumphant Roar' or spell.english == 'Actinic Burst' or spell.english == 'Osmosis' or spell.english == 'Cimicine Discharge' or spell.english == 'Demoralizing Roar' or spell.english == 'Auroral Drape' or spell.english == 'Reaving Wind' or spell.english == 'Mortal Ray' or spell.english == 'Absolute Terror' or spell.english == 'Blistering Roar' then
         equip(sets.BlueMagic.Debuff)
     elseif spell.english == 'Magic Fruit' or spell.english == 'Plenilune Embrace' or spell.english == 'Wild Carrot' or spell.english == 'Pollen' or spell.english == 'Cure III' or spell.english == 'Cure IV' or spell.english == 'White Wind' then
         equip(sets.BlueMagic.BlueCure)
-        if spell.target.name == player.name and string.find(spell.english, 'Magic Fruit') or string.find(spell.english, 'Plenilune Embrace') or string.find(spell.english, 'Wild Carrot') or string.find(spell.english, 'Cure III') or string.find(spell.english, 'Cure IV') then equip(sets.BlueMagic.BlueCure) end
-
+        if spell.target.name == player.name and string.find(spell.english, 'Magic Fruit') or string.find(spell.english, 'Plenilune Embrace') or string.find(spell.english, 'Wild Carrot') or string.find(spell.english, 'Cure III') or string.find(spell.english, 'Cure IV') 
+			then equip(sets.BlueMagic.BlueCure) 
+		end
     elseif spell.english == 'Head Butt' or spell.english == 'Sudden Lunge' or spell.english == 'Tourbillion' or spell.english == 'Saurian Slide' or spell.english == 'Sweeping Gouge' or spell.english == 'Frypan' then
         equip(sets.BlueMagic.PhysStun)
     elseif spell.english == 'MP Drainkiss' or spell.english == 'Digest' or spell.english == 'Blood Saber' or spell.english == 'Blood Drain' or spell.english == 'Osmosis' or spell.english == 'Magic Barrier' or spell.english == 'Diamondhide' or spell.english == 'Metallic Body' then

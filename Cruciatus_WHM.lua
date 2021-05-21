@@ -32,9 +32,9 @@ function get_sets()
 		ammo="Homiliary",
 		head="Befouled Crown",
 		body="Inyanga Jubbah +2",
-		hands="Inyan. Dastanas +2",
+		hands="Nyame Gauntlets",
 		legs="Assid. Pants +1",
-		feet="Inyan. Crackows +2",
+		feet="Nyame Sollerets",
 		neck="Sanctity Necklace",
 		waist="Carrier's Sash",
 		left_ear="Lifestorm Earring",
@@ -265,7 +265,24 @@ function get_sets()
         right_ring = "Kishar Ring",
         back = "Fi Follet Cape +1"
     }
-    sets.midcast_Auspice = {feet = "Ebers Duckbills"}
+	
+    sets.midcast_Auspice = {
+		main = {name = "Gada", augments = {"Enh. Mag. eff. dur. +4", "VIT+5", "Mag. Acc.+18", '"Mag.Atk.Bns."+4'}},
+        sub = "Ammurapi Shield",
+        ammo = "Homiliary",
+        head = {name = "Telchine Cap", augments = {"Enh. Mag. eff. dur. +9"}},
+        body = {name = "Telchine Chas.", augments = {"Enh. Mag. eff. dur. +7"}},
+        hands = {name = "Telchine Gloves", augments = {"Enh. Mag. eff. dur. +10"}},
+        legs = {name = "Telchine Braconi", augments = {"Enh. Mag. eff. dur. +9"}},
+        feet = "Ebers Duckbills",
+        neck = "Incanter's Torque",
+        waist = "Embla Sash",
+        left_ear = "Andoaa Earring",
+        right_ear = "Mimir Earring",
+        left_ring = "Stinki Ring",
+        right_ring = "Kishar Ring",
+        back = "Fi Follet Cape +1"
+		}
 
     sets.midcast_Cure = {
 		main = { name = "Queller Rod",augments = {"Healing magic skill +15", '"Cure" potency +10%', '"Cure" spellcasting time -7%'}},
@@ -404,6 +421,8 @@ function midcast(spell)
         elseif spell.name == "Shellra V" then
             equip(set.midcast_Shellra)
             send_command("@input /echo Shellra 5 Set")
+		elseif spell.name == "Auspice" then
+			equip(sets.midcast_Auspice)
         else
             equip(sets.midcast_EnhancingMagic)
             send_command("@input /echo Enhancing Set")

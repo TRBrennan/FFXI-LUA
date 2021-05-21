@@ -437,7 +437,7 @@ function aftercast(spell)
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 	end
 	if buffactive["doom"] or buffactive["curse"] then
-		equip(sets.Utility.Doom)
+		equip(sets.Utility.Doomed)
 	end
 	if buffactive["terror"] or buffactive["stun"] or buffactive["sleep"] then
 		equip(sets.TP.DT)

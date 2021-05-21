@@ -17,7 +17,8 @@ function get_sets()
 	end
 
 	--TP_Body = { name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
-	TP_Body = "Ken. Samue"
+	--TP_Body = "Ken. Samue"
+	TP_Body ={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
 	WSD_Legs = {name = "Valor. Hose", augments = {"Attack+27", "Weapon skill damage +5%", "DEX+8", "Accuracy+15"}}
 	WSD_Hands = {
 		name = "Valorous Mitts",
@@ -35,16 +36,10 @@ function get_sets()
 
 	sets.Idle.Standard = {
 		ammo = "Staunch Tathlum +1",
-		head = {
-			name = "Valorous Mask",
-			augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}
-		},
+		head = {name = "Valorous Mask",	augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}},
 		body = "Hizamaru haramaki +1",
 		hands = "Kurys Gloves",
-		legs = {
-			name = "Herculean Trousers",
-			augments = {'Mag. Acc.+16 "Mag.Atk.Bns."+16', "Weapon skill damage +2%", "Mag. Acc.+14", '"Mag.Atk.Bns."+13'}
-		},
+		legs = {name = "Herculean Trousers",augments = {'Mag. Acc.+16 "Mag.Atk.Bns."+16', "Weapon skill damage +2%", "Mag. Acc.+14", '"Mag.Atk.Bns."+13'}},
 		feet = "Amm Greaves",
 		neck = "Sanctity necklace",
 		waist = "Flume Belt +1",
@@ -82,7 +77,7 @@ function get_sets()
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Moonbeam Nodowa",
-		ear1 = "Cessance Earring",
+		ear1 = "Schere Earring",
 		ear2 = "Telos Earring",
 		body = TP_Body,
 		hands = "Wakido Kote +3",
@@ -98,7 +93,7 @@ function get_sets()
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Moonbeam Nodowa",
-		ear1 = "Cessance Earring",
+		ear1 = "Schere Earring",
 		ear2 = "Telos Earring",
 		body = TP_Body,
 		hands = "Wakido Kote +3",
@@ -130,7 +125,7 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head = "Ynglinga Sallet",
 		neck = "Loricate Torque +1",
-		ear1 = "Cessance Earring",
+		ear1 = "Schere Earring",
 		ear2 = "Telos Earring",
 		body = "Tartarus Platemail",
 		hands = "Kurys Gloves",
@@ -172,7 +167,7 @@ function get_sets()
 		feet = WSD_Feet,
 		neck = "Caro Necklace",
 		waist = "Sailfi Belt +1",
-		left_ear = "Ishvara Earring",
+		left_ear = "Thrud Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Regal Ring",
 		left_ring = "Niqmaddu Ring",
@@ -222,7 +217,7 @@ function get_sets()
 		head = "Dampening Tam",
 		neck = "Loricate Torque +1",
 		ear1 = "Brutal Earring",
-		ear2 = "Cessance Earring",
+		ear2 = "Schere Earring",
 		body = "Emet harness +1",
 		hands = "Sulev. Gauntlets +2",
 		right_ring = "Vocane Ring",
@@ -238,27 +233,6 @@ function get_sets()
 
 	sets.Utility.Weather = {waist = "Hachirin-no-obi", back = "Twilight Cape"}
 
-	sets.Utility.MB = {
-		head = "Herculean Helm",
-		body = "Amalric Doublet",
-		ear1 = "Static Earring",
-		right_ring = "Locus Ring",
-		left_ring = "Mujin Band"
-	}
-
-	sets.Utility.Stoneskin = {
-		head = "Haruspex hat",
-		neck = "Stone Gorget",
-		ear1 = "Loquac. earring",
-		ear2 = "Earthcry earring",
-		body = "Assim. jubbah +1",
-		hands = "Stone Mufflers",
-		right_ring = "Rahab ring",
-		back = "Swith cape",
-		waist = "Siegel sash",
-		legs = "Haven hose",
-		feet = "Valorous Greaves"
-	}
 
 	sets.Utility.Phalanx = {
 		head = "Haruspex hat",
@@ -274,21 +248,6 @@ function get_sets()
 		feet = "Valorous Greaves"
 	}
 
-	sets.Utility.Steps = {
-		ammo = "Coiste Bodhar",
-		head = "Boii Mask +1",
-		body = TP_Body,
-		hands = "Rawhide Gloves",
-		legs == "Odyssean Cuisses",
-		feet = "Valorous Greaves",
-		neck = "Subtlety Spec.",
-		waist = "Chaac Belt",
-		left_ear = "Heartseeker Earring",
-		right_ear = "Dignitary's Earring",
-		left_ring = "Yacuruna Ring",
-		right_ring = "Cacoethic Ring",
-		back = "Takaha Mantle"
-	}
 
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", right_ring = "Saida Ring"}
 
@@ -319,27 +278,13 @@ function get_sets()
 	sets.JA.BladeBash = {
 		waist = "Chaac Belt",
 		Hands = "Volte Bracers",
-		head = {
-			name = "Valorous Mask",
-			augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}
-		}
+		legs = "Volte Hose",
+		head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}}
 	}
 
 	sets.JA.Sekkanoki = {}
 
 	sets.JA.Seigan = {}
-
-	sets.JA.BloodRage = {}
-
-	sets.JA.Tomahawk = {
-		ammo = "Throwing Tomahawk",
-		feet = "Agoge Calligae",
-		waist = "Chaac Belt",
-		Hands = "Volte Bracers",
-		head = {
-			name = "Valorous Mask",
-			augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}
-		}
 	}
 
 	sets.JA.Restraint = {}
@@ -372,11 +317,26 @@ function precast(spell)
 	if spell.action_type =="Magic" then
 		equip(sets.precast.FC.Standard)
 	elseif spell.english == "Tachi: Fudo" or spell.english == "Tachi: Kasha" or spell.english == "Tachi: Shoha" then
-		equip(sets.OneHit.Attack)
+		if spell.target.distance <= 5.6 then
+			equip(sets.OneHit.Attack)
+		else
+			cancel_spell()
+			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+		end
 	elseif spell.english == "Tachi: Jinpu" then
-		equip(sets.HybridWS.Attack)
+		if spell.target.distance <= 5.6 then
+			equip(sets.HybridWS.Attack)
+		else
+			cancel_spell()
+			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+		end
 	elseif spell.english == "Stardiver" or spell.english == "Tachi: Rana" then
-		equip(sets.MultiHit.Attack)
+		if spell.target.distance <= 5.6 then
+			equip(sets.MultiHit.Attack)
+		else
+			cancel_spell()
+			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+		end
 	elseif spell.english == "Meditate" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Meditate))
 	elseif spell.english == "Hasso" then

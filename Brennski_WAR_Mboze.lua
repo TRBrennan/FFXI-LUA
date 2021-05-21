@@ -32,13 +32,25 @@ function get_sets()
 	CurrentTP = 0
 	TPBonus = 0
 
-	DA_Back = {name = "Cichol's Mantle",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}}
-	WSD_Back = {name = "Cichol's Mantle",augments = {"VIT+20", "Accuracy+20 Attack+20", "VIT+10", "Weapon skill damage +10%"}}
+	DA_Back = {
+		name = "Cichol's Mantle",
+		augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}
+	}
+	WSD_Back = {
+		name = "Cichol's Mantle",
+		augments = {"VIT+20", "Accuracy+20 Attack+20", "VIT+10", "Weapon skill damage +10%"}
+	}
 	Crit_Back = {name = "Cichol's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10'}}
-	STR_Back = {name = "Cichol's Mantle",augments = {"VIT+20", "Accuracy+20 Attack+20", "VIT+10", "Weapon skill damage +10%"}}
+	STR_Back = {
+		name = "Cichol's Mantle",
+		augments = {"VIT+20", "Accuracy+20 Attack+20", "VIT+10", "Weapon skill damage +10%"}
+	}
 	--Acc_Head = {name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}}
 	Acc_head = "Flam. Zucchetto +2"
-	TH_Head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}}
+	TH_Head = {
+		name = "Valorous Mask",
+		augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}
+	}
 	WS_Head = {name = "Valorous Mask", augments = {"Accuracy+25 Attack+25", "Enmity+2", "STR+12", "Accuracy+6"}}
 	WSD_Head = "Agoge Mask +3"
 	TP_Legs = {name = "Odyssean Cuisses", augments = {"Accuracy+16 Attack+16", '"Store TP"+7', "DEX+2", "Attack+8"}}
@@ -280,10 +292,10 @@ function get_sets()
 		neck={ name="War. Beads +2", augments={'Path: A',}},
 		waist="Ioskeha Belt +1",
 		left_ear="Telos Earring",
-		right_ear="Schere Earring",
-		right_ring="Moonlight Ring",
-		--right_ring="Chirich Ring +1",
-		left_ring = "Niqmaddu Ring",
+		--right_ear="Schere Earring",
+		right_ear = "Brutal Earring",
+		left_ring="Moonlight Ring",
+		right_ring="Chirich Ring +1",
 		back= DA_Back
 	}
 
@@ -1132,46 +1144,36 @@ function precast(spell)
 	if spell.type == "WeaponSkill" then
 		---Great Axe Weapon Skills---
 		if spell.english == "Upheaval" then
-			if spell.target.distance <= 5.6 then
-				TPBonus = TPBonus + 250
-				CurrentTP = player.tp + TPBonus
-				send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
-				if CurrentTP > 1500 then
-					equip(sets.UpheavalWSD)
-					send_command("@input /echo Upheaval WSD Set")
+			TPBonus = TPBonus + 250
+			CurrentTP = player.tp + TPBonus
+			send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
+			if CurrentTP > 1500 then
+				equip(sets.UpheavalWSD)
+				send_command("@input /echo Upheaval WSD Set")
 				-- if buffactive["Mighty Strikes"] then
 					-- equip(sets.UpheavalCrit)
 					-- send_command("@input /echo Upheavel Crit Set")
 					-- end
-				else
-					equip(sets.UpheavalDA)
-				--equip(sets.UpheavalWSD)
-					send_command("@input /echo Upheaval DA Set")
-				-- if buffactive["Mighty Strikes"] then
-					-- equip(sets.UpheavalCrit)
-					-- send_command("@input /echo Upheavel Crit Set")
-					-- end
-				end
 			else
-			cancel_spell()
-			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+				equip(sets.UpheavalDA)
+				--equip(sets.UpheavalWSD)
+				send_command("@input /echo Upheaval DA Set")
+				-- if buffactive["Mighty Strikes"] then
+					-- equip(sets.UpheavalCrit)
+					-- send_command("@input /echo Upheavel Crit Set")
+					-- end
 			end
 		elseif spell.english == "Impulse Drive" then
-			if spell.target.distance <= 5.6 then
-				TPBonus = TPBonus + 250
-				CurrentTP = player.tp + TPBonus
-				send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
-				if CurrentTP > 1500 then
-					equip(sets.UpheavalCrit)
-					send_command("@input /echo ID Crit Damage WSD Set")
-				else
-					equip(sets.ID)
-					--equip(sets.UpheavalWSD)
-					send_command("@input /echo ID Crit Rate DA Set")
-				end
+			TPBonus = TPBonus + 250
+			CurrentTP = player.tp + TPBonus
+			send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
+			if CurrentTP > 1500 then
+				equip(sets.UpheavalCrit)
+				send_command("@input /echo ID Crit Damage WSD Set")
 			else
-			cancel_spell()
-			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+				equip(sets.ID)
+				--equip(sets.UpheavalWSD)
+				send_command("@input /echo ID Crit Rate DA Set")
 			end
 		elseif spell.english == "Ukko's Fury" then
 			equip(sets.UF)
@@ -1211,14 +1213,9 @@ function precast(spell)
 			equip(sets.Break)
 			send_command("@input /echo Break Set")
 		elseif spell.english == "Resolution" then
-			if spell.target.distance <= 5.6 then	
-				equip(sets.Resolution)
+			equip(sets.Resolution)
 			--equip(sets.ResoWSD)
-				send_command("@input /echo Resolution Set")
-			else
-			cancel_spell()
-			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
-			end
+			send_command("@input /echo Resolution Set")
 		elseif spell.english == "Scourge" then
 			equip(sets.Scourge)
 			send_command("@input /echo Scourge Set")
@@ -1258,17 +1255,12 @@ function precast(spell)
 			--equip(sets.ResoWSD)
 			send_command("@input /echo Rampage Set")
 		elseif spell.english == "Savage Blade" then
-			if spell.target.distance <= 5.6 then
-				if buffactive["Sneak Attack"] then
-					equip(sets.SavageCrit)
-					send_command("@input /echo Savage Blade Crit Set")
-				else
-					equip(sets.Savage)
-					send_command("@input /echo Savage Blade Set")
-				end
+			if buffactive["Sneak Attack"] then
+				equip(sets.SavageCrit)
+				send_command("@input /echo Savage Blade Crit Set")
 			else
-			cancel_spell()
-			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+				equip(sets.Savage)
+				send_command("@input /echo Savage Blade Set")
 			end
 		elseif spell.english == "Requiescat" then
 			equip(sets.Requiescat)
@@ -1284,13 +1276,8 @@ function precast(spell)
 			equip(sets.BH)
 			send_command("@input /echo BH Set")
 		elseif spell.english == "Judgment" then
-			if spell.target.distance <= 5.6 then
-				equip(sets.Judgment)
-				send_command("@input /echo Judgment Set")
-			else
-			cancel_spell()
-			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
-			end
+			equip(sets.Judgment)
+			send_command("@input /echo Judgment Set")
 		elseif spell.english == "True Strike" then
 			equip(sets.Truestrike)
 			send_command("@input /echo TS Set")
@@ -1396,7 +1383,6 @@ function aftercast(spell)
 				equip(sets.TP.DT)
 			end
 		end
-
 	else
 		if Gear_Debug == 0 then
 			equip(sets.Idle.Standard)

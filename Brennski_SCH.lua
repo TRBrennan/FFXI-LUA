@@ -38,7 +38,7 @@ function get_sets()
 		ring2 = "Vocane Ring",
 		waist = "Fucho-no-obi",
 		legs = "Assiduity Pants +1",
-		feet = "Chironic Slippers",
+		feet = "Nyame Sollerets",
 		back = "Moonbeam Cape"
 	}
 
@@ -56,7 +56,7 @@ function get_sets()
 		ring2 = "Defending ring",
 		waist = "Carrier's Sash",
 		legs = "Assiduity Pants +1",
-		feet = "Chironic Slippers",
+		feet = "Nyame Sollerts",
 		back = "Moonbeam Cape"
 	}
 

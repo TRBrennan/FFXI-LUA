@@ -291,26 +291,46 @@ function precast(spell)
 		elseif spell.english == 'Ranged' then
 			equip(sets.Ranged.PreShot)
 		elseif spell.english == 'Savage Blade' then
+			if spell.target.distance <= 5.6 then
                 equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
+			else
+			cancel_spell()
+			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+			end
 		elseif spell.english == 'Vorpal Blade' then
                 equip(sets.VorpalBlade)
 		elseif spell.english == 'Sanguine Blade' or spell.english =='Aeolian Edge' then
                 equip(sets.Leaden)
                 if spell.element == world.day_element or spell.element == world.weather_element then
-                              equip(sets.Utility.Weather)
-                        end
+                    equip(sets.Utility.Weather)
+                end
         elseif spell.english == 'Leaden Salute' then
-			equip(sets.Leaden)
-			 if spell.element == world.day_element or spell.element == world.weather_element then
-                              equip(sets.Utility.Weather)
-                        end
+			if spell.target.distance <= 21.5 then
+				equip(sets.Leaden)
+				if spell.element == world.day_element or spell.element == world.weather_element then
+                    equip(sets.Utility.Weather)
+                end
+			else
+				cancel_spell()
+				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+			end
 		elseif spell.english == 'Wildfire' then
-			equip(sets.WildFire)
-			 if spell.element == world.day_element or spell.element == world.weather_element then
-                              equip(sets.Utility.Weather)
-                        end
+			if spell.target.distance <= 21.5 then
+				equip(sets.WildFire)
+					if spell.element == world.day_element or spell.element == world.weather_element then
+						equip(sets.Utility.Weather)
+                       end
+			else
+				cancel_spell()
+				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+			end
 		elseif spell.english == 'Last Stand' then	
-			equip(sets.LastStand)
+			if spell.target.distance <= 21.5 then
+				equip(sets.LastStand)
+			else
+				cancel_spell()
+				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+			end
 		elseif spell.type == 'WeaponSkill' then
 			equip(sets.LastStand)
 		elseif spell.english == "Corsair's Roll" or spell.english == "Ninja's Roll" or spell.english == "Hunter's Roll" or spell.english == "Chaos Roll" 
@@ -376,7 +396,7 @@ function aftercast(spell)
                 equip(sets.Idle[sets.Idle.index[Idle_ind]])
         end
 		if buffactive['doom'] then
-					equip(sets.Utility.Doom)
+					equip(sets.Utility.Doomed)
 		
 		elseif  buffactive['terror'] or buffactive['stun'] or buffactive['sleep']	then 
 					equip(sets.TP.DT)

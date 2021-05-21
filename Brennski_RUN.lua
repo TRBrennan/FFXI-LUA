@@ -9,8 +9,8 @@ function get_sets()
 	send_command("bind f11 gs c toggle Weapons")
 	send_command("bind ^f9 gs c equip TP set")
 	send_command("bind ^f10 gs c equip DT set")
-	send_command("bind !f9 gs c equip TP set")
-	send_command("bind !f10 gs c equip DT set")
+	send_command("bind f11 gs c equip TP set")
+	send_command("bind f12 gs c equip DT set")
 	
 	function file_unload()
 		send_command("unbind ^f9")
@@ -51,34 +51,34 @@ function get_sets()
 
 	sets.Idle.DT = {
 		ammo = "Staunch Tathlum +1",
-		Head ="Fu. Bandeau +2",
+		head="Nyame Helm",
 		neck = "Futhark Torque +1",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Hearty Earring",
-		body = "Ashera Harness",
+		body = "Nyame Mail",
 		hands = "Regal Gauntlets",
 		left_ring = "Moonlight ring",
 		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
-		waist = "Flume Belt +1",
-		legs = "Eri. Leg Guards +1",
-		feet = "Erilaz Greaves +1"
+		waist = "Engraved Belt",
+		legs="Nyame Flanchard",
+		feet = "Nyame Sollerets"
 	}
 
 	sets.Idle.Cleave = {
 		ammo = "Staunch Tathlum +1",
-		Head ="Fu. Bandeau +2",
+		head="Nyame Helm",
 		neck = "Futhark Torque +1",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Etiolation Earring",
-		body = "Ashera Harness",
+		body = "Nyame Mail",
 		hands = "Regal Gauntlets",
 		left_ring = "Moonlight ring",
 		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
-		waist = "Flume Belt +1",
+		waist = "Engraved Belt",
 		legs = "Carmine Cuisses +1",
-		feet = "Erilaz Greaves +1"
+		feet = "Nyame Sollerets"
 	}
 
 	--Weapons--
@@ -124,7 +124,7 @@ function get_sets()
 
 	sets.TP.TankTP = {
 		ammo = "Yamarang",
-		head = "Adhemar Bonnet +1",
+		head="Nyame Helm",
 		neck = "Futhark Torque +1",
 		left_ear = "Telos Earring",
 		right_ear = "Sherida earring",
@@ -141,14 +141,14 @@ function get_sets()
 
 	sets.TP.MDTank = {
 		ammo = "Staunch Tathlum +1",
-		head = "Fu. Bandeau +2",
-		body = "Ashera Harness",
+		head="Nyame Helm",
+		body = "Nyame Mail",
 		--hands="Regal Gauntlets",
-		hands = "Runeist's Mitons +3",
+		hands = "Nyame Gauntlets",
 		legs = "Eri. Leg Guards +1",
 		feet = "Turms Leggings +1",
 		neck = "Futhark Torque +1",
-		waist = "Flume Belt +1",
+		waist = "Engraved Belt",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Etiolation Earring",
 		right_ring = "Defending Ring",
@@ -759,7 +759,6 @@ function self_command(command)
 		send_command("@input /echo <----- Requiescat Set changed to " .. sets.Requiescat.index[Requiescat_ind] .. " ----->")
 	elseif command == "equip TP set" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
-
 	elseif command == "equip TP set" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		send_command("@input /echo  <--- Equipped TP Set ----->")

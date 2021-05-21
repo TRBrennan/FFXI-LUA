@@ -16,7 +16,7 @@ function get_sets()
 	--Idle Sets--
 	sets.Idle = {}
 
-	sets.Idle.index = {"Standard", "DT", "Cleave"}
+	sets.Idle.index = {"Standard", "DT", "Cleave", "OdyCleave"}
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
@@ -45,7 +45,7 @@ function get_sets()
 		neck="Loricate Torque +1",
 		waist="Carrier's Sash",
 		left_ear="Odnowa Earring +1",
-		right_ear = "Thureous Earring",
+		right_ear = "Tuisto Earring",
 		--right_ear="Genmei Earring",
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
@@ -62,7 +62,23 @@ function get_sets()
 		neck="Loricate Torque +1",
 		waist="Carrier's Sash",
 		left_ear="Odnowa Earring +1",
-		right_ear = "Thureous Earring",
+		right_ear = "Tuisto Earring",
+		left_ring = "Moonlight Ring",
+		right_ring = "Moonbeam Ring",
+		back="Rudianos's Mantle",
+	}
+		
+		sets.Idle.OdyCleave = {
+		ammo="Staunch Tathlum +1",
+		head="Sakpata's Helm",
+		body="Tartarus Platemail",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+		feet="Sakpata's Leggings",
+		neck="Loricate Torque +1",
+		waist="Carrier's Sash",
+		left_ear="Odnowa Earring +1",
+		right_ear = "Tuisto Earring",
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
 		back="Rudianos's Mantle",
@@ -71,8 +87,8 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Tank", "Turtle",}
-	--1=Tank ,2 = Turtle,--
+	sets.TP.index = {"Tank", "Turtle", "OdyTank"}
+	--1=Tank ,2 = Turtle,, 3=OdyTank--
 
 	TP_ind = 1
 	sets.TP.Tank = {
@@ -85,11 +101,10 @@ function get_sets()
 		neck="Unmoving Collar +1",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Odnowa Earring +1",
-		right_ear = "Thureous Earring",
+		right_ear = "Tuisto Earring",
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
 		back="Rudianos's Mantle",
-
 	}
 
 	sets.TP.Turtle = {
@@ -107,6 +122,23 @@ function get_sets()
 		right_ring = "Moonbeam Ring",
 		back = "Rudianos's Mantle"
 	}
+	
+	sets.TP.OdyTank = {
+		ammo="Staunch Tathlum +1",
+		head="Sakpata's Helm",
+		body="Tartarus Platemail",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Sakpata's Cuisses",
+		feet="Sakpata's Leggings",
+		neck="Unmoving Collar +1",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Odnowa Earring +1",
+		right_ear = "Tuisto Earring",
+		left_ring = "Moonlight Ring",
+		right_ring = "Moonbeam Ring",
+		back="Rudianos's Mantle",	
+	}
+	
 	--Weaponskill Sets--
 	sets.WS = {}
 
@@ -237,7 +269,7 @@ function get_sets()
 		neck="Incanter's Torque",
 		waist="Olympus Sash",
 		left_ear="Odnowa Earring +1",
-		right_ear="Thureous Earring",
+		right_ear="Tuisto Earring",
 		left_ring="Moonlight Ring",
 		right_ring="Stikini Ring",
 		back="Moonbeam Cape",
@@ -374,11 +406,32 @@ function precast(spell)
 	end
 
 	if spell.english == "Chant du Cygne" or spell.english == "Resolution" then
-		equip(sets.ChantDuCygne[sets.ChantDuCygne.index[ChantDuCygne_ind]])
+		if spell.target.distance <= 5.6 then
+			equip(sets.ChantDuCygne[sets.ChantDuCygne.index[ChantDuCygne_ind]])
+		else
+			cancel_spell()
+			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+		end
 	end
 
 	if spell.english == "Savage Blade" then
-		equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
+		--equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
+		if spell.target.distance <= 5.6 then
+			equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
+		else
+			cancel_spell()
+			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+		end
+	end
+	
+	if spell.english == "Atonement" then
+		--equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
+		if spell.target.distance <= 5.6 then
+			equip(sets.WS.Atonement)
+		else
+			cancel_spell()
+			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+		end
 	end
 
 	if spell.english == "Sanguine Blade" then
