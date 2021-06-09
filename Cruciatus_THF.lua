@@ -145,19 +145,37 @@ function get_sets()
                                           back="Canny Cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
 										  feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}}, }		
 										  
-		sets.AeolianEdge = {    ammo="Yamarang",
-							head="Mummu Bonnet +1",
-							body="Rawhide Vest",
-							hands="Meg. Gloves +2",
-							legs="Mummu Kecks +2",
-							feet="Mummu Gamash. +2",
-							neck="Sanctity Necklace",
-							waist="Kentarch Belt +1",
-							left_ear="Sherida Earring",
-							right_ear="Friomisi Earring",
-							left_ring="Acumen Ring",
-							right_ring="Petrov Ring",
-							back={ name="Canny Cape", augments={'DEX+2','AGI+1','Crit. hit damage +2%',}},           }                                      
+		sets.AeolianEdge = {        
+			ammo="Pemphredo Tathlum",
+			head="Nyame Helm",
+			body="Nyame Mail",
+			hands="Nyame Gauntlets",
+			legs="Nyame Flanchard",
+			feet="Nyame Sollerets",
+			neck="Sanctity Necklace",
+			waist="Carrier's Sash",
+			left_ear="Friomisi Earring",
+			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			left_ring="Acumen Ring",
+			right_ring="Mummu Ring",
+			back="Toro Cape",
+        }           
+
+	sets.Cyclone= {        
+			ammo="Pemphredo Tathlum",
+			head="Nyame Helm",
+			body="Nyame Mail",
+			hands = "Plunderer's Armlets +1",
+			legs="Nyame Flanchard",
+			feet="Nyame Sollerets",
+			neck="Sanctity Necklace",
+			waist="Carrier's Sash",
+			left_ear="Friomisi Earring",
+			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			left_ring="Acumen Ring",
+			right_ring="Mummu Ring",
+			back="Toro Cape",
+        } 		
 																				  
         --Ninja Magic Sets--
         sets.NINMagic = {}
@@ -242,8 +260,10 @@ function precast(spell)
                 if spell.element == world.day_element or spell.element == world.weather_element then
                               equip(sets.Utility.Weather)
                         end
-        elseif spell.english == 'Aeolian Edge' then
-			equip(sets.AeolianEdge)
+        elseif spell.english == "Aeolian Edge" then
+                equip(sets.AeolianEdge)
+		elseif spell.enlgish == "Cyclone" then
+				equip(sets.Cyclone)
 		elseif spell.english == 'Box Step' then
                 equip(sets.Utility.Steps)
         elseif spell.english == 'Flash Nova' then

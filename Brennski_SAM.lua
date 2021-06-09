@@ -19,14 +19,11 @@ function get_sets()
 	--TP_Body = { name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
 	--TP_Body = "Ken. Samue"
 	TP_Body ={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
-	WSD_Legs = {name = "Valor. Hose", augments = {"Attack+27", "Weapon skill damage +5%", "DEX+8", "Accuracy+15"}}
-	WSD_Hands = {
-		name = "Valorous Mitts",
-		augments = {"Accuracy+17 Attack+17", "Weapon skill damage +3%", "VIT+9", "Accuracy+3", "Attack+12"}
-	}
+	WSD_Legs = "Wakido Haidate +3"
+	WSD_Hands = "Nyame Gauntlets"
 	WSD_Body = "Sakonji Domaru +3"
-	WSD_Head = {name = "Valorous Mask", augments = {"Accuracy+18", "Weapon skill damage +3%", "STR+4", "Attack+11"}}
-	WSD_Feet = {name = "Valorous Greaves", augments = {"Attack+21", "Weapon skill damage +5%"}}
+	WSD_Head = "Nyame Helm"
+	WSD_Feet = "Nyame Sollerets"
 
 	--Idle Sets--
 	sets.Idle = {}
@@ -200,7 +197,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		legs = "Wakido Haidate +3",
-		feet = "Founder's Greaves",
+		feet = WSD_Feet,
 		neck = "Fotia Gorget",
 		waist = "Fotia Belt",
 		left_ear = "Friomisi earring",

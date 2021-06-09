@@ -24,11 +24,14 @@ function get_sets()
 		send_command("unbind f12")
 	end
 
-	TP_Body = "Emicho Haubert +1"
-	WSD_Legs = {name = "Valor. Hose", augments = {"Attack+27", "Weapon skill damage +5%", "DEX+8", "Accuracy+15"}}
-	WSD_Hands = {name = "Valorous Mitts",augments = {"Accuracy+17 Attack+17", "Weapon skill damage +3%", "VIT+9", "Accuracy+3", "Attack+12"}}
-	WSD_Body = {name = "Valorous Mail", augments = {"Accuracy+25", "Weapon skill damage +4%", "DEX+8", "Attack+5"}}
-	WSD_Head = {name = "Valorous Mask", augments = {"Accuracy+18", "Weapon skill damage +3%", "STR+4", "Attack+11"}}
+	--TP_Body = "Emicho Haubert +1"
+	TP_Back = { name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
+	WSD_Back = { name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}}
+	--WSD_Legs = {name = "Valor. Hose", augments = {"Attack+27", "Weapon skill damage +5%", "DEX+8", "Accuracy+15"}}
+	WSD_Legs = "Vishap Brais +2"
+	WSD_Hands = "Pteroslaver Finger Gauntlets +3"
+	WSD_Body = "Nyame Mail"
+	WSD_Head = "Nyame Helm"
 	--Idle Sets--
 	sets.Idle = {}
 
@@ -57,7 +60,7 @@ function get_sets()
 		neck = "Loricate Torque +1",
 		ear1 = "Genmei Earring",
 		ear2 = "Cessance Earring",
-		body = "Tartarus Platemail",
+		body="Nyame Mail",
 		hands = "Sulev. Gauntlets +2",
 		ring1 = "Vocane Ring",
 		ring2 = "Defending  Ring",
@@ -76,9 +79,9 @@ function get_sets()
 	TP_ind = 1
 	sets.TP.Standard = {
 		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		head="Flam. Zucchetto +2",
-		body="Hjarrandi Breast.",
-		hands="Flam. Manopolas +2",
+		head="Hjarrandi Helm",
+		body={ name="Gleti's Cuirass", augments={'Path: A',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
 		legs="Nyame Flanchard",
 		feet="Flam. Gambieras +2",
 		neck="Lissome Necklace",
@@ -86,8 +89,8 @@ function get_sets()
 		left_ear="Sherida Earring",
 		right_ear="Telos Earring",
 		left_ring="Niqmaddu Ring",
-		right_ring="Flamma Ring",
-		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+		right_ring="Petrov Ring",
+		back=TP_Back
 	}
 
 	sets.TP.AccuracyFull = {
@@ -96,13 +99,13 @@ function get_sets()
 		neck = "Sanctity Necklace",
 		ear1 = "Dignitary's Earring",
 		ear2 = "Telos Earring",
-		body = TP_Body,
-		hands = "Emicho Gauntlets +1",
+		body={ name="Gleti's Cuirass", augments={'Path: A',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
 		ring1 = "Cacoethic Ring",
 		ring2 = "Flamma Ring",
-		back = "Brigantia's Mantle",
+		back = TP_Back,
 		waist = "Ioskeha Belt +1",
-		legs = {name = "Valor. Hose", augments = {"Accuracy+23 Attack+23", '"Dbl.Atk."+3', "VIT+4", "Attack+5"}},
+		legs="Nyame Flanchard",
 		feet = "Flam. Gambieras +2"
 	}
 
@@ -117,9 +120,9 @@ function get_sets()
 		waist="Ioskeha Belt +1",
 		left_ear="Sherida Earring",
 		right_ear="Telos Earring",
-		left_ring="Moonlight Ring",
-		right_ring="Niqmaddu Ring",
-		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+		right_ring="Moonlight Ring",
+		left_ring="Niqmaddu Ring",
+		back = TP_Back
 	}
 
 	--Weaponskill Sets--
@@ -132,19 +135,19 @@ function get_sets()
 	Stardiver_ind = 1
 
 	sets.Stardiver.Attack = {
-		ammo = "Coiste Bodhar",
-		head = "Flam. Zucchetto +2",
 		neck = "Fotia Gorget",
-		ear2 = "Moonshade Earring",
-		ear1 = "Sherida Earring",
-		body = "Emicho Haubert +1",
-		hands = "Sulev. Gauntlets +2",
-		ring1 = "Niqmaddu Ring",
-		ring2 = "Regal Ring",
-		back = "Brigantia's Mantle",
+		back = TP_Back,
 		waist = "Fotia Belt",
-		legs = "Sulevia's Cuisses +2",
-		feet = "Flam. Gambieras +2"
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Hjarrandi Helm",
+		body={ name="Gleti's Cuirass", augments={'Path: A',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		legs="Nyame Flanchard",
+		feet="Flam. Gambieras +2",
+		left_ear="Sherida Earring",
+		right_ear="Moonshade Earring",
+		left_ring="Niqmaddu Ring",
+		right_ring="Petrov Ring",
 	}
 
 	sets.ImpulseDrive = {}
@@ -163,7 +166,7 @@ function get_sets()
 		hands = WSD_Hands,
 		ring1 = "Regal Ring",
 		ring2 = "Niqmaddu Ring",
-		back = "Brigantia's Mantle",
+		back = WSD_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet = "Sulevia's Leggings +2"
@@ -185,7 +188,7 @@ function get_sets()
 		hands = WSD_Hands,
 		ring1 = "Regal Ring",
 		ring2 = "Niqmaddu Ring",
-		back = "Brigantia's Mantle",
+		back = WSD_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet = "Sulevia's Leggings +2"
@@ -203,22 +206,22 @@ function get_sets()
 		neck = "Caro Necklace",
 		ear2 = "Moonshade Earring",
 		ear1 = "Sherida Earring",
-		body = "Sulevia's Plate. +2",
+		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu Ring",
 		ring2 = "Regal Ring",
-		back = "Brigantia's Mantle",
+		back = WSD_Back,
 		waist = "Sailfi Belt +1",
-		legs = "Sulevia's Cuisses +2",
+		legs = WSD_Legs,
 		feet = "Thereoid Greaves"
 	}
 	
 	sets.WS.OneHit ={
 	    ammo="Knobkierrie",
-		head="Nyame Helm",
-		body="Nyame Mail",
-		hands="Nyame Gauntlets",
-		legs = "Vishap Brais +2",
+		head= WSD_Head,
+		body = WSD_Body,
+		hands = WSD_Hands,
+		legs = WSD_Legs,
 		feet="Sulev. Leggings +2",
 		neck="Caro Necklace",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
@@ -226,7 +229,7 @@ function get_sets()
 		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		left_ring="Niqmaddu Ring",
 		right_ring="Regal Ring",
-		 back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}},
+		back = WSD_Back,
 	}
 
 	--Ninja Magic Sets--
@@ -266,10 +269,10 @@ function get_sets()
 		ear1 = "Dragoon's Earring",
 		legs = "Volte Hose",
 		waist = "Chaac Belt",
-		Hands = "Volte Bracers"
+		Hands = WSD_Hands
 	} -- Angon, Relic Hands, and that dumb earring in Mamook if you feel like it
 	
-	sets.JA.AncientCircle = {legs = "Vishap Brais +2"} -- Artifact Legs
+	sets.JA.AncientCircle = {legs = WSD_Legs} -- Artifact Legs
 
 	sets.JA.SpiritLink = {
 		head = "Vishap Armet +1",
@@ -283,7 +286,7 @@ function get_sets()
 		ear2 = "Lancer's Earring",
 		body = "Ptero. Mail +1",
 		hands = "Despair Fin. Gaunt.",
-		back = "Brigantia's Mantle",
+		back = TP_Back,
 		legs = "Vishap Brais +1",
 		feet = "Ptero. Greaves +1"
 	} -- Relic Body and Wyvern HP go here
@@ -318,7 +321,7 @@ function get_sets()
 		ear2 = "Lancer's Earring",
 		body = TP_Body,
 		hands = "Despair Fin. Gaunt.",
-		back = "Brigantia's Mantle",
+		back = TP_Back,
 		waist = "Glassblower's Belt",
 		legs = "Vishap Brais +1",
 		feet = "Ptero. Greaves +1"

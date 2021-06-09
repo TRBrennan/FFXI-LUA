@@ -39,17 +39,16 @@ function get_sets()
 		ammo="Staunch Tathlum +1",
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
-		hands="Regal Gauntlets",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs="Sakpata's Cuisses",
 		feet="Sakpata's Leggings",
-		neck="Loricate Torque +1",
-		waist="Carrier's Sash",
+		neck = "Unmoving Collar +1",
+		waist= "Carrier's Sash",
 		left_ear="Odnowa Earring +1",
 		right_ear = "Tuisto Earring",
-		--right_ear="Genmei Earring",
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
-		back="Rudianos's Mantle",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 
 	sets.Idle.Cleave = {
@@ -65,7 +64,7 @@ function get_sets()
 		right_ear = "Tuisto Earring",
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
-		back="Rudianos's Mantle",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 		
 		sets.Idle.OdyCleave = {
@@ -104,7 +103,7 @@ function get_sets()
 		right_ear = "Tuisto Earring",
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
-		back="Rudianos's Mantle",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.TP.Turtle = {
@@ -117,10 +116,10 @@ function get_sets()
 		neck = "Unmoving Collar +1",
 		waist= "Carrier's Sash",
 		left_ear="Odnowa Earring +1",
-		right_ear = "Hearty Earring",
+		right_ear = "Tuisto Earring",
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
-		back = "Rudianos's Mantle"
+		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 	
 	sets.TP.OdyTank = {
@@ -136,7 +135,7 @@ function get_sets()
 		right_ear = "Tuisto Earring",
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
-		back="Rudianos's Mantle",	
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},	
 	}
 	
 	--Weaponskill Sets--
@@ -159,7 +158,7 @@ function get_sets()
 		ring2 = "Regal Ring",
 		ring1 = "Petrov Ring",
 		waist = "Fotia Belt",
-		back = "Rudianos's Mantle",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.SavageBlade = {}
@@ -177,7 +176,7 @@ function get_sets()
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		ring1 = "Petrov Ring",
 		ring2 = "Regal Ring",
-		back = {name = "Cichol's Mantle", augments = {"VIT+20", "Accuracy+20 Attack+20", "Weapon skill damage +10%"}},
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},
 		waist = "Sailfi Belt +1",
 		legs="Sakpata's Cuisses",
 		feet = "Sulevia's Leggings +2"
@@ -198,7 +197,7 @@ function get_sets()
 		hands = "Flam. Manopolas +2",
 		ring2 = "Rajas ring",
 		ring1 = "Petrov Ring",
-		back = "Rudianos's Mantle",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},
 		waist = "Fotia Belt",
 		legs="Sakpata's Cuisses",
 		feet = "Thereoid Greaves"
@@ -217,22 +216,22 @@ function get_sets()
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
 		waist = "Eschan Stone",
-		back = "Rudianos's Mantle",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},
 		legs = "Hagondes Pants",
 		feet = "Weatherspoon souliers +1"
 	}
 
 	sets.WS.Atonement = {
 		ammo = "Sapience Orb",
-		ear2 = "Friomisi Earring",
-		back = "Weard Mantle",
+		ear2 = "Thrud Earring",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 		waist = "Fotia Belt",
 		ring2 = "Supershear Ring",
 		neck = "Fotia Gorget",
-		hands = "Souveran Handschuhs",
+		hands = "Souveran Handschuhs +1",
 		feet = "Souveran Schuhs +1",
 		body = "Reverence Surcoat +3",
-		ring1 = "Petrov Ring",
+		ring1 = "Moonligh Ring",
 		legs = "Souveran Diechlings +1",
 		head = "Souveran Schaller +1"
 	}
@@ -261,7 +260,7 @@ function get_sets()
 	
 	sets.Magic.Phalanx ={
 	    ammo="Staunch Tathlum +1",
-		head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+		head={ name="Odyssean Helm", augments={'Mag. Acc.+4','Magic dmg. taken -4%','Phalanx +2','Accuracy+6 Attack+6','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
 		body="Rev. Surcoat +3",
 		hands={ name="Souv. Handschuhs", augments={'HP+50','Shield skill +10','Phys. dmg. taken -3',}},
 		legs="Sakpata's Cuisses",
@@ -272,14 +271,14 @@ function get_sets()
 		right_ear="Tuisto Earring",
 		left_ring="Moonlight Ring",
 		right_ring="Stikini Ring",
-		back="Moonbeam Cape",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 
 	sets.Magic.Reprisal = {
 		ammo = "Sapience Orb",
 		ear1 = "Odnowa Earring +1",
 		ear2 = "Etiolation Earring",
-		back = "Moonbeam Cape",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 		waist = "Trance Belt",
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
@@ -303,7 +302,7 @@ function get_sets()
 		waist="Trance Belt",
 		left_ear="Odnowa Earring +1",
 		right_ear="Friomisi Earring",
-		left_ring="Petrov Ring",
+		left_ring="Defending Ring",
 		right_ring="Supershear Ring",
 		back = "Reiki Cloak",
 	}
@@ -314,7 +313,7 @@ function get_sets()
 		neck = "Incanter's Torque",
 		ring1 = "Ephedra Ring",
 		ring2 = "Sirona's Ring",
-		ear1 = "Nourish. Earring",
+		ear1 = "Nourish. Earring +1",
 		back = "Solmenity Cape"
 	}
 
@@ -340,11 +339,11 @@ function get_sets()
 	sets.Utility.Enmity = {
 		ammo = "Sapience Orb",
 		ear2 = "Friomisi Earring",
-		back = "Reiki Cloak",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 		waist = "Trance belt",
 		ring2 = "Supershear Ring",
 		neck = "Unmoving Collar +1",
-		hands = "Souveran Handschuhs",
+		hands = "Souveran Handschuhs +1",
 		feet = "Souveran Schuhs +1",
 		body = "Reverence Surcoat +3",
 		ring1 = "Petrov Ring",
@@ -360,13 +359,14 @@ function get_sets()
 
 	sets.JA.ShieldBash = {
 		Legs = "Volte Hose",
-		hands = "Volte Bracers",
+		hands = "Caballarius Gauntlets +2",
 		waist = "Chaac Belt",
 		Head = {
 			name = "Valorous Mask",
 			augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}
 		}
 	}
+	
 
 	sets.JA.Sentinel = {feet = "Caballarius Leggings +1"}
 
@@ -383,7 +383,7 @@ function get_sets()
 		ammo = "Sapience Orb",
 		head = "Carmine Mask +1",
 		body = "Reverence Surcoat +3",
-		hands = "Souveran Handschuhs",
+		hands = "Souveran Handschuhs +1",
 		legs = "Sakpata Cuisses",
 		feet = "Odyssean Greaves",
 		neck = "Voltsurge Torque",

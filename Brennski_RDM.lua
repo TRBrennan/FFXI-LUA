@@ -185,7 +185,7 @@ function get_sets()
 		ring2 = "Acumen Ring",
 		waist = "Sacro Cord",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
-		legs = {name = "Merlinic Shalwar", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "Mag. crit. hit dmg. +1%", "Mag. Acc.+11", '"Mag.Atk.Bns."+13'}},
+		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','INT+10','"Mag.Atk.Bns."+2',}},
 		feet = {name = "Merlinic Crackows",augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Fast Cast"+3', "INT+10", '"Mag.Atk.Bns."+1'}	}
 	}
 
@@ -283,7 +283,7 @@ function get_sets()
 		body = "Atrophy Tabard +3",
 		hands = "Kaykaus Cuffs +1",
 		ring1 = "Stikini Ring",
-		ring2 = "Kishar Ring",
+		ring2 = "Metamor. Ring +1",
 		waist = "Luminary Sash",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 		legs = "Chironic Hose",
@@ -325,7 +325,7 @@ function get_sets()
 		left_ear="Regal Earring",
 		right_ear="Snotra Earring",
 		left_ring="Stikini Ring",
-		right_ring="Kishar Ring",
+		right_ring="Metamor. Ring +1",
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 
@@ -343,7 +343,7 @@ function get_sets()
 		left_ear="Regal Earring",
 		right_ear="Snotra Earring",
 		left_ring="Stikini Ring",
-		right_ring="Kishar Ring",
+		right_ring="Metamor. Ring +1",
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 
@@ -414,7 +414,7 @@ function get_sets()
 		left_ear="Malignance Earring",
 		right_ear="Snotra Earring",
 		left_ring="Stikini Ring",
-		right_ring="Kishar Ring",
+		right_ring="Metamor. Ring +1",
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 	
@@ -445,7 +445,7 @@ function get_sets()
 		waist = "Luminary Sash",
 		left_ear="Regal Earring",
 		right_ear="Snotra Earring",
-		left_ring = "Rahab Ring",
+		left_ring = "Metamor. Ring +1",
 		right_ring = "Kishar Ring",
 		hands = "Leyline Gloves",
 		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
@@ -471,7 +471,7 @@ function get_sets()
 		left_ear="Vor Earring",
 		right_ear="Snotra Earring",
 		left_ring="Stikini Ring",
-		right_ring="Kishar Ring",
+		right_ring="Metamor. Ring +1",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 	}
 
@@ -629,13 +629,14 @@ function get_sets()
 		neck = "Caro Necklace",
 		ear1 = "Ishvara Earring",
 		ear2 = "Moonshade Earring",
-		body = "Vitiation tabard +3",
+		--body = "Vitiation tabard +3",
+		body="Nyame Mail",
 		hands = "Atrophy Gloves +3",
 		ring1 = "Petrov Ring",
 		ring2 = "Ilabrat Ring",
 		back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 		waist = "Sailfi Belt +1",
-		legs = "Jhakri Slops +2",
+		legs="Nyame Flanchard",
 		feet={ name="Chironic Slippers", augments={'Attack+13','"Mag.Atk.Bns."+5','Weapon skill damage +7%','Accuracy+18 Attack+18','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
 	}
 	
@@ -645,7 +646,8 @@ function get_sets()
 		neck = "Duelist's torque +2",
 		ear2 = "Malignance Earring",
 		ear1 = "Regal Earring",
-		body = { name = "Merlinic Jubbah", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
+		--body = { name = "Merlinic Jubbah", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
+		body="Nyame Mail",
 		hands = "Jhakri Cuffs +2",
 		ring1 = "Evanescence Ring",
 		ring2 = "Freke Ring",
@@ -663,7 +665,8 @@ function get_sets()
 		neck = "Duelist's torque +2",
 		ear2 = "Malignance Earring",
 		ear1 = "Regal Earring",
-		body = { name = "Merlinic Jubbah", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
+		--body = { name = "Merlinic Jubbah", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
+		body="Nyame Mail",
 		hands = "Jhakri Cuffs +2",
 		ring1 = "Acumen Ring",
 		ring2 = "Freke Ring",
@@ -672,6 +675,21 @@ function get_sets()
 		legs = { name = "Merlinic Shalwar",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "Mag. crit. hit dmg. +1%", "Mag. Acc.+11", '"Mag.Atk.Bns."+13'}},
 		feet = "Vitiation Boots +3",
 		--feet={ name="Chironic Slippers", augments={'Attack+13','"Mag.Atk.Bns."+5','Weapon skill damage +7%','Accuracy+18 Attack+18','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
+	}
+	
+	sets.WS.Hybrid ={
+	    head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+		body="Nyame Mail",
+		hands="Jhakri Cuffs +2",
+		legs="Nyame Flanchard",
+		feet="Nyame Sollerets",
+		neck="Fotia Gorget",
+		waist="Fotia Belt",
+		left_ear="Friomisi Earring",
+		right_ear="Ishvara Earring",
+		left_ring="Ilabrat Ring",
+		right_ring="Freke Ring",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 	}
 	
 end
@@ -720,6 +738,8 @@ function precast(spell)
 		send_command("@input /echo Light/Magic WS Set")
 	elseif spell.english == "Arching Arrow" then
 		equip(sets.Utility.RangedAttack)
+	elseif spell.english == "Flaming Arrow" then
+		equip(sets.WS.Hybrid)
 	elseif spell.english == "Composure" then
 		equip(sets.JA.Composure)
 		send_command("@input /echo Composure Set")

@@ -204,30 +204,18 @@ function get_sets()
 
         sets.Rudras = {
                 ammo = "Yetshila",
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}
-                },
+                head = "Nyame Helm",
                 neck = "Caro Necklace",
-                ear1 = "Moonshade Earring",
-                ear2 = "Ishvara Earring",
-                body = {
-                        name = "Herculean Vest",
-                        augments = {"Accuracy+21 Attack+21", "Weapon skill damage +4%", "DEX+4", "Attack+5"}
-                },
+                ear1 = "Ishvara Earring",
+                ear2 = "Moonshade Earring",
+                body = "Nyame Mail",
                 hands = "Meg. Gloves +2",
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Sailfi Belt +1",
-                legs = {
-                        name = "Herculean Trousers",
-                        augments = {"Accuracy+12 Attack+12", "Weapon skill damage +3%", "DEX+9", "Accuracy+13"}
-                },
-                feet = {
-                        name = "Herculean Boots",
-                        augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}
-                }
+				legs="Nyame Flanchard",
+				feet="Nyame Sollerets",
         }
 
         sets.Exenterator = {
@@ -264,112 +252,59 @@ function get_sets()
 
         sets.SharkBite = {
                 ammo = "Jukukik Feather",
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}
-                },
+                head = "Nyame Helm",
                 neck = "Caro Necklace",
                 ear1 = "Ishvara Earring",
                 ear2 = "Moonshade Earring",
-                body = "Herculean Vest",
+                body = "Nyame Mail",
                 hands = "Meg. Gloves +2",
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Sailfi Belt +1",
-                legs = {
-                        name = "Herculean Trousers",
-                        augments = {"Accuracy+12 Attack+12", "Weapon skill damage +3%", "DEX+9", "Accuracy+13"}
-                },
-                feet = {
-                        name = "Herculean Boots",
-                        augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}
-                }
+				legs="Nyame Flanchard",
+				feet="Nyame Sollerets",
         }
 
         sets.AeolianEdge = {
-                head = {
-                        name = "Herculean Helm",
-                        augments = {
-                                'Mag. Acc.+20 "Mag.Atk.Bns."+20',
-                                '"Dbl.Atk."+2',
-                                "Mag. Acc.+12",
-                                '"Mag.Atk.Bns."+4'
-                        }
-                },
-                neck = "Sanctity Necklace",
-                ear2 = "Friomisi earring",
-                ear1 = "Moonshade Earring",
-                body = "Samnuha Coat",
-                hands = "Meg. Gloves +2",
-                ring1 = "Acumen Ring",
-                ring2 = "Dingir Ring",
-                waist = "Chaac Belt",
-                back = "Belenus's Cape",
-                legs = {
-                        name = "Herculean Trousers",
-                        augments = {
-                                'Mag. Acc.+16 "Mag.Atk.Bns."+16',
-                                "Weapon skill damage +2%",
-                                "Mag. Acc.+14",
-                                '"Mag.Atk.Bns."+13'
-                        }
-                },
-                feet = {
-                        name = "Herculean Boots",
-                        augments = {
-                                '"Mag.Atk.Bns."+27',
-                                "Weapon skill damage +4%",
-                                "Quadruple Attack +1",
-                                'Mag. Acc.+14 "Mag.Atk.Bns."+14'
-                        }
-                }
+            ammo="Pemphredo Tathlum",
+			head="Nyame Helm",
+			body="Nyame Mail",
+			hands="Nyame Gauntlets",
+			legs="Nyame Flanchard",
+			feet="Nyame Sollerets",
+			neck="Sanctity Necklace",
+			waist="Orpheus's Sash",
+			left_ear="Friomisi Earring",
+			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			left_ring="Acumen Ring",
+			right_ring="Dingir Ring",
+			back="Izdubar Mantle",
         }
+		
+		sets.Cyclone = {
+            ammo="Pemphredo Tathlum",
+			head="Nyame Helm",
+			body="Nyame Mail",
+			hands = "Plunderer's Armlets +1",
+			legs="Nyame Flanchard",
+			feet="Nyame Sollerets",
+			neck="Sanctity Necklace",
+			waist="Orpheus's Sash",
+			left_ear="Friomisi Earring",
+			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			left_ring="Acumen Ring",
+			right_ring="Dingir Ring",
+			back="Izdubar Mantle",
+        }
+
 
         --Ninja Magic Sets--
         sets.NINMagic = {}
 
-        sets.NINMagic.Nuke = {
-                head = {
-                        name = "Herculean Helm",
-                        augments = {
-                                'Mag. Acc.+20 "Mag.Atk.Bns."+20',
-                                '"Dbl.Atk."+2',
-                                "Mag. Acc.+12",
-                                '"Mag.Atk.Bns."+4'
-                        }
-                },
-                neck = "Sanctity Necklace",
-                ear2 = "Friomisi earring",
-                ear1 = "Hecate's Earring",
-                body = "Samnuha Coat",
-                hands = "Leyline Gloves",
-                ring1 = "Shiva Ring",
-                ring2 = "Acumen Ring",
-                waist = "Eschan Stone",
-                back = "Gunslinger's Cape",
-                legs = {
-                        name = "Herculean Trousers",
-                        augments = {
-                                'Mag. Acc.+16 "Mag.Atk.Bns."+16',
-                                "Weapon skill damage +2%",
-                                "Mag. Acc.+14",
-                                '"Mag.Atk.Bns."+13'
-                        }
-                },
-                feet = {
-                        name = "Herculean Boots",
-                        augments = {
-                                '"Mag.Atk.Bns."+27',
-                                "Weapon skill damage +4%",
-                                "Quadruple Attack +1",
-                                'Mag. Acc.+14 "Mag.Atk.Bns."+14'
-                        }
-                }
-        }
 
         sets.NINMagic.Utsusemi = {
-head="Malignance Chapeau",
+				head="Malignance Chapeau",
                 neck = "Loricate Torque",
                 ar1 = "Brutal Earring",
                 ear2 = "Cessance Earring",
@@ -514,6 +449,8 @@ function precast(spell)
                 end
         elseif spell.english == "Aeolian Edge" then
                 equip(sets.AeolianEdge)
+		elseif spell.enlgish == "Cyclone" then
+				equip(sets.Cyclone)
         elseif spell.english == "Box Step" then
                 equip(sets.Utility.Steps)
         elseif spell.english == "Flash Nova" then

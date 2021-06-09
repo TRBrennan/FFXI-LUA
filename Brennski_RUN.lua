@@ -145,7 +145,8 @@ function get_sets()
 		body = "Nyame Mail",
 		--hands="Regal Gauntlets",
 		hands = "Nyame Gauntlets",
-		legs = "Eri. Leg Guards +1",
+		--legs = "Eri. Leg Guards +1",
+		legs = "Nyame Flanchard",
 		feet = "Turms Leggings +1",
 		neck = "Futhark Torque +1",
 		waist = "Engraved Belt",
@@ -160,7 +161,7 @@ function get_sets()
 		head = "Erilaz galea +1",
 		body = "Ashera Harness",
 		hands = "Regal Gauntlets",
-		legs = "Eri. Leg Guards +1",
+		legs = "Nyame Flanchard",
 		feet = "Turms Leggings +1",
 		neck = "Futhark Torque +1",
 		waist = "Flume Belt +1",
@@ -221,11 +222,11 @@ function get_sets()
 
 	sets.Dimidiation.Attack = {
 		ammo = "Knobkierrie",
-		head = {name = "Herculean Helm", augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}},
-		body = {name = "Herculean Vest", augments = {"Accuracy+21 Attack+21", "Weapon skill damage +4%", "DEX+4", "Attack+5"}},
+		Head = "Nyame Helm",
+		Body = "Nyame Mail",
 		hands = "Meg. Gloves +2",
-		legs = {name = "Herculean Trousers",augments = {"Accuracy+12 Attack+12", "Weapon skill damage +3%", "DEX+9", "Accuracy+13"}	},
-		feet = { name = "Herculean Boots",augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}},
+		Legs = "Nyame Flanchard",
+		Feet = "Nyame Sollerets",
 		neck = "Caro Necklace",
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
@@ -287,18 +288,18 @@ function get_sets()
 
 	sets.SavageBlade.Attack = {
 		ammo = "Knobkierrie",
-		head = {name = "Herculean Helm", augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}},
+		Head = "Nyame Helm",
 		neck = "Caro Necklace",
 		right_ear = "Ishvara Earring",
 		left_ear = "Moonshade Earring",
-		body = {name = "Herculean Vest", augments = {"Accuracy+21 Attack+21", "Weapon skill damage +4%", "DEX+4", "Attack+5"}},
+		Body = "Nyame Mail",
 		hands = "Meg. Gloves +2",
 		right_ring = "Niqmaddu Ring",
 		left_ring = "Regal Ring",
 		back = {name = "Ogma's cape", augments = {"DEX+20", "Accuracy+20 Attack+20", "DEX+10", "Weapon skill damage +10%"}},
 		waist = "Sailfi Belt +1",
-		legs = { name = "Herculean Trousers",augments = {"Accuracy+12 Attack+12", "Weapon skill damage +3%", "DEX+9", "Accuracy+13"}},
-		feet = {name = "Herculean Boots", augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}}
+		Legs = "Nyame Flanchard",
+		Feet = "Nyame Sollerets",
 	}
 
 	--Utility Sets--
@@ -306,7 +307,7 @@ function get_sets()
 
 	sets.Utility.Phalanx = {
 		ammo = "Sapience Orb",
-		Head ="Fu. Bandeau +2",
+		Head ="Fu. Bandeau +3",
 		neck = "Incanter's Torque",
 		left_ear = "Andoaa Earring",
 		right_ear = "Mimir Earring",
@@ -315,7 +316,7 @@ function get_sets()
 		waist = "Olympus Sash",
 		ring1 = "Stikini Ring",
 		right_ring = "Supershear Ring",
-		legs = {name = "Futhark Trousers +1", augments = {'Enhances "Inspire" effect'}},
+		legs = "Futhark Trousers +3",
 		feet = {name = "Herculean Boots",augments = {"Magic burst dmg.+6%",'"Fast Cast"+1',"Phalanx +4","Accuracy+14 Attack+14",'Mag. Acc.+16 "Mag.Atk.Bns."+16'}},
 		back = "Evasionist's cape"
 	}
@@ -331,7 +332,7 @@ function get_sets()
 		right_ring = "Supershear Ring",
 		back = "Moonbeam Cape",
 		waist = "Flume Belt +1",
-		legs = "Futhark Trousers +1",
+		legs = "Futhark Trousers +3",
 		feet = "Erilaz Greaves +1"
 	}
 
@@ -378,7 +379,7 @@ function get_sets()
 		waist = "Olympus Sash",
 		ring1 = "Stikini Ring",
 		right_ring = "Supershear Ring",
-		legs = "Futhark Trousers +1",
+		legs = "Futhark Trousers +3",
 		feet = "Erilaz Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
@@ -410,7 +411,7 @@ function get_sets()
 		waist = "Gishdubar Sash",
 		ring1 = "Stikini Ring",
 		right_ring = "Supershear Ring",
-		legs = {name = "Futhark Trousers +1", augments = {'Enhances "Inspire" effect'}},
+		legs = "Futhark Trousers +3",
 		feet = "Erilaz Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
@@ -426,37 +427,22 @@ function get_sets()
 	sets.JA.Embolen = {back = "Evasionist's cape"}
 
 	sets.JA.Lunge = {
-		ammo = "Seeth. Bomblet +1",
-		head = {
-			name = "Herculean Helm",
-			augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Dbl.Atk."+2', "Mag. Acc.+12", '"Mag.Atk.Bns."+4'}
-		},
-		neck = "Sanctity Necklace",
-		right_ear = "Friomisi earring",
-		left_ear = "Odnowa Earring +1",
-		body = "Samnuha Coat",
-		hands = "Carmine Finger Gauntlets +1",
-		ring1 = "Acumen Ring",
-		right_ring = "Supershear Ring",
-		waist = "Eschan Stone",
-		back = "Evasionist's cape",
-		legs = {
-			name = "Herculean Trousers",
-			augments = {'Mag. Acc.+16 "Mag.Atk.Bns."+16', "Weapon skill damage +2%", "Mag. Acc.+14", '"Mag.Atk.Bns."+13'}
-		},
-		feet = {
-			name = "Herculean Boots",
-			augments = {'"Mag.Atk.Bns."+27', "Weapon skill damage +4%", "Quadruple Attack +1", 'Mag. Acc.+14 "Mag.Atk.Bns."+14'}
+		    ammo="Pemphredo Tathlum",
+			head="Nyame Helm",
+			body="Nyame Mail",
+			hands="Nyame Gauntlets",
+			legs="Nyame Flanchard",
+			feet="Nyame Sollerets",
+			neck="Sanctity Necklace",
+			waist="Orpheus's Sash",
+			left_ear="Friomisi Earring",
+			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			left_ring="Acumen Ring",
+			right_ring="Dingir Ring",
+			back="Izdubar Mantle",
 		}
-	}
 
-	sets.JA.Vallation = {
-		body = "Runeist's Coat +3",
-		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
-		legs = {name = "Futhark Trousers +1", augments = {'Enhances "Inspire" effect'}}
-	}
-
-	sets.JA.Battuta = {Head ="Fu. Bandeau +2", hands = "Turms Mittens"}
+	sets.JA.Battuta = {Head ="Fu. Bandeau +3", hands = "Turms Mittens"}
 
 	sets.JA.BattutaActive = {hands = "Turms Mittens"}
 

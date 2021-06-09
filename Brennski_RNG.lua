@@ -379,32 +379,11 @@ function get_sets()
 
 	sets.OtherAxe = {}
 	sets.OtherAxe.Attack = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+18 Attack+18", "MND+2", "Weapon skill damage +10%"}},
-		body = {
-			name = "Herculean Vest",
-			augments = {
-				"CHR+2",
-				"Mag. Acc.+4",
-				"Weapon skill damage +6%",
-				"Accuracy+9 Attack+9",
-				'Mag. Acc.+11 "Mag.Atk.Bns."+11'
-			}
-		},
+		head = "Nyame Helm",
+		body = "Nyame Mail",
 		hands = "Meg. Gloves +1",
-		legs = {
-			name = "Herculean Trousers",
-			augments = {
-				"Accuracy+14",
-				"CHR+2",
-				"Weapon skill damage +6%",
-				"Accuracy+12 Attack+12",
-				'Mag. Acc.+11 "Mag.Atk.Bns."+11'
-			}
-		},
-		feet = {
-			name = "Herculean Boots",
-			augments = {"Mag. Acc.+21", "Weapon skill damage +4%", "INT+9", '"Mag.Atk.Bns."+10'}
-		},
+		Legs = "Nyame Flancard",
+		feet = "Nyame Sollerets",
 		neck = "Caro Necklace",
 		waist = "Chiner's Belt +1",
 		left_ear = "Telos Earring",
@@ -414,19 +393,10 @@ function get_sets()
 		back = {name = "Belenus's Cape", augments = {"DEX+20", "Accuracy+20 Attack+20", "DEX+10", '"Dbl.Atk."+10'}}
 	}
 	sets.OtherAxe.Accuracy = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+18 Attack+18", "MND+2", "Weapon skill damage +10%"}},
+		head = "Nyame Helm",
 		body = {name = "Adhemar Jacket", augments = {"DEX+10", "AGI+10", "Accuracy+15"}},
-		hands = "Meg. Gloves +1",
-		legs = {
-			name = "Herculean Trousers",
-			augments = {
-				"Accuracy+14",
-				"CHR+2",
-				"Weapon skill damage +6%",
-				"Accuracy+12 Attack+12",
-				'Mag. Acc.+11 "Mag.Atk.Bns."+11'
-			}
-		},
+		hands = "Meg. Gloves +2",
+		hands="Nyame Gauntlets",
 		feet = "Meg. Jam. +2",
 		neck = "Shifting Neck. +1",
 		waist = "Chiner's Belt +1",
@@ -500,56 +470,38 @@ function get_sets()
 	sets.MagicGun = {}
 	sets.MagicGun.Attack = {
 		ammo = "Orichalc. Bullet",
-		head = {
-			name = "Herculean Helm",
-			augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Dbl.Atk."+2', "Mag. Acc.+12", '"Mag.Atk.Bns."+4'}
-		},
+		head = "Nyame Helm",
 		neck = "Sanctity Necklace",
 		ear2 = "Friomisi earring",
 		ear1 = "Moonshade Earring",
-		body = "Samnuha Coat",
-		hands = "Carmine Finger Gauntlets +1",
+		body = "Nyame Mail",
+		hands="Nyame Gauntlets",
 		ring1 = "Acumen Ring",
 		ring2 = "Dingir Ring",
 		waist = "Eschan Stone",
 		back = "Belenus's Cape",
-		legs = {
-			name = "Herculean Trousers",
-			augments = {'Mag. Acc.+16 "Mag.Atk.Bns."+16', "Weapon skill damage +2%", "Mag. Acc.+14", '"Mag.Atk.Bns."+13'}
-		},
-		feet = {
-			name = "Herculean Boots",
-			augments = {'"Mag.Atk.Bns."+27', "Weapon skill damage +4%", "Quadruple Attack +1", 'Mag. Acc.+14 "Mag.Atk.Bns."+14'}
-		}
+		Legs = "Nyame Flanchard",
+		Feet = "Nyame Sollerets",
 	}
 	sets.MagicGun.Accuracy = {
 		ammo = "Orichalc. Bullet",
-		head = {
-			name = "Herculean Helm",
-			augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Dbl.Atk."+2', "Mag. Acc.+12", '"Mag.Atk.Bns."+4'}
-		},
+		head = "Nyame Helm",
 		neck = "Sanctity Necklace",
 		ear2 = "Friomisi earring",
 		ear1 = "Moonshade Earring",
-		body = "Samnuha Coat",
-		hands = "Carmine Finger Gauntlets +1",
+		body = "Nyame Mail",
+		hands="Nyame Gauntlets",
 		ring1 = "Acumen Ring",
 		ring2 = "Dingir Ring",
 		waist = "Eschan Stone",
 		back = "Belenus's Cape",
-		legs = {
-			name = "Herculean Trousers",
-			augments = {'Mag. Acc.+16 "Mag.Atk.Bns."+16', "Weapon skill damage +2%", "Mag. Acc.+14", '"Mag.Atk.Bns."+13'}
-		},
-		feet = {
-			name = "Herculean Boots",
-			augments = {'"Mag.Atk.Bns."+27', "Weapon skill damage +4%", "Quadruple Attack +1", 'Mag. Acc.+14 "Mag.Atk.Bns."+14'}
-		}
+		Legs = "Nyame Flanchard",
+		Feet = "Nyame Sollerets",
 	}
 
 	sets.OtherWS = {}
 	sets.OtherWS.Attack = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}},
+		Head = "Nyame Helm",
 		neck = "Fotia gorget",
 		ear1 = "Sherida Earring",
 		ear2 = "Moonshade Earring",
@@ -563,7 +515,7 @@ function get_sets()
 		feet = "Meg. Jam. +2"
 	}
 	sets.OtherWS.Accuracy = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}},
+		Head = "Nyame Helm",
 		neck = "Fotia gorget",
 		ear1 = "Sherida Earring",
 		ear2 = "Moonshade Earring",
@@ -657,27 +609,18 @@ function get_sets()
 
 	sets.AeolianEdge = {}
 	sets.AeolianEdge = {
-		head = {
-			name = "Herculean Helm",
-			augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Dbl.Atk."+2', "Mag. Acc.+12", '"Mag.Atk.Bns."+4'}
-		},
+		head = "Nyame Helm",
 		neck = "Sanctity Necklace",
 		ear2 = "Friomisi earring",
 		ear1 = "Moonshade Earring",
-		body = "Samnuha Coat",
+		body = "Nyame Mail",
 		hands = "Meg. Gloves +2",
 		ring1 = "Acumen Ring",
 		ring2 = "Dingir Ring",
 		waist = "Eschan Stone",
 		back = "Belenus's Cape",
-		legs = {
-			name = "Herculean Trousers",
-			augments = {'Mag. Acc.+16 "Mag.Atk.Bns."+16', "Weapon skill damage +2%", "Mag. Acc.+14", '"Mag.Atk.Bns."+13'}
-		},
-		feet = {
-			name = "Herculean Boots",
-			augments = {'"Mag.Atk.Bns."+27', "Weapon skill damage +4%", "Quadruple Attack +1", 'Mag. Acc.+14 "Mag.Atk.Bns."+14'}
-		}
+		Legs = "Nyame Flanchard",
+		Feet = "Nyame Sollerets",
 	}
 
 	--Job Ability Sets--
@@ -717,7 +660,7 @@ function get_sets()
 	sets.snapshot = {
 		head = "Amini Gapette", -- 7
 		body = "Nisroch Jerkin", -- 7
-		hands = "Carmine Finger Gauntlets +1", --8
+		hands="Nyame Gauntlets", --8
 		back = "Lutian Cape", -- 2
 		legs = "Adhemar Kecks",
 		waist = "Impulse Belt", -- 2

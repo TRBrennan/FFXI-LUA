@@ -210,15 +210,7 @@ function get_sets()
         hands = "Adhemar Wristbands +1",
         ring1 = "Ilabrat Ring",
         ring2 = "Epona's ring",
-        back = {
-            name = "Rosmerta's Cape",
-            augments = {
-                'DEX+20',
-                'Accuracy+20 Attack+20',
-                '"Dbl.Atk."+10',
-                'Phys. dmg. taken-10%',
-            }
-        },
+        back = {name = "Rosmerta's Cape", augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
         waist = "Fotia belt",
         legs = "Samnuha Tights",
         feet = "Carmine Greaves +1"
@@ -231,14 +223,7 @@ function get_sets()
 
     sets.SavageBlade.Attack = {
         ammo = "Coiste Bodhar",
-        head = {
-            name = "Herculean Helm",
-            augments = {
-                'Accuracy+24 Attack+24',
-                'Weapon skill damage +5%',
-                'DEX+4',
-            }
-        },
+		Head = "Nyame Helm",
         neck = "Mirage Stole +1",
         ear1 = "Ishvara Earring",
         ear2 = "Moonshade Earring",
@@ -256,15 +241,7 @@ function get_sets()
         },
         waist = "Sailfi Belt +1",
         legs="Luhlaza Shalwar +3",
-        feet = {
-            name = "Herculean Boots",
-            augments = {
-                'Accuracy+22 Attack+22',
-                'Weapon skill damage +4%',
-                'STR+3',
-                'Attack+8',
-            }
-        },
+        Feet = "Nyame Sollerets",
     }
 
     sets.ChantDuCygne = {}
@@ -279,10 +256,7 @@ function get_sets()
         ear2 = "Moonshade Earring",
         ear1 = "Telos Earring",
         body = "Adhemar Jacket +1",
-        hands = {
-            name = "Adhemar Wrist. +1",
-            augments = {'STR+12', 'DEX+12', 'Attack+20',}
-        },
+        hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         ring1 = "Hetairoi Ring",
         ring2 = "Epona's Ring",
         back = {
@@ -309,14 +283,7 @@ function get_sets()
         ring1 = "Shiva Ring",
         ring2 = 'Archon Ring',
         waist = "Sacro Cord",
-        back = {
-            name = "Rosmerta's Cape",
-            augments = {
-                'STR+20',
-                'Accuracy+20 Attack+20',
-                'Weapon skill damage +10%',
-            }
-        },
+        back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         legs="Luhlaza Shalwar +3",
         feet = "Amarlic Nails +1"
     }
@@ -328,36 +295,18 @@ function get_sets()
         ear2 = "Moonshade Earring",
         ear1 = "Telos Earring",
         body = "Adhemar Jacket +1",
-        hands = {
-            name = "Herculean Gloves",
-            augments = {
-                'Accuracy+21 Attack+21',
-                '"Triple Atk."+2',
-                'STR+11',
-                'Accuracy+9',
-            }
-        },
+       hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         ring1 = "Ilabrat Ring",
         ring2 = "Epona's Ring",
         back = { name = "Rosmerta's Cape",   augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
         waist = "Fotia belt",
         legs="Luhlaza Shalwar +3",
-        feet = {
-            name = "Herculean Boots",
-            augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}
-        }
-    }
+        feet = {name = "Herculean Boots",augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}} 
+	}
 
     sets.Expiacion = {
         ammo = "Coiste Bodhar",
-        head = {
-            name = "Herculean Helm",
-            augments = {
-                'Accuracy+24 Attack+24',
-                'Weapon skill damage +5%',
-                'DEX+4',
-            }
-        },
+		Head = "Nyame Helm",
         neck = "Mirage Stole +1",
         ear1 = "Moonshade Earring",
         ear2 = "Ishvara Earring",
@@ -365,25 +314,10 @@ function get_sets()
 		hands = "Jhakri Cuffs +2",
         ring1 = "Ilabrat Ring",
         ring2 = "Petrov Ring",
-        back = {
-            name = "Rosmerta's Cape",
-            augments = {
-                'STR+20',
-                'Accuracy+20 Attack+20',
-                'Weapon skill damage +10%',
-            }
-        },
+        back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         waist = "Sailfi Belt +1",
         legs="Luhlaza Shalwar +3",
-        feet = {
-            name = "Herculean Boots",
-            augments = {
-                'Accuracy+22 Attack+22',
-                'Weapon skill damage +4%',
-                'STR+3',
-                'Attack+8',
-            }
-        },
+        Feet = "Nyame Sollerets",
     }
 
     sets.Realmrazer = {}
@@ -398,23 +332,13 @@ function get_sets()
         ear1 = "Brutal Earring",
         ear2 = "Cessance Earring",
         body = "Adhemar Jacket +1",
-        hands = {
-            name = "Adhemar Wrist. +1",
-            augments = {'STR+12', 'DEX+12', 'Attack+20',}
-        },
+        hands = "Jhakri Cuffs +2",
         ring1 = "Ilabrat Ring",
         ring2 = "Epona's ring",
-        back = {
-            name = "Rosmerta's Cape",
-            augments = {
-                'STR+20',
-                'Accuracy+20 Attack+20',
-                'Weapon skill damage +10%',
-            }
-        },
+		back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         waist = "Fotia belt",
-        legs = "Telchine Braconi",
-        feet = "Rawhide Boots"
+		legs="Luhlaza Shalwar +3",
+        Feet = "Nyame Sollerets",
     }
 
     sets.FlashNova = {

@@ -205,7 +205,7 @@ function get_sets()
         right_ear = "Barkarole Earring",
         body = "Geomancy Tunic +2",
         hands = "Lurid Mitts",
-        ring1 = "Kishar Ring",
+        ring1 = "Metamor. Ring +1",
         ring2 = "Stikini Ring",
         back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
         waist = "Embla Sash",

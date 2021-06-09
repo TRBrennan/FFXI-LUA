@@ -200,7 +200,7 @@ function get_sets()
 	sets.WS.RF = {
 		ammo = "Knobkierrie",
 		head = "Hes. Crown +3",
-		body = {name = "Herculean Vest", augments = {"Accuracy+21 Attack+21", "Weapon skill damage +4%", "DEX+4", "Attack+5"}},
+		Body = "Nyame Mail",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Ken. Hakama",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
