@@ -202,17 +202,14 @@ function get_sets()
 		body = "Adhemar Jacket +1",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Samnuha Tights",
-		feet = "Lustra. Leggings +1",
+		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
 		neck = "Fotia Gorget",
 		waist = "Fotia Belt",
 		left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ear = "Sherida Earring",
 		right_ring = "Niqmaddu Ring",
 		left_ring = "Regal Ring",
-		back = {
-			name = "Ogma's cape",
-			augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}
-		}
+		back = { name = "Ogma's cape",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}	},
 	}
 
 	sets.Dimidiation = {}
@@ -268,17 +265,14 @@ function get_sets()
 		body = "Adhemar Jacket +1",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Samnuha Tights",
-		feet = "Lustra. Leggings +1",
+		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
 		neck = "Fotia Gorget",
 		waist = "Fotia Belt",
 		left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ear = "Telos Earring",
 		right_ring = "Niqmaddu Ring",
 		left_ring = "Regal ring",
-		back = {
-			name = "Ogma's cape",
-			augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}
-		}
+		back = { name = "Ogma's cape",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}	},
 	}
 
 	sets.SavageBlade = {}

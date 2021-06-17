@@ -58,8 +58,8 @@ function get_sets()
         --TP Sets--
         sets.TP = {}
  
-           sets.TP.index = {'StandardNIN', 'DNCSub', 'AccuracyFull', 'DT', 'DTAccuracy', }
-                --1=Standard, 2 = DNCSub, 3=AccuracyFull, 4=DT, 5=DTAccuracy,--
+           sets.TP.index = {'StandardNIN', 'DNCSub', 'AccuracyFull', 'DT', 'DTAccuracy', 'DTSW'}
+                --1=Standard, 2 = DNCSub, 3=AccuracyFull, 4=DT, 5=DTAccuracy, 7=DTSW,--
 				
                 TP_ind = 1
 				sets.TP.StandardNIN = {  ammo ="Chrono bullet",
@@ -105,6 +105,21 @@ function get_sets()
 										right_ring="Epona's Ring",
 										back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 										}
+				sets.TP.DTSW = {
+				   ammo="Chrono Bullet",
+					head="Malignance Chapeau",
+					body="Malignance Tabard",
+					hands="Malignance Gloves",
+					legs="Malignance Tights",
+					feet="Malignance Boots",
+					neck="Lissome Necklace",
+					waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+					left_ear="Telos Earring",
+					right_ear="Digni. Earring",
+					left_ring="Chirich Ring +1",
+					right_ring="Epona's Ring",
+					back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+				}
                                                          				
        --Weaponskill Sets--
         sets.WS = {}
@@ -116,10 +131,10 @@ function get_sets()
         SavageBlade_ind = 1
        
         sets.SavageBlade.Attack = {ammo ="Chrono bullet",
-                                          head = "Nyame Mail",
+                                          head = "Nyame Helm",
 										  neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Laksa. Frac +3",
-										  hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Rajas Ring",
+										  hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Ilabrat Ring",
                                           back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 										  waist="Sailfi Belt +1",Legs = "Nyame Flanchard",
 										  feet="Lanun Bottes +3" }
@@ -130,7 +145,7 @@ function get_sets()
 	    sets.SanguineBlade.index = {'Attack'}
         SanguineBlade_ind = 1
         sets.SanguineBlade = {ammo ="Chrono bullet",
-                                 head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Dbl.Atk."+2','Mag. Acc.+12','"Mag.Atk.Bns."+4',}},neck="Commodore Charm +1",
+                                 head = "Nyame Helm",neck="Commodore Charm +1",
 								 rear="Friomisi earring", ear1="Novio Earring",
                                  body="Lanun Frac +3",hands = "Nyame Gauntlets", ring1="Dignir Ring", ring2 ='Fenrir Ring', waist ="Eschan Stone",
                                  back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},

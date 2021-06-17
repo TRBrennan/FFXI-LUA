@@ -977,10 +977,7 @@ function get_sets()
 		ear1 = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
 		left_ring = "Niqmaddu Ring",
 		right_ring = "Regal Ring",
-		back = {
-			name = "Cichol's Mantle",
-			augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}
-		}
+		back = {name = "Cichol's Mantle",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}}
 	}
 
 	sets.UpheavalCrit = {
@@ -1013,10 +1010,7 @@ function get_sets()
 		right_ear = "Thrud Earring",
 		left_ring = "Regal Ring",
 		right_ring = "Niqmaddu Ring",
-		back = {
-			name = "Cichol's Mantle",
-			augments = {"VIT+20", "Accuracy+20 Attack+20", "VIT+10", "Weapon skill damage +10%"}
-		}
+		back = {name = "Cichol's Mantle",augments = {"VIT+20", "Accuracy+20 Attack+20", "VIT+10", "Weapon skill damage +10%"}}
 	}
 
 	--Job Ability Sets--
@@ -1038,13 +1032,10 @@ function get_sets()
 	sets.JA.Tomahawk = {
 		ammo = "Throwing Tomahawk",
 		feet = "Agoge Calligae +2",
-		waist = "Chaac Belt",
 		Hands = "Volte Bracers",
+		waist = "Chaac Belt",
 		Legs ="Volte Hose",
-		head = {
-			name = "Valorous Mask",
-			augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}
-		}
+		head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}}
 	}
 
 	sets.Utility = {}

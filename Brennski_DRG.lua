@@ -27,8 +27,7 @@ function get_sets()
 	--TP_Body = "Emicho Haubert +1"
 	TP_Back = { name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
 	WSD_Back = { name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}}
-	--WSD_Legs = {name = "Valor. Hose", augments = {"Attack+27", "Weapon skill damage +5%", "DEX+8", "Accuracy+15"}}
-	WSD_Legs = "Vishap Brais +2"
+	WSD_Legs = "Vishap Brais +3"
 	WSD_Hands = "Pteroslaver Finger Gauntlets +3"
 	WSD_Body = "Nyame Mail"
 	WSD_Head = "Nyame Helm"
@@ -82,9 +81,10 @@ function get_sets()
 		head="Hjarrandi Helm",
 		body={ name="Gleti's Cuirass", augments={'Path: A',}},
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
-		legs="Nyame Flanchard",
+		--legs="Nyame Flanchard",
+		legs={ name="Valorous Hose", augments={'Accuracy+10 Attack+10','"Store TP"+5','AGI+2','Accuracy+7','Attack+13',}},
 		feet="Flam. Gambieras +2",
-		neck="Lissome Necklace",
+		neck="Dragoon's collar +2",
 		waist="Ioskeha Belt +1",
 		left_ear="Sherida Earring",
 		right_ear="Telos Earring",
@@ -96,7 +96,7 @@ function get_sets()
 	sets.TP.AccuracyFull = {
 		ammo = "Seeth. Bomblet +1",
 		head = {name = "Valorous Mask", augments = {"Accuracy+30", '"Store TP"+4', "AGI+10", "Attack+13"}},
-		neck = "Sanctity Necklace",
+		neck = "Dragoon's collar +2",
 		ear1 = "Dignitary's Earring",
 		ear2 = "Telos Earring",
 		body={ name="Gleti's Cuirass", augments={'Path: A',}},
@@ -116,7 +116,7 @@ function get_sets()
 		hands="Nyame Gauntlets",
 		legs="Nyame Flanchard",
 		feet="Nyame Sollerets",
-		neck="Lissome Necklace",
+		neck="Dragoon's collar +2",
 		waist="Ioskeha Belt +1",
 		left_ear="Sherida Earring",
 		right_ear="Telos Earring",
@@ -203,7 +203,7 @@ function get_sets()
 	sets.Drakesbane.Attack = {
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
-		neck = "Caro Necklace",
+		neck = "Dragoon's collar +2",
 		ear2 = "Moonshade Earring",
 		ear1 = "Sherida Earring",
 		body = WSD_Body,
@@ -223,7 +223,7 @@ function get_sets()
 		hands = WSD_Hands,
 		legs = WSD_Legs,
 		feet="Sulev. Leggings +2",
-		neck="Caro Necklace",
+		neck="Dragoon's collar +2",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Thrud Earring",
 		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -261,8 +261,14 @@ function get_sets()
 	--Job Ability Sets--
 
 	sets.JA = {}
-	sets.JA.Jump = sets.TP.Standard
-
+	sets.JA.Jump = {
+		hands = "Vishap finger gauntlets +2",
+		neck = "Lissome Neckalace",
+		left_ring="Flamma Ring",
+		Feet = "Ostro Greaves"
+	}
+	
+	
 	sets.JA.Angon = {
 		head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}},
 		ammo = "Angon",
@@ -280,6 +286,7 @@ function get_sets()
 		hands = "Pel. Vambraces +1",
 		feet = "Ptero. Greaves +1"
 	} -- Spirit Link/Empathy gear go here
+	
 	sets.JA.SpiritSurge = {
 		neck = "Chanoix's Gorget",
 		ear1 = "Anastasi Earring",
@@ -287,7 +294,7 @@ function get_sets()
 		body = "Ptero. Mail +1",
 		hands = "Despair Fin. Gaunt.",
 		back = TP_Back,
-		legs = "Vishap Brais +1",
+		legs = WSD_Legs,
 		feet = "Ptero. Greaves +1"
 	} -- Relic Body and Wyvern HP go here
 	sets.JA.SteadyWing = sets.JA.SpiritSurge -- Wyvern HP
@@ -366,19 +373,8 @@ function precast(spell)
 			cancel_spell()
 			send_command('input /ja "Call Wyvern" <me>')
 		end
-	elseif string.find(spell.name, "Jump") == "Jump" then
-		if not pet.isvalid then
-			if spell.name == "Spirit Jump" then
-				cancel_spell()
-				send_command('input /ja "Jump" <t>')
-				return
-			elseif spell.name == "Soul Jump" then
-				cancel_spell()
-				send_command('input /ja "High Jump" <t>')
-				return
-			end
-		end
-		equip(sets.JA.Jump)
+	elseif spell.name == "Jump" or spell.name == "High Jump" or spell.name == "Spirit Jump" or spell.name == "Soul Jump" then
+		equip(set_combine(sets.TP.Standard, sets.JA.Jump))
 	elseif spell.type == "WeaponSkill" then
 		equip(sets.WS.OneHit)
 	end

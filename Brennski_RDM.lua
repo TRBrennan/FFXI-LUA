@@ -637,7 +637,7 @@ function get_sets()
 		back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 		waist = "Sailfi Belt +1",
 		legs="Nyame Flanchard",
-		feet={ name="Chironic Slippers", augments={'Attack+13','"Mag.Atk.Bns."+5','Weapon skill damage +7%','Accuracy+18 Attack+18','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
+		feet = "Nyame Sollerets"
 	}
 	
 	sets.WS.Sang ={
