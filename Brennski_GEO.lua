@@ -131,7 +131,7 @@ function get_sets()
     left_ear="Calamitous Earring",
     right_ear="Mendi. Earring",
     left_ring="Defending Ring",
-    right_ring="Stikini Ring",
+    right_ring="Stikini ring +1",
     back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +18','Pet: Damage taken -4%',}},
     }
 
@@ -149,7 +149,7 @@ function get_sets()
     left_ear="Calamitous Earring",
     right_ear="Mendi. Earring",
     left_ring="Defending Ring",
-    right_ring="Stikini Ring",
+    right_ring="Stikini ring +1",
     back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
     }
 
@@ -205,7 +205,7 @@ function get_sets()
         body = "Shango Robe",
         hands = "Lurid Mitts",
         ring1 = "Kishar Ring",
-        ring2 = "Stikini Ring",
+        ring2 = "Stikini ring +1",
         back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
         waist = "Ovate Rope",
         legs = "Psycloth Lappas",
@@ -242,7 +242,7 @@ function get_sets()
         left_ear = "Regal Earring",
         body = "Geomancy Tunic",
         hands = "Jhakri Cuffs +1",
-        ring1 = "Stikini Ring",
+        ring1 = "Stikini ring +1",
         ring2 = "Evanescence ring",
         back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
         waist = "Sacro Cord",

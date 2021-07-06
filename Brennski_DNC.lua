@@ -44,7 +44,7 @@ function get_sets()
                 ring1 = "Defending ring",
                 ring2 = "Vocane Ring",
                 back = "Moonbeam Cape",
-                waist = "Flume belt +1",
+                waist = "Carrier's Sash",
                 legs = "Mummu Kecks +2",
                 feet = "Turms Leggings +1"
         }
@@ -65,7 +65,7 @@ function get_sets()
                 ring1 = "Defending ring",
                 ring2 = "Vocane Ring",
                 back = "Moonbeam Cape",
-                waist = "Flume belt +1",
+                waist = "Carrier's Sash",
                 legs = "Mummu Kecks +2",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
         }
@@ -139,7 +139,7 @@ function get_sets()
                 ring1 = "Vocane Ring",
                 ring2 = "Ilabrat Ring",
                 back = "Moonbeam Cape",
-                waist = "Flume belt +1",
+                waist = "Carrier's Sash",
                 legs = "Mummu Kecks +2",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
         }
@@ -158,7 +158,7 @@ function get_sets()
                 ring1 = "Dark ring",
                 ring2 = "Vocane Ring",
                 back = "Canny Cape",
-                waist = "Flume belt +1",
+                waist = "Carrier's Sash",
                 legs = "Mummu Kecks +2",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
         }
@@ -179,7 +179,7 @@ function get_sets()
                         name = "Herculean Vest",
                         augments = {"Accuracy+21 Attack+21", "Weapon skill damage +4%", "DEX+4", "Attack+5"}
                 },
-                hands = "Meg. Gloves +2",
+                hands = "Nyame Gauntlets",
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
                 back = "Canny Cape",
@@ -236,7 +236,7 @@ function get_sets()
                 ear1 = "Ishvara Earring",
                 ear2 = "Moonshade Earring",
                 body = "Herculean Vest",
-                hands = "Meg. Gloves +2",
+                hands = "Nyame Gauntlets",
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
                 back = "Canny Cape",
@@ -265,7 +265,7 @@ function get_sets()
                 ear2 = "Friomisi earring",
                 ear1 = "Moonshade Earring",
                 body = "Samnuha Coat",
-                hands = "Meg. Gloves +2",
+                hands = "Nyame Gauntlets",
                 ring1 = "Acumen Ring",
                 ring2 = "Dingir Ring",
                 waist = "Chaac Belt",
@@ -345,7 +345,7 @@ function get_sets()
                 ring1 = "Vocane Ring",
                 ring2 = "Petrov Ring",
                 back = "Moonbeam Cape",
-                waist = "Flume belt +1",
+                waist = "Carrier's Sash",
                 legs = "Herculean Trousers",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
         }

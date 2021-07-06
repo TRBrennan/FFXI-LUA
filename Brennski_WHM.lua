@@ -180,7 +180,7 @@ function get_sets()
         ear2 = "Regal Earring",
         body = "Chironic doublet",
         hands = "Lurid mitts",
-        ring1 = "Stikini Ring",
+        ring1 = "Stikini ring +1",
         ring2 = "Kishar Ring",
         back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}},
         waist = "Rumination sash",

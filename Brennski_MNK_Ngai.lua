@@ -210,7 +210,7 @@ function get_sets()
 		ring1 = "Vocane Ring",
 		ring2 = "Niqmaddu Ring",
 		back = "Moonbeam Cape",
-		waist = "Flume belt +1",
+		waist = "Carrier's Sash",
 		legs = "Herculean Trousers",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}

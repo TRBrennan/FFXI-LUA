@@ -270,7 +270,7 @@ function init_gear_sets()
         waist="Eschan Stone",
 		feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}},
         left_ear="Stealth Earring", right_ear="Dignitary's Earring",
-        left_ring="Stikini Ring", right_ring="Sangoma Ring",
+        left_ring="Stikini ring +1", right_ring="Sangoma Ring",
         back="Izdubar Mantle"}
  
     sets.midcast.NinjutsuBuff = {
@@ -283,7 +283,7 @@ function init_gear_sets()
 		ring2="Vocane Ring",
 		ring1="Defending Ring",
         back="Moonbeam Cape",
-		waist="Flume belt +1",
+		waist="Carrier's Sash",
 		legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
 		feet={ name="Herculean Boots", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','VIT+10','"Mag.Atk.Bns."+12',}}}
  
@@ -315,7 +315,7 @@ function init_gear_sets()
         legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}}, 
         feet=gear.MovementFeet,
         neck="Sanctity necklace",
-        waist="Flume Belt +1",
+        waist="Carrier's Sash",
         left_ear="Infused Earring", right_ear="Genmei Earring",   
         left_ring="Vocane Ring",
         right_ring="Defending Ring",
@@ -330,7 +330,7 @@ function init_gear_sets()
         legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
         feet=gear.MovementFeet,
         neck="Sanctity necklace",
-        waist="Flume Belt +1",
+        waist="Carrier's Sash",
         left_ear="Infused Earring", right_ear="Genmei Earring",   
         right_ring="Vocane Ring",
         left_ring="Defending Ring",
@@ -344,7 +344,7 @@ function init_gear_sets()
         legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
         feet=gear.MovementFeet,
         neck="Sanctity necklace",
-        waist="Flume Belt +1",
+        waist="Carrier's Sash",
         left_ear="Infused Earring", right_ear="Genmei Earring",    
         right_ring="Vocane Ring",
         left_ring="Defending Ring",
@@ -358,7 +358,7 @@ function init_gear_sets()
         legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
         feet=gear.MovementFeet,
         neck="Sanctity necklace",
-        waist="Flume Belt +1",
+        waist="Carrier's Sash",
         left_ear="Infused Earring", right_ear="Genmei Earring",   
         Right_ring="Meridian Ring",
         Left_ring="Defending Ring",
@@ -375,7 +375,7 @@ function init_gear_sets()
         legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+25','Phys. dmg. taken -5%','INT+6','Mag. Acc.+9',}},
         feet="Herculean Boots",
         neck="Loricate Torque +1",
-        waist="Flume Belt +1",
+        waist="Carrier's Sash",
         left_ear="Genmei Earring",
         right_ear="Suppanomimi",
         right_ring="Vocane Ring",

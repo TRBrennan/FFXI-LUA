@@ -90,8 +90,8 @@ function get_sets()
 		ring1 = "Moonlight Ring",
 		ring2 = "Defending Ring",
 		back = "Moonbeam Cape",
-		waist = "Flume belt +1",
-		feet = "Sulevia's Leggings +2"
+		waist = "Carrier's Sash",
+		feet = "Nyame Sollerets"
 	}
 
 	--TP Sets--
@@ -316,7 +316,7 @@ function get_sets()
 		--waist = "Ioskeha Belt +1",
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.UpheavalDA = {
@@ -380,7 +380,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.Break = {
@@ -394,7 +394,7 @@ function get_sets()
 		waist = "Eschan Stone",
 		left_ear = "Digni. Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
-		left_ring = "Stikini Ring",
+		left_ring = "Stikini ring +1",
 		right_ring = "Flamma Ring",
 		back = "Izdubar Mantle"
 	}
@@ -428,7 +428,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = "Sakpata's Cuisses",
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.FellCleave = {
@@ -444,7 +444,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = "Sakpata's Cuisses",
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.MT = {
@@ -460,7 +460,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.Savage = {
@@ -476,7 +476,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.SavageCrit = {
@@ -604,7 +604,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.MistralCrit = {
@@ -668,7 +668,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
-		feet = "Sulevia's Leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.Shockwave = {
@@ -716,7 +716,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		feet = "Sulevia's Leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.Herculean = {
@@ -780,7 +780,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.BH = {
@@ -796,7 +796,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.Hexa = {
@@ -877,7 +877,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = "Sakpata's Cuisses",
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.CR = {
@@ -893,7 +893,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.Retribution = {
@@ -909,7 +909,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.FullSwing = {
@@ -925,7 +925,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.TK = {
@@ -941,7 +941,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.DK = {
@@ -957,7 +957,7 @@ function get_sets()
 		back = WSD_Back,
 		waist = "Caudata belt",
 		legs = WSD_Legs,
-		feet = "Sulevia's leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.RF = {

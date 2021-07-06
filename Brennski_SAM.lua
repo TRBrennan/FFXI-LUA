@@ -39,7 +39,7 @@ function get_sets()
 		legs = {name = "Herculean Trousers",augments = {'Mag. Acc.+16 "Mag.Atk.Bns."+16', "Weapon skill damage +2%", "Mag. Acc.+14", '"Mag.Atk.Bns."+13'}},
 		feet = "Amm Greaves",
 		neck = "Sanctity necklace",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
 		right_ear = "Genmei Earring",
 		right_ring = "Vocane Ring",
@@ -58,7 +58,7 @@ function get_sets()
 		right_ring = "Vocane Ring",
 		left_ring = "Defending Ring",
 		back = "Moonbeam Cape",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		legs = "Ken. Hakama",
 		feet = "Amm Greaves"
 	}
@@ -129,7 +129,7 @@ function get_sets()
 		right_ring = "Vocane Ring",
 		left_ring = "Defending Ring",
 		back = "Moonbeam Cape",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		legs = "Ken. Hakama",
 		feet = "Amm Greaves"
 	}
@@ -220,7 +220,7 @@ function get_sets()
 		right_ring = "Vocane Ring",
 		left_ring = "Petrov Ring",
 		back = "Moonbeam Cape",
-		waist = "Flume belt +1",
+		waist = "Carrier's Sash",
 		legs = "Herculean Trousers",
 		feet = "Valorous Greaves"
 	}

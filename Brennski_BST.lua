@@ -48,7 +48,7 @@ function get_sets()
 		hands = "Ankusa Gloves",
 		ring1 = "Vocane Ring",
 		ring2 = "Defending ring",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		legs = "Herculean Trousers",
 		feet = "Amm Greaves",
 		back = "Mecistopins mantle"
@@ -75,7 +75,7 @@ function get_sets()
 		ring1 = "Defending ring",
 		ring2 = "Succor ring",
 		back = "Cornflower Cape",
-		waist = "Flume belt +1",
+		waist = "Carrier's Sash",
 		legs = "Samnuha Tights",
 		feet = "Amm Greaves"
 	}
@@ -234,7 +234,7 @@ function get_sets()
 			}
 		},
 		neck = "Shulmanu Collar",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ear = "Sabong Earring",
 		right_ear = "Enmerkar Earring"
 	}
@@ -338,7 +338,7 @@ function get_sets()
 				"Attack+5"
 			}
 		},
-		hands = "Meg. Gloves +2",
+		hands = "Nyame Gauntlets",
 		legs = {
 			name = "Valor. Hose",
 			augments = {
@@ -444,7 +444,7 @@ function get_sets()
 		ring1 = "Vocane Ring",
 		ring2 = "Petrov Ring",
 		back = "Moonbeam Cape",
-		waist = "Flume belt +1",
+		waist = "Carrier's Sash",
 		legs = "Herculean Trousers",
 		feet = {
 			name = "Herculean Boots",

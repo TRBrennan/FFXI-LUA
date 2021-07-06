@@ -24,12 +24,12 @@ function get_sets()
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", 
 									  ear1="Genmei earring", ear2="Infused Earring",
                                       body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Defending ring",ring2="Vocane Ring",
-                                      waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Sulevia's Leggings +2", back ="Moonbeam Cape"}
+                                      waist="Carrier's Sash",legs="Carmine Cuisses +1",feet="Nyame Sollerets", back ="Moonbeam Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum +1", 
 							head="Sulevia's Mask +2",neck="Loricate Torque +1", ear1="Genmei earring", ear2="Infused Earring",
                               body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring2="Vocane Ring",ring1="Defending  Ring",
-                              back="Moonbeam Cape",waist="Flume belt +1",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
+                              back="Moonbeam Cape",waist="Carrier's Sash",legs="Sulevia's Cuisses +2",feet="Nyame Sollerets"}
 										
 							
         --TP Sets--
@@ -68,13 +68,13 @@ function get_sets()
 							  neck="Loricate Torque +1", ear1="Cessance Earring",ear2="Telos Earring",
                               body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending Ring",
                                back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
-							   waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
+							   waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Nyame Sollerets"}
                                  
                 sets.TP.DTAccuracy = {ammo="Coiste Bodhar",
                                       head="Sulevia's Mask +2",neck="Lissome Necklace", ear2="Telos Earring",ear1="Odnowa Earring +1",    
 									  body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Niqmaddu Ring",ring2="Flamma Ring",
                                        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
-									   waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Sulevia's Leggings +2"}
+									   waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Nyame Sollerets"}
                                                          
 									
        --Weaponskill Sets--
@@ -125,7 +125,7 @@ function get_sets()
 									  body={ name="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}},
 									  hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},ring1="Regal Ring",ring2="Niqmaddu Ring",
                                        back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
-									   waist="Sailfi Belt +1",legs={ name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}},feet="Sulevia's Leggings +2"}								
+									   waist="Sailfi Belt +1",legs={ name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}},feet="Nyame Sollerets"}								
         
 		sets.SB ={}
 		sets.SB.Attack = {ammo="Knobkierrie",
@@ -133,7 +133,7 @@ function get_sets()
 									neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
                                     body={ name="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}},hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},ring1="Niqmaddu Ring",ring2="Regal Ring",
                                      back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
-									 waist="Sailfi Belt +1",legs={ name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}},feet="Sulevia's Leggings +2" }
+									 waist="Sailfi Belt +1",legs={ name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}},feet="Nyame Sollerets" }
        
         --Ninja Magic Sets--
         sets.NINMagic = {}
@@ -141,7 +141,7 @@ function get_sets()
 	    sets.NINMagic.Utsusemi ={
                               head="Dampening Tam",neck="Loricate Torque +1", ear1="Brutal Earring",ear2="Cessance Earring",
                               body="Emet harness +1",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Flamma Ring",
-                              back="Solemnity Cape",waist="Flume belt +1",legs="Herculean Trousers",feet="Valorous Greaves"}
+                              back="Solemnity Cape",waist="Carrier's Sash",legs="Herculean Trousers",feet="Valorous Greaves"}
 							  
 		
  

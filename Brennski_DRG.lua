@@ -47,7 +47,7 @@ function get_sets()
 		hands = "Nyame Gauntlets",
 		ring1 = "Defending ring",
 		ring2 = "Vocane Ring",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		legs = "Carmine Cuisses +1",
 		feet="Nyame Sollerets",
 		back = "Moonbeam Cape"
@@ -64,9 +64,9 @@ function get_sets()
 		ring1 = "Vocane Ring",
 		ring2 = "Defending  Ring",
 		back = "Moonbeam Cape",
-		waist = "Flume belt +1",
+		waist = "Carrier's Sash",
 		legs = "Sulevia's Cuisses +1",
-		feet = "Sulevia's Leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	--TP Sets--
@@ -82,7 +82,7 @@ function get_sets()
 		body={ name="Gleti's Cuirass", augments={'Path: A',}},
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
 		--legs="Nyame Flanchard",
-		legs={ name="Valorous Hose", augments={'Accuracy+10 Attack+10','"Store TP"+5','AGI+2','Accuracy+7','Attack+13',}},
+		legs = "Pteroslaver Brais +2",
 		feet="Flam. Gambieras +2",
 		neck="Dragoon's collar +2",
 		waist="Ioskeha Belt +1",
@@ -142,7 +142,7 @@ function get_sets()
 		head="Hjarrandi Helm",
 		body={ name="Gleti's Cuirass", augments={'Path: A',}},
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
-		legs="Nyame Flanchard",
+		legs="Pteroslaver Brais +2",
 		feet="Flam. Gambieras +2",
 		left_ear="Sherida Earring",
 		right_ear="Moonshade Earring",
@@ -169,7 +169,7 @@ function get_sets()
 		back = WSD_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Sulevia's Leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.CT = {}
@@ -191,7 +191,7 @@ function get_sets()
 		back = WSD_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Sulevia's Leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.Drakesbane = {}
@@ -214,6 +214,22 @@ function get_sets()
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet = "Thereoid Greaves"
+	}
+	
+	sets.WS.LegSweep ={
+	    ammo="Pemphredo Tathlum",
+		head="Flam. Zucchetto +2",
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands="Flam. Manopolas +2",
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet="Flam. Gambieras +2",
+		neck="Sanctity Necklace",
+		waist="Windbuffet Belt +1",
+		left_ear="Digni. Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		right_ring="Flamma Ring",
+		back= WSD_Back
 	}
 	
 	sets.WS.OneHit ={
@@ -245,7 +261,7 @@ function get_sets()
 		ring1 = "Vocane Ring",
 		ring2 = "Petrov Ring",
 		back = "Moonbeam Cape",
-		waist = "Flume belt +1",
+		waist = "Carrier's Sash",
 		legs = "Herculean Trousers",
 		feet = "Valorous Greaves"
 	}
@@ -375,6 +391,8 @@ function precast(spell)
 		end
 	elseif spell.name == "Jump" or spell.name == "High Jump" or spell.name == "Spirit Jump" or spell.name == "Soul Jump" then
 		equip(set_combine(sets.TP.Standard, sets.JA.Jump))
+	elseif spell.english == "Leg Sweep" or spell.english == "Flat Blade" then
+		equip(sets.WS.LegSweep)
 	elseif spell.type == "WeaponSkill" then
 		equip(sets.WS.OneHit)
 	end

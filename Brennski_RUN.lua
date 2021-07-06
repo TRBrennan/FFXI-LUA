@@ -60,7 +60,7 @@ function get_sets()
 		left_ring = "Moonlight ring",
 		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
-		waist = "Engraved Belt",
+		waist = "Carrier's Sash",
 		legs="Nyame Flanchard",
 		feet = "Nyame Sollerets"
 	}
@@ -76,7 +76,7 @@ function get_sets()
 		left_ring = "Moonlight ring",
 		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
-		waist = "Engraved Belt",
+		waist = "Carrier's Sash",
 		legs = "Carmine Cuisses +1",
 		feet = "Nyame Sollerets"
 	}
@@ -149,7 +149,7 @@ function get_sets()
 		legs = "Nyame Flanchard",
 		feet = "Turms Leggings +1",
 		neck = "Futhark Torque +1",
-		waist = "Engraved Belt",
+		waist = "Carrier's Sash",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Etiolation Earring",
 		right_ring = "Defending Ring",
@@ -164,7 +164,7 @@ function get_sets()
 		legs = "Nyame Flanchard",
 		feet = "Turms Leggings +1",
 		neck = "Futhark Torque +1",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Odnowa Earring",
 		left_ring = "Moonlight Ring",
@@ -180,7 +180,7 @@ function get_sets()
 		-- legs = "Rune. Trousers +3",
 		-- feet = "Erilaz Greaves +1",
 		-- neck = "Futhark Torque +1",
-		-- waist = "Engraved Belt",
+		-- waist = "Carrier's Sash",
 		-- right_ear = "Hearty Earring",
 		-- left_ear = "Odnowa Earring +1",
 		-- left_ring = "Vocane Ring",
@@ -221,7 +221,7 @@ function get_sets()
 		ammo = "Knobkierrie",
 		Head = "Nyame Helm",
 		Body = "Nyame Mail",
-		hands = "Meg. Gloves +2",
+		hands = "Nyame Gauntlets",
 		Legs = "Nyame Flanchard",
 		Feet = "Nyame Sollerets",
 		neck = "Caro Necklace",
@@ -287,7 +287,7 @@ function get_sets()
 		right_ear = "Ishvara Earring",
 		left_ear = "Moonshade Earring",
 		Body = "Nyame Mail",
-		hands = "Meg. Gloves +2",
+		hands = "Nyame Gauntlets",
 		right_ring = "Niqmaddu Ring",
 		left_ring = "Regal Ring",
 		back = {name = "Ogma's cape", augments = {"DEX+20", "Accuracy+20 Attack+20", "DEX+10", "Weapon skill damage +10%"}},
@@ -308,7 +308,7 @@ function get_sets()
 		body={ name="Taeon Tabard", augments={'"Conserve MP"+5','Phalanx +3',}},
 		hands = "Regal Gauntlets",
 		waist = "Olympus Sash",
-		ring1 = "Stikini Ring",
+		ring1 = "Stikini ring +1",
 		right_ring = "Supershear Ring",
 		legs = "Futhark Trousers +3",
 		feet = {name = "Herculean Boots",augments = {"Magic burst dmg.+6%",'"Fast Cast"+1',"Phalanx +4","Accuracy+14 Attack+14",'Mag. Acc.+16 "Mag.Atk.Bns."+16'}},
@@ -325,7 +325,7 @@ function get_sets()
 		ring1 = "Rahab ring",
 		right_ring = "Supershear Ring",
 		back = "Moonbeam Cape",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		legs = "Futhark Trousers +3",
 		feet = "Erilaz Greaves +1"
 	}
@@ -341,7 +341,7 @@ function get_sets()
 		ring1 = "Evanescence Ring",
 		right_ring = "Supershear Ring",
 		back = "Evasionist's cape",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		legs = "Carmine Cuisses +1",
 		feet = "Erilaz Greaves +1"
 	}
@@ -371,7 +371,7 @@ function get_sets()
 		body = "Emet harness +1",
 		hands = "Regal Gauntlets",
 		waist = "Olympus Sash",
-		ring1 = "Stikini Ring",
+		ring1 = "Stikini ring +1",
 		right_ring = "Supershear Ring",
 		legs = "Futhark Trousers +3",
 		feet = "Erilaz Greaves +1",
@@ -389,7 +389,7 @@ function get_sets()
 		waist = "Olympus Sash",
 		right_ear = "Mimir Earring",
 		left_ear = "Andoaa Earring",
-		left_ring = "Stikini Ring",
+		left_ring = "Stikini ring +1",
 		right_ring = "Supershear Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
@@ -403,7 +403,7 @@ function get_sets()
 		body = "Emet harness +1",
 		hands = "Regal Gauntlets",
 		waist = "Gishdubar Sash",
-		ring1 = "Stikini Ring",
+		ring1 = "Stikini ring +1",
 		right_ring = "Supershear Ring",
 		legs = "Futhark Trousers +3",
 		feet = "Erilaz Greaves +1",
@@ -414,7 +414,7 @@ function get_sets()
 
 	--Job Ability Sets--
 	sets.JA = {}
-	sets.JA.VP = {legs = "Rune. Trousers +3", ring1 = "Stikini Ring", neck = "Incanter's Torque", head = "Erilaz Galea +1"}
+	sets.JA.VP = {legs = "Rune. Trousers +3", ring1 = "Stikini ring +1", neck = "Incanter's Torque", head = "Erilaz Galea +1"}
 
 	sets.JA.Liement = {body = {name = "Futhark Coat +1", augments = {'Enhances "Elemental Sforzo" effect'}}}
 
@@ -459,7 +459,7 @@ function get_sets()
 		legs = "Rune. Trousers +3",
 		feet = "Ahosi Leggings",
 		neck = "Futhark Torque +1",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Hearty Earring",
 		left_ring = "Defending Ring",
@@ -480,7 +480,7 @@ function get_sets()
 		left_ear = "Etiolation Earring",
 		body = "Adhemar Jacket",
 		hands = "Regal Gauntlets",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ring = "Defending Ring",
 		right_ring = "Vocane Ring",
 		legs = "Aya. Cosciales +2",
@@ -496,7 +496,7 @@ function get_sets()
 		left_ear = "Etiolation Earring",
 		body = "Adhemar Jacket",
 		hands = "Regal Gauntlets",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ring = "Defending Ring",
 		right_ring = "Vocane Ring",
 		legs = {name = "Futhark Trousers +1", augments = {'Enhances "Inspire" effect'}},
@@ -512,7 +512,7 @@ function get_sets()
 		left_ear = "Etiolation Earring",
 		body = "Adhemar Jacket",
 		hands = "Regal Gauntlets",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ring = "Defending Ring",
 		right_ring = "Vocane Ring",
 		legs = "Aya. Cosciales +2",
@@ -666,10 +666,16 @@ end
 function status_change(new, old)
 	if new == "Engaged" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
+		if buff == "doom" or buff == "curse" then
+			equip(sets.Utility.Doomed)
+		end
 	elseif new == "Idle" then
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 		if buffactive["terror"] or buffactive["stun"] or (buffactive["sleep"] or buffactive["lullaby"]) then
 			equip(sets.TP.DT)
+		end
+		if buff == "doom" or buff == "curse" then
+			equip(sets.Utility.Doomed)
 		end
 	end
 end

@@ -41,7 +41,7 @@ function get_sets()
                 ring1 = "Defending ring",
                 ring2 = "Vocane Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-                waist = "Flume belt +1",
+                waist = "Carrier's Sash",
                 legs="Malignance Tights",
                 feet = "Turms Leggings +1"
         }
@@ -59,7 +59,7 @@ function get_sets()
                 ring2 = "Defending ring",
                 ring1 = "Moonlight Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-                waist = "Flume belt +1",
+                waist = "Carrier's Sash",
 				legs="Malignance Tights",
 				feet="Malignance Boots",
         }
@@ -72,7 +72,7 @@ function get_sets()
 			legs="Malignance Tights",
 			feet="Turms Leggings +1",
 			neck="Loricate Torque +1",
-			waist="Flume Belt +1",
+			waist="Carrier's Sash",
 			left_ear="Genmei Earring",
 			right_ear="Infused Earring",
 			left_ring="Chirich Ring +1",
@@ -146,7 +146,7 @@ function get_sets()
                 ring1 = "Vocane Ring",
                 ring2 = "Defending Ring",
                 back = "Moonbeam Cape",
-                waist = "Flume belt +1",
+                waist = "Carrier's Sash",
 				legs="Malignance Tights",
 				feet="Malignance Boots",
         }
@@ -162,7 +162,7 @@ function get_sets()
                 ring1 = "Gere ring",
                 ring2 = "Defending Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-                waist = "Flume belt +1",
+                waist = "Carrier's Sash",
  				legs="Malignance Tights",
 				feet="Malignance Boots",
         }
@@ -209,7 +209,7 @@ function get_sets()
                 ear1 = "Ishvara Earring",
                 ear2 = "Moonshade Earring",
                 body = "Nyame Mail",
-                hands = "Meg. Gloves +2",
+                hands = "Nyame Gauntlets",
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -257,7 +257,7 @@ function get_sets()
                 ear1 = "Ishvara Earring",
                 ear2 = "Moonshade Earring",
                 body = "Nyame Mail",
-                hands = "Meg. Gloves +2",
+                hands = "Nyame Gauntlets",
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -313,7 +313,7 @@ function get_sets()
                 ring1 = "Vocane Ring",
                 ring2 = "Petrov Ring",
                 back = "Moonbeam Cape",
-                waist = "Flume belt +1",
+                waist = "Carrier's Sash",
                 legs = "Herculean Trousers",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
         }
@@ -357,7 +357,7 @@ function get_sets()
 					left_ear="Genmei Earring",
 					right_ear="Mimir Earring",
 					left_ring="Moonlight Ring",
-					right_ring="Stikini Ring",
+					right_ring="Stikini ring +1",
 					back="Moonbeam Cape",
         }
 

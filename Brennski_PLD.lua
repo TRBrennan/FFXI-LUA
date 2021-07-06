@@ -168,18 +168,18 @@ function get_sets()
 
 	sets.SavageBlade.Attack = {
 		ammo = "Coiste Bodhar",
-		neck = "Caro Necklace",
-		ear2 = "Telos Earring",
+		neck = "Unmoving Collar +1",
+		left_ear="Odnowa Earring +1",
 		ear1 = "Ishvara Earring",
-		head="Sakpata's Helm",
-		body="Sakpata's Plate",
-		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
-		ring1 = "Petrov Ring",
+		head = "Nyame Helm",
+		body = "Nyame Mail",
+		hands= "Nyame Gauntlets",
+		left_ring = "Moonlight Ring",
 		ring2 = "Regal Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},
 		waist = "Sailfi Belt +1",
-		legs="Sakpata's Cuisses",
-		feet = "Sulevia's Leggings +2"
+		legs = "Nyame Flanchard",
+		feet = "Nyame Sollerets"
 	}
 
 	sets.ChantDuCygne = {}
@@ -239,7 +239,7 @@ function get_sets()
 	--Magic Sets--
 	sets.Magic = {}
 
-	sets.Magic.Divine = {neck = "Incanter's Torque", ring2 = "Stikini Ring"}
+	sets.Magic.Divine = {neck = "Incanter's Torque", ring2 = "Stikini ring +1"}
 
 	sets.Magic.Enhancing = {
 		ear2 = "Andoaa Earring",
@@ -253,7 +253,7 @@ function get_sets()
 		hands = "Regal Gauntlets",
 		feet = "Souveran Schuhs +1",
 		body="Rev. Surcoat +3",
-		ring1 = "Stikini Ring",
+		ring1 = "Stikini ring +1",
 		legs = "Carmine Cuisses +1",
 		head = "Carmine Mask +1"
 	}
@@ -270,7 +270,7 @@ function get_sets()
 		left_ear="Odnowa Earring +1",
 		right_ear="Tuisto Earring",
 		left_ring="Moonlight Ring",
-		right_ring="Stikini Ring",
+		right_ring="Stikini ring +1",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 
@@ -286,7 +286,7 @@ function get_sets()
 		hands = "Regal Gauntlets",
 		feet = "Souveran Schuhs +1",
 		body = "Rev. Surcoat +3",
-		ring1 = "Stikini Ring",
+		ring1 = "Stikini ring +1",
 		legs = "Souveran Diechlings +1",
 		head = "Souveran Schaller +1"
 	}
@@ -307,7 +307,7 @@ function get_sets()
 		back = "Reiki Cloak",
 	}
 
-	sets.Magic.Flash = {neck = "Incanter's Torque", ring1 = "Stikini Ring"}
+	sets.Magic.Flash = {neck = "Incanter's Torque", ring1 = "Stikini ring +1"}
 
 	sets.Magic.Healing = {
 		neck = "Incanter's Torque",

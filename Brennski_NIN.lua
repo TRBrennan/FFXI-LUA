@@ -35,7 +35,7 @@ function get_sets()
 		legs = "Mummu Kecks +2",
 		feet = "Amm Greaves",
 		neck = "Sanctity necklace",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
 		right_ear = "Genmei Earring",
 		right_ring = "Vocane Ring",
@@ -49,7 +49,7 @@ function get_sets()
 		legs = "Mummu Kecks +2",
 		feet = "Amm Greaves",
 		neck = "loricate torque +1",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
 		right_ear = "Genmei Earring",
 		left_ring = "Defending Ring",
@@ -255,7 +255,7 @@ function get_sets()
 		legs = "Mummu Kecks +2",
 		feet = "Amm Greaves",
 		neck = "loricate torque +1",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
 		right_ear = "Genmei Earring",
 		left_ring = "Defending Ring",
@@ -269,7 +269,7 @@ function get_sets()
 		legs = "Mummu Kecks +2",
 		feet = "Amm Greaves",
 		neck = "loricate torque +1",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
 		right_ear = "Genmei Earring",
 		left_ring = "Defending Ring",
@@ -315,12 +315,9 @@ function get_sets()
 	sets.OneHit.Attack = {
 		Head = "Nyame Helm",
 		Body = "Nyame Mail",
-		hands = {name = "Herculean Gloves", augments = {"Accuracy+21 Attack+21", '"Triple Atk."+2', "STR+11", "Accuracy+9"}},
-		legs = "Hiza. Hizayoroi +2",
-		feet = {
-			name = "Herculean Boots",
-			augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}
-		},
+		hands = "Nyame Gauntlets",
+		legs = "Nyame Flanchard",
+		feet = "Nyame Sollerets",
 		neck = "Caro Necklace",
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
@@ -332,12 +329,9 @@ function get_sets()
 	sets.OneHit.Accuracy = {
 		Head = "Nyame Helm",
 		Body = "Nyame Mail",
-		hands = {name = "Herculean Gloves", augments = {"Accuracy+21 Attack+21", '"Triple Atk."+2', "STR+11", "Accuracy+9"}},
-		legs = "Hiza. Hizayoroi +2",
-		feet = {
-			name = "Herculean Boots",
-			augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}
-		},
+		hands = "Nyame Gauntlets",
+		legs = "Nyame Flanchard",
+		feet = "Nyame Sollerets",
 		neck = "Caro Necklace",
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
@@ -352,7 +346,7 @@ function get_sets()
 		Head = "Nyame Helm",
 		body = "Adhemar Jacket +1",
 		hands = {name = "Herculean Gloves", augments = {"Accuracy+21 Attack+21", '"Triple Atk."+2', "STR+11", "Accuracy+9"}},
-		legs = "Hiza. Hizayoroi +2",
+		legs = "Nyame Flanchard",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
 		neck = "Caro Necklace",
 		waist = "Sailfi Belt +1",
@@ -366,7 +360,7 @@ function get_sets()
 		Head = "Nyame Helm",
 		body = "Adhemar Jacket +1",
 		hands = {name = "Herculean Gloves", augments = {"Accuracy+21 Attack+21", '"Triple Atk."+2', "STR+11", "Accuracy+9"}},
-		legs = "Hiza. Hizayoroi +2",
+		legs = "Nyame Flanchard",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
 		neck = "Caro Necklace",
 		waist = "Sailfi Belt +1",
@@ -379,24 +373,33 @@ function get_sets()
 
 	sets.AeolianEdge = {}
 	sets.AeolianEdge = {
-		head = {
-			name = "Herculean Helm",
-			augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Dbl.Atk."+2', "Mag. Acc.+12", '"Mag.Atk.Bns."+4'}
-		},
+		head = "Nyame Helm",
 		neck = "Sanctity Necklace",
 		ear2 = "Friomisi earring",
 		ear1 = "Moonshade Earring",
-		body = "Samnuha Coat",
-		hands = "Leyline",
+		body = "Nyame Mail",
+		hands = "Nyame Gauntlets",
 		ring1 = "Acumen Ring",
 		ring2 = "Dingir Ring",
-		waist = "Eschan Stone",
+		waist = "Orpheus's Sash",
 		back = "Yokaze Mantle",
-		legs = "Hiza. Hizayoroi +2",
-		feet = {
-			name = "Herculean Boots",
-			augments = {'"Mag.Atk.Bns."+27', "Weapon skill damage +4%", "Quadruple Attack +1", 'Mag. Acc.+14 "Mag.Atk.Bns."+14'}
-		}
+		legs = "Nyame Flanchard",
+		feet = "Nayem Sollerets",
+	}
+	
+	sets.WS.Hybrid = {
+		head = "Nyame Helm",
+		neck = "Sanctity Necklace",
+		ear2 = "Friomisi earring",
+		ear1 = "Moonshade Earring",
+		body = "Nyame Mail",
+		hands = "Nyame Gauntlets",
+		ring1 = "Acumen Ring",
+		ring2 = "Dingir Ring",
+		waist = "Orpheus's Sash",
+		back = "Yokaze Mantle",
+		legs = "Nyame Flanchard",
+		feet = "Nayem Sollerets",
 	}
 
 	--Job Ability Sets--
@@ -407,15 +410,12 @@ function get_sets()
 	sets.Magic = {}
 
 	sets.Magic.Self = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
+		head = "Nyame Helm",
 		body = "Ashera Harness",
 		hands = "Leyline Gloves",
-		legs = {
-			name = "Herculean Trousers",
-			augments = {'Mag. Acc.+16 "Mag.Atk.Bns."+16', "Weapon skill damage +2%", "Mag. Acc.+14", '"Mag.Atk.Bns."+13'}
-		},
+		legs = "Nyame Flanchard",
 		neck = "Voltsurge Torque",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ear = "Etiolation Earring",
 		right_ear = "Loquac. Earring",
 		right_ring = "Kishar Ring",
@@ -425,10 +425,7 @@ function get_sets()
 	}
 
 	sets.Magic.Nuke = {
-		head = {
-			name = "Herculean Helm",
-			augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Dbl.Atk."+2', "Mag. Acc.+12", '"Mag.Atk.Bns."+4'}
-		},
+		head = "Nyame Helm",
 		neck = "Sanctity Necklace",
 		ear2 = "Friomisi earring",
 		ear1 = "Dignitary's Earring",
@@ -438,14 +435,8 @@ function get_sets()
 		ring2 = "Acumen Ring",
 		waist = "Eschan Stone",
 		back = "Izdubar Mantle",
-		legs = {
-			name = "Herculean Trousers",
-			augments = {'Mag. Acc.+16 "Mag.Atk.Bns."+16', "Weapon skill damage +2%", "Mag. Acc.+14", '"Mag.Atk.Bns."+13'}
-		},
-		feet = {
-			name = "Herculean Boots",
-			augments = {'"Mag.Atk.Bns."+27', "Weapon skill damage +4%", "Quadruple Attack +1", 'Mag. Acc.+14 "Mag.Atk.Bns."+14'}
-		}
+		legs = "Nyame Flanchard",
+		feet = "Nyame Sollerets"
 	}
 
 	sets.Magic.Debuff = {}
@@ -477,7 +468,7 @@ function get_sets()
 		legs = {name = "Herculean Trousers", augments = {"Mag. Acc.+21", '"Fast Cast"+5', "CHR+3"}},
 		feet = "Herculean Boots",
 		neck = "Voltsurge Torque",
-		waist = "Flume Belt +1",
+		waist = "Carrier's Sash",
 		left_ear = "Etiolation Earring",
 		right_ear = "Loquac. Earring",
 		left_ring = "Rahab Ring",
@@ -497,11 +488,11 @@ function precast(spell)
 			 then
 				equip(sets.MultiHit[sets.WS.index[WS_ind]])
 			elseif
-				spell.english == "Blade: Hi" or spell.english == "Blade: Ten" or spell.english == "Blade: Chi" or
-					spell.english == "Blade: Kamu" or
-					spell.english == "Blade: Yu"
-			 then
+				spell.english == "Blade: Hi" or spell.english == "Blade: Ten" or 
+					spell.english == "Blade: Kamu"  then
 				equip(sets.OneHit[sets.WS.index[WS_ind]])
+			elseif spell.english == "Blade: Chi" or spell.english == "Blade: Teki" or spell.english == "Blade: Yu" or spell.english == "Aeolian Edge" then
+				equip(sets.WS.Hybrid)
 			elseif spell.type == "WeaponSkill" then
 				equip(sets.OtherWS[sets.WS.index[WS_ind]])
 			end

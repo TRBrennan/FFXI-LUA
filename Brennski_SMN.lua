@@ -358,7 +358,7 @@ function init_gear_sets()
         waist = "Channeler's Stone",
         left_ear = "Loquac. Earring",
         right_ear = "Enmerkar Earring",
-        left_ring = "Stikini Ring",
+        left_ring = "Stikini ring +1",
         right_ring = "Kishar Ring",
         back = {
             name = "Campestres's Cape",
@@ -435,7 +435,7 @@ function init_gear_sets()
         body = "Beck. Doublet +1",
         hands = "Lamassu mitts +1",
         ring1 = "Evoker's Ring",
-        ring2 = "Stikini Ring",
+        ring2 = "Stikini ring +1",
         back = {
             name = "Campestres's Cape",
             augments = {
