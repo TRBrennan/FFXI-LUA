@@ -277,7 +277,7 @@ function init_gear_sets()
         --ammo="Staunch Tathlum +1",
 		head={ name="Herculean Helm", augments={'Accuracy+19 Attack+19','Damage taken-3%','AGI+3','Accuracy+2',}},
 		neck="Loricate Torque+1", 
-		ear1="Genmei Earring",ear2="Infused Earring",
+		ear1="Eabani Earring",ear2="Infused Earring",
         body="Ashera Harness",
 		hands="Herculean Gloves",
 		ring2="Vocane Ring",
@@ -316,7 +316,7 @@ function init_gear_sets()
         feet=gear.MovementFeet,
         neck="Sanctity necklace",
         waist="Carrier's Sash",
-        left_ear="Infused Earring", right_ear="Genmei Earring",   
+        left_ear="Infused Earring", right_ear="Eabani Earring",   
         left_ring="Vocane Ring",
         right_ring="Defending Ring",
         back="Shadow mantle"}
@@ -331,7 +331,7 @@ function init_gear_sets()
         feet=gear.MovementFeet,
         neck="Sanctity necklace",
         waist="Carrier's Sash",
-        left_ear="Infused Earring", right_ear="Genmei Earring",   
+        left_ear="Infused Earring", right_ear="Eabani Earring",   
         right_ring="Vocane Ring",
         left_ring="Defending Ring",
         back="Moonbeam Cape"}
@@ -345,7 +345,7 @@ function init_gear_sets()
         feet=gear.MovementFeet,
         neck="Sanctity necklace",
         waist="Carrier's Sash",
-        left_ear="Infused Earring", right_ear="Genmei Earring",    
+        left_ear="Infused Earring", right_ear="Eabani Earring",    
         right_ring="Vocane Ring",
         left_ring="Defending Ring",
         back="Moonbeam Cape"}
@@ -359,7 +359,7 @@ function init_gear_sets()
         feet=gear.MovementFeet,
         neck="Sanctity necklace",
         waist="Carrier's Sash",
-        left_ear="Infused Earring", right_ear="Genmei Earring",   
+        left_ear="Infused Earring", right_ear="Eabani Earring",   
         Right_ring="Meridian Ring",
         Left_ring="Defending Ring",
         back="Moonbeam Cape"}
@@ -376,7 +376,7 @@ function init_gear_sets()
         feet="Herculean Boots",
         neck="Loricate Torque +1",
         waist="Carrier's Sash",
-        left_ear="Genmei Earring",
+        left_ear="Eabani Earring",
         right_ear="Suppanomimi",
         right_ring="Vocane Ring",
         left_ring="Defending Ring",
@@ -582,7 +582,7 @@ function init_gear_sets()
     -- Custom buff sets
     --------------------------------------
     sets.buff.Migawari = {} -- add your emp body if you want the extra % (I dont like it)
-    sets.buff.Doom = {waist="Gishdubar sash",ring1="Saida Ring",ring2="Saida Ring"}
+    sets.buff.Doom = {waist="Gishdubar sash",ring1="Eshmun's Ring",ring2="Eshmun's Ring"}
     sets.buff.Yonin = {}
     sets.buff.Innin = {}
 end

@@ -35,7 +35,7 @@ function get_sets()
         ammo = "Staunch Tathlum +1",
         head = { name = "Herculean Helm", augments = { 'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},
         neck = "Sanctity Necklace",
-        ear1 = "Genmei Earring",
+        ear1 = "Eabani Earring",
         ear2 = "Infused Earring",
         body = "Jhakri Robe +2",
         hands = { name = "Herculean Gloves",augments = {'DEX+9', 'Magic dmg. taken -3%', '"Refresh"+1',}},
@@ -51,7 +51,7 @@ function get_sets()
         ammo = "Staunch Tathlum +1",
          head="Malignance Chapeau",
         neck = "Loricate Torque +1",
-        ear1 = "Genmei Earring",
+        ear1 = "Eabani Earring",
         ear2 = "Infused Earring",
         body="Malignance Tabard",
         hands="Malignance Gloves",
@@ -69,7 +69,7 @@ function get_sets()
         ammo = "Staunch Tathlum +1",
         head="Malignance Chapeau",
 		neck = "Loricate Torque +1",
-        ear1 = "Genmei Earring",
+        ear1 = "Eabani Earring",
         ear2 = "Infused Earring",
         body="Malignance Tabard",
 		hands="Malignance Gloves",
@@ -153,7 +153,7 @@ function get_sets()
 		neck="Loricate Torque +1",
 		waist="Carrier's Sash",
 		left_ear="Odnowa Earring +1",
-		right_ear="Genmei Earring",
+		right_ear="Eabani Earring",
 		left_ring="Vocane Ring",
 		right_ring="Defending Ring",
 		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
@@ -234,7 +234,7 @@ function get_sets()
         back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         waist = "Sailfi Belt +1",
         legs="Luhlaza Shalwar +3",
-        Feet = "Nyame Sollerets",
+        feet={ name="Nyame Sollerets", augments={'Path: B',}},
     }
 
     sets.ChantDuCygne = {}
@@ -303,7 +303,7 @@ function get_sets()
         back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         waist = "Sailfi Belt +1",
         legs="Luhlaza Shalwar +3",
-        Feet = "Nyame Sollerets",
+        feet={ name="Nyame Sollerets", augments={'Path: B',}},
     }
 
     sets.Realmrazer = {}
@@ -324,7 +324,7 @@ function get_sets()
 		back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         waist = "Fotia belt",
 		legs="Luhlaza Shalwar +3",
-        Feet = "Nyame Sollerets",
+        feet={ name="Nyame Sollerets", augments={'Path: B',}},
     }
 
     sets.FlashNova = {
@@ -620,7 +620,7 @@ function get_sets()
         back = "Grounded Mantle",
     }
 
-    sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+    sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
     sets.Utility.Sleeping = {neck = "Opo-Opo Necklace"}
 
@@ -694,13 +694,12 @@ function precast(spell)
 end
 
 function midcast(spell, act)
-    if spell.action_type == 'magic' then
-        equip(sets.BlueMagic.BlueMagic)
-    elseif spell.english == 'Vertical Cleave' or spell.english == 'Death Scissors' or spell.english == 'Empty Thrash' or spell.english == 'Dimensional Death' or spell.english == 'Quadrastrike' or spell.english == 'Bloodrake' or spell.english == 'Disseverment' or spell.english == 'Hysteric Barrage' or spell.english == 'Frenetic Rip' or spell.english == 'Seedspray' or spell.english == 'Vanity Dive' or spell.english == 'Goblin Rush' or spell.english == 'Paralyzing Triad' or spell.english == 'Thrashing Assault' or spell.english == 'Benthic Typhoon' or spell.english == 'Final Sting' or spell.english == 'Spiral Spin' or spell.english == 'Whirl of Rage' or spell.english == 'Quad. Continuum'  or spell.english == 'Cannonball' or spell.english == 'Heavy Strike' or spell.english == 'Sinker Drill' then
+    if spell.english == 'Vertical Cleave' or spell.english == 'Death Scissors' or spell.english == 'Empty Thrash' or spell.english == 'Dimensional Death' or spell.english == 'Quadrastrike' or spell.english == 'Bloodrake' or spell.english == 'Disseverment' or spell.english == 'Hysteric Barrage' or spell.english == 'Frenetic Rip' or spell.english == 'Seedspray' or spell.english == 'Vanity Dive' or spell.english == 'Goblin Rush' or spell.english == 'Paralyzing Triad' or spell.english == 'Thrashing Assault' or spell.english == 'Benthic Typhoon' or spell.english == 'Final Sting' or spell.english == 'Spiral Spin' or spell.english == 'Whirl of Rage' or spell.english == 'Quad. Continuum'  or spell.english == 'Cannonball' or spell.english == 'Heavy Strike' or spell.english == 'Sinker Drill' then
         equip(sets.BlueMagic.Physical)
         if buffactive['Chain Affinity'] then equip(sets.JA.ChainAffinity) end
         if buffactive['Efflux'] then equip(sets.JA.Efflux) end
-    elseif spell.english == 'Gates of Hades' or spell.english == 'Lunge' or spell.english == 'Swipe' or spell.english == 'Leafstorm' or spell.english == 'Firespit' or spell.english == 'Acrid Stream' or spell.english == 'Regurgitation' or spell.english == 'Corrosive Ooze' or spell.english == 'Thermal Pulse' or spell.english == 'Magic Hammer' or spell.english == 'Evryone. Grudge' or spell.english == 'Water Bomb' or spell.english == 'Dark Orb' or spell.english == 'Thunderbolt' or spell.english == 'Tem. Upheaval' or spell.english == 'Embalming Earth' or spell.english == 'Foul Waters' or spell.english == 'Rending Deluge' or spell.english == 'Droning Whirlwind' or spell.english == 'Anvil Lightning' or spell.english == 'Blinding Fulgor' or spell.english == 'Entomb' or spell.english == 'Palling Salvo' or spell.english == 'Scouring Spate' or spell.english == 'Searing Tempest' or spell.english == 'Silent Storm' or spell.english == 'Spectral Floe' or spell.english == 'Blazing Bound' or spell.english == 'Frightful Roar' or spell.english == 'Infrasonics' or spell.english == 'Chaotic Eye' or spell.english == 'Auroral Drape' or spell.english == 'Barbed Crescent' or spell.english == 'Tourbillion' or spell.english == 'Cimicine Discharge' or spell.english == 'Sub-zero smash' or spell.english == 'Filamented Hold' or spell.english == 'Mind Blast' or spell.english == 'Sandspin' or spell.english == 'Hecatomb Wave' or spell.english == 'Cold Wave' or spell.english == 'Terror Touch' or spell.english == 'Charged Whisker' then
+    end
+	if spell.english == 'Gates of Hades' or spell.english == 'Lunge' or spell.english == 'Swipe' or spell.english == 'Leafstorm' or spell.english == 'Firespit' or spell.english == 'Acrid Stream' or spell.english == 'Regurgitation' or spell.english == 'Corrosive Ooze' or spell.english == 'Thermal Pulse' or spell.english == 'Magic Hammer' or spell.english == 'Evryone. Grudge' or spell.english == 'Water Bomb' or spell.english == 'Dark Orb' or spell.english == 'Thunderbolt' or spell.english == 'Tem. Upheaval' or spell.english == 'Embalming Earth' or spell.english == 'Foul Waters' or spell.english == 'Rending Deluge' or spell.english == 'Droning Whirlwind' or spell.english == 'Anvil Lightning' or spell.english == 'Blinding Fulgor' or spell.english == 'Entomb' or spell.english == 'Palling Salvo' or spell.english == 'Scouring Spate' or spell.english == 'Searing Tempest' or spell.english == 'Silent Storm' or spell.english == 'Spectral Floe' or spell.english == 'Blazing Bound' or spell.english == 'Frightful Roar' or spell.english == 'Infrasonics' or spell.english == 'Chaotic Eye' or spell.english == 'Auroral Drape' or spell.english == 'Barbed Crescent' or spell.english == 'Tourbillion' or spell.english == 'Cimicine Discharge' or spell.english == 'Sub-zero smash' or spell.english == 'Filamented Hold' or spell.english == 'Mind Blast' or spell.english == 'Sandspin' or spell.english == 'Hecatomb Wave' or spell.english == 'Cold Wave' or spell.english == 'Terror Touch' or spell.english == 'Charged Whisker' then
 		equip(sets.BlueMagic.BlueMagic)
 		if spell.english == 'Cruel Joke' then
 			equip(sets.BlueMagic.MAcc)
@@ -715,34 +714,46 @@ function midcast(spell, act)
                 equip(sets.Utility.MB)
             end
         end
-    elseif spell.english == 'Tenebral Crush' then
+    end
+	if spell.english == 'Tenebral Crush' then
         equip(sets.BlueMagic.Dark)
         if spell.element == world.day_element or spell.element == world.weather_element then
             equip(set_combine(sets.BlueMagic.Dark, sets.Utility.Weather))
         end
-    elseif spell.english == 'Subduction' or spell.english == 'Dream Flower' then
+	end
+    if spell.english == 'Subduction' or spell.english == 'Dream Flower' then
         equip(sets.BlueMagic.Sub)
-    elseif spell.english == 'Sheep Song' or  spell.english == 'Delta Thrust' or spell.english == 'Blood Drain' or spell.english == 'Soporific' or spell.english == 'Soud Blast' or spell.english == 'Chaotic Eye' or spell.english == 'Digest' or spell.english == 'Blank Gaze' or spell.english == 'Venom Shell' or spell.english == 'MP Drainkiss' or spell.english == 'Stinking Gas' or spell.english == 'Geist Wall' or spell.english == 'Awful Eye' or spell.english == 'Blood Saber' or spell.english == 'Jettatura' or spell.english == 'Frightful Roar' or spell.english == 'Filamented Hold' or spell.english == 'Cold Wave' or spell.english == 'Light of Penance' or spell.english == '1000 Needles' or spell.english == 'Feather Tickle' or spell.english == 'Yawn' or spell.english == 'Voracious Trunk' or spell.english == 'Infrasonics' or spell.english == 'Sandspray' or spell.english == 'Corrosive Ooze' or spell.english == 'Enervation' or spell.english == 'Lowing' or spell.english == 'Triumphant Roar' or spell.english == 'Actinic Burst' or spell.english == 'Osmosis' or spell.english == 'Cimicine Discharge' or spell.english == 'Demoralizing Roar' or spell.english == 'Auroral Drape' or spell.english == 'Reaving Wind' or spell.english == 'Mortal Ray' or spell.english == 'Absolute Terror' or spell.english == 'Blistering Roar' then
+	end
+    if spell.english == 'Sheep Song' or  spell.english == 'Delta Thrust' or spell.english == 'Blood Drain' or spell.english == 'Soporific' or spell.english == 'Soud Blast' or spell.english == 'Chaotic Eye' or spell.english == 'Digest' or spell.english == 'Blank Gaze' or spell.english == 'Venom Shell' or spell.english == 'MP Drainkiss' or spell.english == 'Stinking Gas' or spell.english == 'Geist Wall' or spell.english == 'Awful Eye' or spell.english == 'Blood Saber' or spell.english == 'Jettatura' or spell.english == 'Frightful Roar' or spell.english == 'Filamented Hold' or spell.english == 'Cold Wave' or spell.english == 'Light of Penance' or spell.english == '1000 Needles' or spell.english == 'Feather Tickle' or spell.english == 'Yawn' or spell.english == 'Voracious Trunk' or spell.english == 'Infrasonics' or spell.english == 'Sandspray' or spell.english == 'Corrosive Ooze' or spell.english == 'Enervation' or spell.english == 'Lowing' or spell.english == 'Triumphant Roar' or spell.english == 'Actinic Burst' or spell.english == 'Osmosis' or spell.english == 'Cimicine Discharge' or spell.english == 'Demoralizing Roar' or spell.english == 'Auroral Drape' or spell.english == 'Reaving Wind' or spell.english == 'Mortal Ray' or spell.english == 'Absolute Terror' or spell.english == 'Blistering Roar' then
         equip(sets.BlueMagic.Debuff)
-    elseif spell.english == 'Magic Fruit' or spell.english == 'Plenilune Embrace' or spell.english == 'Wild Carrot' or spell.english == 'Pollen' or spell.english == 'Cure III' or spell.english == 'Cure IV' or spell.english == 'White Wind' then
+	end
+    if spell.english == 'Magic Fruit' or spell.english == 'Plenilune Embrace' or spell.english == 'Wild Carrot' or spell.english == 'Pollen' or spell.english == 'Cure III' or spell.english == 'Cure IV' or spell.english == 'White Wind' then
         equip(sets.BlueMagic.BlueCure)
         if spell.target.name == player.name and string.find(spell.english, 'Magic Fruit') or string.find(spell.english, 'Plenilune Embrace') or string.find(spell.english, 'Wild Carrot') or string.find(spell.english, 'Cure III') or string.find(spell.english, 'Cure IV') 
 			then equip(sets.BlueMagic.BlueCure) 
 		end
-    elseif spell.english == 'Head Butt' or spell.english == 'Sudden Lunge' or spell.english == 'Tourbillion' or spell.english == 'Saurian Slide' or spell.english == 'Sweeping Gouge' or spell.english == 'Frypan' then
+	end
+    if spell.english == 'Head Butt' or spell.english == 'Sudden Lunge' or spell.english == 'Tourbillion' or spell.english == 'Saurian Slide' or spell.english == 'Sweeping Gouge' or spell.english == 'Frypan' then
         equip(sets.BlueMagic.PhysStun)
-    elseif spell.english == 'MP Drainkiss' or spell.english == 'Digest' or spell.english == 'Blood Saber' or spell.english == 'Blood Drain' or spell.english == 'Osmosis' or spell.english == 'Magic Barrier' or spell.english == 'Diamondhide' or spell.english == 'Metallic Body' then
-        equip(sets.BlueMagic.Buff)
+	end
+    if spell.english == 'MP Drainkiss' or spell.english == 'Digest' or spell.english == 'Blood Saber' or spell.english == 'Blood Drain' or spell.english == 'Osmosis' or spell.english == 'Magic Barrier' or spell.english == 'Diamondhide' or spell.english == 'Metallic Body' then
+        equip(sets.BlueMagic.BuffSkill)
         if buffactive['Diffusion'] then equip(sets.JA.Diffusion) end
-    elseif spell.english == 'Fantod' or spell.english == 'Wind Breath' or spell.english == 'Exuviation' then
+	end
+    if spell.english == 'Fantod' or spell.english == 'Wind Breath' or spell.english == 'Exuviation' then
         equip(sets.BlueMagic.Enmity)
-    elseif spell.english == 'Erratic Flutter' or spell.english == 'Nat. Meditation' or spell.english == 'Uproot' or spell.english == 'Saline Coat' or spell.english == 'Barrier Tusk' or spell.english == 'Metallic Body' or spell.english == 'Diamondhide' or spell.english == 'Reactor Cool' or spell.english == 'Plasma Charge' or spell.english == 'Magic Barrier' or spell.english == 'Orcish Counterstance' or spell.english == 'Pyric Bulwark' or spell.english == 'Carcharian Verve' or spell.english == 'Battery Charge' or spell.engligh == 'Refresh' or spell.english == 'Occultation' then
-        equip(sets.BlueMagic.Buff)
-    elseif spell.english == 'Poison Breath' or spell.english == 'Magnetite Cloud' or spell.english == 'Self Destruct' or spell.english == 'Hecatomb Wave' or spell.english == 'Radiant Breath' or spell.english == 'Flying Hip Press' or spell.english == 'Bad Breath' or spell.english == 'Frost Breath' or spell.english == 'Heat Breath' or spell.english == 'Final Sting' or spell.english == 'Thunder Breath' or spell.english == 'Wind Breath' then
+	end
+    if spell.english == 'Erratic Flutter' or spell.english == 'Nat. Meditation' or spell.english == 'Uproot' or spell.english == 'Saline Coat' or spell.english == 'Barrier Tusk' or spell.english == 'Metallic Body' or spell.english == 'Diamondhide' or spell.english == 'Reactor Cool' or spell.english == 'Plasma Charge' or spell.english == 'Magic Barrier' or spell.english == 'Orcish Counterstance' or spell.english == 'Pyric Bulwark' or spell.english == 'Carcharian Verve' or spell.english == 'Battery Charge' or spell.engligh == 'Refresh' or spell.english == 'Occultation' then
+        equip(sets.BlueMagic.BuffSkill)
+	end
+    if spell.english == 'Poison Breath' or spell.english == 'Magnetite Cloud' or spell.english == 'Self Destruct' or spell.english == 'Hecatomb Wave' or spell.english == 'Radiant Breath' or spell.english == 'Flying Hip Press' or spell.english == 'Bad Breath' or spell.english == 'Frost Breath' or spell.english == 'Heat Breath' or spell.english == 'Final Sting' or spell.english == 'Thunder Breath' or spell.english == 'Wind Breath' then
         equip(sets.BlueMagic.Breath)
-    elseif spell.english == 'Cocoon' or spell.english == 'Mighty Guard' or spell.english == 'Harden Shell' or spell.english == 'Animating Wail' or spell.english == 'Battery Charge' or spell.english == 'Nat. Meditation' or spell.english == 'Carcharian Verve' or spell.english == 'O. Counterstance' or spell.english == 'Barrier Tusk' or spell.english == 'Saline Coat' or spell.english == 'Regeneration' or spell.english == 'Erratic Flutter' then
+	end
+    if spell.english == 'Cocoon' or spell.english == 'Mighty Guard' or spell.english == 'Harden Shell' or spell.english == 'Animating Wail' or spell.english == 'Battery Charge' or spell.english == 'Nat. Meditation' or spell.english == 'Carcharian Verve' or spell.english == 'O. Counterstance' or spell.english == 'Barrier Tusk' or spell.english == 'Saline Coat' or spell.english == 'Regeneration' or spell.english == 'Erratic Flutter' then
+	equip(sets.BlueMagic.BuffSkill)
         if buffactive['Diffusion'] then equip(sets.JA.Diffusion) end
-    elseif spell.english == 'Utsusemi: Ichi' then
+	end
+    if spell.english == 'Utsusemi: Ichi' then
         equip(sets.NINMagic.Utsusemi)
         if buffactive['Copy Image (3)'] then
             send_command('@wait 0.3; input //cancel Copy Image*')
@@ -758,10 +769,20 @@ function midcast(spell, act)
         end
     elseif spell.english == 'Utsusemi: Ni' or spell.english == 'Utsusemi: San' then
         equip(sets.NINMagic.Utsusemi)
-    elseif spell.english == 'Glutinous Dart' then
+	end
+    if spell.english == 'Glutinous Dart' then
         equip(sets.BlueMagic.Dart)
     end
-end
+	if spell.skill == "Elemental Magic" then
+		equip(sets.BlueMagic.BlueMagic)
+	end
+	if spell.skill == "Healing Magic" then
+		equip(sets.BlueMagic.BlueCure)
+	end
+	if spell.skill == "Enfeebling Magic" then
+		equip(sets.BlueMagic.MAcc)
+	end
+ end
 
 function aftercast(spell)
     if player.status == 'Engaged' then

@@ -169,7 +169,7 @@ function init_gear_sets()
 			neck="Sanctity Necklace",
 			waist="Carrier's Sash",
 			left_ear="Etiolation Earring",
-			right_ear="Genmei Earring",
+			right_ear="Eabani Earring",
 			left_ring="Vocane Ring",
 			right_ring="Defending Ring",
 			back="Moonbeam Cape",

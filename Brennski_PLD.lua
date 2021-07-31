@@ -179,7 +179,7 @@ function get_sets()
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},
 		waist = "Sailfi Belt +1",
 		legs = "Nyame Flanchard",
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.ChantDuCygne = {}
@@ -271,7 +271,7 @@ function get_sets()
 		right_ear="Tuisto Earring",
 		left_ring="Moonlight Ring",
 		right_ring="Stikini ring +1",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
+		back="Weard Mantle"
 	}
 
 	sets.Magic.Reprisal = {
@@ -351,7 +351,7 @@ function get_sets()
 		head = "Loess Barbuta +1"
 	}
 
-	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
 	--Job Ability Sets--
 

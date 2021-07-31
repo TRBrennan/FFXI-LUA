@@ -28,7 +28,7 @@ Gear_Debug = 0
 function get_sets()
     sets.aftercast_Idle_refresh = {
         main = "Bolelabunga",
-        sub = "Genmei Shield",
+        sub = "Eabani Shield",
         ammo = "Homiliary",
         head = "Befouled Crown",
         body = "Kaykaus Bliaut",
@@ -154,7 +154,7 @@ function get_sets()
 
     sets.Resting = {
         main = "Queller rod",
-        sub = "Genmei Shield",
+        sub = "Eabani Shield",
         ammo = "Incantor Stone",
         head = "Befouled crown",
         neck = "Loricate torque +1",

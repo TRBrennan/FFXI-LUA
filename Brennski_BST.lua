@@ -42,7 +42,7 @@ function get_sets()
 			}
 		},
 		neck = "Sanctity Necklace",
-		ear1 = "Genmei earring",
+		ear1 = "Eabani earring",
 		ear2 = "Handler's earring",
 		body = "Emet Harness +1",
 		hands = "Ankusa Gloves",
@@ -429,7 +429,7 @@ function get_sets()
 		back = "Grounded Mantle"
 	}
 
-	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
 	-- Ninja Magic Sets--
 	sets.NINMagic = {}

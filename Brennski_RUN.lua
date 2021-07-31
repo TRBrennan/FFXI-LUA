@@ -37,7 +37,7 @@ function get_sets()
 		ammo = "Homiliary",
 		head = { name = "Herculean Helm",augments = {"Pet: CHR+2", 'Potency of "Cure" effect received+3%', '"Refresh"+2', 'Mag. Acc.+1 "Mag.Atk.Bns."+1'}},
 		neck = "Sanctity Necklace",
-		right_ear = "Genmei earring",
+		right_ear = "Eabani earring",
 		left_ear = "Infused Earring",
 		body = "Runeist's Coat +3",
 		hands = "Regal Gauntlets",
@@ -62,7 +62,7 @@ function get_sets()
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Carrier's Sash",
 		legs="Nyame Flanchard",
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Idle.Cleave = {
@@ -78,7 +78,7 @@ function get_sets()
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Carrier's Sash",
 		legs = "Carmine Cuisses +1",
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	--Weapons--
@@ -223,7 +223,7 @@ function get_sets()
 		Body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
 		Legs = "Nyame Flanchard",
-		Feet = "Nyame Sollerets",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck = "Caro Necklace",
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
@@ -293,7 +293,7 @@ function get_sets()
 		back = {name = "Ogma's cape", augments = {"DEX+20", "Accuracy+20 Attack+20", "DEX+10", "Weapon skill damage +10%"}},
 		waist = "Sailfi Belt +1",
 		Legs = "Nyame Flanchard",
-		Feet = "Nyame Sollerets",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	--Utility Sets--
@@ -318,7 +318,7 @@ function get_sets()
 	sets.Utility.Regen = {
 		head = "Rune. Bandeau +2",
 		neck = "Incanter's Torque",
-		right_ear = "Genmei earring",
+		right_ear = "Eabani earring",
 		left_ear = "Augment. earring",
 		body = {name = "Futhark Coat +1", augments = {'Enhances "Elemental Sforzo" effect'}},
 		hands = "Runeist's Mitons +3",
@@ -334,7 +334,7 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head = "Herculean Helm",
 		neck = "Incanter's Torque",
-		right_ear = "Genmei earring",
+		right_ear = "Eabani earring",
 		left_ear = "Odnowa Earring +1",
 		body = "Emet Harness +1",
 		hands = "Herculean Gloves",
@@ -410,7 +410,7 @@ function get_sets()
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 
-	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
 	--Job Ability Sets--
 	sets.JA = {}

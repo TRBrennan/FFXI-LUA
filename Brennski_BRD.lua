@@ -231,7 +231,7 @@ function get_sets()
 
     sets.midcast.Debuff = {
         main = "Carnwenhan",
-        sub = "Genmei shield",
+        sub = "Eabani shield",
         range = "Gjallarhorn",
         head = "Brioso roundlet +3",
         body = "Brioso Justau. +3",
@@ -257,7 +257,7 @@ function get_sets()
 
     sets.midcast.Threnody = {
         main = "Carnwenhan",
-        sub = "Genmei shield",
+        sub = "Eabani shield",
         range = "Gjallarhorn",
         head = "Brioso roundlet +3",
         body = "Brioso Justau. +3",
@@ -283,7 +283,7 @@ function get_sets()
 
     sets.midcast.Buff = {
         main = "Carnwenhan",
-        sub = "Genmei shield",
+        sub = "Eabani shield",
         head = "Fili Calot +1",
         neck = "Moonbow whistle +1",
         body = "Fili Hongreline +1",
@@ -327,7 +327,7 @@ function get_sets()
     sets.midcast.Marsyas = {
         range = "Marsyas",
         main = "Carnwenhan",
-        sub = "Genmei shield",
+        sub = "Eabani shield",
         head = "Fili Calot +1",
         neck = "Moonbow whistle +1",
         body = "Fili Hongreline +1",
@@ -349,7 +349,7 @@ function get_sets()
     sets.midcast.Lullaby = {
         range = "Marsyas",
         main = "Carnwenhan",
-        sub = "Genmei shield",
+        sub = "Eabani shield",
         head = "Brioso roundlet +3",
         neck = "Moonbow whistle +1",
         body = "Fili Hongreline +1",
@@ -414,7 +414,7 @@ function get_sets()
     sets.aftercast = {}
     sets.aftercast.Regen = {
         main = "Carnwenhan",
-        sub = "Genmei shield",
+        sub = "Eabani shield",
         range = "Marsyas",
         ammo = empty,
         head = "Aya. Zucchetto +1",
@@ -425,7 +425,7 @@ function get_sets()
         neck = "Loricate torque +1",
         waist = "Flume Belt",
         left_ear = "Mendi. Earring",
-        right_ear = "Genmei Earring",
+        right_ear = "Eabani Earring",
         left_ring = "Moonbeam Ring",
         right_ring = "Defending Ring",
         back = "Cheviot Cape",
@@ -433,7 +433,7 @@ function get_sets()
 
     sets.aftercast.PDT = {
         main = "Carnwenhan",
-        sub = "Genmei shield",
+        sub = "Eabani shield",
         range = "Marsyas",
         ammo = empty,
         head = "Aya. Zucchetto +1",
@@ -444,7 +444,7 @@ function get_sets()
         neck = "Loricate torque +1",
         waist = "Flume Belt",
         left_ear = "Mendi. Earring",
-        right_ear = "Genmei Earring",
+        right_ear = "Eabani Earring",
         left_ring = "Moonbeam Ring",
         right_ring = "Defending Ring",
         back = "Cheviot Cape",
@@ -452,7 +452,7 @@ function get_sets()
 
     sets.aftercast.Engaged = {
         main = "Carnwenhan",
-        sub = "Genmei shield",
+        sub = "Eabani shield",
         range = "Marsyas",
         ammo = empty,
         head = "Aya. Zucchetto +1",
@@ -463,7 +463,7 @@ function get_sets()
         neck = "Loricate torque +1",
         waist = "Flume Belt",
         left_ear = "Mendi. Earring",
-        right_ear = "Genmei Earring",
+        right_ear = "Eabani Earring",
         left_ring = "Moonbeam Ring",
         right_ring = "Defending Ring",
         back = "Cheviot Cape",

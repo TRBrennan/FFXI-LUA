@@ -68,7 +68,7 @@ function get_sets()
 		neck = "Sanctity Necklace",
 		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
-		right_ear = "Genmei Earring",
+		right_ear = "Eabani Earring",
 		left_ring = "Defending Ring",
 		right_ring = "Vocane Ring",
 		back = "Moonbeam Cape"
@@ -82,7 +82,7 @@ function get_sets()
 		neck = "loricate torque +1",
 		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
-		right_ear = "Genmei Earring",
+		right_ear = "Eabani Earring",
 		left_ring = "Defending Ring",
 		right_ring = "Vocane Ring",
 		back = "Moonbeam Cape"
@@ -319,7 +319,7 @@ function get_sets()
 		neck = "Loricate Torque +1",
 		waist = "Flume Belt",
 		left_ear = "Infused Earring",
-		right_ear = "Genmei Earring",
+		right_ear = "Eabani Earring",
 		left_ring = "Vocane Ring",
 		right_ring = "Defending Ring",
 		back = "Moonbeam Cape"
@@ -333,7 +333,7 @@ function get_sets()
 		neck = "Loricate Torque +1",
 		waist = "Flume Belt",
 		left_ear = "Infused Earring",
-		right_ear = "Genmei Earring",
+		right_ear = "Eabani Earring",
 		left_ring = "Vocane Ring",
 		right_ring = "Defending Ring",
 		back = "Moonbeam Cape"
@@ -383,7 +383,7 @@ function get_sets()
 		body = "Nyame Mail",
 		hands = "Meg. Gloves +1",
 		Legs = "Nyame Flancard",
-		feet = "Nyame Sollerets",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck = "Caro Necklace",
 		waist = "Chiner's Belt +1",
 		left_ear = "Telos Earring",
@@ -481,7 +481,7 @@ function get_sets()
 		waist = "Eschan Stone",
 		back = "Belenus's Cape",
 		Legs = "Nyame Flanchard",
-		Feet = "Nyame Sollerets",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 	sets.MagicGun.Accuracy = {
 		ammo = "Orichalc. Bullet",
@@ -496,7 +496,7 @@ function get_sets()
 		waist = "Eschan Stone",
 		back = "Belenus's Cape",
 		Legs = "Nyame Flanchard",
-		Feet = "Nyame Sollerets",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.OtherWS = {}
@@ -620,7 +620,7 @@ function get_sets()
 		waist = "Eschan Stone",
 		back = "Belenus's Cape",
 		Legs = "Nyame Flanchard",
-		Feet = "Nyame Sollerets",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	--Job Ability Sets--

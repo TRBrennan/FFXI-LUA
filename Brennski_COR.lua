@@ -34,7 +34,7 @@ function get_sets()
        
         sets.Idle.Standard = {
                                       head="Malignance Chapeau",
-									  neck="Sanctity Necklace", ear1="Genmei Earring", ear2="Infused Earring",
+									  neck="Sanctity Necklace", ear1="Eabani Earring", ear2="Infused Earring",
                                       body="Malignance Tabard",
 									  hands="Malignance Gloves",
 									  ring1="Defending ring",ring2="Vocane Ring",
@@ -83,7 +83,7 @@ function get_sets()
                                                        
                 sets.TP.DT = { ammo ="Chrono bullet",
                               head="Malignance Chapeau",
-							  neck="Loricate Torque +1", ear1="Genmei Earring", ear2="Dignitary's Earring",
+							  neck="Loricate Torque +1", ear1="Eabani Earring", ear2="Dignitary's Earring",
                               body="Malignance Tabard",hands="Malignance Gloves",
 							  ring1="Defending ring",ring2="Vocane Ring",
                               back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -197,7 +197,7 @@ function get_sets()
 						body="Laksa. Frac +3",
 						hands="Nyame Gauntlets",
 						Legs = "Nyame Flanchard",
-						Feet = "Nyame Sollerets",
+						feet={ name="Nyame Sollerets", augments={'Path: B',}},
 						neck="Iskur Gorget",
 						waist="Yemaya Belt",
 						left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
@@ -261,7 +261,7 @@ function get_sets()
 							Leg = "Nyame Flanchard", 
 							feet="Lanun Bottes +3"}
        
-        sets.JA.PhantomRoll = {head="Lanun Tricorne",neck="Regal Necklace", ear1="Etiolation earring", ear2="Genmei Earring",
+        sets.JA.PhantomRoll = {head="Lanun Tricorne",neck="Regal Necklace", ear1="Etiolation earring", ear2="Eabani Earring",
                               body="Emet Hareness +1",hands="Chasseur's gants",ring2="Luzaf's Ring",ring1="Defending Ring",
                               back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 							  waist="Carrier's Sash",legs="Desultor Tassets",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }

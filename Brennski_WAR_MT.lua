@@ -48,12 +48,12 @@ function get_sets()
        
         sets.Idle.Standard = {ammo="Staunch Tathlum +1",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", 
-									  ear1="Genmei earring", ear2="Infused Earring",
+									  ear1="Eabani earring", ear2="Infused Earring",
                                       body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Defending ring",ring2="Vocane Ring",
                                       waist="Carrier's Sash",legs="Sulevia's Cuisses +2",feet="Hermes' Sandals", back ="Moonbeam Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum +1", 
-							head="Sulevia's Mask +2",neck="Loricate Torque +1", ear1="Genmei earring", ear2="Infused Earring",
+							head="Sulevia's Mask +2",neck="Loricate Torque +1", ear1="Eabani earring", ear2="Infused Earring",
                               body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring2="Vocane Ring",ring1="Defending Ring",
                               back="Moonbeam Cape",waist="Carrier's Sash",legs="Sulevia's Cuisses +2",feet="Nyame Sollerets"}
 										
@@ -220,7 +220,7 @@ function get_sets()
 							feet="Valorous Greaves", neck="Subtlety Spec.",waist="Chaac Belt", left_ear="Heartseeker Earring",
 							right_ear="Dignitary's Earring", left_ring="Yacuruna Ring", right_ring="Cacoethic Ring",   back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},}
                                                  
-		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Saida Ring"}
+		sets.Utility.Doomed = {waist="Gishdubar Sash", ring1 ="Eshmun's Ring"}
 		
 		sets.Utility.Enmity = {ammo="Sapience Orb",
 								ear2 ="Friomisi Earring", 

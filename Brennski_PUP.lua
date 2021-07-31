@@ -36,7 +36,7 @@ function get_sets()
                         augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
                 },
                 neck = "Sanctity Necklace",
-                ear1 = "Genmei Earring",
+                ear1 = "Eabani Earring",
                 ear2 = "Infused Earring",
                 body = "Hizamaru haramaki +1",
                 hands = "Rao Kote",
@@ -57,7 +57,7 @@ function get_sets()
                         augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
                 },
                 neck = "Loricate Torque +1",
-                ear1 = "Genmei Earring",
+                ear1 = "Eabani Earring",
                 ear2 = "Infused Earring",
                 body = "Emet harness +1",
                 hands = "Herculean gloves",
@@ -198,7 +198,7 @@ function get_sets()
                 },
                 neck = "Loricate Torque +1",
                 ear1 = "Ethereal",
-                ear2 = "Genmei Earring",
+                ear2 = "Eabani Earring",
                 body = "Emet harness +1",
                 hands = "Herculean Gloves",
                 ring1 = "Vocane Ring",
@@ -219,7 +219,7 @@ function get_sets()
                 },
                 neck = "Loricate Torque +1",
                 ear1 = "Suppanomimi",
-                ear2 = "Genmei Earring",
+                ear2 = "Eabani Earring",
                 body = "Emet harness +1",
                 hands = "Herculean Gloves",
                 ring1 = "Dark ring",
@@ -506,7 +506,7 @@ function get_sets()
                 back = "Visucius's Mantle"
         }
 
-        sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+        sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
         --Job Ability Sets--
 

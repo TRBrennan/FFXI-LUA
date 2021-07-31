@@ -49,7 +49,7 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head = TH_Head,
 		neck = "Sanctity Necklace",
-		ear1 = "Genmei earring",
+		ear1 = "Eabani earring",
 		ear2 = "Infused Earring",
 		body = "Sakpata's Plate",
 		hands = { name="Sakpata's Gauntlets", augments={'Path: A',}},
@@ -64,7 +64,7 @@ function get_sets()
 	sets.Idle.DT = {
 		ammo = "Staunch Tathlum +1",
 		neck = "Loricate Torque +1",
-		ear1 = "Genmei earring",
+		ear1 = "Eabani earring",
 		ear2 = "Hearty Earring",
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
@@ -74,7 +74,7 @@ function get_sets()
 		ring2 = "Defending Ring",
 		back = "Moonbeam Cape",
 		waist = "Carrier's Sash",
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	--TP Sets--
@@ -298,7 +298,7 @@ function get_sets()
 		--waist = "Ioskeha Belt +1",
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.UpheavalDA = {
@@ -362,7 +362,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Break = {
@@ -410,7 +410,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = "Sakpata's Cuisses",
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.FellCleave = {
@@ -426,7 +426,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = "Sakpata's Cuisses",
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.MT = {
@@ -442,7 +442,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Savage = {
@@ -458,7 +458,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.SavageCrit = {
@@ -483,14 +483,14 @@ function get_sets()
 		neck = "Sanctity Necklace",
 		ear1 = "Friomisi earring",
 		ear2 = "Crematio earring",
-		body = "Founder's breastplate",
-		hands = "Founder's Gauntlets",
+		body = "Nayame Mail",
+		hands = "Nayame Gauntlets",
 		ring1 = "Acumen Ring",
 		ring2 = "Archon ring",
 		back = STR_Back,
 		waist = "Eschan stone",
 		legs = "Eschite cuisses",
-		feet = "Founder's greaves"
+		feet = "Nayame Sollerets",
 	}
 
 	sets.Requiescat = {
@@ -564,13 +564,13 @@ function get_sets()
 		ear1 = "Friomisi earring",
 		ear2 = "Moonshade earring",
 		body = "Pummeler's lorica +3",
-		hands = "Leyline Gloves",
+		hands="Nyame Gauntlets",
 		ring1 = "Regal Ring",
 		ring2 = "Acumen ring",
 		back = STR_Back,
 		waist = "Eschan stone",
 		legs = WSD_Legs,
-		feet = "Sulevia Leggings +2"
+		feet = "Nyame Sollerets"
 	}
 
 	sets.Mistral = {
@@ -586,7 +586,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.MistralCrit = {
@@ -650,7 +650,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Shockwave = {
@@ -698,7 +698,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Herculean = {
@@ -707,14 +707,14 @@ function get_sets()
 		neck = "Baetyl pendant",
 		ear1 = "Friomisi earring",
 		ear2 = "Crematio earring",
-		body = "Founder's breastplate",
-		hands = "Founder's Gauntlets",
+		body = "Nayame Mail",
+		hands = "Nayame Gauntlets",
 		ring1 = "Shiva ring +1",
 		ring2 = "Regal ring",
 		back = WSD_Back,
 		waist = "Eschan stone",
 		legs = "Eschite cuisses",
-		feet = "Founder's greaves"
+		feet = "Nayame Sollerets",
 	}
 
 	sets.Evisceration = {
@@ -762,7 +762,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.BH = {
@@ -778,7 +778,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Hexa = {
@@ -859,7 +859,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = "Sakpata's Cuisses",
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.CR = {
@@ -875,7 +875,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Retribution = {
@@ -891,7 +891,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.FullSwing = {
@@ -907,7 +907,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.TK = {
@@ -923,7 +923,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.DK = {
@@ -939,7 +939,7 @@ function get_sets()
 		back = WSD_Back,
 		waist = "Caudata belt",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.RF = {
@@ -1035,7 +1035,7 @@ function get_sets()
 	sets.Utility = {}
 	sets.Utility.Sleeping = {neck = "Opo-Opo Necklace"}
 
-	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
 	sets.enmity = {
 		ammo = "Sapience Orb",

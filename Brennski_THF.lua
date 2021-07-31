@@ -34,7 +34,7 @@ function get_sets()
                 ammo = "Staunch Tathlum +1",
 				head="Malignance Chapeau",
                 neck = "Sanctity Necklace",
-                ear1 = "Genmei Earring",
+                ear1 = "Eabani Earring",
                 ear2 = "Infused Earring",
                 body = "Ashera Harness",
                 hands = "Malignance gloves",
@@ -49,10 +49,11 @@ function get_sets()
         sets.Idle.DT = {
                 main = "Terra's Staff",
                 sub = "Umbra strap",
-                ammo = "Staunch Tathlum +1",
+                --ammo = "Staunch Tathlum +1",
+				ammo = "Yamarang",
 				head="Malignance Chapeau",
                 neck = "Loricate Torque +1",
-                ear1 = "Genmei Earring",
+                ear1 = "Eabani Earring",
                 ear2 = "Infused Earring",
                 body = "Malignance Tabard",
                 hands = "Malignance gloves",
@@ -73,7 +74,7 @@ function get_sets()
 			feet="Turms Leggings +1",
 			neck="Loricate Torque +1",
 			waist="Carrier's Sash",
-			left_ear="Genmei Earring",
+			left_ear="Eabani Earring",
 			right_ear="Infused Earring",
 			left_ring="Chirich Ring +1",
 			right_ring="Defending Ring",
@@ -140,10 +141,10 @@ function get_sets()
 				head="Malignance Chapeau",
                 neck = "Loricate Torque +1",
                 ear1 = "Ethereal",
-                ear2 = "Genmei Earring",
+                ear2 = "Eabani Earring",
                 body="Malignance Tabard",
                 hands = "Malignance Gloves",
-                ring1 = "Vocane Ring",
+                ring1 = "Moonlight Ring",
                 ring2 = "Defending Ring",
                 back = "Moonbeam Cape",
                 waist = "Carrier's Sash",
@@ -155,12 +156,12 @@ function get_sets()
                 ammo = "Yamarang",
 				head="Malignance Chapeau",
                 neck = "Loricate Torque +1",
-                ear1 = "Suppanomimi",
-                ear2 = "Genmei Earring",
+                ear1 = "Eabani Earring",
+                ear2 = "Eabani Earring",
                 body="Malignance Tabard",
                 hands = "Malignance Gloves",
                 ring1 = "Gere ring",
-                ring2 = "Defending Ring",
+                ring2 = "Moonlight Ring",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
                 waist = "Carrier's Sash",
  				legs="Malignance Tights",
@@ -193,10 +194,10 @@ function get_sets()
 			feet="Malignance Boots",
 			neck="Lissome Necklace",
 			waist="Chaac Belt",
-			left_ear="Suppanomimi",
+			left_ear="Eabani Earring",
 			right_ear="Telos Earring",
-			left_ring="Gere Ring",
-			right_ring="Defending Ring",
+			right_ring="Gere Ring",
+			left_ring="Moonlight Ring",
 			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 		}
         --Weaponskill Sets--
@@ -240,7 +241,7 @@ function get_sets()
 			body="Meg. Cuirie +1",
 			hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 			legs="Mummu Kecks +2",
-			feet={ name="Lustra. Leggings +1", augments={'HP+65','STR+15','DEX+15',}},
+			feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
 			neck="Fotia Gorget",
 			waist ="Fotia Belt",
 			left_ear="Sherida Earring",
@@ -354,7 +355,7 @@ function get_sets()
 					feet={ name="Herculean Boots", augments={'Magic burst dmg.+6%','"Fast Cast"+1','Phalanx +4','Accuracy+14 Attack+14','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
 					neck={ name="Loricate Torque +1", augments={'Path: A',}},
 					waist="Olympus Sash",
-					left_ear="Genmei Earring",
+					left_ear="Eabani Earring",
 					right_ear="Mimir Earring",
 					left_ring="Moonlight Ring",
 					right_ring="Stikini ring +1",
@@ -402,8 +403,24 @@ function get_sets()
                 legs = "Quiahuiz trousers",
                 feet = "Luhlaza charuqs"
         }	
+		
+		sets.Utility.Macc = {
+		    ammo="Pemphredo Tathlum",
+			head="Malignance Chapeau",
+			body="Malignance Tabard",
+			hands="Malignance Gloves",
+			legs="Malignance Tights",
+			feet="Malignance Boots",
+			neck="Sanctity Necklace",
+			waist="Eschan Stone",
+			left_ear="Vor Earring",
+			right_ear="Digni. Earring",
+			left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+			right_ring="Stikini Ring +1",
+			back="Izdubar Mantle",
+			}
 
-        sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+        sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
         sets.Utility.Sleeping = {neck = "Opo-Opo Necklace"}
 
@@ -483,10 +500,13 @@ function midcast(spell, act)
         elseif spell.english == "Utsusemi: Ni" or spell.english == "Utsusemi: San" then
                 equip(sets.NINMagic.Utsusemi)
 		elseif spell.action_type =="Magic" then
-			equip(sets.TP.TH)
+			equip(sets.TP.THHybrid)
 			if spell.english == "Phalanx" then
 				equip(sets.Utility.Phalanx)
 			end	
+			if spell.enlgish == "Silence" then
+				equip(sets.Utility.Macc)
+			end
         end
 end
 

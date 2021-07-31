@@ -23,7 +23,7 @@ function get_sets()
 	sets.Weapon_melee.Mrange = {}
 	
 	sets.Utility ={}
-	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 	--Idle Sets--
 	sets.Idle = {}
 	sets.Idle.index = {"Standard", "DT"}
@@ -37,7 +37,7 @@ function get_sets()
 		neck = "Sanctity necklace",
 		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
-		right_ear = "Genmei Earring",
+		right_ear = "Eabani Earring",
 		right_ring = "Vocane Ring",
 		left_ring = "Defending Ring",
 		back = "Moonbeam Cape"
@@ -51,7 +51,7 @@ function get_sets()
 		neck = "loricate torque +1",
 		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
-		right_ear = "Genmei Earring",
+		right_ear = "Eabani Earring",
 		left_ring = "Defending Ring",
 		right_ring = "Vocane Ring",
 		back = "Moonbeam Cape"
@@ -257,7 +257,7 @@ function get_sets()
 		neck = "loricate torque +1",
 		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
-		right_ear = "Genmei Earring",
+		right_ear = "Eabani Earring",
 		left_ring = "Defending Ring",
 		right_ring = "Vocane Ring",
 		back = "Moonbeam Cape"
@@ -271,7 +271,7 @@ function get_sets()
 		neck = "loricate torque +1",
 		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
-		right_ear = "Genmei Earring",
+		right_ear = "Eabani Earring",
 		left_ring = "Defending Ring",
 		right_ring = "Vocane Ring",
 		back = "Moonbeam Cape"
@@ -317,7 +317,7 @@ function get_sets()
 		Body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
 		legs = "Nyame Flanchard",
-		feet = "Nyame Sollerets",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck = "Caro Necklace",
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
@@ -331,7 +331,7 @@ function get_sets()
 		Body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
 		legs = "Nyame Flanchard",
-		feet = "Nyame Sollerets",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck = "Caro Necklace",
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
@@ -436,7 +436,7 @@ function get_sets()
 		waist = "Eschan Stone",
 		back = "Izdubar Mantle",
 		legs = "Nyame Flanchard",
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Magic.Debuff = {}

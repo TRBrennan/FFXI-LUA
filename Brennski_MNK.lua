@@ -32,7 +32,7 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head="Malignance Chapeau",
 		neck = "Sanctity Necklace",
-		ear1 = "Genmei Earring",
+		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
 		body = "Ashera Harness",
 		hands="Malignance Gloves",
@@ -48,7 +48,7 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head="Malignance Chapeau",
 		neck = "Loricate Torque +1",
-		ear1 = "Genmei Earring",
+		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
 		body = "Ashera Harness",
 		hands="Malignance Gloves",
@@ -337,7 +337,7 @@ function get_sets()
 		back = "Visucius's Mantle"
 	}
 
-	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
 	--Job Ability Sets--
 

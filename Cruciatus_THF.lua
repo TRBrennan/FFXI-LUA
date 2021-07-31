@@ -43,7 +43,7 @@ function get_sets()
 		feet="Nyame Sollerets",
 		neck="Loricate Torque",
 		waist="Carrier's Sash",
-		left_ear="Sherida Earring",
+		left_ear="Eabani Earring",
 		right_ear="Hearty Earring",
 		left_ring="Defending Ring",
 		right_ring="Shneddick Ring",

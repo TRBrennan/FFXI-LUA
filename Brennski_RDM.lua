@@ -39,7 +39,7 @@ function get_sets()
 		ammo = "Homiliary",
 		head = "Vitiation chapeau +3",
 		neck = "Sanctity Necklace",
-		ear1 = "Genmei Earring",
+		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
 		body = "Atrophy Tabard +3",
 		hands = {name = "Merlinic Dastanas", augments = {"DEX+3", 'Mag. Acc.+16 "Mag.Atk.Bns."+16', '"Refresh"+1'}},
@@ -587,7 +587,7 @@ function get_sets()
 		feet = "Merlinic Crackows"
 	}
 
-	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
 	sets.JA = {}
 
@@ -637,7 +637,7 @@ function get_sets()
 		back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 		waist = "Sailfi Belt +1",
 		legs="Nyame Flanchard",
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 	
 	sets.WS.Sang ={
@@ -770,8 +770,8 @@ function midcast(spell, act)
 			send_command("@input /echo Enhancing Duration + Refresh Set")
 		end
 		
-		if gainspells:contains(spell.english)   then
-			equip(sets.Enhancing.SkillCappedGain)
+		if gainspells:contains(spell.name)   then
+			equip(sets.Enhancing.Gain)
 			send_command("@input /echo Enhancing Capped Gain Potency Set")
 		end
 		

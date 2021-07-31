@@ -33,7 +33,7 @@ function get_sets()
         sub = "Enki Strap",
         head = "Hike Khat",
         neck = "Loricate Torque +1",
-        ear1 = "Genmei Earring",
+        ear1 = "Eabani Earring",
         ear2 = "Infused Earring",
         body = "Jhakri Robe +2",
         hands = {
@@ -107,7 +107,7 @@ function get_sets()
         ammo = "Staunch Tathlum +1",
         head = "Hike Khat",
         neck = "Sanctity Necklace",
-        ear1 = "Genmei Earring",
+        ear1 = "Eabani Earring",
         ear2 = "Infused Earring",
         body = "Vrikodara Jupon",
         hands = {
@@ -530,7 +530,7 @@ function get_sets()
         feet = "Merlinic Crackcrows"
     }
 
-    sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+    sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
     -- WS Sets--
 
     sets.WS = {}

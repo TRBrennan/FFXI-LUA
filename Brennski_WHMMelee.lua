@@ -30,11 +30,11 @@ function get_sets()
 
 	sets.Idle.Standard = {
 		main = "Bolelabunga",
-		sub = "Genmei Shield",
+		sub = "Eabani Shield",
 		ammo = "Homiliary",
 		head = {name = "Viti. Chapeau +1", augments = {'Enhances "Dia III" effect', 'Enhances "Slow II" effect'}},
 		neck = "Sanctity Necklace",
-		ear1 = "Genmei Earring",
+		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
 		body = "Jhakri Robe +2",
 		hands = {name = "Merlinic Dastanas", augments = {"DEX+3", 'Mag. Acc.+16 "Mag.Atk.Bns."+16', '"Refresh"+1'}},
@@ -48,7 +48,7 @@ function get_sets()
 
 	sets.Idle.DT = {
 		main = "Bolelabunga",
-		sub = "Genmei Shield",
+		sub = "Eabani Shield",
 		ammo = "Staunch Tathlum +1",
 		neck = "Loricate Torque +1",
 		ear1 = "Etiolation Earring",
@@ -378,7 +378,7 @@ head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic b
 		head = {name = "Viti. Chapeau +1", augments = {'Enhances "Dia III" effect', 'Enhances "Slow II" effect'}}
 	}
 
-	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
 	sets.JA = {}
 

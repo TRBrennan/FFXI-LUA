@@ -23,7 +23,7 @@ function get_sets()
 	WSD_Hands = "Nyame Gauntlets"
 	WSD_Body = "Sakonji Domaru +3"
 	WSD_Head = "Nyame Helm"
-	WSD_Feet = "Nyame Sollerets"
+	WSD_feet={ name="Nyame Sollerets", augments={'Path: B',}}
 
 	--Idle Sets--
 	sets.Idle = {}
@@ -41,7 +41,7 @@ function get_sets()
 		neck = "Sanctity necklace",
 		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
-		right_ear = "Genmei Earring",
+		right_ear = "Eabani Earring",
 		right_ring = "Vocane Ring",
 		left_ring = "Defending Ring",
 		back = "Moonbeam Cape"
@@ -52,7 +52,7 @@ function get_sets()
 		head = "Ynglinga Sallet",
 		neck = "Loricate Torque +1",
 		left_ear = "Infused Earring",
-		right_ear = "Genmei Earring",
+		right_ear = "Eabani Earring",
 		body = "Tartarus Platemail",
 		hands = "Kurys Gloves",
 		right_ring = "Vocane Ring",
@@ -246,7 +246,7 @@ function get_sets()
 	}
 
 
-	sets.Utility.Doomed = {waist = "Gishdubar Sash", right_ring = "Saida Ring"}
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", right_ring = "Eshmun's Ring"}
 
 	sets.Utility.Enmity = {
 		ammo = "Sapience Orb",

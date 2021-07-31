@@ -30,7 +30,7 @@ function get_sets()
 		ammo = "Homiliary",
 		head = "Befouled Crown",
 		neck = "Loricate Torque +1",
-		ear1 = "Genmei Earring",
+		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
 		body = "Jhakri Robe +2",
 		hands = {name = "Merlinic Dastanas", augments = {"DEX+3", 'Mag. Acc.+16 "Mag.Atk.Bns."+16', '"Refresh"+1'}},
@@ -38,7 +38,7 @@ function get_sets()
 		ring2 = "Vocane Ring",
 		waist = "Fucho-no-obi",
 		legs = "Assiduity Pants +1",
-		feet = "Nyame Sollerets",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		back = "Moonbeam Cape"
 	}
 
@@ -73,7 +73,7 @@ function get_sets()
 		ammo = "Homiliary",
 		head = "Hike Khat",
 		neck = "Sanctity Necklace",
-		ear1 = "Genmei Earring",
+		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
 		body = "Vrikodara Jupon",
 		hands = {name = "Merlinic Dastanas", augments = {"DEX+3", 'Mag. Acc.+16 "Mag.Atk.Bns."+16', '"Refresh"+1'}},
@@ -407,7 +407,7 @@ function get_sets()
 
 	sets.Utility.Perpetuance = {hands = "Arbatel Bracers +1"}
 
-	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
 	--WS Sets--
 

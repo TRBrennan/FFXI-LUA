@@ -41,7 +41,7 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}},
 		neck = "Sanctity Necklace",
-		ear1 = "Genmei earring",
+		ear1 = "Eabani earring",
 		ear2 = "Infused Earring",
 		body="Nyame Mail",
 		hands = "Nyame Gauntlets",
@@ -57,7 +57,7 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head = "Sulevia's Mask +2",
 		neck = "Loricate Torque +1",
-		ear1 = "Genmei Earring",
+		ear1 = "Eabani Earring",
 		ear2 = "Cessance Earring",
 		body="Nyame Mail",
 		hands = "Sulev. Gauntlets +2",
@@ -66,7 +66,7 @@ function get_sets()
 		back = "Moonbeam Cape",
 		waist = "Carrier's Sash",
 		legs = "Sulevia's Cuisses +1",
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	--TP Sets--
@@ -169,7 +169,7 @@ function get_sets()
 		back = WSD_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.CT = {}
@@ -191,7 +191,7 @@ function get_sets()
 		back = WSD_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Nyame Sollerets"
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Drakesbane = {}
@@ -238,7 +238,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		legs = WSD_Legs,
-		feet="Sulev. Leggings +2",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck="Dragoon's collar +2",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Thrud Earring",
@@ -271,7 +271,7 @@ function get_sets()
 
 	sets.Utility.Weather = {waist = "Hachirin-no-obi", back = "Twilight Cape"}
 
-	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Saida Ring"}
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
 	sets.Utility.Sleeping = {neck = "Opo-Opo Necklace"}
 	--Job Ability Sets--

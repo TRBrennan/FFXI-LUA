@@ -6,9 +6,10 @@ Absorb_Spells = S{"Absorb-STR","Absorb-DEX","Absorb-VIT","Absorb-MND","Absorb-IN
 Drain_Spells = S{"Drain","Drain II","Aspir","Aspir II","Absorb-TP"}
 
 function get_sets()
-		send_command('bind f10 gs c toggle Idle set')
+	 send_command('bind f10 gs c toggle Idle set')
 	 send_command('bind f9 gs c equip TP set')
 	 send_command('bind f11 gs c equip DT set')
+	 send_command("bind f12 gs c equip Hybrid set")
          function file_unload()
     
         send_command('unbind ^f9')
@@ -43,7 +44,8 @@ function get_sets()
 	Acc_Head = "Flam. Zucchetto +2"
 	TH_Head = {name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}}
 	WS_Head = {name="Valorous Mask", augments={'Accuracy+25 Attack+25','Enmity+2','STR+12','Accuracy+6',}}	
-	TP_Legs = "Sakpata's Cuisses"
+	--TP_Legs = "Sakpata's Cuisses"
+	TP_Legs = "Ignominy Flanchard +3"
 	TP_Body = { name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
 	WSD_Legs = "Nyame Flanchard"
 	WSD_Hands = "Sakpata's Gauntlets"
@@ -87,8 +89,8 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {'Standard', 'DW', 'Anguta', 'AccuracyLite', 'AccuracyFull', 'DT'}
-	--1=Standard, 2=DW, 3=Anguta, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 
+	sets.TP.index = {'Standard', 'DW', 'Anguta', 'AccuracyLite', 'AccuracyFull', 'DT', 'Hybrid'}
+	--1=Standard, 2=DW, 3=Anguta, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 7=Hybrid, 
 	TP_ind = 1
 	
 	sets.TP.Standard = {ammo="Coiste Bodhar",
@@ -120,6 +122,21 @@ function get_sets()
 			    head="Sakpata's Helm",neck="Abyssal Bead Necklace +2", ear1="Hearty earring", ear2="Telos earring",
 		        body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Moonbeam Ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs="Sakpata's cuisses",feet="Sakpata's Leggings"}
+				
+	sets.TP.Hybrid = { 		
+		ammo = "Coiste Bodhar",
+		head="Sakpata's Helm",
+		body="Sakpata's Plate",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Sakpata's Cuisses",
+		feet="Sakpata's Leggings",
+		neck="Abyssal Bead Necklace +2", 
+		waist="Sailfi Belt +1",
+		left_ear="Telos Earring",
+		right_ear="Cessance Earring",
+		right_ring="Moonlight Ring",
+		left_ring = "Niqmaddu Ring",
+		back= DA_Back}
 
 				  
 	
@@ -129,73 +146,79 @@ function get_sets()
 	  		  
 	sets.Resolution = {ammo="Seething bomblet +1",
 			    head="Flam. Zucchetto +2",neck="Fotia gorget",ear1="Moonshade earring",ear2="Cessance earring",
-			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Regal ring",
-			   	back=DA_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Flam. Gambieras +2"}
+			 	body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
+			   	back=DA_Back,waist="Fotia belt",legs="Ignominy Flanchard +3",feet="Flam. Gambieras +2"}
 	
 	sets.Scourge = {ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Abyssal Bead Necklace +2",ear1="Thrud Earring", ear2="Moonshade earring",
 			 	body=WSD_Body,hands=WSD_Hands,ring1="Flamma ring",ring2="Regal ring",
-			   	back=STR_Back,waist="Sailfi Belt +1",legs=WSD_Legs,feet="Nyame Sollerets"}
+			   	back=STR_Back,waist="Sailfi Belt +1",legs=WSD_Legs,feet={ name="Nyame Sollerets", augments={'Path: B',}},}
 				
 	sets.Shockwave =  {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade earring",
-			 	body="Argosy Hauberk +1",hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
+			 	body="Argosy Hauberk +1",hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
 				back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Flam. Gambieras +2"}
 	
 	sets.Torcleaver = {ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Abyssal Bead Necklace +2",ear1="Thrud Earring", ear2="Moonshade earring",
 			 	body=WSD_Body,hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
-			   	back=STR_Back,waist="Sailfi Belt +1",legs=WSD_Legs,feet="Nyame Sollerets"}
+			   	back=STR_Back,waist="Sailfi Belt +1",legs=WSD_Legs,feet={ name="Nyame Sollerets", augments={'Path: B',}},}
 				 
 	sets.Quietus = {ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Thrud Earring", ear2="Moonshade earring",
 			 	body=WSD_Body,hands=WSD_Hands,ring1="Flamma ring",ring2="Regal ring",
-			   	back=STR_Back,waist="Fotia Belt",legs=WSD_Legs,feet="Nyame Sollerets"}
+			   	back=STR_Back,waist="Fotia Belt",legs=WSD_Legs,feet={ name="Nyame Sollerets", augments={'Path: B',}},}
 				
 	sets.Insurgency = {ammo="Knobkierrie",
 			    head="Ratri sallet",neck="Fotia gorget", ear1="Telos earring",ear2="Moonshade earring",
 			    body=WSD_Body,hands="Ratri gadlings",ring1="Niqmaddu ring",ring2="Regal ring",
-			    back=DA_Back,waist="Sailfi Belt +1",legs="Argosy Breeches +1",feet="Valorous greaves"}
+			    back=DA_Back,waist="Sailfi Belt +1",legs="Ignominy Flanchard +3",feet="Valorous greaves"}
 				
 	sets.Entropy = {ammo="Pemphredo tathlum",
 			    head="Ignominy burgonet +3",neck="Fotia gorget", ear1="Brutal earring",ear2="Moonshade earring",
-			    body=WSD_Body,hands="Regal captain's gloves",ring1="Niqmaddu ring",ring2="Mujin band",
-			    back=INT_Back,waist="Fotia belt",legs="Argosy Breeches +1",feet="Flamma gambieras +1"}
+			    body=WSD_Body,hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Mujin band",
+			    back=INT_Back,waist="Fotia belt",legs="Ignominy Flanchard +3",feet="Flamma gambieras +2"}
 				
 	sets.CR = {ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Thrud Earring", ear2="Moonshade earring",
 			 	body=WSD_Body,hands=WSD_Hands,ring1="Flamma ring",ring2="Regal ring",
-			   	back=STR_Back,waist="Fotia Belt",legs=WSD_Legs,feet="Nyame Sollerets"}
+			   	back=STR_Back,waist="Fotia Belt",legs=WSD_Legs,feet={ name="Nyame Sollerets", augments={'Path: B',}},}
 				
 	sets.Infernal = {ammo="Knobkierrie",
 			    head="Pixie hairpin +1",neck="Abyssal Bead Necklace +2",ear1="Friomisi earring",ear2="Crematio earring",
-			 	body="Founder's breastplate",hands="Founder's Gauntlets",ring1="Shiva ring +1",ring2="Archon ring",
-			   	back=WSD_Back,waist="Eschan stone",legs="Eschite cuisses",feet="Founder's greaves"}
+			 	body=WSD_Body,hands="Nyame Gauntlets",ring1="Shiva ring +1",ring2="Archon ring",
+			   	back=WSD_Back,waist="Eschan stone",legs="Heathen's flanchard +1",feet="Nyame Sollerets"}
 	
 	sets.Herculean = {ammo="Knobkierrie",
 			    head="Jumalik helm",neck="Abyssal Bead Necklace +2",ear1="Friomisi earring",ear2="Crematio earring",
-			 	body="Founder's breastplate",hands="Founder's Gauntlets",ring1="Shiva ring +1",ring2="Acumen ring",
-			   	back=WSD_Back,waist="Eschan stone",legs="Eschite cuisses",feet="Founder's greaves"}
+			 	body=WSD_Body,hands="Nyame Gauntlets",ring1="Shiva ring +1",ring2="Acumen ring",
+			   	back=WSD_Back,waist="Eschan stone",legs="Heathen's flanchard +1",feet="Nyame Sollerets"}
 				
 	sets.Savage = {ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Abyssal Bead Necklace +2",ear1="Thrud Earring", ear2="Moonshade earring",
 			 	body=WSD_Body,hands=WSD_Hands,ring1="Flamma ring",ring2="Regal ring",
-			   	back=STR_Back,waist="Sailfi Belt +1",legs=WSD_Legs,feet="Nyame Sollerets"}
+			   	back=STR_Back,waist="Sailfi Belt +1",legs=WSD_Legs,feet={ name="Nyame Sollerets", augments={'Path: B',}},}
 				
 	sets.Vorpal = {ammo="Yetshila",
 			    head=Acc_Head,neck="Fotia Gorget",ear1="Cessance earring",ear2="Moonshade earring",
-			 	body="Argosy Hauberk +1",hands="Argosy mufflers +1",ring1="Niqmaddu ring",ring2="Begrudging ring",
-			   	back=DA_Back,waist="Fotia belt",legs="Argosy Breeches +1",feet="Valorous greaves"}
+			 	body="Argosy Hauberk +1",hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Begrudging ring",
+			   	back=DA_Back,waist="Fotia belt",legs="Ignominy Flanchard +3",feet="Valorous greaves"}
 	
 	sets.Upheaval = {ammo="Knobkierrie",
 			     head=WSD_Head,neck="Fotia gorget",ear1="Moonshade earring",ear2="Cessance earring",
 			 	 body=WSD_Body,hands="Sulevia's gauntlets +2",ring1="Niqmaddu ring",ring2="Regal ring",
-			   	 back=WSD_Back,waist="Ioskeha belt +1",legs="Argosy Breeches +1",feet="Nyame Sollerets"}
+			   	 back=WSD_Back,waist="Ioskeha belt +1",legs="Ignominy Flanchard +3",feet={ name="Nyame Sollerets", augments={'Path: B',}},}
 				 
 	sets.FellCleave = {ammo="Knobkierrie",
 			    head=WSD_Head,neck="Fotia gorget",ear1="Thrud earring",ear2="Moonshade earring",
-			 	body=WSD_Body,hands="Odyssean gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
-			   	back=STR_Back,waist="Fotia belt",legs="Argosy breeches +1",feet="Nyame Sollerets"}
+			 	body=WSD_Body,hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
+			   	back=STR_Back,waist="Fotia belt",legs="Ignominy Flanchard +3",feet={ name="Nyame Sollerets", augments={'Path: B',}},}
+				
+	sets.Catastrophe = {ammo="Knobkierrie",	
+			    head=WSD_Head,neck="Abyssal Bead Necklace +2",ear1="Thrud Earring", ear2="Moonshade earring",
+			 	body=WSD_Body,hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
+			   	back=STR_Back,waist="Sailfi Belt +1",legs=WSD_Legs,feet={ name="Nyame Sollerets", augments={'Path: B',}},}
+				 
 	
 	--Job Ability Sets--
 	
@@ -222,26 +245,28 @@ function get_sets()
 	
 	--Precast Sets--
 	sets.precast = {ammo="Impatiens",head="Carmine mask +1",ear1="Loquacious earring",body="Odyssean chestplate",hands="Leyline gloves",ring1="Weatherspoon ring",
-				ring2="Kishar ring",waist="Witful belt",legs="Eschite cuisses",feet="Carmine greaves +1"}
+				ring2="Kishar ring",waist="Witful belt",legs="Heathen's flanchard +1",feet="Carmine greaves +1"}
 					
 	sets.precast.dark = {ammo="Impatiens",head="Carmine mask +1",ear1="Loquacious earring",body="Odyssean chestplate",hands="Leyline gloves",ring1="Weatherspoon ring",
-				ring2="Kishar ring",waist="Witful belt",legs="Eschite cuisses",feet="Carmine greaves +1"}
+				ring2="Kishar ring",waist="Witful belt",legs="Heathen's flanchard +1",feet="Carmine greaves +1"}
 					
-	sets.Absorb = {ammo="Pemphredo tathlum",head="Ignominy burgonet +3",neck="Erra Pendant",left_ear="Malignance Earring",right_ear="Digni. Earring",
+	sets.Absorb = {ammo="Pemphredo tathlum",head="Ignominy burgonet +2",neck="Erra Pendant",left_ear="Malignance Earring",right_ear="Digni. Earring",
 			 	 body="Carmine scale mail",hands="Pavor Gauntlets",ring1="Evanescence ring",ring2="Kishar ring",
-			   	 back=DA_Back,waist="Eschan stone",legs="Eschite cuisses",feet="Ratri sollerets"}
+			   	 back=DA_Back,waist="Eschan stone",legs="Heathen's flanchard +1",feet="Ratri sollerets"}
 	
-	sets.Dark = {ammo="Pemphredo tathlum",head="Ignominy burgonet +3",neck="Erra Pendant",left_ear="Malignance Earring",right_ear="Digni. Earring",
+	sets.Dark = {ammo="Pemphredo tathlum",head="Ignominy burgonet +2",neck="Erra Pendant",left_ear="Malignance Earring",right_ear="Digni. Earring",
 			 	 body="Carmine scale mail",hands="Fallen's finger gauntlets +1",ring1="Evanescence ring",ring2="Stikini ring +1",
-			   	 back="Niht mantle",waist="Eschan stone", legs="Eschite cuisses",feet="Ignominy sollerets +1"}
+			   	 back="Niht mantle",waist="Orpheus's Sash", legs="Heathen's flanchard +1",
+				 --feet="Ignominy sollerets +1"
+				 feet="Ratri sollerets"}
 	
 	sets.Drain = {ammo="Pemphredo tathlum",head="Ignominy burgonet +3",neck="Erra Pendant",left_ear="Malignance Earring",right_ear="Digni. Earring",
 			 	 body="Carmine scale mail",hands="Fallen's finger gauntlets +1",ring1="Evanescence ring",ring2="Archon ring",
-			   	 back="Niht mantle",waist="Eschan stone",legs="Eschite cuisses",feet="Ratri sollerets"}
+			   	 back="Niht mantle",waist="Orpheus's Sash",legs="Heathen's flanchard +1",feet="Ratri sollerets"}
 	
 	sets.Drain3 = {ammo="Pemphredo tathlum",head="Fallen's burgeonet +1",neck="Erra Pendant",left_ear="Malignance Earring",right_ear="Digni. Earring",
 			 	 body="Carmine scale mail",hands="Fallen's finger gauntlets +1",ring1="Evanescence ring",ring2="Archon ring",
-			   	 back="Niht mantle",waist="Eschan stone",legs="Heathen's flanchard +1",feet="Ratri sollerets"}
+			   	 back="Niht mantle",waist="Orpheus's Sash",legs="Heathen's flanchard +1",feet="Ratri sollerets"}
 	
 	sets.Dread = {     
 		ammo="Staunch Tathlum +1",
@@ -249,7 +274,7 @@ function get_sets()
 		body="Heathen's cuirass +1",
 		hands="Ratri Gadlings",
 		legs="Ratri Cuisses",
-		feet="Sakpata's Leggings",
+		feet="Ratri Sollerets",
 		neck={ name="Unmoving Collar +1", augments={'Path: A',}},
 		waist="Eschan Stone",
 		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -259,13 +284,18 @@ function get_sets()
 		back="Moonbeam Cape",
 	}
 	
+	sets.Utility = {}
+	sets.Utility.Sleeping = {neck = "Opo-Opo Necklace"}
+
+	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
+	
 	sets.Enfeeble = {}
 	
 	sets.Elemental = {}
 	
 	sets.CaladAM ={ 
 		body="Hjarrandi Breast.",
-        hands="Flam. Manopolas +2",
+        --hands="Flam. Manopolas +2",
 		ring2="Hetairoi Ring",
 		}
 	
@@ -381,6 +411,14 @@ function precast(spell)
 			end		
 		elseif spell.english == "Vorpal Blade" then		
 			equip(sets.Vorpal)			
+		elseif spell.english == 'Catastrophe' then
+        if spell.target.distance <= 5.6 then
+            equip(sets.Catastrophe)
+            send_command('@input /echo Catastrophe Set')
+            else
+                cancel_spell()
+                windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+            end	
 		elseif spell.english == 'Last Resort' then
 			equip(sets.JA.LastResort)
 		elseif spell.english == 'Diabolic Eye' then
@@ -454,11 +492,13 @@ end
 
 function aftercast(spell)
 	if player.status == 'Engaged' then
-		if player.equipment.main == "Caladbolg" and buffactive["Aftermath"] then
-			equip(set_combine(sets.TP[sets.TP.index[TP_ind]],sets.Utility.CaladAM))
-			if buff == "doom" or buff == "curse" then
-				equip(sets.Utility.Doomed)
-			end
+		--if player.equipment.main == "Caladbolg" and buffactive["Aftermath"] then
+		if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Caladbolg" then
+			equip(set_combine(sets.TP[sets.TP.index[TP_ind]], sets.CaladAM))
+			send_command('@input /echo Caladbolg AM set')
+				if buff == "doom" or buff == "curse" then
+					equip(sets.Utility.Doomed)
+				end
 		elseif player.equipment.main == 'Anguta' then			
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command('@input /echo Anguta Set')
@@ -551,7 +591,11 @@ function self_command(command)
 	elseif command == 'equip Acc_Lite set' then		
 		TP_ind = 4		
 		equip(sets.TP[sets.TP.index[TP_ind]])
-		send_command('@input /echo Acc_lite Set')				
+		send_command('@input /echo Acc_lite Set')	
+	elseif command == "equip Hybrid set" then
+		TP_ind = 7
+		equip(sets.TP.Hybrid)
+		send_command("@input /echo Hybrid Set")		
 	elseif command == 'change Killer mode' then
 		if Killer_Mode == 0 then
 			Killer_Mode = 1
