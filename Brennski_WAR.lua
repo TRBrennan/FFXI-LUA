@@ -69,7 +69,7 @@ function get_sets()
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		ring1 = "Moonlight Ring",
 		ring2 = "Defending Ring",
 		back = "Moonbeam Cape",
@@ -80,8 +80,8 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "OH", "Chango", "AccuracyLite", "AccuracyFull", "DT", "DTAM", "H2H", "Zulfiqar", "DW", "Hybrid"}
-	--1=Standard, 2=One Handed, 3=Chango Set, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 7=DT After Math, 8=H2H, 9=Zulfiqar, 10=DW, 11=Hybrid --
+	sets.TP.index = {"Standard", "OH", "Chango", "AccuracyLite", "AccuracyFull", "DT", "DTAM", "H2H", "Zulfiqar", "DW", "Hybrid", "UkonAM"}
+	--1=Standard, 2=One Handed, 3=Chango Set, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 7=DT After Math, 8=H2H, 9=Zulfiqar, 10=DW, 11=Hybrid, 12 = UkonAM --
 	Melee_Default = 1
 	TP_ind = 1
 
@@ -92,7 +92,7 @@ function get_sets()
 		--hands = "Sakpata's Gauntlets",
 		hands = "Sakpata's Gauntlets",
 		--legs = "Pumm. Cuisses +3",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Pumm. Calligae +3",
 		neck = "Warrior's bead necklace +2",
 		--waist = "Ioskeha belt +1",
@@ -119,7 +119,7 @@ function get_sets()
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
 		--legs = "Pummeler's cuisses +3",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -131,7 +131,7 @@ function get_sets()
 		--hands = "Sakpata's Gauntlets",
 		hands = "Sakpata's Gauntlets",
 		--legs = "Pumm. Cuisses +3",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Pumm. Calligae +3",
 		neck = "Warrior's bead necklace +2",
 		--waist = "Ioskeha belt +1",
@@ -157,7 +157,7 @@ function get_sets()
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
 		--legs = "Pummeler's cuisses +3",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -174,7 +174,7 @@ function get_sets()
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
 		--legs = "Pummeler's cuisses +3",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -191,7 +191,7 @@ function get_sets()
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
 		--legs = "Pummeler's cuisses +3",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Pummeler's Calligae +3"
 	}
 
@@ -208,7 +208,7 @@ function get_sets()
 		back = DA_Back,
 		waist = "Kentarch belt +1",
 		--legs = "Pummeler's cuisses +3",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Pummeler's Calligae +3"
 	}
 
@@ -217,7 +217,7 @@ function get_sets()
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet="Sakpata's Leggings",
 		neck={ name="War. Beads +2", augments={'Path: A',}},
 		waist="Ioskeha Belt +1",
@@ -240,9 +240,9 @@ function get_sets()
 		ring2 = "Moonlight Ring",
 		back = DA_Back,
 		waist = "Ioskeha belt +1",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		----legs = "Pummeler's cuisses +3",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Pummeler's Calligae +3"
 	}
 
@@ -260,7 +260,7 @@ function get_sets()
 		--waist = "Reiki Yotai",
 		waist = "Sailfi Belt +1",
 		--legs = "Pummeler's cuisses +3",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Pummeler's calligae +3"
 	}
 	
@@ -269,7 +269,7 @@ function get_sets()
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet="Sakpata's Leggings",
 		neck={ name="War. Beads +2", augments={'Path: A',}},
 		waist="Ioskeha Belt +1",
@@ -278,6 +278,22 @@ function get_sets()
 		right_ring="Moonlight Ring",
 		--right_ring="Chirich Ring +1",
 		left_ring = "Niqmaddu Ring",
+		back= DA_Back
+	}
+	
+	sets.TP.UkonAm ={
+	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Sakpata's Helm",
+		body="Hjarrandi Breast.",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
+		feet="Pumm. Calligae +3",
+		neck={ name="War. Beads +2", augments={'Path: A',}},
+		waist="Ioskeha Belt +1",
+		left_ear="Brutal Earring",
+		right_ear={ name="Schere Earring", augments={'Path: A',}},
+		left_ring="Niqmaddu Ring",
+		right_ring="Petrov Ring",
 		back= DA_Back
 	}
 
@@ -326,7 +342,7 @@ function get_sets()
 		body = "Hjarrandi Breast.",
 		hands = "Flamma Manopolas +2",
 		ring1 = "Niqmaddu ring",
-		ring2 = "Regal ring",
+		ring2 = "Hetairoi ring",
 		back = Crit_Back,
 		waist = "Sailfi Belt +1",
 		legs = "Sakpata's Cuisses",
@@ -339,14 +355,14 @@ function get_sets()
 		neck = "Fotia gorget",
 		ear1 = "Telos earring",
 		ear2 = "Schere Earring",
-		body = "Sakpata's Plate",
+		body = "Hjarrandi Breast.",
 		hands = "Flamma manopolas +2",
 		ring1 = "Niqmaddu ring",
-		ring2 = "Begrudging ring",
+		ring2 = "Hetairoi ring",
 		back = Crit_Back,
 		waist = "Sailfi Belt +1",
 		legs = "Sakpata's Cuisses",
-		feet = "Pummeler's calligae +3"
+		feet = "Boii Calligae +1"
 	}
 
 	sets.Steelcyclone = {
@@ -370,7 +386,7 @@ function get_sets()
 		head = "Flam. Zucchetto +2",
 		body="Sakpata's Plate",
 		hands = "Flam. Manopolas +2",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Flam. Gambieras +2",
 		neck = "Sanctity Necklace",
 		waist = "Eschan Stone",
@@ -569,7 +585,7 @@ function get_sets()
 		ring2 = "Acumen ring",
 		back = STR_Back,
 		waist = "Eschan stone",
-		legs = WSD_Legs,
+		legs = "Nyame Flanchard",
 		feet = "Nyame Sollerets"
 	}
 
@@ -794,7 +810,7 @@ function get_sets()
 		back = Crit_Back,
 		waist = "Fotia belt",
 		--legs = "Pummeler's cuisses +3",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -996,7 +1012,7 @@ function get_sets()
 		body = "Pumm. Lorica +3",
 		hands = "Sakpata's Gauntlets",
 		--legs = "Pummeler's cuisses +3",
-		legs="Sakpata's Cuisses",
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Sulev. Leggings +2",
 		neck = "Fotia Gorget",
 		waist = "Fotia Belt",
@@ -1173,7 +1189,6 @@ function precast(spell)
 			TPBonus = TPBonus + 250
 			CurrentTP = player.tp + TPBonus
 			send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
-
 			if CurrentTP > 1500 then
 				equip(sets.KingsJusticeWSD)
 				send_command("@input /echo KJ WSD Set")
@@ -1184,17 +1199,15 @@ function precast(spell)
 		elseif spell.english == "Steel Cyclone" then
 			equip(sets.Steelcyclone)
 			send_command("@input /echo Steel Cyclone Set")
+		elseif spell.english == 'Raging Rush' then
+			equip(sets.RR)
+			send_command('@input /echo Raging Rush Set')
 		elseif
 			spell.english == "Full Break" or spell.name == "Armor Break" or spell.name == "Shield Break" or
-				spell.name == "Weapon Break" or
-				spell.name == "Leg Sweep"
-		 then
-			--			elseif spell.english == 'Raging Rush' then
-			--				equip(sets.RR)
-			--				send_command('@input /echo Raging Rush Set')
-			---Great Sword Weapon Skills---
+			spell.name == "Weapon Break" or	spell.name == "Leg Sweep" then
 			equip(sets.Break)
-			send_command("@input /echo Break Set")
+			send_command("@input /echo Break Set")		
+	---Great Sword Weapon Skills---
 		elseif spell.english == "Resolution" then
 			if spell.target.distance <= 5.6 then	
 				equip(sets.Resolution)
@@ -1327,10 +1340,7 @@ function precast(spell)
 	end
 	--JA Sets--
 	if spell.type == "JobAbility" then
-		if
-			spell.english == "Provoke" or spell.english == "Animated Flourish" or spell.english == "Flash" or
-				spell.english == "stun"
-		 then
+		if 	spell.english == "Provoke" or spell.english == "Animated Flourish" or spell.english == "Flash" or spell.english == "stun" then
 			equip(sets.enmity)
 			send_command("@input /echo Enmity Set")
 		elseif spell.english == "Berserk" then
@@ -1361,10 +1371,21 @@ function midcast(spell, act)
 end
 function aftercast(spell)
 	if player.status == "Engaged" then
-		if player.equipment.main == "Bravura" and buffactive["Aftermath"] then
-			TP_ind = 7
-			equip(sets.TP[sets.TP.index[TP_ind]])
-			send_command("@input /echo Bravura DT Set")
+		-- if player.equipment.main == "Bravura" and buffactive["Aftermath"] then
+			-- TP_ind = 7
+			-- equip(sets.TP[sets.TP.index[TP_ind]])
+			-- send_command("@input /echo Bravura DT Set")
+			-- if buffactive["doom"] or buffactive["curse"] then
+				-- equip(sets.Utility.Doomed)
+			-- end
+			-- if buffactive["terror"] or buffactive["stun"] or buffactive["sleep"] then
+				-- equip(sets.TP.DT)
+			-- end
+		-- elseif buffactive['Aftermath: Lv.3'] and player.equipment.main == "Ukonvasara" then
+		if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Ukonvasara" then
+			--TP_ind = 12
+			equip(sets.TP.UkonAm)
+			send_command("@input /echo Ukon AM Set")
 			if buffactive["doom"] or buffactive["curse"] then
 				equip(sets.Utility.Doomed)
 			end
@@ -1405,6 +1426,11 @@ function status_change(new, old)
 		if buff == "doom" or buff == "curse" then
 			equip(sets.Utility.Doomed)
 		end
+		if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Ukonvasara" then
+			--TP_ind = 12
+			equip(sets.TP.UkonAm)
+			send_command("@input /echo Ukon AM Set")
+		end						
 	else
 		equip(sets.Idle.Standard)
 		if buff == "doom" or buff == "curse" then
@@ -1414,9 +1440,8 @@ function status_change(new, old)
 end
 function self_command(command)
 	if command == "equip TP set" then
-		if
-			player.equipment.main == "Chango" or player.equipment.main == "Montante +1" or
-				player.equipment.main == "Raetic Algol +1"
+		if 	player.equipment.main == "Chango" or player.equipment.main == "Montante +1" or
+				player.equipment.main == "Raetic Algol +1" or player.equipment.main == "Ukonvasara"
 		 then
 			TP_ind = 3
 			equip(sets.TP[sets.TP.index[TP_ind]])
@@ -1483,6 +1508,7 @@ function self_command(command)
 		TP_ind = 11
 		equip(sets.TP.Hybrid)
 		send_command("@input /echo Hybrid Set")
+	
 	elseif command == "change debug mode" then
 		if Gear_Debug == 1 then
 			Gear_Debug = 0
@@ -1505,6 +1531,11 @@ function buff_change(buff, gain)
 		else
 			if player.status == "Engaged" then
 				equip(sets.TP[sets.TP.index[TP_ind]])
+				if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Ukonvasara" then
+					--TP_ind = 12
+					equip(sets.TP.UkonAm)
+					send_command("@input /echo Ukon AM Set")
+				end				
 			elseif player.status == "Idle" then
 				equip(sets.Idle[sets.Idle.index[Idle_ind]])
 			end

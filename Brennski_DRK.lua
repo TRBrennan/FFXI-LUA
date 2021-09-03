@@ -297,6 +297,7 @@ function get_sets()
 		body="Hjarrandi Breast.",
         --hands="Flam. Manopolas +2",
 		ring2="Hetairoi Ring",
+		head="Sakpata's Helm",
 		}
 	
 end
@@ -522,6 +523,10 @@ function status_change(new,old)
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		if buff == "doom" or buff == "curse" then
 			equip(sets.Utility.Doomed)
+		end
+		if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Caladbolg" then
+			equip(set_combine(sets.TP[sets.TP.index[TP_ind]], sets.CaladAM))
+			send_command('@input /echo Caladbolg AM set')
 		end
 	else
 		equip(sets.Idle.Standard)

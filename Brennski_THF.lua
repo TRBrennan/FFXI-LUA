@@ -189,7 +189,7 @@ function get_sets()
 		    ammo="Yamarang",
 			head="Malignance Chapeau",
 			body="Malignance Tabard",
-			hands={ name="Plun. Armlets +1", augments={'Enhances "Perfect Dodge" effect',}},
+			hands = "Malignance Gloves",
 			legs="Malignance Tights",
 			feet="Malignance Boots",
 			neck="Lissome Necklace",
@@ -468,7 +468,7 @@ function precast(spell)
                 end
         elseif spell.english == "Aeolian Edge" then
                 equip(sets.AeolianEdge)
-		elseif spell.enlgish == "Cyclone" then
+		elseif spell.english == "Cyclone" then
 				equip(sets.Cyclone)
         elseif spell.english == "Box Step" then
                 equip(sets.Utility.Steps)
@@ -500,7 +500,7 @@ function midcast(spell, act)
         elseif spell.english == "Utsusemi: Ni" or spell.english == "Utsusemi: San" then
                 equip(sets.NINMagic.Utsusemi)
 		elseif spell.action_type =="Magic" then
-			equip(sets.TP.THHybrid)
+			equip(sets.TP.TH)
 			if spell.english == "Phalanx" then
 				equip(sets.Utility.Phalanx)
 			end	

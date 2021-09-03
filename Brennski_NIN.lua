@@ -518,7 +518,7 @@ function midcast(spell, act)
 	 then
 		equip(sets.Magic.Self)
 	elseif spell.action_type =="Magic" then
-		equip(sets.Maigc.Nuke)
+		equip(sets.Magic.Nuke)
 		if spell.element == world.day_element or spell.element == world.weather_element then
 			equip(sets.Obi)
 		end

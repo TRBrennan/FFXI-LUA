@@ -1,3 +1,44 @@
+physical_ready_moves = S{'Foot Kick','Whirl Claws','Sheep Charge','Lamb Chop','Head Butt','Wild Oats',
+    'Leaf Dagger','Claw Cyclone','Razor Fang','Crossthrash','Nimble Snap','Cyclotail','Rhino Attack',
+    'Power Attack','Mandibular Bite','Big Scissors','Grapple','Spinning Top','Double Claw','Frogkick',
+    'Blockhead','Brain Crush','Tail Blow','Scythe Tail','Ripper Fang','Chomp Rush','Needleshot',
+    'Recoil Dive','Sudden Lunge','Spiral Spin','Wing Slap','Beak Lunge','Suction','Back Heel',
+    'Fantod','Tortoise Stomp','Sensilla Blades','Tegmina Buffet','Pentapeck','Sweeping Gouge',
+    'Somersault','Tickling Tendrils','Pecking Flurry','Sickle Slash','Disembowel','Extirpating Salvo',
+    'Mega Scissors','Rhinowrecker','Hoof Volley','Fluid Toss','Fluid Spread'}
+
+magic_atk_ready_moves = S{'Dust Cloud','Cursed Sphere','Venom','Toxic Spit','Bubble Shower','Drainkiss',
+    'Silence Gas','Dark Spore','Fireball','Plague Breath','Snow Cloud','Charged Whisker','Corrosive Ooze',
+    'Aqua Breath','Stink Bomb','Nectarous Deluge','Nepenthic Plunge','Pestilent Plume','Foul Waters',
+    'Acid Spray','Infected Leech','Gloom Spray','Venom Shower'}
+
+magic_acc_ready_moves = S{'Sheep Song','Scream','Dream Flower','Roar','Predatory Glare','Gloeosuccus',
+    'Palsy Pollen','Soporific','Geist Wall','Toxic Spit','Numbing Noise','Spoil','Hi-Freq Field',
+    'Sandpit','Sandblast','Venom Spray','Filamented Hold','Queasyshroom','Numbshroom','Spore','Shakeshroom',
+    'Infrasonics','Chaotic Eye','Blaster','Purulent Ooze','Intimidate','Noisome Powder','Acid Mist',
+    'Choke Breath','Jettatura','Nihility Song','Molting Plumage','Swooping Frenzy','Spider Web'}
+
+multi_hit_ready_moves = S{'Pentapeck','Tickling Tendrils','Sweeping Gouge','Chomp Rush','Wing Slap',
+    'Pecking Flurry'}
+
+tp_based_ready_moves = S{'Foot Kick','Dust Cloud','Snow Cloud','Sheep Song','Sheep Charge','Lamb Chop',
+    'Head Butt','Scream','Dream Flower','Wild Oats','Leaf Dagger','Claw Cyclone','Razor Fang','Roar',
+    'Gloeosuccus','Palsy Pollen','Soporific','Cursed Sphere','Somersault','Geist Wall','Numbing Noise',
+    'Frogkick','Nimble Snap','Cyclotail','Spoil','Rhino Attack','Hi-Freq Field','Sandpit','Sandblast',
+    'Mandibular Bite','Metallic Body','Bubble Shower','Grapple','Spinning Top','Double Claw','Spore',
+    'Filamented Hold','Blockhead','Fireball','Tail Blow','Plague Breath','Brain Crush','Infrasonics',
+    'Needleshot','Chaotic Eye','Blaster','Ripper Fang','Intimidate','Recoil Dive','Water Wall',
+    'Sudden Lunge','Noisome Powder','Wing Slap','Beak Lunge','Suction','Drainkiss','Acid Mist',
+    'TP Drainkiss','Back Heel','Jettatura','Choke Breath','Fantod','Charged Whisker','Purulent Ooze',
+    'Corrosive Ooze','Tortoise Stomp','Aqua Breath','Sensilla Blades','Tegmina Buffet','Sweeping Gouge',
+    'Tickling Tendrils','Pecking Flurry','Pestilent Plume','Foul Waters','Spider Web','Gloom Spray',
+    'Disembowel','Extirpating Salvo','Rhinowrecker','Venom Shower','Fluid Toss','Fluid Spread','Digest'}
+
+-- List of Pet Buffs and Ready moves exclusively modified by Pet TP Bonus gear.
+pet_buff_moves = S{'Wild Carrot','Bubble Curtain','Scissor Guard','Secretion','Rage','Harden Shell',
+    'TP Drainkiss','Fantod','Rhino Guard','Zealous Snort','Frenzied Rage','Digest'}
+
+
 function get_sets()
 	send_command("bind f9 gs c toggle TP set")
 	send_command("bind f10 gs c toggle Idle set")
@@ -239,7 +280,7 @@ function get_sets()
 		right_ear = "Enmerkar Earring"
 	}
 
-	sets.Ready.Magical = {
+	sets.Ready.MagicalAttack = {
 		main = "Mdomo Axe",
 		sub = "Arktoi",
 		ammo = "Demonry Core",
@@ -261,6 +302,8 @@ function get_sets()
 		ear2 = "Sabong Earring",
 		waist = "Incarnation Sash"
 	}
+	
+	sets.Ready.MagicAcc ={}
 
 	-- WS Sets--
 	sets.WS = {}
@@ -387,10 +430,7 @@ function get_sets()
 		back = "Swith cape",
 		waist = "Siegel sash",
 		legs = "Haven hose",
-		feet = {
-			name = "Herculean Boots",
-			augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}
-		}
+		feet = {name = "Herculean Boots",augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
 
 	sets.Utility.Phalanx = {
@@ -446,10 +486,7 @@ function get_sets()
 		back = "Moonbeam Cape",
 		waist = "Carrier's Sash",
 		legs = "Herculean Trousers",
-		feet = {
-			name = "Herculean Boots",
-			augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}
-		}
+		feet = {name = "Herculean Boots",augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
 
 	-- Job Ability Sets--
@@ -478,6 +515,8 @@ function get_sets()
 
 	-- Precast Sets--
 	sets.precast = {}
+	
+	sets.precast.Ready = {}
 
 	sets.precast.FC = {}
 
@@ -494,8 +533,7 @@ function get_sets()
 		left_ring = "Rahab Ring",
 		right_ring = "Kishar Ring",
 		back = "Swith Cape"
-	}
-	sets.precast.Ready = {}
+	}	
 end
 
 function precast(spell)
@@ -541,229 +579,52 @@ function midcast(spell, act)
 		end
 	elseif spell.english == "Utsusemi: Ni" or spell.english == "Utsusemi: San" then
 		equip(sets.NINMagic.Utsusemi)
-	elseif
-		spell.english == "Cursed Sphere" or spell.english == "Venom" or spell.english == "Toxic Spit" or
-			spell.english == "Venom Spray" or
-			spell.english == "Bubble Shower" or
-			spell.english == "Fireball" or
-			spell.english == "Plague Breath" or
-			spell.english == "Snow Cloud" or
-			spell.english == "Acid Spray" or
-			spell.english == "Silence Gas" or
-			spell.english == "Dark Spore" or
-			spell.english == "Charged Whisker" or
-			spell.english == "Purulent Ooze" or
-			spell.english == "Aqua Breath" or
-			spell.english == "Stink Bomb" or
-			spell.english == "Nectarous Deluge" or
-			spell.english == "Nepenthic Plunge" or
-			spell.english == "Foul Waters" or
-			spell.english == "Dust Cloud" or
-			spell.english == "Sheep Song" or
-			spell.english == "Scream" or
-			spell.english == "Dream Flower" or
-			spell.english == "Roar" or
-			spell.english == "Gloeosuccus" or
-			spell.english == "Palsy Pollen" or
-			spell.english == "Soporific" or
-			spell.english == "Geist Wall" or
-			spell.english == "Numbing Noise" or
-			spell.english == "Spoil" or
-			spell.english == "Hi-Freq Field" or
-			spell.english == "Sandpit" or
-			spell.english == "Sandblast" or
-			spell.english == "Filamented Hold" or
-			spell.english == "Spore" or
-			spell.english == "Infrasonics" or
-			spell.english == "Chaotic Eye" or
-			spell.english == "Blaster" or
-			spell.english == "Intimidate" or
-			spell.english == "Noisome Powder" or
-			spell.english == "TP Drainkiss" or
-			spell.english == "Jettatura" or
-			spell.english == "Spider Web" or
-			spell.english == "Corrosive Ooze" or
-			spell.english == "Molting Plumage" or
-			spell.english == "Swooping Frenzy" or
-			spell.english == "Pestilent Plume"
-	 then
-		equip(sets.Ready.Magical)
-	elseif
-		spell.english == "Sic" or spell.english == "Whirl Claws" or spell.english == "Dust Cloud" or
-			spell.english == "Foot Kick" or
-			spell.english == "Sheep Song" or
-			spell.english == "Sheep Charge" or
-			spell.english == "Lamb Chop" or
-			spell.english == "Rage" or
-			spell.english == "Head Butt" or
-			spell.english == "Scream" or
-			spell.english == "Dream Flower" or
-			spell.english == "Wild Oats" or
-			spell.english == "Leaf Dagger" or
-			spell.english == "Claw Cyclone" or
-			spell.english == "Razor Fang" or
-			spell.english == "Roar" or
-			spell.english == "Gloeosuccus" or
-			spell.english == "Palsy Pollen" or
-			spell.english == "Soporific" or
-			spell.english == "Cursed Sphere" or
-			spell.english == "Venom" or
-			spell.english == "Geist Wall" or
-			spell.english == "Toxic Spit" or
-			spell.english == "Numbing Noise" or
-			spell.english == "Nimble Snap" or
-			spell.english == "Cyclotail" or
-			spell.english == "Spoil" or
-			spell.english == "Rhino Guard" or
-			spell.english == "Rhino Attack" or
-			spell.english == "Power Attack" or
-			spell.english == "Hi-Freq Field" or
-			spell.english == "Sandpit" or
-			spell.english == "Sandblast" or
-			spell.english == "Venom Spray" or
-			spell.english == "Mandibular Bite" or
-			spell.english == "Metallic Body" or
-			spell.english == "Bubble Shower" or
-			spell.english == "Bubble Curtain" or
-			spell.english == "Scissor Guard" or
-			spell.english == "Big Scissors" or
-			spell.english == "Grapple" or
-			spell.english == "Spinning Top" or
-			spell.english == "Double Claw" or
-			spell.english == "Filamented Hold" or
-			spell.english == "Frog Kick" or
-			spell.english == "Queasyshroom" or
-			spell.english == "Silence Gas" or
-			spell.english == "Numbshroom" or
-			spell.english == "Spore" or
-			spell.english == "Dark Spore" or
-			spell.english == "Shakeshroom" or
-			spell.english == "Blockhead" or
-			spell.english == "Secretion" or
-			spell.english == "Fireball" or
-			spell.english == "Tail Blow" or
-			spell.english == "Plague Breath" or
-			spell.english == "Brain Crush" or
-			spell.english == "Infrasonics" or
-			spell.english == "??? Needles" or
-			spell.english == "Needleshot" or
-			spell.english == "Chaotic Eye" or
-			spell.english == "Blaster" or
-			spell.english == "Scythe Tail" or
-			spell.english == "Ripper Fang" or
-			spell.english == "Chomp Rush" or
-			spell.english == "Intimidate" or
-			spell.english == "Recoil Dive" or
-			spell.english == "Water Wall" or
-			spell.english == "Snow Cloud" or
-			spell.english == "Wild Carrot" or
-			spell.english == "Sudden Lunge" or
-			spell.english == "Spiral Spin" or
-			spell.english == "Noisome Powder" or
-			spell.english == "Wing Slap" or
-			spell.english == "Beak Lunge" or
-			spell.english == "Suction" or
-			spell.english == "Drainkiss" or
-			spell.english == "Acid Mist" or
-			spell.english == "TP Drainkiss" or
-			spell.english == "Back Heel" or
-			spell.english == "Jettatura" or
-			spell.english == "Choke Breath" or
-			spell.english == "Fantod" or
-			spell.english == "Charged Whisker" or
-			spell.english == "Purulent Ooze" or
-			spell.english == "Corrosive Ooze" or
-			spell.english == "Tortoise Stomp" or
-			spell.english == "Harden Shell" or
-			spell.english == "Aqua Breath" or
-			spell.english == "Sensilla Blades" or
-			spell.english == "Tegmina Buffet" or
-			spell.english == "Molting Plumage" or
-			spell.english == "Swooping Frenzy" or
-			spell.english == "Pentapeck" or
-			spell.english == "Sweeping Gouge" or
-			spell.english == "Zealous Snort" or
-			spell.english == "Somersault " or
-			spell.english == "Tickling Tendrils" or
-			spell.english == "Stink Bomb" or
-			spell.english == "Nectarous Deluge" or
-			spell.english == "Nepenthic Plunge" or
-			spell.english == "Pecking Flurry" or
-			spell.english == "Pestilent Plume" or
-			spell.english == "Foul Waters" or
-			spell.english == "Spider Web" or
-			spell.english == "Sickle Slash" or
-			spell.english == "Frogkick" or
-			spell.english == "Ripper Fang" or
-			spell.english == "Scythe Tail" or
-			spell.english == "Chomp Rush"
-	 then
+	elseif magic_atk_ready_moves:contains(spell.english) then
+		equip(sets.Ready.MagicalAttack)
+	elseif magic_acc_ready_moves:contain(spell.english) or pet_buff_moves:contains(spell.english) then
+		equip(sets.Ready.MagicAcc)
+	elseif physical_ready_moves:contains(spell.english) or multi_hit_ready_moves:contains(spell.english) or tp_based_ready_moves:contains(spell.english) then
 		equip(sets.Ready.Physical)
 	end
 end
 
 function aftercast(spell)
-	if player.status == "Engaged" then
-		equip(sets.TP[sets.TP.index[TP_ind]])
-	elseif buffactive["doom"] or buffactive["curse"] then
-		equip(sets.Utility.Doom)
-	elseif buffactive["terror"] or buffactive["stun"] or buffactive["sleep"] then
-		equip(sets.TP.DT)
-	else
-		equip(sets.Idle[sets.Idle.index[Idle_ind]])
-	end
+    if player.status == 'Engaged' then
+        equip(sets.TP[sets.TP.index[TP_ind]])
+    elseif player.status == 'Engaged' and buffactive['doom'] then
+        equip(set_combine(sets.TP[sets.TP.index[TP_ind]],sets.Utility.Doomed))
+    elseif player.status == 'Engaged' and buffactive['terror'] or buffactive['stun'] or buffactive['sleep'] then
+        equip(sets.TP.DT)
+    elseif buffactive['doom'] then
+        equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]],sets.Utility.Doomed))
+    else
+        equip(sets.Idle[sets.Idle.index[Idle_ind]])
+    end
 end
 
 function status_change(new, old)
-	if player.status == "Engaged" then
-		equip(sets.TP[sets.TP.index[TP_ind]])
-	else
-		equip(sets.Idle[sets.Idle.index[Idle_ind]])
-	end
+    if player.status == 'Engaged' then
+        equip(sets.TP[sets.TP.index[TP_ind]])
+    else
+        equip(sets.Idle[sets.Idle.index[Idle_ind]])
+    end
 end
+
 function self_command(command)
-	if command == "toggle TP set" then
-		TP_ind = TP_ind + 1
-		if TP_ind > #sets.TP.index then
-			TP_ind = 1
-		end
-		send_command("@input /echo <----- TP Set changed to " .. sets.TP.index[TP_ind] .. " ----->")
-		equip(sets.TP[sets.TP.index[TP_ind]])
-	elseif command == "toggle Idle set" then
-		Idle_ind = Idle_ind + 1
-		if Idle_ind > #sets.Idle.index then
-			Idle_ind = 1
-		end
-		send_command("@input /echo <----- Idle Set changed to " .. sets.Idle.index[Idle_ind] .. " ----->")
-		equip(sets.Idle[sets.Idle.index[Idle_ind]])
-	elseif command == "toggle Req set" then
-		Requiescat_ind = Requiescat_ind + 1
-		if Requiescat_ind > #sets.Requiescat.index then
-			Requiescat_ind = 1
-		end
-		send_command("@input /echo <----- Requiescat Set changed to " .. sets.Requiescat.index[Requiescat_ind] .. " ----->")
-	elseif command == "toggle CDC set" then
-		ChantDuCygne_ind = ChantDuCygne_ind + 1
-		if ChantDuCygne_ind > #sets.ChantDuCygne.index then
-			ChantDuCygne_ind = 1
-		end
-		send_command(
-			"@input /echo <----- Chant du Cygne Set changed to " .. sets.ChantDuCygne.index[ChantDuCygne_ind] .. " ----->"
-		)
-	elseif command == "toggle Rea set" then
-		Realmrazer_ind = Realmrazer_ind + 1
-		if Realmrazer_ind > #sets.Realmrazer.index then
-			Realmrazer_ind = 1
-		end
-		send_command("@input /echo <----- Realmrazer Set changed to " .. sets.Realmrazer.index[Realmrazer_ind] .. " ----->")
-	elseif command == "toggle MB set" then
-		Burst_ind = Burst_ind + 1
-		if Burst_ind > #sets.Burst.index then
-			Burst_ind = 1
-		end
-		send_command("@input /echo [MB Set changed to " .. sets.Burst.index[Burst_ind] .. "]")
+    if command == 'toggle TP set' then
+        TP_ind = TP_ind + 1
+        if TP_ind > #sets.TP.index then TP_ind = 1 end
+        send_command('@input /echo <----- TP Set changed to ' .. sets.TP.index[TP_ind] .. ' ----->')
+        equip(sets.TP[sets.TP.index[TP_ind]])
+    elseif command == 'toggle Idle set' then
+        Idle_ind = Idle_ind + 1
+        if Idle_ind > #sets.Idle.index then Idle_ind = 1 end
+        send_command('@input /echo <----- Idle Set changed to ' .. sets.Idle.index[Idle_ind] .. ' ----->')
+        equip(sets.Idle[sets.Idle.index[Idle_ind]])
 	elseif command == "equip TP set" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
+	elseif command =="equip DT set" then
+		equip (sets.TP.DT)
 	elseif command == "equip Idle set" then
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 	end

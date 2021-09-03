@@ -170,7 +170,7 @@ function get_sets()
 		ammo = "Coiste Bodhar",
 		neck = "Unmoving Collar +1",
 		left_ear="Odnowa Earring +1",
-		ear1 = "Ishvara Earring",
+		ear1 = "Thrud Earring",
 		head = "Nyame Helm",
 		body = "Nyame Mail",
 		hands= "Nyame Gauntlets",
@@ -261,18 +261,18 @@ function get_sets()
 	sets.Magic.Phalanx ={
 	    ammo="Staunch Tathlum +1",
 		head={ name="Odyssean Helm", augments={'Mag. Acc.+4','Magic dmg. taken -4%','Phalanx +2','Accuracy+6 Attack+6','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
-		body="Rev. Surcoat +3",
-		hands={ name="Souv. Handschuhs", augments={'HP+50','Shield skill +10','Phys. dmg. taken -3',}},
-		legs="Sakpata's Cuisses",
+		body={ name="Odyss. Chestplate", augments={'STR+8','Pet: "Mag.Atk.Bns."+2','Phalanx +5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},
+		hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
 		neck="Incanter's Torque",
 		waist="Olympus Sash",
-		left_ear="Odnowa Earring +1",
+		left_ear="Mimir Earring",
 		right_ear="Tuisto Earring",
 		left_ring="Moonlight Ring",
-		right_ring="Stikini ring +1",
-		back="Weard Mantle"
-	}
+		right_ring="Stikini Ring +1",
+		back = "Weard Mantle"
+		}
 
 	sets.Magic.Reprisal = {
 		ammo = "Sapience Orb",
@@ -426,12 +426,13 @@ function precast(spell)
 	
 	if spell.english == "Atonement" then
 		--equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
-		if spell.target.distance <= 5.6 then
-			equip(sets.WS.Atonement)
-		else
-			cancel_spell()
-			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
-		end
+		equip(sets.WS.Atonement)
+		-- if spell.target.distance <= 5.6 then
+			-- equip(sets.WS.Atonement)
+		-- else
+			-- cancel_spell()
+			-- windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+		-- end
 	end
 
 	if spell.english == "Sanguine Blade" then
