@@ -45,7 +45,7 @@ function get_sets()
             }
         },
         ring1 = "Defending ring",
-        ring2 = "Vocane Ring",
+        ring2 = "Chirich Ring +1",
         waist = "Fucho-no-obi",
         legs = "Assiduity Pants +1",
         feet = "Amalric Nails +1",
@@ -69,7 +69,7 @@ function get_sets()
                 '"Refresh"+1',
             }
         },
-        ring1 = "Vocane Ring",
+        ring1 = "Chirich Ring +1",
         ring2 = "Defending ring",
         waist = "Fucho-no-obi",
         legs = "Assiduity Pants +1",
@@ -119,7 +119,7 @@ function get_sets()
             }
         },
         ring1 = "Defending ring",
-        ring2 = "Vocane Ring",
+        ring2 = "Chirich Ring +1",
         waist = "Fucho-no-obi",
         legs = "Assiduity Pants",
         feet = "Amalric Nails +1",

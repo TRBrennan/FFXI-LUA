@@ -170,7 +170,7 @@ function init_gear_sets()
 			waist="Carrier's Sash",
 			left_ear="Etiolation Earring",
 			right_ear="Eabani Earring",
-			left_ring="Vocane Ring",
+			left_ring="Chirich Ring +1",
 			right_ring="Defending Ring",
 			back="Moonbeam Cape",
         }

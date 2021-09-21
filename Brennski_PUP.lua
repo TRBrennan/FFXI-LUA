@@ -27,50 +27,38 @@ function get_sets()
         --Idle Sets--
         sets.Idle = {}
 
-        sets.Idle.index = {"Standard", "DT", "PetTank"}
+        sets.Idle.index = {"Standard", "DT", "PetTank", "PetMelee"}
         Idle_ind = 1
 
         sets.Idle.Standard = {
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
-                neck = "Sanctity Necklace",
-                ear1 = "Eabani Earring",
-                ear2 = "Infused Earring",
-                body = "Hizamaru haramaki +1",
-                hands = "Rao Kote",
-                ring1 = "Defending ring",
-                ring2 = "Vocane Ring",
-                back = "Moonbeam Cape",
-                waist = "Isa Belt",
-                legs = {
-                        name = "Herculean Trousers",
-                        augments = {'"Mag.Atk.Bns."+25', "Phys. dmg. taken -5%", "INT+6", "Mag. Acc.+9"}
-                },
-                feet = "Hermes' Sandals"
+                    head="Malignance Chapeau",
+			body="Malignance Tabard",
+			hands="Malignance Gloves",
+			legs="Malignance Tights",
+			feet="Hermes' Sandals",
+			neck="Sanctity Necklace",
+			waist="Carrier's Sash",
+			left_ear="Eabani Earring",
+			right_ear="Infused Earring",
+			left_ring="Defending Ring",
+			right_ring="Chirich Ring +1",
+			back="Moonbeam Cape",
         }
 
         sets.Idle.DT = {
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
-                neck = "Loricate Torque +1",
-                ear1 = "Eabani Earring",
-                ear2 = "Infused Earring",
-                body = "Emet harness +1",
-                hands = "Herculean gloves",
-                ring1 = "Defending ring",
-                ring2 = "Vocane Ring",
-                back = "Moonbeam Cape",
-                waist = "Isa Belt",
-                legs = {
-                        name = "Herculean Trousers",
-                        augments = {'"Mag.Atk.Bns."+25', "Phys. dmg. taken -5%", "INT+6", "Mag. Acc.+9"}
-                },
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
-        }
+        head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Sanctity Necklace",
+		waist="Carrier's Sash",
+		left_ear="Eabani Earring",
+		right_ear="Infused Earring",
+		left_ring="Defending Ring",
+		right_ring="Chirich Ring +1",
+		back="Moonbeam Cape",
+		}
 
         sets.Idle.PetTank = {
                 Head = "Anwig Salade",
@@ -80,46 +68,49 @@ function get_sets()
                 body = "Taeon Tabard",
                 Hands = "Rao Kote",
                 Waist = "Isa Belt",
-                ring1 = "Defending Ring",
-                ring2 = "Overbearing Ring",
+                left_ring="Cath Palug Ring",
+				right_ring="Thurandaut Ring",
                 back = "Visucius's mantle",
                 legs = "Taeon Tights",
                 feet = "Rao Sune-ate"
         }
+		
+		sets.Idle.PetMelee ={
+		    head={ name="Taeon Chapeau", augments={'Pet: Accuracy+24 Pet: Rng. Acc.+24','Pet: "Dbl. Atk."+5','Pet: Damage taken -4%',}},
+			body={ name="Taeon Tabard", augments={'Pet: Accuracy+25 Pet: Rng. Acc.+25','Pet: "Dbl. Atk."+4','Pet: Damage taken -3%',}},
+			hands="Mpaca's Gloves",
+			legs={ name="Taeon Tights", augments={'Pet: Accuracy+24 Pet: Rng. Acc.+24','Pet: "Dbl. Atk."+5','Pet: Damage taken -4%',}},
+			feet="Mpaca's Boots",
+			neck="Shulmanu Collar",
+			waist="Incarnation Sash",
+			left_ear="Enmerkar Earring",
+			right_ear="Rimeice Earring",
+			left_ring="Cath Palug Ring",
+			right_ring="Thurandaut Ring",
+			back={ name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10',}},
+		}
+		
         --TP Sets--
         sets.TP = {}
 
-        sets.TP.index = {"Standard", "PetTank", "AccuracyMid", "AccuracyFull", "DT", "DTAccuracy"}
-        --1=Standard, 2 = PetTank, 3= AccuracyMid, 4=AccuracyFull, 5=DT, 6=DTAccuracy
+        sets.TP.index = {"Standard", "PetTank", "PetMelee", "AccuracyFull", "DT", "DTAccuracy"}
+        --1=Standard, 2 = PetTank, 3=PetMelee, 4==AccuracyFull, 5=DT, 6=DTAccuracy
 
         TP_ind = 1
         sets.TP.Standard = {
-                head = {name = "Ryuo Somen", augments = {"STR+10", "DEX+10", "Accuracy+15"}},
-                body = {
-                        name = "Herculean Vest",
-                        augments = {"Accuracy+25 Attack+25", '"Triple Atk."+2', "STR+8", "Attack+15"}
-                },
-                hands = {
-                        name = "Herculean Gloves",
-                        augments = {"Accuracy+21 Attack+21", '"Triple Atk."+2', "STR+11", "Accuracy+9"}
-                },
-                legs = "Samnuha Tights",
-                feet = "Tali'ah Crackows +1",
-                neck = "Shulmanu Collar",
-                waist = "Klouskap Sash",
-                left_ear = "Cessance Earring",
-                right_ear = "Telos Earring",
-                left_ring = "Niqmaddu Ring",
-                right_ring = "Chirich Ring +1",
-                back = {
-                        name = "Visucius's Mantle",
-                        augments = {
-                                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                                "Accuracy+20 Attack+20",
-                                "Pet: Haste+10"
-                        }
-                }
-        }
+			head="Malignance Chapeau",
+			body="Malignance Tabard",
+			hands="Mpaca's Gloves",
+			legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+			feet="Mpaca's Boots",
+			neck="Shulmanu Collar",
+			waist="Carrier's Sash",
+			left_ear={ name="Schere Earring", augments={'Path: A',}},
+			right_ear="Telos Earring",
+			left_ring="Petrov Ring",
+			right_ring="Niqmaddu Ring",
+			back={ name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10','Pet: Damage taken -5%',}},
+		}
 
         sets.TP.PetTank = {
                 Head = "Anwig Salade",
@@ -129,115 +120,72 @@ function get_sets()
                 body = "Taeon Tabard",
                 Hands = "Rao Kote",
                 Waist = "Isa Belt",
-                ring1 = "Defending Ring",
-                ring2 = "Overbearing Ring",
+                left_ring="Cath Palug Ring",
+				right_ring="Thurandaut Ring",
                 back = "Visucius's mantle",
                 legs = "Taeon Tights",
                 feet = "Rao Sune-ate"
         }
-        sets.TP.AccuracyMid = {
-                head = {name = "Ryuo Somen", augments = {"STR+10", "DEX+10", "Accuracy+15"}},
-                body = {
-                        name = "Herculean Vest",
-                        augments = {"Accuracy+25 Attack+25", '"Triple Atk."+2', "STR+8", "Attack+15"}
-                },
-                hands = {
-                        name = "Herculean Gloves",
-                        augments = {"Accuracy+21 Attack+21", '"Triple Atk."+2', "STR+11", "Accuracy+9"}
-                },
-                legs = "Samnuha Tights",
-                feet = "Tali'ah Crackows +1",
-                neck = "Shulmanu Collar",
-                waist = "Klouskap Sash",
-                left_ear = "Cessance Earring",
-                right_ear = "Telos Earring",
-                left_ring = "Niqmaddu Ring",
-                right_ring = "Chirich Ring +1",
-                back = {
-                        name = "Visucius's Mantle",
-                        augments = {
-                                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                                "Accuracy+20 Attack+20",
-                                "Pet: Haste+10"
-                        }
-                }
-        }
+		
+		sets.TP.PetMelee ={
+		    head={ name="Taeon Chapeau", augments={'Pet: Accuracy+24 Pet: Rng. Acc.+24','Pet: "Dbl. Atk."+5','Pet: Damage taken -4%',}},
+			body={ name="Taeon Tabard", augments={'Pet: Accuracy+25 Pet: Rng. Acc.+25','Pet: "Dbl. Atk."+4','Pet: Damage taken -3%',}},
+			hands="Mpaca's Gloves",
+			legs={ name="Taeon Tights", augments={'Pet: Accuracy+24 Pet: Rng. Acc.+24','Pet: "Dbl. Atk."+5','Pet: Damage taken -4%',}},
+			feet="Mpaca's Boots",
+			neck="Shulmanu Collar",
+			waist="Incarnation Sash",
+			left_ear="Enmerkar Earring",
+			right_ear="Rimeice Earring",
+			left_ring="Cath Palug Ring",
+			right_ring="Thurandaut Ring",
+			back={ name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10',}},
+		}
+		
 
         sets.TP.AccuracyFull = {
-                head = {name = "Ryuo Somen", augments = {"STR+10", "DEX+10", "Accuracy+15"}},
-                body = {
-                        name = "Herculean Vest",
-                        augments = {"Accuracy+25 Attack+25", '"Triple Atk."+2', "STR+8", "Attack+15"}
-                },
-                hands = {
-                        name = "Herculean Gloves",
-                        augments = {"Accuracy+21 Attack+21", '"Triple Atk."+2', "STR+11", "Accuracy+9"}
-                },
-                legs = "Samnuha Tights",
-                feet = "Tali'ah Crackows +1",
-                neck = "Shulmanu Collar",
-                waist = "Klouskap Sash",
-                left_ear = "Cessance Earring",
-                right_ear = "Telos Earring",
-                left_ring = "Niqmaddu Ring",
-                right_ring = "Chirich Ring +1",
-                back = {
-                        name = "Visucius's Mantle",
-                        augments = {
-                                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                                "Accuracy+20 Attack+20",
-                                "Pet: Haste+10"
-                        }
-                }
+                head="Malignance Chapeau",
+				body="Malignance Tabard",
+				hands="Mpaca's Gloves",
+				legs="Malignance Tights",
+				feet="Malignance Boots",
+				neck = "Shulmanu Collar",
+				waist="Moonbow Belt",
+				left_ear="Telos Earring",
+				right_ear={ name="Schere Earring", augments={'Path: A',}},
+				left_ring="Chirich Ring +1",
+				right_ring="Niqmaddu Ring",
+				back={ name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10','Pet: Damage taken -5%',}},
         }
 
         sets.TP.DT = {
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
-                neck = "Loricate Torque +1",
-                ear1 = "Ethereal",
-                ear2 = "Eabani Earring",
-                body = "Emet harness +1",
-                hands = "Herculean Gloves",
-                ring1 = "Vocane Ring",
-                ring2 = "Niqmaddu Ring",
-                back = "Moonbeam Cape",
-                waist = "Carrier's Sash",
-                legs = {
-                        name = "Herculean Trousers",
-                        augments = {'"Mag.Atk.Bns."+25', "Phys. dmg. taken -5%", "INT+6", "Mag. Acc.+9"}
-                },
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                head="Malignance Chapeau",
+				body="Malignance Tabard",
+				hands="Mpaca's Gloves",
+				legs="Malignance Tights",
+				feet="Malignance Boots",
+				neck={ name="Loricate Torque +1", augments={'Path: A',}},
+				waist="Moonbow Belt",
+				left_ear="Telos Earring",
+				right_ear={ name="Schere Earring", augments={'Path: A',}},
+				left_ring="Chirich Ring +1",
+				right_ring="Niqmaddu Ring",
+				back={ name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10','Pet: Damage taken -5%',}},
         }
 
         sets.TP.DTAccuracy = {
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
-                neck = "Loricate Torque +1",
-                ear1 = "Suppanomimi",
-                ear2 = "Eabani Earring",
-                body = "Emet harness +1",
-                hands = "Herculean Gloves",
-                ring1 = "Dark ring",
-                ring2 = "Vocane Ring",
-                back = {
-                        name = "Visucius's Mantle",
-                        augments = {
-                                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                                "Accuracy+20 Attack+20",
-                                "Pet: Haste+10"
-                        }
-                },
-                waist = "Carrier's Sash",
-                legs = {
-                        name = "Herculean Trousers",
-                        augments = {'"Mag.Atk.Bns."+25', "Phys. dmg. taken -5%", "INT+6", "Mag. Acc.+9"}
-                },
-                feet = "Tali'ah Crackows +1"
+                head="Malignance Chapeau",
+				body="Malignance Tabard",
+				hands="Mpaca's Gloves",
+				legs="Malignance Tights",
+				feet="Malignance Boots",
+				neck = "Shulmanu Collar",
+				waist="Moonbow Belt",
+				left_ear="Telos Earring",
+				right_ear={ name="Schere Earring", augments={'Path: A',}},
+				left_ring="Chirich Ring +1",
+				right_ring="Niqmaddu Ring",
+				back={ name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Haste+10','Pet: Damage taken -5%',}},
         }
 
         --Weaponskill Sets--
@@ -397,52 +345,7 @@ function get_sets()
                 }
         }
 
-        --Ninja Magic Sets--
-        sets.NINMagic = {}
 
-        sets.NINMagic.Nuke = {
-                head = {
-                        name = "Herculean Helm",
-                        augments = {
-                                'Mag. Acc.+20 "Mag.Atk.Bns."+20',
-                                '"Dbl.Atk."+2',
-                                "Mag. Acc.+12",
-                                '"Mag.Atk.Bns."+4'
-                        }
-                },
-                neck = "Sanctity Necklace",
-                ear2 = "Friomisi earring",
-                ear1 = "Hecate's Earring",
-                body = "Samnuha Coat",
-                hands = "Leyline Gloves",
-                ring1 = "Shiva Ring",
-                ring2 = "Acumen Ring",
-                waist = "Eschan Stone",
-                back = "Gunslinger's Cape",
-                legs = "Herculean Trousers",
-                feet = {
-                        name = "Herculean Boots",
-                        augments = {'Mag. Acc.+15 "Mag.Atk.Bns."+15', "VIT+10", '"Mag.Atk.Bns."+12'}
-                }
-        }
-
-        sets.NINMagic.Utsusemi = {
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
-                neck = "Loricate Torque",
-                ar1 = "Brutal Earring",
-                ear2 = "Cessance Earring",
-                body = "Emet harness +1",
-                hands = "Regimens Mittens",
-                ring1 = "Vocane Ring",
-                ring2 = "Niqmaddu Ring",
-                back = "Moonbeam Cape",
-                waist = "Carrier's Sash",
-                legs = "Herculean Trousers",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
-        }
 
         --Utility Sets--
         sets.Utility = {}
@@ -490,10 +393,7 @@ function get_sets()
         sets.Utility.Steps = {
                 ammo = "Falcon Eye",
                 head = "Adhemar Bonnet",
-                body = {
-                        name = "Herculean Vest",
-                        augments = {"Accuracy+25 Attack+25", '"Triple Atk."+2', "STR+8", "Attack+15"}
-                },
+                body = { name = "Herculean Vest", augments = {"Accuracy+25 Attack+25", '"Triple Atk."+2', "STR+8", "Attack+15"}                },
                 hands = "Rawhide Gloves",
                 legs == "Samnuha Tights",
                 feet = "Tali'ah Crackows +1",
@@ -512,9 +412,11 @@ function get_sets()
 
         sets.JA = {}
 
-        sets.JA.Manuever = {}
+        sets.JA.Manuever = {hands = "Foire Dastanas +2", Neck = "Buffoon's Collar"}
 
-        sets.JA.Repair = {ammo = "Automation Oil+3"}
+        sets.JA.Repair = {ammo = "Automation Oil+3", feet = "Foire Babouches +2"}
+		
+		sets.JA.Overdrive = { body ="Pitre Tobe"}
 
         --Precast Sets--
         sets.precast = {}
@@ -542,15 +444,13 @@ function precast(spell)
                 equip(sets.precast.FC.Standard)
         elseif spell.english == "Repair" or spell.english == "Maintenance" then
                 equip(sets.JA.Repair)
-        elseif
-                spell.english == "Dark Maneuver" or spell.english == "Light Maneuver" or spell.english == "Ice Maneuver" or
-                        spell.english == "Earth Maneuver" or
-                        spell.english == "Fire Maneuver" or
+        elseif spell.english == "Dark Maneuver" or spell.english == "Light Maneuver" or spell.english == "Ice Maneuver"  or spell.english == "Earth Maneuver" or  spell.english == "Fire Maneuver" or
                         spell.english == "Wind Maneuver" or
                         spell.english == "Thunder Maneuver" or
-                        spell.english == "Water Maneuver"
-         then
-                equip(sets.JA.Maneuver)
+                        spell.english == "Water Maneuver" then
+                equip(sets.JA.Manuever)
+		elseif spell.english == "Overdrive" then
+			equip(sets.JA.Overdrive)
         elseif spell.english == "Stringing Pummel" then
                 equip(sets.WS.SP)
         elseif spell.english == "Victory Smite" then

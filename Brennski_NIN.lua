@@ -38,7 +38,7 @@ function get_sets()
 		waist = "Carrier's Sash",
 		left_ear = "Infused Earring",
 		right_ear = "Eabani Earring",
-		right_ring = "Vocane Ring",
+		right_ring = "Chirich Ring +1",
 		left_ring = "Defending Ring",
 		back = "Moonbeam Cape"
 	}
@@ -53,7 +53,7 @@ function get_sets()
 		left_ear = "Infused Earring",
 		right_ear = "Eabani Earring",
 		left_ring = "Defending Ring",
-		right_ring = "Vocane Ring",
+		right_ring = "Chirich Ring +1",
 		back = "Moonbeam Cape"
 	}
 
@@ -213,7 +213,7 @@ function get_sets()
 		body = "Ashera Harness",
 		hands = "Floral gauntlets",
 		left_ring = "Defending Ring",
-		right_ring = "Vocane Ring",
+		right_ring = "Chirich Ring +1",
 		back = "Andartia's Mantle",
 		waist = "Windbuffet Belt +1",
 		legs = "Mummu Kecks +2",
@@ -259,7 +259,7 @@ function get_sets()
 		left_ear = "Infused Earring",
 		right_ear = "Eabani Earring",
 		left_ring = "Defending Ring",
-		right_ring = "Vocane Ring",
+		right_ring = "Chirich Ring +1",
 		back = "Moonbeam Cape"
 	}
 	set.MDT = {
@@ -273,7 +273,7 @@ function get_sets()
 		left_ear = "Infused Earring",
 		right_ear = "Eabani Earring",
 		left_ring = "Defending Ring",
-		right_ring = "Vocane Ring",
+		right_ring = "Chirich Ring +1",
 		back = "Moonbeam Cape"
 	}
 	--Weaponskill Sets--

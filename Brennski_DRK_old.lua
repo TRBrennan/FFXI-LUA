@@ -23,12 +23,12 @@ function get_sets()
         sets.Idle.Standard = {ammo="Staunch Tathlum +1",
                                       head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", 
 									  ear1="Eabani earring", ear2="Infused Earring",
-                                      body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Defending ring",ring2="Vocane Ring",
+                                      body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring1="Defending ring",ring2="Chirich Ring +1",
                                       waist="Carrier's Sash",legs="Carmine Cuisses +1",feet="Nyame Sollerets", back ="Moonbeam Cape"}
                                                  
         sets.Idle.DT = { ammo="Staunch Tathlum +1", 
 							head="Sulevia's Mask +2",neck="Loricate Torque +1", ear1="Eabani earring", ear2="Infused Earring",
-                              body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring2="Vocane Ring",ring1="Defending  Ring",
+                              body="Sulevia's Plate. +2",hands="Sulev. Gauntlets +2",ring2="Chirich Ring +1",ring1="Defending  Ring",
                               back="Moonbeam Cape",waist="Carrier's Sash",legs="Sulevia's Cuisses +2",feet="Nyame Sollerets"}
 										
 							
@@ -66,7 +66,7 @@ function get_sets()
                 sets.TP.DT = {ammo="Staunch Tathlum +1",
                               head={ name="Valorous Mask", augments={'Accuracy+30','"Store TP"+4','AGI+10','Attack+13',}}, 
 							  neck="Loricate Torque +1", ear1="Cessance Earring",ear2="Telos Earring",
-                              body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Defending Ring",
+                              body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Chirich Ring +1",ring2="Defending Ring",
                                back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10',}},
 							   waist="Ioskeha Belt",legs="Sulevia's Cuisses +2",feet="Nyame Sollerets"}
                                  
@@ -140,7 +140,7 @@ function get_sets()
        				
 	    sets.NINMagic.Utsusemi ={
                               head="Dampening Tam",neck="Loricate Torque +1", ear1="Brutal Earring",ear2="Cessance Earring",
-                              body="Emet harness +1",hands="Sulev. Gauntlets +2",ring1="Vocane Ring",ring2="Flamma Ring",
+                              body="Emet harness +1",hands="Sulev. Gauntlets +2",ring1="Chirich Ring +1",ring2="Flamma Ring",
                               back="Solemnity Cape",waist="Carrier's Sash",legs="Herculean Trousers",feet="Valorous Greaves"}
 							  
 		

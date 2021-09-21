@@ -183,7 +183,7 @@ function get_sets()
 		-- waist = "Carrier's Sash",
 		-- right_ear = "Hearty Earring",
 		-- left_ear = "Odnowa Earring +1",
-		-- left_ring = "Vocane Ring",
+		-- left_ring = "Moonlight Ring",
 		-- right_ring = "Defending Ring",
 		-- back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	-- }
@@ -463,7 +463,7 @@ function get_sets()
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Hearty Earring",
 		left_ring = "Defending Ring",
-		right_ring = "Vocane Ring",
+		right_ring = "Moonlight Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 
@@ -482,7 +482,7 @@ function get_sets()
 		hands = "Regal Gauntlets",
 		waist = "Carrier's Sash",
 		left_ring = "Defending Ring",
-		right_ring = "Vocane Ring",
+		right_ring = "Moonlight Ring",
 		legs = "Aya. Cosciales +2",
 		feet = "Carmine Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
@@ -498,7 +498,7 @@ function get_sets()
 		hands = "Regal Gauntlets",
 		waist = "Carrier's Sash",
 		left_ring = "Defending Ring",
-		right_ring = "Vocane Ring",
+		right_ring = "Moonlight Ring",
 		legs = {name = "Futhark Trousers +1", augments = {'Enhances "Inspire" effect'}},
 		feet = "Carmine Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
@@ -514,7 +514,7 @@ function get_sets()
 		hands = "Regal Gauntlets",
 		waist = "Carrier's Sash",
 		left_ring = "Defending Ring",
-		right_ring = "Vocane Ring",
+		right_ring = "Moonlight Ring",
 		legs = "Aya. Cosciales +2",
 		feet = "Carmine Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}

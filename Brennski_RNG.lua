@@ -60,32 +60,32 @@ function get_sets()
 	sets.Idle.index = {"Standard", "DT"}
 	Idle_ind = 1
 	sets.Idle.Standard = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		body = "Meg. Cuirie +1",
-		hands = "Kurys Gloves",
-		legs = {name = "Carmine Cuisses +1", augments = {"Accuracy+20", "Attack+12", '"Dual Wield"+6'}},
-		feet = "Ahosi Leggings",
-		neck = "Sanctity Necklace",
-		waist = "Carrier's Sash",
-		left_ear = "Infused Earring",
-		right_ear = "Eabani Earring",
-		left_ring = "Defending Ring",
-		right_ring = "Vocane Ring",
-		back = "Moonbeam Cape"
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet="Malignance Boots",
+    neck="Sanctity Necklace",
+    waist="Carrier's Sash",
+    left_ear="Infused Earring",
+    right_ear="Eabani Earring",
+    left_ring="Defending Ring",
+    right_ring="Chirich Ring +1",
+    back="Moonbeam Cape",
 	}
 	sets.Idle.DT = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		body = "Meg. Cuirie +1",
-		hands = "Kurys Gloves",
-		legs = "Mummu Kecks +2",
-		feet = "Ahosi Leggings",
-		neck = "loricate torque +1",
-		waist = "Carrier's Sash",
-		left_ear = "Infused Earring",
-		right_ear = "Eabani Earring",
-		left_ring = "Defending Ring",
-		right_ring = "Vocane Ring",
-		back = "Moonbeam Cape"
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet="Malignance Boots",
+    neck="Sanctity Necklace",
+    waist="Carrier's Sash",
+    left_ear="Infused Earring",
+    right_ear="Eabani Earring",
+    left_ring="Defending Ring",
+    right_ring="Chirich Ring +1",
+    back="Moonbeam Cape",
 	}
 
 	--CP mantle set--
@@ -243,7 +243,7 @@ function get_sets()
 		body = "Adhemar Jacket +1",
 		hands = "Kurys Gloves",
 		ring1 = "Defending Ring",
-		ring2 = "Vocane Ring",
+		ring2 = "Chirich Ring +1",
 		back = "Moonbeam Cape",
 		waist = "Kentarch Belt +1",
 		legs = "Samnuha Tights",
@@ -257,7 +257,7 @@ function get_sets()
 		body = "Adhemar Jacket +1",
 		hands = "Kurys Gloves",
 		ring1 = "Defending Ring",
-		ring2 = "Vocane Ring",
+		ring2 = "Chirich Ring +1",
 		back = "Moonbeam Cape",
 		waist = "Kentarch Belt +1",
 		legs = "Carmine Cuisses +1",
@@ -271,7 +271,7 @@ function get_sets()
 		body = "Adhemar Jacket +1",
 		hands = "Kurys Gloves",
 		ring1 = "Defending Ring",
-		ring2 = "Vocane Ring",
+		ring2 = "Chirich Ring +1",
 		back = "Moonbeam Cape",
 		waist = "Kentarch Belt +1",
 		legs = "Carmine Cuisses +1",
@@ -320,7 +320,7 @@ function get_sets()
 		waist = "Flume Belt",
 		left_ear = "Infused Earring",
 		right_ear = "Eabani Earring",
-		left_ring = "Vocane Ring",
+		left_ring = "Chirich Ring +1",
 		right_ring = "Defending Ring",
 		back = "Moonbeam Cape"
 	}
@@ -334,7 +334,7 @@ function get_sets()
 		waist = "Flume Belt",
 		left_ear = "Infused Earring",
 		right_ear = "Eabani Earring",
-		left_ring = "Vocane Ring",
+		left_ring = "Chirich Ring +1",
 		right_ring = "Defending Ring",
 		back = "Moonbeam Cape"
 	}
@@ -531,44 +531,33 @@ function get_sets()
 
 	sets.RangedWS = {}
 	sets.RangedWS.Attack = {
-		head = {
-			name = "Herculean Helm",
-			augments = {"Rng.Acc.+23 Rng.Atk.+23", "Weapon skill damage +2%", "DEX+2", "Rng.Acc.+12", "Rng.Atk.+5"}
-		},
-		body = "Meg. Cuirie +1",
-		hands = "Nyame Gauntlets",
-		legs = {name = "Herculean Trousers", augments = {"Rng.Acc.+24 Rng.Atk.+24", "Weapon skill damage +3%", "Rng.Atk.+3"}},
-		feet = {
-			name = "Herculean Boots",
-			augments = {"Rng.Acc.+20 Rng.Atk.+20", "Weapon skill damage +2%", "STR+2", "Rng.Acc.+7"}
-		},
-		neck = "Iskur Gorget",
-		waist = "Yemaya Belt",
-		left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
-		right_ear = "Telos Earring",
-		left_ring = "Dingir Ring",
-		right_ring = "Regal Ring",
-		back = "Belenus's Cape"
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Iskur Gorget",
+    waist="Yemaya Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Telos Earring",
+    left_ring="Dingir Ring",
+    right_ring="Regal Ring",
+    back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 	}
+	
 	sets.RangedWS.Accuracy = {
-		head = {
-			name = "Herculean Helm",
-			augments = {"Rng.Acc.+23 Rng.Atk.+23", "Weapon skill damage +2%", "DEX+2", "Rng.Acc.+12", "Rng.Atk.+5"}
-		},
-		body = "Meg. Cuirie +1",
-		hands = "Nyame Gauntlets",
-		legs = {name = "Herculean Trousers", augments = {"Rng.Acc.+24 Rng.Atk.+24", "Weapon skill damage +3%", "Rng.Atk.+3"}},
-		feet = {
-			name = "Herculean Boots",
-			augments = {"Rng.Acc.+20 Rng.Atk.+20", "Weapon skill damage +2%", "STR+2", "Rng.Acc.+7"}
-		},
-		neck = "Iskur Gorget",
-		waist = "Yemaya Belt",
-		left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
-		right_ear = "Telos Earring",
-		left_ring = "Dingir Ring",
-		right_ring = "Regal Ring",
-		back = "Belenus's Cape"
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Iskur Gorget",
+    waist="Yemaya Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Telos Earring",
+    left_ring="Dingir Ring",
+    right_ring="Regal Ring",
+    back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 	}
 
 	sets.RangedWScrit = {}

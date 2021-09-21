@@ -280,7 +280,7 @@ function init_gear_sets()
 		ear1="Eabani Earring",ear2="Infused Earring",
         body="Ashera Harness",
 		hands="Herculean Gloves",
-		ring2="Vocane Ring",
+		ring2="Chirich Ring +1",
 		ring1="Defending Ring",
         back="Moonbeam Cape",
 		waist="Carrier's Sash",
@@ -317,7 +317,7 @@ function init_gear_sets()
         neck="Sanctity necklace",
         waist="Carrier's Sash",
         left_ear="Infused Earring", right_ear="Eabani Earring",   
-        left_ring="Vocane Ring",
+        left_ring="Chirich Ring +1",
         right_ring="Defending Ring",
         back="Shadow mantle"}
          
@@ -332,7 +332,7 @@ function init_gear_sets()
         neck="Sanctity necklace",
         waist="Carrier's Sash",
         left_ear="Infused Earring", right_ear="Eabani Earring",   
-        right_ring="Vocane Ring",
+        right_ring="Chirich Ring +1",
         left_ring="Defending Ring",
         back="Moonbeam Cape"}
  
@@ -346,7 +346,7 @@ function init_gear_sets()
         neck="Sanctity necklace",
         waist="Carrier's Sash",
         left_ear="Infused Earring", right_ear="Eabani Earring",    
-        right_ring="Vocane Ring",
+        right_ring="Chirich Ring +1",
         left_ring="Defending Ring",
         back="Moonbeam Cape"}
      
@@ -378,7 +378,7 @@ function init_gear_sets()
         waist="Carrier's Sash",
         left_ear="Eabani Earring",
         right_ear="Suppanomimi",
-        right_ring="Vocane Ring",
+        right_ring="Chirich Ring +1",
         left_ring="Defending Ring",
         back="Moonbeam Cape",}
          
