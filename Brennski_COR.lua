@@ -100,7 +100,7 @@ function get_sets()
 										neck="Lissome Necklace",
 										waist="Reiki Yotai",
 										left_ear="Suppanomimi",
-										right_ear="Digni. Earring",
+										right_ear="Telos Earring",
 										left_ring="Chirich Ring +1",
 										right_ring="Epona's Ring",
 										back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -255,7 +255,7 @@ function get_sets()
         sets.JA = {}
        
         sets.JA.QuickDraw = {ammo ="Animikii Bullet", head ="Nyame Helm",
-							neck="Commodore Charm +1",   ear2="Friomisi earring", ear1="Hecate's Earring",
+							neck="Commodore Charm +1",   ear2="Friomisi earring", ear1="Crep. Earring",
 							body="Lanun Frac +3",    hands="Nyame Gauntlets", ring1="Acumen Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
 							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 							Leg = "Nyame Flanchard", 
@@ -267,7 +267,7 @@ function get_sets()
 							  waist="Carrier's Sash",legs="Desultor Tassets",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}} }
        
         sets.JA.LightDarkShot= {ammo ="Animikii Bullet",head ="Nyame Helm",
-							neck="Commodore Charm +1",   ear2="Friomisi earring", ear1="Dignitary's Earring",
+							neck="Commodore Charm +1",   ear2="Crep. earring", ear1="Dignitary's Earring",
 							body="Lanun Frac +3",  hands="Leyline Gloves", ring1="Sangoma Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
 							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 							Leg = "Nyame Flanchard", 

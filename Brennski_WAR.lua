@@ -391,7 +391,7 @@ function get_sets()
 		neck = "Sanctity Necklace",
 		waist = "Eschan Stone",
 		left_ear = "Digni. Earring",
-		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
+		right_ear = "Crep. Earring",
 		left_ring = "Stikini ring +1",
 		right_ring = "Flamma Ring",
 		back = "Izdubar Mantle"
@@ -498,7 +498,7 @@ function get_sets()
 		head = "Pixie hairpin +1",
 		neck = "Sanctity Necklace",
 		ear1 = "Friomisi earring",
-		ear2 = "Crematio earring",
+		ear2 = "Crep. earring",
 		body = "Nayame Mail",
 		hands = "Nayame Gauntlets",
 		ring1 = "Acumen Ring",
@@ -1115,7 +1115,7 @@ end
 function precast(spell)
 	if spell.action_type == "Magic" then
 		equip(sets.fastcast)
-		send_command("@input /echo Fastcast Set")
+		--send_command("@input /echo Fastcast Set")
 	end
 	if player.equipment.main == "Chango" then
 		TPBonus = 500
@@ -1136,10 +1136,10 @@ function precast(spell)
 			if spell.target.distance <= 5.6 then
 				TPBonus = TPBonus + 250
 				CurrentTP = player.tp + TPBonus
-				send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
+				--send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
 				if CurrentTP > 1500 then
 					equip(sets.UpheavalWSD)
-					send_command("@input /echo Upheaval WSD Set")
+					--send_command("@input /echo Upheaval WSD Set")
 				-- if buffactive["Mighty Strikes"] then
 					-- equip(sets.UpheavalCrit)
 					-- send_command("@input /echo Upheavel Crit Set")
@@ -1147,7 +1147,7 @@ function precast(spell)
 				else
 					equip(sets.UpheavalDA)
 				--equip(sets.UpheavalWSD)
-					send_command("@input /echo Upheaval DA Set")
+					--send_command("@input /echo Upheaval DA Set")
 				-- if buffactive["Mighty Strikes"] then
 					-- equip(sets.UpheavalCrit)
 					-- send_command("@input /echo Upheavel Crit Set")
@@ -1164,11 +1164,11 @@ function precast(spell)
 				send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
 				if CurrentTP > 1500 then
 					equip(sets.UpheavalCrit)
-					send_command("@input /echo ID Crit Damage WSD Set")
+					--send_command("@input /echo ID Crit Damage WSD Set")
 				else
 					equip(sets.ID)
 					--equip(sets.UpheavalWSD)
-					send_command("@input /echo ID Crit Rate DA Set")
+					--send_command("@input /echo ID Crit Rate DA Set")
 				end
 			else
 			cancel_spell()
@@ -1176,29 +1176,29 @@ function precast(spell)
 			end
 		elseif spell.english == "Ukko's Fury" then
 			equip(sets.UF)
-			send_command("@input /echo UF Set")
+			--send_command("@input /echo UF Set")
 		elseif spell.english == "Metatron Torment" then
 			equip(sets.MT)
-			send_command("@input /echo MT Set")
+			--send_command("@input /echo MT Set")
 		elseif spell.english == "Fell Cleave" then
 			equip(sets.FellCleave)
-			send_command("@input /echo FC Set")
+			--send_command("@input /echo FC Set")
 		elseif spell.english == "King's Justice" then
 			--equip(sets.KingsJusticeDA)
 			--send_command('@input /echo KJ Set')
 			TPBonus = TPBonus + 250
 			CurrentTP = player.tp + TPBonus
-			send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
+			--send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
 			if CurrentTP > 1500 then
 				equip(sets.KingsJusticeWSD)
-				send_command("@input /echo KJ WSD Set")
+				--send_command("@input /echo KJ WSD Set")
 			else
 				equip(sets.KingsJusticeDA)
-				send_command("@input /echo KJ DA Set")
+				--send_command("@input /echo KJ DA Set")
 			end
 		elseif spell.english == "Steel Cyclone" then
 			equip(sets.Steelcyclone)
-			send_command("@input /echo Steel Cyclone Set")
+			--send_command("@input /echo Steel Cyclone Set")
 		elseif spell.english == 'Raging Rush' then
 			equip(sets.RR)
 			send_command('@input /echo Raging Rush Set')
@@ -1206,63 +1206,63 @@ function precast(spell)
 			spell.english == "Full Break" or spell.name == "Armor Break" or spell.name == "Shield Break" or
 			spell.name == "Weapon Break" or	spell.name == "Leg Sweep" then
 			equip(sets.Break)
-			send_command("@input /echo Break Set")		
+			--send_command("@input /echo Break Set")		
 	---Great Sword Weapon Skills---
 		elseif spell.english == "Resolution" then
 			if spell.target.distance <= 5.6 then	
 				equip(sets.Resolution)
 			--equip(sets.ResoWSD)
-				send_command("@input /echo Resolution Set")
+				--send_command("@input /echo Resolution Set")
 			else
 			cancel_spell()
 			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
 			end
 		elseif spell.english == "Scourge" then
 			equip(sets.Scourge)
-			send_command("@input /echo Scourge Set")
+			--send_command("@input /echo Scourge Set")
 		elseif spell.english == "Ground Strike" then
 			equip(sets.Groundstrike)
-			send_command("@input /echo Ground Strike Set")
+			--send_command("@input /echo Ground Strike Set")
 		elseif spell.english == "Crescent Moon" then
 			equip(sets.CrescentMoon)
-			send_command("@input /echo CM Set")
+			--send_command("@input /echo CM Set")
 		elseif spell.english == "Shockwave" then
 			equip(sets.Shockwave)
-			send_command("@input /echo Shockwave Set")
+			--send_command("@input /echo Shockwave Set")
 		elseif spell.english == "Herculean Slash" then
 			---Axe Weapon Skills---
 			equip(sets.Herculean)
-			send_command("@input /echo Herculean Set")
+			--send_command("@input /echo Herculean Set")
 		elseif spell.english == "Ruinator" then
 			equip(sets.Ruinator)
-			send_command("@input /echo Ruinator Set")
+			--send_command("@input /echo Ruinator Set")
 		elseif spell.english == "Mistral Axe" then
 			if buffactive["Sneak Attack"] then
 				equip(sets.MistralCrit)
-				send_command("@input /echo Mistral Crit Set")
+				--send_command("@input /echo Mistral Crit Set")
 			else
 				equip(sets.Mistral)
-				send_command("@input /echo Mistral Set")
+				--send_command("@input /echo Mistral Set")
 			end
 		elseif spell.english == "Cloudsplitter" or spell.english == "Red Lotus Blade" or spell.english == "Seraph Blade" then
 			equip(sets.Cloud)
-			send_command("@input /echo Magic WS Set")
+			--send_command("@input /echo Magic WS Set")
 		elseif spell.english == "Decimation" then
 			equip(sets.Decimation)
-			send_command("@input /echo Decimation Set")
+			--send_command("@input /echo Decimation Set")
 		elseif spell.english == "Rampage" then
 			---Sword Weapon Skills---
 			equip(sets.Rampage)
 			--equip(sets.ResoWSD)
-			send_command("@input /echo Rampage Set")
+			--send_command("@input /echo Rampage Set")
 		elseif spell.english == "Savage Blade" then
 			if spell.target.distance <= 5.6 then
 				if buffactive["Sneak Attack"] then
 					equip(sets.SavageCrit)
-					send_command("@input /echo Savage Blade Crit Set")
+					--send_command("@input /echo Savage Blade Crit Set")
 				else
 					equip(sets.Savage)
-					send_command("@input /echo Savage Blade Set")
+					--send_command("@input /echo Savage Blade Set")
 				end
 			else
 			cancel_spell()
@@ -1270,71 +1270,71 @@ function precast(spell)
 			end
 		elseif spell.english == "Requiescat" then
 			equip(sets.Requiescat)
-				send_command("@input /echo Requiescat Set")
+				--send_command("@input /echo Requiescat Set")
 		elseif spell.english == "Sanguine Blade" then
 			equip(sets.Sanguine)
-			send_command("@input /echo Sanguine Blade Set")
+			--send_command("@input /echo Sanguine Blade Set")
 		elseif spell.english == "Vorpal Blade" then
 			---Club Weapon Skills---
 			equip(sets.Vorpal)
-			send_command("@input /echo Vorpal Blade Set")
+			--send_command("@input /echo Vorpal Blade Set")
 		elseif spell.english == "Black Halo" then
 			equip(sets.BH)
-			send_command("@input /echo BH Set")
+			--send_command("@input /echo BH Set")
 		elseif spell.english == "Judgment" then
 			if spell.target.distance <= 5.6 then
 				equip(sets.Judgment)
-				send_command("@input /echo Judgment Set")
+				--send_command("@input /echo Judgment Set")
 			else
 			cancel_spell()
 			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
 			end
 		elseif spell.english == "True Strike" then
 			equip(sets.Truestrike)
-			send_command("@input /echo TS Set")
+			--send_command("@input /echo TS Set")
 		elseif spell.english == "Hexa Strike" then
 			---Pole Arm Weapon Skills---
 			equip(sets.Hexa)
-			send_command("@input /echo Hexa Set")
+			--send_command("@input /echo Hexa Set")
 		elseif spell.english == "Penta Thrust" then
 			--equip(sets.Penta)
 			equip(sets.ResoWSD)
-			send_command("@input /echo Penta Set")
+			--send_command("@input /echo Penta Set")
 		elseif spell.english == "Stardiver" then
 			--equip(sets.StarDiver)
 			equip(sets.ResoWSD)
-			send_command("@input /echo StarDiver Set")
+			--send_command("@input /echo StarDiver Set")
 		elseif spell.english == "Sonic Thrust" then
 			equip(sets.Sonic)
-			send_command("@input /echo Sonic Thrust Set")
+			--send_command("@input /echo Sonic Thrust Set")
 		elseif spell.english == "Wheeling Thrust" then
 			---Scythe Weapon Skills---
 			equip(sets.Wheeling)
-			send_command("@input /echo Wheeling Thrust Set")
+			--send_command("@input /echo Wheeling Thrust Set")
 		elseif spell.english == "Cross Reaper" then
 			---Dagger Weapon Skills---
 			equip(sets.CR)
-			send_command("@input /echo CR Set")
+			--send_command("@input /echo CR Set")
 		elseif spell.english == "Evisceration" then
 			---Staff Weapon Skills---
 			equip(sets.Evisceration)
-			send_command("@input /echo Evisceration Set")
+			--send_command("@input /echo Evisceration Set")
 		elseif spell.english == "Retribution" then
 			equip(sets.Retribution)
-			send_command("@input /echo Retribution Set")
+			--send_command("@input /echo Retribution Set")
 		elseif spell.english == "Full Swing" then
 			---H2H Weapon Skills---
 			equip(sets.FullSwing)
-			send_command("@input /echo Full Swing Set")
+			--send_command("@input /echo Full Swing Set")
 		elseif spell.english == "Raging Fists" then
 			equip(sets.RF)
-			send_command("@input /echo RF Set")
+			--send_command("@input /echo RF Set")
 		elseif spell.english == "Tornado Kick" then
 			equip(sets.TK)
-			send_command("@input /echo TK Set")
+			--send_command("@input /echo TK Set")
 		elseif spell.english == "Dragon Kick" then
 			equip(sets.DK)
-			send_command("@input /echo DK Set")
+			--send_command("@input /echo DK Set")
 		else
 		end
 	end
@@ -1342,7 +1342,7 @@ function precast(spell)
 	if spell.type == "JobAbility" then
 		if 	spell.english == "Provoke" or spell.english == "Animated Flourish" or spell.english == "Flash" or spell.english == "stun" then
 			equip(sets.enmity)
-			send_command("@input /echo Enmity Set")
+			--send_command("@input /echo Enmity Set")
 		elseif spell.english == "Berserk" then
 			equip(set_combine(sets.enmity, sets.JA.Berserk))
 		elseif spell.english == "Aggressor" then
@@ -1363,7 +1363,7 @@ function midcast(spell, act)
 	if spell.action_type == "Magic" then
 		if spell.name == "Utsusemi: Ichi" or spell.name == "Utsusemi: Ni" then
 			equip(sets.midcast)
-			send_command("@input /echo Midcast DT Set")
+			--send_command("@input /echo Midcast DT Set")
 		else
 		end
 	else
@@ -1394,7 +1394,7 @@ function aftercast(spell)
 			end
 		else
 			equip(sets.TP[sets.TP.index[TP_ind]])
-			send_command("@input /echo TP Set")
+			--send_command("@input /echo TP Set")
 			if buffactive["doom"] or buffactive["curse"] then
 				equip(sets.Utility.Doomed)
 			end
@@ -1410,14 +1410,14 @@ function aftercast(spell)
 				equip({neck = "Opo-opo Necklace"})
 			else
 				equip(sets.Idle.Standard)
-				send_command("@input /echo Idle Set")
+				--send_command("@input /echo Idle Set")
 			end
 		else
 		end
 	end
 	if spell.interrupted == true then
 		equip(sets.TP[sets.TP.index[TP_ind]])
-		send_command("@input /echo WS failed using Set")
+		--send_command("@input /echo WS failed using Set")
 	end
 end
 function status_change(new, old)
@@ -1429,7 +1429,7 @@ function status_change(new, old)
 		if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Ukonvasara" then
 			--TP_ind = 12
 			equip(sets.TP.UkonAm)
-			send_command("@input /echo Ukon AM Set")
+			--send_command("@input /echo Ukon AM Set")
 		end						
 	else
 		equip(sets.Idle.Standard)
@@ -1461,49 +1461,49 @@ function self_command(command)
 		end
 	elseif command == "equip Idle set" then
 		equip(sets.Idle.Standard)
-		send_command("@input /echo Idle Set")
+		--send_command("@input /echo Idle Set")
 	elseif command == "equip OH set" then
 		TP_ind = 2
 		equip(sets.TP[sets.TP.index[TP_ind]])
-		send_command("@input /echo OH Set")
+		--send_command("@input /echo OH Set")
 	elseif command == "equip OHAcc set" then
 		TP_ind = 3
 		equip(sets.TP[sets.TP.index[TP_ind]])
-		send_command("@input /echo OHAcc Set")
+		--send_command("@input /echo OHAcc Set")
 	elseif command == "equip H2H set" then
 		TP_ind = 8
 		equip(sets.TP[sets.TP.index[TP_ind]])
-		send_command("@input /echo H2H Set")
+		--send_command("@input /echo H2H Set")
 	elseif command == "equip Zulfiqar set" then
 		TP_ind = 9
 		equip(sets.TP[sets.TP.index[TP_ind]])
-		send_command("@input /echo Zulfiqar Set")
+		--send_command("@input /echo Zulfiqar Set")
 	elseif command == "equip DW set" then
 		TP_ind = 10
 		equip(sets.TP[sets.TP.index[TP_ind]])
-		send_command("@input /echo DW Set")
+		--send_command("@input /echo DW Set")
 	elseif command == "equip DT set" then
 		if player.equipment.main == "Bravura" and buffactive["Aftermath"] then
 			TP_ind = 7
 			equip(sets.TP[sets.TP.index[TP_ind]])
-			send_command("@input /echo Bravura DT Set")
+			--send_command("@input /echo Bravura DT Set")
 		else
 			TP_ind = 6
 			equip(sets.TP[sets.TP.index[TP_ind]])
-			send_command("@input /echo DT Set")
+			--send_command("@input /echo DT Set")
 		end
 	elseif command == "equip DTAM set" then
 		TP_ind = 7
 		equip(sets.TP[sets.TP.index[TP_ind]])
-		send_command("@input /echo DTAM Set")
+		--send_command("@input /echo DTAM Set")
 	elseif command == "equip Acc_Lite set" then
 		TP_ind = 4
 		equip(sets.TP[sets.TP.index[TP_ind]])
-		send_command("@input /echo Acc_lite Set")
+		--send_command("@input /echo Acc_lite Set")
 	elseif command == "equip Acc_Full set" then
 		TP_ind = 5
 		equip(sets.TP[sets.TP.index[TP_ind]])
-		send_command("@input /echo Acc_Full Set")
+		--send_command("@input /echo Acc_Full Set")
 	elseif command == "equip Hybrid set" then
 		TP_ind = 11
 		equip(sets.TP.Hybrid)
@@ -1512,10 +1512,10 @@ function self_command(command)
 	elseif command == "change debug mode" then
 		if Gear_Debug == 1 then
 			Gear_Debug = 0
-			send_command("@input /echo Debug Mode Set to 0")
+			--send_command("@input /echo Debug Mode Set to 0")
 		else
 			Gear_Debug = 1
-			send_command("@input /echo Debug Mode Set to 1")
+			--send_command("@input /echo Debug Mode Set to 1")
 		end
 	end
 end
@@ -1534,7 +1534,7 @@ function buff_change(buff, gain)
 				if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Ukonvasara" then
 					--TP_ind = 12
 					equip(sets.TP.UkonAm)
-					send_command("@input /echo Ukon AM Set")
+					--send_command("@input /echo Ukon AM Set")
 				end				
 			elseif player.status == "Idle" then
 				equip(sets.Idle[sets.Idle.index[Idle_ind]])

@@ -142,7 +142,7 @@ function get_sets()
 	sets.TP.MDTank = {
 		ammo = "Staunch Tathlum +1",
 		head="Nyame Helm",
-		body = "Nyame Mail",
+		body = "Runeist's Coat +3",
 		--hands="Regal Gauntlets",
 		hands = "Nyame Gauntlets",
 		--legs = "Eri. Leg Guards +1",
@@ -349,7 +349,7 @@ function get_sets()
 	sets.Utility.Enmity = {
 		ammo = "Sapience Orb",
 		head = "Halitus Helm",
-		neck = "Unmoving Collar +1",
+		neck = "Futhark Torque +1",
 		right_ear = "Friomisi Earring",
 		left_ear = "Odnowa Earring +1",
 		body = "Emet harness +1",

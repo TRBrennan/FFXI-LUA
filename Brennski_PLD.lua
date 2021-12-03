@@ -70,11 +70,11 @@ function get_sets()
 		sets.Idle.OdyCleave = {
 		ammo="Staunch Tathlum +1",
 		head="Sakpata's Helm",
-		body="Tartarus Platemail",
+		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 		feet="Sakpata's Leggings",
-		neck="Loricate Torque +1",
+		neck = "Unmoving Collar +1",
 		waist="Carrier's Sash",
 		left_ear="Odnowa Earring +1",
 		right_ear = "Tuisto Earring",
@@ -103,7 +103,7 @@ function get_sets()
 		right_ear = "Tuisto Earring",
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
 	}
 
 	sets.TP.Turtle = {
@@ -135,7 +135,7 @@ function get_sets()
 		right_ear = "Tuisto Earring",
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},	
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},	
 	}
 	
 	--Weaponskill Sets--
@@ -158,7 +158,7 @@ function get_sets()
 		ring2 = "Regal Ring",
 		ring1 = "Petrov Ring",
 		waist = "Fotia Belt",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
 	}
 
 	sets.SavageBlade = {}
@@ -176,7 +176,7 @@ function get_sets()
 		hands= "Nyame Gauntlets",
 		left_ring = "Moonlight Ring",
 		ring2 = "Regal Ring",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
 		waist = "Sailfi Belt +1",
 		legs = "Nyame Flanchard",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -197,7 +197,7 @@ function get_sets()
 		hands = "Flam. Manopolas +2",
 		ring2 = "Rajas ring",
 		ring1 = "Petrov Ring",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
 		waist = "Fotia Belt",
 		legs="Sakpata's Cuisses",
 		feet = "Thereoid Greaves"
@@ -216,7 +216,7 @@ function get_sets()
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
 		waist = "Eschan Stone",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
 		legs = "Hagondes Pants",
 		feet = "Weatherspoon souliers +1"
 	}

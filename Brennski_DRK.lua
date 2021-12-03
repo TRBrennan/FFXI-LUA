@@ -155,7 +155,7 @@ function get_sets()
 			   	back=STR_Back,waist="Sailfi Belt +1",legs=WSD_Legs,feet={ name="Nyame Sollerets", augments={'Path: B',}},}
 				
 	sets.Shockwave =  {ammo="Knobkierrie",
-			    head=WSD_Head,neck="Fotia Gorget",ear1="Brutal earring",ear2="Moonshade earring",
+			    head=WSD_Head,neck="Fotia Gorget",ear1="Crep. earring",ear2="Moonshade earring",
 			 	body="Argosy Hauberk +1",hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
 				back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Flam. Gambieras +2"}
 	
@@ -185,7 +185,7 @@ function get_sets()
 			   	back=STR_Back,waist="Fotia Belt",legs=WSD_Legs,feet={ name="Nyame Sollerets", augments={'Path: B',}},}
 				
 	sets.Infernal = {ammo="Knobkierrie",
-			    head="Pixie hairpin +1",neck="Abyssal Bead Necklace +2",ear1="Friomisi earring",ear2="Crematio earring",
+			    head="Pixie hairpin +1",neck="Abyssal Bead Necklace +2",ear1="Friomisi earring",ear2="Crep. earring",
 			 	body=WSD_Body,hands="Nyame Gauntlets",ring1="Shiva ring +1",ring2="Archon ring",
 			   	back=WSD_Back,waist="Eschan stone",legs="Heathen's flanchard +1",feet="Nyame Sollerets"}
 	

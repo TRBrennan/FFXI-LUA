@@ -436,14 +436,7 @@ function init_gear_sets()
         hands = "Lamassu mitts +1",
         ring1 = "Evoker's Ring",
         ring2 = "Stikini Ring",
-        back = {
-            name = "Campestres's Cape",
-            augments = {
-                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                "Pet: Accuracy+10 Pet: Rng. Acc.+10",
-                'Pet: "Regen"+10'
-            }
-        },
+         back = { name = "Campestres's Cape",augments = {"Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20","Pet: Accuracy+10 Pet: Rng. Acc.+10",'Pet: "Regen"+10'}},
         waist = "Kobo obi",
         feet = {name = "Apogee Pumps +1", augments = {"MP+80", "Pet: Attack+35", "Blood Pact Dmg.+8"}},
         legs = "Beckoner's spats +1"
@@ -461,14 +454,7 @@ function init_gear_sets()
         hands = "Lamassu mitts +1",
         ring1 = "Evoker's Ring",
         ring2 = "Globidonta Ring",
-        back = {
-            name = "Campestres's Cape",
-            augments = {
-                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                "Pet: Accuracy+10 Pet: Rng. Acc.+10",
-                'Pet: "Regen"+10'
-            }
-        },
+         back = { name = "Campestres's Cape",augments = {"Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20","Pet: Accuracy+10 Pet: Rng. Acc.+10",'Pet: "Regen"+10'}},
         waist = "Lucidity Sash",
         feet = {name = "Apogee Pumps +1", augments = {"MP+80", "Pet: Attack+35", "Blood Pact Dmg.+8"}},
         legs = "Beckoner's spats +1"
@@ -525,14 +511,7 @@ function init_gear_sets()
         right_ear = "Gelos Earring",
         left_ring = "Varar Ring",
         right_ring = "Varar Ring",
-        back = {
-            name = "Campestres's Cape",
-            augments = {
-                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                "Pet: Accuracy+10 Pet: Rng. Acc.+10",
-                'Pet: "Regen"+10'
-            }
-        }
+        back = { name = "Campestres's Cape",augments = {"Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20","Pet: Accuracy+10 Pet: Rng. Acc.+10",'Pet: "Regen"+10'}}
     }
 
     sets.midcast.Pet.PhysicalBloodPactRage.Acc = sets.midcast.Pet.PhysicalBloodPactRage
@@ -540,10 +519,7 @@ function init_gear_sets()
     sets.midcast.Pet.DoubleRagePacts = sets.midcast.Pet.PhysicalBloodPactRage
 
     sets.midcast.Pet.MagicalBloodPactRage = {
-        main = {
-            name = "Grioavolr",
-            augments = {"Blood Pact Dmg.+9", "Pet: INT+1", "Pet: Mag. Acc.+25", 'Pet: "Mag.Atk.Bns."+24', "DMG:+14"}
-        },
+        main = {name = "Grioavolr",augments = {"Blood Pact Dmg.+9", "Pet: INT+1", "Pet: Mag. Acc.+25", 'Pet: "Mag.Atk.Bns."+24', "DMG:+14"}},
         sub = "Elan Strap",
         ammo = "Sancus Sachet +1",
         head = {name = "Apogee Crown +1", augments = {"MP+80", 'Pet: "Mag.Atk.Bns."+35', "Blood Pact Dmg.+8"}},
@@ -597,14 +573,7 @@ function init_gear_sets()
         right_ear = "Gelos Earring",
         left_ring = "Varar Ring",
         right_ring = "Varar Ring",
-        back = {
-            name = "Campestres's Cape",
-            augments = {
-                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                "Pet: Accuracy+10 Pet: Rng. Acc.+10",
-                'Pet: "Regen"+10'
-            }
-        }
+         back = { name = "Campestres's Cape",augments = {"Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20","Pet: Accuracy+10 Pet: Rng. Acc.+10",'Pet: "Regen"+10'}}
     }
 
     -- Aftercast sets
@@ -716,14 +685,7 @@ function init_gear_sets()
         right_ear = "Enmerkar Earring",
         left_ring = "Varar Ring",
         right_ring = "Varar Ring",
-        back = {
-            name = "Campestres's Cape",
-            augments = {
-                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                "Pet: Accuracy+10 Pet: Rng. Acc.+10",
-                'Pet: "Regen"+10'
-            }
-        }
+         back = { name = "Campestres's Cape",augments = {"Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20","Pet: Accuracy+10 Pet: Rng. Acc.+10",'Pet: "Regen"+10'}}
     }
 
     sets.idle.PDT.Avatar = {}
@@ -739,14 +701,7 @@ function init_gear_sets()
         hands = "Lamassu mitts +1",
         ring1 = "Evoker's Ring",
         ring2 = "Globidonta ring",
-        back = {
-            name = "Campestres's Cape",
-            augments = {
-                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                "Pet: Accuracy+10 Pet: Rng. Acc.+10",
-                'Pet: "Regen"+10'
-            }
-        },
+         back = { name = "Campestres's Cape",augments = {"Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20","Pet: Accuracy+10 Pet: Rng. Acc.+10",'Pet: "Regen"+10'}},
         waist = "Kobo obi",
         feet = {name = "Apogee Pumps +1", augments = {"MP+80", "Pet: Attack+35", "Blood Pact Dmg.+8"}},
         legs = "Beck. spats +1"
@@ -766,14 +721,7 @@ function init_gear_sets()
         ring2 = "Globidonta Ring",
         legs = "Beck. spats +1",
         waist = "Kobo obi",
-        back = {
-            name = "Campestres's Cape",
-            augments = {
-                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                "Pet: Accuracy+10 Pet: Rng. Acc.+10",
-                'Pet: "Regen"+10'
-            }
-        },
+         back = { name = "Campestres's Cape",augments = {"Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20","Pet: Accuracy+10 Pet: Rng. Acc.+10",'Pet: "Regen"+10'}},
         feet = {name = "Apogee Pumps +1", augments = {"MP+80", "Pet: Attack+35", "Blood Pact Dmg.+8"}},
         legs = "Beck. spats +1"
     }
@@ -800,14 +748,7 @@ function init_gear_sets()
         right_ear = "Enmerkar Earring",
         left_ring = "Varar Ring",
         right_ring = "Varar Ring",
-        back = {
-            name = "Campestres's Cape",
-            augments = {
-                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                "Pet: Accuracy+10 Pet: Rng. Acc.+10",
-                'Pet: "Regen"+10'
-            }
-        }
+         back = { name = "Campestres's Cape",augments = {"Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20","Pet: Accuracy+10 Pet: Rng. Acc.+10",'Pet: "Regen"+10'}}
     }
 
     sets.perp = {}
@@ -823,14 +764,7 @@ function init_gear_sets()
         hands = "Asteria mitts +1",
         ring1 = "Evoker's Ring",
         ring2 = "Globidonta Ring",
-        back = {
-            name = "Campestres's Cape",
-            augments = {
-                "Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20",
-                "Pet: Accuracy+10 Pet: Rng. Acc.+10",
-                'Pet: "Regen"+10'
-            }
-        },
+         back = { name = "Campestres's Cape",augments = {"Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20","Pet: Accuracy+10 Pet: Rng. Acc.+10",'Pet: "Regen"+10'}},
         waist = "Fucho-no-Obi",
         legs = "Assiduity Pants +1",
         feet = {name = "Apogee Pumps +1", augments = {"MP+80", "Pet: Attack+35", "Blood Pact Dmg.+8"}}

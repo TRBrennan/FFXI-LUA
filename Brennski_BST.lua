@@ -72,76 +72,51 @@ function get_sets()
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
-		ammo = "Demonry Core",
-		head = {
-			name = "Herculean Helm",
-			augments = {
-				"Pet: CHR+2",
-				'Potency of "Cure" effect received+3%',
-				'"Refresh"+2',
-				'Mag. Acc.+1 "Mag.Atk.Bns."+1'
-			}
-		},
-		neck = "Sanctity Necklace",
-		ear1 = "Eabani earring",
-		ear2 = "Handler's earring",
-		body = "Emet Harness +1",
-		hands = "Ankusa Gloves",
-		ring1 = "Chirich Ring +1",
-		ring2 = "Defending ring",
-		waist = "Carrier's Sash",
-		legs = "Herculean Trousers",
-		feet = "Amm Greaves",
-		back = "Mecistopins mantle"
+		ammo="Staunch Tathlum +1",
+		head="Malignance Chapeau",
+		body={ name="Gleti's Cuirass", augments={'Path: A',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Sanctity Necklace",
+		waist="Carrier's Sash",
+		left_ear="Eabani Earring",
+		right_ear="Infused Earring",
+		left_ring="Chirich Ring +1",
+		right_ring="Defending Ring",
+		back="Moonbeam Cape",
 	}
 
 	sets.Idle.DT = {
-		main = "Terra's Staff",
-		sub = "Umbra strap",
-		ammo = "Amar Cluster",
-		head = {
-			name = "Herculean Helm",
-			augments = {
-				"Pet: CHR+2",
-				'Potency of "Cure" effect received+3%',
-				'"Refresh"+2',
-				'Mag. Acc.+1 "Mag.Atk.Bns."+1'
-			}
-		},
-		neck = "Loricate Torque +1",
-		ear1 = "Etiolation earring",
-		ear2 = "Handler's earring +1",
-		body = "Emet Harness +1",
-		hands = "Adhemar Wristbands",
-		ring1 = "Defending ring",
-		ring2 = "Succor ring",
-		back = "Cornflower Cape",
-		waist = "Carrier's Sash",
-		legs = "Samnuha Tights",
-		feet = "Amm Greaves"
+		ammo="Staunch Tathlum +1",
+		head="Malignance Chapeau",
+		body= "Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Sanctity Necklace",
+		waist="Carrier's Sash",
+		left_ear="Eabani Earring",
+		right_ear="Infused Earring",
+		left_ring="Chirich Ring +1",
+		right_ring="Defending Ring",
+		back="Moonbeam Cape",
 	}
 
 	sets.Idle.PetEngaged = {
-		ammo = "Demonry Core",
-		head = "Awing Salade",
-		body = "Emicho Haubert +1",
-		legs = {
-			name = "Valor. Hose",
-			augments = {
-				"Pet: Accuracy+30 Pet: Rng. Acc.+30",
-				'"Dbl.Atk."+1',
-				"Pet: INT+6",
-				"Pet: Attack+11 Pet: Rng.Atk.+11"
-			}
-		},
-		feet = "Emicho Gambieras",
-		hands = "Regimen Mittens",
-		legs = "Taeon Tights",
-		back = "Pastoralist's Mantle",
-		neck = "Shulmanu Collar",
-		left_ear = "Sabong Earring",
-		right_ear = "Enmerkar Earring",
-		waist = "Isa Belt"
+			ammo="Hesperiidae",
+			head="Gleti's Mask",
+			body={ name="Gleti's Cuirass", augments={'Path: A',}},
+			hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+			legs="Gleti's Breeches",
+			feet="Gleti's Boots",
+			neck="Shulmanu Collar",
+			waist="Incarnation Sash",
+			left_ear="Enmerkar Earring",
+			right_ear="Crep. Earring",
+			left_ring="C. Palug Ring",
+			right_ring="Thurandaut Ring",
+			back="Pastoralist's Mantle"
 	}
 
 	-- TP Sets--
@@ -152,158 +127,88 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo = "Demonry Core",
-		head = "Meghanada Visor +2",
-		body = {
-			name = "Emicho Haubert +1",
-			augments = {"HP+65", "DEX+12", "Accuracy+20"}
-		},
-		hands = "Emicho Gauntlets +1",
-		legs = {
-			name = "Valor. Hose",
-			augments = {
-				"Accuracy+23 Attack+23",
-				'"Dbl.Atk."+3',
-				"VIT+4",
-				"Attack+5"
-			}
-		},
-		feet = {
-			name = "Valorous Greaves",
-			augments = {
-				"Accuracy+25 Attack+25",
-				'"Dbl.Atk."+4',
-				"CHR+8",
-				"Attack+6"
-			}
-		},
-		neck = "Shulmanu Collar",
-		waist = "Kentarch Belt +1",
-		left_ear = "Telos Earring",
-		right_ear = "Cessance Earring",
-		left_ring = "Ilabrat Ring",
-		right_ring = "Epona's Ring"
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Malignance Chapeau",
+		body={ name="Gleti's Cuirass", augments={'Path: A',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Shulmanu Collar",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Telos Earring",
+		right_ear="Sherida Earring",
+		left_ring="Gere Ring",
+		right_ring="Epona's Ring",
+		back={ name="Artio's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.TP.DW = {
-		ammo = "Demonry Core",
-		head = "Meghanada Visor +2",
-		body = {
-			name = "Emicho Haubert +1",
-			augments = {"HP+65", "DEX+12", "Accuracy+20"}
-		},
-		hands = {
-			name = "Emicho Gauntlets",
-			augments = {
-				"Accuracy+20",
-				'"Dual Wield"+5',
-				"Pet: Accuracy+20"
-			}
-		},
-		legs = {
-			name = "Valor. Hose",
-			augments = {
-				"Accuracy+23 Attack+23",
-				'"Dbl.Atk."+3',
-				"VIT+4",
-				"Attack+5"
-			}
-		},
-		feet = {
-			name = "Valorous Greaves",
-			augments = {
-				"Accuracy+25 Attack+25",
-				'"Dbl.Atk."+4',
-				"CHR+8",
-				"Attack+6"
-			}
-		},
-		neck = "Shulmanu Collar",
-		waist = "Reiki Yotai",
-		left_ear = "Telos Earring",
-		right_ear = "Cessance Earring",
-		left_ring = "Ilabrat Ring",
-		right_ring = "Epona's Ring"
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Malignance Chapeau",
+		body={ name="Gleti's Cuirass", augments={'Path: A',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Shulmanu Collar",
+		waist="Reiki Yotai",
+		left_ear="Suppanomimi",
+		right_ear="Sherida Earring",
+		left_ring="Gere Ring",
+		right_ring="Epona's Ring",
+		back={ name="Artio's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	-- Ready Sets---
 
 	sets.Ready = {}
 
 	sets.Ready.Physical = {
-		main = {
-			name = "Digirbalag",
-			augments = {
-				"Pet: VIT+8",
-				"Pet: Accuracy+20 Pet: Rng. Acc.+20",
-				"Pet: Attack+20 Pet: Rng.Atk.+20"
-			}
-		},
-		sub = "Arktoi",
-		ammo = "Demonry Core",
-		head = {
-			name = "Valorous Mask",
-			augments = {
-				"Pet: Mag. Acc.+11",
-				'Pet: "Dbl.Atk."+2 Pet: Crit.hit rate +2',
-				"Pet: Accuracy+14 Pet: Rng. Acc.+14"
-			}
-		},
-		body = {
-			name = "Acro Surcoat",
-			augments = {
-				"Pet: Attack+23 Pet: Rng.Atk.+23",
-				'Pet: "Store TP"+4',
-				"CHR+4"
-			}
-		},
-		hands = "Regimen Mittens",
-		legs = {
-			name = "Valor. Hose",
-			augments = {
-				"Pet: Accuracy+30 Pet: Rng. Acc.+30",
-				'"Dbl.Atk."+1',
-				"Pet: INT+6",
-				"Pet: Attack+11 Pet: Rng.Atk.+11"
-			}
-		},
-		feet = {
-			name = "Emicho Gambieras",
-			augments = {
-				"Pet: Accuracy+15",
-				"Pet: Attack+15",
-				'Pet: "Dbl. Atk."+3'
-			}
-		},
-		neck = "Shulmanu Collar",
-		waist = "Carrier's Sash",
-		left_ear = "Sabong Earring",
-		right_ear = "Enmerkar Earring"
+			ammo="Hesperiidae",
+			head="Gleti's Mask",
+			body={ name="Valorous Mail", augments={'Pet: Accuracy+13 Pet: Rng. Acc.+13','Pet: "Dbl.Atk."+3 Pet: Crit.hit rate +3','Pet: Attack+12 Pet: Rng.Atk.+12',}},
+			hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+			legs="Gleti's Breeches",
+			feet="Gleti's Boots",
+			neck="Shulmanu Collar",
+			waist="Incarnation Sash",
+			left_ear="Enmerkar Earring",
+			right_ear="Crep. Earring",
+			left_ring="C. Palug Ring",
+			right_ring="Thurandaut Ring",
+			back="Pastoralist's Mantle"
 	}
 
 	sets.Ready.MagicalAttack = {
-		main = "Mdomo Axe",
-		sub = "Arktoi",
-		ammo = "Demonry Core",
-		head = {
-			name = "Valorous Mask",
-			augments = {
-				"Pet: Mag. Acc.+11",
-				'Pet: "Dbl.Atk."+2 Pet: Crit.hit rate +2',
-				"Pet: Accuracy+14 Pet: Rng. Acc.+14"
-			}
-		},
-		body = "Valorous Mail",
-		legs = "Valorous Hose",
-		feet = "Emicho Gambieras",
-		hands = "Regimen Mittens",
-		back = "Pastoralist's Mantle",
-		neck = "Deino Collar",
-		ear1 = "Hija Earring",
-		ear2 = "Sabong Earring",
-		waist = "Incarnation Sash"
+			ammo="Hesperiidae",
+			head="Gleti's Mask",
+			body={ name="Gleti's Cuirass", augments={'Path: A',}},
+			hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+			legs="Gleti's Breeches",
+			feet="Gleti's Boots",
+			neck="Bst. Collar +1",
+			waist="Incarnation Sash",
+			left_ear="Enmerkar Earring",
+			right_ear="Crep. Earring",
+			left_ring="C. Palug Ring",
+			right_ring="Tali'ah Ring",
+			back={ name="Artio's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: Mag. Acc.+10',}},
 	}
 	
-	sets.Ready.MagicAcc ={}
+	sets.Ready.MagicAcc ={
+			ammo="Hesperiidae",
+			head="Gleti's Mask",
+			body={ name="Gleti's Cuirass", augments={'Path: A',}},
+			hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+			legs="Gleti's Breeches",
+			feet="Gleti's Boots",
+			neck="Bst. Collar +1",
+			waist="Incarnation Sash",
+			left_ear="Enmerkar Earring",
+			right_ear="Crep. Earring",
+			left_ring="C. Palug Ring",
+			right_ring="Tali'ah Ring",
+			back={ name="Artio's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Pet: Mag. Acc.+10',}},
+	}
+	
 
 	-- WS Sets--
 	sets.WS = {}
@@ -313,23 +218,19 @@ function get_sets()
 	Ruinator_ind = 1
 
 	sets.Ruinator.Attack = {
-		head = "Argosy Celata +1",
-		body = "Argosy Hauberk +1",
-		hands = {
-			name = "Argosy Mufflers +1",
-			augments = {"STR+12", "DEX+12", "Attack+20"}
-		},
-		legs = {
-			name = "Argosy Breeches +1",
-			augments = {"STR+12", "DEX+12", "Attack+20"}
-		},
-		feet = "Argosy Sollerets +1",
-		neck = "Fotia Gorget",
-		waist = "Fotia Belt",
-		left_ear = "Telos Earring",
-		right_ear = "Moonshade Earring",
-		left_ring = "Ilabrat Ring",
-		right_ring = "Regal Ring"
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Gleti's Mask",
+		body={ name="Gleti's Cuirass", augments={'Path: A',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		legs="Gleti's Breeches",
+		feet="Gleti's Boots",
+		neck="Fotia Gorget",
+		waist="Fotia Belt",
+		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		right_ear="Sherida Earring",
+		left_ring="Gere Ring",
+		right_ring="Ilabrat Ring",
+		back={ name="Artio's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.Rampage = {}
@@ -338,23 +239,19 @@ function get_sets()
 	Rampage_ind = 1
 
 	sets.Rampage.Attack = {
-		head = "Argosy Celata +1",
-		body = "Argosy Hauberk +1",
-		hands = {
-			name = "Argosy Mufflers +1",
-			augments = {"STR+12", "DEX+12", "Attack+20"}
-		},
-		legs = {
-			name = "Argosy Breeches +1",
-			augments = {"STR+12", "DEX+12", "Attack+20"}
-		},
-		feet = "Argosy Sollerets +1",
-		neck = "Fotia Gorget",
-		waist = "Fotia Belt",
-		left_ear = "Telos Earring",
-		right_ear = "Moonshade Earring",
-		left_ring = "Ilabrat Ring",
-		right_ring = "Regal Ring"
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Gleti's Mask",
+		body={ name="Gleti's Cuirass", augments={'Path: A',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		legs="Gleti's Breeches",
+		feet="Gleti's Boots",
+		neck="Fotia Gorget",
+		waist="Fotia Belt",
+		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		right_ear="Sherida Earring",
+		left_ring="Gere Ring",
+		right_ring="Ilabrat Ring",
+		back={ name="Artio's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.MistralAxe = {}
@@ -363,110 +260,72 @@ function get_sets()
 	MistralAxe_ind = 1
 
 	sets.MistralAxe.Attack = {
-		head = {
-			name = "Valorous Mask",
-			augments = {
-				"Accuracy+18",
-				"Weapon skill damage +3%",
-				"STR+4",
-				"Attack+11"
-			}
-		},
-		body = {
-			name = "Valorous Mail",
-			augments = {
-				"Accuracy+25",
-				"Weapon skill damage +4%",
-				"DEX+8",
-				"Attack+5"
-			}
-		},
-		hands = "Nyame Gauntlets",
-		legs = {
-			name = "Valor. Hose",
-			augments = {
-				"Attack+27",
-				"Weapon skill damage +5%",
-				"DEX+8",
-				"Accuracy+15"
-			}
-		},
-		feet = {
-			name = "Valorous Greaves",
-			augments = {"Attack+21", "Weapon skill damage +5%"}
-		},
-		neck = "Caro Necklace",
-		waist = "Sailfi Belt +1",
-		left_ear = "Ishvara Earring",
-		right_ear = {
-			name = "Moonshade Earring",
-			augments = {"Accuracy+4", "TP Bonus +25"}
-		},
-		left_ring = "Ilabrat Ring",
-		right_ring = "Regal Ring"
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Bst. Collar +1",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		right_ear="Thrud Earring",
+		left_ring="Gere Ring",
+		right_ring="Ilabrat Ring",
+		back={ name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 	}
 
+	sets.Cloudsplitter ={
+		ammo="Pemphredo Tathlum",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Bst. Collar +1",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		right_ear="Thrud Earring",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		right_ring="Acumen Ring",
+		back="Izdubar Mantle",
+	}
+	
 	-- Utility Sets--
 	sets.Utility = {}
 
 	sets.Utility.Weather = {waist = "Hachirin-no-obi", back = "Twilight Cape"}
 
-	sets.Utility.MB = {
-		head = "Helios Band",
-		body = "Samnuha Coat",
-		ear1 = "Static Earring",
-		ring1 = "Locus Ring",
-		ring2 = "Mujin Band"
-	}
-
-	sets.Utility.Stoneskin = {
-		head = "Haruspex hat",
-		neck = "Stone Gorget",
-		ear1 = "Loquac. earring",
-		ear2 = "Earthcry earring",
-		body = "Assim. jubbah +1",
-		hands = "Stone Mufflers",
-		ring1 = "Rahab ring",
-		back = "Swith cape",
-		waist = "Siegel sash",
-		legs = "Haven hose",
-		feet = {name = "Herculean Boots",augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
-	}
 
 	sets.Utility.Phalanx = {
-		head = "Haruspex hat",
-		neck = "Colossus's torque",
-		ear1 = "Loquac. earring",
-		ear2 = "Augment. earring",
-		body = "Assim. jubbah +1",
-		hands = "Ayao's gages",
-		ring1 = "Rahab ring",
-		back = "Swith cape",
-		waist = "Pythia sash +1",
-		legs = "Portent pants",
-		feet = {
-			name = "Herculean Boots",
-			augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}
-		}
+		ammo="Staunch Tathlum +1",
+		head="Malignance Chapeau",
+		body={ name="Taeon Tabard", augments={'"Conserve MP"+5','Phalanx +3',}},
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet={ name="Herculean Boots", augments={'Magic burst dmg.+6%','"Fast Cast"+1','Phalanx +4','Accuracy+14 Attack+14','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+		neck={ name="Loricate Torque +1", augments={'Path: A',}},
+		waist="Olympus Sash",
+		left_ear="Eabani Earring",
+		right_ear="Mimir Earring",
+		left_ring="Moonlight Ring",
+		right_ring="Stikini ring +1",
+		back="Moonbeam Cape",
 	}
 
 	sets.Utility.Steps = {
-		ammo = "Falcon Eye",
-		head = "Dampening Tam",
-		body = "Adhemar Jacket",
-		hands = "Rawhide Gloves",
-		legs == "Samnuha Tights",
-		feet = {
-			name = "Herculean Boots",
-			augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}
-		},
-		neck = "Subtlety Spec.",
-		waist = "Chaac Belt",
-		left_ear = "Heartseeker Earring",
-		right_ear = "Steelflash Earring",
-		left_ring = "Yacuruna Ring",
-		right_ring = "Epona's Ring",
-		back = "Grounded Mantle"
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Malignance Chapeau",
+		body={ name="Gleti's Cuirass", augments={'Path: A',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Shulmanu Collar",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Telos Earring",
+		right_ear="Sherida Earring",
+		left_ring="Gere Ring",
+		right_ring="Epona's Ring",
 	}
 
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
@@ -493,9 +352,22 @@ function get_sets()
 
 	sets.JA = {}
 
-	sets.JA.KillerInstinct = {head = "Ankusa Helm +1"}
+	sets.JA.KillerInstinct = {head = "Ankusa Helm"}
 
-	sets.JA.CB = {hands = "Ankusa Gloves", body = "Mirke Wardecors"}
+	sets.JA.CB = {
+		head={ name="Acro Helm", augments={'"Call Beast" ability delay -4',}},
+		body={ name="Acro Surcoat", augments={'Pet: Attack+23 Pet: Rng.Atk.+23','"Call Beast" ability delay -4','CHR+4',}},
+		hands={ name="Ankusa Gloves", augments={'Enhances "Beast Affinity" effect',}},
+		legs={ name="Acro Breeches", augments={'"Call Beast" ability delay -4',}},
+		feet={ name="Acro Leggings", augments={'"Call Beast" ability delay -4',}},
+		neck={ name="Loricate Torque +1", augments={'Path: A',}},
+		waist="Carrier's Sash",
+		left_ear="Eabani Earring",
+		right_ear="Infused Earring",
+		left_ring="Chirich Ring +1",
+		right_ring="Defending Ring",
+		back="Moonbeam Cape",
+	}
 
 	sets.JA.Familiar = {legs = "Ankusa Trousers"}
 
@@ -506,12 +378,29 @@ function get_sets()
 	sets.JA.Reward = {
 		ammo = "Pet food Theta Biscuit",
 		body = "Monster Jackcoat",
-		ring1 = "Metamorph Ring",
-		ring2 = "Sirona's Ring",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		right_rin = "Sirona's Ring",
+		legs = "Ankusa Trousers",
 		feet = "Monster Gaiters"
 	}
+	
+	sets.JA.FeralHowl = {
+	    ammo="Pemphredo Tathlum",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Bst. Collar +1",
+		waist="Eschan Stone",
+		left_ear="Crep. Earring",
+		right_ear="Digni. Earring",
+		left_ring="Stikini Ring +1",
+		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		back="Izdubar Mantle",
+	}
 
-	sets.JA.ReadyPre = {sub = "Charmer's Merlin", Legs = "Desultor Tassets"}
+	sets.JA.ReadyPre = {Legs = "Gleti's Breeches"}
 
 	-- Precast Sets--
 	sets.precast = {}
@@ -541,10 +430,14 @@ function precast(spell)
 		equip(sets.precast.FC.Standard)
 	elseif spell.english == "Ruinator" then
 		equip(sets.Ruinator[sets.Ruinator.index[Ruinator_ind]])
-	elseif spell.english == "Mistral Axe" or spell.english == "Cloudsplitter" then
+	elseif spell.english == "Mistral Axe" or spell.english == "Calamity" then
 		equip(sets.MistralAxe[sets.MistralAxe.index[MistralAxe_ind]])
 	elseif spell.english == "Rampage" or spell.english == "Decimation" then
 		equip(sets.Rampage[sets.Rampage.index[Rampage_ind]])
+	elseif spell.english == "Cloudsplitter"  or spell.english == "Primal Rend" then	
+		equip(sets.Cloudsplitter)
+	elseif spell.type == 'WeaponSkill' then
+		equip(sets.MistralAxe[sets.MistralAxe.index[MistralAxe_ind]])
 	elseif spell.english == "Box Step" then
 		equip(sets.Utility.Steps)
 	elseif spell.english == "Spur" then
@@ -559,6 +452,8 @@ function precast(spell)
 		equip(sets.JA.Familiar)
 	elseif spell.english == "Ready" then
 		equip(sets.Precast.Ready)
+	elseif spell.english == "Feral Howl" then
+		equip(sets.JA.FeralHowl)
 	end
 end
 
@@ -581,7 +476,7 @@ function midcast(spell, act)
 		equip(sets.NINMagic.Utsusemi)
 	elseif magic_atk_ready_moves:contains(spell.english) then
 		equip(sets.Ready.MagicalAttack)
-	elseif magic_acc_ready_moves:contain(spell.english) or pet_buff_moves:contains(spell.english) then
+	elseif magic_acc_ready_moves:contains(spell.english) or pet_buff_moves:contains(spell.english) then
 		equip(sets.Ready.MagicAcc)
 	elseif physical_ready_moves:contains(spell.english) or multi_hit_ready_moves:contains(spell.english) or tp_based_ready_moves:contains(spell.english) then
 		equip(sets.Ready.Physical)

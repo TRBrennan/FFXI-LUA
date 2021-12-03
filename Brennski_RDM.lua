@@ -625,13 +625,13 @@ function get_sets()
 
 	sets.WS.Savage = {
 		ammo = "Coiste Bodhar",
-		head = "Vitiation chapeau +3",
+		head = "Nyame Helm",
 		neck = "Caro Necklace",
 		ear1 = "Ishvara Earring",
 		ear2 = "Moonshade Earring",
 		--body = "Vitiation tabard +3",
 		body="Nyame Mail",
-		hands = "Atrophy Gloves +3",
+		hands = "Nyame Gauntlets",
 		ring1 = "Petrov Ring",
 		ring2 = "Ilabrat Ring",
 		back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
