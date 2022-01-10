@@ -62,8 +62,8 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "AccuracyMid", "AccuracyFull", "DT", "DTAccuracy"}
-	--1=Standard, 2= AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy
+	sets.TP.index = {"Standard", "AccuracyMid", "AccuracyFull", "DT", "DTAccuracy", "Hybrid"}
+	--1=Standard, 2= AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy,7=Hybrid
 
 	TP_ind = 1
 	sets.TP.Standard = {
@@ -145,6 +145,23 @@ function get_sets()
     right_ring="Niqmaddu Ring",
     back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
+	
+	sets.TP.Hybrid ={
+		ammo = "Coiste Bodhar",
+		head="Malignance Chapeau",
+		body = "Ken. Samue",
+		hands="Malignance Gloves",
+		legs = "Hesychast's Hose +3",
+		feet = "Anchorite's Gaiters +3",
+		neck = "Mnk. Nodowa +1",
+		waist = "Moonbow Belt",
+		left_ear = "Sherida Earring",
+		right_ear = "Telos Earring",
+		left_ring = "Gere Ring",
+		right_ring = "Niqmaddu Ring",
+		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
+	
+	}
 
 	--Weaponskill Sets--
 	sets.WS = {}
@@ -166,7 +183,7 @@ function get_sets()
 	}
 
 	sets.WS.SS = {
-		ammo = "Knobkierrie",
+		ammo = "Crepuscular Pebble",
 		head = "Hes. Crown +3",
 		body = "Adhemar Jacket +1",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
@@ -198,7 +215,7 @@ function get_sets()
 	}
 
 	sets.WS.RF = {
-		ammo = "Knobkierrie",
+		ammo = "Crepuscular Pebble",
 		head = "Hes. Crown +3",
 		Body = "Nyame Mail",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
@@ -215,7 +232,7 @@ function get_sets()
 
 	sets.WS.HF = {
 		ammo = "Knobkierrie",
-		head = "Hes. Crown +3",
+		head = "Adhemar Bonnet +1",
 		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Ken. Hakama",

@@ -270,7 +270,7 @@ function init_gear_sets()
         body = "Inyanga Jubbah +1",
         hands = {name = "Merlinic Dastanas", augments = {'"Mag.Atk.Bns."+24', '"Fast Cast"+5', "CHR+6", "Mag. Acc.+5"}},
         legs = "Psycloth Lappas",
-        feet = "Regal Pumps +1",
+        feet = "Volte Gaiters",
         neck = "Voltsurge Torque",
         waist = "Channeler's Stone",
         left_ear = "Loquac. Earring",
@@ -353,7 +353,7 @@ function init_gear_sets()
         body = "Inyanga Jubbah +1",
         hands = "Lamassu Mitts +1",
         legs = "Psycloth Lappas",
-        feet = "Regal Pumps +1",
+        feet = "Volte Gaiters",
         neck = "Adad Amulet",
         waist = "Channeler's Stone",
         left_ear = "Loquac. Earring",
@@ -523,7 +523,8 @@ function init_gear_sets()
         sub = "Elan Strap",
         ammo = "Sancus Sachet +1",
         head = {name = "Apogee Crown +1", augments = {"MP+80", 'Pet: "Mag.Atk.Bns."+35', "Blood Pact Dmg.+8"}},
-        body = {name = "Apo. Dalmatica +1", augments = {"MP+80", 'Pet: "Mag.Atk.Bns."+35', "Blood Pact Dmg.+8"}},
+        --body = {name = "Apo. Dalmatica +1", augments = {"MP+80", 'Pet: "Mag.Atk.Bns."+35', "Blood Pact Dmg.+8"}},
+		body = "Con. Doublet +3",
         hands = {
             name = "Merlinic Dastanas",
             augments = {
@@ -542,7 +543,7 @@ function init_gear_sets()
         right_ear = "Gelos Earring",
         left_ring = "Varar Ring",
         right_ring = "Varar Ring",
-        back = {name = "Campestres's Cape", augments = {"Pet: M.Acc.+20 Pet: M.Dmg.+20", 'Pet: "Regen"+10'}}
+        back = { name = "Campestres's Cape",augments = {"Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20","Pet: Accuracy+10 Pet: Rng. Acc.+10",'Pet: "Regen"+10'}}
     }
 
     sets.midcast.Pet.MagicalBloodPactRage.Acc = sets.midcast.Pet.MagicalBloodPactRage

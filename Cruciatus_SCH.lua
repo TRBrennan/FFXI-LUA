@@ -321,7 +321,7 @@ function get_sets()
 		body = "Shango Robe",
 		hands = {name = "Merlinic Dastanas", augments = {'"Mag.Atk.Bns."+24', '"Fast Cast"+5', "CHR+6", "Mag. Acc.+5"}},
 		legs = "Psycloth Lappas",
-		feet = "Regal Pumps +1",
+		feet = "Volte Gaiters",
 		neck = "Voltsurge Torque",
 		waist = "Witful Belt",
 		left_ear = "Etiolation Earring",

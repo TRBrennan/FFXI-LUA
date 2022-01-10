@@ -4,7 +4,7 @@ Phsyical_Blue_Spells = S{'Vertical Cleave','Death Scissors','Empty Thrash','Dime
 Magic_Blue_Spells = S{'Gates of Hades','Lunge','Swipe','Leafstorm','Firespit','Acrid Stream','Regurgitation','Corrosive Ooze','Thermal Pulse','Magic Hammer','Evryone. Grudge','Water Bomb','Dark Orb','Thunderbolt',
 'Tem. Upheaval','Embalming Earth','Foul Waters','Rending Deluge','Droning Whirlwind','Anvil Lightning','Blinding Fulgor','Entomb',
 'Palling Salvo','Scouring Spate','Searing Tempest','Silent Storm','Spectral Floe','Blazing Bound','Frightful Roar','Infrasonics','Chaotic Eye','Auroral Drape',
-'Barbed Crescent','Tourbillion','Cimicine Discharge','Sub-zero smash','Filamented Hold','Mind Blast','Sandspin','Hecatomb Wave','Cold Wave','Terror Touch','Charged Whisker', 'Subduction'}
+'Barbed Crescent','Tourbillion','Cimicine Discharge','Sub-zero smash','Filamented Hold','Mind Blast','Sandspin','Hecatomb Wave','Cold Wave','Terror Touch','Charged Whisker', 'Subduction', 'Diffusion Ray'}
 
 Debuff_Blue_Spells = S{'Sheep Song','Delta Thrust','Blood Drain','Soporific','Soud Blast','Chaotic Eye','Digest','Blank Gaze','Venom Shell','MP Drainkiss','Stinking Gas','Awful Eye','Blood Saber','Jettatura','Frightful Roar',
 'Filamented Hold','Cold Wave','Light of Penance','1000 Needles','Feather Tickle','Yawn','Voracious Trunk','Infrasonics','Sandspray','Corrosive Ooze','Enervation',
@@ -226,19 +226,19 @@ function get_sets()
 	}
 
 	sets.TP.EvaTank ={
-	    ammo="Amar Cluster",
-		head={ name="Nyame Helm", augments={'Path: B',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck={ name="Bathy Choker +1", augments={'Path: A',}},
-		waist="Carrier's Sash",
-		left_ear="Eabani Earring",
-		right_ear="Infused Earring",
-		left_ring="Defending Ring",
-		right_ring="Ilabrat Ring",
-		back="Moonbeam Cape",
+			ammo="Amar Cluster",
+			head={ name="Nyame Helm", augments={'Path: B',}},
+			body={ name="Nyame Mail", augments={'Path: B',}},
+			hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+			legs="Malignance Tights",
+			feet={ name="Nyame Sollerets", augments={'Path: B',}},
+			neck={ name="Bathy Choker +1", augments={'Path: A',}},
+			waist="Carrier's Sash",
+			left_ear="Eabani Earring",
+			right_ear="Infused Earring",
+			left_ring="Chirich Ring +1",
+			right_ring="Ilabrat Ring",
+			back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 	}
 	
     -- Weaponskill Sets--
@@ -250,7 +250,7 @@ function get_sets()
     Requiescat_ind = 1
 
     sets.Requiescat.Attack = {
-        ammo = "Seeth. Bomblet +1",
+        ammo = "Crepuscular Pebble",
         head = "Carmine Mask +1",
         neck = "Fotia gorget",
         ear1 = "Telos Earring",
@@ -271,7 +271,7 @@ function get_sets()
     SavageBlade_ind = 1
 
     sets.SavageBlade.Attack = {
-        ammo = "Coiste Bodhar",
+        ammo = "Crepuscular Pebble",
 		Head = "Nyame Helm",
         neck = "Mirage Stole +1",
         ear1 = "Ishvara Earring",
@@ -324,7 +324,7 @@ function get_sets()
     }
 
     sets.CircleBlade = {
-        ammo = "Coiste Bodhar",
+        ammo = "Crepuscular Pebble",
         head = "Adhemar Bonnet +1",
         neck = "Fotia gorget",
         ear2 = "Moonshade Earring",
@@ -340,7 +340,7 @@ function get_sets()
 	}
 
     sets.Expiacion = {
-        ammo = "Coiste Bodhar",
+        ammo = "Crepuscular Pebble",
 		Head = "Nyame Helm",
         neck = "Mirage Stole +1",
         ear1 = "Moonshade Earring",
@@ -361,7 +361,7 @@ function get_sets()
     Realmrazer_ind = 1
 
     sets.Realmrazer.Attack = {
-        ammo = "Hydrocera",
+        ammo = "Crepuscular Pebble",
         head = "Dampening Tam",
         neck = "Fotia gorget",
         ear1 = "Brutal Earring",
@@ -460,17 +460,18 @@ function get_sets()
 
     sets.BlueMagic.BuffSkill = {
         ammo = "Mavi Tathlum",
-        head = "Mirage Keffiyeh",
+        head = "Luhlaza Keffiyeh",
         body = "Assimilator's Jubbah +3",
+		hands = "Rawhide Gloves",
         neck = "Mirage Stole +1",
-        legs = "Mavi Tayt +2",
+        legs = "Hashishin tayt +1",
         back = "Cornflower Cape",
         ring1 = "Stikini ring +1",
 		feet = "Luhlaza Charuqs +1"
     }
 
     sets.BlueMagic.Breath = {
-        head = "Mirage Keffiyeh",
+        head = "Luhlaza Keffiyeh",
         ear1 = "Moonshade Earring",
         ear2 = "Mavi Earring",
         body = "Assimilator's Jubbah +3",
@@ -479,7 +480,7 @@ function get_sets()
         ring2 = "Meridian Ring",
         back = "Gigant Mantle",
         waist = "Lieutenant's Sash",
-        legs = "Mavi Tayt +2",
+        legs = "Hashishin tayt +1",
         feet = {name = "Herculean Boots",augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}}
     }
 
@@ -561,6 +562,22 @@ function get_sets()
         ring2 = "Mujin Band"
     }
 
+	sets.Utility.Phalanx ={
+	    ammo="Amar Cluster",
+		head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
+		body={ name="Taeon Tabard", augments={'"Conserve MP"+5','Phalanx +3',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Telchine Braconi", augments={'"Fast Cast"+2','Enh. Mag. eff. dur. +8',}},
+		feet={ name="Herculean Boots", augments={'Magic burst dmg.+6%','"Fast Cast"+1','Phalanx +4','Accuracy+14 Attack+14','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+		neck={ name="Bathy Choker +1", augments={'Path: A',}},
+		waist="Olympus Sash",
+		left_ear="Mimir Earring",
+		right_ear="Infused Earring",
+		left_ring="Defending Ring",
+		right_ring="Stikini Ring +1",
+		back="Fi Follet Cape +1",
+	}
+
 	sets.Utility.TH = {hands = "Volte Bracers", waist = "Chaac Belt", legs = "Volte Hose"}
 	
     sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
@@ -577,7 +594,7 @@ function get_sets()
 
     sets.JA.BurstAffinity = {feet = "Hashishin Basmak +1"}
 
-    sets.JA.Efflux = {legs = "Mavi tayt +2"}
+    sets.JA.Efflux = {legs = "Hashishin tayt +1"}
 
     sets.JA.AzureLore = {hands = "Luh. bazubands +1"}
 
@@ -665,7 +682,7 @@ function midcast(spell, act)
 			equip(set_combine(sets.BlueMagic.Physical, sets.Utility.TH))
 		end
     end
-	if Magic_Blue_Spells:contains(spell.enlgish) then
+	if Magic_Blue_Spells:contains(spell.english) then
 		equip(sets.BlueMagic.BlueMagic)
 		if spell.english == 'Cruel Joke' then
 			equip(sets.BlueMagic.MAcc)
@@ -690,7 +707,7 @@ function midcast(spell, act)
 			equip(set_combine(sets.BlueMagic.Debuff, sets.Utility.TH))
 		end
 	end
-    if Cure_Blue_Spells:contains(spell.enlgish) then
+    if Cure_Blue_Spells:contains(spell.english) then
         equip(sets.BlueMagic.BlueCure)
         if spell.target.name == player.name and string.find(spell.english, 'Magic Fruit') or string.find(spell.english, 'Plenilune Embrace') or string.find(spell.english, 'Wild Carrot') or string.find(spell.english, 'Cure III') or string.find(spell.english, 'Cure IV') 
 			then equip(sets.BlueMagic.BlueCure) 
@@ -734,6 +751,9 @@ function midcast(spell, act)
 	end
 	if spell.skill == "Enfeebling Magic" then
 		equip(sets.BlueMagic.MAcc)
+	end
+	if spell.english == 'Phalanx' then
+		equip(sets.Utility.Phalanx)
 	end
  end
 

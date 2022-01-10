@@ -218,7 +218,7 @@ function get_sets()
 	Ruinator_ind = 1
 
 	sets.Ruinator.Attack = {
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		ammo="Crepuscular Pebble",
 		head="Gleti's Mask",
 		body={ name="Gleti's Cuirass", augments={'Path: A',}},
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
@@ -239,7 +239,7 @@ function get_sets()
 	Rampage_ind = 1
 
 	sets.Rampage.Attack = {
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		ammo="Crepuscular Pebble",
 		head="Gleti's Mask",
 		body={ name="Gleti's Cuirass", augments={'Path: A',}},
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
@@ -260,7 +260,7 @@ function get_sets()
 	MistralAxe_ind = 1
 
 	sets.MistralAxe.Attack = {
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		ammo="Crepuscular Pebble",
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},

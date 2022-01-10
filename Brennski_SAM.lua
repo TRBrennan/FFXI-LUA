@@ -23,7 +23,10 @@ function get_sets()
 	WSD_Hands = "Nyame Gauntlets"
 	WSD_Body = "Sakonji Domaru +3"
 	WSD_Head = "Nyame Helm"
+	TP_Bonus_Head = "Mpaca's Cap"
 	WSD_feet={ name="Nyame Sollerets", augments={'Path: B',}}
+	TP_Cape ={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
+	WS_Cape = { name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 
 	--Idle Sets--
 	sets.Idle = {}
@@ -32,122 +35,105 @@ function get_sets()
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
-		ammo = "Staunch Tathlum +1",
-		head = {name = "Valorous Mask",	augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}},
-		body = "Hizamaru haramaki +1",
-		hands = "Kurys Gloves",
-		legs = {name = "Herculean Trousers",augments = {'Mag. Acc.+16 "Mag.Atk.Bns."+16', "Weapon skill damage +2%", "Mag. Acc.+14", '"Mag.Atk.Bns."+13'}},
-		feet = "Amm Greaves",
-		neck = "Sanctity necklace",
-		waist = "Carrier's Sash",
-		left_ear = "Infused Earring",
-		right_ear = "Eabani Earring",
-		right_ring = "Chirich Ring +1",
-		left_ring = "Defending Ring",
-		back = "Moonbeam Cape"
+	    ammo="Staunch Tathlum +1",
+		head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Carrier's Sash",
+		left_ear="Infused Earring",
+		right_ear="Eabani Earring",
+		left_ring="Defending Ring",
+		right_ring="Chirich Ring +1",
+		back="Moonbeam Cape",
 	}
 
 	sets.Idle.DT = {
-		ammo = "Staunch Tathlum +1",
-		head = "Ynglinga Sallet",
-		neck = "Loricate Torque +1",
-		left_ear = "Infused Earring",
-		right_ear = "Eabani Earring",
-		body = "Tartarus Platemail",
-		hands = "Kurys Gloves",
-		right_ring = "Chirich Ring +1",
-		left_ring = "Defending Ring",
-		back = "Moonbeam Cape",
-		waist = "Carrier's Sash",
-		legs = "Ken. Hakama",
-		feet = "Amm Greaves"
+		ammo="Staunch Tathlum +1",
+		head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Carrier's Sash",
+		left_ear="Infused Earring",
+		right_ear="Eabani Earring",
+		left_ring="Defending Ring",
+		right_ring="Chirich Ring +1",
+		back="Moonbeam Cape",
 	}
 
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "AccuracyMid", "AccuracyFull", "DT", "DTAccuracy"}
-	--1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy--
+	sets.TP.index = {"Standard", "PDT", "Meva", "Hybrid"}
+	--1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=Hybrid--
 
 	TP_ind = 1
 	sets.TP.Standard = {
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Flam. Zucchetto +2",
+		body="Mpaca's Doublet",
+		hands="Wakido Kote +3",
+		legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
+		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear={ name="Schere Earring", augments={'Path: A',}},
+		right_ear="Telos Earring",
+		left_ring="Niqmaddu Ring",
+		right_ring="Chirich Ring +1",
+		back=TP_Cape
+	}
+
+	sets.TP.PDT = {
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Moonbeam Nodowa",
 		ear1 = "Schere Earring",
 		ear2 = "Telos Earring",
-		body = TP_Body,
+		body="Mpaca's Doublet",
 		hands = "Wakido Kote +3",
 		right_ring = "Niqmaddu Ring",
 		left_ring = "Flamma Ring",
-		back = "Takaha Mantle",
+		back = TP_Back,
 		waist = "Ioskeha belt +1",
-		legs = "Ken. Hakama",
+		legs = "Mpaca's Hose",
 		feet = "Flam. Gambieras +2"
 	}
 
-	sets.TP.AccuracyMid = {
-		ammo = "Coiste Bodhar",
-		head = "Flam. Zucchetto +2",
-		neck = "Moonbeam Nodowa",
-		ear1 = "Schere Earring",
-		ear2 = "Telos Earring",
-		body = TP_Body,
-		hands = "Wakido Kote +3",
-		right_ring = "Niqmaddu Ring",
-		left_ring = "Flamma Ring",
-		back = "Takaha Mantle",
-		waist = "Ioskeha belt +1",
-		legs = "Ken. Hakama",
-		feet = "Flam. Gambieras +2"
-	}
-
-	sets.TP.AccuracyFull = {
+	sets.TP.Meva = {
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Moonbeam Nodowa",
 		ear1 = "Dignitary's Earring",
 		ear2 = "Telos Earring",
-		body = TP_Body,
+		body="Ken. Samue",
 		hands = "Wakido Kote +3",
 		right_ring = "Cacoethic Ring",
 		left_ring = "Flamma Ring",
-		back = "Takaha Mantle",
+		back = TP_Back,
 		waist = "Ioskeha belt +1",
 		legs = "Ken. Hakama",
-		feet = "Flam. Gambieras +2"
+		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
 	}
 
-	sets.TP.DT = {
-		ammo = "Staunch Tathlum +1",
-		head = "Ynglinga Sallet",
-		neck = "Loricate Torque +1",
-		ear1 = "Schere Earring",
-		ear2 = "Telos Earring",
-		body = "Tartarus Platemail",
-		hands = "Kurys Gloves",
-		right_ring = "Chirich Ring +1",
-		left_ring = "Defending Ring",
-		back = "Moonbeam Cape",
-		waist = "Carrier's Sash",
-		legs = "Ken. Hakama",
-		feet = "Amm Greaves"
-	}
-
-	sets.TP.DTAccuracy = {
-		ammo = "Coiste Bodhar",
-		head = "Ynglinga Sallet",
-		neck = "Moonbeam Nodowa",
-		ear2 = "Telos Earring",
-		ear1 = "Odnowa Earring +1",
-		body = "Tartarus Platemail",
-		hands = "Wakido Kote +3",
-		right_ring = "Niqmaddu Ring",
-		left_ring = "Chirich Ring +1",
-		back = "Takaha Mantle",
-		waist = "Ioskeha belt +1",
-		legs = "Ken. Hakama",
-		feet = "Amm Greaves"
+	sets.TP.Hybrid = {
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Flam. Zucchetto +2",
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands="Wakido Kote +3",
+		legs="Mpaca's Hose",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Ioskeha Belt +1",
+		left_ear={ name="Schere Earring", augments={'Path: A',}},
+		right_ear="Telos Earring",
+		left_ring="Defending Ring",
+		right_ring="Chirich Ring +1",
+		back = TP_Back
 	}
 
 	--Weaponskill Sets--
@@ -157,25 +143,25 @@ function get_sets()
 
 	sets.OneHit.Attack = {
 		ammo = "Knobkierrie",
-		head = WSD_Head,
+		head = TP_Bonus_Head,
 		body = WSD_Body,
 		hands = WSD_Hands,
-		legs = "Wakido Haidate +3",
+		legs = WSD_Legs,
 		feet = WSD_Feet,
 		neck = "Caro Necklace",
 		waist = "Sailfi Belt +1",
 		left_ear = "Thrud Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
-		right_ring = "Regal Ring",
-		left_ring = "Niqmaddu Ring",
-		back = "Smertrios's Mantle"
+		left_ring="Niqmaddu Ring",
+		right_ring="Regal Ring",
+		back = WSD_Cape
 	}
 
 	sets.MultiHit = {}
 
 	sets.MultiHit.Attack = {
 		ammo = "Knobkierrie",
-		head = "Flam. Zucchetto +2",
+		head = TP_Bonus_Head,
 		body = TP_Body,
 		hands = WSD_Hands,
 		legs = "Ken. Hakama",
@@ -194,17 +180,33 @@ function get_sets()
 	sets.HybridWS.Attack = {
 		ammo = "Knobkierrie",
 		head = WSD_Head,
-		body = WSD_Body,
+		body = "Nyame Mail",
 		hands = WSD_Hands,
-		legs = "Wakido Haidate +3",
+		legs = "Nyame Flanchard",
 		feet = WSD_Feet,
 		neck = "Fotia Gorget",
-		waist = "Fotia Belt",
+		waist="Orpheus's Sash",
 		left_ear = "Friomisi earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Regal Ring",
 		left_ring = "Niqmaddu Ring",
-		back = "Smertrios's Mantle"
+		back =  WSD_Cape
+	}
+	
+	sets.WS.Ageha ={
+	    ammo="Pemphredo Tathlum",
+		head={ name="Blistering Sallet +1", augments={'Path: A',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Eschan Stone",
+		left_ear="Digni. Earring",
+		right_ear="Crep. Earring",
+		left_ring="Stikini Ring +1",
+		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		back= TP_Back
 	}
 
 	--Ninja Magic Sets--
@@ -282,7 +284,9 @@ function get_sets()
 	sets.JA.Sekkanoki = {}
 
 	sets.JA.Seigan = {}
-	}
+	
+	
+
 
 	sets.JA.Restraint = {}
 	--Precast Sets--
@@ -334,6 +338,8 @@ function precast(spell)
 			cancel_spell()
 			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
 		end
+	elseif spell.english == "Tachi: Ageha" then
+		equip(sets.WS.Ageha)
 	elseif spell.english == "Meditate" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Meditate))
 	elseif spell.english == "Hasso" then

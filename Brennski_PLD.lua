@@ -86,8 +86,8 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Tank", "Turtle", "OdyTank"}
-	--1=Tank ,2 = Turtle,, 3=OdyTank--
+	sets.TP.index = {"Tank", "Turtle"}
+	--1=Tank ,2 = Turtle,-
 
 	TP_ind = 1
 	sets.TP.Tank = {
@@ -122,21 +122,6 @@ function get_sets()
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 	
-	sets.TP.OdyTank = {
-		ammo="Staunch Tathlum +1",
-		head="Sakpata's Helm",
-		body="Tartarus Platemail",
-		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
-		legs="Sakpata's Cuisses",
-		feet="Sakpata's Leggings",
-		neck="Unmoving Collar +1",
-		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ear="Odnowa Earring +1",
-		right_ear = "Tuisto Earring",
-		left_ring = "Moonlight Ring",
-		right_ring = "Moonbeam Ring",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},	
-	}
 	
 	--Weaponskill Sets--
 	sets.WS = {}
@@ -147,6 +132,7 @@ function get_sets()
 	Requiescat_ind = 1
 
 	sets.Requiescat.Attack = {
+		ammo = "Crepuscular Pebble",
 		neck = "Fotia Gorget",
 		ear2 = "Moondshade earring",
 		ear1 = "Telos Earring",
@@ -167,7 +153,7 @@ function get_sets()
 	SavageBlade_ind = 1
 
 	sets.SavageBlade.Attack = {
-		ammo = "Coiste Bodhar",
+		ammo = "Crepuscular Pebble",
 		neck = "Unmoving Collar +1",
 		left_ear="Odnowa Earring +1",
 		ear1 = "Thrud Earring",
@@ -206,19 +192,19 @@ function get_sets()
 	sets.WS.SanguineBlade = {}
 
 	sets.WS.SanguineBlade = {
-		ammo = "Ombre Tathlum",
-		head = "Helios Band",
+		ammo = "Crepuscular Pebble",
+		head = "Nyame Helm",
 		neck = "Sanctity Necklace",
 		rear = "Friomisi earring",
 		ear1 = "Novio Earring",
-		body = "Founder's Breastplate",
-		hands = "Amalric Gages +1",
+		body = "Nyame Mail",
+		hands = "Nyame Gauntlets",
 		left_ring = "Moonlight Ring",
 		right_ring = "Moonbeam Ring",
 		waist = "Eschan Stone",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
-		legs = "Hagondes Pants",
-		feet = "Weatherspoon souliers +1"
+		legs = "Nuame Flanchard",
+		feet = "Nyame Sollerets"
 	}
 
 	sets.WS.Atonement = {
@@ -304,7 +290,7 @@ function get_sets()
 		right_ear="Friomisi Earring",
 		left_ring="Defending Ring",
 		right_ring="Supershear Ring",
-		back = "Reiki Cloak",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 
 	sets.Magic.Flash = {neck = "Incanter's Torque", ring1 = "Stikini ring +1"}

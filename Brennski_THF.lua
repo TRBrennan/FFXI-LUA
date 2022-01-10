@@ -27,7 +27,7 @@ function get_sets()
         --Idle Sets--
         sets.Idle = {}
 
-        sets.Idle.index = {"Standard", "DT", "RefreshRegen"}
+        sets.Idle.index = {"Standard", "DT", "RefreshRegen", "Eva"}
         Idle_ind = 1
 
         sets.Idle.Standard = {
@@ -80,6 +80,23 @@ function get_sets()
 			right_ring="Defending Ring",
 			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 		}
+		
+		sets.Idle.Eva = {
+
+				ammo = "Yamarang",
+				head="Malignance Chapeau",
+                neck = "Bathy Choker +1",
+                ear1 = "Eabani Earring",
+                ear2 = "Infused Earring",
+                body = "Malignance Tabard",
+                hands = "Malignance gloves",
+                ring2 = "Defending ring",
+                ring1 = "Moonlight Ring",
+                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+                waist = "Carrier's Sash",
+				legs="Malignance Tights",
+				feet="Malignance Boots",
+        }
 
         --TP Sets--
         sets.TP = {}
@@ -140,9 +157,9 @@ function get_sets()
                 ammo = "Staunch Tathlum +1",
 				head="Malignance Chapeau",
                 neck = "Loricate Torque +1",
-                ear1 = "Ethereal",
-                ear2 = "Eabani Earring",
-                body="Malignance Tabard",
+                ear1 = "Eabani Earring",
+                ear2 = "Infused Earring",
+				body="Malignance Tabard",
                 hands = "Malignance Gloves",
                 ring1 = "Moonlight Ring",
                 ring2 = "Defending Ring",
@@ -192,7 +209,7 @@ function get_sets()
 			hands = "Malignance Gloves",
 			legs="Malignance Tights",
 			feet="Malignance Boots",
-			neck="Lissome Necklace",
+			neck = "Bathy Choker +1",
 			waist="Chaac Belt",
 			left_ear="Eabani Earring",
 			right_ear="Telos Earring",

@@ -62,7 +62,7 @@ function get_sets()
         back = "Lifestream Cape",
         waist = "Witful Belt",
         legs = "Geo. Pants +2",
-        feet = "Regal Pumps +1"
+        feet = "Volte Gaiters"
     }
 
     sets.precast.FastCast.Cure =

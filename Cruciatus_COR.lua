@@ -27,50 +27,46 @@ function get_sets()
         Idle_ind = 1
 
         sets.Idle.Standard = {
-                head = "Rawhide Mask",
-                neck = "Sanctity Necklace",
-                ear1 = "Genmei Earring",
-                ear2 = "Infused Earring",
-                body = "Emet Harness",
-                hands = "Herculean gloves",
-                ring1 = "Vocane Ring",
-                ring2 = "Vocane Ring",
-                waist = "Flume Belt +1",
-                legs = "Carmine Cuisses",
-                feet = "Herculean Boots",
-                back = "Aptitude Mantle"
+            head="Nyame Helm",
+			body="Nyame Mail",
+			hands="Nyame Gauntlets",
+			legs="Nyame Flanchard",
+			feet="Nyame Sollerets",
+			neck="Loricate Torque",
+			waist="Carrier's Sash",
+			left_ear="Eabani Earring",
+			right_ear="Hearty Earring",
+			left_ring="Defending Ring",
+			right_ring="Shneddick Ring",
         }
 
         sets.Idle.DT = {
-                main = "Terra's Staff",
-                sub = "Umbra strap",
-                head = "Rabid Visor",
-                neck = "Loricate Torque +1",
-                ear1 = "Etiolation earring",
-                ear2 = "Handler's earring +1",
-                body = "Emet Harness",
-                hands = "Garden Bangles",
-                ring1 = "Dark ring",
-                ring2 = "Succor ring",
-                back = "Solemnity Cape",
-                waist = "Flume belt +1",
-                legs = "Osmium Cuisses",
-                feet = "Herculean Boots"
+            head="Nyame Helm",
+			body="Nyame Mail",
+			hands="Nyame Gauntlets",
+			legs="Nyame Flanchard",
+			feet="Nyame Sollerets",
+			neck="Loricate Torque",
+			waist="Carrier's Sash",
+			left_ear="Eabani Earring",
+			right_ear="Hearty Earring",
+			left_ring="Defending Ring",
+			right_ring="Shneddick Ring",
+        
         }
 
         sets.Idle.Cleave = {
-                head = "Rabid Visor",
-                neck = "Loricate Torque +1",
-                ear1 = "Etiolation earring",
-                ear2 = "Handler's earring +1",
-                body = "Emet Hareness",
-                hands = "Garden Bangles",
-                ring1 = "Dark ring",
-                ring2 = "Succor ring",
-                back = "Mecistopins mantle",
-                waist = "Flume belt +1",
-                legs = "Osmium Cuisses",
-                feet = "Herculean Boots"
+            head="Nyame Helm",
+			body="Nyame Mail",
+			hands="Nyame Gauntlets",
+			legs="Nyame Flanchard",
+			feet="Nyame Sollerets",
+			neck="Loricate Torque",
+			waist="Carrier's Sash",
+			left_ear="Eabani Earring",
+			right_ear="Hearty Earring",
+			left_ring="Defending Ring",
+			right_ring="Shneddick Ring",
         }
         --TP Sets--
         sets.TP = {}

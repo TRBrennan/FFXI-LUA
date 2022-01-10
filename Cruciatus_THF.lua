@@ -125,8 +125,8 @@ function get_sets()
                                           back="Canny Cape",waist="Fotia belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
                                                                           
         sets.Evisceration = {    ammo="Yamarang",
-								head="Mummu Bonnet +1",
-								body="Meg. Cuirie +1",
+								head="Mummu Bonnet +2",
+								body="Meg. Cuirie +2",
 								hands="Mummu Wrists +2",
 								legs="Mummu Kecks +2",
 								feet="Mummu Gamash. +2",

@@ -308,10 +308,10 @@ function precast(spell)
 	if spell.action_type == 'Magic' then
 		if spell.skill == 'Dark Magic' then
 			equip(sets.precast.dark)
-			send_command('@input /echo Dark FC Set')
+			-- send_command('@input /echo Dark FC Set')
 		else
 			equip(sets.precast)
-			send_command('@input /echo Precast Set')
+			-- send_command('@input /echo Precast Set')
 		end
 	end	
 	
@@ -319,7 +319,7 @@ function precast(spell)
 			if spell.target.distance <= 5.6 then	
 				equip(sets.Resolution)
 			--equip(sets.ResoWSD)
-				send_command("@input /echo Resolution Set")
+				-- send_command("@input /echo Resolution Set")
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -327,7 +327,7 @@ function precast(spell)
 		elseif spell.english == 'Scourge' then	
 			if spell.target.distance <= 5.6 then			
 				equip(sets.Scourge)
-				send_command('@input /echo Scourge Set')		
+				-- send_command('@input /echo Scourge Set')		
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -335,7 +335,7 @@ function precast(spell)
 		elseif spell.english == 'Shockwave' then
 		if spell.target.distance <= 5.6 then
 			equip(sets.Shockwave)
-			send_command('@input /echo Shockwave Set')
+			-- send_command('@input /echo Shockwave Set')
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -343,7 +343,7 @@ function precast(spell)
 		elseif spell.english == 'Torcleaver' then
 		if spell.target.distance <= 5.6 then
 			equip(sets.Torcleaver)
-			send_command('@input /echo Torcleaver Set')
+			-- send_command('@input /echo Torcleaver Set')
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -351,7 +351,7 @@ function precast(spell)
 		elseif spell.english == 'Quietus' then
 		if spell.target.distance <= 5.6 then
 			equip(sets.Quietus)
-			send_command('@input /echo Quietus Set')
+			-- send_command('@input /echo Quietus Set')
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -359,7 +359,7 @@ function precast(spell)
 		elseif spell.english == 'Entropy' then
 		if spell.target.distance <= 5.6 then
 			equip(sets.Entropy)
-			send_command('@input /echo Entropy Set')
+			-- send_command('@input /echo Entropy Set')
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -367,7 +367,7 @@ function precast(spell)
 		elseif spell.english == 'Cross Reaper' then
 		if spell.target.distance <= 5.6 then
 			equip(sets.CR)
-			send_command('@input /echo CR Set')
+			-- send_command('@input /echo CR Set')
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -375,7 +375,7 @@ function precast(spell)
 		elseif spell.english == 'Insurgency' then
 		if spell.target.distance <= 5.6 then
 			equip(sets.Insurgency)
-			send_command('@input /echo Insurgency Set')
+			-- send_command('@input /echo Insurgency Set')
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -383,7 +383,7 @@ function precast(spell)
 		elseif spell.english == 'Infernal Scythe' then
 		if spell.target.distance <= 5.6 then
 			equip(sets.Infernal)
-			send_command('@input /echo Infernal Set')
+			-- send_command('@input /echo Infernal Set')
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -391,21 +391,21 @@ function precast(spell)
 		elseif spell.english == 'Herculean Slash' then
 		if spell.target.distance <= 5.6 then
 			equip(sets.Herculean)
-			send_command('@input /echo Herculean Set')
+			-- send_command('@input /echo Herculean Set')
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
 			end		
 		elseif spell.english == 'Fell Cleave' then
 			equip(sets.FellCleave)
-			send_command('@input /echo Fell Cleave Set')
+			-- send_command('@input /echo Fell Cleave Set')
 		elseif spell.english == 'Upheaval' then
 			equip(sets.Upheaval)
-			send_command('@input /echo Upheaval Set')			
+			-- send_command('@input /echo Upheaval Set')			
 		elseif spell.english == 'Savage Blade' then
 		if spell.target.distance <= 5.6 then
 			equip(sets.Savage)
-			send_command('@input /echo Savage Blade Set')
+			-- send_command('@input /echo Savage Blade Set')
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -415,7 +415,7 @@ function precast(spell)
 		elseif spell.english == 'Catastrophe' then
         if spell.target.distance <= 5.6 then
             equip(sets.Catastrophe)
-            send_command('@input /echo Catastrophe Set')
+            -- send_command('@input /echo Catastrophe Set')
             else
                 cancel_spell()
                 windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -436,7 +436,7 @@ function precast(spell)
 			equip(sets.JA.BloodWeapon)
 		elseif spell.english == 'Lunge' or spell.english == 'Swipe' then
 			equip(sets.Infernal)
-			send_command('@input /echo Lunge Set')
+			-- send_command('@input /echo Lunge Set')
 	end	
 	
 end
@@ -445,43 +445,43 @@ function midcast(spell,act)
 	if spell.skill == 'Dark Magic' then
 		if Absorb_Spells:contains(spell.name) then
 			equip(sets.Absorb)
-			send_command('@input /echo Absorb Set')
+			-- send_command('@input /echo Absorb Set')
 			if spell.name == "Absorb-TP" then
 				equip({hands="Bale gauntlets +2"})
 			end
 			if buffactive["Dark Seal"] then
 				equip({head="Fallen's burgeonet +1"})
-				send_command('@input /echo DS Head')
+				-- send_command('@input /echo DS Head')
 			end
 			if buffactive["Nether Void"] then
 				equip({legs="Heathen's flanchard +1"})
-				send_command('@input /echo NV Legs')
+				-- send_command('@input /echo NV Legs')
 			end
 			weathercheck(spell.element)
 		elseif Drain_Spells:contains(spell.name) then
 			equip(sets.Drain)
-			send_command('@input /echo Drain Set')
+			-- send_command('@input /echo Drain Set')
 			if buffactive['Dark Seal'] then
 					equip({head="Fallen's burgeonet +1"})
-					send_command('@input /echo DS Head')
+					-- send_command('@input /echo DS Head')
 			end
 			if buffactive['Nether Void'] then
 				equip({legs="Heathen's flanchard +1"})
-				send_command('@input /echo NV Legs')
+				-- send_command('@input /echo NV Legs')
 			end
 			weathercheck(spell.element)
 		elseif spell.name == "Dread Spikes" then
 			equip (sets.Dread)
-			send_command('@input /echo Dread Spikes Set')
+			-- send_command('@input /echo Dread Spikes Set')
 		elseif spell.name == "Endark II" then
 			equip(sets.Dark)
-			send_command('@input /echo Endark Set')
+			-- send_command('@input /echo Endark Set')
 		elseif spell.name == "Drain III" then
 			equip(sets.Drain3)
-			send_command('@input /echo Drain III Set')
+			-- send_command('@input /echo Drain III Set')
 		else
 			equip(sets.Dark)
-			send_command('@input /echo Dark Set')
+			-- send_command('@input /echo Dark Set')
 			weathercheck(spell.element)
 		end
 	elseif spell.skill == 'Enfeebling Magic' then
@@ -600,14 +600,14 @@ function self_command(command)
 	elseif command == "equip Hybrid set" then
 		TP_ind = 7
 		equip(sets.TP.Hybrid)
-		send_command("@input /echo Hybrid Set")		
+		-- send_command("@input /echo Hybrid Set")		
 	elseif command == 'change Killer mode' then
 		if Killer_Mode == 0 then
 			Killer_Mode = 1
-			send_command('@input /echo Killer Mode Set to 1')
+			-- send_command('@input /echo Killer Mode Set to 1')
 		else
 			Killer_Mode = 0
-			send_command('@input /echo Killer Mode Set to 0')
+			-- send_command('@input /echo Killer Mode Set to 0')
 		end
 	elseif command == 'change debug mode' then
 		if Gear_Debug == 1 then
@@ -627,7 +627,7 @@ end)
 function weathercheck(spell_element)
 	if spell_element == world.weather_element or spell_element == world.day_element then
 		equip({waist="Hachirin-no-Obi"})
-		send_command('@input /echo Using Element Obi')
+		-- send_command('@input /echo Using Element Obi')
 	else		
 	end
 end

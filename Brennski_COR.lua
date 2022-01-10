@@ -101,8 +101,8 @@ function get_sets()
 										waist="Reiki Yotai",
 										left_ear="Suppanomimi",
 										right_ear="Telos Earring",
-										left_ring="Chirich Ring +1",
-										right_ring="Epona's Ring",
+										right_ring="Chirich Ring +1",
+										left_ring="Epona's Ring",
 										back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 										}
 				sets.TP.DTSW = {
