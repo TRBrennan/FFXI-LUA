@@ -74,36 +74,34 @@ function get_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-        ammo = "Floestone",
-        head = "Welkin Crown",
         neck = "Sanctity Necklace",
-        right_ear = "Etiolation Earring",
-        left_ear = "Brutal Earring",
-        body = "Azimuth Coat",
-        hands = "Amalric Gages +1",
-        ring1 = "Rajas Ring",
-        ring2 = "Rufescent Ring",
-        back = "Buquwik Cape",
-        waist = "Fotia Belt",
-        legs = "Amalric slops",
-        feet = "Battlecast Gaiters"
+        right_ear = "Dudgeon Earring",
+        left_ear = "Moonshade Earring",
+        head = "Nyame Helm",
+        body = "Nyame Mail",
+        hands = "Nyame Gauntlets",
+        legs = "Nyame Flanchard",
+        feet = "Nyame Sollerets",
+        ring1 = "Varar Ring",
+        ring2 = "Petrov Ring",
+        back = "Lifestream Cape",
+        waist = "Fucho-no-obi"
     }
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS["Flash Nova"] = {
-        ammo = "Witchstone",
-        head = "Welkin Crown",
-        neck = "Sanctity Necklace",
-        right_ear = "Friomisi Earring",
-        left_ear = "Strophadic Earring",
-        body = "Azimuth Coat",
-        hands = "Amalric Gages +1",
-        ring1 = "Acumen Ring",
-        ring2 = "Etana ring",
-        back = "Toro Cape",
-        waist = "Fotia Belt",
-        legs = "Amalric slops",
-        feet = "Helios boots"
+         neck = "Sanctity Necklace",
+        right_ear = "Dudgeon Earring",
+        left_ear = "Moonshade Earring",
+        head = "Nyame Helm",
+        body = "Nyame Mail",
+        hands = "Nyame Gauntlets",
+        legs = "Nyame Flanchard",
+        feet = "Nyame Sollerets",
+        ring1 = "Varar Ring",
+        ring2 = "Petrov Ring",
+        back = "Lifestream Cape",
+        waist = "Fucho-no-obi"
     }
 
     sets.precast.WS["Starlight"] = {left_ear = "Moonshade Earring"}
@@ -436,15 +434,15 @@ function get_sets()
     -- Normal melee group
     sets.engaged = {
         range = "Dunna",
-        neck = "Sanctity Necklace",
+        neck = "Bagua charm +1",
         right_ear = "Dudgeon Earring",
         left_ear = "Heartseeker Earring",
-        head = "Jhakri Coronal +1",
-        body = "Azimuth Coat",
-        hands = "Jhakri Cuffs +1",
-        legs = "Jhakri Slops +1",
-        feet = "Jhakri Pigaches +1",
-        ring1 = "Enlivened Ring",
+        head = "Nyame Helm",
+        body = "Nyame Mail",
+        hands = "Nyame Gauntlets",
+        legs = "Nyame Flanchard",
+        feet = "Nyame Sollerets",
+        ring1 = "Varar Ring",
         ring2 = "Petrov Ring",
         back = "Lifestream Cape",
         waist = "Fucho-no-obi"

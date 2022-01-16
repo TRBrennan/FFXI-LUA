@@ -292,7 +292,7 @@ function get_sets()
     ChantDuCygne_ind = 1
 
     sets.ChantDuCygne.Attack = {
-        ammo = "Jukukik Feather",
+        ammo = "Crepuscular Pebble",
         head = "Adhemar Bonnet +1",
         neck = "Mirage Stole +1",
         ear2 = "Moonshade Earring",

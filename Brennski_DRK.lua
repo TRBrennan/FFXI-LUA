@@ -235,7 +235,7 @@ function get_sets()
 	
 	sets.JA.BloodWeapon = {body="Fallen's cuirass +1"}
 	
-	sets.JA.DarkSeal = {head="Fallen's burgeonet +1"}
+	sets.JA.DarkSeal = {head="Ig. Burgeonet +2"}
 	
 	sets.JA.ArcaneCircle = {feet="Ignominy sollerets +1"}
 	

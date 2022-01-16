@@ -1047,6 +1047,22 @@ function get_sets()
 		Legs ="Volte Hose",
 		head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}}
 	}
+	
+	sets.JA.Jumps = {
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head = "Hjarrandi Helm",
+		body= "Hjarrandi Breast.",
+		hands="Sakpata Gauntlets",
+		legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
+		feet="Flam. Gambieras +2",
+		neck={ name="Vim Torque +1", augments={'Path: A',}},
+		waist="Kentarch Belt +1",
+		left_ear="Telos Earring",
+		right_ear="Crep. Earring",
+		left_ring="Flamma Ring",
+		right_ring="Chirich Ring +1",
+		back = DA_Back
+	}
 
 	sets.Utility = {}
 	sets.Utility.Sleeping = {neck = "Opo-Opo Necklace"}
@@ -1112,6 +1128,7 @@ function get_sets()
 	}
 	sets.AF3 = {main = "Chango", ammo = "Thr. Tomahawk", body = "Boii lorica +1"}
 end
+
 function precast(spell)
 	if spell.action_type == "Magic" then
 		equip(sets.fastcast)
@@ -1335,7 +1352,6 @@ function precast(spell)
 		elseif spell.english == "Dragon Kick" then
 			equip(sets.DK)
 			--send_command("@input /echo DK Set")
-		else
 		end
 	end
 	--JA Sets--
@@ -1355,6 +1371,8 @@ function precast(spell)
 			equip(set_combine(sets.enmity, sets.JA.BloodRage))
 		elseif spell.english == "Mighty Strikes" then
 			equip(set_combine(sets.enmity, sets.JA.MightyStrikes))
+		elseif spell.english == "Jump" or spell.english == "High Jump" or spell.english == "Super Jump" then
+			equip(sets.JA.Jumps)
 		end
 	end
 end
@@ -1531,7 +1549,7 @@ function buff_change(buff, gain)
 		else
 			if player.status == "Engaged" then
 				equip(sets.TP[sets.TP.index[TP_ind]])
-				if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Ukonvasara" then
+				if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Ukonvasara" or player.equipment.main == "Farsha" then
 					--TP_ind = 12
 					equip(sets.TP.UkonAm)
 					--send_command("@input /echo Ukon AM Set")

@@ -1,319 +1,196 @@
 function get_sets()
-	--binds--
-	send_command("bind !f2 gs equip sets.CP; gs disable back; input /echo <----- CP mantle locked ----->") -- Alt F2 locks CP mantle
-	send_command("bind ^f2 gs enable back; input /echo <----- CP mantle unlocked ----->") -- Ctrl F2 unlocks CP mantle
-
+	--Binds--
 	send_command("bind !f10 gs c toggle Haste set;") -- Alt F10 swap DW for different Haste level 0 to 25 to 15
-	send_command("bind !f8 gs c toggle Melee Weapon set;") -- Alt F9 swap melee weapon from Melee to Physical range to Magical range
 	send_command("bind !f9 gs c toggle TP set;") -- Alt F8 swap TP Sets
-	send_command("bind !f7 gs c toggle pdt set;") -- Alt F7 swap to DT
-	send_command("bind !f6 gs c status check;") -- Alt F6 return sets status
-
-	--SubJob list--
+	
+	--Haste list--
 	sets.Haste = {}
 	sets.Haste.index = {"Low", "Mid", "High"}
 	Haste_ind = 1
-
-	--Weapon Sets--
-	sets.Weapon_melee = {}
-	sets.Weapon_melee.index = {"Melee", "Prange", "Mrange"}
-	Wm_ind = 1
-	sets.Weapon_melee.Melee = {}
-	sets.Weapon_melee.Prange = {}
-	sets.Weapon_melee.Mrange = {}
 	
+	--Gear--
+    DA_back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+	WSD_back = WSD_back
+	
+	--Utility--
 	sets.Utility ={}
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
+	
 	--Idle Sets--
 	sets.Idle = {}
 	sets.Idle.index = {"Standard", "DT"}
 	Idle_ind = 1
 	sets.Idle.Standard = {
-		head = "Rao kabuto",
-		body = "Hizamaru haramaki +1",
-		hands = "Rao kote",
-		legs = "Mummu Kecks +2",
-		feet = "Amm Greaves",
-		neck = "Sanctity necklace",
-		waist = "Carrier's Sash",
-		left_ear = "Infused Earring",
-		right_ear = "Eabani Earring",
-		right_ring = "Chirich Ring +1",
-		left_ring = "Defending Ring",
-		back = "Moonbeam Cape"
+	    head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck={ name="Bathy Choker +1", augments={'Path: A',}},
+		waist="Carrier's Sash",
+		left_ear="Infused Earring",
+		right_ear="Eabani Earring",
+		left_ring="Defending Ring",
+		right_ring="Chirich Ring +1",
+		back="Moonbeam Cape",
 	}
 	sets.Idle.DT = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		body = "Ashera Harness",
-		hands = "Kurys Gloves",
-		legs = "Mummu Kecks +2",
-		feet = "Amm Greaves",
-		neck = "loricate torque +1",
-		waist = "Carrier's Sash",
-		left_ear = "Infused Earring",
-		right_ear = "Eabani Earring",
-		left_ring = "Defending Ring",
-		right_ring = "Chirich Ring +1",
-		back = "Moonbeam Cape"
-	}
-
-	--CP mantle set--
-	sets.CP = {
-		back = "Mecisto. Mantle"
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck={ name="Bathy Choker +1", augments={'Path: A',}},
+		waist="Carrier's Sash",
+		left_ear="Infused Earring",
+		right_ear="Eabani Earring",
+		left_ring="Defending Ring",
+		right_ring="Chirich Ring +1",
+		back="Moonbeam Cape",
 	}
 
 	--TP Sets--
 	sets.TP = {}
-	sets.TP.index = {"Standard", "MidAccuracy", "HighAccuracy", "Hybrid"}
+	sets.TP.index = {"Standard", "Hybrid"}
 	TP_ind = 1
 
 	sets.TP.Standard = {}
 	sets.TP.Standard.index = {"Low", "Mid", "High"}
 	sets.TP.Standard.Low = {
-		head = "Ryuo somen",
-		neck = "Lissome necklace",
-		left_ear = "Telos Earring",
-		right_ear = "Suppanomimi",
-		body = "Ashera Harness",
-		hands = "Floral gauntlets",
-		left_ring = "Epona's Ring",
-		right_ring = "Ilabrat Ring",
-		back = "Andartia's Mantle",
-		waist = "Windbuffet Belt +1",
-		legs = "Samnuha Tights",
-		feet = "Hiza. Sune-Ate +1"
+		ammo="Seki Shuriken",
+		head={ name="Ryuo Somen", augments={'STR+10','DEX+10','Accuracy+15',}},
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+		legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
+		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
+		neck="Sanctity Necklace",
+		waist="Reiki Yotai",
+		left_ear="Suppanomimi",
+		right_ear="Eabani Earring",
+		left_ring="Gere Ring",
+		right_ring="Chirich Ring +1",
+		back = DA_Back
 	}
 	sets.TP.Standard.Mid = {
-		head = "Ryuo somen",
-		neck = "Lissome necklace",
-		left_ear = "Telos Earring",
-		right_ear = "Suppanomimi",
-		body = "Ashera Harness",
-		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		left_ring = "Epona's Ring",
-		right_ring = "Ilabrat Ring",
-		back = "Andartia's Mantle",
-		waist = "Windbuffet Belt +1",
-		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		ammo="Seki Shuriken",
+		head={ name="Ryuo Somen", augments={'STR+10','DEX+10','Accuracy+15',}},
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+		legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
+		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
+		neck="Sanctity Necklace",
+		waist="Reiki Yotai",
+		left_ear="Telos Earring",
+		right_ear="Eabani Earring",
+		left_ring="Gere Ring",
+		right_ring="Chirich Ring +1",
+		back = DA_Back
 	}
 	sets.TP.Standard.High = {
-		head = "Ken. Jinpachi",
-		neck = "Moonbeam Nodowa",
-		left_ear = "Telos Earring",
-		right_ear = "Cessance earring",
-		--body="Ashera Harness",
-		body = "Ken. Samue",
-		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		left_ring = "Epona's Ring",
-		right_ring = "Ilabrat Ring",
-		back = "Andartia's Mantle",
-		waist = "Windbuffet Belt +1",
-		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		ammo="Seki Shuriken",
+		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+		legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
+		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
+		neck="Lissome Necklace",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Telos Earring",
+		right_ear="Brutal Earring",
+		left_ring="Gere Ring",
+		right_ring="Ilabrat Ring",
+		back = DA_Back
 	}
 
-	sets.TP.MidAccuracy = {}
-	sets.TP.MidAccuracy.index = {"Low", "Mid", "High"}
-	sets.TP.MidAccuracy.Low = {
-		head = "Ryuo somen",
-		neck = "Moonbeam Nodowa",
-		left_ear = "Telos Earring",
-		right_ear = "Suppanomimi",
-		body = "Ashera Harness",
-		hands = "Floral gauntlets",
-		left_ring = "Regal Ring",
-		right_ring = "Ilabrat Ring",
-		back = "Andartia's Mantle",
-		waist = "Kentarch belt +1",
-		legs = "Samnuha Tights",
-		feet = "Hiza. Sune-Ate +1"
-	}
-	sets.TP.MidAccuracy.Mid = {
-		head = "Ryuo somen",
-		neck = "Moonbeam Nodowa",
-		left_ear = "Telos Earring",
-		right_ear = "Suppanomimi",
-		body = "Ashera Harness",
-		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		left_ring = "Regal Ring",
-		right_ring = "Ilabrat Ring",
-		back = "Andartia's Mantle",
-		waist = "Kentarch belt +1",
-		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
-	}
-	sets.TP.MidAccuracy.High = {
-		head = "Ken. Jinpachi",
-		neck = "Moonbeam Nodowa",
-		left_ear = "Telos Earring",
-		right_ear = "Cessance earring",
-		body = "Ashera Harness",
-		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		left_ring = "Regal Ring",
-		right_ring = "Ilabrat Ring",
-		back = "Andartia's Mantle",
-		waist = "Kentarch belt +1",
-		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
-	}
-
-	sets.TP.HighAccuracy = {}
-	sets.TP.HighAccuracy.index = {"Low", "Mid", "High"}
-	sets.TP.HighAccuracy.Low = {
-		head = "Ryuo somen",
-		neck = "Moonbeam Nodowa",
-		left_ear = "Telos Earring",
-		right_ear = "Suppanomimi",
-		body = "Ashera Harness",
-		hands = "Floral gauntlets",
-		left_ring = "Regal Ring",
-		right_ring = "Ilabrat Ring",
-		back = "Andartia's Mantle",
-		waist = "Kentarch belt +1",
-		legs = "Samnuha Tights",
-		feet = "Hiza. Sune-Ate +1"
-	}
-	sets.TP.HighAccuracy.Mid = {
-		head = "Ryuo somen",
-		neck = "Moonbeam Nodowa",
-		left_ear = "Telos Earring",
-		right_ear = "Suppanomimi",
-		body = "Ashera Harness",
-		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		left_ring = "Regal Ring",
-		right_ring = "Ilabrat Ring",
-		back = "Andartia's Mantle",
-		waist = "Kentarch belt +1",
-		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
-	}
-	sets.TP.HighAccuracy.High = {
-		head = "Ken. Jinpachi",
-		neck = "Moonbeam Nodowa",
-		left_ear = "Telos Earring",
-		right_ear = "Dignitary's earring",
-		body = "Ashera Harness",
-		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		left_ring = "Regal Ring",
-		right_ring = "Ilabrat Ring",
-		back = "Andartia's Mantle",
-		waist = "Kentarch belt +1",
-		legs = "Hiza. Hizayoroi +2",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
-	}
 
 	sets.TP.Hybrid = {}
 	sets.TP.Hybrid.index = {"Low", "Mid", "High"}
 	sets.TP.Hybrid.Low = {
-		head = "Ryuo somen",
-		neck = "~Loricate Torque +1",
-		left_ear = "Telos Earring",
-		right_ear = "Suppanomimi",
-		body = "Ashera Harness",
-		hands = "Floral gauntlets",
-		left_ring = "Defending Ring",
-		right_ring = "Chirich Ring +1",
-		back = "Andartia's Mantle",
-		waist = "Windbuffet Belt +1",
-		legs = "Mummu Kecks +2",
-		feet = "Hiza. Sune-Ate +1"
+		ammo="Seki Shuriken",
+		head={ name="Ryuo Somen", augments={'STR+10','DEX+10','Accuracy+15',}},
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Sanctity Necklace",
+		waist="Reiki Yotai",
+		left_ear="Suppanomimi",
+		right_ear="Eabani Earring",
+		left_ring="Gere Ring",
+		right_ring="Chirich Ring +1",
+		back=DA_Back
 	}
 	sets.TP.Hybrid.Mid = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		neck = "Loricate Torque +1",
-		left_ear = "Telos Earring",
-		right_ear = "Suppanomimi",
-		body = "Ashera Harness",
-		hands = "Floral Gauntlets",
-		left_ring = "Defending Ring",
-		right_ring = "Ilabrat Ring",
-		back = "Andartia's Mantle",
-		waist = "Windbuffet Belt +1",
-		legs = "Mummu Kecks +2",
-		feet = "Ahosi Leggings"
+		ammo="Seki Shuriken",
+		head={ name="Ryuo Somen", augments={'STR+10','DEX+10','Accuracy+15',}},
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Sanctity Necklace",
+		waist="Reiki Yotai",
+		left_ear="Telos Earring",
+		right_ear="Eabani Earring",
+		left_ring="Gere Ring",
+		right_ring="Chirich Ring +1",
+		back=DA_Back
 	}
 	sets.TP.Hybrid.High = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		neck = "Loricate Torque +1",
-		left_ear = "Telos Earring",
-		right_ear = "Cessance earring",
-		body = "Ashera Harness",
-		hands = "Kurys Gloves",
-		left_ring = "Defending Ring",
-		right_ring = "Ilabrat Ring",
-		back = "Andartia's Mantle",
-		waist = "Windbuffet Belt +1",
-		legs = "Mummu Kecks +2",
-		feet = "Ahosi Leggings"
+		ammo="Seki Shuriken",
+		head="Malignance Chapeau",
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Sanctity Necklace",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Telos Earring",
+		right_ear="Brutal Earring",
+		left_ring="Gere Ring",
+		right_ring="Chirich Ring +1",
+		back=DA_Back
 	}
 	--Defence Sets--
-	set.PDT = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		body = "Ashera Harness",
-		hands = "Kurys Gloves",
-		legs = "Mummu Kecks +2",
-		feet = "Amm Greaves",
-		neck = "loricate torque +1",
-		waist = "Carrier's Sash",
-		left_ear = "Infused Earring",
-		right_ear = "Eabani Earring",
-		left_ring = "Defending Ring",
-		right_ring = "Chirich Ring +1",
-		back = "Moonbeam Cape"
+	set.DT = {
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck={ name="Bathy Choker +1", augments={'Path: A',}},
+		waist="Carrier's Sash",
+		left_ear="Hearty Earring",
+		right_ear="Eabani Earring",
+		left_ring="Defending Ring",
+		right_ring="Chirich Ring +1",
+		back="Moonbeam Cape",
 	}
-	set.MDT = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		body = "Ashera Harness",
-		hands = "Kurys Gloves",
-		legs = "Mummu Kecks +2",
-		feet = "Amm Greaves",
-		neck = "loricate torque +1",
-		waist = "Carrier's Sash",
-		left_ear = "Infused Earring",
-		right_ear = "Eabani Earring",
-		left_ring = "Defending Ring",
-		right_ring = "Chirich Ring +1",
-		back = "Moonbeam Cape"
-	}
+
 	--Weaponskill Sets--
 	sets.WS = {}
-	sets.WS.index = {"Attack", "Accuracy"}
+	sets.WS.index = {"Attack"}
 	WS_ind = 1
 
 	sets.MultiHit = {}
 	sets.MultiHit.Attack = {
-		head = "Adhemar Bonnet +1",
-		body = "Adhemar Jacket +1",
-		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		legs = "Samnuha tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		head="Mpaca's Cap",
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+		legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
+		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
+		left_ear="Telos Earring",
+		right_ear="Brutal Earring",
+		left_ring="Gere Ring",
+		right_ring="Ilabrat Ring",
+		back = DA_Back,		
 		waist = "Fotia Belt",
 		neck = "Fotia Gorget",
-		right_ear = "Moonshade Earring",
-		left_ear = "Telos Earring",
-		right_ring = "Regal Ring",
-		left_ring = "Epona's Ring",
-		back = "Andartia's Mantle"
-	}
-	sets.MultiHit.Accuracy = {
-		head = "Ken. Jinpachi",
-		body = "Adhemar Jacket +1",
-		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
-		legs = "Samnuha tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
-		waist = "Fotia Belt",
-		neck = "Fotia Gorget",
-		right_ear = "Moonshade Earring",
-		left_ear = "Telos Earring",
-		right_ring = "Regal Ring",
-		left_ring = "Epona's Ring",
-		back = "Andartia's Mantle"
+		
 	}
 
 	sets.OneHit = {}
 	sets.OneHit.Attack = {
-		Head = "Nyame Helm",
+		head="Mpaca's Cap",
 		Body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
 		legs = "Nyame Flanchard",
@@ -324,53 +201,25 @@ function get_sets()
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Regal Ring",
 		right_ring = "Ilabrat Ring",
-		back = "Yokaze Mantle"
+		back = WSD_back,
 	}
-	sets.OneHit.Accuracy = {
-		Head = "Nyame Helm",
-		Body = "Nyame Mail",
-		hands = "Nyame Gauntlets",
-		legs = "Nyame Flanchard",
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck = "Caro Necklace",
-		waist = "Sailfi Belt +1",
-		left_ear = "Ishvara Earring",
-		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
-		right_ring = "Regal Ring",
-		right_ring = "Ilabrat Ring",
-		back = "Yokaze Mantle"
-	}
-
+	
 	sets.OtherWS = {}
 	sets.OtherWS.Attack = {
-		Head = "Nyame Helm",
-		body = "Adhemar Jacket +1",
-		hands = {name = "Herculean Gloves", augments = {"Accuracy+21 Attack+21", '"Triple Atk."+2', "STR+11", "Accuracy+9"}},
+		head="Mpaca's Cap",
+		Body = "Nyame Mail",
+		hands = "Nyame Gauntlets",
 		legs = "Nyame Flanchard",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck = "Caro Necklace",
 		waist = "Sailfi Belt +1",
-		right_ear = "Moonshade Earring",
-		left_ear = "Telos Earring",
-		left_ring = "Ilabrat Ring",
+		left_ear = "Ishvara Earring",
+		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Regal Ring",
-		back = "Andartia's Mantle"
+		right_ring = "Ilabrat Ring",
+		back = WSD_back,
 	}
-	sets.OtherWS.Accuracy = {
-		Head = "Nyame Helm",
-		body = "Adhemar Jacket +1",
-		hands = {name = "Herculean Gloves", augments = {"Accuracy+21 Attack+21", '"Triple Atk."+2', "STR+11", "Accuracy+9"}},
-		legs = "Nyame Flanchard",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
-		neck = "Caro Necklace",
-		waist = "Sailfi Belt +1",
-		right_ear = "Moonshade Earring",
-		left_ear = "Telos Earring",
-		left_ring = "Ilabrat Ring",
-		right_ring = "Regal Ring",
-		back = "Andartia's Mantle"
-	}
-
+	
 	sets.AeolianEdge = {}
 	sets.AeolianEdge = {
 		head = "Nyame Helm",
@@ -382,9 +231,9 @@ function get_sets()
 		ring1 = "Acumen Ring",
 		ring2 = "Dingir Ring",
 		waist = "Orpheus's Sash",
-		back = "Yokaze Mantle",
+		back = WSD_back,
 		legs = "Nyame Flanchard",
-		feet = "Nayem Sollerets",
+		feet = "Nyame Sollerets",
 	}
 	
 	sets.WS.Hybrid = {
@@ -394,12 +243,27 @@ function get_sets()
 		ear1 = "Moonshade Earring",
 		body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
-		ring1 = "Acumen Ring",
-		ring2 = "Dingir Ring",
+		left_ring="Gere Ring",
+		right_ring="Regal Ring",
 		waist = "Orpheus's Sash",
-		back = "Yokaze Mantle",
+		back = WSD_back,
 		legs = "Nyame Flanchard",
-		feet = "Nayem Sollerets",
+		feet = "Nyame Sollerets",
+	}
+	
+	sets.WS.Crit ={
+	    head={ name="Blistering Sallet +1", augments={'Path: A',}},
+		body="Malignance Tabard",
+		hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+		legs="Mpaca's Hose",
+		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
+		neck="Fotia Gorget",
+		waist="Fotia Belt",
+		left_ear="Cessance Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		left_ring="Gere Ring",
+		right_ring="Hetairoi Ring",
+		Back = DA_Back
 	}
 
 	--Job Ability Sets--
@@ -482,17 +346,14 @@ function precast(spell)
 		equip(sets.snapshot)
 	elseif spell.type == "WeaponSkill" then
 		if player.tp >= 1000 then
-			if
-				spell.english == "Evisceration" or spell.english == "Blade: Shun" or spell.english == "Blade: Jin" or
-					spell.english == "Blade: Ku"
-			 then
+			if spell.english == "Blade: Shun" or spell.english == "Blade: Jin" or spell.english == "Blade: Ku" then
 				equip(sets.MultiHit[sets.WS.index[WS_ind]])
-			elseif
-				spell.english == "Blade: Hi" or spell.english == "Blade: Ten" or 
-					spell.english == "Blade: Kamu"  then
+			elseif spell.english == "Blade: Hi" or spell.english == "Blade: Ten" or spell.english == "Blade: Kamu"  then
 				equip(sets.OneHit[sets.WS.index[WS_ind]])
-			elseif spell.english == "Blade: Chi" or spell.english == "Blade: Teki" or spell.english == "Blade: Yu" or spell.english == "Aeolian Edge" then
-				equip(sets.WS.Hybrid)
+			elseif spell.english == "Blade: Chi" or spell.english == "Blade: Teki" or spell.english == "Blade: Yu" or spell.english == "Aeolian Edge" or spell.english == "Blade: To" or spell.english == "Tachi: Jinpu"  then
+				equip(sets.WS.Hybrid)				
+			elseif spell.english == "Evisceration" then
+				equip(sets.WS.Crit)
 			elseif spell.type == "WeaponSkill" then
 				equip(sets.OtherWS[sets.WS.index[WS_ind]])
 			end
@@ -583,6 +444,8 @@ function buff_change(buff, gain)
 				sets.Weapon_melee[sets.Weapon_melee.index[Wm_ind]]
 			)
 		)
+		elseif player.status == 'Engaged' and buffactive['terror'] or buffactive['stun'] or buffactive['sleep'] then
+			equip(sets.DT)
 			elseif player.status == "Idle" then
 				equip(sets.Idle[sets.Idle.index[Idle_ind]])
 			end
@@ -597,12 +460,6 @@ function self_command(command)
 			TP_ind = 1
 		end
 		send_command("@input /echo <----- TP Set changed to " .. sets.TP.index[TP_ind] .. " ----->")
-		if TP_ind > 1 then
-			WS_ind = 2
-		else
-			WS_ind = 1
-		end
-		send_command("@input /echo <----- WS set changed to " .. sets.WS.index[WS_ind] .. " ----->")
 		send_command("@input /echo <----- Haste Set changed to " .. sets.Haste.index[Haste_ind] .. " ----->")
 		equip(
 			set_combine(
@@ -616,46 +473,7 @@ function self_command(command)
 			Haste_ind = 1
 		end
 		send_command("@input /echo <----- TP Set changed to " .. sets.TP.index[TP_ind] .. " ----->")
-		send_command("@input /echo <----- WS set changed to " .. sets.WS.index[WS_ind] .. " ----->")
 		send_command("@input /echo <----- Haste Set changed to " .. sets.Haste.index[Haste_ind] .. " ----->")
-		equip(
-			set_combine(
-				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]],
-				sets.Weapon_melee[sets.Weapon_melee.index[Wm_ind]]
-			)
-		)
-	elseif command == "toggle Melee Weapon set" then
-		Wm_ind = Wm_ind + 1
-		if Wm_ind > #sets.Weapon_melee.index then
-			Wm_ind = 1
-		end
-		send_command("@input /echo <----- Melee weapon changed to " .. sets.Weapon_melee.index[Wm_ind] .. " ----->")
-		send_command("@input /echo <----- Range weapon changed to " .. sets.Weapon_range.index[Wr_ind] .. " ----->")
-		equip(
-			set_combine(
-				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]],
-				sets.Weapon_melee[sets.Weapon_melee.index[Wm_ind]]
-			)
-		)
-	elseif command == "toggle Range Weapon set" then
-		Wr_ind = Wr_ind + 1
-		if Wr_ind > #sets.Weapon_range.index then
-			Wr_ind = 1
-		end
-		send_command("@input /echo <----- Melee weapon changed to " .. sets.Weapon_melee.index[Wm_ind] .. " ----->")
-		send_command("@input /echo <----- Range weapon changed to " .. sets.Weapon_range.index[Wr_ind] .. " ----->")
-		equip(
-			set_combine(
-				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]],
-				sets.Weapon_melee[sets.Weapon_melee.index[Wm_ind]]
-			)
-		)
-	elseif command == "toggle DW set" then
-		DW_mode_ind = DW_mode_ind + 1
-		if DW_mode_ind > #sets.DW_mode.index then
-			DW_mode_ind = 1
-		end
-		send_command("@input /echo <----- DW status changed to " .. sets.DW_mode.index[DW_mode_ind] .. " ----->")
 		equip(
 			set_combine(
 				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]],
@@ -669,17 +487,5 @@ function self_command(command)
 		end
 		send_command("@input /echo <----- Idle Set changed to " .. sets.Idle.index[Idle_ind] .. " ----->")
 		equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]]))
-	elseif command == "toggle pdt set" then
-		equip(set.PDT)
-		send_command("@input /echo <----- PDT set Equipped ----->")
-	elseif command == "toggle mdt set" then
-		equip(set.MDT)
-		send_command("@input /echo <----- MDT set Equipped ----->")
-	elseif command == "status check" then
-		send_command("@input /echo <----- Melee weapon changed to " .. sets.Weapon_melee.index[Wm_ind] .. " ----->")
-		send_command("@input /echo <----- Range weapon changed to " .. sets.Weapon_range.index[Wr_ind] .. " ----->")
-		send_command("@input /echo <----- Haste Set changed to " .. sets.Haste.index[Haste_ind] .. " ----->")
-		send_command("@input /echo <----- TP Set changed to " .. sets.TP.index[TP_ind] .. " ----->")
-		send_command("@input /echo <----- WS set changed to " .. sets.WS.index[WS_ind] .. " ----->")
 	end
 end

@@ -76,52 +76,63 @@ function get_sets()
 
         TP_ind = 1
         sets.TP.Standard = {
-                head = "Dampening Tam",
-                neck = "Lissome necklace",
-                ear1 = "Dudgeon Earring",
-                ear2 = "Heartseeker Earring",
-                body = "Rawhide Vest",
-                hands = "Taeon Gloves",
-                ring1 = "Enlivened Ring",
-                ring2 = "Oneiros Ring",
-                back = "Grounded Mantle",
-                waist = "Sentry Belt",
-                legs = "Obatala Subligar",
-                feet = "Herculean Boots"
-        }
+		    head="Nyame Helm",
+			body="Nyame Mail",
+			hands="Nyame Gauntlets",
+			legs="Nyame Flanchard",
+			feet="Nyame Sollerets",
+			neck="Caro Necklace",
+			waist="Kentarch Belt +1",
+			left_ear="Sherida Earring",
+			right_ear="Moonshade Earring",
+			left_ring="Mummu Ring",
+			right_ring="Petrov Ring",
+		}
 
         sets.TP.DT = {
-                head = "Dampening Tam",
-                neck = "Loricate Torque +1",
-                ear1 = "Genmei Earring",
-                ear2 = "Heartseeker Earring",
-                body = "Emet harness +1",
-                hands = "Taeon Gloves",
-                ring1 = "Dark ring",
-                ring2 = "Oneiros Ring",
-                back = "Solemnity Cape",
-                waist = "Flume belt +1",
-                legs = "Obatala Subligar",
-                feet = "Herculean Boots"
+			head="Nyame Helm",
+			body="Nyame Mail",
+			hands="Nyame Gauntlets",
+			legs="Nyame Flanchard",
+			feet="Nyame Sollerets",
+			neck="Caro Necklace",
+			waist="Kentarch Belt +1",
+			left_ear="Sherida Earring",
+			right_ear="Suppanomimi",
+			left_ring="Mummu Ring",
+			right_ring="Petrov Ring",
         }
 
         sets.TP.DTAccuracy = {
-                head = "Dampening Tam",
-                neck = "Loricate Torque +1",
-                ear1 = "Dudgeon Earring",
-                ear2 = "Heartseeker Earring",
-                body = "Emet harness +1",
-                hands = "Taeon Gloves",
-                ring1 = "Dark ring",
-                ring2 = "Mars's ring",
-                back = "Solemnity Cape",
-                waist = "Flume belt +1",
-                legs = "Obatala Subligar",
-                feet = "Herculean Boots"
+     	    head="Nyame Helm",
+			body="Nyame Mail",
+			hands="Nyame Gauntlets",
+			legs="Nyame Flanchard",
+			feet="Nyame Sollerets",
+			neck="Caro Necklace",
+			waist="Kentarch Belt +1",
+			left_ear="Sherida Earring",
+			right_ear="Suppanomimi",
+			left_ring="Mummu Ring",
+			right_ring="Petrov Ring",
         }
 
         --Weaponskill Sets--
         sets.WS = {}
+		
+		sets.Evisceration = {
+			head="Mummu Bonnet +2",
+			body="Meg. Cuirie +2",
+			hands="Mummu Wrists +2",
+			legs="Mummu Kecks +2",
+			feet="Mummu Gamash. +2",
+			neck="Caro Necklace",
+			left_ear="Sherida Earring",
+			right_ear="Moonshade Earring",
+			left_ring="Mummu Ring",
+			right_ring="Petrov Ring",
+			waist ="Kentarch Belt +1",
+			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},}
 
         sets.SavageBlade = {}
 
@@ -421,6 +432,9 @@ function precast(spell)
         if spell.english == "Vorpal Blade" then
                 equip(sets.VorpalBlade)
         end
+		if spell.english == 'Evisceration' then
+			equip(sets.Evisceration)
+		end
 
         if spell.english == "Sanguine Blade" then
                 equip(sets.SanguineBlade)

@@ -279,7 +279,7 @@ function get_sets()
 	sets.JA = {}
 	sets.JA.Jump = {
 		hands = "Vishap finger gauntlets +2",
-		neck = "Lissome Neckalace",
+		neck = "Vim Torque +1",
 		left_ring="Flamma Ring",
 		Feet = "Ostro Greaves"
 	}

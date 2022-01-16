@@ -174,7 +174,7 @@ function get_sets()
 	ChantDuCygne_ind = 1
 
 	sets.ChantDuCygne.Attack = {
-		ammo = "Jukukik Feather",
+		ammo = "Crepuscular Pebble",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
 		ear1 = "Telos Earring",
@@ -300,7 +300,7 @@ function get_sets()
 		ring1 = "Ephedra Ring",
 		ring2 = "Sirona's Ring",
 		ear1 = "Nourish. Earring +1",
-		back = "Solmenity Cape"
+		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}}
 	}
 
 	--Utility Sets--
@@ -366,19 +366,19 @@ function get_sets()
 	sets.precast.FC = {}
 
 	sets.precast.FC.Standard = {
-		ammo = "Sapience Orb",
-		head = "Carmine Mask +1",
-		body = "Reverence Surcoat +3",
-		hands = "Souveran Handschuhs +1",
-		legs = "Sakpata Cuisses",
-		feet = "Odyssean Greaves",
-		neck = "Voltsurge Torque",
-		waist = "Witful Belt",
-		left_ear = "Etiolation Earring",
-		right_ear = "Loquac. Earring",
-		left_ring = "Rahab Ring",
-		right_ring = "Kishar Ring",
-		back = "Moonbeam Cape"
+		ammo="Sapience Orb",
+		head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+		body="Rev. Surcoat +3",
+		hands={ name="Leyline Gloves", augments={'Accuracy+12','Mag. Acc.+14','"Mag.Atk.Bns."+15','"Fast Cast"+2',}},
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+		feet={ name="Odyssean Greaves", augments={'Enmity+7','VIT+9','Accuracy+14','Attack+12',}},
+		neck="Voltsurge Torque",
+		waist="Carrier's Sash",
+		left_ear="Etiolation Earring",
+		right_ear="Loquac. Earring",
+		left_ring="Rahab Ring",
+		right_ring="Kishar Ring",
+		back="Moonbeam Cape",
 	}
 end
 

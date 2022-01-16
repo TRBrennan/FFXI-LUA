@@ -550,7 +550,7 @@ function get_sets()
 	sets.Utility.Weather = {waist = "Hachirin-no-obi"}
 	
 	sets.Utility.RangedAttack = {
-	    main="Naegling",
+	    main="Thribon",
 		sub="Sacro Bulwark",
 		range="Exalted Bow",
 		head="Malignance Chapeau",
@@ -560,7 +560,7 @@ function get_sets()
 		feet="Malignance Boots",
 		neck="Sanctity Necklace",
 		waist="Yemaya Belt",
-		left_ear="Digni. Earring",
+		left_ear="Crepuscular Earring",
 		right_ear="Telos Earring",
 		left_ring="Cacoethic Ring",
 		right_ring="Petrov Ring",

@@ -195,7 +195,7 @@ function get_sets()
         }
 
         sets.Exenterator = {
-                ammo = "Jukukik Feather",
+                ammo = "Crepuscular Pebble",
                 head = "Adhemar Bonnet +1",
                 neck = "Fotia gorget",
                 ear1 = "Moonshade Earring",
@@ -211,7 +211,7 @@ function get_sets()
         }
 
         sets.Evisceration = {
-                ammo = "Jukukik Feather",
+                ammo = "Crepuscular Pebble",
                 head = "Adhemar Bonnet +1",
                 neck = "Fotia gorget",
                 ear1 = "Moonshade Earring",
@@ -227,7 +227,7 @@ function get_sets()
         }
 
         sets.SharkBite = {
-                ammo = "Jukukik Feather",
+                ammo = "Crepuscular Pebble",
                 head = {
                         name = "Herculean Helm",
                         augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}

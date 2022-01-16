@@ -244,7 +244,7 @@ function get_sets()
 		hands = "Kaykaus Cuffs",
 		ring1 = "Stikini ring +1",
 		ring2 = "Kishar Ring",
-		waist = "Luminary Sash",
+		waist = "Embla Sash",
 		back = "Lugh's Cape",
 		legs = "Telchine Braconi",
 		feet = "Telchine Pigaches"
@@ -376,6 +376,8 @@ function get_sets()
 	}
 	--Utility and JA Sets --
 	sets.Utility = {}
+	
+	sets.Utility.Sub = {waist = "Embla Sash"}
 
 	sets.Utility.Weather = {waist = "Hachirin-no-obi"}
 
@@ -434,6 +436,8 @@ function precast(spell)
 		equip(sets.Utility.Tabula)
 	elseif spell.english == "Stun" then
 		equip(sets.Magic.Stun)
+	elseif spell.english == "Sublimation" then
+		equip(sets.Utility.Sub)
 	end
 end
 

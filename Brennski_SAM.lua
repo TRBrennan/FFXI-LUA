@@ -26,7 +26,7 @@ function get_sets()
 	TP_Bonus_Head = "Mpaca's Cap"
 	WSD_feet={ name="Nyame Sollerets", augments={'Path: B',}}
 	TP_Cape ={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
-	WS_Cape = { name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	WSD_Cape = { name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 
 	--Idle Sets--
 	sets.Idle = {}
@@ -98,7 +98,7 @@ function get_sets()
 		hands = "Wakido Kote +3",
 		right_ring = "Niqmaddu Ring",
 		left_ring = "Flamma Ring",
-		back = TP_Back,
+		back = TP_Cape,
 		waist = "Ioskeha belt +1",
 		legs = "Mpaca's Hose",
 		feet = "Flam. Gambieras +2"
@@ -114,7 +114,7 @@ function get_sets()
 		hands = "Wakido Kote +3",
 		right_ring = "Cacoethic Ring",
 		left_ring = "Flamma Ring",
-		back = TP_Back,
+		back = TP_Cape,
 		waist = "Ioskeha belt +1",
 		legs = "Ken. Hakama",
 		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
@@ -133,7 +133,7 @@ function get_sets()
 		right_ear="Telos Earring",
 		left_ring="Defending Ring",
 		right_ring="Chirich Ring +1",
-		back = TP_Back
+		back = TP_Cape
 	}
 
 	--Weaponskill Sets--
@@ -285,6 +285,22 @@ function get_sets()
 
 	sets.JA.Seigan = {}
 	
+	sets.JA.Jumps ={
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Flam. Zucchetto +2",
+		body={ name="Sakonji Domaru +3", augments={'Enhances "Overwhelm" effect',}},
+		hands="Wakido Kote +3",
+		legs="Wakido Haidate +3",
+		feet="Flam. Gambieras +2",
+		neck={ name="Vim Torque +1", augments={'Path: A',}},
+		waist="Kentarch Belt +1",
+		left_ear="Telos Earring",
+		right_ear="Crep. Earring",
+		left_ring="Flamma Ring",
+		right_ring="Chirich Ring +1",
+		back = TP_Back
+	}
+	
 	
 
 
@@ -346,16 +362,14 @@ function precast(spell)
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Hasso))
 	elseif spell.english == "Blade Bash" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.BladeBash))
-	elseif spell.english == "Tomahawk" then
-		equip(set_combine(sets.Utility.Enmity, sets.JA.Tomahawk))
-	elseif spell.english == "Bloodrage" then
-		equip(set_combine(sets.Utility.Enmity, sets.JA.BloodRage))
 	elseif spell.english == "Sekkanoki" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Sekkanoki))
 	elseif spell.english == "Provoke" then
 		equip(sets.Utility.Enmity)
 	elseif spell.english == "Box Step" then
 		equip(sets.Utility.Steps)
+	elseif spell.english == "Jump" or spell.english == "High Jump" or spell.english == "Super Jump" then
+		equip(sets.JA.Jumps)
 	elseif spell.type == "Weapon Skill" then
 		equip(sets.OneHit.Attack)
 	end
