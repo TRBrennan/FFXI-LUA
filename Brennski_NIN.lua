@@ -9,7 +9,7 @@ function get_sets()
 	Haste_ind = 1
 	
 	--Gear--
-    DA_back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+    DA_Back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 	WSD_back = WSD_back
 	
 	--Utility--
@@ -21,6 +21,7 @@ function get_sets()
 	sets.Idle.index = {"Standard", "DT"}
 	Idle_ind = 1
 	sets.Idle.Standard = {
+		ammo="Staunch Tathlum +1",
 	    head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
@@ -35,6 +36,7 @@ function get_sets()
 		back="Moonbeam Cape",
 	}
 	sets.Idle.DT = {
+		ammo="Staunch Tathlum +1",
 		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
@@ -152,6 +154,7 @@ function get_sets()
 	}
 	--Defence Sets--
 	set.DT = {
+		ammo="Seki Shuriken",
 		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
@@ -173,6 +176,7 @@ function get_sets()
 
 	sets.MultiHit = {}
 	sets.MultiHit.Attack = {
+		ammo="Crepuscular Pebble",
 		head="Mpaca's Cap",
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
 		hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
@@ -190,6 +194,7 @@ function get_sets()
 
 	sets.OneHit = {}
 	sets.OneHit.Attack = {
+		ammo="Crepuscular Pebble",
 		head="Mpaca's Cap",
 		Body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
@@ -206,6 +211,7 @@ function get_sets()
 	
 	sets.OtherWS = {}
 	sets.OtherWS.Attack = {
+		ammo="Crepuscular Pebble",
 		head="Mpaca's Cap",
 		Body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
@@ -222,6 +228,7 @@ function get_sets()
 	
 	sets.AeolianEdge = {}
 	sets.AeolianEdge = {
+		ammo = "Seething Bomblet +1",
 		head = "Nyame Helm",
 		neck = "Sanctity Necklace",
 		ear2 = "Friomisi earring",
@@ -237,6 +244,7 @@ function get_sets()
 	}
 	
 	sets.WS.Hybrid = {
+		ammo = "Seething Bomblet +1",
 		head = "Nyame Helm",
 		neck = "Sanctity Necklace",
 		ear2 = "Friomisi earring",
@@ -252,6 +260,7 @@ function get_sets()
 	}
 	
 	sets.WS.Crit ={
+		ammo = "Yetshila",
 	    head={ name="Blistering Sallet +1", augments={'Path: A',}},
 		body="Malignance Tabard",
 		hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
@@ -289,21 +298,36 @@ function get_sets()
 	}
 
 	sets.Magic.Nuke = {
-		head = "Nyame Helm",
-		neck = "Sanctity Necklace",
-		ear2 = "Friomisi earring",
-		ear1 = "Dignitary's Earring",
-		body = "Samnuha Coat",
-		hands = "Leyline Gloves",
-		ring1 = "Dingir Ring",
-		ring2 = "Acumen Ring",
-		waist = "Eschan Stone",
-		back = "Izdubar Mantle",
-		legs = "Nyame Flanchard",
+	   ammo="Pemphredo Tathlum",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Eschan Stone",
+		left_ear="Digni. Earring",
+		right_ear="Friomisi Earring",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		right_ring="Acumen Ring",
+		back="Izdubar Mantle",
 	}
 
-	sets.Magic.Debuff = {}
+	sets.Magic.Debuff = {   
+		ammo="Pemphredo Tathlum",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Eschan Stone",
+		left_ear="Digni. Earring",
+		right_ear="Friomisi Earring",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		right_ring="Acumen Ring",
+		back="Izdubar Mantle",
+	}
 	--Low special gear--
 	sets.obi = {
 		waist = "Hachirin-no-Obi"
@@ -463,8 +487,7 @@ function self_command(command)
 		send_command("@input /echo <----- Haste Set changed to " .. sets.Haste.index[Haste_ind] .. " ----->")
 		equip(
 			set_combine(
-				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]],
-				sets.Weapon_melee[sets.Weapon_melee.index[Wm_ind]]
+				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]]
 			)
 		)
 	elseif command == "toggle Haste set" then
@@ -476,8 +499,7 @@ function self_command(command)
 		send_command("@input /echo <----- Haste Set changed to " .. sets.Haste.index[Haste_ind] .. " ----->")
 		equip(
 			set_combine(
-				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]],
-				sets.Weapon_melee[sets.Weapon_melee.index[Wm_ind]]
+				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]]
 			)
 		)
 	elseif command == "toggle idle set" then

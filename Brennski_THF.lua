@@ -255,7 +255,7 @@ function get_sets()
         sets.Evisceration = {
 			ammo="Yetshila",
 			head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
-			body="Meg. Cuirie +1",
+			body="Meg. Cuirie +2",
 			hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
 			legs="Mummu Kecks +2",
 			feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},

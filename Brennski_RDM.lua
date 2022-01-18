@@ -72,8 +72,8 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "EnSpell", "LowHaste", "LowHasteEnSpell", "EnSpell1Damage"}
-	--1=Standard, 2=EnSpell, 3=LowHaste, 4=LowHastEnSpell, 5=EnSpell1Damage--
+	sets.TP.index = {"Standard", "EnSpell", "LowHaste", "LowHasteEnSpell", "EnSpell1Damage", "SubtleBlow"}
+	--1=Standard, 2=EnSpell, 3=LowHaste, 4=LowHastEnSpell, 5=EnSpell1Damage,6 =SubtleBlow--
 
 	TP_ind = 1
 	sets.TP.Standard = {
@@ -156,6 +156,22 @@ function get_sets()
     left_ring="Hetairoi Ring",
     right_ring="Chirich Ring +1",
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
+	}
+	
+	sets.TP.SubtleBlow = {
+		ammo="Coiste Bodhar",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck = "Bathy Choker +1",
+		waist = "Sailfi Belt +1",
+		left_ear="Sherida Earring",
+		right_ear="Telos Earring",
+		left_ring="Chirich Ring",
+		right_ring="Chirich Ring +1",
+		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},	
 	}
 
 
@@ -723,7 +739,7 @@ function precast(spell)
 	elseif spell.english == "Chant du Cygne" or spell.english == "Requiescat" or spell.english == "Vorpal Blade" or spell.english == "Evisceration" then
 		equip(sets.WS.CDC)
 		-- send_command("@input /echo CDC Set")
-	elseif spell.english == "Savage Blade"  or spell.english == "Death Blossom" or spell.english == "Knights of Round" then
+	elseif spell.english == "Savage Blade"  or spell.english == "Death Blossom" or spell.english == "Knights of Round" or spell.english == "Black Halo" then
 		equip(sets.WS.Savage)
 		-- send_command("@input /echo Savage Blade Set")
 	elseif spell.english == "Sanguine Blade" then
