@@ -237,7 +237,7 @@ head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic b
 		ring1 = "Ephedra Ring",
 		ring2 = "Sirona's Ring",
 		waist = "Luminary Sash",
-		back = "Solemnity Cape",
+		back = "Aurist's Cape +1",
 		legs = "Chironic Hose",
 		feet = "Vanya Clogs"
 	}
@@ -416,7 +416,7 @@ head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic b
 	sets.WS.Savage = {
 		ammo = "Coiste Bodhar",
 		head = "Jhakri Coronal +1",
-		neck = "Caro Necklace",
+		neck = "Rep. Plat. Medal",
 		ear1 = "Ishvara Earring",
 		ear2 = "Moonshade Earring",
 		body = "Jhakri Robe +2",
@@ -432,7 +432,7 @@ head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic b
 	sets.WS.Vorpal = {
 		ammo = "Coiste Bodhar",
 		head = "Jhakri Coronal +1",
-		neck = "Caro Necklace",
+		neck = "Rep. Plat. Medal",
 		ear1 = "Ishvara Earring",
 		ear2 = "Moonshade Earring",
 		body = "Jhakri Robe +2",

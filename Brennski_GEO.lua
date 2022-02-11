@@ -165,7 +165,7 @@ function get_sets()
         ring2 = "Sirona's Ring",
         legs = "Assiduity Pants +1",
         feet = "Vanya Clogs",
-        back = "Solemnity Cape"
+        back = "Aurist's Cape +1"
     }
 
     sets.midcast.Curaga = sets.midcast.Cure

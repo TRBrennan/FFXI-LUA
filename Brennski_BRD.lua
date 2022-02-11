@@ -112,7 +112,7 @@ function get_sets()
             name = "Lustra. Leggings +1",
             augments = {'HP+65', 'STR+15', 'DEX+15',}
         },
-        neck = "Caro Necklace",
+        neck = "Rep. Plat. Medal",
         waist = "Sailfi Belt +1",
         left_ear = "Ishvara Earring",
         right_ear = {

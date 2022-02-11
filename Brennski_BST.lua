@@ -78,7 +78,7 @@ function get_sets()
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
 		legs="Malignance Tights",
 		feet="Malignance Boots",
-		neck="Sanctity Necklace",
+		neck = "Bathy Choker +1",
 		waist="Carrier's Sash",
 		left_ear="Eabani Earring",
 		right_ear="Infused Earring",

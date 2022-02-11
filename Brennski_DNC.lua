@@ -120,7 +120,7 @@ function get_sets()
                 ring1 = "Cacoethic Ring",
                 ring2 = "Chirich Ring +1",
                 back = "Canny Cape",
-                waist = "Kentarch Belt +1",
+                waist = "Sailfi Belt +1",
                 legs = "Carmine Cuisses +1",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
         }
@@ -172,7 +172,7 @@ function get_sets()
                         name = "Herculean Helm",
                         augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}
                 },
-                neck = "Caro Necklace",
+                neck = "Rep. Plat. Medal",
                 ear1 = "Moonshade Earring",
                 ear2 = "Ishvara Earring",
                 body = {
@@ -232,7 +232,7 @@ function get_sets()
                         name = "Herculean Helm",
                         augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}
                 },
-                neck = "Caro Necklace",
+                neck = "Rep. Plat. Medal",
                 ear1 = "Ishvara Earring",
                 ear2 = "Moonshade Earring",
                 body = "Herculean Vest",

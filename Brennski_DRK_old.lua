@@ -130,7 +130,7 @@ function get_sets()
 		sets.SB ={}
 		sets.SB.Attack = {ammo="Knobkierrie",
                                     head={ name="Valorous Mask", augments={'Accuracy+18','Weapon skill damage +3%','STR+4','Attack+11',}}, 
-									neck="Caro Necklace", ear1="Ishvara Earring",ear2="Moonshade Earring",
+									neck="Rep. Plat. Medal", ear1="Ishvara Earring",ear2="Moonshade Earring",
                                     body={ name="Valorous Mail", augments={'Accuracy+25','Weapon skill damage +4%','DEX+8','Attack+5',}},hands={ name="Valorous Mitts", augments={'Accuracy+17 Attack+17','Weapon skill damage +3%','VIT+9','Accuracy+3','Attack+12',}},ring1="Niqmaddu Ring",ring2="Regal Ring",
                                      back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 									 waist="Sailfi Belt +1",legs={ name="Valor. Hose", augments={'Attack+27','Weapon skill damage +5%','DEX+8','Accuracy+15',}},feet="Nyame Sollerets" }
@@ -141,7 +141,7 @@ function get_sets()
 	    sets.NINMagic.Utsusemi ={
                               head="Dampening Tam",neck="Loricate Torque +1", ear1="Brutal Earring",ear2="Cessance Earring",
                               body="Emet harness +1",hands="Sulev. Gauntlets +2",ring1="Chirich Ring +1",ring2="Flamma Ring",
-                              back="Solemnity Cape",waist="Carrier's Sash",legs="Herculean Trousers",feet="Valorous Greaves"}
+                              back="Aurist's Cape +1",waist="Carrier's Sash",legs="Herculean Trousers",feet="Valorous Greaves"}
 							  
 		
  

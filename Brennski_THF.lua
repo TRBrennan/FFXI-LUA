@@ -148,7 +148,7 @@ function get_sets()
                 ring1 = "Cacoethic Ring",
                 ring2 = "Chirich Ring +1",
                 back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-                waist = "Kentarch Belt +1",
+                waist = "Sailfi Belt +1",
                 legs = "Carmine Cuisses +1",
                 feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
         }
@@ -223,7 +223,7 @@ function get_sets()
         sets.Rudras = {
                 ammo = "Yetshila",
                 head = "Nyame Helm",
-                neck = "Caro Necklace",
+                neck = "Rep. Plat. Medal",
                 ear1 = "Ishvara Earring",
                 ear2 = "Moonshade Earring",
                 body = "Nyame Mail",
@@ -271,7 +271,7 @@ function get_sets()
         sets.SharkBite = {
                 ammo = "Crepuscular Pebble",
                 head = "Nyame Helm",
-                neck = "Caro Necklace",
+                neck = "Rep. Plat. Medal",
                 ear1 = "Ishvara Earring",
                 ear2 = "Moonshade Earring",
                 body = "Nyame Mail",

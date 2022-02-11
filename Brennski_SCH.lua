@@ -55,8 +55,8 @@ function get_sets()
 		ring1 = "Chirich Ring +1",
 		ring2 = "Defending ring",
 		waist = "Carrier's Sash",
-		legs = "Assiduity Pants +1",
-		feet = "Nyame Sollerts",
+		legs = "Nyame Flanchard",
+		feet = "Nyame Sollerets",
 		back = "Moonbeam Cape"
 	}
 
@@ -116,7 +116,7 @@ function get_sets()
 		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
 		ammo = "Pemphredo Tathlum",
-		head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
+		head="Agwu's Cap",
 		neck="Argute Stole +2",
 		left_ear="Regal Earring",
 		right_ear="Malignance Earring",
@@ -134,7 +134,7 @@ function get_sets()
     main="Bunzi's Rod",
     sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
-    head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
+    head="Agwu's Cap",
     body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+10%','CHR+4','Mag. Acc.+2','"Mag.Atk.Bns."+13',}},
     hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
     legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','INT+10','"Mag.Atk.Bns."+2',}},
@@ -208,7 +208,7 @@ function get_sets()
 		hands = "Kaykaus Cuffs +1",
 		ring1 = "Stikini ring +1",
 		ring2 = "Kishar Ring",
-		waist = "Luminary Sash",
+		waist = "Obstin. Sash",
 		back = "Aurist's Cape +1",
 		legs = "Chironic Hose",
 		feet = "Skaoi Boots"
@@ -224,7 +224,7 @@ function get_sets()
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
 		neck="Incanter's Torque",
-		waist="Luminary Sash",
+		waist="Obstin. Sash",
 		left_ear="Regal Earring",
 		right_ear="Vor Earring",
 		left_ring="Ephedra Ring",
@@ -272,7 +272,7 @@ function get_sets()
 		ammo = "Pemphredo Tathlum",
 		head = {name = "Merlinic Hood", augments = {'"Fast Cast"+5', "Mag. Acc.+10"}},
 		neck = "Voltsurge Torque",
-		waist = "Luminary Sash",
+		waist = "Obstin. Sash",
 		left_ear = "Etiolation Earring",
 		right_ear = "Loquac. Earring",
 		left_ring = "Rahab Ring",
@@ -286,9 +286,10 @@ function get_sets()
 	sets.Magic.HelixMB ={
 		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
-		ammo="Pemphredo Tathlum",
+		--ammo="Pemphredo Tathlum",
+		ammo="Ghastly Tathlum +1",
 		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+10%','CHR+4','Mag. Acc.+2','"Mag.Atk.Bns."+13',}},
-		head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
+		head="Agwu's Cap",
 		hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
 		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','INT+10','"Mag.Atk.Bns."+2',}},
 		feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
@@ -306,7 +307,8 @@ function get_sets()
 	sets.Magic.DarkHelixMB ={
 		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
-		ammo="Pemphredo Tathlum",
+		--ammo="Pemphredo Tathlum",
+		ammo="Ghastly Tathlum +1",
 		head = "Pixie Hairpin +1",
 		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+10%','CHR+4','Mag. Acc.+2','"Mag.Atk.Bns."+13',}},
 		hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
@@ -448,6 +450,12 @@ function midcast(spell, act)
 			equip(set_combine(sets.Enhancing[sets.Enhancing.index[Enhancing_ind]], sets.Utility.Perpetuance))
 		end
 	end
+	if spell.english == "Embrava" then
+		equip(sets.Enhancing[sets.Enhancing.index[Enhancing_ind]])
+		if buffactive["Perpetuance"] then
+			equip(set_combine(sets.Enhancing[sets.Enhancing.index[Enhancing_ind]], sets.Utility.Perpetuance))
+		end
+	end
 	if spell.english == "Stun" then
 		equip(sets.Magic.Stun)
 	end
@@ -479,6 +487,9 @@ function midcast(spell, act)
 			spell.english == "Regen V"
 	 then
 		equip(sets.Magic.Regen)
+		if buffactive["Perpetuance"] then
+			equip(set_combine(sets.Magic.Regen, sets.Utility.Perpetuance))
+		end
 	end
 
 	if

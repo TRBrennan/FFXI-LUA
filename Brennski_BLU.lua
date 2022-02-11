@@ -58,7 +58,7 @@ function get_sets()
     sets.Idle.Standard = {
         ammo = "Staunch Tathlum +1",
         head = { name = "Herculean Helm", augments = { 'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},
-        neck = "Sanctity Necklace",
+        neck = "Bathy Choker +1",
         ear1 = "Eabani Earring",
         ear2 = "Infused Earring",
         body = "Jhakri Robe +2",
@@ -171,7 +171,7 @@ function get_sets()
         ring1 = "Cacoethic Ring",
         ring2 = "Ilabrat Ring",
 		back = { name = "Rosmerta's Cape",augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10', 'Phys. dmg. taken-10%', }},
-        waist = "Kentarch Belt +1",
+        waist = "Sailfi Belt +1",
         legs = "Carmine Cuisses +1",
         feet = "Carmine Greaves +1"
     }
@@ -389,7 +389,7 @@ function get_sets()
         waist = "Sacro Cord",
         back = "Cornflower cape",
         legs="Luhlaza Shalwar +3",
-        feet = "Jhakri Pigaches +1"
+        feet={ name="Nyame Sollerets", augments={'Path: B',}},
     }
 
 
@@ -402,7 +402,7 @@ function get_sets()
         body = {name = "Adhemar Jacket +1",augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         hands = "Nyame Gauntlets",
         legs = {name = "Samnuha Tights",augments = {'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
-        feet = "Jhakri Pigaches +2",
+       feet={ name="Nyame Sollerets", augments={'Path: B',}},
         neck = "Mirage Stole +1",
         waist = "Sailfi Belt +1",
         left_ear = "Digni. Earring",
@@ -443,7 +443,7 @@ function get_sets()
     }
 
     sets.BlueMagic.Debuff = {
-		ammo="Pemphredo Tathlum",
+	    ammo="Pemphredo Tathlum",
 		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
@@ -452,9 +452,9 @@ function get_sets()
 		neck={ name="Mirage Stole +1", augments={'Path: A',}},
 		waist="Sacro Cord",
 		left_ear="Digni. Earring",
-		right_ear="Regal Earring",
-		left_ring="Rahab Ring",
-		right_ring="Stikini ring +1",
+		right_ear="Crep. Earring",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		right_ring="Stikini Ring +1",
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
     }
 
@@ -490,14 +490,14 @@ function get_sets()
         body = "Vrikodara Jupon",
         hands = "Telchine Gloves",
         legs = {name = "Telchine Braconi",augments = {'"Fast Cast"+2', 'Enh. Mag. eff. dur. +8',}},
-        feet = "Jhakri Pigaches +2",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
         neck = "Incanter's Torque",
         waist = "Luminary Sash",
         left_ear = "Regal Earring",
         right_ear = "Mendi. Earring",
         ring1 = "Stikini ring +1",
         ring2 = "Sirona's Ring",
-        back = "Solemnity Cape",
+        back = "Aurist's Cape +1",
     }
 	
 	sets.BlueMagic.Macc = {
@@ -507,7 +507,7 @@ function get_sets()
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
-		neck="Sanctity Necklace",
+		neck={ name="Mirage Stole +1", augments={'Path: A',}},
 		waist="Sacro Cord",
 		left_ear="Regal Earring",
 		right_ear="Digni. Earring",
@@ -538,14 +538,14 @@ function get_sets()
         neck = "Mirage Stole +1",
         ear2 = "Friomisi earring",
         ear1 = "Regal Earring",
-        body = "Jhakri Robe +2",
+        body = {name = "Amalric Doublet",augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}},
         hands = "Amalric Gages +1",
         ring1 = "Shiva Ring",
         ring2 = 'Shiva Ring',
         waist = "Sacro Cord",
         back = "Cornflower cape",
-        legs = "Jhakri Slops +1",
-        feet = "Jhakri Pigaches +1"
+        legs="Luhlaza Shalwar +3",
+        feet={ name="Nyame Sollerets", augments={'Path: B',}},
     }
 
 

@@ -40,7 +40,7 @@ function get_sets()
 	sets.Idle.Standard = {
 		ammo = "Staunch Tathlum +1",
 		head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}},
-		neck = "Sanctity Necklace",
+		neck = "Bathy Choker +1",
 		ear1 = "Eabani earring",
 		ear2 = "Infused Earring",
 		body="Nyame Mail",
@@ -72,8 +72,8 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "AccuracyFull", "DT"}
-	--1=Standard, 2 =AccuracyFull, 3=DT--
+	sets.TP.index = {"Standard", "AccuracyFull", "Hybrid", "DT"}
+	--1=Standard, 2 =AccuracyFull, 3=Hybrid, 4=DT--
 
 	TP_ind = 1
 	sets.TP.Standard = {
@@ -107,6 +107,22 @@ function get_sets()
 		waist = "Ioskeha Belt +1",
 		legs="Nyame Flanchard",
 		feet = "Flam. Gambieras +2"
+	}
+	
+	sets.TP.Hybrid = {
+	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Nyame Helm",
+		body={ name="Gleti's Cuirass", augments={'Path: A',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		legs={ name="Ptero. Brais +2", augments={'Enhances "Strafe" effect',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck={ name="Dgn. Collar +2", augments={'Path: A',}},
+		waist="Ioskeha Belt +1",
+		left_ear="Sherida Earring",
+		right_ear="Telos Earring",
+		left_ring="Moonbeam Ring",
+		right_ring="Moonlight Ring",
+		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.TP.DT = {
@@ -232,6 +248,22 @@ function get_sets()
 		back= WSD_Back
 	}
 	
+	sets.WS.SavageBlade ={
+	    ammo="Crepuscular Pebble",
+		head= "Gleti's Mask",
+		body = WSD_Body,
+		hands = WSD_Hands,
+		legs = WSD_Legs,
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Dragoon's collar +2",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Thrud Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		left_ring="Niqmaddu Ring",
+		right_ring="Regal Ring",
+		back = WSD_Back,
+	}
+	
 	sets.WS.OneHit ={
 	    ammo="Knobkierrie",
 		head= WSD_Head,
@@ -315,7 +347,10 @@ function get_sets()
 	} -- Relic Body and Wyvern HP go here
 	sets.JA.SteadyWing = sets.JA.SpiritSurge -- Wyvern HP
 	sets.JA.SteadyWing["Body"] = "Valorous Mail" -- Path D Valorous Mail
+	sets.JA.CallWyvern ={ feet = "Gelti's Boots"}
+	
 	--Precast Sets--
+	
 	sets.precast = {}
 
 	sets.precast.FC = {}
@@ -362,12 +397,15 @@ function precast(spell)
 		equip(sets.Drakesbane.Attack)
 	elseif spell.english == "Camlann's Torment" then
 		equip(sets.CT.Attack)
+	elseif spellenglish == "Savege Blade" then
+		equip(sets.WS.SavageBlade)
 	elseif spell.english == "Box Step" then
 		equip(sets.Utility.Steps)
 	elseif spell.name == "Dismiss" and pet.hpp < 100 then
 		cancel_spell()
 		windower.add_to_chat(50, "  " .. pet.name .. " is below full HP (<pethpp>), cancelling Dismiss!")
 	elseif spell.name == "Call Wyvern" then
+		equip(sets.JA.CallWyvern)
 		if pet.isvalid then
 			cancel_spell()
 			send_command('input /ja "Spirit Link" <me>')

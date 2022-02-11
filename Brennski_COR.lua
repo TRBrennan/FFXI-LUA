@@ -34,7 +34,7 @@ function get_sets()
        
         sets.Idle.Standard = {
                                       head="Malignance Chapeau",
-									  neck="Sanctity Necklace", ear1="Eabani Earring", ear2="Infused Earring",
+									  neck = "Bathy Choker +1", ear1="Eabani Earring", ear2="Infused Earring",
                                       body="Malignance Tabard",
 									  hands="Malignance Gloves",
 									  ring1="Defending ring",ring2="Chirich Ring +1",
@@ -79,7 +79,7 @@ function get_sets()
                                         head="Adhemar Bonnet +1",neck="Sanctity Necklace", ear1="Cessance Earring", ear2="Telos Earring",
                                         body="Adhemar Jacket +1",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring2="Chirich Ring +1",ring1="Cacoethic Ring",
                                         back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
-										waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1" }
+										waist="Sailfi Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1" }
                                                        
                 sets.TP.DT = { ammo ="Chrono bullet",
                               head="Malignance Chapeau",
@@ -132,7 +132,7 @@ function get_sets()
        
         sets.SavageBlade.Attack = {ammo ="Chrono bullet",
                                           head = "Nyame Helm",
-										  neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
+										  neck="Rep. Plat. Medal",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Laksa. Frac +3",
 										  hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Ilabrat Ring",
                                           back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},

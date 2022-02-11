@@ -149,7 +149,7 @@ function init_gear_sets()
     sets.precast.WS['Blade: Ten'] = set_combine(sets.precast.WS,{
         --ammo="Seething bomblet +1",
         head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
-        neck="Caro necklace",
+        neck="Rep. Plat. Medal",
         hands="Adhemar Wristbands",
         waist="Sailfi Belt +1",
         body="Herculean Vest",
@@ -173,7 +173,7 @@ function init_gear_sets()
     sets.precast.WS['Blade: Metsu'] = set_combine(sets.precast.WS, {
         --ammo="Jukukik feather",
         head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
-        neck="Caro necklace",
+        neck="Rep. Plat. Medal",
         body="Herculean Vest",
         hands="Adhemar Wristbands",
         legs="Hiza. Hizayoroi +2",
@@ -191,7 +191,7 @@ function init_gear_sets()
         hands="Ryuo Tekko",
         legs="Hiza. Hizayoroi +2",
        feet={ name="Herculean Boots", augments={'Accuracy+21','Weapon skill damage +4%','Attack+12',}},
-        neck="Caro Necklace",
+        neck="Rep. Plat. Medal",
         waist="Windbuffet Belt +1",
         left_ear="Moonshade Earring",
         right_ear="Ishvara Earring",
@@ -503,7 +503,7 @@ function init_gear_sets()
     sets.engaged.HighAcc.Haste_30 = set_combine(sets.engaged.Acc.Haste_30,{
         hands="Adhemar Wristbands",
         legs="Samnuha tights",
-        waist="Kentarch belt +1",
+        waist="Sailfi Belt +1",
         left_ear="Telos Earring",
         right_ring="Cacoethic Ring",
         left_ring="Chirich Ring +1",})
@@ -535,7 +535,7 @@ function init_gear_sets()
     sets.engaged.Acc.Haste_35= set_combine(sets.engaged.Acc.Haste_35,{
         hands="Adhemar Wristbands",
         legs="Samnuha tights",
-        waist="Kentarch belt +1",
+        waist="Sailfi Belt +1",
         right_ring="Cacoethic Ring",})
      
     -- I dont use
@@ -560,7 +560,7 @@ function init_gear_sets()
          
     sets.engaged.Acc.MaxHaste = set_combine(sets.engaged.MaxHaste,{
         head="Dampening Tam",
-		waist ="Kentarch belt +1"})
+		waist ="Sailfi Belt +1"})
          
     sets.engaged.HighAcc.MaxHaste = set_combine(sets.engaged.Acc.MaxHaste,{
         head="Dampening Tam",
@@ -568,7 +568,7 @@ function init_gear_sets()
         legs="Samnuha tights",
         feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4',}},
         neck="Yarak Torque",
-        waist="Kentarch Belt +1", 
+        waist="Sailfi Belt +1", 
         right_ring="Cacoethic Ring",
         left_ring="Chirich Ring +1",})
      

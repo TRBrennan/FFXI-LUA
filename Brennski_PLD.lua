@@ -278,15 +278,15 @@ function get_sets()
 	}
 	
 	sets.Magic.SIRD ={
-	    ammo="Staunch Tathlum +1",
+		ammo="Staunch Tathlum +1",
 		head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
 		body="Rev. Surcoat +3",
-		hands="Regal Gauntlets",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs={ name="Founder's Hose", augments={'MND+10','Mag. Acc.+15','Attack+15','Breath dmg. taken -5%',}},
-		feet="Odyssean Greaves",
-		neck="Moonbeam Necklace",
-		waist="Trance Belt",
-		left_ear="Odnowa Earring +1",
+		feet={ name="Odyssean Greaves", augments={'Enmity+7','VIT+9','Accuracy+14','Attack+12',}},
+		neck="Moonlight Necklace",
+		waist="Audumbla Sash",
+		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
 		right_ear="Friomisi Earring",
 		left_ring="Defending Ring",
 		right_ring="Supershear Ring",

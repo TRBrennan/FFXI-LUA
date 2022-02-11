@@ -224,7 +224,7 @@ function get_sets()
 		ring1 = "Regal Ring",
 		ring2 = "Chirich Ring +1",
 		back = DA_Back,
-		waist = "Kentarch belt +1",
+		waist = "Sailfi Belt +1",
 		--legs = "Pummeler's cuisses +3",
 		legs="Sakpata's Cuisses",
 		feet = "Pummeler's Calligae +3"
@@ -963,7 +963,7 @@ function get_sets()
 	sets.RF = {
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
-		neck = "Caro necklace",
+		neck = "Rep. Plat. Medal",
 		ear1 = "Moonshade earring",
 		ear2 = "Cessance earring",
 		body = "Argosy Hauberk +1",

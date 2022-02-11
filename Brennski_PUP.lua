@@ -196,7 +196,7 @@ function get_sets()
                         name = "Herculean Helm",
                         augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}
                 },
-                neck = "Caro Necklace",
+                neck = "Rep. Plat. Medal",
                 ear1 = "Moonshade Earring",
                 ear2 = "Telos Earring",
                 body = {
@@ -244,7 +244,7 @@ function get_sets()
                         name = "Herculean Helm",
                         augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}
                 },
-                neck = "caro Necklace",
+                neck = "Rep. Plat. Medal",
                 ear1 = "Moonshade Earring",
                 ear2 = "Telos Earring",
                 body = {
@@ -268,7 +268,7 @@ function get_sets()
                         name = "Herculean Helm",
                         augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}
                 },
-                neck = "Caro Necklace",
+                neck = "Rep. Plat. Medal",
                 ear1 = "Moonshade Earring",
                 ear2 = "Telos Earring",
                 body = {
@@ -292,7 +292,7 @@ function get_sets()
                         name = "Herculean Helm",
                         augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}
                 },
-                neck = "Caro Necklace",
+                neck = "Rep. Plat. Medal",
                 ear1 = "Moonshade Earring",
                 ear2 = "Telos Earring",
                 body = {
@@ -329,7 +329,7 @@ function get_sets()
                         name = "Herculean Boots",
                         augments = {"Accuracy+25 Attack+25", '"Dual Wield"+2', "STR+13", "Accuracy+6"}
                 },
-                neck = "Caro Necklace",
+                neck = "Rep. Plat. Medal",
                 waist = "Sailfi Belt +1",
                 left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
                 right_ear = "Ishvara Earring",

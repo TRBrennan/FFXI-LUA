@@ -375,7 +375,7 @@ function init_gear_sets()
         ear2 = "Mendicant's Earring",
         body = "Inyanga Jubbah +1",
         hands = "Telchine Gloves",
-        back = "Solemnity Cape",
+        back = "Aurist's Cape +1",
         waist = "Cascade Belt",
         ring1 = "Lebeche Ring",
         ring2 = "Sirona's Ring",
@@ -630,7 +630,7 @@ function init_gear_sets()
         right_ear = "Enchntr. Earring +1",
         left_ring = "Sangoma Ring",
         right_ring = "Kishar Ring",
-        back = "Solemnity Cape"
+        back = "Aurist's Cape +1"
     }
 
     --------------------------------------
@@ -653,7 +653,7 @@ function init_gear_sets()
         right_ear = "Enmerkar Earring",
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",
-        back = "Solemnity Cape"
+        back = "Aurist's Cape +1"
     }
 
     -- Idle sets
@@ -672,7 +672,7 @@ function init_gear_sets()
         right_ear = "Enmerkar Earring",
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",
-        back = "Solemnity Cape"
+        back = "Aurist's Cape +1"
     }
 
     sets.idle.Town = {
@@ -690,7 +690,7 @@ function init_gear_sets()
         right_ear = "Enmerkar Earring",
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",
-        back = "Solemnity Cape"
+        back = "Aurist's Cape +1"
     }
 
     sets.idle.PDT = {}

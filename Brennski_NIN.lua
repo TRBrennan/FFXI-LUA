@@ -1,4 +1,7 @@
 function get_sets()
+	-- Load dressup--
+	send_command('lua l dressup')
+	
 	--Binds--
 	send_command("bind !f10 gs c toggle Haste set;") -- Alt F10 swap DW for different Haste level 0 to 25 to 15
 	send_command("bind !f9 gs c toggle TP set;") -- Alt F8 swap TP Sets
@@ -200,7 +203,7 @@ function get_sets()
 		hands = "Nyame Gauntlets",
 		legs = "Nyame Flanchard",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck = "Caro Necklace",
+		neck = "Rep. Plat. Medal",
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
@@ -217,7 +220,7 @@ function get_sets()
 		hands = "Nyame Gauntlets",
 		legs = "Nyame Flanchard",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck = "Caro Necklace",
+		neck = "Rep. Plat. Medal",
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
@@ -510,4 +513,10 @@ function self_command(command)
 		send_command("@input /echo <----- Idle Set changed to " .. sets.Idle.index[Idle_ind] .. " ----->")
 		equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]]))
 	end
+end
+
+--Unload Dressup-
+function file_unload(file_name)
+ 
+  send_command('lua u dressup')
 end

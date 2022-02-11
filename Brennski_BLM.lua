@@ -318,7 +318,7 @@ function get_sets()
         ring1 = "Ephedra Ring",
         ring2 = "Sirona's Ring",
         waist = "Luminary Sash",
-        back = "Solemnity Cape",
+        back = "Aurist's Cape +1",
         legs = "Psycloth Lappas",
         feet = "Vanya Clogs"
     }

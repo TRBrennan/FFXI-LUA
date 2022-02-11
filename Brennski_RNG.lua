@@ -110,7 +110,7 @@ function get_sets()
 		ring1 = "Chirich Ring +1",
 		ring2 = "Epona's Ring",
 		back = "Grounded Mantle",
-		waist = "Kentarch Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = "Samnuha Tights",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
@@ -124,7 +124,7 @@ function get_sets()
 		ring1 = "Chirich Ring +1",
 		ring2 = "Epona's Ring",
 		back = "Grounded Mantle",
-		waist = "Kentarch Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
@@ -138,7 +138,7 @@ function get_sets()
 		ring1 = "Chirich Ring +1",
 		ring2 = "Epona's Ring",
 		back = "Grounded Mantle",
-		waist = "Kentarch Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
@@ -155,7 +155,7 @@ function get_sets()
 		ring1 = "Chirich Ring +1",
 		ring2 = "Epona's Ring",
 		back = "Grounded Mantle",
-		waist = "Kentarch Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = "Samnuha Tights",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
@@ -169,7 +169,7 @@ function get_sets()
 		ring1 = "Chirich Ring +1",
 		ring2 = "Epona's Ring",
 		back = "Grounded Mantle",
-		waist = "Kentarch Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
@@ -183,7 +183,7 @@ function get_sets()
 		ring1 = "Chirich Ring +1",
 		ring2 = "Epona's Ring",
 		back = "Grounded Mantle",
-		waist = "Kentarch Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
@@ -200,7 +200,7 @@ function get_sets()
 		ring1 = "Chirich Ring +1",
 		ring2 = "Cacoethic Ring",
 		back = "Grounded Mantle",
-		waist = "Kentarch Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = "Samnuha Tights",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
@@ -214,7 +214,7 @@ function get_sets()
 		ring1 = "Chirich Ring +1",
 		ring2 = "Cacoethic Ring",
 		back = "Grounded Mantle",
-		waist = "Kentarch Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
@@ -228,7 +228,7 @@ function get_sets()
 		ring1 = "Chirich Ring +1",
 		ring2 = "Cacoethic Ring",
 		back = "Grounded Mantle",
-		waist = "Kentarch Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
@@ -245,7 +245,7 @@ function get_sets()
 		ring1 = "Defending Ring",
 		ring2 = "Chirich Ring +1",
 		back = "Moonbeam Cape",
-		waist = "Kentarch Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = "Samnuha Tights",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
@@ -259,7 +259,7 @@ function get_sets()
 		ring1 = "Defending Ring",
 		ring2 = "Chirich Ring +1",
 		back = "Moonbeam Cape",
-		waist = "Kentarch Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
@@ -273,7 +273,7 @@ function get_sets()
 		ring1 = "Defending Ring",
 		ring2 = "Chirich Ring +1",
 		back = "Moonbeam Cape",
-		waist = "Kentarch Belt +1",
+		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}
@@ -384,7 +384,7 @@ function get_sets()
 		hands = "Meg. Gloves +1",
 		Legs = "Nyame Flancard",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck = "Caro Necklace",
+		neck = "Rep. Plat. Medal",
 		waist = "Chiner's Belt +1",
 		left_ear = "Telos Earring",
 		right_ear = "Jupiter's Pearl",

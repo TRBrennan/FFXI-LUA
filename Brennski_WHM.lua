@@ -50,7 +50,7 @@ function get_sets()
         right_ear = "Hearty Earring",
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",
-        back = "Solemnity Cape"
+        back = "Aurist's Cape +1"
     }
 
     sets.aftercast_Move = sets.aftercast_Idle_refresh
@@ -164,7 +164,7 @@ function get_sets()
         hands = "Gendewitha gages +1",
         ring1 = "Patricius Ring",
         ring2 = "Defending ring",
-        back = "Solemnity cape",
+        back = "Aurist's Cape +1",
         waist = "Fucho-no-obi",
         legs = "Lengo pants",
         feet = "Inspirited boots"

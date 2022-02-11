@@ -52,21 +52,21 @@ function get_sets()
 	}
 
 	sets.Idle.DT = {
-		main = "Daybreak",
-		sub = "Sacro Bulwark",
-		ammo = "Staunch Tathlum +1",
-		neck = "Loricate Torque +1",
-		ear1 = "Etiolation Earring",
-		ear2 = "Infused Earring",
-		ring2 = "Chirich Ring +1",
-		ring1 = "Defending ring",
-		waist = "Carrier's Sash",
-		head="Malignance Chapeau",
-		body="Malignance Tabard",
-		hands="Malignance Gloves",
-		legs="Malignance Tights",
-		feet="Malignance Boots",
-		back = "Moonbeam Cape"
+		main="Daybreak",
+		sub="Sacro Bulwark",
+		ammo="Homiliary",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck={ name="Loricate Torque +1", augments={'Path: A',}},
+		waist="Carrier's Sash",
+		left_ear="Etiolation Earring",
+		right_ear="Infused Earring",
+		left_ring="Defending Ring",
+		right_ring="Chirich Ring +1",
+		back="Moonbeam Cape",
 	}
 
 	--TP Sets--
@@ -102,7 +102,7 @@ function get_sets()
     neck="Duelist's torque +2",
     waist="Orpheus's Sash",
     left_ear="Sherida Earring",
-    right_ear="Hollow Earring",
+    right_ear="Telos Earring",
     left_ring="Hetairoi Ring",
     right_ring="Chirich Ring +1",
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
@@ -134,7 +134,7 @@ function get_sets()
     neck="Duelist's torque +2",
 	waist = "Orpheus's Sash",
     left_ear="Sherida Earring",
-    right_ear="Hollow Earring",
+    right_ear="Telos Earring",
     left_ring="Hetairoi Ring",
     right_ring="Chirich Ring +1",
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
@@ -152,7 +152,7 @@ function get_sets()
     neck="Duelist's torque +2",
     waist="Orpheus's Sash",
     left_ear="Sherida Earring",
-    right_ear="Hollow Earring",
+    right_ear="Telos Earring",
     left_ring="Hetairoi Ring",
     right_ring="Chirich Ring +1",
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
@@ -300,7 +300,7 @@ function get_sets()
 		hands = "Kaykaus Cuffs +1",
 		ring1 = "Stikini ring +1",
 		ring2 = "Metamor. Ring +1",
-		waist = "Luminary Sash",
+		waist = "Obstin. Sash",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 		legs = "Chironic Hose",
 		feet = "Vitiation Boots +3",
@@ -318,7 +318,7 @@ function get_sets()
 		body = "Lethargy sayon +1",
 		ring1 = "Stikini ring +1",
 		ring2 = "Kishar Ring",
-		waist = "Luminary Sash",
+		waist = "Obstin. Sash",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 		legs = "Chironic Hose",
 		feet = "Vitiation Boots +3",
@@ -337,7 +337,23 @@ function get_sets()
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
 		neck={ name="Dls. Torque +2", augments={'Path: A',}},
-		waist="Luminary Sash",
+		waist="Obstin. Sash",
+		left_ear="Regal Earring",
+		right_ear="Snotra Earring",
+		left_ring="Stikini ring +1",
+		right_ring="Metamor. Ring +1",
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+	}
+	
+	sets.Magic.INTEnfeeblAcc ={
+		ammo="Regal Gem",
+		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+		body="Atrophy Tabard +3",
+		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
+	    legs={ name="Chironic Hose", augments={'Mag. Acc.+30','"Cure" spellcasting time -10%','INT+14','"Mag.Atk.Bns."+11',}},
+		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
+		neck={ name="Dls. Torque +2", augments={'Path: A',}},
+		waist="Obstin. Sash",
 		left_ear="Regal Earring",
 		right_ear="Snotra Earring",
 		left_ring="Stikini ring +1",
@@ -355,7 +371,7 @@ function get_sets()
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
 		neck={ name="Dls. Torque +2", augments={'Path: A',}},
-		waist="Luminary Sash",
+		waist="Obstin. Sash",
 		left_ear="Regal Earring",
 		right_ear="Snotra Earring",
 		left_ring="Stikini ring +1",
@@ -373,7 +389,7 @@ function get_sets()
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
 		neck="Incanter's Torque",
-		waist="Luminary Sash",
+		waist="Obstin. Sash",
 		left_ear="Regal Earring",
 		right_ear="Meili Earring",
 		left_ring="Ephedra Ring",
@@ -426,7 +442,7 @@ function get_sets()
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
 		neck="Duelist's torque +2",
-		waist="Luminary Sash",
+		waist="Obstin. Sash",
 		left_ear="Malignance Earring",
 		right_ear="Snotra Earring",
 		left_ring="Stikini ring +1",
@@ -441,7 +457,7 @@ function get_sets()
 		ammo = "Regal Gem",
 		head = "Carmine Mask +1",
 		neck = "Voltsurge Torque",
-		waist = "Luminary Sash",
+		waist = "Obstin. Sash",
 		left_ear = "Etiolation Earring",
 		right_ear = "Loquac. Earring",
 		left_ring = "Rahab Ring",
@@ -458,7 +474,7 @@ function get_sets()
 		ammo = "Regal Gem",
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
 		neck={ name="Dls. Torque +2", augments={'Path: A',}},
-		waist = "Luminary Sash",
+		waist = "Obstin. Sash",
 		left_ear="Regal Earring",
 		right_ear="Snotra Earring",
 		left_ring = "Metamor. Ring +1",
@@ -483,7 +499,7 @@ function get_sets()
 		legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
 		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
 		neck={ name="Dls. Torque +2", augments={'Path: A',}},
-		waist="Luminary Sash",
+		waist="Obstin. Sash",
 		left_ear="Vor Earring",
 		right_ear="Snotra Earring",
 		left_ring="Stikini ring +1",
@@ -564,23 +580,30 @@ function get_sets()
 	sets.Utility = {}
 
 	sets.Utility.Weather = {waist = "Hachirin-no-obi"}
+	-- 56Snapshot 5 Rapid
+	sets.Utility.Preshot ={
+	    head={ name="Taeon Chapeau", augments={'"Snapshot"+4','"Snapshot"+4',}}, --8
+		body={ name="Taeon Tabard", augments={'"Snapshot"+5','"Snapshot"+5',}}, -- 10
+		hands={ name="Taeon Gloves", augments={'"Snapshot"+5','"Snapshot"+5',}}, -- 10
+		legs={ name="Taeon Tights", augments={'"Snapshot"+4','"Snapshot"+5',}}, -- 9
+		feet={ name="Taeon Boots", augments={'"Snapshot"+5','"Snapshot"+4',}}, -- 9
+		back={ name="Sucellos's Cape", augments={'"Snapshot"+10',}}, -- 10
+		waist="Yemaya Belt", -- 5 Rapid
+	}
 	
 	sets.Utility.RangedAttack = {
-	    main="Thribon",
-		sub="Sacro Bulwark",
-		range="Exalted Bow",
-		head="Malignance Chapeau",
+	    head={ name="Blistering Sallet +1", augments={'Path: A',}},
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
-		feet="Malignance Boots",
-		neck="Sanctity Necklace",
+		feet="Thereoid Greaves",
+		neck={ name="Bathy Choker +1", augments={'Path: A',}},
 		waist="Yemaya Belt",
-		left_ear="Crepuscular Earring",
+		left_ear="Crep. Earring",
 		right_ear="Telos Earring",
-		left_ring="Cacoethic Ring",
-		right_ring="Petrov Ring",
-		back="Moonbeam Cape",
+		left_ring="Chirich Ring",
+		right_ring="Chirich Ring +1",
+		back={ name="Sucellos's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 	}
 	
 	sets.Utility.TH = {waist = "Chaac Belt", Hands = "Volte Bracers", legs ="Volte Hose"}
@@ -642,7 +665,7 @@ function get_sets()
 	sets.WS.Savage = {
 		ammo = "Crepuscular Pebble",
 		head = "Nyame Helm",
-		neck = "Caro Necklace",
+		neck = "Rep. Plat. Medal",
 		ear1 = "Ishvara Earring",
 		ear2 = "Moonshade Earring",
 		--body = "Vitiation tabard +3",
@@ -708,6 +731,21 @@ function get_sets()
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 	}
 	
+	sets.WS.EmpyrealArrow ={    
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Yemaya Belt",
+		left_ear="Crep. Earring",
+		right_ear="Telos Earring",
+		left_ring="Ilabrat Ring",
+		right_ring="Chirich Ring +1",
+		back={ name="Sucellos's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
+	}
+	
 end
 
 function precast(spell)
@@ -753,15 +791,19 @@ function precast(spell)
 		equip(sets.WS.Light)
 		-- send_command("@input /echo Light/Magic WS Set")
 	elseif spell.english == "Arching Arrow" then
-		equip(sets.Utility.RangedAttack)
+		equip(sets.WS.EmpyrealArrow)
 	elseif spell.english == "Flaming Arrow" then
 		equip(sets.WS.Hybrid)
+	elseif spell.english == "Empyreal Arrow" then
+		equip(sets.WS.EmpyrealArrow)
 	elseif spell.english == "Composure" then
 		equip(sets.JA.Composure)
 		-- send_command("@input /echo Composure Set")
 	elseif spell.type == 'WeaponSkill' then
 		equip(sets.WS.Savage)
 		send_command ("@input /echo WS Set")
+	elseif spell.english == "Ranged" then
+		equip(sets.Utility.Preshot)
 	end
 end
 
@@ -816,9 +858,12 @@ function midcast(spell, act)
 	
 	if spell.skill == "Enfeebling Magic" then
 		equip(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]])
-			if spell.english == "Silence" or spell.english == "Sleep" or spell.english == "Sleep II" or spell.english == "Sleepga" or spell.english == "Sleepga II" or spell.english == "Break" or spell.english == "Bind" or spell.english == "Dispel" then
+			if spell.english == "Sleep" or spell.english == "Sleep II" or spell.english == "Sleepga" or spell.english == "Sleepga II" or spell.english == "Break" or spell.english == "Bind" or spell.english == "Dispel" then
+				equip(sets.Magic.INTEnfeebleAcc)
+				--send_command ("@input /echo INT Enfeeble Acc set")
+			end
+			if spell.english == "Silence" then
 				equip(sets.Magic.EnfeebleAcc)
-				send_command ("@input /echo Enfeeble Acc set")
 			end
 			if spell.english == "Frazzle III" or spell.english == "Distract III" then
 				equip (sets.Magic.Fraztract)
@@ -826,9 +871,12 @@ function midcast(spell, act)
 			end
 		if buffactive["Saboteur"] then
 			equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]], sets.JA.Sab))
-			if spell.english == "Silence" or spell.english == "Sleep" or spell.english == "Sleep II" or spell.english == "Sleepga" or spell.english == "Sleepga II" or spell.english == "Break" or spell.english == "Bind" or spell.english == "Dispel" then
+			if spell.english == "Sleep" or spell.english == "Sleep II" or spell.english == "Sleepga" or spell.english == "Sleepga II" or spell.english == "Break" or spell.english == "Bind" or spell.english == "Dispel" then
+				equip(sets.Magic.INTEnfeebleAcc)
+				--send_command ("@input /echo INT Enfeeble Acc set")
+			end
+			if spell.english == "Silence" then
 				equip(sets.Magic.EnfeebleAcc)
-				send_command ("@input /echo Enfeeble Acc set")
 			end
 			if spell.english == "Frazzle III" or spell.english == "Distract III" then
 				equip (sets.Magic.Fraztract)
