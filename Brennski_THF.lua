@@ -230,7 +230,7 @@ function get_sets()
                 hands = "Nyame Gauntlets",
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
-                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+                back="Sacro Mantle",
                 waist = "Sailfi Belt +1",
 				legs="Nyame Flanchard",
 				feet="Nyame Sollerets",
@@ -278,14 +278,14 @@ function get_sets()
                 hands = "Nyame Gauntlets",
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
-                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+               back="Sacro Mantle",
                 waist = "Sailfi Belt +1",
 				legs="Nyame Flanchard",
 				feet="Nyame Sollerets",
         }
 
         sets.AeolianEdge = {
-            ammo="Pemphredo Tathlum",
+            ammo="Seething bomblet +1",
 			head="Nyame Helm",
 			body="Nyame Mail",
 			hands="Nyame Gauntlets",
@@ -297,11 +297,11 @@ function get_sets()
 			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 			left_ring="Acumen Ring",
 			right_ring="Dingir Ring",
-			back="Izdubar Mantle",
+			back="Sacro Mantle",
         }
 		
 		sets.Cyclone = {
-            ammo="Pemphredo Tathlum",
+            ammo="Seething bomblet +1",
 			head="Nyame Helm",
 			body="Nyame Mail",
 			hands = "Plunderer's Armlets +1",
@@ -313,7 +313,7 @@ function get_sets()
 			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 			left_ring="Acumen Ring",
 			right_ring="Dingir Ring",
-			back="Izdubar Mantle",
+			back="Sacro Mantle",
         }
 
 
@@ -434,7 +434,7 @@ function get_sets()
 			right_ear="Digni. Earring",
 			left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 			right_ring="Stikini Ring +1",
-			back="Izdubar Mantle",
+			back="Sacro Mantle",
 			}
 
         sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
@@ -474,7 +474,7 @@ function precast(spell)
                 equip(sets.Exenterator)
         elseif spell.english == "Evisceration" then
                 equip(sets.Evisceration)
-        elseif spell.english == "Shark Bite" then
+        elseif spell.english == "Shark Bite" or spell.english == "Savage Blade" then
                 equip(sets.SharkBite)
         elseif spell.english == "Rudra's Storm" then
                 equip(sets.Rudras)
@@ -494,6 +494,8 @@ function precast(spell)
                 if spell.element == world.day_element or spell.element == world.weather_element then
                         equip(sets.Utility.Weather)
                 end
+		elseif spell.type == 'WeaponSkill' then
+			equip(sets.SharkBite)
         end
 end
 

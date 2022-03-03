@@ -114,8 +114,8 @@ function get_sets()
 					feet="Malignance Boots",
 					neck="Lissome Necklace",
 					waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-					left_ear="Telos Earring",
-					right_ear="Digni. Earring",
+					right_ear="Telos Earring",
+					left_ear="Digni. Earring",
 					left_ring="Chirich Ring +1",
 					right_ring="Epona's Ring",
 					back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -133,11 +133,11 @@ function get_sets()
         sets.SavageBlade.Attack = {ammo ="Chrono bullet",
                                           head = "Nyame Helm",
 										  neck="Rep. Plat. Medal",ear1="Ishvara Earring",ear2="Moonshade Earring",
-                                          body="Laksa. Frac +3",
+                                          body="Nyame Mail",
 										  hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Ilabrat Ring",
                                           back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 										  waist="Sailfi Belt +1",Legs = "Nyame Flanchard",
-										  feet="Lanun Bottes +3" }
+										  feet="Nyame Sollerets" }
                                                            
                                                                                                                        
         sets.SanguineBlade = {}
@@ -258,7 +258,7 @@ function get_sets()
 							neck="Commodore Charm +1",   ear2="Friomisi earring", ear1="Crep. Earring",
 							body="Lanun Frac +3",    hands="Nyame Gauntlets", ring1="Acumen Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
 							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
-							Leg = "Nyame Flanchard", 
+							Legs = "Nyame Flanchard", 
 							feet="Lanun Bottes +3"}
        
         sets.JA.PhantomRoll = {head="Lanun Tricorne",neck="Regal Necklace", ear1="Etiolation earring", ear2="Eabani Earring",
@@ -270,7 +270,7 @@ function get_sets()
 							neck="Commodore Charm +1",   ear2="Crep. earring", ear1="Dignitary's Earring",
 							body="Lanun Frac +3",  hands="Leyline Gloves", ring1="Sangoma Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
 							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
-							Leg = "Nyame Flanchard", 
+							Legs = "Nyame Flanchard", 
 							feet="Lanun Bottes +3"}
 							
 		sets.JA.SnakeEye = {legs ="Lanun trews"}

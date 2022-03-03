@@ -13,7 +13,7 @@ function get_sets()
 	
 	--Gear--
     DA_Back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
-	WSD_back = WSD_back
+	WSD_back ="Sacro Mantle"
 	
 	--Utility--
 	sets.Utility ={}

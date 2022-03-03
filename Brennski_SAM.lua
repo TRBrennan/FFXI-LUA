@@ -19,9 +19,11 @@ function get_sets()
 	--TP_Body = { name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
 	--TP_Body = "Ken. Samue"
 	TP_Body ={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
-	WSD_Legs = "Wakido Haidate +3"
+	--WSD_Legs = "Wakido Haidate +3"
+	WSD_Legs = "Nyame Flanchard"
 	WSD_Hands = "Nyame Gauntlets"
-	WSD_Body = "Sakonji Domaru +3"
+	--WSD_Body = "Sakonji Domaru +3"
+	WSD_Body = "Nyame Mail"
 	WSD_Head = "Nyame Helm"
 	TP_Bonus_Head = "Mpaca's Cap"
 	WSD_feet={ name="Nyame Sollerets", augments={'Path: B',}}
@@ -341,7 +343,7 @@ function precast(spell)
 			cancel_spell()
 			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
 		end
-	elseif spell.english == "Tachi: Jinpu" then
+	elseif spell.english == "Tachi: Jinpu" or spell.english == "Tachi: Kagero" then
 		if spell.target.distance <= 5.6 then
 			equip(sets.HybridWS.Attack)
 		else

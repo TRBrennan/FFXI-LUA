@@ -414,7 +414,7 @@ function get_sets()
 	sets.WS.Savage = {
 		ammo = "Floestone",
 		head = "Jhakri Coronal +1",
-		neck = "Caro Necklace",
+		neck = "Rep. Plat. Medal",
 		ear1 = "Ishvara Earring",
 		ear2 = "Moonshade Earring",
 		body = "Jhakri Robe +2",

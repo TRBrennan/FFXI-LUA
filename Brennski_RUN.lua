@@ -335,7 +335,7 @@ function get_sets()
 	sets.Utility.Regen = {
 		ammo = "Staunch Tathlum +1",
 		head = "Rune. Bandeau +2",
-		neck = "Incanter's Torque",
+		neck = "Sacro Gorget",
 		right_ear = "Eabani earring",
 		left_ear = "Augment. earring",
 		body = {name = "Futhark Coat +1", augments = {'Enhances "Elemental Sforzo" effect'}},

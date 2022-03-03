@@ -233,7 +233,7 @@ function get_sets()
                         name = "Herculean Helm",
                         augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}
                 },
-                neck = "Caro Necklace",
+                neck = "Rep. Plat. Medal",
                 ear1 = "Ishvara Earring",
                 ear2 = "Moonshade Earring",
                 body = "Herculean Vest",
@@ -320,7 +320,7 @@ function get_sets()
                         name = "Herculean Helm",
                         augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}
                 },
-                neck = "Caro Necklace",
+                neck = "Rep. Plat. Medal",
                 ear1 = "Moonshade Earring",
                 ear2 = "Ishvara Earring",
                 body = "Adhemar Jacket",
@@ -420,7 +420,7 @@ function get_sets()
                         name = "Herculean Helm",
                         augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
                 },
-                neck = "Caro Necklace",
+                neck = "Rep. Plat. Medal",
                 ear1 = "Corybant Pearl",
                 ear2 = "Kemas Earring",
                 body = "Herculean Vest",
@@ -439,7 +439,7 @@ function get_sets()
                         name = "Herculean Helm",
                         augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
                 },
-                neck = "Caro Necklace",
+                neck = "Rep. Plat. Medal",
                 ear1 = "Corybant Pearl",
                 ear2 = "Kemas Earring",
                 body = "Herculean Vest",

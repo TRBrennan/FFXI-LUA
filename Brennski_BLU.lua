@@ -124,8 +124,8 @@ function get_sets()
     -- TP Sets--
     sets.TP = {}
 
-    sets.TP.index = {'Standard', 'AccuracyMid','AccuracyFull', 'DT','DTAccuracy','DTSB','EvaTank'}
-    -- 1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy,6=DTSubtleBlow, 7=Evatank--
+    sets.TP.index = {'Standard', 'DT','DTAccuracy','DTSB','EvaTank'}
+    -- 1=Standard, 2 =DT, 3=DTAccuracy,4=DTSubtleBlow, 5=Evatank--
 
     TP_ind = 1
     sets.TP.Standard = {
@@ -144,37 +144,6 @@ function get_sets()
 		feet = {name = "Herculean Boots",augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}}
     }
 
-    sets.TP.AccuracyMid = {
-        ammo = "Coiste Bodhar",
-        head = "Carmine Mask +1",
-        neck = "Mirage Stole +1",
-        ear1 = "Telos Earring",
-        ear2 = "Cessance Earring",
-        body = "Adhemar Jacket +1",
-		hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
-        ring1 = "Ilabrat Ring",
-        ring2 = "Epona's ring",
-		back = { name = "Rosmerta's Cape",augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10', 'Phys. dmg. taken-10%', }},
-        waist = "Reiki Yotai",
-        legs = "Samnuha Tights",
-        feet = {name = "Herculean Boots",augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}}
-    }
-
-    sets.TP.AccuracyFull = {
-        ammo = "Coiste Bodhar",
-        head = "Carmine Mask +1",
-        ear1 = "Dignitary's Earring",
-        ear2 = "Telos Earring",
-        body = "Adhemar Jacket +1",
-        neck = "Mirage Stole +1",
-        hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
-        ring1 = "Cacoethic Ring",
-        ring2 = "Ilabrat Ring",
-		back = { name = "Rosmerta's Cape",augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10', 'Phys. dmg. taken-10%', }},
-        waist = "Sailfi Belt +1",
-        legs = "Carmine Cuisses +1",
-        feet = "Carmine Greaves +1"
-    }
 
     sets.TP.DT = {
         ammo="Staunch Tathlum +1",
@@ -197,13 +166,13 @@ function get_sets()
         ammo="Coiste Bodhar",
 		head="Malignance Chapeau",
 		body="Malignance Tabard",
-		hands="Malignance Gloves",
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
 		legs="Malignance Tights",
 		feet="Malignance Boots",
 		neck={ name="Mirage Stole +1", augments={'Path: A',}},
 		waist="Reiki Yotai",
 		left_ear="Telos Earring",
-		right_ear="Brutal Earring",
+		right_ear="Suppanomimi",
 		left_ring="Ilabrat Ring",
 		right_ring="Epona's Ring",
 		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
@@ -255,7 +224,7 @@ function get_sets()
         neck = "Fotia gorget",
         ear1 = "Telos Earring",
         ear2 = "Moonshade Earring",
-        body = "Adhemar Jacket +1",
+        body = "Gleti's Cuirass",
         hands = "Adhemar Wristbands +1",
         ring1 = "Ilabrat Ring",
         ring2 = "Epona's ring",
@@ -282,7 +251,7 @@ function get_sets()
         ring2 = "Petrov Ring",
         back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         waist = "Sailfi Belt +1",
-        legs="Luhlaza Shalwar +3",
+        legs="Nyame Flanchard",
         feet={ name="Nyame Sollerets", augments={'Path: B',}},
     }
 
@@ -297,7 +266,7 @@ function get_sets()
         neck = "Mirage Stole +1",
         ear2 = "Moonshade Earring",
         ear1 = "Telos Earring",
-        body = "Adhemar Jacket +1",
+        body = "Gleti's Cuirass",
         hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         ring1 = "Hetairoi Ring",
         ring2 = "Epona's Ring",
@@ -317,7 +286,7 @@ function get_sets()
         hands = "Nyame Gauntlets",
         ring1 = "Shiva Ring",
         ring2 = 'Archon Ring',
-        waist = "Sacro Cord",
+        waist="Orpheus's Sash",
         back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         legs="Luhlaza Shalwar +3",
         feet = "Amarlic Nails +1"
@@ -325,18 +294,18 @@ function get_sets()
 
     sets.CircleBlade = {
         ammo = "Crepuscular Pebble",
-        head = "Adhemar Bonnet +1",
-        neck = "Fotia gorget",
-        ear2 = "Moonshade Earring",
-        ear1 = "Telos Earring",
-        body = "Adhemar Jacket +1",
-        hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
+		Head = "Nyame Helm",
+        neck = "Mirage Stole +1",
+        ear1 = "Moonshade Earring",
+        ear2 = "Ishvara Earring",
+        body = "Nyame Mail",
+		hands = "Nyame Gauntlets",
         ring1 = "Ilabrat Ring",
-        ring2 = "Epona's Ring",
-        back = { name = "Rosmerta's Cape",   augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
-        waist = "Fotia belt",
-        legs="Luhlaza Shalwar +3",
-        feet = {name = "Herculean Boots",augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}} 
+        ring2 = "Petrov Ring",
+        back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
+        waist = "Sailfi Belt +1",
+        legs="Nyame Flanchard",
+        feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
     sets.Expiacion = {
@@ -351,7 +320,7 @@ function get_sets()
         ring2 = "Petrov Ring",
         back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         waist = "Sailfi Belt +1",
-        legs="Luhlaza Shalwar +3",
+        legs="Nyame Flanchard",
         feet={ name="Nyame Sollerets", augments={'Path: B',}},
     }
 
@@ -372,7 +341,7 @@ function get_sets()
         ring2 = "Epona's ring",
 		back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         waist = "Fotia belt",
-		legs="Luhlaza Shalwar +3",
+		legs="Nyame Flanchard",
         feet={ name="Nyame Sollerets", augments={'Path: B',}},
     }
 
@@ -388,7 +357,7 @@ function get_sets()
         ring2 = 'Shiva Ring',
         waist = "Sacro Cord",
         back = "Cornflower cape",
-        legs="Luhlaza Shalwar +3",
+        legs="Nyame Flanchard",
         feet={ name="Nyame Sollerets", augments={'Path: B',}},
     }
 
@@ -398,11 +367,11 @@ function get_sets()
 
     sets.BlueMagic.Physical = {
         ammo = "Coiste Bodhar",
-        head = "Jhakri Coronal +2",
+        head = "Nyame Helm",
         body = {name = "Adhemar Jacket +1",augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         hands = "Nyame Gauntlets",
         legs = {name = "Samnuha Tights",augments = {'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
-       feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
         neck = "Mirage Stole +1",
         waist = "Sailfi Belt +1",
         left_ear = "Digni. Earring",
@@ -414,17 +383,18 @@ function get_sets()
 
     sets.BlueMagic.BlueMagic = {
         ammo = "Pemphredo Tathlum",
-        head = "Jhakri Coronal +2",
-        body = {name = "Amalric Doublet",augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}},
+        -- head = "Jhakri Coronal +2",
+        -- body = {name = "Amalric Doublet",augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}},
+		body={ name="Cohort Cloak +1", augments={'Path: A',}},
         hands = "Amalric Gages +1",
         legs="Luhlaza Shalwar +3",
         feet = "Amalric Nails +1",
         neck = "Mirage Stole +1",
-        waist = "Sacro Cord",
+        waist="Orpheus's Sash",
         left_ear = "Regal Earring",
         right_ear = "Friomisi Earring",
-        ring1 = "Stikini ring +1",
-        ring2 = "Acumen Ring",
+        left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+        right_ring = "Acumen Ring",
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
     }
 
@@ -444,15 +414,16 @@ function get_sets()
 
     sets.BlueMagic.Debuff = {
 	    ammo="Pemphredo Tathlum",
-		head="Malignance Chapeau",
+		--head="Malignance Chapeau",
+		head="Assim. Keffiyeh +3",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
-		legs="Malignance Tights",
+		legs="Assim. Shalwar +3",
 		feet="Malignance Boots",
 		neck={ name="Mirage Stole +1", augments={'Path: A',}},
 		waist="Sacro Cord",
 		left_ear="Digni. Earring",
-		right_ear="Crep. Earring",
+		right_ear="Regal Earring",
 		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		right_ring="Stikini Ring +1",
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
@@ -460,13 +431,16 @@ function get_sets()
 
     sets.BlueMagic.BuffSkill = {
         ammo = "Mavi Tathlum",
-        head = "Luhlaza Keffiyeh",
+        head = "Luhlaza Keffiyeh +1",
         body = "Assimilator's Jubbah +3",
 		hands = "Rawhide Gloves",
         neck = "Mirage Stole +1",
         legs = "Hashishin tayt +1",
         back = "Cornflower Cape",
-        ring1 = "Stikini ring +1",
+		ear1 = "Eabani Earring",
+        ear2 = "Infused Earring",
+        ring2 = "Stikini ring +1",
+		ring1 = "Defending Ring",
 		feet = "Luhlaza Charuqs +1"
     }
 
@@ -492,7 +466,7 @@ function get_sets()
         legs = {name = "Telchine Braconi",augments = {'"Fast Cast"+2', 'Enh. Mag. eff. dur. +8',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
         neck = "Incanter's Torque",
-        waist = "Luminary Sash",
+        waist="Sacro Cord",
         left_ear = "Regal Earring",
         right_ear = "Mendi. Earring",
         ring1 = "Stikini ring +1",
@@ -502,17 +476,17 @@ function get_sets()
 	
 	sets.BlueMagic.Macc = {
 	    ammo="Pemphredo Tathlum",
-		head="Malignance Chapeau",
+		head="Assim. Keffiyeh +3",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
-		legs="Malignance Tights",
+		legs="Assim. Shalwar +3",
 		feet="Malignance Boots",
 		neck={ name="Mirage Stole +1", augments={'Path: A',}},
 		waist="Sacro Cord",
 		left_ear="Regal Earring",
 		right_ear="Digni. Earring",
-		left_ring="Stikini ring +1",
-		right_ring="Rahab Ring",
+		right_ring="Stikini ring +1",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 
@@ -538,14 +512,14 @@ function get_sets()
         neck = "Mirage Stole +1",
         ear2 = "Friomisi earring",
         ear1 = "Regal Earring",
-        body = {name = "Amalric Doublet",augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}},
+        body = "Jhakri Robe +2",
         hands = "Amalric Gages +1",
-        ring1 = "Shiva Ring",
-        ring2 = 'Shiva Ring',
-        waist = "Sacro Cord",
+        left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+        right_ring = "Acumen Ring",
+        waist="Orpheus's Sash",
         back = "Cornflower cape",
         legs="Luhlaza Shalwar +3",
-        feet={ name="Nyame Sollerets", augments={'Path: B',}},
+       feet = "Amalric Nails +1",
     }
 
 

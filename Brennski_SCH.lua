@@ -102,7 +102,7 @@ function get_sets()
 		waist = "Sacro Cord",
 		back = "Bane Cape",
 		legs = "Amalric Slops",
-		feet = "Amalric Nails"
+		feet = "Amalric Nails +1"
 	}
 
 	--Nuke Sets---

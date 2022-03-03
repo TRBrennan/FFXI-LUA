@@ -280,8 +280,8 @@ function get_sets()
 	sets.Magic.SIRD ={
 		ammo="Staunch Tathlum +1",
 		head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-		body="Rev. Surcoat +3",
-		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		body="Souveran Cuirass +1",
+		hands = "Souveran Handschuhs +1",
 		legs={ name="Founder's Hose", augments={'MND+10','Mag. Acc.+15','Attack+15','Breath dmg. taken -5%',}},
 		feet={ name="Odyssean Greaves", augments={'Enmity+7','VIT+9','Accuracy+14','Attack+12',}},
 		neck="Moonlight Necklace",
@@ -290,6 +290,22 @@ function get_sets()
 		right_ear="Friomisi Earring",
 		left_ring="Defending Ring",
 		right_ring="Supershear Ring",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
+	}
+	
+	sets.Magic.SIRDCure ={
+		ammo="Staunch Tathlum +1",
+		head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+		body="Souveran Cuirass +1",
+		hands = "Macabre Gauntlets +1",
+		legs={ name="Founder's Hose", augments={'MND+10','Mag. Acc.+15','Attack+15','Breath dmg. taken -5%',}},
+		feet={ name="Odyssean Greaves", augments={'Enmity+7','VIT+9','Accuracy+14','Attack+12',}},
+		neck="Sacro Gorget",
+		waist="Audumbla Sash",
+		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+		right_ear="Nourish. Earring +1",
+		right_ring="Defending Ring",
+		left_ring="Moonlight Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 
@@ -331,7 +347,7 @@ function get_sets()
 		neck = "Unmoving Collar +1",
 		hands = "Souveran Handschuhs +1",
 		feet = "Souveran Schuhs +1",
-		body = "Reverence Surcoat +3",
+		body = "Souveran Cuirass +1",
 		ring1 = "Petrov Ring",
 		legs = "Souveran Diechlings +1",
 		head = "Loess Barbuta +1"
@@ -358,7 +374,7 @@ function get_sets()
 
 	sets.JA.Cover = {}
 
-	sets.JA.Rampart = { head = "Caballarius Coronet"}
+	sets.JA.Rampart = { head = "Caballarius Coronet +1"}
 
 	--Precast Sets--
 	sets.precast = {}
@@ -463,7 +479,7 @@ function midcast(spell, act)
 	end
 
 	if spell.skill == "Healing Magic" then
-		equip(set_combine(sets.Utility.Enmity, sets.Magic.Healing))
+		equip(sets.Magic.SIRDCure)
 	end
 
 	if spell.english == "Reprisal" then

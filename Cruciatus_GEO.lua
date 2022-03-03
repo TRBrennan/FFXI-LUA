@@ -980,6 +980,8 @@ function midcast(spell, arg)
     if spell.english:startswith("Indi") or spell.english:startswith("Geo") then
         equip(sets.midcast.Geomancy)
     end
+	
+	
 
     if spell.skill == "Healing Magic" or spell.type == "Trust" then
         equip(sets.midcast.FastRecast)

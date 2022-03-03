@@ -112,7 +112,7 @@ function get_sets()
        
         sets.Rudras = {ammo="Yetshila",
                                 head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
-								neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
+								neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Ishvara Earring",
                                 body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
 								hands="Meg. Gloves +2",ring1="Ilabrat Ring",ring2="Regal Ring",
                                 back="Canny Cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
@@ -140,7 +140,7 @@ function get_sets()
        
         sets.SharkBite = {ammo="Jukukik Feather",
                                           head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
-										  neck="Caro Necklace",ear1="Ishvara Earring",ear2="Moonshade Earring",
+										  neck="Rep. Plat. Medal",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Herculean Vest",hands="Meg. Gloves +2",ring1="Ilabrat Ring",ring2="Regal Ring",
                                           back="Canny Cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
 										  feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}}, }		

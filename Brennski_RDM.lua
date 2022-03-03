@@ -320,7 +320,7 @@ function get_sets()
 		ring2 = "Kishar Ring",
 		waist = "Obstin. Sash",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
-		legs = "Chironic Hose",
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet = "Vitiation Boots +3",
 	}
 
@@ -490,7 +490,8 @@ function get_sets()
 	sets.Magic.Refresh = {legs = "Lethargy Fuseau", waist = "Gishdubar Sash", body = "Atrophy Tabard +3"}
 	
 	sets.Magic.Fraztract ={
-	    main={ name="Grioavolr", augments={'Enfb.mag. skill +15','MP+77','Mag. Acc.+24','"Mag.Atk.Bns."+21','Magic Damage +7',}},
+	    --main={ name="Grioavolr", augments={'Enfb.mag. skill +15','MP+77','Mag. Acc.+24','"Mag.Atk.Bns."+21','Magic Damage +7',}},
+		main = "Contemplator +1",
 		sub="Mephitis Grip",
 		ammo="Regal Gem",
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
@@ -609,7 +610,7 @@ function get_sets()
 	sets.Utility.TH = {waist = "Chaac Belt", Hands = "Volte Bracers", legs ="Volte Hose"}
 
 	sets.Utility.DrainAspir = {
-		main = "Grioavolr",
+		main = "Contemplator +1",
 		ammo = "Pemphredo Tathlum",
 		sub = "Enki Strap",
 		head = "Pixie Hairpin +1",
@@ -653,7 +654,7 @@ function get_sets()
 		right_ear = "Moonshade Earring",
 		left_ear = "Sherida Earring",
 		body = "Ayanmo Corazza +2",
-		hands = "Malignance Gloves",
+		hands = "Nyame Gauntlets",
 		left_ring ="Hetairoi Ring",
 		right_ring = "Ilabrat Ring",
 		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
@@ -692,8 +693,8 @@ function get_sets()
 		ring2 = "Freke Ring",
 		waist = "Orpheus's Sash",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
-		legs = { name = "Merlinic Shalwar",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "Mag. crit. hit dmg. +1%", "Mag. Acc.+11", '"Mag.Atk.Bns."+13'}},
-		feet = "Vitiation Boots +3",
+		legs="Nyame Flanchard",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		--feet={ name="Chironic Slippers", augments={'Attack+13','"Mag.Atk.Bns."+5','Weapon skill damage +7%','Accuracy+18 Attack+18','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
 	}
 
@@ -711,8 +712,8 @@ function get_sets()
 		ring2 = "Freke Ring",
 		waist = "Orpheus's Sash",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
-		legs = { name = "Merlinic Shalwar",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "Mag. crit. hit dmg. +1%", "Mag. Acc.+11", '"Mag.Atk.Bns."+13'}},
-		feet = "Vitiation Boots +3",
+		legs="Nyame Flanchard",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		--feet={ name="Chironic Slippers", augments={'Attack+13','"Mag.Atk.Bns."+5','Weapon skill damage +7%','Accuracy+18 Attack+18','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
 	}
 	
