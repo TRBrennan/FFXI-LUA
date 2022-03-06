@@ -168,8 +168,8 @@ function get_sets()
 		waist="Carrier's Sash",
 		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
 		right_ear="Sherida Earring",
-		left_ring="Moonlight Ring",
-		right_ring="Moonbeam Ring",
+		right_ring="Moonlight Ring",
+		left_ring="Moonbeam Ring",
 		back={ name="Ogma's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 	}
 	-- sets.TP.HBP = {

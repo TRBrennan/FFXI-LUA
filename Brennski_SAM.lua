@@ -28,7 +28,8 @@ function get_sets()
 	TP_Bonus_Head = "Mpaca's Cap"
 	WSD_feet={ name="Nyame Sollerets", augments={'Path: B',}}
 	TP_Cape ={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
-	WSD_Cape = { name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+	WSD_Cape ={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
+
 
 	--Idle Sets--
 	sets.Idle = {}
@@ -175,7 +176,7 @@ function get_sets()
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Regal Ring",
 		left_ring = "Niqmaddu Ring",
-		back = "Smertrios's Mantle"
+		back = TP_Cape
 	}
 
 	sets.HybridWS = {}
@@ -193,7 +194,7 @@ function get_sets()
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Regal Ring",
 		left_ring = "Niqmaddu Ring",
-		back =  WSD_Cape
+		back={ name="Smertrios's Mantle", augments={'STR+20','Mag. Acc+20 /Mag. Dmg.+20','STR+10','Weapon skill damage +10%',}},
 	}
 	
 	sets.WS.Ageha ={
@@ -209,7 +210,7 @@ function get_sets()
 		right_ear="Crep. Earring",
 		left_ring="Stikini Ring +1",
 		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-		back= TP_Back
+		back={ name="Smertrios's Mantle", augments={'STR+20','Mag. Acc+20 /Mag. Dmg.+20','STR+10','Weapon skill damage +10%',}},
 	}
 
 	--Ninja Magic Sets--
@@ -273,7 +274,7 @@ function get_sets()
 
 	sets.JA = {}
 
-	sets.JA.Meditate = {back = "Smertrios's Mantle"}
+	sets.JA.Meditate = {back = TP_Cape, hands ="Sakonji Kote", Head ="Wakido Kabuto +1"}
 
 	sets.JA.Hasso = {}
 
@@ -291,9 +292,9 @@ function get_sets()
 	sets.JA.Jumps ={
 		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head="Flam. Zucchetto +2",
-		body={ name="Sakonji Domaru +3", augments={'Enhances "Overwhelm" effect',}},
+		body="Mpaca's Doublet",
 		hands="Wakido Kote +3",
-		legs="Wakido Haidate +3",
+		legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
 		feet="Flam. Gambieras +2",
 		neck = "Samurai's nodowa +2",
 		waist="Sailfi Belt +1",
@@ -303,6 +304,8 @@ function get_sets()
 		right_ring="Chirich Ring +1",
 		back = TP_Back
 	}
+	
+	sets.JA.WardingCircle = { Head ="Wakido Kabuto +1"}
 	
 	
 
@@ -373,6 +376,8 @@ function precast(spell)
 		equip(sets.Utility.Steps)
 	elseif spell.english == "Jump" or spell.english == "High Jump" or spell.english == "Super Jump" then
 		equip(sets.JA.Jumps)
+	elseif spell.english == "Warding Circle" then
+		equip(sets.JA.WardingCircle)
 	elseif spell.type == "Weapon Skill" then
 		equip(sets.OneHit.Attack)
 	end

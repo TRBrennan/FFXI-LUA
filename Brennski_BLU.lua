@@ -22,8 +22,10 @@ Enmity_Blue_Spells = S{'Fantod','Wind Breath','Exuviation','Geist Wall','Actinic
 
 Breath_Blue_Spells = S{'Poison Breath','Magnetite Cloud','Self Destruct','Hecatomb Wave','Radiant Breath','Flying Hip Press','Bad Breath','Frost Breath','Heat Breath','Final Sting','Thunder Breath','Wind Breath'}
 
-function get_sets()
 
+function get_sets()
+	
+    send_command('bind !` gs c toggle OdyEva')
     send_command('bind f9 gs c toggle TP set')
     send_command('bind f10 gs c toggle Idle set')
 	send_command("bind f11 gs c equip TP set")
@@ -118,7 +120,7 @@ function get_sets()
 		right_ear="Infused Earring",
 		left_ring="Defending Ring",
 		right_ring="Ilabrat Ring",
-		back="Moonbeam Cape",
+		back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},
 	}
 
     -- TP Sets--
@@ -207,7 +209,7 @@ function get_sets()
 			right_ear="Infused Earring",
 			left_ring="Chirich Ring +1",
 			right_ring="Ilabrat Ring",
-			back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+			back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},
 	}
 	
     -- Weaponskill Sets--
@@ -395,7 +397,7 @@ function get_sets()
         right_ear = "Friomisi Earring",
         left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
         right_ring = "Acumen Ring",
-		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+		back={ name="Rosmerta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
     }
 
     sets.BlueMagic.PhysStun = {
@@ -503,7 +505,7 @@ function get_sets()
 		right_ear="Friomisi Earring",
 		left_ring="Petrov Ring",
 		right_ring="Supershear Ring",
-		back="Reiki Cloak",
+		back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},
     }
 
     sets.BlueMagic.Dark = {
@@ -521,6 +523,22 @@ function get_sets()
         legs="Luhlaza Shalwar +3",
        feet = "Amalric Nails +1",
     }
+	
+	sets.BlueMagic.OdyDF ={
+	    ammo="Staunch Tathlum +1",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck={ name="Mirage Stole +1", augments={'Path: A',}},
+		waist="Sacro Cord",
+		left_ear="Crep. Earring",
+		right_ear="Digni. Earring",
+		left_ring="Defending Ring",
+		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+	}
 
 
     -- Utility Sets--
@@ -612,6 +630,7 @@ function get_sets()
 	}
 end
 
+
 function precast(spell)
     if spell.action_type == 'Magic' then
         equip(sets.precast.FC.Standard)
@@ -678,7 +697,11 @@ function midcast(spell, act)
     if Debuff_Blue_Spells:contains(spell.english) then
         equip(sets.BlueMagic.Debuff)
 		if spell.english == 'Dream Flower' then
-			equip(set_combine(sets.BlueMagic.Debuff, sets.Utility.TH))
+			if Idle_ind == 4 then
+				equip(sets.BlueMagic.OdyDF)
+			else
+				equip(set_combine(sets.BlueMagic.Debuff, sets.Utility.TH))
+			end
 		end
 	end
     if Cure_Blue_Spells:contains(spell.english) then
