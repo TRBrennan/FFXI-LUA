@@ -116,54 +116,57 @@ function get_sets()
     sets.midcast = {}
 
     sets.midcast.Geomancy = {
-    main="Idris",
-    sub="Ammurapi Shield",
-    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-    head="Azimuth Hood +1",
-    body="Azimuth Coat",
-    hands="Azimuth Gloves",
-    legs="Azimuth Tights",
-    feet="Azimuth Gaiters +1",
-    neck="Incanter's Torque",
-    waist="Austerity Belt",
-    left_ear="Calamitous Earring",
-    right_ear="Mendi. Earring",
-    left_ring="Defending Ring",
-    right_ring="Stikini Ring",
-    back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +18','Pet: Damage taken -4%',}},
+		main="Idris",
+		sub="Ammurapi Shield",
+		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+		head="Azimuth Hood +1",
+		body="Azimuth Coat",
+		hands="Azimuth Gloves",
+		legs="Azimuth Tights",
+		feet="Azimuth Gaiters +1",
+		neck="Incanter's Torque",
+		waist="Austerity Belt",
+		left_ear="Calamitous Earring",
+		right_ear="Mendi. Earring",
+		left_ring="Defending Ring",
+		right_ring="Stikini Ring",
+		back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +18','Pet: Damage taken -4%',}},
     }
 
     sets.midcast.Geomancy.Indi = {
-    main="Idris",
-    sub="Ammurapi Shield",
-    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
-    body={ name="Bagua Tunic", augments={'Enhances "Bolster" effect',}},
-    hands="Geo. Mitaines +2",
-    legs={ name="Bagua Pants +1", augments={'Enhances "Mending Halation" effect',}},
-    feet="Azimuth Gaiters +1",
-    neck="Incanter's Torque",
-    waist="Austerity Belt",
-    left_ear="Calamitous Earring",
-    right_ear="Mendi. Earring",
-    left_ring="Defending Ring",
-    right_ring="Stikini Ring",
-    back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +18','Pet: Damage taken -4%',}},
+		main="Idris",
+		sub="Ammurapi Shield",
+		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+		head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
+		body={ name="Bagua Tunic", augments={'Enhances "Bolster" effect',}},
+		hands="Geo. Mitaines +2",
+		legs={ name="Bagua Pants +1", augments={'Enhances "Mending Halation" effect',}},
+		feet="Azimuth Gaiters +1",
+		neck="Incanter's Torque",
+		waist="Austerity Belt",
+		left_ear="Calamitous Earring",
+		right_ear="Mendi. Earring",
+		left_ring="Defending Ring",
+		right_ring="Stikini Ring",
+		back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +18','Pet: Damage taken -4%',}},
     }
 
     sets.midcast.Cure = {
-        main = "Vadose Rod",
-        sub = "Sors Shield",
-        right_ear = "Novia Earring",
-        left_ear = "Mendicant's Earring",
-        head = "Vanya hood",
-        body = "Vanya Robe",
-        hands = "Telchine Gloves",
-        ring1 = "Lebeche Ring",
-        ring2 = "Sirona's Ring",
-        legs = "Assiduity Pants +1",
-        feet = "Vanya Clogs",
-        back = "Solemnity Cape"
+		main="Daybreak",
+		sub="Sors Shield",
+		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+		head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		body="Vanya Robe",
+		hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}},
+		legs="Vanya Slops",
+		feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		neck="Incanter's Torque",
+		waist="Sacro Cord",
+		left_ear="Mendi. Earring",
+		right_ear="Regal Earring",
+		left_ring="Sirona's Ring",
+		right_ring="Lebeche Ring",
+		back="Fi Follet Cape +1",
     }
 
     sets.midcast.Curaga = sets.midcast.Cure
@@ -194,39 +197,39 @@ function get_sets()
         set_combine(sets.midcast["Enhancing Magic"], {waist = "Siegel Sash", neck = "Stone gorget"})
 
     sets.midcast["Enfeebling Magic"] = {
-        main = "Daybreak",
-        sub = "Ammurapi Shield",
-        range = "Dunna",
-        head = "Befouled Crown",
-        neck = "Bagua Charm +1",
-        left_ear = "Malignance Earring",
-        right_ear = "Barkarole Earring",
-        body = "Geomancy Tunic +2",
-        hands = "Lurid Mitts",
-        ring1 = "Metamor. Ring +1",
-        ring2 = "Stikini Ring",
-        back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
-        waist = "Embla Sash",
-        legs = "Psycloth Lappas",
-        feet = "Medium's Sabots"
+		main="Daybreak",
+		sub = "Ammurapi Shield",
+		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+		head="Befouled Crown",
+		body="Geomancy Tunic +2",
+		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+24','"Fast Cast"+5','CHR+6','Mag. Acc.+5',}},
+		legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
+		feet={ name="Medium's Sabots", augments={'MP+35','MND+4','"Conserve MP"+3',}},
+		neck={ name="Bagua Charm +1", augments={'Path: A',}},
+		waist="Sacro Cord",
+		left_ear="Regal Earring",
+		right_ear="Malignance Earring",
+		right_ring="Kishar Ring",
+		left_ring="Stikini Ring",
+		back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
     }
 
     sets.midcast["Elemental Magic"] = {
-        main = "Daybreak",
-        sub = "Ammurapi Shield",
-        range = "Dunna",
-        head = "Merlinic Hood",
-        body = "Jhakri Robe +2",
-        hands = "Amalric Gages",
-        legs = "Merlinic Shalwar",
-        feet = "Merlinic Crackows",
-        neck = "Mizu. Kubikazari",
-        waist = "Refoccilation Stone",
-        left_ear = "Barkarole Earring",
-        right_ear = "Malignance Earring",
-        left_ring = "Mujin Band",
-        right_ring = "Locus Ring",
-        back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
+	    main="Idris",
+		sub = "Ammurapi Shield",
+		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+		head={ name="Merlinic Hood", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','Magic burst dmg.+9%','CHR+6','Mag. Acc.+14',}},
+		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','INT+6','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
+		hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Occult Acumen"+1','CHR+9','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+7%','CHR+8',}},
+		neck="Mizu. Kubikazari",
+		waist="Sacro Cord",
+		left_ear="Malignance Earring",
+		right_ear="Regal Earring",
+		left_ring="Locus Ring",
+		right_ring="Mujin Band",
+		back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
     }
 
     sets.midcast.Impact = set_combine(sets.midcast["Elemental Magic"], {head = empty, body = "Twilight Cloak"})
@@ -250,21 +253,21 @@ function get_sets()
     }
 
     sets.magic_burst = {
-        main = "Daybreak",
-        sub = "Ammurapi Shield",
-        range = "Dunna",
-        head = "Merlinic Hood",
-        body = "Jhakri Robe +2",
-        hands = "Amalric Gages",
-        legs = "Merlinic Shalwar",
-        feet = "Merlinic Crackows",
-        neck = "Mizu. Kubikazari",
-        waist = "Refoccilation Stone",
-        left_ear = "Barkarole Earring",
-        right_ear = "Malignance Earring",
-        left_ring = "Mujin Band",
-        right_ring = "Locus Ring",
-        back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
+	    main="Idris",
+		sub = "Ammurapi Shield",
+		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+		head={ name="Merlinic Hood", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','Magic burst dmg.+9%','CHR+6','Mag. Acc.+14',}},
+		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','INT+6','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
+		hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Occult Acumen"+1','CHR+9','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
+		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+7%','CHR+8',}},
+		neck="Mizu. Kubikazari",
+		waist="Sacro Cord",
+		left_ear="Malignance Earring",
+		right_ear="Regal Earring",
+		left_ring="Locus Ring",
+		right_ring="Mujin Band",
+		back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
     }
 
     sets.obi = {
@@ -982,10 +985,9 @@ function midcast(spell, arg)
 	
 	if spell.english:startswith("Indi") then
 		equip(sets.midcast.Geomancy.Indi)
-		if buffactive["Entrust"] then
-			equip(set_combine(sets.midcast.Geomancy.Indi, main ="Solstice"))
-		end
-		
+		if buffactive['Entrust'] then
+			equip(set_combine(sets.midcast.Geomancy.Indi, {main ="Solstice"}))
+		end		
     end
 	
     if spell.skill == "Healing Magic" or spell.type == "Trust" then
