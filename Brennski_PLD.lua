@@ -203,7 +203,7 @@ function get_sets()
 		right_ring = "Moonbeam Ring",
 		waist = "Eschan Stone",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
-		legs = "Nuame Flanchard",
+		legs = "Nyame Flanchard",
 		feet = "Nyame Sollerets"
 	}
 
@@ -216,8 +216,8 @@ function get_sets()
 		neck = "Fotia Gorget",
 		hands = "Souveran Handschuhs +1",
 		feet = "Souveran Schuhs +1",
-		body = "Reverence Surcoat +3",
-		ring1 = "Moonligh Ring",
+		body="Souveran Cuirass +1",
+		ring1 = "Moonlight Ring",
 		legs = "Souveran Diechlings +1",
 		head = "Souveran Schaller +1"
 	}
