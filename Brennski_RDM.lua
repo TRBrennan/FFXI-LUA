@@ -243,7 +243,6 @@ function get_sets()
 		legs = "Telchine Braconi",
 		feet = "Lethargy Houseaux +1"
 	}
-
 			
 	sets.Enhancing.Gain = {
 		main ="Colada",
@@ -302,7 +301,7 @@ function get_sets()
 		ring2 = "Metamor. Ring +1",
 		waist = "Obstin. Sash",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
-		legs = "Chironic Hose",
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet = "Vitiation Boots +3",
 	}
 
@@ -450,7 +449,6 @@ function get_sets()
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 	
-
 	sets.Magic.Stun = {
 		main = "Crocea Mors",
 		sub = "Ammurapi shield",

@@ -90,7 +90,7 @@ function get_sets()
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS["Flash Nova"] = {
-         neck = "Sanctity Necklace",
+        neck = "Sanctity Necklace",
         right_ear = "Dudgeon Earring",
         left_ear = "Moonshade Earring",
         head = "Nyame Helm",
@@ -963,7 +963,6 @@ function precast(spell, arg)
             windower.send_command("cancel stoneskin")
         end
     end
-
     -- Dancer Sub Job
     if spell.name == "Spectral Jig" and check_buffs("Sneak") and check_recasts(spell) then
         windower.send_command("cancel sneak")
@@ -977,12 +976,14 @@ function midcast(spell, arg)
     -- Special handling for Spell Mappings outlined in get_maps()
     local stat
 
-    if spell.english:startswith("Indi") or spell.english:startswith("Geo") then
+    if spell.english:startswith("Geo") then
         equip(sets.midcast.Geomancy)
+	end
+	
+	if spell.english:startswith("Indi") then
+		equip(sets.midcast.Geomancy.Indi)
     end
 	
-	
-
     if spell.skill == "Healing Magic" or spell.type == "Trust" then
         equip(sets.midcast.FastRecast)
         if spell.name:startswith("Cure") then

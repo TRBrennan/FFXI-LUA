@@ -274,7 +274,7 @@ function get_sets()
 
 	sets.JA = {}
 
-	sets.JA.Meditate = {back = TP_Cape, hands ="Sakonji Kote", Head ="Wakido Kabuto +1"}
+	sets.JA.Meditate = {back = TP_Cape, hands ="Sakonji Kote", Head ="Wakido Kabuto +2"}
 
 	sets.JA.Hasso = {}
 
@@ -305,7 +305,7 @@ function get_sets()
 		back = TP_Back
 	}
 	
-	sets.JA.WardingCircle = { Head ="Wakido Kabuto +1"}
+	sets.JA.WardingCircle = { Head ="Wakido Kabuto +2"}
 	
 	
 

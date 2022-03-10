@@ -84,26 +84,43 @@ function get_sets()
 	--1=Standard, 2=One Handed, 3=Chango Set, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 7=DT After Math, 8=H2H, 9=Zulfiqar, 10=DW, 11=Hybrid, 12 = UkonAM --
 	Melee_Default = 1
 	TP_ind = 1
-
-	sets.TP.Standard = {
-		ammo = "Coiste Bodhar",
-		head = "Hjarrandi Helm",
-		body = TP_Body,
-		--hands = "Sakpata's Gauntlets",
-		hands = "Sakpata's Gauntlets",
-		--legs = "Pumm. Cuisses +3",
-		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		feet = "Pumm. Calligae +3",
-		neck = "Warrior's bead necklace +2",
-		--waist = "Ioskeha belt +1",
-		waist = "Sailfi Belt +1",
-		left_ear = "Telos Earring",
-		--right_ear = "Cessance Earring",
-		right_ear = "Schere Earring",
-		left_ring = "Niqmaddu Ring",
-		right_ring = "Petrov Ring",
-		back = {name = "Cichol's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10'}}
+	
+	sets.TP.Standard ={
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head={ name="Sakpata's Helm", augments={'Path: A',}},
+		body={ name="Sakpata's Plate", augments={'Path: A',}},
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Pumm. Cuisses +3",
+		feet="Pumm. Calligae +3",
+		neck={ name="War. Beads +2", augments={'Path: A',}},
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Telos Earring",
+		right_ear={ name="Schere Earring", augments={'Path: A',}},
+		left_ring="Niqmaddu Ring",
+		--right_ring="Petrov Ring",
+		right_ring = "Moonlight Ring",
+		back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 	}
+
+	-- sets.TP.Standard = {
+		-- ammo = "Coiste Bodhar",
+		-- head = "Hjarrandi Helm",
+		-- body = TP_Body,
+		-- --hands = "Sakpata's Gauntlets",
+		-- hands = "Sakpata's Gauntlets",
+		-- --legs = "Pumm. Cuisses +3",
+		-- legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+		-- feet = "Pumm. Calligae +3",
+		-- neck = "Warrior's bead necklace +2",
+		-- --waist = "Ioskeha belt +1",
+		-- waist = "Sailfi Belt +1",
+		-- left_ear = "Telos Earring",
+		-- --right_ear = "Cessance Earring",
+		-- right_ear = "Schere Earring",
+		-- left_ring = "Niqmaddu Ring",
+		-- right_ring = "Petrov Ring",
+		-- back = {name = "Cichol's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10'}}
+	-- }
 
 	sets.TP.OH = {
 		ammo = "Coiste Bodhar",
@@ -123,26 +140,42 @@ function get_sets()
 		feet = "Pummeler's calligae +3"
 	}
 
-	sets.TP.Chango = {
-		ammo = "Coiste Bodhar",
-		head = "Hjarrandi Helm",
-		--body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
-		body = TP_Body,
-		--hands = "Sakpata's Gauntlets",
-		hands = "Sakpata's Gauntlets",
-		--legs = "Pumm. Cuisses +3",
-		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		feet = "Pumm. Calligae +3",
-		neck = "Warrior's bead necklace +2",
-		--waist = "Ioskeha belt +1",
-		waist = "Sailfi Belt +1",
-		left_ear = "Telos Earring",
-		--right_ear = "Cessance Earring",
-		right_ear = "Schere Earring",
-		left_ring = "Niqmaddu Ring",
-		right_ring = "Petrov Ring",
-		back = {name = "Cichol's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10'}}
+	sets.TP.Chango ={
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head={ name="Sakpata's Helm", augments={'Path: A',}},
+		body={ name="Sakpata's Plate", augments={'Path: A',}},
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Pumm. Cuisses +3",
+		feet="Pumm. Calligae +3",
+		neck={ name="War. Beads +2", augments={'Path: A',}},
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Telos Earring",
+		right_ear={ name="Schere Earring", augments={'Path: A',}},
+		left_ring="Niqmaddu Ring",
+		--right_ring="Petrov Ring",
+		right_ring = "Moonlight Ring",
+		back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 	}
+	-- sets.TP.Chango = {
+		-- ammo = "Coiste Bodhar",
+		-- head = "Hjarrandi Helm",
+		-- --body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
+		-- body = TP_Body,
+		-- --hands = "Sakpata's Gauntlets",
+		-- hands = "Sakpata's Gauntlets",
+		-- --legs = "Pumm. Cuisses +3",
+		-- legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+		-- feet = "Pumm. Calligae +3",
+		-- neck = "Warrior's bead necklace +2",
+		-- --waist = "Ioskeha belt +1",
+		-- waist = "Sailfi Belt +1",
+		-- left_ear = "Telos Earring",
+		-- --right_ear = "Cessance Earring",
+		-- right_ear = "Schere Earring",
+		-- left_ring = "Niqmaddu Ring",
+		-- right_ring = "Petrov Ring",
+		-- back = {name = "Cichol's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10'}}
+	-- }
 
 	sets.TP.H2H = {
 		ammo = "Yetshila",
@@ -302,7 +335,8 @@ function get_sets()
 
 	sets.UpheavalWSD = {
 		ammo = "Knobkierrie",
-		head = WSD_Head,
+		--head = WSD_Head,
+		head = "Nyame Helm",
 		neck = "Warrior's bead necklace +2",
 		ear1 = "Thrud Earring",
 		ear2 = "Moonshade earring",

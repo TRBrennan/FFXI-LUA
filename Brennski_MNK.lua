@@ -149,7 +149,7 @@ function get_sets()
 	sets.TP.Hybrid ={
 		ammo = "Coiste Bodhar",
 		head="Malignance Chapeau",
-		body = "Mpaca Doublet",
+		body = "Mpaca's Doublet",
 		hands="Malignance Gloves",
 		legs = "Hesychast's Hose +3",
 		feet = "Anchorite's Gaiters +3",
