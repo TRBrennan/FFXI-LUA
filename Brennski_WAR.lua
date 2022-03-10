@@ -280,21 +280,19 @@ function get_sets()
 	}
 
 	sets.TP.DW = {
-		ammo = "Coiste Bodhar",
-		head = "Hjarrandi Helm",
-		neck = "Warrior's bead necklace +2",
-		ear1 = "Suppanomimi",
-		ear2 = "Schere Earring",
-		body = TP_Body,
-		hands = "Emicho Gauntlets +1",
-		ring1 = "Niqmaddu ring",
-		ring2 = "Petrov ring",
-		back = DA_Back,
-		--waist = "Reiki Yotai",
-		waist = "Sailfi Belt +1",
-		--legs = "Pummeler's cuisses +3",
-		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		feet = "Pummeler's calligae +3"
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head={ name="Sakpata's Helm", augments={'Path: A',}},
+		body={ name="Sakpata's Plate", augments={'Path: A',}},
+		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},
+		legs="Pumm. Cuisses +3",
+		feet="Pumm. Calligae +3",
+		neck={ name="War. Beads +2", augments={'Path: A',}},
+		waist="Ioskeha Belt +1",
+		left_ear="Suppanomimi",
+		right_ear={ name="Schere Earring", augments={'Path: A',}},
+		left_ring="Niqmaddu Ring",
+		right_ring="Petrov Ring",
+		back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 	}
 	
 	sets.TP.Hybrid = {
