@@ -982,6 +982,10 @@ function midcast(spell, arg)
 	
 	if spell.english:startswith("Indi") then
 		equip(sets.midcast.Geomancy.Indi)
+		if buffactive["Entrust"] then
+			equip(set_combine(sets.midcast.Geomancy.Indi, main ="Solstice"))
+		end
+		
     end
 	
     if spell.skill == "Healing Magic" or spell.type == "Trust" then
