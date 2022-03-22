@@ -132,7 +132,7 @@ function get_sets()
                 back = "Cornflower Cape",
                 waist = "windbuffet belt +1",
                 legs = "Samnuha Tights",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.TP.AccuracyFull = {
@@ -148,7 +148,7 @@ function get_sets()
                 back = "Cornflower Cape",
                 waist = "Kentarch Belt +1",
                 legs = "Carmine Cuisses +1",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.TP.DT = {
@@ -170,7 +170,7 @@ function get_sets()
                         name = "Herculean Trousers",
                         augments = {'"Mag.Atk.Bns."+25', "Phys. dmg. taken -5%", "INT+6", "Mag. Acc.+9"}
                 },
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.TP.DTAccuracy = {
@@ -192,7 +192,7 @@ function get_sets()
                         name = "Herculean Trousers",
                         augments = {'"Mag.Atk.Bns."+25', "Phys. dmg. taken -5%", "INT+6", "Mag. Acc.+9"}
                 },
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         --Weaponskill Sets--
@@ -309,7 +309,7 @@ function get_sets()
                 back = "Cornflower Cape",
                 waist = "Fotia belt",
                 legs = "Samnuha Tights",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.WS.Expiacion = {}
@@ -363,7 +363,7 @@ function get_sets()
                         name = "Herculean Trousers",
                         augments = {"Accuracy+12 Attack+12", "Weapon skill damage +3%", "DEX+9", "Accuracy+13"}
                 },
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.Realmrazer = {}
@@ -430,7 +430,7 @@ function get_sets()
                 back = "Cornflower Cape",
                 waist = "Grunfeld Rope",
                 legs = "Samnuha Tights",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.BlueMagic.Dart = {
@@ -449,7 +449,7 @@ function get_sets()
                 back = "Cornflower Cape",
                 waist = "Chaac Belt",
                 legs = "Samnuha Tights",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.BlueMagic.BlueMagic = {
@@ -515,7 +515,7 @@ function get_sets()
                 back = "Gigant Mantle",
                 waist = "Lieutenant's Sash",
                 legs = "Mavi Tayt +2",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.BlueMagic.BlueCure = {
@@ -617,7 +617,7 @@ function get_sets()
                 back = "Moonbeam Cape",
                 waist = "Flume belt +1",
                 legs = "Herculean Trousers",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         --Utility Sets--
@@ -644,7 +644,7 @@ function get_sets()
                 back = "Swith cape",
                 waist = "Siegel sash",
                 legs = "Haven hose",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.Utility.Phalanx = {
@@ -658,7 +658,7 @@ function get_sets()
                 back = "Swith cape",
                 waist = "Pythia sash +1",
                 legs = "Portent pants",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.Utility.Steps = {
@@ -667,7 +667,7 @@ function get_sets()
                 body = "Adhemar Jacket",
                 hands = "Rawhide Gloves",
                 legs == "Samnuha Tights",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+                feet="Nyame Sollerets",
                 neck = "Subtlety Spec.",
                 waist = "Chaac Belt",
                 left_ear = "Heartseeker Earring",
@@ -688,7 +688,7 @@ function get_sets()
                 back = "Moonbeam Cape",
                 waist = "Flume belt",
                 legs = "Iuitl Tights +1",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.Utility.MDT = {

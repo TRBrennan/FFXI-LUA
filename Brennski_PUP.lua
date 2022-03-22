@@ -373,7 +373,7 @@ function get_sets()
                 back = "Swith cape",
                 waist = "Siegel sash",
                 legs = "Haven hose",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.Utility.Phalanx = {
@@ -387,7 +387,7 @@ function get_sets()
                 back = "Swith cape",
                 waist = "Pythia sash +1",
                 legs = "Portent pants",
-                feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+                Feet = "Nyame Sollerets",
         }
 
         sets.Utility.Steps = {

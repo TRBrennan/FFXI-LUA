@@ -21,7 +21,7 @@ function get_sets()
 
 	sets.Idle.Standard = {
 		ammo = "Homiliary",
-		head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}},
+		head = {name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
 		neck = "Coatl Gorget +1",
 		ear1 = "Odnowa Earring +1",
 		ear2 = "Infused Earring",

@@ -112,7 +112,7 @@ function get_sets()
 		back = "Grounded Mantle",
 		waist = "Sailfi Belt +1",
 		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 	sets.TP.Standard.Ninja = {
 		head = "Adhemar Bonnet +1",
@@ -126,7 +126,7 @@ function get_sets()
 		back = "Grounded Mantle",
 		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 	sets.TP.Standard.Dancer = {
 		head = "Adhemar Bonnet +1",
@@ -140,7 +140,7 @@ function get_sets()
 		back = "Grounded Mantle",
 		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 
 	sets.TP.MidAccuracy = {}
@@ -157,7 +157,7 @@ function get_sets()
 		back = "Grounded Mantle",
 		waist = "Sailfi Belt +1",
 		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 	sets.TP.MidAccuracy.Ninja = {
 		head = "Adhemar Bonnet +1",
@@ -171,7 +171,7 @@ function get_sets()
 		back = "Grounded Mantle",
 		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 	sets.TP.MidAccuracy.Dancer = {
 		head = "Adhemar Bonnet +1",
@@ -185,7 +185,7 @@ function get_sets()
 		back = "Grounded Mantle",
 		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 
 	sets.TP.HighAccuracy = {}
@@ -202,7 +202,7 @@ function get_sets()
 		back = "Grounded Mantle",
 		waist = "Sailfi Belt +1",
 		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 	sets.TP.HighAccuracy.Ninja = {
 		head = "Carmine Mask +1",
@@ -216,7 +216,7 @@ function get_sets()
 		back = "Grounded Mantle",
 		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 	sets.TP.HighAccuracy.Dancer = {
 		head = "Carmine Mask +1",
@@ -230,7 +230,7 @@ function get_sets()
 		back = "Grounded Mantle",
 		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 
 	sets.TP.Hybride = {}
@@ -247,7 +247,7 @@ function get_sets()
 		back = "Moonbeam Cape",
 		waist = "Sailfi Belt +1",
 		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 	sets.TP.Hybride.Ninja = {
 		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
@@ -261,7 +261,7 @@ function get_sets()
 		back = "Moonbeam Cape",
 		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 	sets.TP.Hybride.Dancer = {
 		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
@@ -275,7 +275,7 @@ function get_sets()
 		back = "Moonbeam Cape",
 		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 
 	sets.Ranged = {}

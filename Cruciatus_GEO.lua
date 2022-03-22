@@ -60,7 +60,7 @@ function get_sets()
         hands = {name = "Merlinic Dastanas", augments = {'"Mag.Atk.Bns."+24', '"Fast Cast"+5', "CHR+6", "Mag. Acc.+5"}},
         ring1 = "Kishar Ring",
         back = "Lifestream Cape",
-        waist = "Witful Belt",
+        waist = "Embla Sash",
         legs = "Geo. Pants +2",
         feet = "Volte Gaiters"
     }
@@ -74,8 +74,8 @@ function get_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-        neck = "Sanctity Necklace",
-        right_ear = "Dudgeon Earring",
+        neck = "Rep. Plat. Medal",
+        right_ear = "Ishvara earring",
         left_ear = "Moonshade Earring",
         head = "Nyame Helm",
         body = "Nyame Mail",
@@ -85,7 +85,7 @@ function get_sets()
         ring1 = "Varar Ring",
         ring2 = "Petrov Ring",
         back = "Lifestream Cape",
-        waist = "Fucho-no-obi"
+        waist = "Luminary Sash"
     }
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -312,7 +312,7 @@ function get_sets()
         head = "Befouled Crown",
         neck = "Sanctity Necklace",
         right_ear = "Hearty Earring",
-        left_ear = "Lugalbanda Earring",
+        left_ear = "Eabani Earring",
         body = "Geomancy Tunic +2",
         hands = "Nyame Gauntlets",
         left_ring = "Defending Ring",
@@ -330,7 +330,7 @@ function get_sets()
         head = "Befouled Crown",
         neck = "Bagua Charm +1",
         right_ear = "Hearty Earring",
-        left_ear = "Lugalbanda Earring",
+        left_ear = "Eabani Earring",
         body = "Mallquis Saio +2",
         hands = "Nyame Gauntlets",
         left_ring = "Defending Ring",
@@ -353,7 +353,7 @@ function get_sets()
         feet = {name = "Bagua Sandals +1", augments = {'Enhances "Radial Arcana" effect'}},
         neck = "Bagua Charm +1",
         right_ear = "Hearty Earring",
-        left_ear = "Lugalbanda Earring",
+        left_ear = "Eabani Earring",
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",
         back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
@@ -372,7 +372,7 @@ function get_sets()
         feet = {name = "Bagua Sandals +1", augments = {'Enhances "Radial Arcana" effect'}},
         neck = "Bagua Charm +1",
         right_ear = "Hearty Earring",
-        left_ear = "Lugalbanda Earring",
+        left_ear = "Eabani Earring",
         left_ring = "Defending Ring",
         right_ring = "Shneddick Ring",
         back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
@@ -392,7 +392,7 @@ function get_sets()
          head = "Befouled Crown",
         neck = "Sanctity Necklace",
         right_ear = "Hearty Earring",
-        left_ear = "Lugalbanda Earring",
+        left_ear = "Eabani Earring",
         body = "Geomancy Tunic +2",
         hands = "Nyame Gauntlets",
         ring1 = "Defending Ring",
@@ -410,7 +410,7 @@ function get_sets()
 		head = "Befouled Crown",
         neck = "Sanctity Necklace",
         right_ear = "Hearty Earring",
-        left_ear = "Lugalbanda Earring",
+        left_ear = "Eabani Earring",
         body = "Geomancy Tunic +2",
         hands = "Nyame Gauntlets",
         ring1 = "Defending Ring",
@@ -438,8 +438,8 @@ function get_sets()
     sets.engaged = {
         range = "Dunna",
         neck = "Bagua charm +1",
-        right_ear = "Dudgeon Earring",
-        left_ear = "Heartseeker Earring",
+        right_ear = "Steelflash Earring",
+        left_ear = "Bladeborn Earring",
         head = "Nyame Helm",
         body = "Nyame Mail",
         hands = "Nyame Gauntlets",
@@ -447,7 +447,7 @@ function get_sets()
         feet = "Nyame Sollerets",
         ring1 = "Varar Ring",
         ring2 = "Petrov Ring",
-        back = "Lifestream Cape",
+        back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
         waist = "Fucho-no-obi"
     }
 end

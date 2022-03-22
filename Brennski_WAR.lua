@@ -37,7 +37,7 @@ function get_sets()
 	Crit_Back = {name = "Cichol's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10'}}
 	STR_Back = {name = "Cichol's Mantle",augments = {"VIT+20", "Accuracy+20 Attack+20", "VIT+10", "Weapon skill damage +10%"}}
 	Acc_head = "Flam. Zucchetto +2"
-	TH_Head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}}
+	TH_Head = {name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}}
 	WSD_Head = "Agoge Mask +3"
 	TP_Body ={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
 	--WSD_Legs ="Sakpata's Cuisses"
@@ -80,8 +80,8 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "OH", "Chango", "AccuracyLite", "AccuracyFull", "DT", "DTAM", "H2H", "Zulfiqar", "DW", "Hybrid", "UkonAM"}
-	--1=Standard, 2=One Handed, 3=Chango Set, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 7=DT After Math, 8=H2H, 9=Zulfiqar, 10=DW, 11=Hybrid, 12 = UkonAM --
+	sets.TP.index = {"Standard", "OH", "Chango", "AccuracyLite", "AccuracyFull", "DT", "DTAM", "H2H", "Zulfiqar", "DW", "Hybrid", "HybridSB","UkonAM"}
+	--1=Standard, 2=One Handed, 3=Chango Set, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 7=DT After Math, 8=H2H, 9=Zulfiqar, 10=DW, 11=Hybrid, 12 = HybridSB,13 = UkonAM --
 	Melee_Default = 1
 	TP_ind = 1
 	
@@ -308,6 +308,23 @@ function get_sets()
 		right_ear="Schere Earring",
 		right_ring="Moonlight Ring",
 		--right_ring="Chirich Ring +1",
+		left_ring = "Niqmaddu Ring",
+		back= DA_Back
+	}
+	
+	sets.TP.HybridSB = {
+		ammo = "Coiste Bodhar",
+		head="Sakpata's Helm",
+		body="Sakpata's Plate",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+		feet="Sakpata's Leggings",
+		neck={ name="War. Beads +2", augments={'Path: A',}},
+		waist="Ioskeha Belt +1",
+		left_ear="Telos Earring",
+		right_ear="Schere Earring",
+		--right_ring="Moonlight Ring",
+		right_ring="Chirich Ring +1",
 		left_ring = "Niqmaddu Ring",
 		back= DA_Back
 	}
@@ -1073,7 +1090,7 @@ function get_sets()
 		Hands = "Volte Bracers",
 		waist = "Chaac Belt",
 		Legs ="Volte Hose",
-		head = {name = "Valorous Mask",augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}}
+		head = {name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}}
 	}
 	
 	sets.JA.Jumps = {
@@ -1554,7 +1571,10 @@ function self_command(command)
 		TP_ind = 11
 		equip(sets.TP.Hybrid)
 		send_command("@input /echo Hybrid Set")
-	
+	elseif command == "equip HybridSB set" then
+		TP_ind = 12
+		equip(sets.TP.HybridSB)
+		send_command("@input /echo Hybrid SB Set")
 	elseif command == "change debug mode" then
 		if Gear_Debug == 1 then
 			Gear_Debug = 0

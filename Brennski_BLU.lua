@@ -136,14 +136,14 @@ function get_sets()
         neck = "Mirage Stole +1",
         ear1 = "Telos Earring",
         ear2 = "Brutal Earring",
-        body = "Adhemar Jacket +1",
+        body = "Gleti's Cuirass",
         hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
         ring1 = "Ilabrat Ring",
         ring2 = "Epona's Ring",
         back = { name = "Rosmerta's Cape",augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10', 'Phys. dmg. taken-10%', }},
         waist = "Reiki Yotai",
         legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots",augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}}
+		Feet = "Nyame Sollerets",
     }
 
 
@@ -337,7 +337,7 @@ function get_sets()
         neck = "Fotia gorget",
         ear1 = "Brutal Earring",
         ear2 = "Cessance Earring",
-        body = "Adhemar Jacket +1",
+        body = "Gleti's Cuirass",
         hands = "Nyame Gauntlets",
         ring1 = "Ilabrat Ring",
         ring2 = "Epona's ring",
@@ -353,7 +353,7 @@ function get_sets()
         neck = "Mirage Stole +1",
         rear = "Friomisi earring",
         ear1 = "Novio Earring",
-        body = "Adhemar Jacket +1",
+        body = "Gleti's Cuirass",
         hands = "Amalric Gages +1",
         ring1 = "Shiva Ring",
         ring2 = 'Shiva Ring',
@@ -457,7 +457,7 @@ function get_sets()
         back = "Gigant Mantle",
         waist = "Lieutenant's Sash",
         legs = "Hashishin tayt +1",
-        feet = {name = "Herculean Boots",augments = {'Accuracy+20 Attack+20', '"Triple Atk."+4',}}
+        Feet = "Nyame Sollerets",
     }
 
     sets.BlueMagic.BlueCure = {

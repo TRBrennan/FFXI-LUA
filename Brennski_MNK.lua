@@ -172,7 +172,7 @@ function get_sets()
 		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Ken. Hakama",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		feet="Nyame Sollerets",
 		neck = "Fotia Gorget",
 		waist = "Foita Belt",
 		left_ear = "Sherida Earring",
@@ -185,10 +185,10 @@ function get_sets()
 	sets.WS.SS = {
 		ammo = "Crepuscular Pebble",
 		head = "Hes. Crown +3",
-		body = "Adhemar Jacket +1",
+		body = "Mpaca's Doublet",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Ken. Hakama",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		feet="Nyame Sollerets",
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
 		left_ear = "Sherida Earring",
@@ -204,7 +204,7 @@ function get_sets()
 		neck = "Mnk. Nodowa +1",
 		ear1 = "Moonshade Earring",
 		ear2 = "Telos Earring",
-		body = "Adhemar Jacket +1",
+		body = "Mpaca's Doublet",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		left_ring = "Gere Ring",
 		right_ring = "Niqmaddu Ring",
@@ -220,7 +220,7 @@ function get_sets()
 		Body = "Nyame Mail",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Ken. Hakama",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		feet="Nyame Sollerets",
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
 		left_ear = "Sherida Earring",
@@ -236,7 +236,7 @@ function get_sets()
 		body = "Ken. Samue",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Ken. Hakama",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		feet="Nyame Sollerets",
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
 		left_ear = "Sherida Earring",
@@ -292,7 +292,7 @@ function get_sets()
 		back = "Moonbeam Cape",
 		waist = "Carrier's Sash",
 		legs = "Herculean Trousers",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 
 	--Utility Sets--
@@ -321,7 +321,7 @@ function get_sets()
 		back = "Swith cape",
 		waist = "Siegel sash",
 		legs = "Haven hose",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 
 	sets.Utility.Phalanx = {
@@ -335,16 +335,16 @@ function get_sets()
 		back = "Swith cape",
 		waist = "Pythia sash +1",
 		legs = "Portent pants",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 
 	sets.Utility.Steps = {
 		ammo = "Falcon Eye",
 		head = "Adhemar Bonnet +1",
-		body = "Adhemar Jacket +1",
+		body = "Mpaca's Doublet",
 		hands = "Rawhide Gloves",
 		legs == "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		feet="Nyame Sollerets",
 		neck = "Subtlety Spec.",
 		waist = "Chaac Belt",
 		left_ear = "Brutal Earring",

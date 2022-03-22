@@ -47,7 +47,7 @@ function get_sets()
         Idle_ind = 1                  
        
         sets.Idle.Standard = {ammo="Staunch Tathlum +1",
-                                      head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},neck="Sanctity Necklace", 
+                                      head={ name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},neck="Sanctity Necklace", 
 									  ear1="Eabani earring", ear2="Infused Earring",
                                       body="Souveran Cuirass",hands="Sulev. Gauntlets +2",ring1="Defending ring",ring2="Moonlight Ring",
                                       waist="Carrier's Sash",legs="Sulevia's Cuisses +2",feet="Hermes' Sandals", back ="Moonbeam Cape"}
@@ -254,7 +254,7 @@ function get_sets()
 		
 		sets.JA.Tomahawk = {ammo = "Throwing Tomahawk",
 						feet = "Agoge Calligae", waist ="Chaac Belt", 
-						head={ name="Valorous Mask", augments={'INT+6','"Dbl.Atk."+1','"Treasure Hunter"+1','Accuracy+6 Attack+6','Mag. Acc.+16 "Mag.Atk.Bns."+16',}}}
+						head={ name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}}}
 
 		sets.JA.Restraint ={}
         --Precast Sets--

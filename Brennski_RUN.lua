@@ -119,7 +119,7 @@ function get_sets()
 		back = { name = "Ogma's cape",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}},
 		waist = "Ioskeha belt +1",
 		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 
 	sets.TP.TankTP = {
@@ -216,10 +216,10 @@ function get_sets()
 	sets.Resolution.Attack = {
 		ammo = "Seeth. Bomblet +1",
 		head = "Adhemar Bonnet +1",
-		body = "Adhemar Jacket +1",
+		body="Ashera Harness",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		Feet = "Nyame Sollerets",
 		neck = "Fotia Gorget",
 		waist = "Fotia Belt",
 		left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
@@ -261,14 +261,14 @@ function get_sets()
 		neck = "Fotia gorget",
 		right_ear = "Brutal earring",
 		left_ear = "Moonshade earring",
-		body = "Adhemar Jacket +1",
+		body="Ashera Harness",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		right_ring = "Niqmaddu Ring",
 		left_ring = "Regal ring",
 		back = { name = "Ogma's cape", augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}},
 		waist = "Fotia belt",
 		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
+		Feet = "Nyame Sollerets",
 	}
 
 	sets.FellCleave = {}
@@ -279,10 +279,10 @@ function get_sets()
 	sets.FellCleave.Attack = {
 		ammo = "Seeth. Bomblet +1",
 		head = "Adhemar Bonnet +1",
-		body = "Adhemar Jacket +1",
+		body="Ashera Harness",
 		hands = {name = "Adhemar Wrist. +1", augments = {"STR+12", "DEX+12", "Attack+20"}},
 		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}},
+		Feet = "Nyame Sollerets",
 		neck = "Fotia Gorget",
 		waist = "Fotia Belt",
 		left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
