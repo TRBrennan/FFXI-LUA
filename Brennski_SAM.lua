@@ -49,7 +49,7 @@ function get_sets()
 		left_ear="Infused Earring",
 		right_ear="Eabani Earring",
 		left_ring="Defending Ring",
-		right_ring="Chirich Ring +1",
+		right_ring="Shneddick Ring",
 		back="Moonbeam Cape",
 	}
 
@@ -65,7 +65,7 @@ function get_sets()
 		left_ear="Infused Earring",
 		right_ear="Eabani Earring",
 		left_ring="Defending Ring",
-		right_ring="Chirich Ring +1",
+		right_ring="Shneddick Ring",
 		back="Moonbeam Cape",
 	}
 
@@ -168,7 +168,7 @@ function get_sets()
 		head = TP_Bonus_Head,
 		body = TP_Body,
 		hands = WSD_Hands,
-		legs = "Ken. Hakama",
+		legs="Mpaca's Hose",
 		feet = "Flam. Gambieras +2",
 		neck = "Samurai's nodowa +2",
 		waist = "Sailfi Belt +1",
@@ -200,10 +200,10 @@ function get_sets()
 	sets.WS.Ageha ={
 	    ammo="Pemphredo Tathlum",
 		head={ name="Blistering Sallet +1", augments={'Path: A',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-		legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		body=TP_Body,
+		hands = "Flam. Manopolas +2",
+		legs="Mpaca's Hose",
+		feet = "Flam. Gambieras +2",
 		neck="Sanctity Necklace",
 		waist="Eschan Stone",
 		left_ear="Digni. Earring",

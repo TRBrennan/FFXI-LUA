@@ -296,7 +296,7 @@ function get_sets()
 	sets.precast.FC.Standard = {
 		ammo = "Sapience Orb",
 		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		body = {name = "Adhemar Jacket", augments = {"HP+80", '"Fast Cast"+7', "Magic dmg. taken -3"}},
+		body = {name = "Adhemar Jacket +1", augments = {"HP+80", '"Fast Cast"+7', "Magic dmg. taken -3"}},
 		hands = {name = "Leyline Gloves", augments = {"Accuracy+12", "Mag. Acc.+14", '"Mag.Atk.Bns."+15', '"Fast Cast"+2'}},
 		legs = {name = "Herculean Trousers", augments = {"Mag. Acc.+21", '"Fast Cast"+5', "CHR+3"}},
 		feet = "Ahosi Leggings",

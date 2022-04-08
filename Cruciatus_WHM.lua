@@ -33,7 +33,7 @@ function get_sets()
 		--head="Befouled Crown",
 		head ="Nyame Helm",
 		--body="Inyanga Jubbah +2",
-		body = "Theo. Bliaut +2",
+		body = "Theo. Bliaut +3",
 		hands="Nyame Gauntlets",
 		legs="Assid. Pants +1",
 		--legs="Nyame Flanchard",
@@ -51,7 +51,23 @@ function get_sets()
 
     sets.aftercast_Idle = sets.aftercast_Idle_refresh
 	
-	sets.aftercast_engaged = sets.aftercast_Idle_refresh
+	sets.aftercast_engaged = {
+		--head="Befouled Crown",
+		head ="Nyame Helm",
+		--body="Inyanga Jubbah +2",
+		body="Ayanmo Corazza +2",
+		hands="Bunzi's Gloves",
+		legs={ name="Telchine Braconi", augments={'Accuracy+20','"Store TP"+6','Enh. Mag. eff. dur. +9',}},
+		--legs="Nyame Flanchard",
+		feet="Nyame Sollerets",
+		neck="Asperity Necklace",
+		waist="Cetl Belt",
+		left_ear="Bladeborn Earring",
+		right_ear="Steelflash Earring",
+		left_ring="Chirich Ring +1",
+		right_ring="Petrov Ring",
+		back="Alaunus's Cape",
+	}
 
     sets.precast_Cure = {
         main = { name = "Queller Rod", augments = {"Healing magic skill +15", '"Cure" potency +10%', '"Cure" spellcasting time -7%'}},
@@ -104,13 +120,28 @@ function get_sets()
         right_ring = "Kishar Ring",
         back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}}
     }
+	
+	sets.precast_WS={
+		neck = "Rep. Plat. Medal",
+        right_ear = "Ishvara earring",
+        left_ear = "Moonshade Earring",
+        head = "Nyame Helm",
+        body = "Nyame Mail",
+        hands = "Nyame Gauntlets",
+        legs = "Nyame Flanchard",
+        feet = "Nyame Sollerets",
+		right_ring="Petrov Ring",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+        back = "Lifestream Cape",
+        waist = "Sailfi Belt +1"
+    }
 
     sets.midcast_Haste = {
         main = {name = "Gada", augments = {"Enh. Mag. eff. dur. +4", "VIT+5", "Mag. Acc.+18", '"Mag.Atk.Bns."+4'}},
         sub = "Ammurapi Shield",
         ammo = "Homiliary",
         head = {name = "Telchine Cap", augments = {"Enh. Mag. eff. dur. +9"}},
-        body = {name = "Telchine Chas.", augments = {"Enh. Mag. eff. dur. +7"}},
+        body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +9',}},
         hands = {name = "Telchine Gloves", augments = {"Enh. Mag. eff. dur. +10"}},
         legs = {name = "Telchine Braconi", augments = {"Enh. Mag. eff. dur. +9"}},
         feet = {name = "Telchine Pigaches", augments = {"Enh. Mag. eff. dur. +9"}},
@@ -151,13 +182,13 @@ function get_sets()
         neck = "Imbodla necklace",
         ear1 = "Lifestorm Earring",
         ear2 = "Regal Earring",
-        body = "Theo. Bliaut +2",
+        body = "Theo. Bliaut +3",
         hands="Inyan. Dastanas +2",
         ring1 = "Stikini Ring",
         ring2 = "Metamor. Ring +1",
         back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}},
         waist = "Ovate Rope",
-        legs = "Chironic hose",
+        legs={ name="Chironic Hose", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Cure" potency +1%','MND+14','Mag. Acc.+15',}},
         feet = "Medium's sabots"
     }
 
@@ -186,7 +217,7 @@ function get_sets()
         sub = "Ammurapi Shield",
         ammo = "Homiliary",
         head = {name = "Telchine Cap", augments = {"Enh. Mag. eff. dur. +9"}},
-        body = {name = "Telchine Chas.", augments = {"Enh. Mag. eff. dur. +7"}},
+        body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +9',}},
         hands = {name = "Telchine Gloves", augments = {"Enh. Mag. eff. dur. +10"}},
         legs = {name = "Telchine Braconi", augments = {"Enh. Mag. eff. dur. +9"}},
         feet = {name = "Telchine Pigaches", augments = {"Enh. Mag. eff. dur. +9"}},
@@ -203,7 +234,7 @@ function get_sets()
         sub = "Ammurapi Shield",
         ammo = "Homiliary",
         head = {name = "Telchine Cap", augments = {"Enh. Mag. eff. dur. +9"}},
-        body = {name = "Telchine Chas.", augments = {"Enh. Mag. eff. dur. +7"}},
+        body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +9',}},
         hands = {name = "Telchine Gloves", augments = {"Enh. Mag. eff. dur. +10"}},
         legs = {name = "Telchine Braconi", augments = {"Enh. Mag. eff. dur. +9"}},
         feet = {name = "Telchine Pigaches", augments = {"Enh. Mag. eff. dur. +9"}},
@@ -230,7 +261,7 @@ function get_sets()
         ring2 = "Acumen ring",
         back = "Toro cape",
         waist = "Eschan stone",
-        legs = "Chironic hose",
+        legs={ name="Chironic Hose", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Cure" potency +1%','MND+14','Mag. Acc.+15',}},
         feet = "Navon crackows"
     }
 
@@ -247,7 +278,7 @@ function get_sets()
         ring2 = "Archon ring",
         back = "Toro cape",
         waist = "Eschan stone",
-        legs = "Chironic hose",
+        legs={ name="Chironic Hose", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Cure" potency +1%','MND+14','Mag. Acc.+15',}},
         feet = "Helios boots"
     }
 
@@ -256,7 +287,7 @@ function get_sets()
         sub = "Ammurapi Shield",
         ammo = "Homiliary",
         head = "Inyanga Tiara +2",
-        body="Piety Bliaut",
+        body="Piety Bliaut +1",
         hands = "Ebers Mitts",
         legs = "Theophany Pantaloons +2",
         feet = {name = "Telchine Pigaches", augments = {"Enh. Mag. eff. dur. +9"}},
@@ -274,7 +305,7 @@ function get_sets()
         sub = "Ammurapi Shield",
         ammo = "Homiliary",
         head = {name = "Telchine Cap", augments = {"Enh. Mag. eff. dur. +9"}},
-        body = {name = "Telchine Chas.", augments = {"Enh. Mag. eff. dur. +7"}},
+        body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +9',}},
         hands = {name = "Telchine Gloves", augments = {"Enh. Mag. eff. dur. +10"}},
         legs = {name = "Telchine Braconi", augments = {"Enh. Mag. eff. dur. +9"}},
         feet = "Ebers Duckbills +1",
@@ -310,7 +341,7 @@ function get_sets()
         sub = "Sors Shield",
         ammo = "Esper Stone",
         head = "Vanya Hood",
-        body = "Theo. Bliaut +2",
+        body = "Theo. Bliaut +3",
         hands = "Theophany Mitts +3",
         legs = "Ebers Pant. +1",
         feet = "Kaykaus Boots",
@@ -379,10 +410,12 @@ function precast(spell)
         equip(sets.precast_Haste)
     elseif spell.english == "Impact" then
         equip({body = "Twilight cloak"})
-    else
+	elseif spell.type == 'WeaponSkill' then
+		equip(sets.precast_WS)
+	else
         send_command('@input /echo Precast Set')
         equip(sets.precast_FastCast)
-    end
+	end
 end
 -- --- MidCast ---
 function midcast(spell)
@@ -453,7 +486,7 @@ end
 
 function aftercast(spell)
     if player.status == "Engaged" then
-        equip(sets["sets.aftercast.engaged"])
+        equip(sets.aftercast_engaged)
     elseif Gear_Debug == 0 then
         equip(sets.aftercast_Idle)
         send_command("@input /echo Idle Set")

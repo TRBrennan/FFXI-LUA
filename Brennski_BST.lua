@@ -82,7 +82,7 @@ function get_sets()
 		waist="Carrier's Sash",
 		left_ear="Eabani Earring",
 		right_ear="Infused Earring",
-		left_ring="Chirich Ring +1",
+		left_ring="Shneddick Ring",
 		right_ring="Defending Ring",
 		back="Moonbeam Cape",
 	}
@@ -98,7 +98,7 @@ function get_sets()
 		waist="Carrier's Sash",
 		left_ear="Eabani Earring",
 		right_ear="Infused Earring",
-		left_ring="Chirich Ring +1",
+		left_ring="Shneddick Ring",
 		right_ring="Defending Ring",
 		back="Moonbeam Cape",
 	}
@@ -115,7 +115,7 @@ function get_sets()
 			left_ear="Enmerkar Earring",
 			right_ear="Crep. Earring",
 			left_ring="C. Palug Ring",
-			right_ring="Thurandaut Ring",
+			right_ring="Tali'ah Ring",
 			back="Pastoralist's Mantle"
 	}
 
@@ -173,7 +173,7 @@ function get_sets()
 			left_ear="Enmerkar Earring",
 			right_ear="Crep. Earring",
 			left_ring="C. Palug Ring",
-			right_ring="Thurandaut Ring",
+			right_ring="Tali'ah Ring",
 			back="Pastoralist's Mantle"
 	}
 

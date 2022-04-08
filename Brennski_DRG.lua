@@ -34,7 +34,7 @@ function get_sets()
 	--Idle Sets--
 	sets.Idle = {}
 
-	sets.Idle.index = {"Standard", "DT"}
+	sets.Idle.index = {"Standard"}
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
@@ -46,28 +46,13 @@ function get_sets()
 		body="Nyame Mail",
 		hands = "Nyame Gauntlets",
 		ring1 = "Defending ring",
-		ring2 = "Chirich Ring +1",
+		ring2 = "Shneddick Ring",
 		waist = "Carrier's Sash",
-		legs = "Carmine Cuisses +1",
+		legs = "Nyame Flanchard",
 		feet="Nyame Sollerets",
 		back = "Moonbeam Cape"
 	}
 
-	sets.Idle.DT = {
-		ammo = "Staunch Tathlum +1",
-		head = "Sulevia's Mask +2",
-		neck = "Loricate Torque +1",
-		ear1 = "Eabani Earring",
-		ear2 = "Cessance Earring",
-		body="Nyame Mail",
-		hands = "Sulev. Gauntlets +2",
-		ring1 = "Chirich Ring +1",
-		ring2 = "Defending  Ring",
-		back = "Moonbeam Cape",
-		waist = "Carrier's Sash",
-		legs = "Sulevia's Cuisses +1",
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-	}
 
 	--TP Sets--
 	sets.TP = {}

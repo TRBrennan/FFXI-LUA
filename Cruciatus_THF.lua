@@ -79,8 +79,8 @@ function get_sets()
 						hands="Nyame Gauntlets",
 						legs="Nyame Flanchard",
 						feet="Nyame Sollerets",
-						neck="Anu Torque",
-						waist="Kentarch Belt +1",
+						neck="Asperity Necklace",
+						waist="Sailfi Belt +1",
 						left_ear="Sherida Earring",
 						right_ear="Suppanomimi",
 						left_ring="Mummu Ring",
@@ -97,7 +97,7 @@ function get_sets()
 						hands = "Plunderer's Armlets +1",
 						legs="Nyame Flanchard",
 						feet="Nyame Sollerets",
-						neck="Anu Torque",
+						neck="Asperity Necklace",
 						waist="Chaac Belt",
 						left_ear="Sherida Earring",
 						right_ear="Suppanomimi",
@@ -115,14 +115,14 @@ function get_sets()
 								neck="Rep. Plat. Medal",ear1="Moonshade Earring",ear2="Ishvara Earring",
                                 body={ name="Herculean Vest", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','DEX+4','Attack+5',}},
 								hands="Meg. Gloves +2",ring1="Ilabrat Ring",ring2="Regal Ring",
-                                back="Canny Cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
+                                back="Canny Cape",waist="Sailfi Belt +1",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
 								feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}}, }							
                
                                
         sets.Exenterator = {ammo="Jukukik Feather",
                                           head="Adhemar Bonnet +1",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
                                           body="Herculean Vest",hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Ilabrat Ring",ring2="Regal Ring",
-                                          back="Canny Cape",waist="Fotia belt",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
+                                          back="Canny Cape",waist="Sailfi Belt +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4'}} }
                                                                           
         sets.Evisceration = {    ammo="Yamarang",
 								head="Mummu Bonnet +2",
@@ -130,19 +130,19 @@ function get_sets()
 								hands="Mummu Wrists +2",
 								legs="Mummu Kecks +2",
 								feet="Mummu Gamash. +2",
-								neck="Anu Torque",
+								neck="Asperity Necklace",
 								left_ear="Sherida Earring",
 								right_ear="Moonshade Earring",
 								left_ring="Mummu Ring",
 								right_ring="Petrov Ring",
-								waist ="Kentarch Belt +1",
+								waist="Sailfi Belt +1",
 								back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},}
        
         sets.SharkBite = {ammo="Jukukik Feather",
                                           head={ name="Herculean Helm", augments={'Accuracy+24 Attack+24','Weapon skill damage +5%','DEX+4',}},
 										  neck="Rep. Plat. Medal",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Herculean Vest",hands="Meg. Gloves +2",ring1="Ilabrat Ring",ring2="Regal Ring",
-                                          back="Canny Cape",waist="Grunfeld Rope",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
+                                          back="Canny Cape",waist="Sailfi Belt +1",legs={ name="Herculean Trousers", augments={'Accuracy+12 Attack+12','Weapon skill damage +3%','DEX+9','Accuracy+13',}},
 										  feet={ name="Herculean Boots", augments={'Accuracy+22 Attack+22','Weapon skill damage +4%','STR+3','Attack+8',}}, }		
 										  
 		sets.AeolianEdge = {        

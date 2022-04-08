@@ -35,7 +35,7 @@ function get_sets()
 		left_ear="Infused Earring",
 		right_ear="Eabani Earring",
 		left_ring="Defending Ring",
-		right_ring="Chirich Ring +1",
+		right_ring="Shneddick Ring",
 		back="Moonbeam Cape",
 	}
 	sets.Idle.DT = {
@@ -50,7 +50,7 @@ function get_sets()
 		left_ear="Infused Earring",
 		right_ear="Eabani Earring",
 		left_ring="Defending Ring",
-		right_ring="Chirich Ring +1",
+		right_ring="Shneddick Ring",
 		back="Moonbeam Cape",
 	}
 
@@ -65,10 +65,10 @@ function get_sets()
 		ammo="Seki Shuriken",
 		head={ name="Ryuo Somen", augments={'STR+10','DEX+10','Accuracy+15',}},
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
-		hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+		hands={ name="Adhemar Wristbands +1", augments={'STR+12','DEX+12','Attack+20',}},
 		legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
 		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
-		neck="Sanctity Necklace",
+		neck="Ninja Nodowa +2",
 		waist="Reiki Yotai",
 		left_ear="Suppanomimi",
 		right_ear="Eabani Earring",
@@ -80,10 +80,10 @@ function get_sets()
 		ammo="Seki Shuriken",
 		head={ name="Ryuo Somen", augments={'STR+10','DEX+10','Accuracy+15',}},
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
-		hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+		hands={ name="Adhemar Wristbands +1", augments={'STR+12','DEX+12','Attack+20',}},
 		legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
 		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
-		neck="Sanctity Necklace",
+		neck="Ninja Nodowa +2",
 		waist="Reiki Yotai",
 		left_ear="Telos Earring",
 		right_ear="Eabani Earring",
@@ -95,10 +95,10 @@ function get_sets()
 		ammo="Seki Shuriken",
 		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
-		hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+		hands={ name="Adhemar Wristbands +1", augments={'STR+12','DEX+12','Attack+20',}},
 		legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
 		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
-		neck="Lissome Necklace",
+		neck="Ninja Nodowa +2",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Telos Earring",
 		right_ear="Brutal Earring",
@@ -115,9 +115,9 @@ function get_sets()
 		head={ name="Ryuo Somen", augments={'STR+10','DEX+10','Accuracy+15',}},
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
 		hands="Malignance Gloves",
-		legs="Malignance Tights",
+		legs="Mpaca's Hose",
 		feet="Malignance Boots",
-		neck="Sanctity Necklace",
+		neck="Ninja Nodowa +2",
 		waist="Reiki Yotai",
 		left_ear="Suppanomimi",
 		right_ear="Eabani Earring",
@@ -130,9 +130,9 @@ function get_sets()
 		head={ name="Ryuo Somen", augments={'STR+10','DEX+10','Accuracy+15',}},
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
 		hands="Malignance Gloves",
-		legs="Malignance Tights",
+		legs="Mpaca's Hose",
 		feet="Malignance Boots",
-		neck="Sanctity Necklace",
+		neck="Ninja Nodowa +2",
 		waist="Reiki Yotai",
 		left_ear="Telos Earring",
 		right_ear="Eabani Earring",
@@ -145,9 +145,9 @@ function get_sets()
 		head="Malignance Chapeau",
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
 		hands="Malignance Gloves",
-		legs="Malignance Tights",
+		legs="Mpaca's Hose",
 		feet="Malignance Boots",
-		neck="Sanctity Necklace",
+		neck="Ninja Nodowa +2",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Telos Earring",
 		right_ear="Brutal Earring",
@@ -182,15 +182,15 @@ function get_sets()
 		ammo="Crepuscular Pebble",
 		head="Mpaca's Cap",
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
-		hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
-		legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
+		hands = "Adhemar Wristbands +1",
+		llegs="Mpaca's Hose",
 		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
 		left_ear="Telos Earring",
 		right_ear="Brutal Earring",
 		left_ring="Gere Ring",
 		right_ring="Ilabrat Ring",
 		back = DA_Back,		
-		waist = "Fotia Belt",
+		waist = "Ninja Nodowa +2",
 		neck = "Fotia Gorget",
 		
 	}
@@ -203,7 +203,7 @@ function get_sets()
 		hands = "Nyame Gauntlets",
 		legs = "Nyame Flanchard",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck = "Rep. Plat. Medal",
+		neck = "Ninja Nodowa +2",
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
@@ -220,7 +220,7 @@ function get_sets()
 		hands = "Nyame Gauntlets",
 		legs = "Nyame Flanchard",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck = "Rep. Plat. Medal",
+		neck = "Ninja Nodowa +2",
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
@@ -249,7 +249,7 @@ function get_sets()
 	sets.WS.Hybrid = {
 		ammo = "Seething Bomblet +1",
 		head = "Nyame Helm",
-		neck = "Sanctity Necklace",
+		neck = "Fotia Gorget",
 		ear2 = "Friomisi earring",
 		ear1 = "Moonshade Earring",
 		body = "Nyame Mail",
@@ -265,8 +265,8 @@ function get_sets()
 	sets.WS.Crit ={
 		ammo = "Yetshila",
 	    head={ name="Blistering Sallet +1", augments={'Path: A',}},
-		body="Malignance Tabard",
-		hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
+		body="Mpaca's Doublet",
+		hands = "Adhemar Wristbands +1",
 		legs="Mpaca's Hose",
 		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
 		neck="Fotia Gorget",
@@ -354,7 +354,7 @@ function get_sets()
 	sets.precast.FC = {
 		--ammo="Staunch Tathlum +1",
 		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		body = "Adhemar Jacket",
+		body = "Adhemar Jacket +1",
 		hands = "Leyline Gloves",
 		legs = {name = "Herculean Trousers", augments = {"Mag. Acc.+21", '"Fast Cast"+5', "CHR+3"}},
 		feet = "Herculean Boots",
@@ -449,12 +449,7 @@ function buff_change(buff, gain)
 			end
 		else
 			if player.status == "Engaged" then
-				equip(
-				set_combine(
-				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]],
-				sets.Weapon_melee[sets.Weapon_melee.index[Wm_ind]]
-			)
-		)
+				equip(sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]])
 			elseif player.status == "Idle" then
 				equip(sets.Idle[sets.Idle.index[Idle_ind]])
 			end
@@ -466,10 +461,7 @@ function buff_change(buff, gain)
 		else
 			if player.status == "Engaged" then
 			equip(
-				set_combine(
-				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]],
-				sets.Weapon_melee[sets.Weapon_melee.index[Wm_ind]]
-			)
+				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]]
 		)
 		elseif player.status == 'Engaged' and buffactive['terror'] or buffactive['stun'] or buffactive['sleep'] then
 			equip(sets.DT)

@@ -42,7 +42,7 @@ function get_sets()
 	TP_Body ={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
 	--WSD_Legs ="Sakpata's Cuisses"
 	WSD_Legs ="Nyame Flanchard"
-	WSD_Hands = "Sakpata Gauntlets"
+	WSD_Hands = "Sakpata's Gauntlets"
 	WSD_Body = "Nyame Mail"
 
 	sets.Idle.Standard = {
@@ -54,10 +54,10 @@ function get_sets()
 		body = "Sakpata's Plate",
 		hands = { name="Sakpata's Gauntlets", augments={'Path: A',}},
 		ring2 = "Defending ring",
-		ring1 = "Moonlight Ring",
+		ring1 = "Shneddick Ring",
 		waist = "Carrier's Sash",
 		legs = "Sakpata's Cuisses",
-		feet = "Hermes' Sandals",
+		feet = "Sakpata's leggings",
 		back = "Moonbeam Cape"
 	}
 
@@ -291,7 +291,7 @@ function get_sets()
 		left_ear="Suppanomimi",
 		right_ear={ name="Schere Earring", augments={'Path: A',}},
 		left_ring="Niqmaddu Ring",
-		right_ring="Petrov Ring",
+		right_ring="Moonlight Ring",
 		back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 	}
 	
@@ -434,11 +434,11 @@ function get_sets()
 
 	sets.Break = {
 		ammo = "Pemphredo Tathlum",
-		head = "Flam. Zucchetto +2",
+		head = "Sakpata's Helm",
 		body="Sakpata's Plate",
-		hands = "Flam. Manopolas +2",
+		hands = "Sakpata's Gauntlets",
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		feet = "Flam. Gambieras +2",
+		feet="Sakpata's Leggings",
 		neck = "Sanctity Necklace",
 		waist = "Eschan Stone",
 		left_ear = "Digni. Earring",
@@ -494,7 +494,9 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = "Sakpata's Cuisses",
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		legs = WSD_Legs,
+		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		feet="Sakpata's Leggings",
 	}
 
 	sets.MT = {
@@ -510,7 +512,8 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		feet="Sakpata's Leggings",
 	}
 
 	sets.Savage = {
@@ -628,7 +631,7 @@ function get_sets()
 
 	sets.Cloud = {
 		ammo = "Knobkierrie",
-		head = WSD_Head,
+		head = "Nyame Helm",
 		neck = "Sanctity Necklace",
 		ear1 = "Friomisi earring",
 		ear2 = "Moonshade earring",
@@ -637,7 +640,7 @@ function get_sets()
 		ring1 = "Regal Ring",
 		ring2 = "Acumen ring",
 		back = STR_Back,
-		waist = "Eschan stone",
+		waist="Orpheus's Sash",
 		legs = "Nyame Flanchard",
 		feet = "Nyame Sollerets"
 	}
@@ -1216,8 +1219,8 @@ function precast(spell)
 					-- end
 				end
 			else
-			cancel_spell()
-			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+				cancel_spell()
+				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
 			end
 		elseif spell.english == "Impulse Drive" then
 			if spell.target.distance <= 5.6 then
@@ -1298,7 +1301,7 @@ function precast(spell)
 		elseif spell.english == "Ruinator" then
 			equip(sets.Ruinator)
 			--send_command("@input /echo Ruinator Set")
-		elseif spell.english == "Mistral Axe" then
+		elseif spell.english == "Mistral Axe" or spell.english == "Calamity" then
 			if buffactive["Sneak Attack"] then
 				equip(sets.MistralCrit)
 				--send_command("@input /echo Mistral Crit Set")
@@ -1597,7 +1600,7 @@ function buff_change(buff, gain)
 		else
 			if player.status == "Engaged" then
 				equip(sets.TP[sets.TP.index[TP_ind]])
-				if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Ukonvasara" or player.equipment.main == "Farsha" then
+				if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Ukonvasara"  then
 					--TP_ind = 12
 					equip(sets.TP.UkonAm)
 					--send_command("@input /echo Ukon AM Set")

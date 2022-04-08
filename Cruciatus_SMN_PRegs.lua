@@ -186,9 +186,9 @@ function get_sets()
 
 	sets.midcast.Enhancing = {	
 	head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
-    body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +7',}},
+        body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +9',}},
     hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +5',}},
-    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +9',}},
+    legs={ name="Telchine Braconi", augments={'Accuracy+20','"Store TP"+6','Enh. Mag. eff. dur. +9',}},
     feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +3',}},
     neck="Voltsurge Torque",
     waist="Channeler's Stone",

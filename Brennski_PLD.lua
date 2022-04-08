@@ -28,9 +28,9 @@ function get_sets()
 		body = "Reverence Surcoat +3",
 		hands = "Regal Gauntlets",
 		left_ring = "Moonlight Ring",
-		right_ring = "Moonbeam Ring",		
+		right_ring = "Shneddick Ring",		
 		waist = "Fucho-no-obi",
-		legs = "Carmine Cuisses +1",
+		legs = "Sakpata's Cuisses",
 		feet="Sakpata's Leggings",
 		back = "Moonbeam Cape"
 	}
@@ -56,14 +56,14 @@ function get_sets()
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
 		hands="Regal Gauntlets",
-		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+		legs="Sakpata's Cuisses",
 		feet="Sakpata's Leggings",
 		neck="Loricate Torque +1",
 		waist="Carrier's Sash",
 		left_ear="Odnowa Earring +1",
 		right_ear = "Tuisto Earring",
 		left_ring = "Moonlight Ring",
-		right_ring = "Moonbeam Ring",
+		right_ring = "Shneddick Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 		
@@ -72,14 +72,14 @@ function get_sets()
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
-		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+		legs="Sakpata's Cuisses",
 		feet="Sakpata's Leggings",
 		neck = "Unmoving Collar +1",
 		waist="Carrier's Sash",
 		left_ear="Odnowa Earring +1",
 		right_ear = "Tuisto Earring",
 		left_ring = "Moonlight Ring",
-		right_ring = "Moonbeam Ring",
+		right_ring = "Shneddick Ring",
 		back="Rudianos's Mantle",
 
 	}
@@ -246,7 +246,7 @@ function get_sets()
 	
 	sets.Magic.Phalanx ={
 	    ammo="Staunch Tathlum +1",
-		head={ name="Odyssean Helm", augments={'Mag. Acc.+4','Magic dmg. taken -4%','Phalanx +2','Accuracy+6 Attack+6','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
+		head={ name="Valorous Mask", augments={'"Dbl.Atk."+2','"Snapshot"+1','Phalanx +2','Accuracy+13 Attack+13','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
 		body={ name="Odyss. Chestplate", augments={'STR+8','Pet: "Mag.Atk.Bns."+2','Phalanx +5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},
 		hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
@@ -363,10 +363,7 @@ function get_sets()
 		Legs = "Volte Hose",
 		hands = "Caballarius Gauntlets +2",
 		waist = "Chaac Belt",
-		Head = {
-			name = "Valorous Mask",
-			augments = {"INT+6", '"Dbl.Atk."+1', '"Treasure Hunter"+1', "Accuracy+6 Attack+6", 'Mag. Acc.+16 "Mag.Atk.Bns."+16'}
-		}
+		head = {name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
 	}
 	
 

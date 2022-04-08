@@ -82,10 +82,10 @@ function get_sets()
         hands = "Nyame Gauntlets",
         legs = "Nyame Flanchard",
         feet = "Nyame Sollerets",
-        ring1 = "Varar Ring",
-        ring2 = "Petrov Ring",
+		right_ring="Petrov Ring",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
         back = "Lifestream Cape",
-        waist = "Luminary Sash"
+        waist = "Sailfi Belt +1"
     }
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -98,10 +98,10 @@ function get_sets()
         hands = "Nyame Gauntlets",
         legs = "Nyame Flanchard",
         feet = "Nyame Sollerets",
-        ring1 = "Varar Ring",
-        ring2 = "Petrov Ring",
+		right_ring="Petrov Ring",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
         back = "Lifestream Cape",
-        waist = "Fucho-no-obi"
+		waist="Cetl Belt",
     }
 
     sets.precast.WS["Starlight"] = {left_ear = "Moonshade Earring"}
@@ -443,12 +443,12 @@ function get_sets()
         head = "Nyame Helm",
         body = "Nyame Mail",
         hands = "Nyame Gauntlets",
-        legs = "Nyame Flanchard",
+        legs={ name="Telchine Braconi", augments={'Accuracy+20','"Store TP"+6','Enh. Mag. eff. dur. +9',}},
         feet = "Nyame Sollerets",
-        ring1 = "Varar Ring",
+        ring1 = "Chirich Ring +1",
         ring2 = "Petrov Ring",
         back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
-        waist = "Fucho-no-obi"
+        waist="Cetl Belt",
     }
 end
 
@@ -973,6 +973,10 @@ function precast(spell, arg)
     elseif windower.wc_match(spell.name, "*Step") then
         equip(sets.TP["Accuracy High"])
     end
+	
+	if spell.type == 'WeaponSkill' then
+		equip(sets.precast.WS)
+	end
 end
 
 function midcast(spell, arg)

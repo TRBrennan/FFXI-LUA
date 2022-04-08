@@ -38,15 +38,15 @@ function get_sets()
 		sub = "Sacro Bulwark",
 		ammo = "Homiliary",
 		head = "Vitiation chapeau +3",
-		neck = "Sanctity Necklace",
+		neck = "Bathy Choker +1",
 		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
 		body = "Atrophy Tabard +3",
 		hands = {name = "Merlinic Dastanas", augments = {"DEX+3", 'Mag. Acc.+16 "Mag.Atk.Bns."+16', '"Refresh"+1'}},
 		ring1 = "Defending ring",
-		ring2 = "Chirich Ring +1",
+		ring2 = "Shneddick Ring",
 		waist = "Fucho-no-obi",
-		legs = "Carmine Cuisses +1",
+		legs = "Nyame Flanchard",
 		feet = "Malignance Boots",
 		back = "Moonbeam Cape"
 	}
@@ -65,7 +65,7 @@ function get_sets()
 		left_ear="Etiolation Earring",
 		right_ear="Infused Earring",
 		left_ring="Defending Ring",
-		right_ring="Chirich Ring +1",
+		right_ring="Shneddick Ring",
 		back="Moonbeam Cape",
 	}
 
@@ -202,7 +202,7 @@ function get_sets()
 		waist = "Sacro Cord",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','INT+10','"Mag.Atk.Bns."+2',}},
-		feet = {name = "Merlinic Crackows",augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Fast Cast"+3', "INT+10", '"Mag.Atk.Bns."+1'}	}
+		feet = {name = "Merlinic Crackows",	augments = {'Mag. Acc.+19 "Mag.Atk.Bns."+19', "Magic burst dmg.+9%", "MND+9", "Mag. Acc.+15"}}
 	}
 
 	sets.Nuke.MagicBurst = {

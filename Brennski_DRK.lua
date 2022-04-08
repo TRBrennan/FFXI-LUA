@@ -58,13 +58,13 @@ function get_sets()
 			head=TH_Head,
 			body="Sakpata's Plate",
 			hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
-			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+			legs="Sakpata's Cuisses",
 			feet="Sakpata's Leggings",
 			neck="Coatl Gorget +1",
 			waist="Carrier's Sash",
 			left_ear="Hearty Earring",
 			right_ear="Infused Earring",
-			left_ring="Moonlight Ring",
+			left_ring="Shneddick Ring",
 			right_ring="Defending Ring",
 			back="Moonbeam Cape",}
 						  
@@ -73,12 +73,12 @@ function get_sets()
 			head=WSD_Head,
 			body="Sakpata's Plate",
 			hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
-			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+			legs="Sakpata's Cuisses",
 			feet="Sakpata's Leggings",
 			waist="Carrier's Sash",
 			left_ear="Hearty Earring",
 			right_ear="Infused Earring",
-			left_ring="Moonlight Ring",
+			left_ring="Shneddick Ring",
 			right_ring="Defending Ring",
 			back="Moonbeam Cape",
 			neck="Loricate torque +1",}							
@@ -121,7 +121,7 @@ function get_sets()
 	sets.TP.DT = {ammo="Staunch Tathlum +1",
 			    head="Sakpata's Helm",neck="Abyssal Bead Necklace +2", ear1="Hearty earring", ear2="Telos earring",
 		        body="Sakpata's Plate",hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Moonbeam Ring",
-			    back=DA_Back,waist="Ioskeha belt +1",legs="Sakpata's cuisses",feet="Sakpata's Leggings"}
+			    back=DA_Back,waist="Ioskeha belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 				
 	sets.TP.Hybrid = { 		
 		ammo = "Coiste Bodhar",

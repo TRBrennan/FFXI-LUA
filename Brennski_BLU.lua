@@ -66,9 +66,9 @@ function get_sets()
         body = "Jhakri Robe +2",
         hands = { name = "Herculean Gloves",augments = {'DEX+9', 'Magic dmg. taken -3%', '"Refresh"+1',}},
         ring1 = "Defending ring",
-        ring2 = "Chirich Ring +1",
+        ring2 = "Shneddick Ring",
         waist = "Fucho-no-obi",
-        legs = "Carmine Cuisses +1",
+        legs = "Nyame Flanchard",
         feet = {name = "Herculean Boots",augments = {'CHR+6','STR+14','"Refresh"+1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},
         back = "Moonbeam Cape"
     }
@@ -82,7 +82,7 @@ function get_sets()
         body="Malignance Tabard",
         hands="Malignance Gloves",
         ring1 = "Defending ring",
-        ring2 = "Chirich Ring +1",
+        ring2 = "Shneddick Ring",
         back = "Moonbeam Cape",
         waist = "Carrier's Sash",
         legs = "Malignance Tights",
@@ -90,8 +90,6 @@ function get_sets()
     }
 
     sets.Idle.Cleave = {
-        main = "Terra's Staff",
-        sub = "Umbra strap",
         ammo = "Staunch Tathlum +1",
         head="Malignance Chapeau",
 		neck = "Loricate Torque +1",
@@ -100,10 +98,10 @@ function get_sets()
         body="Malignance Tabard",
 		hands="Malignance Gloves",
         ring1 = "Defending ring",
-        ring2 = "Chirich Ring +1",
+        ring2 = "Shneddick Ring",
         back = "Moonbeam Cape",
         waist = "Carrier's Sash",
-        legs = "Carmine Cuisses +1",
+        legs = "Nyame Flanchard",
         feet="Malignance Boots",
     }
 	
@@ -112,14 +110,14 @@ function get_sets()
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+		legs="Nyame Flanchard",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck={ name="Bathy Choker +1", augments={'Path: A',}},
 		waist="Carrier's Sash",
 		left_ear="Eabani Earring",
 		right_ear="Infused Earring",
 		left_ring="Defending Ring",
-		right_ring="Ilabrat Ring",
+		right_ring="Shneddick Ring",
 		back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},
 	}
 
@@ -135,11 +133,11 @@ function get_sets()
         head = "Adhemar Bonnet +1",
         neck = "Mirage Stole +1",
         ear1 = "Telos Earring",
-        ear2 = "Brutal Earring",
+        ear2 = "Suppanomimi",
         body = "Gleti's Cuirass",
-        hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
-        ring1 = "Ilabrat Ring",
-        ring2 = "Epona's Ring",
+        hands ="Adhemar Wristbands +1",
+		left_ring="Ilabrat Ring",
+		right_ring="Epona's Ring",
         back = { name = "Rosmerta's Cape",augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10', 'Phys. dmg. taken-10%', }},
         waist = "Reiki Yotai",
         legs = "Samnuha Tights",
@@ -175,8 +173,8 @@ function get_sets()
 		waist="Reiki Yotai",
 		left_ear="Telos Earring",
 		right_ear="Suppanomimi",
-		left_ring="Ilabrat Ring",
-		right_ring="Epona's Ring",
+		right_ring="Ilabrat Ring",
+		left_ring="Chirich Ring +1",
 		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
     }
 	
@@ -184,7 +182,7 @@ function get_sets()
 	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
 		body="Malignance Tabard",
-		hands="Malignance Gloves",
+		hands="Adhemar Wristbands +1",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
 		neck={ name="Mirage Stole +1", augments={'Path: A',}},
@@ -269,7 +267,7 @@ function get_sets()
         ear2 = "Moonshade Earring",
         ear1 = "Telos Earring",
         body = "Gleti's Cuirass",
-        hands = { name = "Adhemar Wrist. +1", augments = {'STR+12', 'DEX+12', 'Attack+20',}},
+		hands = "Adhemar Wristbands +1",
         ring1 = "Hetairoi Ring",
         ring2 = "Epona's Ring",
         back = { name = "Rosmerta's Cape",augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10', 'Phys. dmg. taken-10%', }},
@@ -370,7 +368,7 @@ function get_sets()
     sets.BlueMagic.Physical = {
         ammo = "Coiste Bodhar",
         head = "Nyame Helm",
-        body = {name = "Adhemar Jacket +1",augments = {'STR+12', 'DEX+12', 'Attack+20',}},
+        body = "Gelti's Cuirass",
         hands = "Nyame Gauntlets",
         legs = {name = "Samnuha Tights",augments = {'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -600,7 +598,7 @@ function get_sets()
     sets.precast.FC.Standard = {
         ammo = "Sapience Orb",
         head = "Carmine Mask +1",
-        body = "Adhemar Jacket",
+        body = "Adhemar Jacket +1",
         hands = "Leyline Gloves",
         legs = "Aya. Cosciales +2",
         feet = "Carmine Greaves +1",
@@ -758,21 +756,20 @@ function midcast(spell, act)
 function aftercast(spell)
     if player.status == 'Engaged' then
         equip(sets.TP[sets.TP.index[TP_ind]])
-
+		if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Tizona" then
+			equip(sets.TP.DTAccuracy)
+		end
     elseif player.status == 'Engaged' and buffactive['doom'] then
-        equip(set_combine(
-            sets.TP[sets.TP.index[TP_ind]],
-            sets.Utility.Doomed
-        ))
+        equip(set_combine(sets.TP[sets.TP.index[TP_ind]],sets.Utility.Doomed))
+		if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Tizona" then
+			equip(sets_combine(sets.TP.DTAccuracy, sets.Utility.Doomed))
+		end
 
     elseif player.status == 'Engaged' and buffactive['terror'] or buffactive['stun'] or buffactive['sleep'] then
         equip(sets.TP.DT)
 
     elseif buffactive['doom'] then
-        equip(set_combine(
-            sets.Idle[sets.Idle.index[Idle_ind]],
-            sets.Utility.Doomed
-        ))
+        equip(set_combine( sets.Idle[sets.Idle.index[Idle_ind]],sets.Utility.Doomed))
     else
         equip(sets.Idle[sets.Idle.index[Idle_ind]])
     end
@@ -781,6 +778,9 @@ end
 function status_change(new, old)
     if player.status == 'Engaged' then
         equip(sets.TP[sets.TP.index[TP_ind]])
+		if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Tizona" then
+			equip(sets.TP.DTAccuracy)
+		end
     else
         equip(sets.Idle[sets.Idle.index[Idle_ind]])
     end
