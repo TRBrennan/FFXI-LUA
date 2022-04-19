@@ -383,7 +383,8 @@ function get_sets()
 		sub = "Ammurapi shield",
 		ammo="Regal Gem",
 		head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
-		body= "Vitiation tabard +3",
+		--body= "Vitiation tabard +3",
+		body = "Bunzi's Robe",
 		hands ="Kaykaus Cuffs +1",
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
@@ -699,7 +700,7 @@ function get_sets()
 	
 	sets.WS.Light ={
 		ammo = "Pemphredo Tathlum",
-		head = "Vitiation chapeau +3",
+		head="Nyame Helm",
 		neck = "Duelist's torque +2",
 		ear2 = "Malignance Earring",
 		ear1 = "Regal Earring",
@@ -716,7 +717,7 @@ function get_sets()
 	}
 	
 	sets.WS.Hybrid ={
-	    head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+	    head="Nyame Helm",
 		body="Nyame Mail",
 		hands="Nyame Gauntlets",
 		legs="Nyame Flanchard",

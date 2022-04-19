@@ -142,7 +142,7 @@ function get_sets()
         sets.SanguineBlade = {ammo ="Chrono bullet",
                                  head = "Nyame Helm",neck="Commodore Charm +1",
 								 rear="Friomisi earring", ear1="Novio Earring",
-                                 body="Lanun Frac +3",hands = "Nyame Gauntlets", ring1="Dignir Ring", ring2 ='Fenrir Ring', waist ="Eschan Stone",
+                                 body="Lanun Frac +3",hands = "Nyame Gauntlets", ring1="Dignir Ring", ring2 ='Fenrir Ring', waist ="Orpheus's Sash",
                                  back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 								Legs = "Nyame Flanchard",feet="Lanun Bottes +3" }
 								 
@@ -164,9 +164,9 @@ function get_sets()
 		sets.Leaden ={ ammo="Orichalc. Bullet", 
 						head="Pixie Hairpin +1",
 							neck="Commodore Charm +1",  ear2="Friomisi earring", ear1="Moonshade Earring",
-							body="Lanun Frac +3",  hands="Nyame Gauntlets", ring1="Dingir Ring", ring2 ='Archon Ring', waist ="Eschan Stone",
+							body="Lanun Frac +3",  hands="Nyame Gauntlets", ring1="Dingir Ring", ring2 ='Archon Ring', waist ="Orpheus's Sash",
 							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
-							Leg = "Nyame Flanchard", 
+							Legs = "Nyame Flanchard", 
 							feet="Lanun Bottes +3"}
 							
 		sets.WildFire = {}
@@ -177,7 +177,7 @@ function get_sets()
 		sets.WildFire = {ammo="Orichalc. Bullet", 
 							Head = "Nyame Helm",
 							neck="Commodore Charm +1",   ear2="Friomisi earring", ear1="Moonshade Earring",
-							body="Lanun Frac +3",hands="Nyame Gauntlets", ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Eschan Stone",
+							body="Lanun Frac +3",hands="Nyame Gauntlets", ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Orpheus's Sash",
 							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 							Leg = "Nyame Flanchard",
 							feet="Lanun Bottes +3"}
@@ -251,7 +251,7 @@ function get_sets()
        
         sets.JA.QuickDraw = {ammo ="Animikii Bullet", head ="Nyame Helm",
 							neck="Commodore Charm +1",   ear2="Friomisi earring", ear1="Crep. Earring",
-							body="Lanun Frac +3",    hands="Nyame Gauntlets", ring1="Acumen Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
+							body="Lanun Frac +3",    hands="Nyame Gauntlets", ring1="Acumen Ring", ring2 ='Dingir Ring', waist ="Orpheus's Sash",
 							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 							Legs = "Nyame Flanchard", 
 							feet="Lanun Bottes +3"}
@@ -311,15 +311,9 @@ function precast(spell)
                 equip(sets.VorpalBlade)
 		elseif spell.english == 'Sanguine Blade' or spell.english =='Aeolian Edge' then
                 equip(sets.Leaden)
-                if spell.element == world.day_element or spell.element == world.weather_element then
-                    equip(sets.Utility.Weather)
-                end
         elseif spell.english == 'Leaden Salute' then
 			if spell.target.distance <= 21.5 then
 				equip(sets.Leaden)
-				if spell.element == world.day_element or spell.element == world.weather_element then
-                    equip(sets.Utility.Weather)
-                end
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -327,9 +321,6 @@ function precast(spell)
 		elseif spell.english == 'Wildfire' then
 			if spell.target.distance <= 21.5 then
 				equip(sets.WildFire)
-					if spell.element == world.day_element or spell.element == world.weather_element then
-						equip(sets.Utility.Weather)
-                       end
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")

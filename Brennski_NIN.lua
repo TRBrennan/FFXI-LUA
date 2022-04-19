@@ -339,6 +339,12 @@ function get_sets()
 	sets.lightnuke = {
 		left_ring = "Weatherspoon Ring"
 	}
+	
+	sets.TH ={
+		hands = "Volte Bracers", 
+		waist = "Chaac Belt", 
+		legs = "Volte Hose"
+	}
 
 	--Precast Sets--
 	sets.snapshot = {
@@ -375,7 +381,7 @@ function precast(spell)
 		if player.tp >= 1000 then
 			if spell.english == "Blade: Shun" or spell.english == "Blade: Jin" or spell.english == "Blade: Ku" then
 				equip(sets.MultiHit[sets.WS.index[WS_ind]])
-			elseif spell.english == "Blade: Hi" or spell.english == "Blade: Ten" or spell.english == "Blade: Kamu"  then
+			elseif spell.english == "Blade: Hi" or spell.english == "Blade: Ten" or spell.english == "Blade: Kamu" or spell.english == "Savage Blade" then
 				equip(sets.OneHit[sets.WS.index[WS_ind]])
 			elseif spell.english == "Blade: Chi" or spell.english == "Blade: Teki" or spell.english == "Blade: Yu" or spell.english == "Aeolian Edge" or spell.english == "Blade: To" or spell.english == "Tachi: Jinpu"  then
 				equip(sets.WS.Hybrid)				
@@ -415,12 +421,7 @@ end
 
 function aftercast(spell)
 	if player.status == "Engaged" then
-		equip(
-			set_combine(
-				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]],
-				sets.Weapon_melee[sets.Weapon_melee.index[Wm_ind]]
-			)
-		)
+		equip( sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]])
 	else
 		equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]]))
 	end
@@ -428,12 +429,7 @@ end
 
 function status_change(new, old)
 	if new == "Engaged" then
-		equip(
-			set_combine(
-				sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]],
-				sets.Weapon_melee[sets.Weapon_melee.index[Wm_ind]]
-			)
-		)
+		equip( sets.TP[sets.TP.index[TP_ind]][sets.Haste.index[Haste_ind]])
 	else
 		equip(set_combine(sets.Idle[sets.Idle.index[Idle_ind]]))
 	end

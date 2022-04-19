@@ -175,7 +175,7 @@ function get_sets()
 		body="Brioso Justau. +2",
 		hands="Brioso Cuffs +2",
 		legs="Brioso Cannions +2",
-		feet="Brioso Slippers +2",
+		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
 		waist="Luminary Sash",
 		left_ear="Regal Earring",
@@ -192,7 +192,7 @@ function get_sets()
 		body="Brioso Justau. +2",
 		hands="Brioso Cuffs +2",
 		legs="Brioso Cannions +2",
-		feet="Brioso Slippers +2",
+		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
 		waist="Luminary Sash",
 		left_ear="Regal Earring",
@@ -209,7 +209,7 @@ function get_sets()
 		body="Fili Hongreline +1",
 		hands="Fili Manchettes +1",
 		legs="Inyanga Shalwar +2",
-		feet="Brioso Slippers +2",
+		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
 		waist="Carrier's Sash",
 		left_ear="Hearty Earring",
@@ -242,7 +242,7 @@ function get_sets()
 		body="Fili Hongreline +1",
 		hands="Fili Manchettes +1",
 		legs="Inyanga Shalwar +2",
-		feet="Brioso Slippers +2",
+		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
 		waist="Carrier's Sash",
 		left_ear="Hearty Earring",
@@ -258,7 +258,7 @@ function get_sets()
 		body="Brioso Justau. +2",
 		hands="Inyan. Dastanas +2",
 		legs="Inyanga Shalwar +2",
-		feet="Brioso Slippers +2",
+		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
 		waist="Luminary Sash",
 		left_ear="Regal Earring",
@@ -277,7 +277,7 @@ function get_sets()
 		body="Fili Hongreline +1",
 		hands="Fili Manchettes +1",
 		legs="Inyanga Shalwar +2",
-		feet="Brioso Slippers +2",
+		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
 		waist="Carrier's Sash",
 		left_ear="Hearty Earring",
@@ -395,13 +395,13 @@ function precast(spell)
                 equip(sets.precast.FC.Song)		
                 if buffactive["Nightingale"] then
 		            if spell.english=="Honor March" then
-				        equip(set_combine (sets.midcast.Buff,sets.midcast.Marsyas))	
+				        equip(set_combine (sets.precast.FC.Song,sets.midcast.Marsyas))	
 					else
                         equip_song_gear(spell)					
 					end	
 			    end	
 				if spell.english=="Honor March" then
-				   equip(set_combine (sets.midcast.Buff,sets.midcast.Marsyas))	
+				   equip(set_combine (sets.precast.FC.Song,sets.midcast.Marsyas))	
 				end
         elseif spell.action_type=="Magic" then
                 equip(sets.precast.FC.Normal)
