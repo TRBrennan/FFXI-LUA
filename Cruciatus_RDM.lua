@@ -38,8 +38,8 @@ function get_sets()
 			name = "Chironic Gloves",
 			augments = {"Magic burst dmg.+1%", "DEX+2", "Damage taken-4%", "Accuracy+6 Attack+6", 'Mag. Acc.+7 "Mag.Atk.Bns."+7'}
 		},
-		legs = "Ayanmo cosciales +1",
-		feet = "Aya. Gambieras +1",
+		legs = "Ayanmo cosciales +2",
+		feet = "Aya. Gambieras +2",
 		neck = "Sanctity Necklace",
 		waist = "Fucho-no-Obi",
 		left_ear = "Lifestorm Earring",
@@ -81,14 +81,14 @@ function get_sets()
 		neck = "Sanctity Necklace",
 		ear1 = "Sherida Earring",
 		ear2 = "Suppanomimi",
-		head = "Ayanmo Zucchetto +1",
+		head = "Ayanmo Zucchetto +2",
 		body = "Jhakri Robe +2",
 		hands = "Ayanmo Manopolas +1",
 		ring2 = "Petrov Ring",
 		ring1 = "Defending ring",
 		waist = "Fucho-no-obi",
-		legs = "Ayanmo cosciales +1",
-		feet = "Ayanmo Gambieras +1",
+		legs = "Ayanmo cosciales +2",
+		feet = "Ayanmo Gambieras +2",
 		back = "Moonbeam Cape"
 	}
 	sets.MeleeMode = {}

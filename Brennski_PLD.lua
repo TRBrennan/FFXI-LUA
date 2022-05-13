@@ -354,6 +354,22 @@ function get_sets()
 	}
 
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
+	
+	sets.Utility.FrightfulRoar ={
+		ammo="Pemphredo Tathlum",
+		head={ name="Sakpata's Helm", augments={'Path: A',}},
+		body={ name="Sakpata's Plate", augments={'Path: A',}},
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+		feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+		neck="Sanctity Necklace",
+		waist="Eschan Stone",
+		left_ear="Crep. Earring",
+		right_ear="Digni. Earring",
+		left_ring="Stikini Ring +1",
+		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		back="Izdubar Mantle",
+	}
 
 	--Job Ability Sets--
 
@@ -488,6 +504,9 @@ function midcast(spell, act)
 	end
 	if spell.skill == "Blue Magic" then
 		equip(sets.Magic.SIRD)
+		if spell.english == "Frightful Roar" then
+			equip(sets.Utility.FrightfulRoar)
+		end
 	end
 end
 

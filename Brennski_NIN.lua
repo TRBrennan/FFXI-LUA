@@ -101,7 +101,7 @@ function get_sets()
 		neck="Ninja Nodowa +2",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Telos Earring",
-		right_ear="Brutal Earring",
+		right_ear="Cessance Earring",
 		left_ring="Gere Ring",
 		right_ring="Ilabrat Ring",
 		back = DA_Back
@@ -150,7 +150,7 @@ function get_sets()
 		neck="Ninja Nodowa +2",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Telos Earring",
-		right_ear="Brutal Earring",
+		right_ear="Cessance Earring",
 		left_ring="Gere Ring",
 		right_ring="Chirich Ring +1",
 		back=DA_Back
@@ -186,12 +186,12 @@ function get_sets()
 		llegs="Mpaca's Hose",
 		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
 		left_ear="Telos Earring",
-		right_ear="Brutal Earring",
+		right_ear="Cessance Earring",
 		left_ring="Gere Ring",
 		right_ring="Ilabrat Ring",
 		back = DA_Back,		
-		waist = "Ninja Nodowa +2",
-		neck = "Fotia Gorget",
+		neck = "Ninja Nodowa +2",
+		waist = "Fotia Belt",
 		
 	}
 

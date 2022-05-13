@@ -26,7 +26,7 @@ function get_sets()
 	WSD_Body = "Nyame Mail"
 	WSD_Head = "Nyame Helm"
 	TP_Bonus_Head = "Mpaca's Cap"
-	WSD_feet={ name="Nyame Sollerets", augments={'Path: B',}}
+	WSD_Feet={ name="Nyame Sollerets", augments={'Path: B',}}
 	TP_Cape ={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
 	WSD_Cape ={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 
@@ -38,7 +38,7 @@ function get_sets()
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
-	    ammo="Staunch Tathlum +1",
+	    ammo="Aurgelmir Orb +1",
 		head={ name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
 		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -77,7 +77,7 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		ammo="Aurgelmir Orb +1",
 		head="Flam. Zucchetto +2",
 		body="Mpaca's Doublet",
 		neck = "Samurai's nodowa +2",
@@ -93,7 +93,7 @@ function get_sets()
 	}
 
 	sets.TP.PDT = {
-		ammo = "Coiste Bodhar",
+		ammo = "Aurgelmir Orb +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Samurai's nodowa +2",
 		ear1 = "Schere Earring",
@@ -109,7 +109,7 @@ function get_sets()
 	}
 
 	sets.TP.Meva = {
-		ammo = "Coiste Bodhar",
+		ammo = "Aurgelmir Orb +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Samurai's nodowa +2",
 		ear1 = "Dignitary's Earring",
@@ -125,7 +125,7 @@ function get_sets()
 	}
 
 	sets.TP.Hybrid = {
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		ammo="Aurgelmir Orb +1",
 		head="Flam. Zucchetto +2",
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
 		hands="Wakido Kote +3",

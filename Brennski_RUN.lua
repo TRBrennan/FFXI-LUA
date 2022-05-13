@@ -426,6 +426,21 @@ function get_sets()
 		feet = "Erilaz Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
+	
+	sets.Utility.FrightfulRoar = {
+	    ammo="Pemphredo Tathlum",
+		body={ name="Cohort Cloak +1", augments={'Path: A',}},
+		hands="Aya. Manopolas +2",
+		legs="Aya. Cosciales +2",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Eschan Stone",
+		left_ear="Digni. Earring",
+		right_ear="Crep. Earring",
+		left_ring="Stikini Ring +1",
+		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		back="Izdubar Mantle",
+	}
 
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", left_ring= "Eshmun's Ring"}
 
@@ -551,11 +566,7 @@ function precast(spell)
 		equip(sets.JA.Lunge)
 	elseif spell.english == "Vallation" or spell.english == "Valiance" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Vallation))
-	elseif
-		spell.english == "Flash" or spell.skill == "Enfeebling Magic" or spell.english == "Foil" or
-			spell.skill == "Dark Magic" or
-			spell.skill == "Blue Magic"
-	 then
+	elseif	spell.english == "Flash" or spell.skill == "Enfeebling Magic" or spell.english == "Foil" or spell.skill == "Dark Magic" or spell.skill == "Blue Magic" then
 		equip(sets.precast.FC.Enmity)
 	elseif
 		spell.english == "Tellus" or spell.english == "Lux" or spell.english == "Gelus" or spell.english == "Tenebrae" or
@@ -654,15 +665,14 @@ function midcast(spell, act)
 	if spell.english == "Utsusemi: Ni" then
 		equip(sets.Utility.SID)
 	end
-	if
-		spell.english == "Flash" or spell.english == "Crusade" or spell.english == "Foil"or
-			spell.skill == "Enfeebling Magic" or
-			spell.skill == "Dark Magic"
-	 then
+	if spell.english == "Flash" or spell.english == "Crusade" or spell.english == "Foil" or spell.skill == "Enfeebling Magic" or spell.skill == "Dark Magic" then
 		equip(sets.Utility.Enmity)
 	end
-	if  spell.skill == "Blue Magic" then
+	if spell.skill == "Blue Magic" then
 		equip(sets.Utility.SIRD)
+		if spell.english == "Frightful Roar" then
+			equip(sets.Utility.FrightfulRoar)
+		end
 	end
 end
 

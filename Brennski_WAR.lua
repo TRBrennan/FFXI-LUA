@@ -46,7 +46,8 @@ function get_sets()
 	WSD_Body = "Nyame Mail"
 
 	sets.Idle.Standard = {
-		ammo = "Staunch Tathlum +1",
+		--ammo = "Staunch Tathlum +1",
+		ammo ="Aurgelmir Orb +1",
 		head = TH_Head,
 		neck = "Bathy Choker +1",
 		ear1 = "Eabani earring",
@@ -86,7 +87,8 @@ function get_sets()
 	TP_ind = 1
 	
 	sets.TP.Standard ={
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		--ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		ammo ="Aurgelmir Orb +1",
 		head={ name="Sakpata's Helm", augments={'Path: A',}},
 		body={ name="Sakpata's Plate", augments={'Path: A',}},
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
@@ -99,7 +101,7 @@ function get_sets()
 		left_ring="Niqmaddu Ring",
 		--right_ring="Petrov Ring",
 		right_ring = "Moonlight Ring",
-		back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+		back=DA_Back
 	}
 
 	-- sets.TP.Standard = {
@@ -141,7 +143,8 @@ function get_sets()
 	}
 
 	sets.TP.Chango ={
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		--ammo = "Staunch Tathlum +1",
+		ammo ="Aurgelmir Orb +1",
 		head={ name="Sakpata's Helm", augments={'Path: A',}},
 		body={ name="Sakpata's Plate", augments={'Path: A',}},
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
@@ -154,7 +157,7 @@ function get_sets()
 		left_ring="Niqmaddu Ring",
 		--right_ring="Petrov Ring",
 		right_ring = "Moonlight Ring",
-		back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+		back = DA_Back,
 	}
 	-- sets.TP.Chango = {
 		-- ammo = "Coiste Bodhar",
@@ -342,6 +345,22 @@ function get_sets()
 		right_ear={ name="Schere Earring", augments={'Path: A',}},
 		left_ring="Niqmaddu Ring",
 		right_ring="Petrov Ring",
+		back= DA_Back
+	}
+	
+	sets.TP.Fencer = {
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Hjarrandi Helm",
+		body={ name="Sakpata's Plate", augments={'Path: A',}},
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Pumm. Cuisses +3",
+		feet="Pumm. Calligae +3",
+		neck={ name="Vim Torque +1", augments={'Path: A',}},
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Cessance Earring",
+		right_ear={ name="Schere Earring", augments={'Path: A',}},
+		left_ring="Niqmaddu Ring",
+		right_ring="Moonlight Ring",
 		back= DA_Back
 	}
 

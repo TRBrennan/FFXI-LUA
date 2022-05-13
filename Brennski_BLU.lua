@@ -131,7 +131,7 @@ function get_sets()
     sets.TP.Standard = {
         ammo = "Coiste Bodhar",
         head = "Adhemar Bonnet +1",
-        neck = "Mirage Stole +1",
+        neck = "Mirage Stole +2",
         ear1 = "Telos Earring",
         ear2 = "Suppanomimi",
         body = "Gleti's Cuirass",
@@ -163,13 +163,13 @@ function get_sets()
     
 
     sets.TP.DTAccuracy = {
-        ammo="Coiste Bodhar",
+        ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
 		legs="Malignance Tights",
 		feet="Malignance Boots",
-		neck={ name="Mirage Stole +1", augments={'Path: A',}},
+		neck={ name="Mirage Stole +2", augments={'Path: A',}},
 		waist="Reiki Yotai",
 		left_ear="Telos Earring",
 		right_ear="Suppanomimi",
@@ -185,7 +185,7 @@ function get_sets()
 		hands="Adhemar Wristbands +1",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
-		neck={ name="Mirage Stole +1", augments={'Path: A',}},
+		neck={ name="Mirage Stole +2", augments={'Path: A',}},
 		waist="Reiki Yotai",
 		left_ear="Digni. Earring",
 		right_ear="Telos Earring",
@@ -242,11 +242,11 @@ function get_sets()
     sets.SavageBlade.Attack = {
         ammo = "Crepuscular Pebble",
 		Head = "Nyame Helm",
-        neck = "Mirage Stole +1",
+        neck = "Mirage Stole +2",
         ear1 = "Ishvara Earring",
         ear2 = "Moonshade Earring",
         body = "Nyame Mail",
-        hands = "Nyame Gauntlets",
+        hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
         ring1 = "Ilabrat Ring",
         ring2 = "Petrov Ring",
         back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
@@ -263,7 +263,7 @@ function get_sets()
     sets.ChantDuCygne.Attack = {
         ammo = "Crepuscular Pebble",
         head = "Adhemar Bonnet +1",
-        neck = "Mirage Stole +1",
+        neck = "Mirage Stole +2",
         ear2 = "Moonshade Earring",
         ear1 = "Telos Earring",
         body = "Gleti's Cuirass",
@@ -279,7 +279,7 @@ function get_sets()
     sets.SanguineBlade = {
         ammo = "Pemphredo Tathlum",
         head = "Pixie Hairpin +1",
-        neck = "Mirage Stole +1",
+        neck = "Mirage Stole +2",
         ear2 = "Friomisi earring",
         ear1 = "Regal Earring",
         body = "Nyame Mail",
@@ -295,7 +295,7 @@ function get_sets()
     sets.CircleBlade = {
         ammo = "Crepuscular Pebble",
 		Head = "Nyame Helm",
-        neck = "Mirage Stole +1",
+        neck = "Mirage Stole +2",
         ear1 = "Moonshade Earring",
         ear2 = "Ishvara Earring",
         body = "Nyame Mail",
@@ -311,11 +311,11 @@ function get_sets()
     sets.Expiacion = {
         ammo = "Crepuscular Pebble",
 		Head = "Nyame Helm",
-        neck = "Mirage Stole +1",
+        neck = "Mirage Stole +2",
         ear1 = "Moonshade Earring",
         ear2 = "Ishvara Earring",
         body = "Nyame Mail",
-		hands = "Nyame Gauntlets",
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
         ring1 = "Ilabrat Ring",
         ring2 = "Petrov Ring",
         back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
@@ -348,7 +348,7 @@ function get_sets()
     sets.FlashNova = {
         ammo = "Pemphredo Tathlum",
         Head = "Jhakri Coronal +1",
-        neck = "Mirage Stole +1",
+        neck = "Mirage Stole +2",
         rear = "Friomisi earring",
         ear1 = "Novio Earring",
         body = "Gleti's Cuirass",
@@ -372,7 +372,7 @@ function get_sets()
         hands = "Nyame Gauntlets",
         legs = {name = "Samnuha Tights",augments = {'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-        neck = "Mirage Stole +1",
+        neck = "Mirage Stole +2",
         waist = "Sailfi Belt +1",
         left_ear = "Digni. Earring",
         right_ear = "Crep. Earring",
@@ -389,7 +389,7 @@ function get_sets()
         hands = "Amalric Gages +1",
         legs="Luhlaza Shalwar +3",
         feet = "Amalric Nails +1",
-        neck = "Mirage Stole +1",
+        neck = "Mirage Stole +2",
         waist="Orpheus's Sash",
         left_ear = "Regal Earring",
         right_ear = "Friomisi Earring",
@@ -409,7 +409,7 @@ function get_sets()
         back={ name="Aurist's Cape +1", augments={'Path: A',}},
         hands = "Nyame Gauntlets",
 		feet="Malignance Boots",
-        neck = "Mirage Stole +1"
+        neck = "Mirage Stole +2"
     }
 
     sets.BlueMagic.Debuff = {
@@ -420,9 +420,9 @@ function get_sets()
 		hands="Malignance Gloves",
 		legs="Assim. Shalwar +3",
 		feet="Malignance Boots",
-		neck={ name="Mirage Stole +1", augments={'Path: A',}},
+		neck={ name="Mirage Stole +2", augments={'Path: A',}},
 		waist="Sacro Cord",
-		left_ear="Digni. Earring",
+		left_ear="Crep. Earring",
 		right_ear="Regal Earring",
 		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		right_ring="Stikini Ring +1",
@@ -434,7 +434,7 @@ function get_sets()
         head = "Luhlaza Keffiyeh +1",
         body = "Assimilator's Jubbah +3",
 		hands = "Rawhide Gloves",
-        neck = "Mirage Stole +1",
+        neck = "Mirage Stole +2",
         legs = "Hashishin tayt +1",
         back = "Cornflower Cape",
 		ear1 = "Eabani Earring",
@@ -481,7 +481,7 @@ function get_sets()
 		hands="Malignance Gloves",
 		legs="Assim. Shalwar +3",
 		feet="Malignance Boots",
-		neck={ name="Mirage Stole +1", augments={'Path: A',}},
+		neck={ name="Mirage Stole +2", augments={'Path: A',}},
 		waist="Sacro Cord",
 		left_ear="Regal Earring",
 		right_ear="Digni. Earring",
@@ -509,7 +509,7 @@ function get_sets()
     sets.BlueMagic.Dark = {
         ammo = "Pemphredo Tathlum",
         head = "Pixie Hairpin +1",
-        neck = "Mirage Stole +1",
+        neck = "Mirage Stole +2",
         ear2 = "Friomisi earring",
         ear1 = "Regal Earring",
         body = "Jhakri Robe +2",
@@ -529,7 +529,7 @@ function get_sets()
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck={ name="Mirage Stole +1", augments={'Path: A',}},
+		neck={ name="Mirage Stole +2", augments={'Path: A',}},
 		waist="Sacro Cord",
 		left_ear="Crep. Earring",
 		right_ear="Digni. Earring",
@@ -650,7 +650,7 @@ function precast(spell)
     elseif spell.english == 'Vorpal Blade' then
         equip(sets.ChantDuCygne[sets.ChantDuCygne.index[ChantDuCygne_ind]])
     elseif spell.english == 'Sanguine Blade' then
-        equip(sets.BlueMagic.Dark)
+        equip(SanguineBlade)
         if spell.element == world.day_element or spell.element == world.weather_element then equip(sets.Utility.Weather) end
     elseif spell.english == 'Box Step' then
         equip(sets.Utility.Steps)

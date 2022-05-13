@@ -2,10 +2,8 @@ enspells = S {"Enfire", "Enfire II", "Enstone", "Enstone II", "Enaero", "Enaero 
 gainspells = S {"Gain-STR", "Gain-DEX", "Gain-MND", "Gain-CHR", "Gain-INT", "Gain-AGI", "Gain-VIT"}
 
 function get_sets()
-	send_command("bind f9 gs c toggle Nuke set")
 	send_command("bind f10 gs c toggle Idle set")
-	send_command("bind f11 gs c toggle TP set")
-	send_command("bind f12 gs c toggle Enfeebling Set")
+	send_command("bind f9 gs c toggle TP set")
 	send_command("bind ^f9 gs c equip TP set")
 	send_command("bind ^f10 gs c equip DT set")
 
@@ -72,12 +70,12 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "EnSpell", "LowHaste", "LowHasteEnSpell", "EnSpell1Damage", "SubtleBlow"}
-	--1=Standard, 2=EnSpell, 3=LowHaste, 4=LowHastEnSpell, 5=EnSpell1Damage,6 =SubtleBlow--
+	sets.TP.index = {"Standard", "EnSpell"}
+	--1=Standard, 2=EnSpell--
 
 	TP_ind = 1
 	sets.TP.Standard = {
-    ammo="Aurgelmir Orb +1",
+    ammo="Coiste Bodhar",
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
@@ -93,8 +91,7 @@ function get_sets()
 	}
 
 	sets.TP.EnSpell = {
-	--ammo="Regal Gem",
-	ammo ="Aurgelmir Orb +1",
+	ammo="Regal Gem",
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Aya. Manopolas +2",
@@ -109,71 +106,7 @@ function get_sets()
     back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 	}
 
-	sets.TP.LowHaste ={    
-	ammo="Coiste Bodhar",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Aya. Manopolas +2",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
-    neck="Lissome Necklace",
-    waist = "Reiki Yotai",
-    left_ear="Sherida Earring",
-    right_ear="Telos Earring",
-    left_ring="Hetairoi Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
-	}
-	
-	sets.TP.LowHasteEnSpell = {
-	ammo="Regal Gem",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Aya. Manopolas +2",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
-    neck="Duelist's torque +2",
-	waist = "Orpheus's Sash",
-    left_ear="Sherida Earring",
-    right_ear="Telos Earring",
-    left_ring="Hetairoi Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
-	}
-	
-	sets.TP.EnSpell1Damage = {
-	main ="Trainee's Needle",
-	sub="Edgeless Knife",
-	ammo="Regal Gem",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Aya. Manopolas +2",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
-    neck="Duelist's torque +2",
-    waist="Orpheus's Sash",
-    left_ear="Sherida Earring",
-    right_ear="Telos Earring",
-    left_ring="Hetairoi Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
-	}
-	
-	sets.TP.SubtleBlow = {
-		ammo="Coiste Bodhar",
-		head="Malignance Chapeau",
-		body="Malignance Tabard",
-		hands="Malignance Gloves",
-		legs="Malignance Tights",
-		feet="Malignance Boots",
-		neck = "Bathy Choker +1",
-		waist = "Sailfi Belt +1",
-		left_ear="Sherida Earring",
-		right_ear="Telos Earring",
-		left_ring="Chirich Ring",
-		right_ring="Chirich Ring +1",
-		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},	
-	}
+
 
 
 	sets.MeleeMode = {}
@@ -183,30 +116,7 @@ function get_sets()
 	--Nuke Sets---
 	sets.Nuke = {}
 
-	sets.Nuke.index = {"Standard", "MagicBurst"}
-	--1=Standard, 2= Magic Burst'--
-	Nuke_ind = 1
-
 	sets.Nuke.Standard = {
-		main="Bunzi's Rod",
-		sub="Ammurapi Shield",
-		ammo = "Pemphredo Tathlum",
-		head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
-		neck = "Sanctity Necklace",
-		ear2 = "Malignance Earring",
-		ear1 = "Regal Earring",
-		--body = { name = "Merlinic Jubbah", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
-		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+10%','CHR+4','Mag. Acc.+2','"Mag.Atk.Bns."+13',}},
-		hands = "Amalric Gages +1",
-		ring1 = "Freke Ring",
-		ring2 = "Acumen Ring",
-		waist = "Sacro Cord",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
-		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','INT+10','"Mag.Atk.Bns."+2',}},
-		feet = {name = "Merlinic Crackows",	augments = {'Mag. Acc.+19 "Mag.Atk.Bns."+19', "Magic burst dmg.+9%", "MND+9", "Mag. Acc.+15"}}
-	}
-
-	sets.Nuke.MagicBurst = {
 		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
 		ammo = "Pemphredo Tathlum",
@@ -281,32 +191,11 @@ function get_sets()
 		back = "Ghostfyre Cape",
 	}
 
-	--Enfeebling Sets--
-	sets.Enfeebling = {}
 
-	sets.Enfeebling.index = {"Acc", "Pot"}
-	--1=Acc, 2= Pot'--
-	Enfeebling_ind = 1
-
-	sets.Enfeebling.Acc = {
-		main="Daybreak",
-		sub = "Ammurapi shield",
-		ammo = "Regal Gem",
-		head = "Vitiation chapeau +3",
-		neck = "Duelist's torque +2",
-		ear2 = "Snotra Earring",
-		ear1 = "Regal Earring",
-		body = "Atrophy Tabard +3",
-		hands = "Kaykaus Cuffs +1",
-		ring1 = "Stikini ring +1",
-		ring2 = "Metamor. Ring +1",
-		waist = "Obstin. Sash",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
-		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
-		feet = "Vitiation Boots +3",
-	}
-
-	sets.Enfeebling.Pot = {
+	--Magic Sets--
+	sets.Magic = {}
+	
+	sets.Magic.EnfeeblePot ={
 		main="Daybreak",
 		sub = "Ammurapi shield",
 		ammo = "Regal Gem",
@@ -323,9 +212,6 @@ function get_sets()
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet = "Vitiation Boots +3",
 	}
-
-	--Magic Sets--
-	sets.Magic = {}
 	
 	sets.Magic.EnfeebleAcc = {
 	    main="Daybreak",
@@ -672,7 +558,7 @@ function get_sets()
 		--body = "Vitiation tabard +3",
 		body="Nyame Mail",
 		hands = "Nyame Gauntlets",
-		ring1 ="Metamor. Ring +1",
+		ring1 = "Petrov Ring",
 		ring2 = "Ilabrat Ring",
 		back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 		waist = "Sailfi Belt +1",
@@ -703,12 +589,12 @@ function get_sets()
 		ammo = "Pemphredo Tathlum",
 		head="Nyame Helm",
 		neck = "Duelist's torque +2",
-		ear2 = "Regal Earring",
-		ear1 = "Moonshade Earring",
+		ear2 = "Malignance Earring",
+		ear1 = "Regal Earring",
+		--body = { name = "Merlinic Jubbah", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
 		body="Nyame Mail",
 		hands = "Nyame Gauntlets",
-		--ring1 = "Acumen Ring",
-		ring1 ="Metamor. Ring +1",
+		ring1 = "Acumen Ring",
 		ring2 = "Freke Ring",
 		waist = "Orpheus's Sash",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
@@ -858,7 +744,7 @@ function midcast(spell, act)
 	end
 	
 	if spell.skill == "Enfeebling Magic" then
-		equip(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]])
+		equip(sets.Magic.EnfeebleAcc)
 			if spell.english == "Sleep" or spell.english == "Sleep II" or spell.english == "Sleepga" or spell.english == "Sleepga II" or spell.english == "Break" or spell.english == "Bind" or spell.english == "Dispel" then
 				equip(sets.Magic.INTEnfeebleAcc)
 				--send_command ("@input /echo INT Enfeeble Acc set")
@@ -871,7 +757,7 @@ function midcast(spell, act)
 				send_command ("@input /echo Frazzle 3/Distract 3 set")
 			end
 		if buffactive["Saboteur"] then
-			equip(set_combine(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]], sets.JA.Sab))
+			equip(set_combine(sets.Magic.EnfeeblePot, sets.JA.Sab))
 			if spell.english == "Sleep" or spell.english == "Sleep II" or spell.english == "Sleepga" or spell.english == "Sleepga II" or spell.english == "Break" or spell.english == "Bind" or spell.english == "Dispel" then
 				equip(sets.Magic.INTEnfeebleAcc)
 				--send_command ("@input /echo INT Enfeeble Acc set")
@@ -891,12 +777,12 @@ function midcast(spell, act)
 	end	
 
 	if spell.skill == "Elemental Magic" then
-		equip(sets.Nuke[sets.Nuke.index[Nuke_ind]])
+		equip(sets.Nuke.Standard)
 		if spell.element == world.day_element or spell.element == world.weather_element then
-			equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]], sets.Utility.Weather))
+			equip(set_combine(equip(sets.Nuke.Standard), sets.Utility.Weather))
 		end
 		if spell.english == "Aero" then
-			equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]], sets.Utility.TH))
+			equip(set_combine(equip(sets.Nuke.Standard), sets.Utility.TH))
 		end
 	end
 
