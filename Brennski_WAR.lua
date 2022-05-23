@@ -283,7 +283,7 @@ function get_sets()
 	}
 
 	sets.TP.DW = {
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		ammo ="Aurgelmir Orb +1",
 		head={ name="Sakpata's Helm", augments={'Path: A',}},
 		body={ name="Sakpata's Plate", augments={'Path: A',}},
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},
@@ -299,7 +299,8 @@ function get_sets()
 	}
 	
 	sets.TP.Hybrid = {
-		ammo = "Coiste Bodhar",
+		--ammo = "Coiste Bodhar",
+		ammo ="Aurgelmir Orb +1",
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},

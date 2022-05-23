@@ -133,7 +133,9 @@ function get_sets()
 		
 		
 	sets.TP = {}
-    sets.TP = {     
+    sets.TP = {
+		main="Kaja Sword",
+		sub="Odium",	
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+2','Quadruple Attack +3',}},
 		head="Aya. Zucchetto +2",
 		body="Ayanmo Corazza +2",
@@ -205,6 +207,8 @@ function get_sets()
 
     
     sets.midcast.Buff = {
+	   main={ name="Kali", augments={'DMG:+15','CHR+15','Mag. Acc.+15',}},
+		sub="Kali",
 		head="Fili Calot +1",
 		body="Fili Hongreline +1",
 		hands="Fili Manchettes +1",
@@ -237,6 +241,8 @@ function get_sets()
 		
 		
 	sets.midcast.Marsyas = {
+		main={ name="Kali", augments={'DMG:+15','CHR+15','Mag. Acc.+15',}},
+		sub="Kali",
 		range="Marsyas",
 		head="Fili Calot +1",
 		body="Fili Hongreline +1",
@@ -273,6 +279,8 @@ function get_sets()
     sets.midcast.GBuff = {range="Gjallarhorn",ammo=empty}
 	   
     sets.midcast.Duration = {
+		main={ name="Kali", augments={'DMG:+15','CHR+15','Mag. Acc.+15',}},
+		sub="Kali",
 		head="Fili Calot +1",
 		body="Fili Hongreline +1",
 		hands="Fili Manchettes +1",
@@ -316,7 +324,9 @@ function get_sets()
 		 
    --Aftercast Sets
     sets.aftercast = {}
-    sets.aftercast.Regen = {    
+    sets.aftercast.Regen = {
+		main="Kaja Sword",
+		sub="Odium",
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+2','Quadruple Attack +3',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body={ name="Nyame Mail", augments={'Path: B',}},
@@ -350,6 +360,8 @@ function get_sets()
 	}
     
     sets.aftercast.Engaged = {
+		main="Kaja Sword",
+		sub="Odium",
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+2','Quadruple Attack +3',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body={ name="Nyame Mail", augments={'Path: B',}},

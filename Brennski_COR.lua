@@ -1,9 +1,17 @@
+PhantomRolls = S{"Corsair's Roll", "Ninja's Roll", "Hunter's Roll", "Chaos Roll", "Magus's Roll", "Healer's Roll", "Drachen Roll", "Choral Roll" , "Monk's Roll", "Beast Roll", "Samurai Roll", 
+"Evoker's Roll" , "Rogue's Roll", "Warlock's Roll", "Fighter's Roll", "Puppet Roll"	, "Gallant's Roll", "Wizard's Roll", "Dancer's Roll",
+ "Scholar's Roll", "Bolter's Roll", "Allies' Roll", "Miser's Roll", "Tactician's Roll", "Caster's Roll", "Companion's Roll", "Avenger's Roll"}
+ 
+ quickdraw = S{"Ice Shot", "Fire Shot", "Wind Shot", "Earth Shot", "Water Shot", "Thunder Shot"}
+ 
 function get_sets()
  
         send_command('bind f9 gs c toggle TP set')
         send_command('bind f10 gs c toggle Idle set')
 		send_command("bind ^f9 gs c equip TP set")
 		send_command("bind ^f10 gs c equip DT set")
+		send_command("bind !f9 gs c toggle Guns;") -- Alt F9 swap Guns
+		send_command("bind !f10 gs c toggle QD;") -- Alt F10 swap Guns
        
         function file_unload()
      
@@ -25,14 +33,24 @@ function get_sets()
         send_command('unbind f12')
  
         end    
+		
+		--Guns--
+		sets.Guns = {}
+		
+		sets.Guns.index ={'Fomal', 'TPBonus'}
+		Guns_ind = 1
+		
+		sets.Guns.Fomal = {range="Fomalhaut"}
+		
+		sets.Guns.TPBonus = {Range ="Anarchy +2"}
                
         --Idle Sets--  
         sets.Idle = {}
        
-        sets.Idle.index = {'Standard','DT'}
+        sets.Idle.index = {'Melee','RA'}
         Idle_ind = 1                  
        
-        sets.Idle.Standard = {
+        sets.Idle.Melee = {		 	  main = "Neagling", sub= "Gleti's knife",
                                       head="Malignance Chapeau",
 									  neck = "Bathy Choker +1", ear1="Eabani Earring", ear2="Infused Earring",
                                       body="Malignance Tabard",
@@ -42,13 +60,13 @@ function get_sets()
 									  back ="Moonbeam Cape"}
 							
                                                  
-        sets.Idle.DT = {	          head="Malignance Chapeau",
-										neck="Loricate Torque +1", ear1="Eabani Earring", ear2="Infused Earring",
-                                        body="Malignance Tabard",hands="Malignance Gloves",
-										ring1="Defending ring",ring2="Shneddick Ring",
-                                        back="Moonbeam Cape",waist="Carrier's Sash",    
-										legs="Malignance Tights",
-										feet="Malignance Boots", }
+        sets.Idle.RA = {	          head="Malignance Chapeau",
+									  neck = "Bathy Choker +1", ear1="Eabani Earring", ear2="Infused Earring",
+                                      body="Malignance Tabard",
+									  hands="Malignance Gloves",
+									  ring1="Defending ring",ring2="Shneddick Ring",
+                                      waist="Carrier's Sash",legs="Nyame Flanchard",feet="Malignance Boots", 
+									  back ="Moonbeam Cape" }
 							
         --TP Sets--
         sets.TP = {}
@@ -57,14 +75,14 @@ function get_sets()
                 --1=Standard, 2 = DNCSub, 3=AccuracyFull, 4=DT, 5=DTAccuracy, 7=DTSW,--
 				
                 TP_ind = 1
-				sets.TP.StandardNIN = {  ammo ="Chrono bullet",
+				sets.TP.StandardNIN = {main = "Neagling", sub= "Gleti's knife",  ammo ="Chrono bullet",
                                     head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Cessance Earring", ear2="Telos Earring",
                                    body="Malignance Tabard",hands={ name="Adhemar Wristbands +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Chirich Ring +1",ring2="Epona's Ring",
                                     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 									waist="Reiki Yotai",legs="Samnuha Tights",feet = "Nyame Sollerets" }
                                                        
                                                        
-                sets.TP.DNCSub = { ammo ="Chrono bullet",
+                sets.TP.DNCSub = {main = "Neagling", sub= "Gleti's knife", ammo ="Chrono bullet",
                                         head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Suppanomimi", ear2="Telos Earring",
                                    body="Malignance Tabard",hands={ name="Adhemar Wristbands +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Chirich Ring +1",ring2="Epona's Ring",
                                     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -76,7 +94,8 @@ function get_sets()
                                         back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 										waist="Sailfi Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1" }
                                                        
-                sets.TP.DT = { ammo ="Chrono bullet",
+                sets.TP.DT = { main = "Neagling", sub= "Gleti's knife",
+							 ammo ="Chrono bullet",
                               head="Malignance Chapeau",
 							  neck="Loricate Torque +1", ear1="Eabani Earring", ear2="Dignitary's Earring",
                               body="Malignance Tabard",hands="Malignance Gloves",
@@ -86,7 +105,8 @@ function get_sets()
 							  legs="Malignance Tights",
 							  feet="Malignance Boots", }
                                  
-                sets.TP.DTAccuracy = { ammo ="Chrono bullet",
+                sets.TP.DTAccuracy = { main = "Neagling", sub= "Gleti's knife",
+										ammo ="Chrono bullet",
                                          head="Malignance Chapeau",
 										body="Malignance Tabard",
 										hands="Malignance Gloves",
@@ -101,6 +121,8 @@ function get_sets()
 										back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 										}
 				sets.TP.DTSW = {
+					main ="Neagling",
+					sub="Nusku Shield",
 				   ammo="Chrono Bullet",
 					head="Malignance Chapeau",
 					body="Malignance Tabard",
@@ -179,7 +201,7 @@ function get_sets()
 							neck="Commodore Charm +1",   ear2="Friomisi earring", ear1="Moonshade Earring",
 							body="Lanun Frac +3",hands="Nyame Gauntlets", ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Orpheus's Sash",
 							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
-							Leg = "Nyame Flanchard",
+							Legs = "Nyame Flanchard",
 							feet="Lanun Bottes +3"}
 		
 	    sets.LastStand = {}
@@ -203,76 +225,143 @@ function get_sets()
 						}
 										  
 		--Ranged Attack ---
-			sets.Ranged = {}
-			sets.Ranged.PreShot = {
-            head="Amini Gapette", -- 7
-            body="Nisroch Jerkin", -- 7
-			hands ="Carmine Finger Gauntlets",
-            back="Lutian Cape", -- 2
-            legs="Adhemar Kecks",
-            waist="Impulse Belt", -- 2
-            feet="Meg. Jam. +2", -- 8
-			neck="Commodore Charm +1"
+		sets.Ranged = {}
+		sets.Ranged.PreShot = {
+			ammo="Chrono Bullet",
+			head={ name="Taeon Chapeau", augments={'"Snapshot"+4','"Snapshot"+4',}},
+			body="Oshosi Vest",
+			hands={ name="Taeon Gloves", augments={'"Snapshot"+5','"Snapshot"+5',}},
+			legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
+			feet="Meg. Jam. +2",
+			neck={ name="Comm. Charm +1", augments={'Path: A',}},
+			waist="Yemaya Belt",
+			left_ear="Crep. Earring",
+			right_ear="Digni. Earring",
+			left_ring="Crepuscular Ring",
+			right_ring="Defending Ring",
+			back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
         }
 			
-			sets.Ranged.RangedAttack =  { ammo ="Chrono bullet", head="Meghanada Visor +2",
-							neck="Iskur Gorget", ear2="Telos Earring", ear1="Volley Earring",
-							body="Nisroch Jerkin",hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
-							ring1="Dingir Ring",ring2="Cacoethic Ring", waist ="Yemaya Belt",
-							back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
-							legs="Adhemar Kecks",feet="Meg. Jam. +2",} 
+		sets.Ranged.RangedAttack =  {   
+			ammo="Chrono Bullet",
+			head="Malignance Chapeau",
+			body="Nisroch Jerkin",
+			hands="Malignance Gloves",
+			legs="Malignance Tights",
+			feet="Malignance Boots",
+			neck="Iskur Gorget",
+			waist="Yemaya Belt",
+			left_ear="Crep. Earring",
+			right_ear="Telos Earring",
+			left_ring="Ilabrat Ring",
+			right_ring="Crepuscular Ring",
+			back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
+		} 
 		
         --Utility Sets--1
         sets.Utility = {}
        
         sets.Utility.Weather = {waist="Hachirin-no-obi"}
  
-        sets.Utility.MB = {head="Helios Band",body="Samnuha Coat",ear1="Static Earring",ring1="Locus Ring",ring2="Mujin Band"}
- 
-       
-        sets.Utility.Stoneskin = {head="Haruspex hat",neck="Stone Gorget",ear1="Loquac. earring",ear2="Earthcry earring",
-                                                          body="Assim. jubbah +1",hands="Stone Mufflers",ring1="Rahab ring",
-                                                          back="Swith cape",waist="Siegel sash",legs="Haven hose",feet = "Nyame Sollerets" }
                                                          
-        sets.Utility.Phalanx = {head="Haruspex hat",neck="Colossus's torque",ear1="Loquac. earring",ear2="Augment. earring",
-                                                    body="Assim. jubbah +1",hands="Ayao's gages",ring1="Rahab ring",
-                                                        back="Swith cape",waist="Pythia sash +1",legs="Portent pants",feet = "Nyame Sollerets" }
-                                                       
-        sets.Utility.Steps = {
-							head="Adhemar Bonnet +1",body="Malignance Tabard", hands="Rawhide Gloves",legs=="Samnuha Tights", feet = "Nyame Sollerets",  neck="Subtlety Spec.",
-							waist="Chaac Belt", left_ear="Heartseeker Earring",right_ear="Dignitary's Earring",  left_ring="Yacuruna Ring",  right_ring="Epona's Ring",  back="Grounded Mantle",}
-                                                 
+        sets.Utility.Phalanx = {
+			ammo="Chrono Bullet",
+			head="Malignance Chapeau",
+			body={ name="Taeon Tabard", augments={'"Conserve MP"+5','Phalanx +3',}},
+			hands="Malignance Gloves",
+			legs={ name="Nyame Flanchard", augments={'Path: B',}},
+			feet={ name="Herculean Boots", augments={'Magic burst dmg.+6%','"Fast Cast"+1','Phalanx +4','Accuracy+14 Attack+14','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+			neck={ name="Bathy Choker +1", augments={'Path: A',}},
+			waist="Carrier's Sash",
+			left_ear="Eabani Earring",
+			right_ear="Infused Earring",
+			left_ring="Defending Ring",
+			right_ring="Shneddick Ring",
+			back="Moonbeam Cape",
+		}
+                                                                                                        
 		sets.Utility.Sleeping = {neck="Opo-Opo Necklace"}
   
         --Job Ability Sets--
 		
        
         sets.JA = {}
-       
-        sets.JA.QuickDraw = {ammo ="Animikii Bullet", head ="Nyame Helm",
-							neck="Commodore Charm +1",   ear2="Friomisi earring", ear1="Crep. Earring",
-							body="Lanun Frac +3",    hands="Nyame Gauntlets", ring1="Acumen Ring", ring2 ='Dingir Ring', waist ="Orpheus's Sash",
-							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
-							Legs = "Nyame Flanchard", 
-							feet="Lanun Bottes +3"}
-       
-        sets.JA.PhantomRoll = {head="Lanun Tricorne",neck="Regal Necklace", ear1="Etiolation earring", ear2="Eabani Earring",
+        
+        sets.JA.PhantomRoll = {range = "Compensator", head="Lanun Tricorne",neck="Regal Necklace", ear1="Etiolation earring", ear2="Eabani Earring",
                               body="Emet Hareness +1",hands="Chasseur's gants",ring2="Luzaf's Ring",ring1="Defending Ring",
                               back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
-							  waist="Carrier's Sash",legs="Desultor Tassets",feet = "Nyame Sollerets" }
+							  waist="Carrier's Sash",legs="Nyame Flanchard",feet = "Nyame Sollerets" }
        
-        sets.JA.LightDarkShot= {ammo ="Animikii Bullet",head ="Nyame Helm",
-							neck="Commodore Charm +1",   ear2="Crep. earring", ear1="Dignitary's Earring",
-							body="Lanun Frac +3",  hands="Leyline Gloves", ring1="Sangoma Ring", ring2 ='Dingir Ring', waist ="Eschan Stone",
-							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
-							Legs = "Nyame Flanchard", 
-							feet="Lanun Bottes +3"}
+        sets.JA.LightDarkShot= {ammo ="Animikii Bullet",    
+			head="Malignance Chapeau",
+			body="Malignance Tabard",
+			hands="Malignance Gloves",
+			legs="Malignance Tights",
+			feet="Chasseur's Bottes +1",
+			neck={ name="Comm. Charm +1", augments={'Path: A',}},
+			waist="Eschan Stone",
+			left_ear="Crep. Earring",
+			right_ear="Digni. Earring",
+			left_ring="Stikini Ring +1",
+			right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+			back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
+		}
+							
+		sets.JA.TactsRoll={body ="Chasseur's Frac"}
 							
 		sets.JA.SnakeEye = {legs ="Lanun trews"}
 		
 		sets.JA.RandomDeal = {body ="Lanun Frac +3"}
 		
 		sets.JA.WildCard = {Feet = "Lanun Bottes +3"}
+		
+		--- Quick Draw Sets ---
+		sets.QD ={}
+		
+		sets.QD.index={'STP', 'Damage', 'Enhance'}
+		QD_ind = 1
+		
+		sets.QD.STP ={
+			ammo ="Animikii Bullet",
+		    head="Malignance Chapeau",
+			body="Malignance Tabard",
+			hands="Malignance Gloves",
+			legs="Malignance Tights",
+			feet="Malignance Boots",
+			neck="Iskur Gorget",
+			waist="Reiki Yotai",
+			left_ear="Crep. Earring",
+			right_ear="Telos Earring",
+			left_ring="Chirich Ring +1",
+			right_ring="Crepuscular Ring",
+			back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
+		}
+		
+		sets.QD.Damage = {ammo ="Animikii Bullet", head ="Nyame Helm",
+							neck="Commodore Charm +1",   ear2="Friomisi earring", ear1="Crep. Earring",
+							body="Lanun Frac +3", 
+							hands="Nyame Gauntlets", ring1="Acumen Ring",
+							ring2 ='Dingir Ring', waist ="Orpheus's Sash",
+							back={ name="Camulus's Mantle", 
+							augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
+							Legs = "Nyame Flanchard", 
+							feet="Lanun Bottes +3"}		
+		
+		sets.QD.Enhance = {
+			ammo ="Animikii Bullet",    
+			head="Malignance Chapeau",
+			body="Malignance Tabard",
+			hands="Malignance Gloves",
+			legs="Malignance Tights",
+			feet="Chasseur's Bottes +1",
+			neck={ name="Comm. Charm +1", augments={'Path: A',}},
+			waist="Eschan Stone",
+			left_ear="Crep. Earring",
+			right_ear="Digni. Earring",
+			left_ring="Stikini Ring +1",
+			right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+			back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
+		}
                                                     
 
         --Precast Sets--
@@ -334,41 +423,31 @@ function precast(spell)
 			end
 		elseif spell.type == 'WeaponSkill' then
 			equip(sets.LastStand)
-		elseif spell.english == "Corsair's Roll" or spell.english == "Ninja's Roll" or spell.english == "Hunter's Roll" or spell.english == "Chaos Roll" 
-		 or spell.english == "Magus's Roll" or spell.english == "Healer's Roll" or spell.english == "Drachen Roll" or spell.english == "Choral Roll" 
-		 or spell.english == "Monk's Roll" or spell.english == "Beast Roll" or spell.english == "Samurai Roll" or spell.english == "Evoker's Roll" 
-		 or spell.english == "Rogue's Roll" or spell.english == "Warlock's Roll" or spell.english == "Fighter's Roll" or spell.english == "Puppet Roll"
-		 or spell.english == "Gallant's Roll" or spell.english == "Wizard's Roll" or spell.english == "Dancer's Roll" or spell.english == "Scholar's Roll" 
-		 or spell.english == "Bolter's Roll" or spell.english == "Allies' Roll" or spell.english == "Miser's Roll" or spell.english == "Tactician's Roll"
-		 or spell.english == "Caster's Roll" or spell.english == "Companion's Roll" or spell.english == "Avenger's Roll" or spell.english == "Double Up" then
+		elseif PhantomRolls:contains(spell.english) or spell.english == "Double Up" then
 			equip(sets.JA.PhantomRoll)
-		elseif spell.english == 'Fire Shot' or spell.english =='Water Shot' or spell.english =='Thunder Shot' or spell.english =='Earth Shot'
-		or spell.english =='Wind Shot' or spell.english =='Ice Shot' then
-			equip(sets.JA.QuickDraw)
-			 if spell.element == world.day_element or spell.element == world.weather_element then
-                              equip(sets.Utility.Weather)
-                        end
+			if spell.english == "Tactician's Roll" then
+				equip(sets.JA.TactsRoll)
+			end
+		elseif quickdraw:contains(spell.english) then
+			equip(sets.QD[sets.QD.index[QD_ind]])
+			-- if spell.element == world.day_element or spell.element == world.weather_element then
+                -- equip(sets.Utility.Weather)
+            -- end
 		elseif spell.english =='Light Shot' or spell.english == 'Dark Shot' then
 			equip(sets.JA.LightDarkShot)
-			 if spell.element == world.day_element or spell.element == world.weather_element then
-                              equip(sets.Utility.Weather)
-                        end
 		elseif spell.english == 'Box Step'  or spell.english =='Quick Step' then
-                equip(sets.Utility.Steps)
+                equip(sets.TP.DTAccuracy)
 		elseif spell.english == 'Wild Card' then
 				equip(sets.JA.WildCard)
 		elseif spell.english == 'Random deal' then
 				equip(sets.JA.RandomDeal)
 		elseif spell.english == 'Snake Eye' then
 				equip(sets.JA.SnakeEye)		
-		end
-		
-       
+		end       
 end
 
-
 function midcast(spell,act)
-		if spell.english == 'Ranged' then
+	if spell.english == 'Ranged' then
 			equip(sets.Ranged.RangedAttack)
 		elseif spell.english == 'Utsusemi: Ichi' then
                 equip(sets.NINMagic.Utsusemi)
@@ -386,34 +465,31 @@ function midcast(spell,act)
                         end
         elseif spell.english == 'Utsusemi: Ni'  or spell.english == 'Utsusemi: San' then
                 equip(sets.NINMagic.Utsusemi)
-        end 
+    end 
 end
        
 function aftercast(spell)
-        if player.status == 'Engaged' then
-                equip(sets.TP[sets.TP.index[TP_ind]])
-				
+     if player.status == 'Engaged' then
+            equip(set_combine(sets.Guns[sets.Guns.index[Guns_ind]],sets.TP[sets.TP.index[TP_ind]]))						
         else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
+            equip(set_combine(sets.Guns[sets.Guns.index[Guns_ind]],sets.Idle[sets.Idle.index[Idle_ind]]))
         end
-		if buffactive['doom'] then
+	if buffactive['doom'] then
 					equip(sets.Utility.Doomed)
 		
 		elseif  buffactive['terror'] or buffactive['stun'] or buffactive['sleep']	then 
 					equip(sets.TP.DT)
-		end
-
-       
-        if spell.type == 'WeaponSkill' then
-                add_to_chat(158,'TP Return: ['..tostring(player.tp)..']')
-        end
+	end       
+    if spell.type == 'WeaponSkill' then
+        add_to_chat(158,'TP Return: ['..tostring(player.tp)..']')
+	end
 end
  
 function status_change(new,old)
         if new == 'Engaged' then
-                equip(sets.TP[sets.TP.index[TP_ind]])
+            equip(set_combine(sets.Guns[sets.Guns.index[Guns_ind]],sets.TP[sets.TP.index[TP_ind]]))
         else
-                equip(sets.Idle[sets.Idle.index[Idle_ind]])
+            equip(set_combine(sets.Guns[sets.Guns.index[Guns_ind]],sets.Idle[sets.Idle.index[Idle_ind]]))
         end
 end
  
@@ -428,22 +504,15 @@ function self_command(command)
                 if Idle_ind > #sets.Idle.index then Idle_ind = 1 end
                 send_command('@input /echo <----- Idle Set changed to '..sets.Idle.index[Idle_ind]..' ----->')
                 equip(sets.Idle[sets.Idle.index[Idle_ind]])
-        elseif command == 'toggle Req set' then
-                Requiescat_ind = Requiescat_ind +1
-                if Requiescat_ind > #sets.Requiescat.index then Requiescat_ind = 1 end
-                send_command('@input /echo <----- Requiescat Set changed to '..sets.Requiescat.index[Requiescat_ind]..' ----->')
-        elseif command == 'toggle CDC set' then
-                ChantDuCygne_ind = ChantDuCygne_ind +1
-                if ChantDuCygne_ind > #sets.ChantDuCygne.index then ChantDuCygne_ind = 1 end
-                send_command('@input /echo <----- Chant du Cygne Set changed to '..sets.ChantDuCygne.index[ChantDuCygne_ind]..' ----->')
-        elseif command == 'toggle Rea set' then
-                Realmrazer_ind = Realmrazer_ind +1
-                if Realmrazer_ind > #sets.Realmrazer.index then Realmrazer_ind = 1 end
-                send_command('@input /echo <----- Realmrazer Set changed to '..sets.Realmrazer.index[Realmrazer_ind]..' ----->')
-        elseif command == 'toggle MB set' then
-                Burst_ind = Burst_ind +1
-                if Burst_ind > #sets.Burst.index then Burst_ind = 1 end
-                send_command('@input /echo [MB Set changed to '..sets.Burst.index[Burst_ind]..']')
+        elseif command == 'toggle Guns' then
+                Guns_ind = Guns_ind +1
+                if Guns_ind > #sets.Guns.index then Guns_ind = 1 end
+                send_command('@input /echo [Gun changed to '..sets.Guns.index[Guns_ind]..']')
+				equip(sets.Guns[sets.Guns.index[Guns_ind]])
+		elseif command == 'toggle QD' then
+                QD_ind = QD_ind +1
+                if QD_ind > #sets.QD.index then QD_ind = 1 end
+                send_command('@input /echo [Quick Draw set changed to '..sets.QD.index[QD_ind]..']')		
 		elseif command == "equip TP set" then
 			equip(sets.TP[sets.TP.index[TP_ind]])
 		elseif command =="equip DT set" then
