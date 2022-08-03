@@ -25,12 +25,12 @@ function get_sets()
 	--Weapon Sets--
 	
 	sets.Weapons = {}
-	sets.Weapons.index = {'Chango','NeaglingShield', 'LoxoticShield', 'ShiningOne','Ukon'}
+	sets.Weapons.index = {'Chango','NaeglingShield', 'LoxoticShield', 'ShiningOne','Ukon'}
 	Weapons_ind = 1
 	
 	sets.Weapons.Chango = {main ="Chango",sub="Utu Grip"}
 
-	sets.Weapons.NeaglingShield = {main = "Neagling", sub ="Blurred Shield +1"}
+	sets.Weapons.NaeglingShield = {main = "Naegling", sub ="Blurred Shield +1"}
 	
 	sets.Weapons.LoxoticShield ={main = "Loxotic Mace +1", sub ="Blurred Shield +1"}
 	
@@ -1694,14 +1694,14 @@ function buff_change(buff, gain)
 			end
 		else
 			if player.status == "Engaged" then
-				equip(sets.TP[sets.TP.index[TP_ind]])
+				equip(set_combine(sets.Weapons[sets.Weapons.index[Weapons_ind]],sets.TP[sets.TP.index[TP_ind]]))
 				if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Ukonvasara"  then
 					--TP_ind = 12
 					equip(sets.TP.UkonAm)
 					--send_command("@input /echo Ukon AM Set")
 				end				
 			elseif player.status == "Idle" then
-				equip(sets.Idle[sets.Idle.index[Idle_ind]])
+				equip(set_combine(sets.Weapons[sets.Weapons.index[Weapons_ind]],equip(sets.Idle.Standard)))
 			end
 		end
 	end
@@ -1710,9 +1710,9 @@ function buff_change(buff, gain)
 			equip(sets.Utility.Doomed)
 		else
 			if player.status == "Engaged" then
-				equip(sets.TP[sets.TP.index[TP_ind]])
+				equip(set_combine(sets.Weapons[sets.Weapons.index[Weapons_ind]],sets.TP[sets.TP.index[TP_ind]]))
 			elseif player.status == "Idle" then
-				equip(sets.Idle[sets.Idle.index[Idle_ind]])
+				equip(set_combine(sets.Weapons[sets.Weapons.index[Weapons_ind]],equip(sets.Idle.Standard)))
 			end
 		end
 	end
