@@ -136,7 +136,7 @@ function get_sets()
 								legs="Mummu Kecks +2",
 								feet="Mummu Gamash. +2",
 								neck="Anu Torque",
-								left_ear="Steelflash Earring",
+								left_ear="Telos Earring",
 								right_ear="Bladeborn Earring",
 								left_ring="Mummu Ring",
 								right_ring="Petrov Ring",

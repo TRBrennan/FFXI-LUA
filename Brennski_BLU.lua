@@ -248,7 +248,7 @@ function get_sets()
         body = "Nyame Mail",
         hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
         ring1 = "Ilabrat Ring",
-        ring2 = "Petrov Ring",
+        ring2 = "Beithir ringg",
         back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         waist = "Sailfi Belt +1",
         legs="Nyame Flanchard",
@@ -301,7 +301,7 @@ function get_sets()
         body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
         ring1 = "Ilabrat Ring",
-        ring2 = "Petrov Ring",
+        ring2 = "Beithir ring",
         back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         waist = "Sailfi Belt +1",
         legs="Nyame Flanchard",
@@ -317,7 +317,7 @@ function get_sets()
         body = "Nyame Mail",
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
         ring1 = "Ilabrat Ring",
-        ring2 = "Petrov Ring",
+        ring2 = "Beithir ring",
         back = {name = "Rosmerta's Cape",augments = {'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
         waist = "Sailfi Belt +1",
         legs="Nyame Flanchard",
@@ -440,7 +440,7 @@ function get_sets()
 		ear1 = "Eabani Earring",
         ear2 = "Infused Earring",
         ring2 = "Stikini ring +1",
-		ring1 = "Defending Ring",
+		ring1 = "Stikini Ring +1",
 		feet = "Luhlaza Charuqs +1"
     }
 
@@ -608,7 +608,7 @@ function get_sets()
         right_ear = "Loquac. Earring",
         ring1 = "Rahab Ring",
         ring2 = "Kishar Ring",
-        back = "Swith Cape"
+        back = "Fi follet cape +1",
     }
 	
 	sets.precast.FC.DT ={

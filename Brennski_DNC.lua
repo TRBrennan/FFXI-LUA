@@ -371,7 +371,7 @@ function get_sets()
                 body = "Assim. jubbah +1",
                 hands = "Stone Mufflers",
                 ring1 = "Rahab ring",
-                back = "Swith cape",
+                back = "Fi follet cape +1",
                 waist = "Siegel sash",
                 legs = "Haven hose",
                 Feet = "Nyame Sollerets",
@@ -385,7 +385,7 @@ function get_sets()
                 body = "Assim. jubbah +1",
                 hands = "Ayao's gages",
                 ring1 = "Rahab ring",
-                back = "Swith cape",
+                back = "Fi follet cape +1",
                 waist = "Pythia sash +1",
                 legs = "Portent pants",
                 Feet = "Nyame Sollerets",
@@ -459,7 +459,7 @@ function get_sets()
                 right_ear = "Loquac. Earring",
                 left_ring = "Rahab Ring",
                 right_ring = "Kishar Ring",
-                back = "Swith Cape"
+                back = "Fi follet cape +1",
         }
 end
 

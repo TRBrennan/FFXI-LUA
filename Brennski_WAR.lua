@@ -6,6 +6,7 @@ function get_sets()
 	send_command("bind f9 gs c equip TP set")
 	send_command("bind f11 gs c equip DT set")
 	send_command("bind f12 gs c equip Hybrid set")
+	send_command("bind !f9 gs c cycle WeaponSet")
 	
 	function file_unload()
 		send_command("unbind ^f9")
@@ -20,6 +21,23 @@ function get_sets()
 		send_command("unbind f10")
 		send_command("unbind f11")
 	end
+	
+	--Weapon Sets--
+	
+	sets.Weapons = {}
+	sets.Weapons.index = {'Chango','NeaglingShield', 'LoxoticShield', 'ShiningOne','Ukon'}
+	Weapons_ind = 1
+	
+	sets.Weapons.Chango = {main ="Chango",sub="Utu Grip"}
+
+	sets.Weapons.NeaglingShield = {main = "Neagling", sub ="Blurred Shield +1"}
+	
+	sets.Weapons.LoxoticShield ={main = "Loxotic Mace +1", sub ="Blurred Shield +1"}
+	
+	sets.Weapons.ShiningOne =  {main ="Shining One",sub="Utu Grip"}
+	
+	sets.Weapons.Ukon = {main ="Ukonvasara",sub="Utu Grip"}
+	
 	--Idle Sets--
 	sets.Idle = {}
 
@@ -89,7 +107,8 @@ function get_sets()
 	sets.TP.Standard ={
 		--ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		ammo ="Aurgelmir Orb +1",
-		head={ name="Sakpata's Helm", augments={'Path: A',}},
+		--head={ name="Sakpata's Helm", augments={'Path: A',}},
+		head = "Hjarrandi Helm",
 		body={ name="Sakpata's Plate", augments={'Path: A',}},
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs="Pumm. Cuisses +3",
@@ -145,7 +164,8 @@ function get_sets()
 	sets.TP.Chango ={
 		--ammo = "Staunch Tathlum +1",
 		ammo ="Aurgelmir Orb +1",
-		head={ name="Sakpata's Helm", augments={'Path: A',}},
+		--head={ name="Sakpata's Helm", augments={'Path: A',}},
+		head = "Hjarrandi Helm",
 		body={ name="Sakpata's Plate", augments={'Path: A',}},
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs="Pumm. Cuisses +3",
@@ -295,7 +315,7 @@ function get_sets()
 		right_ear={ name="Schere Earring", augments={'Path: A',}},
 		left_ring="Niqmaddu Ring",
 		right_ring="Moonlight Ring",
-		back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+		back= DA_Back
 	}
 	
 	sets.TP.Hybrid = {
@@ -317,7 +337,8 @@ function get_sets()
 	}
 	
 	sets.TP.HybridSB = {
-		ammo = "Coiste Bodhar",
+		--ammo = "Coiste Bodhar",
+		ammo ="Aurgelmir Orb +1",
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
@@ -333,19 +354,35 @@ function get_sets()
 		back= DA_Back
 	}
 	
+	-- sets.TP.UkonAm ={
+	    -- ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		-- head="Sakpata's Helm",
+		-- body="Hjarrandi Breast.",
+		-- hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		-- legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
+		-- feet="Pumm. Calligae +3",
+		-- neck={ name="War. Beads +2", augments={'Path: A',}},
+		-- waist="Ioskeha Belt +1",
+		-- left_ear="Brutal Earring",
+		-- right_ear={ name="Schere Earring", augments={'Path: A',}},
+		-- left_ring="Niqmaddu Ring",
+		-- right_ring="Petrov Ring",
+		-- back= DA_Back
+	-- }
+	
 	sets.TP.UkonAm ={
 	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		head="Sakpata's Helm",
-		body="Hjarrandi Breast.",
+		head={ name="Sakpata's Helm", augments={'Path: A',}},
+		body={ name="Sakpata's Plate", augments={'Path: A',}},
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
-		feet="Pumm. Calligae +3",
+		feet={ name="Sakpata's Leggings", augments={'Path: A',}},
 		neck={ name="War. Beads +2", augments={'Path: A',}},
 		waist="Ioskeha Belt +1",
-		left_ear="Brutal Earring",
+		left_ear="Cessance Earring",
 		right_ear={ name="Schere Earring", augments={'Path: A',}},
 		left_ring="Niqmaddu Ring",
-		right_ring="Petrov Ring",
+		right_ring="Moonlight Ring",
 		back= DA_Back
 	}
 	
@@ -378,13 +415,14 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Regal ring",
+		--ring2 = "Regal ring",
+		ring2 = "Beithir ring",
 		back = WSD_Back,
 		--waist = "Ioskeha Belt +1",
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		feet="Sakpata's Leggings",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		--feet="Sakpata's Leggings",
 	}
 
 	sets.UpheavalDA = {
@@ -396,7 +434,8 @@ function get_sets()
 		body = WSD_Body,
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
-		ring2 = "Regal ring",
+		--ring2 = "Regal ring",
+		ring2 = "Beithir ring",
 		back = WSD_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
@@ -444,12 +483,13 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Regal ring",
+		--ring2 = "Regal ring",
+		ring2 = "Beithir ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		feet="Sakpata's Leggings",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		--feet="Sakpata's Leggings",
 	}
 
 	sets.Break = {
@@ -493,12 +533,13 @@ function get_sets()
 		body = WSD_Body,
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
-		ring2 = "Regal ring",
+		--ring2 = "Regal ring",
+		ring2 = "Beithir ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = "Sakpata's Cuisses",
-		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		feet="Sakpata's Leggings",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		--feet="Sakpata's Leggings",
 	}
 
 	sets.FellCleave = {
@@ -509,8 +550,9 @@ function get_sets()
 		ear2 = "Moonshade earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
-		ring1 = "Ifrit ring +1",
-		ring2 = "Regal ring",
+		ring1 = "Niqmaddu ring",
+		--ring2 = "Regal ring",
+		ring2 = "Beithir ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = "Sakpata's Cuisses",
@@ -528,7 +570,8 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Regal ring",
+		--ring2 = "Regal ring",
+		ring2 = "Beithir ring",
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
@@ -545,12 +588,13 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Regal Ring",
+		--ring2 = "Regal ring",
+		ring2 = "Beithir ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		feet="Sakpata's Leggings",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		--feet="Sakpata's Leggings",
 	}
 
 	sets.SavageCrit = {
@@ -562,7 +606,8 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Regal ring",
+		--ring2 = "Regal ring",
+		ring2 = "Beithir ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -581,7 +626,7 @@ function get_sets()
 		ring2 = "Archon ring",
 		back = STR_Back,
 		waist = "Eschan stone",
-		legs = "Eschite cuisses",
+		legs = "Nyame Flanchard",
 		feet = "Nayame Sollerets",
 	}
 
@@ -657,7 +702,7 @@ function get_sets()
 		ear2 = "Moonshade earring",
 		body = WSD_Body,
 		hands="Nyame Gauntlets",
-		ring1 = "Regal Ring",
+		ring1 = "Beithir ring",
 		ring2 = "Acumen ring",
 		back = STR_Back,
 		waist="Orpheus's Sash",
@@ -674,7 +719,9 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Regal Ring",
+			ring1 = "Niqmaddu ring",
+		--ring2 = "Regal ring",
+		ring2 = "Beithir ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -691,7 +738,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Ifrit ring +1",
+		ring2 = "Beithir ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -756,7 +803,7 @@ function get_sets()
 		body = TP_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Regal ring",
+		ring2 = "Beithir ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
@@ -772,7 +819,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Regal ring",
+		ring2 = "Beithir ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
@@ -852,13 +899,13 @@ function get_sets()
 		ear2 = "Moonshade earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
-		ring1 = "Regal Ring",
-		ring2 = "Niqmaddu ring",
+		ring2 = "Beithir ring",
+		ring1 = "Niqmaddu ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		feet="Sakpata's Leggings",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		--feet="Sakpata's Leggings",
 	}
 
 	sets.BH = {
@@ -867,15 +914,15 @@ function get_sets()
 		neck = "Fotia gorget",
 		ear1 = "Thrud Earring",
 		ear2 = "Moonshade earring",
-		body = "Odyssean chestplate",
+		body = "Nyame Mail",
 		hands = WSD_Hands,
-		ring1 = "Regal Ring",
-		ring2 = "Niqmaddu ring",
+		ring2 = "Beithir ring",
+		ring1 = "Niqmaddu ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		feet="Sakpata's Leggings",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		--feet="Sakpata's Leggings",
 	}
 
 	sets.Hexa = {
@@ -1070,7 +1117,7 @@ function get_sets()
 		ear2= "Schere Earring",
 		ear1 = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
 		left_ring = "Niqmaddu Ring",
-		right_ring = "Regal Ring",
+		right_ring = "Beithir ring",
 		back = {name = "Cichol's Mantle",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}}
 	}
 
@@ -1090,12 +1137,29 @@ function get_sets()
 		right_ring = "Niqmaddu Ring",
 		back = {name = "Cichol's Mantle",augments = {"VIT+20", "Accuracy+20 Attack+20", "VIT+10", "Weapon skill damage +10%"}}
 	}
+	
+	sets.AE = {    
+		ammo={ name="Seeth. Bomblet +1", augments={'Path: A',}},
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Orpheus's Sash",
+		left_ear="Thrud Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		left_ring="Acumen Ring",
+		right_ring="Regal Ring",
+		back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
+		}
+	
 
 	--Job Ability Sets--
 
 	sets.JA = {}
 
-	sets.JA.Berserk = {back = "Cichol's Mantle", feet = "Agoge Calligae +3", body = "Pumm. Lorica +3"}
+	sets.JA.Berserk = {main = "Conqueror", back = "Cichol's Mantle", feet = "Agoge Calligae +3", body = "Pumm. Lorica +3"}
 
 	sets.JA.Aggressor = {body = "Agoge Lorica +3", head = "Pummeler's mask +2"}
 
@@ -1420,6 +1484,8 @@ function precast(spell)
 		elseif spell.english == "Dragon Kick" then
 			equip(sets.DK)
 			--send_command("@input /echo DK Set")
+		elseif spell.english == "Aeolian Edge" then
+			equip(sets.AE)
 		end
 	end
 	--JA Sets--
@@ -1479,7 +1545,7 @@ function aftercast(spell)
 				equip(sets.TP.DT)
 			end
 		else
-			equip(sets.TP[sets.TP.index[TP_ind]])
+			equip(set_combine(sets.Weapons[sets.Weapons.index[Weapons_ind]],sets.TP[sets.TP.index[TP_ind]]))
 			--send_command("@input /echo TP Set")
 			if buffactive["doom"] or buffactive["curse"] then
 				equip(sets.Utility.Doomed)
@@ -1506,9 +1572,10 @@ function aftercast(spell)
 		--send_command("@input /echo WS failed using Set")
 	end
 end
+
 function status_change(new, old)
 	if new == "Engaged" then
-		equip(sets.TP[sets.TP.index[TP_ind]])
+		equip(set_combine(sets.Weapons[sets.Weapons.index[Weapons_ind]],sets.TP[sets.TP.index[TP_ind]]))
 		if buff == "doom" or buff == "curse" then
 			equip(sets.Utility.Doomed)
 		end
@@ -1518,12 +1585,13 @@ function status_change(new, old)
 			--send_command("@input /echo Ukon AM Set")
 		end						
 	else
-		equip(sets.Idle.Standard)
+		equip(set_combine(sets.Weapons[sets.Weapons.index[Weapons_ind]],equip(sets.Idle.Standard)))
 		if buff == "doom" or buff == "curse" then
 			equip(sets.Utility.Doomed)
 		end
 	end
 end
+
 function self_command(command)
 	if command == "equip TP set" then
 		if 	player.equipment.main == "Chango" or player.equipment.main == "Montante +1" or
@@ -1606,6 +1674,13 @@ function self_command(command)
 			Gear_Debug = 1
 			--send_command("@input /echo Debug Mode Set to 1")
 		end
+	elseif command == "cycle WeaponSet" then
+		Weapons_ind = Weapons_ind + 1
+		if Weapons_ind > #sets.Weapons.index then
+			Weapons_ind = 1
+		end
+		send_command("@input /echo <----- Weapon Set changed to " .. sets.Weapons.index[Weapons_ind] .. " ----->")
+		equip(sets.Weapons[sets.Weapons.index[Weapons_ind]])
 	end
 end
 

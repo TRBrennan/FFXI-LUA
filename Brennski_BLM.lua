@@ -470,7 +470,7 @@ function get_sets()
         right_ear = "Loquac. Earring",
         left_ring = "Rahab Ring",
         right_ring = "Kishar Ring",
-        back = "Swith Cape"
+        back = "Fi follet cape +1",
     }
 
     sets.precast.FC.Death = {
@@ -496,7 +496,7 @@ function get_sets()
         right_ear = "Loquac. Earring",
         ring2 = "Rahab Ring",
         ring1 = "Mephitas's Ring",
-        back = "Swith Cape"
+        back = "Fi follet cape +1",
     }
 
     -- Utility and JA Sets --					

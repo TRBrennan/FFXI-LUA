@@ -238,7 +238,7 @@ function get_sets()
 		body = "Assim. jubbah +1",
 		hands = "Stone Mufflers",
 		ring1 = "Rahab ring",
-		back = "Swith cape",
+		back = "Fi follet cape +1",
 		waist = "Siegel sash",
 		legs = "Haven hose",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
@@ -252,7 +252,7 @@ function get_sets()
 		body = "Assim. jubbah +1",
 		hands = "Ayao's gages",
 		ring1 = "Rahab ring",
-		back = "Swith cape",
+		back = "Fi follet cape +1",
 		waist = "Pythia sash +1",
 		legs = "Portent pants",
 		feet = {name = "Herculean Boots", augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}

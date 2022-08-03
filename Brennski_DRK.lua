@@ -50,7 +50,8 @@ function get_sets()
 	WSD_Legs = "Nyame Flanchard"
 	WSD_Hands = "Sakpata's Gauntlets"
 	WSD_Body = "Nyame Mail"
-	WSD_Head = "Sakpata's Helm"
+	--WSD_Head = "Sakpata's Helm"
+	WSD_Head = "Nyame Helm"
 
 	
 	sets.Idle.Standard = {
@@ -93,27 +94,27 @@ function get_sets()
 	--1=Standard, 2=DW, 3=Anguta, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 7=Hybrid, 
 	TP_ind = 1
 	
-	sets.TP.Standard = {ammo="Coiste Bodhar",
+	sets.TP.Standard = {ammo="Aurgelmir Orb +1",
 			    head=Acc_Head,neck="Abyssal Bead Necklace +2", ear1="Telos earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Sailfi Belt +1",legs=TP_Legs,feet="Flam. Gambieras +2"}
 	
-	sets.TP.DW ={ammo="Coiste Bodhar",
+	sets.TP.DW ={ammo="Aurgelmir Orb +1",
 			    head=Acc_Head,neck="Abyssal Bead Necklace +2", ear1="Suppanomimi", ear2="Cessance earring",
 			    body=TP_Body,hands="Sakpata's Gauntlets",ring1="Flamma ring",ring2="Niqmaddu ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs="Carmine cuisses +1",feet="Carmine greaves +1"}		
 	
-	sets.TP.Anguta = {ammo="Coiste Bodhar",
+	sets.TP.Anguta = {ammo="Aurgelmir Orb +1",
 			    head=Acc_Head,neck="Abyssal Bead Necklace +2", ear1="Telos earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Sailfi Belt +1",legs=TP_Legs,feet="Flam. Gambieras +2"}	
 					
-	sets.TP.AccuracyLite = {ammo="Coiste Bodhar",
+	sets.TP.AccuracyLite = {ammo="Aurgelmir Orb +1",
 			    head=DA_Head,neck="Abyssal Bead Necklace +2", ear1="Brutal earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Sailfi Belt +1",legs=TP_Legs,feet="Flam. Gambieras +2",}
 	
-	sets.TP.AccuracyFull = {ammo="Coiste Bodhar",
+	sets.TP.AccuracyFull = {ammo="Aurgelmir Orb +1",
 			    head=Acc_Head,neck="Abyssal Bead Necklace +2", ear1="Brutal earring", ear2="Cessance earring",
 			    body=TP_Body,hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Flamma ring",
 			    back=DA_Back,waist="Ioskeha belt +1",legs=TP_Legs,feet="Flam. Gambieras +2",}
@@ -124,19 +125,20 @@ function get_sets()
 			    back=DA_Back,waist="Ioskeha belt +1",legs="Sakpata's Cuisses",feet="Sakpata's Leggings"}
 				
 	sets.TP.Hybrid = { 		
-		ammo = "Coiste Bodhar",
-		head="Sakpata's Helm",
-		body="Sakpata's Plate",
+		ammo="Aurgelmir Orb +1",
+		head={ name="Sakpata's Helm", augments={'Path: A',}},
+		body={ name="Sakpata's Plate", augments={'Path: A',}},
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
-		legs="Sakpata's Cuisses",
-		feet="Sakpata's Leggings",
-		neck="Abyssal Bead Necklace +2", 
-		waist="Sailfi Belt +1",
+		legs="Ig. Flanchard +3",
+		feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+		neck={ name="Abyssal Beads +2", augments={'Path: A',}},
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Telos Earring",
 		right_ear="Cessance Earring",
+		left_ring="Niqmaddu Ring",
 		right_ring="Moonlight Ring",
-		left_ring = "Niqmaddu Ring",
-		back= DA_Back}
+		back= DA_Back
+		}
 
 				  
 	

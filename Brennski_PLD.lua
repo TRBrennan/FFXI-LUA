@@ -1,6 +1,7 @@
 function get_sets()
 	send_command("bind f9 gs c toggle TP set")
 	send_command("bind f10 gs c toggle Idle set")
+	send_command("bind !f9 gs c cycle WeaponSet")
 
 	function file_unload()
 		send_command("unbind ^f9")
@@ -13,10 +14,20 @@ function get_sets()
 		send_command("unbind f10")
 	end
 
+		--Weapon Sets--
+	
+	sets.Weapons = {}
+	sets.Weapons.index = {'Aegis', 'Srivatsa'}
+	Weapons_ind = 1
+	
+	sets.Weapons.Aegis = {sub="Aegis"}
+
+	sets.Weapons.Srivatsa = {sub ="Srivatsa"}
+
 	--Idle Sets--
 	sets.Idle = {}
 
-	sets.Idle.index = {"Standard", "DT", "Cleave", "OdyCleave"}
+	sets.Idle.index = {"Standard", "DT", "Cleave"}
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
@@ -67,22 +78,6 @@ function get_sets()
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 		
-		sets.Idle.OdyCleave = {
-		ammo="Staunch Tathlum +1",
-		head="Sakpata's Helm",
-		body="Sakpata's Plate",
-		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
-		legs="Sakpata's Cuisses",
-		feet="Sakpata's Leggings",
-		neck = "Unmoving Collar +1",
-		waist="Carrier's Sash",
-		left_ear="Odnowa Earring +1",
-		right_ear = "Tuisto Earring",
-		left_ring = "Moonlight Ring",
-		right_ring = "Shneddick Ring",
-		back="Rudianos's Mantle",
-
-	}
 	--TP Sets--
 	sets.TP = {}
 
@@ -161,7 +156,7 @@ function get_sets()
 		body = "Nyame Mail",
 		hands= "Nyame Gauntlets",
 		left_ring = "Moonlight Ring",
-		ring2 = "Regal Ring",
+		ring2 = "Beithir ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
 		waist = "Sailfi Belt +1",
 		legs = "Nyame Flanchard",
@@ -255,7 +250,7 @@ function get_sets()
 		waist="Olympus Sash",
 		left_ear="Mimir Earring",
 		right_ear="Tuisto Earring",
-		left_ring="Moonlight Ring",
+		left_ring="Stikini Ring +1",
 		right_ring="Stikini Ring +1",
 		back = "Weard Mantle"
 		}
@@ -383,11 +378,13 @@ function get_sets()
 	}
 	
 
-	sets.JA.Sentinel = {feet = "Caballarius Leggings +1"}
+	sets.JA.Sentinel = {feet = "Caballarius Leggings +3"}
 
 	sets.JA.Cover = {}
 
-	sets.JA.Rampart = { head = "Caballarius Coronet +1"}
+	sets.JA.Rampart = { head = "Caballarius Coronet +2"}
+	
+	sets.JA.Chivalry ={hands = "Caballarius Gauntlets +2",}
 
 	--Precast Sets--
 	sets.precast = {}
@@ -464,6 +461,10 @@ function precast(spell)
 	if spell.english == "Shield Bash" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.ShieldBash))
 	end
+	
+	if spell.english == "Chivalry" then
+		equip(set_combine(sets.Utility.Enmity, sets.JA.Chivalry))
+	end
 
 	if spell.english == "Sentinel" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Sentinel))
@@ -502,7 +503,7 @@ function midcast(spell, act)
 	if spell.english == "Phalanx" then
 		equip(sets.Magic.Phalanx)
 	end
-	if spell.skill == "Blue Magic" then
+	if spell.skill == "Blue Magic" or spell.skill == "Ninjutsu" then
 		equip(sets.Magic.SIRD)
 		if spell.english == "Frightful Roar" then
 			equip(sets.Utility.FrightfulRoar)
@@ -547,6 +548,13 @@ function self_command(command)
 		end
 		send_command("@input /echo <----- Idle Set changed to " .. sets.Idle.index[Idle_ind] .. " ----->")
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
+	elseif command == "cycle WeaponSet" then
+		Weapons_ind = Weapons_ind + 1
+		if Weapons_ind > #sets.Weapons.index then
+			Weapons_ind = 1
+		end
+		send_command("@input /echo <----- Weapon Set changed to " .. sets.Weapons.index[Weapons_ind] .. " ----->")
+		equip(sets.Weapons[sets.Weapons.index[Weapons_ind]])
 	elseif command == "equip TP set" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
 	elseif command == "equip Idle set" then

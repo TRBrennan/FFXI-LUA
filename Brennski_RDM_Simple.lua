@@ -412,7 +412,7 @@ function get_sets()
 		right_ear = "Loquac. Earring",
 		left_ring = "Rahab Ring",
 		right_ring = "Kishar Ring",
-		back = "Swith Cape"
+		back = "Fi follet cape +1",
 	}
 	
 	sets.precast.FC.Dispelga = {
@@ -429,7 +429,7 @@ function get_sets()
 		right_ear = "Loquac. Earring",
 		left_ring = "Rahab Ring",
 		right_ring = "Kishar Ring",
-		back = "Swith Cape"
+		back = "Fi follet cape +1",
 	}
 
 	sets.precast.FC.Regen = {
@@ -460,7 +460,7 @@ function get_sets()
 		right_ear="Loquac. Earring",
 		left_ring="Rahab Ring",
 		right_ring="Kishar Ring",
-		back="Swith Cape",
+		back = "Fi follet cape +1",
 	}
 
 	--Utility and JA Sets --

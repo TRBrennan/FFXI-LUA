@@ -29,7 +29,7 @@ function get_sets()
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
-		ammo = "Staunch Tathlum +1",
+		ammo ="Aurgelmir Orb +1",
 		head="Malignance Chapeau",
 		neck = "Sanctity Necklace",
 		ear1 = "Eabani Earring",
@@ -62,12 +62,12 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "AccuracyMid", "AccuracyFull", "DT", "DTAccuracy", "Hybrid"}
-	--1=Standard, 2= AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy,7=Hybrid
+	sets.TP.index = {"Standard", "AccuracyFull", "DT", "DTAccuracy", "Hybrid"}
+	--1=Standard, 2==AccuracyFull, 3=DT, 4=DTAccuracy,5=Hybrid
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo = "Coiste Bodhar",
+		ammo ="Aurgelmir Orb +1",
 		head ="Adhemar Bonnet +1",
 		body = "Ken. Samue",
 		hands = "Adhemar Wristbands +1",
@@ -76,30 +76,15 @@ function get_sets()
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
 		left_ear = "Sherida Earring",
-		right_ear = "Telos Earring",
+		right_ear = "Schere Earring",
 		left_ring = "Gere Ring",
 		right_ring = "Niqmaddu Ring",
 		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
 	}
 
-	sets.TP.AccuracyMid = {
-		ammo = "Coiste Bodhar",
-		head = {name = "Dampening Tam", augments = {"DEX+8", "Accuracy+14", "Mag. Acc.+13", "Quadruple Attack +1"}},
-		body = "Ken. Samue",
-		hands = "Adhemar Wristbands +1",
-		legs = "Hesychast's Hose +3",
-		feet = "Anchorite's Gaiters +3",
-		neck = "Mnk. Nodowa +1",
-		waist = "Moonbow Belt",
-		left_ear = "Cessance Earring",
-		right_ear = "Telos Earring",
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
-	}
 
 	sets.TP.AccuracyFull = {
-		ammo = "Coiste Bodhar",
+		ammo ="Aurgelmir Orb +1",
 		head = {name = "Dampening Tam", augments = {"DEX+8", "Accuracy+14", "Mag. Acc.+13", "Quadruple Attack +1"}},
 		body = "Ashera Harness",
 		hands = "Adhemar Wristbands +1",
@@ -108,7 +93,7 @@ function get_sets()
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
 		left_ear = "Cessance Earring",
-		right_ear = "Telos Earring",
+		rright_ear = "Schere Earring",
 		left_ring = "Regal Ring",
 		right_ring = "Niqmaddu Ring",
 		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
@@ -124,14 +109,14 @@ function get_sets()
     neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
     waist="Moonbow Belt",
 	left_ear = "Sherida Earring",
-	right_ear = "Telos Earring",
+	right_ear = "Schere Earring",
     left_ring="Gere Ring",
     right_ring="Niqmaddu Ring",
     back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.TP.DTAccuracy = {
-	ammo = "Coiste Bodhar",
+	ammo ="Aurgelmir Orb +1",
     head="Malignance Chapeau",
     body="Malignance Tabard",
     hands="Malignance Gloves",
@@ -140,14 +125,14 @@ function get_sets()
     neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
     waist="Moonbow Belt",
 	left_ear = "Sherida Earring",
-	right_ear = "Telos Earring",
+	right_ear = "Schere Earring",
     left_ring="Gere Ring",
     right_ring="Niqmaddu Ring",
     back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	
 	sets.TP.Hybrid ={
-		ammo = "Coiste Bodhar",
+		ammo ="Aurgelmir Orb +1",
 		head="Malignance Chapeau",
 		body = "Mpaca's Doublet",
 		hands="Malignance Gloves",
@@ -156,7 +141,7 @@ function get_sets()
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
 		left_ear = "Sherida Earring",
-		right_ear = "Telos Earring",
+		right_ear = "Schere Earring",
 		left_ring = "Gere Ring",
 		right_ring = "Niqmaddu Ring",
 		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
@@ -318,7 +303,7 @@ function get_sets()
 		body = "Assim. jubbah +1",
 		hands = "Stone Mufflers",
 		ring1 = "Rahab ring",
-		back = "Swith cape",
+		back = "Fi follet cape +1",
 		waist = "Siegel sash",
 		legs = "Haven hose",
 		Feet = "Nyame Sollerets",
@@ -332,7 +317,7 @@ function get_sets()
 		body = "Assim. jubbah +1",
 		hands = "Ayao's gages",
 		ring1 = "Rahab ring",
-		back = "Swith cape",
+		back = "Fi follet cape +1",
 		waist = "Pythia sash +1",
 		legs = "Portent pants",
 		Feet = "Nyame Sollerets",

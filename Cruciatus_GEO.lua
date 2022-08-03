@@ -129,7 +129,7 @@ function get_sets()
 		left_ear="Calamitous Earring",
 		right_ear="Mendi. Earring",
 		left_ring="Defending Ring",
-		right_ring="Stikini Ring",
+		right_ring="Stikini Ring +1",
 		back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +18','Pet: Damage taken -4%',}},
     }
 
@@ -147,7 +147,7 @@ function get_sets()
 		left_ear="Calamitous Earring",
 		right_ear="Mendi. Earring",
 		left_ring="Defending Ring",
-		right_ring="Stikini Ring",
+		right_ring="Stikini Ring +1",
 		back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +18','Pet: Damage taken -4%',}},
     }
 
@@ -210,7 +210,7 @@ function get_sets()
 		left_ear="Regal Earring",
 		right_ear="Malignance Earring",
 		right_ring="Kishar Ring",
-		left_ring="Stikini Ring",
+		left_ring="Stikini Ring +1",
 		back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
     }
 
@@ -244,7 +244,7 @@ function get_sets()
         left_ear = "Malignance Earring",
         body = "Geomancy Tunic",
         hands = "Jhakri Cuffs +1",
-        ring1 = "Stikini Ring",
+        ring1 = "Stikini Ring +1",
         ring2 = "Evanescence ring",
         back={ name="Nantosuelta's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
         waist = "Refoccilation Stone",
@@ -438,8 +438,8 @@ function get_sets()
     sets.engaged = {
         range = "Dunna",
         neck = "Bagua charm +1",
-        right_ear = "Steelflash Earring",
-        left_ear = "Bladeborn Earring",
+      	left_ear="Cessance Earring",
+		right_ear="Telos Earring",
         head = "Nyame Helm",
         body = "Nyame Mail",
         hands = "Nyame Gauntlets",

@@ -123,8 +123,8 @@ function get_sets()
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck="Bard's Charm +1",
 		waist="Sailfi Belt +1",
-		left_ear="Steelflash Earring",
-		right_ear="Bladeborn Earring",
+		left_ear="Cessance Earring",
+		right_ear="Telos Earring",
 		right_ring="Petrov Ring",
 		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+7','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -134,8 +134,8 @@ function get_sets()
 		
 	sets.TP = {}
     sets.TP = {
-		main="Kaja Sword",
-		sub="Odium",	
+		main="Naegling",
+		sub="Gleti's Knife",	
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+2','Quadruple Attack +3',}},
 		head="Aya. Zucchetto +2",
 		body="Ayanmo Corazza +2",
@@ -144,8 +144,8 @@ function get_sets()
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck="Bard's Charm +1",
 		waist="Sailfi Belt +1",
-		left_ear="Bladeborn Earring",
-		right_ear="Steelflash Earring",
+		left_ear="Cessance Earring",
+		right_ear="Telos Earring",
 		left_ring="Chirich Ring +1",
 		right_ring="Petrov Ring",
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+7','"Dbl.Atk."+10','Damage taken-5%',}},
@@ -166,7 +166,7 @@ function get_sets()
 		waist="Embla Sash",
 		left_ear="Mimir Earring",
 		right_ear="Andoaa Earring",
-		left_ring="Stikini Ring",
+		left_ring="Stikini Ring +1",
 		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		back="Fi Follet Cape +1",
 	}	
@@ -182,7 +182,7 @@ function get_sets()
 		waist="Luminary Sash",
 		left_ear="Regal Earring",
 		right_ear="Loquac. Earring",
-		left_ring="Stikini Ring",
+		left_ring="Stikini Ring +1",
 		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
 	}
@@ -199,7 +199,7 @@ function get_sets()
 		waist="Luminary Sash",
 		left_ear="Regal Earring",
 		right_ear="Loquac. Earring",
-		left_ring="Stikini Ring",
+		left_ring="Stikini Ring +1",
 		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
 	}
@@ -218,7 +218,7 @@ function get_sets()
 		waist="Carrier's Sash",
 		left_ear="Hearty Earring",
 		right_ear="Eabani Earring",
-		left_ring="Stikini Ring",
+		left_ring="Stikini Ring +1",
 		right_ring="Shneddick Ring",
 		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
 	}
@@ -234,7 +234,7 @@ function get_sets()
 		waist="Luminary Sash",
 		left_ear="Mendi. Earring",
 		right_ear="Regal Earring",
-		left_ring="Stikini Ring",
+		left_ring="Stikini Ring +1",
 		right_ring="Lebeche Ring",
 		back="Solemnity Cape",
 	}		
@@ -253,7 +253,7 @@ function get_sets()
 		waist="Carrier's Sash",
 		left_ear="Hearty Earring",
 		right_ear="Eabani Earring",
-		left_ring="Stikini Ring",
+		left_ring="Stikini Ring +1",
 		right_ring="Shneddick Ring",
 		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
 	}
@@ -269,7 +269,7 @@ function get_sets()
 		waist="Luminary Sash",
 		left_ear="Regal Earring",
 		right_ear="Loquac. Earring",
-		left_ring="Stikini Ring",
+		left_ring="Stikini Ring +1",
 		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
 	}
@@ -290,7 +290,7 @@ function get_sets()
 		waist="Carrier's Sash",
 		left_ear="Hearty Earring",
 		right_ear="Eabani Earring",
-		left_ring="Stikini Ring",
+		left_ring="Stikini Ring +1",
 		right_ring="Shneddick Ring",
 		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
 	}
@@ -317,7 +317,7 @@ function get_sets()
 		waist="Embla Sash",
 		left_ear="Mimir Earring",
 		right_ear="Andoaa Earring",
-		left_ring="Stikini Ring",
+		left_ring="Stikini Ring +1",
 		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		back="Fi Follet Cape +1",
 	}
@@ -325,8 +325,8 @@ function get_sets()
    --Aftercast Sets
     sets.aftercast = {}
     sets.aftercast.Regen = {
-		main="Kaja Sword",
-		sub="Odium",
+		main="Naegling",
+		sub="Gleti's Knife",
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+2','Quadruple Attack +3',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body={ name="Nyame Mail", augments={'Path: B',}},
@@ -360,8 +360,8 @@ function get_sets()
 	}
     
     sets.aftercast.Engaged = {
-		main="Kaja Sword",
-		sub="Odium",
+		main="Naegling",
+		sub="Gleti's Knife",
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+2','Quadruple Attack +3',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body={ name="Nyame Mail", augments={'Path: B',}},

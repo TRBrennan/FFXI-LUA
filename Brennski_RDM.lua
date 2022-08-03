@@ -2,12 +2,16 @@ enspells = S {"Enfire", "Enfire II", "Enstone", "Enstone II", "Enaero", "Enaero 
 gainspells = S {"Gain-STR", "Gain-DEX", "Gain-MND", "Gain-CHR", "Gain-INT", "Gain-AGI", "Gain-VIT"}
 
 function get_sets()
-	send_command("bind f9 gs c toggle Nuke set")
-	send_command("bind f10 gs c toggle Idle set")
-	send_command("bind f11 gs c toggle TP set")
-	send_command("bind f12 gs c toggle Enfeebling Set")
-	send_command("bind ^f9 gs c equip TP set")
-	send_command("bind ^f10 gs c equip DT set")
+	-- Load dressup--
+	send_command('lua l dressup')
+	
+	send_command("bind f9 gs c toggle TP set") -- F9 Toogle TP Sets
+	send_command("bind f10 gs c toggle Idle set") -- F10 Toogle Idle sets
+	send_command("bind f11 gs c toggle Nuke set") -- F11 Toogle Between MB and Non MB Sets
+	send_command("bind f12 gs c toggle Enfeebling Set") -- F12 Toogle Enfeeble Mode
+	send_command("bind ^f9 gs c equip TP set") -- CtrlF9 equip current TP Sets
+	send_command("bind ^f10 gs c equip DT set") -- CtrlF10 Equip DT Set
+	send_command("bind !f9 gs c toggle Weapons;") -- Alt F9 swap Weapons
 
 	function file_unload()
 		send_command("unbind ^f9")
@@ -24,7 +28,26 @@ function get_sets()
 		send_command("unbind f10")
 		send_command("unbind f11")
 		send_command("unbind f12")
+		send_command('lua u dressup')
 	end
+	
+	--Weapon Sets--
+	sets.Weapons = {}
+	
+	sets.Weapons.index = {"CroceaDaybreak", "NeaglingTPBonus", "MaxTPBonus", "TauretGleti", "OneDamage"}
+	--1=CroceaDaybreak, 2=NeaglingTPBonus, 3=MaxTPBonus, 4=TauretGleti, 5=OneDamage --
+	Weapons_Ind = 1
+	
+	sets.Weapons.CroceaDaybreak = {main={ name="Crocea Mors", augments={'Path: C',}}, sub="Daybreak"}
+	
+	sets.Weapons.NeaglingTPBonus = {main="Naegling", sub={ name="Thibron", augments={'TP Bonus +1000',}}}
+	
+	sets.Weapons.MaxTPBonus = {main="Maxentius", sub={ name="Thibron", augments={'TP Bonus +1000',}}}	
+	
+	sets.Weapons.TauretGleti = {main = "Tauret", sub ="Gleti's Knife"}
+	
+	sets.Weapons.OneDamage = {	main ="Wind Knife", sub="Edgeless Knife"}
+
 
 	--Idle Sets--
 	sets.Idle = {}
@@ -34,8 +57,6 @@ function get_sets()
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
-		main = "Daybreak",
-		sub = "Sacro Bulwark",
 		ammo = "Homiliary",
 		head = "Vitiation chapeau +3",
 		neck = "Bathy Choker +1",
@@ -52,8 +73,6 @@ function get_sets()
 	}
 
 	sets.Idle.DT = {
-		main="Daybreak",
-		sub="Sacro Bulwark",
 		ammo="Homiliary",
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body={ name="Nyame Mail", augments={'Path: B',}},
@@ -72,95 +91,78 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "EnSpell", "LowHaste", "LowHasteEnSpell", "EnSpell1Damage", "SubtleBlow"}
-	--1=Standard, 2=EnSpell, 3=LowHaste, 4=LowHastEnSpell, 5=EnSpell1Damage,6 =SubtleBlow--
+	sets.TP.index = {"Standard", "EnSpell", "LowHaste", "LowHasteEnSpell", "SubtleBlow"}
+	--1=Standard, 2=EnSpell, 3=LowHaste, 4=LowHastEnSpell, 5= =SubtleBlow--
 
 	TP_ind = 1
 	sets.TP.Standard = {
-    ammo="Aurgelmir Orb +1",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Malignance Gloves",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
-    neck="Lissome Necklace",
-    waist = "Sailfi Belt +1",
-    left_ear="Sherida Earring",
-    right_ear="Telos Earring",
-    left_ring="Hetairoi Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
+		ammo="Aurgelmir Orb +1",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Lissome Necklace",
+		waist = "Sailfi Belt +1",
+		left_ear="Sherida Earring",
+		right_ear="Telos Earring",
+		left_ring="Hetairoi Ring",
+		right_ring="Chirich Ring +1",
+		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 	}
 
 	sets.TP.EnSpell = {
-	--ammo="Regal Gem",
-	ammo ="Aurgelmir Orb +1",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Aya. Manopolas +2",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
-    neck="Duelist's torque +2",
-    waist="Orpheus's Sash",
-    left_ear="Sherida Earring",
-    right_ear="Telos Earring",
-    left_ring="Hetairoi Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
+		--ammo="Regal Gem",
+		ammo ="Aurgelmir Orb +1",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Aya. Manopolas +2",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Duelist's torque +2",
+		waist="Orpheus's Sash",
+		left_ear="Sherida Earring",
+		right_ear="Telos Earring",
+		left_ring="Hetairoi Ring",
+		right_ring="Chirich Ring +1",
+		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 	}
 
 	sets.TP.LowHaste ={    
-	ammo="Coiste Bodhar",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Aya. Manopolas +2",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
-    neck="Lissome Necklace",
-    waist = "Reiki Yotai",
-    left_ear="Sherida Earring",
-    right_ear="Telos Earring",
-    left_ring="Hetairoi Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
+		ammo ="Aurgelmir Orb +1",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Aya. Manopolas +2",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Lissome Necklace",
+		waist = "Reiki Yotai",
+		left_ear="Sherida Earring",
+		right_ear="Telos Earring",
+		left_ring="Hetairoi Ring",
+		right_ring="Chirich Ring +1",
+		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 	}
 	
 	sets.TP.LowHasteEnSpell = {
-	ammo="Regal Gem",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Aya. Manopolas +2",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
-    neck="Duelist's torque +2",
-	waist = "Orpheus's Sash",
-    left_ear="Sherida Earring",
-    right_ear="Telos Earring",
-    left_ring="Hetairoi Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
+		ammo="Regal Gem",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Aya. Manopolas +2",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Duelist's torque +2",
+		waist = "Orpheus's Sash",
+		left_ear="Sherida Earring",
+		right_ear="Telos Earring",
+		left_ring="Hetairoi Ring",
+		right_ring="Chirich Ring +1",
+		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
 	}
 	
-	sets.TP.EnSpell1Damage = {
-	main ="Trainee's Needle",
-	sub="Edgeless Knife",
-	ammo="Regal Gem",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Aya. Manopolas +2",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
-    neck="Duelist's torque +2",
-    waist="Orpheus's Sash",
-    left_ear="Sherida Earring",
-    right_ear="Telos Earring",
-    left_ring="Hetairoi Ring",
-    right_ring="Chirich Ring +1",
-    back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
-	}
 	
 	sets.TP.SubtleBlow = {
-		ammo="Coiste Bodhar",
+		ammo ="Aurgelmir Orb +1",
 		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
@@ -264,8 +266,8 @@ function get_sets()
 	}
 	
 	sets.Enhancing.SkillUnCapped={	
-		main ="Colada",
-		sub = "Ammurapi shield",
+		main ="Pukulatmuj +1",
+		sub = "Forfend +1",
 		ammo="Regal Gem",
 		head="Befouled Crown",
 		body= "Vitiation tabard +3",
@@ -273,11 +275,11 @@ function get_sets()
 		legs = "Carmine Cuisses +1",
 		feet="Leth. Houseaux +1",
 		neck="Incanter's Torque",
-		waist="Embla Sash",
+		waist="Olympus Sash",
 		left_ear="Andoaa Earring",
 		right_ear="Mimir Earring",
 		right_ring="Stikini ring +1",
-		left_ring="Defending Ring",
+		left_ring="Stikini Ring +1",
 		back = "Ghostfyre Cape",
 	}
 
@@ -526,7 +528,7 @@ function get_sets()
 		right_ear = "Loquac. Earring",
 		left_ring = "Rahab Ring",
 		right_ring = "Kishar Ring",
-		back = "Swith Cape"
+		back = "Fi follet cape +1",
 	}
 	
 	sets.precast.FC.Dispelga = {
@@ -543,7 +545,7 @@ function get_sets()
 		right_ear = "Loquac. Earring",
 		left_ring = "Rahab Ring",
 		right_ring = "Kishar Ring",
-		back = "Swith Cape"
+		back = "Fi follet cape +1",
 	}
 
 	sets.precast.FC.Regen = {
@@ -557,7 +559,7 @@ function get_sets()
 		left_ring = "Rahab Ring",
 		right_ring = "Kishar Ring",
 		waist = "Embla Sash",
-		back = "Swith Mantle",
+		back = "Fi follet cape +1",
 		legs = "Telchine Braconi",
 		feet = "Telchine Pigaches"
 	}
@@ -574,7 +576,7 @@ function get_sets()
 		right_ear="Loquac. Earring",
 		left_ring="Rahab Ring",
 		right_ring="Kishar Ring",
-		back="Swith Cape",
+		back = "Fi follet cape +1",
 	}
 
 	--Utility and JA Sets --
@@ -916,7 +918,8 @@ end
 
 function aftercast(spell)
 	if player.status == "Engaged" then
-		equip(sets.TP[sets.TP.index[TP_ind]])
+		--equip(sets.TP[sets.TP.index[TP_ind]])
+		equip(set_combine(sets.Weapons[sets.Weapons.index[Weapons_Ind]],sets.TP[sets.TP.index[TP_ind]]))
 		-- send_command("@input /echo TP Set")
 		if buffactive["doom"] then
 			equip(set_combine(sets.TP[sets.TP.index[TP_ind]], sets.Utility.Doomed))
@@ -945,7 +948,8 @@ end
 
 function status_change(new, old)
 	if player.status == "Engaged" then
-		equip(sets.TP[sets.TP.index[TP_ind]])
+		--equip(sets.TP[sets.TP.index[TP_ind]])
+		equip(set_combine(sets.Weapons[sets.Weapons.index[Weapons_Ind]],sets.TP[sets.TP.index[TP_ind]]))
 		-- send_command("@input /echo TP Set")
 		if buffactive["doom"] then
 			equip(set_combine(sets.TP[sets.TP.index[TP_ind]], sets.Utility.Doomed))
@@ -996,6 +1000,13 @@ function self_command(command)
 		end
 		send_command("@input /echo <----- Enfeebling Set changed to " .. sets.Enfeebling.index[Enfeebling_ind] .. " ---->")
 		equip(sets.Enfeebling[sets.Enfeebling.index[Enfeebling_ind]])
+	  elseif command == 'toggle Weapons' then
+		Weapons_Ind = Weapons_Ind +1
+		if Weapons_Ind > #sets.Weapons.index then 
+			Weapons_Ind = 1 
+		end
+		send_command('@input /echo [Weapons changed to '..sets.Weapons.index[Weapons_Ind]..']')
+		equip(sets.Weapons[sets.Weapons.index[Weapons_Ind]])
 	elseif command == "equip TP set" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
 	elseif command =="equip DT set" then

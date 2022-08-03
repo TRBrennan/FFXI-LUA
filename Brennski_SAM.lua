@@ -157,7 +157,7 @@ function get_sets()
 		left_ear = "Thrud Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		left_ring="Niqmaddu Ring",
-		right_ring="Regal Ring",
+		right_ring="Beithir ring",
 		back = WSD_Cape
 	}
 
@@ -192,7 +192,7 @@ function get_sets()
 		waist="Orpheus's Sash",
 		left_ear = "Friomisi earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
-		right_ring = "Regal Ring",
+		right_ring = "Beithir ring",
 		left_ring = "Niqmaddu Ring",
 		back={ name="Smertrios's Mantle", augments={'STR+20','Mag. Acc+20 /Mag. Dmg.+20','STR+10','Weapon skill damage +10%',}},
 	}
@@ -245,7 +245,7 @@ function get_sets()
 		body = "Assim. jubbah +1",
 		hands = "Ayao's gages",
 		right_ring = "Rahab ring",
-		back = "Swith cape",
+		back = "Fi follet cape +1",
 		waist = "Pythia sash +1",
 		legs = "Portent pants",
 		feet = "Valorous Greaves"
@@ -332,7 +332,7 @@ function get_sets()
 		right_ear = "Loquac. Earring",
 		left_ring = "Rahab Ring",
 		right_ring = "Kishar Ring",
-		back = "Swith Cape"
+		back = "Fi follet cape +1",
 	}
 end
 

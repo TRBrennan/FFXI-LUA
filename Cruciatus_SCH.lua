@@ -182,11 +182,11 @@ function get_sets()
 		feet = {name = "Telchine Pigaches", augments = {"Enh. Mag. eff. dur. +9"}},
 		back = "Fi Follet Cape +1",
 		neck = "Incanter's Torque",
-		waist = "Cascade Belt",
+		waist = "Olympus Sash",
 		left_ear = "Andoaa Earring",
 		right_ear = "Mimir Earring",
-		left_ring = "Stikini Ring",
-		right_ring = "Kishar Ring"
+		left_ring = "Stikini Ring +1",
+		right_ring = "Stikini Ring +1"
 	}
 
 	sets.Enhancing.Storms = {
@@ -200,11 +200,11 @@ function get_sets()
 		feet = {name = "Telchine Pigaches", augments = {"Enh. Mag. eff. dur. +9"}},
 		back = "Fi Follet Cape +1",
 		neck = "Incanter's Torque",
-		waist = "Cascade Belt",
+		waist = "Olympus Sash",
 		left_ear = "Andoaa Earring",
 		right_ear = "Mimir Earring",
-		left_ring = "Stikini Ring",
-		right_ring = "Kishar Ring"
+		left_ring = "Stikini Ring +1",
+		right_ring = "Stikini Ring +1"
 	}
 
 	--Magic Sets--
@@ -261,8 +261,8 @@ function get_sets()
 		neck = "Incanter's Torque ",
 		ear1 = "Regal Earring",
 		ear2 = "Regal Earring",
-		ring1 = "Stikini Ring",
-		ring2 = "Kishar Ring",
+		ring1 = "Stikini Ring +1",
+		ring2 = "Stikini Ring +1",
 		waist = "Luminary Sash",
 		back = "Bookworms's Cape"
 	}

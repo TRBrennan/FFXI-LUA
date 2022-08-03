@@ -389,7 +389,7 @@ function get_sets()
 		hands = "Regal Gauntlets",
 		waist = "Olympus Sash",
 		left_ring= "Stikini ring +1",
-		right_ring = "Defending Ring",
+		right_ring = "Stikini Ring +1",
 		legs = "Futhark Trousers +3",
 		feet = "Erilaz Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
@@ -407,7 +407,7 @@ function get_sets()
 		right_ear = "Mimir Earring",
 		left_ear = "Andoaa Earring",
 		left_ring = "Stikini ring +1",
-		right_ring = "Defending Ring",
+		right_ring = "Stikini Ring +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 
@@ -515,7 +515,7 @@ function get_sets()
 		waist = "Carrier's Sash",
 		left_ring = "Defending Ring",
 		right_ring = "Moonlight Ring",
-		legs = "Aya. Cosciales +2",
+		legs="Agwu's Slops",
 		feet = "Carmine Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
@@ -547,7 +547,7 @@ function get_sets()
 		waist = "Carrier's Sash",
 		left_ring = "Defending Ring",
 		right_ring = "Moonlight Ring",
-		legs = "Aya. Cosciales +2",
+		legs="Agwu's Slops",
 		feet = "Carmine Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}

@@ -11,7 +11,7 @@ function get_sets()
 		send_command("bind ^f9 gs c equip TP set")
 		send_command("bind ^f10 gs c equip DT set")
 		send_command("bind !f9 gs c toggle Guns;") -- Alt F9 swap Guns
-		send_command("bind !f10 gs c toggle QD;") -- Alt F10 swap Guns
+		send_command("bind !f10 gs c toggle QD;") -- Alt F10 swap QD sets
        
         function file_unload()
      
@@ -105,7 +105,8 @@ function get_sets()
 							  legs="Malignance Tights",
 							  feet="Malignance Boots", }
                                  
-                sets.TP.DTAccuracy = { main = "Neagling", sub= "Gleti's knife",
+                sets.TP.DTAccuracy = { main = "Neagling", 
+										sub= "Gleti's knife",
 										ammo ="Chrono bullet",
                                          head="Malignance Chapeau",
 										body="Malignance Tabard",
@@ -151,7 +152,7 @@ function get_sets()
                                           head = "Nyame Helm",
 										  neck="Rep. Plat. Medal",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Nyame Mail",
-										  hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Ilabrat Ring",
+										  hands="Nyame Gauntlets",ring1="Regal Ring",ring2={ name="Metamor. Ring +1", augments={'Path: A',}},
                                           back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 										  waist="Sailfi Belt +1",Legs = "Nyame Flanchard",
 										  feet="Nyame Sollerets" }
@@ -211,18 +212,35 @@ function get_sets()
 			
 		sets.LastStand = {ammo ="Chrono bullet", 
 						Head = "Nyame Helm",
-						body="Laksa. Frac +3",
+						body="Ikenga's Vest",
 						hands="Nyame Gauntlets",
 						Legs = "Nyame Flanchard",
-						feet={ name="Nyame Sollerets", augments={'Path: B',}},
-						neck="Iskur Gorget",
-						waist="Yemaya Belt",
+						feet="Lanun Bottes +3",
+						neck="Fotia Gorget",
+						waist="Fotia Belt",
 						left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
 						right_ear="Telos Earring",
 						left_ring="Dingir Ring",
 						right_ring="Regal Ring",
 						back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 						}
+						
+		sets.WS.HotShot = {
+				ammo ="Chrono bullet", 
+				Head = "Nyame Helm",
+				body="INyame Mail",
+				hands="Nyame Gauntlets",
+				Legs = "Nyame Flanchard",
+				feet="Lanun Bottes +3",
+				neck="Fotia Gorget",
+				waist ="Orpheus's Sash",
+				left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+				right_ear="Telos Earring",
+				left_ring="Dingir Ring",
+				right_ring="Regal Ring",
+				back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
+		}
+		
 										  
 		--Ranged Attack ---
 		sets.Ranged = {}
@@ -231,7 +249,7 @@ function get_sets()
 			head={ name="Taeon Chapeau", augments={'"Snapshot"+4','"Snapshot"+4',}},
 			body="Oshosi Vest",
 			hands={ name="Taeon Gloves", augments={'"Snapshot"+5','"Snapshot"+5',}},
-			legs={ name="Adhemar Kecks", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
+			legs="Ikenga's Trousers",
 			feet="Meg. Jam. +2",
 			neck={ name="Comm. Charm +1", augments={'Path: A',}},
 			waist="Yemaya Belt",
@@ -288,7 +306,7 @@ function get_sets()
         sets.JA = {}
         
         sets.JA.PhantomRoll = {range = "Compensator", head="Lanun Tricorne",neck="Regal Necklace", ear1="Etiolation earring", ear2="Eabani Earring",
-                              body="Emet Hareness +1",hands="Chasseur's gants",ring2="Luzaf's Ring",ring1="Defending Ring",
+                              body="Nyame Mail",hands="Chasseur's gants",ring2="Luzaf's Ring",ring1="Defending Ring",
                               back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 							  waist="Carrier's Sash",legs="Nyame Flanchard",feet = "Nyame Sollerets" }
        
@@ -417,6 +435,13 @@ function precast(spell)
 		elseif spell.english == 'Last Stand' then	
 			if spell.target.distance <= 21.5 then
 				equip(sets.LastStand)
+			else
+				cancel_spell()
+				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
+			end
+		elseif spell.english == 'Hot Shot' then
+			if spell.target.distance <= 21.5 then
+				equip(sets.WS.HotShot)
 			else
 				cancel_spell()
 				windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")

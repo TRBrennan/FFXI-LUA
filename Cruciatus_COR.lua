@@ -76,15 +76,15 @@ function get_sets()
 
         TP_ind = 1
         sets.TP.Standard = {
-		    head="Nyame Helm",
-			body="Nyame Mail",
-			hands="Nyame Gauntlets",
-			legs="Nyame Flanchard",
-			feet="Nyame Sollerets",
+		    head="Mummu Bonnet +2",
+			body="Meghanada Cuirie +2",
+			hands="Mummu Wrists +2",
+			legs="Mummu Kecks +2",
+			feet="Mummu Gamashes +2",
 			neck="Rep. Plat. Medal",
 			waist="Kentarch Belt +1",
-			left_ear="Sherida Earring",
-			right_ear="Moonshade Earring",
+			left_ear="Cessance Earring",
+			right_ear="Steelflash Earring",
 			left_ring="Mummu Ring",
 			right_ring="Petrov Ring",
 		}
