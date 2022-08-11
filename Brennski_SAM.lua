@@ -256,7 +256,7 @@ function get_sets()
 
 	sets.Utility.Enmity = {
 		ammo = "Sapience Orb",
-		ear2 = "Friomisi Earring",
+		ear2 = "Trux Earring",
 		back = "Weard Mantle",
 		waist = "Trance belt",
 		left_ring = "Supershear Ring",

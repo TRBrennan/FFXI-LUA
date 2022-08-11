@@ -57,7 +57,7 @@ function get_sets()
 		right_ear = "Hearty Earring",
 		body = "Nyame Mail",
 		hands = "Regal Gauntlets",
-		left_ring = "Moonlight ring",
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Carrier's Sash",
@@ -129,7 +129,7 @@ function get_sets()
 		right_ear = "Sherida earring",
 		body = "Ashera Harness",
 		hands = "Adhemar Wristbands +1",
-		left_ring = "Moonlight Ring",
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		right_ring = "Niqmaddu Ring",
 		back = { name = "Ogma's cape",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}	},
 		waist = "Ioskeha belt +1",
@@ -152,7 +152,7 @@ function get_sets()
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Etiolation Earring",
 		right_ring = "Defending Ring",
-		left_ring = "Moonlight Ring",
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 	
@@ -168,7 +168,7 @@ function get_sets()
 		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
 		right_ear="Sherida Earring",
 		right_ring="Moonlight Ring",
-		left_ring="Moonbeam Ring",
+		left_ring="Moonlight Ring",
 		back={ name="Ogma's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 	}
 	-- sets.TP.HBP = {
@@ -182,7 +182,7 @@ function get_sets()
 		-- waist = "Carrier's Sash",
 		-- left_ear = "Odnowa Earring +1",
 		-- right_ear = "Odnowa Earring",
-		-- left_ring = "Moonlight Ring",
+		-- left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		-- right_ring = "Moonbeam Ring",
 		-- back = "Moonbeam Cape"
 	-- }
@@ -199,7 +199,7 @@ function get_sets()
 		-- waist = "Carrier's Sash",
 		-- right_ear = "Hearty Earring",
 		-- left_ear = "Odnowa Earring +1",
-		-- left_ring = "Moonlight Ring",
+		-- left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		-- right_ring = "Defending Ring",
 		-- back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	-- }
@@ -367,13 +367,13 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head = "Halitus Helm",
 		neck = "Futhark Torque +2",
-		right_ear = "Friomisi Earring",
+		right_ear = "Trux Earring",
 		left_ear = "Odnowa Earring +1",
 		body = "Emet harness +1",
 		hands = "Kurys Gloves",
 		waist = "Trance belt",
 		right_ring = "Defending Ring",
-		left_ring = "Moonlight Ring",
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		legs = "Erilaz Leg Guards +1",
 		feet = "Ahosi Leggings",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
@@ -495,7 +495,7 @@ function get_sets()
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Hearty Earring",
 		left_ring = "Defending Ring",
-		right_ring = "Moonlight Ring",
+		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 
@@ -514,7 +514,7 @@ function get_sets()
 		hands = "Regal Gauntlets",
 		waist = "Carrier's Sash",
 		left_ring = "Defending Ring",
-		right_ring = "Moonlight Ring",
+		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		legs="Agwu's Slops",
 		feet = "Carmine Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
@@ -530,7 +530,7 @@ function get_sets()
 		hands = "Regal Gauntlets",
 		waist = "Carrier's Sash",
 		left_ring = "Defending Ring",
-		right_ring = "Moonlight Ring",
+		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		legs = {name = "Futhark Trousers +1", augments = {'Enhances "Inspire" effect'}},
 		feet = "Carmine Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
@@ -546,7 +546,7 @@ function get_sets()
 		hands = "Regal Gauntlets",
 		waist = "Carrier's Sash",
 		left_ring = "Defending Ring",
-		right_ring = "Moonlight Ring",
+		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		legs="Agwu's Slops",
 		feet = "Carmine Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
@@ -557,7 +557,7 @@ function precast(spell)
 	if spell.action_type =="Magic" then
 		equip(sets.precast.FC.Standard)
 	elseif spell.skill == "Enhancing Magic" then
-		equip(sets.precast.FC.Enhancing)
+		equip(sets.precast.FC.Standard)
 	elseif spell.skill == "Ninjutsu" then
 		equip(sets.precast.FC.Standard)
 	elseif spell.english == "Vivacious Pulse" then

@@ -38,7 +38,7 @@ function get_sets()
 		ear2 = "Infused Earring",
 		body = "Reverence Surcoat +3",
 		hands = "Regal Gauntlets",
-		left_ring = "Moonlight Ring",
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		right_ring = "Shneddick Ring",		
 		waist = "Fucho-no-obi",
 		legs = "Sakpata's Cuisses",
@@ -57,8 +57,8 @@ function get_sets()
 		waist= "Carrier's Sash",
 		left_ear="Odnowa Earring +1",
 		right_ear = "Tuisto Earring",
-		left_ring = "Moonlight Ring",
-		right_ring = "Moonbeam Ring",
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
+		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 
@@ -73,7 +73,7 @@ function get_sets()
 		waist="Carrier's Sash",
 		left_ear="Odnowa Earring +1",
 		right_ear = "Tuisto Earring",
-		left_ring = "Moonlight Ring",
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		right_ring = "Shneddick Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
@@ -86,6 +86,7 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Tank = {
+		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		ammo="Staunch Tathlum +1",
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
@@ -96,12 +97,12 @@ function get_sets()
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Odnowa Earring +1",
 		right_ear = "Tuisto Earring",
-		left_ring = "Moonlight Ring",
-		right_ring = "Moonbeam Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 	}
 
 	sets.TP.Turtle = {
+		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		ammo="Staunch Tathlum +1",
 		head="Sakpata's Helm",
 		body="Sakpata's Plate",
@@ -112,9 +113,8 @@ function get_sets()
 		waist= "Carrier's Sash",
 		left_ear="Odnowa Earring +1",
 		right_ear = "Tuisto Earring",
-		left_ring = "Moonlight Ring",
-		right_ring = "Moonbeam Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 	}
 	
 	
@@ -155,7 +155,7 @@ function get_sets()
 		head = "Nyame Helm",
 		body = "Nyame Mail",
 		hands= "Nyame Gauntlets",
-		left_ring = "Moonlight Ring",
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		ring2 = "Beithir ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
 		waist = "Sailfi Belt +1",
@@ -194,8 +194,8 @@ function get_sets()
 		ear1 = "Novio Earring",
 		body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
-		left_ring = "Moonlight Ring",
-		right_ring = "Moonbeam Ring",
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
+		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		waist = "Eschan Stone",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
 		legs = "Nyame Flanchard",
@@ -233,7 +233,7 @@ function get_sets()
 		neck = "Incanter's Torque",
 		hands = "Regal Gauntlets",
 		feet = "Souveran Schuhs +1",
-		body="Rev. Surcoat +3",
+		body="Shabti Cuirass +1",
 		ring1 = "Stikini ring +1",
 		legs = "Carmine Cuisses +1",
 		head = "Carmine Mask +1"
@@ -261,12 +261,12 @@ function get_sets()
 		ear2 = "Etiolation Earring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 		waist = "Trance Belt",
-		left_ring = "Moonlight Ring",
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		right_ring = "Moonbeam Ring",
 		neck = "Unmoving Collar +1",
 		hands = "Regal Gauntlets",
 		feet = "Souveran Schuhs +1",
-		body = "Rev. Surcoat +3",
+		body="Shabti Cuirass +1",
 		ring1 = "Stikini ring +1",
 		legs = "Souveran Diechlings +1",
 		head = "Souveran Schaller +1"
@@ -335,7 +335,7 @@ function get_sets()
 
 	sets.Utility.Enmity = {
 		ammo = "Sapience Orb",
-		ear2 = "Friomisi Earring",
+		ear2 = "Trux Earring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 		waist = "Trance belt",
 		ring2 = "Supershear Ring",

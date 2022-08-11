@@ -119,7 +119,7 @@ function get_sets()
 		right_ear={ name="Schere Earring", augments={'Path: A',}},
 		left_ring="Niqmaddu Ring",
 		--right_ring="Petrov Ring",
-		right_ring = "Moonlight Ring",
+		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		back=DA_Back
 	}
 
@@ -176,7 +176,7 @@ function get_sets()
 		right_ear={ name="Schere Earring", augments={'Path: A',}},
 		left_ring="Niqmaddu Ring",
 		--right_ring="Petrov Ring",
-		right_ring = "Moonlight Ring",
+		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		back = DA_Back,
 	}
 	-- sets.TP.Chango = {
@@ -1169,7 +1169,7 @@ function get_sets()
 
 	sets.JA.Ret = {feet = "Boii Calligae +1"}
 
-	sets.JA.BloodRage = {body = "Boii lorica"}
+	sets.JA.BloodRage = {body = "Boii lorica +1"}
 
 	sets.JA.Tomahawk = {
 		ammo = "Throwing Tomahawk",
@@ -1203,7 +1203,7 @@ function get_sets()
 
 	sets.enmity = {
 		ammo = "Sapience Orb",
-		ear2 = "Friomisi Earring",
+		ear2 = "Trux Earring",
 		back = "Weard Mantle",
 		waist = "Trance belt",
 		ring2 = "Supershear Ring",
@@ -1557,11 +1557,11 @@ function aftercast(spell)
 
 	else
 		if Gear_Debug == 0 then
-			equip(sets.Idle.Standard)
+			equip(set_combine(sets.Weapons[sets.Weapons.index[Weapons_ind]],equip(sets.Idle.Standard)))
 			if Sleeping_Mode == 1 then
 				equip({neck = "Opo-opo Necklace"})
 			else
-				equip(sets.Idle.Standard)
+				equip(set_combine(sets.Weapons[sets.Weapons.index[Weapons_ind]],equip(sets.Idle.Standard)))
 				--send_command("@input /echo Idle Set")
 			end
 		else
@@ -1673,6 +1673,18 @@ function self_command(command)
 		else
 			Gear_Debug = 1
 			--send_command("@input /echo Debug Mode Set to 1")
+		end
+	elseif command == "set weapon set" then
+		if player.equipment.main =="Chango" then
+			Weapons_ind = 1
+		elseif player.equipment.main == "Naegling" then
+			Weapons_ind = 2
+		elseif player.equipment.main == "Loxotic Mace +1" then
+			Weapons_ind = 3
+		elseif player.equipment.main == "Shining One" then
+			Weaons_ind = 4
+		elseif player.equipment.main == "Ukonvasara" then
+			Weapons_ind = 5
 		end
 	elseif command == "cycle WeaponSet" then
 		Weapons_ind = Weapons_ind + 1
