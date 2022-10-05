@@ -237,7 +237,7 @@ function get_sets()
         }
 
         sets.Exenterator = {
-                ammo = "Crepuscular Pebble",
+                ammo = "Oshasha's Treatise",
                 head = "Adhemar Bonnet +1",
                 neck = "Fotia gorget",
                 ear2 = "Moonshade Earring",
@@ -269,7 +269,7 @@ function get_sets()
 	}
 
         sets.SharkBite = {
-                ammo = "Crepuscular Pebble",
+                ammo = "Oshasha's Treatise",
                 head = "Nyame Helm",
                 neck = "Rep. Plat. Medal",
                 ear1 = "Ishvara Earring",

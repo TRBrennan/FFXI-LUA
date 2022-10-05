@@ -127,7 +127,7 @@ function get_sets()
 	Requiescat_ind = 1
 
 	sets.Requiescat.Attack = {
-		ammo = "Crepuscular Pebble",
+		ammo = "Oshasha's Treatise",
 		neck = "Fotia Gorget",
 		ear2 = "Moondshade earring",
 		ear1 = "Telos Earring",
@@ -148,7 +148,7 @@ function get_sets()
 	SavageBlade_ind = 1
 
 	sets.SavageBlade.Attack = {
-		ammo = "Crepuscular Pebble",
+		ammo = "Oshasha's Treatise",
 		neck = "Unmoving Collar +1",
 		left_ear="Odnowa Earring +1",
 		ear1 = "Thrud Earring",
@@ -156,7 +156,7 @@ function get_sets()
 		body = "Nyame Mail",
 		hands= "Nyame Gauntlets",
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
-		ring2 = "Beithir ring",
+		ring2 = "Epaminondas's Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
 		waist = "Sailfi Belt +1",
 		legs = "Nyame Flanchard",
@@ -169,7 +169,7 @@ function get_sets()
 	ChantDuCygne_ind = 1
 
 	sets.ChantDuCygne.Attack = {
-		ammo = "Crepuscular Pebble",
+		ammo = "Oshasha's Treatise",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
 		ear1 = "Telos Earring",
@@ -184,18 +184,17 @@ function get_sets()
 		feet = "Thereoid Greaves"
 	}
 
-	sets.WS.SanguineBlade = {}
 
 	sets.WS.SanguineBlade = {
-		ammo = "Crepuscular Pebble",
-		head = "Nyame Helm",
+		ammo = "Oshasha's Treatise",
+		head = "Pixie Hairpin +1",
 		neck = "Sanctity Necklace",
 		rear = "Friomisi earring",
 		ear1 = "Novio Earring",
 		body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
-		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
+		 right_ring	=	"Archon Ring",
 		waist = "Eschan Stone",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
 		legs = "Nyame Flanchard",
@@ -282,7 +281,7 @@ function get_sets()
 		neck="Moonlight Necklace",
 		waist="Audumbla Sash",
 		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-		right_ear="Friomisi Earring",
+		right_ear="Trux Earring",
 		left_ring="Defending Ring",
 		right_ring="Supershear Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
@@ -297,8 +296,8 @@ function get_sets()
 		feet={ name="Odyssean Greaves", augments={'Enmity+7','VIT+9','Accuracy+14','Attack+12',}},
 		neck="Sacro Gorget",
 		waist="Audumbla Sash",
-		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-		right_ear="Nourish. Earring +1",
+		right_ear="Chevalier's Earring +1",
+		left_ear="Nourish. Earring +1",
 		right_ring="Defending Ring",
 		left_ring="Moonlight Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
@@ -356,7 +355,7 @@ function get_sets()
 		body={ name="Sakpata's Plate", augments={'Path: A',}},
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+		feet="Chevalier's sabatons +2",
 		neck="Sanctity Necklace",
 		waist="Eschan Stone",
 		left_ear="Crep. Earring",
@@ -384,7 +383,9 @@ function get_sets()
 
 	sets.JA.Rampart = { head = "Caballarius Coronet +2"}
 	
-	sets.JA.Chivalry ={hands = "Caballarius Gauntlets +2",}
+	sets.JA.Chivalry ={hands = "Caballarius Gauntlets +2"}
+	
+	sets.JA.DE = {feet="Chevalier's sabatons +2"}
 
 	--Precast Sets--
 	sets.precast = {}
@@ -397,7 +398,7 @@ function get_sets()
 		body="Rev. Surcoat +3",
 		hands={ name="Leyline Gloves", augments={'Accuracy+12','Mag. Acc.+14','"Mag.Atk.Bns."+15','"Fast Cast"+2',}},
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		feet={ name="Odyssean Greaves", augments={'Enmity+7','VIT+9','Accuracy+14','Attack+12',}},
+		feet="Chevalier's sabatons +2",
 		neck="Voltsurge Torque",
 		waist="Carrier's Sash",
 		left_ear="Etiolation Earring",
@@ -490,6 +491,9 @@ function midcast(spell, act)
 
 	if spell.skill == "Divine Magic" then
 		equip(set_combine(sets.Utility.Enmity, sets.Magic.Divine))
+			if buffactive['Divine Emblem'] then
+				equip(sets.JA.DE)
+			end
 	end
 
 	if spell.skill == "Healing Magic" then

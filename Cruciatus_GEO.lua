@@ -42,7 +42,7 @@ function get_sets()
     sets.precast.JA = {}
     sets.precast.JA.Bolster = {body = "Bagua Tunic"}
     sets.precast.JA["Life cycle"] = {body = "Geomancy Tunic +2"}
-    sets.precast.JA["Full cycle"] = {head = "Azimuth Hood +1"}
+    sets.precast.JA["Full cycle"] = {head = "Azimuth Hood +2"}
     sets.precast.JA["Radial Arcana"] = {feet = "Bagua Sandals +1"}
 
     -- Fast cast sets for spells
@@ -119,11 +119,11 @@ function get_sets()
 		main="Idris",
 		sub="Ammurapi Shield",
 		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-		head="Azimuth Hood +1",
+		head="Azimuth Hood +2",
 		body="Azimuth Coat",
 		hands="Azimuth Gloves",
 		legs="Azimuth Tights",
-		feet="Azimuth Gaiters +1",
+		feet="Azimuth Gaiters +2",
 		neck="Incanter's Torque",
 		waist="Austerity Belt",
 		left_ear="Calamitous Earring",
@@ -141,7 +141,7 @@ function get_sets()
 		body={ name="Bagua Tunic", augments={'Enhances "Bolster" effect',}},
 		hands="Geo. Mitaines +2",
 		legs={ name="Bagua Pants +1", augments={'Enhances "Mending Halation" effect',}},
-		feet="Azimuth Gaiters +1",
+		feet="Azimuth Gaiters +2",
 		neck="Incanter's Torque",
 		waist="Austerity Belt",
 		left_ear="Calamitous Earring",
@@ -222,7 +222,8 @@ function get_sets()
 		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+15 "Mag.Atk.Bns."+15','INT+6','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
 		hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
 		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Occult Acumen"+1','CHR+9','Mag. Acc.+15','"Mag.Atk.Bns."+10',}},
-		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+7%','CHR+8',}},
+		--feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+7%','CHR+8',}},
+		feet = "Azimuth Gaiters +2",
 		neck="Mizu. Kubikazari",
 		waist="Sacro Cord",
 		left_ear="Malignance Earring",
@@ -289,7 +290,7 @@ function get_sets()
     sets.resting = {
         main = "Pluto's Staff",
         range = "Dunna",
-        head = "Azimuth Hood +1",
+        head = "Azimuth Hood +2",
         neck = "Incanter's Torque",
         rear = "Etiolation Earring",
         lear = "Hearty Earring",
@@ -300,7 +301,7 @@ function get_sets()
         back = "Toro Cape",
         waist = "Refoccilation Stone",
         legs = "Assiduity Pants +1",
-        feet = "Azimuth Gaiters +1"
+        feet = "Azimuth Gaiters +2"
     }
 
     -- Idle sets
@@ -320,7 +321,7 @@ function get_sets()
         back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
         waist = "Carrier's Sash",
         legs = "Assiduity Pants +1",
-        feet = "Azimuth Gaiters +1"
+        feet = "Azimuth Gaiters +2"
     }
 
     sets.idle.PDT = {
@@ -338,7 +339,7 @@ function get_sets()
         back={ name="Nantosuelta's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10','Damage taken-5%',}},
         waist = "Carrier's Sash",
         legs = "Assiduity Pants +1",
-        feet = "Azimuth Gaiters +1"
+        feet = "Azimuth Gaiters +2"
     }
 
     -- .Pet sets are for when Luopan is present.
@@ -346,7 +347,7 @@ function get_sets()
         main = "Idris",
         sub = "Genmei Shield",
         range = "Dunna",
-        head="Nyame Helm",
+        head="Azimuth Hood +2",
         body = "Geomancy Tunic +2",
         hands = "Geo. Mitaines +2",
         legs="Nyame Flanchard",
@@ -365,7 +366,7 @@ function get_sets()
         main = "Idris",
         sub = "Genmei Shield",
         range = "Dunna",
-        head="Nyame Helm",
+        head="Azimuth Hood +2",
         body = "Geomancy Tunic +2",
         hands = "Geo. Mitaines +2",
         legs="Nyame Flanchard",

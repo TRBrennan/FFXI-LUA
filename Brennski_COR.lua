@@ -2,7 +2,7 @@ PhantomRolls = S{"Corsair's Roll", "Ninja's Roll", "Hunter's Roll", "Chaos Roll"
 "Evoker's Roll" , "Rogue's Roll", "Warlock's Roll", "Fighter's Roll", "Puppet Roll"	, "Gallant's Roll", "Wizard's Roll", "Dancer's Roll",
  "Scholar's Roll", "Bolter's Roll", "Allies' Roll", "Miser's Roll", "Tactician's Roll", "Caster's Roll", "Companion's Roll", "Avenger's Roll"}
  
- quickdraw = S{"Ice Shot", "Fire Shot", "Wind Shot", "Earth Shot", "Water Shot", "Thunder Shot"}
+quickdraw = S{"Ice Shot", "Fire Shot", "Wind Shot", "Earth Shot", "Water Shot", "Thunder Shot"}
  
 function get_sets()
  
@@ -152,7 +152,7 @@ function get_sets()
                                           head = "Nyame Helm",
 										  neck="Rep. Plat. Medal",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Nyame Mail",
-										  hands="Nyame Gauntlets",ring1="Regal Ring",ring2={ name="Metamor. Ring +1", augments={'Path: A',}},
+										  hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2={ name="Metamor. Ring +1", augments={'Path: A',}},
                                           back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 										  waist="Sailfi Belt +1",Legs = "Nyame Flanchard",
 										  feet="Nyame Sollerets" }
@@ -175,7 +175,7 @@ function get_sets()
         VorpalBlade_ind = 1
         sets.VorpalBlade = {ammo ="Chrono bullet",
                                           head="Adhemar Bonnet +1",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Telos Earring",
-                                         body="Malignance Tabard",hands={ name="Adhemar Wristbands +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Petrov ring",ring2="Regal Ring",
+                                         body="Malignance Tabard",hands={ name="Adhemar Wristbands +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Petrov ring",ring2="Epaminondas's Ring",
                                           back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 										  waist="Sailfi Belt +1",legs="Quiahuiz leggings",feet = "Nyame Sollerets" }						 
                
@@ -200,7 +200,7 @@ function get_sets()
 		sets.WildFire = {ammo="Orichalc. Bullet", 
 							Head = "Nyame Helm",
 							neck="Commodore Charm +1",   ear2="Friomisi earring", ear1="Moonshade Earring",
-							body="Lanun Frac +3",hands="Nyame Gauntlets", ring1="Dingir Ring", ring2 ='Acumen Ring', waist ="Orpheus's Sash",
+							body="Lanun Frac +3",hands="Nyame Gauntlets", ring1="Dingir Ring", ring2 ="Epaminondas's Ring", waist ="Orpheus's Sash",
 							back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 							Legs = "Nyame Flanchard",
 							feet="Lanun Bottes +3"}
@@ -221,14 +221,14 @@ function get_sets()
 						left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
 						right_ear="Telos Earring",
 						left_ring="Dingir Ring",
-						right_ring="Regal Ring",
+						right_ring="Epaminondas's Ring",
 						back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 						}
 						
 		sets.WS.HotShot = {
 				ammo ="Chrono bullet", 
 				Head = "Nyame Helm",
-				body="INyame Mail",
+				body="Nyame Mail",
 				hands="Nyame Gauntlets",
 				Legs = "Nyame Flanchard",
 				feet="Lanun Bottes +3",
@@ -237,7 +237,7 @@ function get_sets()
 				left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
 				right_ear="Telos Earring",
 				left_ring="Dingir Ring",
-				right_ring="Regal Ring",
+				right_ring="Epaminondas's Ring",
 				back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 		}
 		
@@ -306,7 +306,7 @@ function get_sets()
         sets.JA = {}
         
         sets.JA.PhantomRoll = {range = "Compensator", head="Lanun Tricorne",neck="Regal Necklace", ear1="Etiolation earring", ear2="Eabani Earring",
-                              body="Nyame Mail",hands="Chasseur's gants",ring2="Luzaf's Ring",ring1="Defending Ring",
+                              body="Nyame Mail",hands="Chasseur's gants +2",ring2="Luzaf's Ring",ring1="Defending Ring",
                               back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 							  waist="Carrier's Sash",legs="Nyame Flanchard",feet = "Nyame Sollerets" }
        
@@ -371,7 +371,7 @@ function get_sets()
 			body="Malignance Tabard",
 			hands="Malignance Gloves",
 			legs="Malignance Tights",
-			feet="Chasseur's Bottes +1",
+			feet="Chasseur's Bottes +2",
 			neck={ name="Comm. Charm +1", augments={'Path: A',}},
 			waist="Eschan Stone",
 			left_ear="Crep. Earring",

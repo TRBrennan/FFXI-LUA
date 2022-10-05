@@ -179,7 +179,7 @@ function get_sets()
 
 	sets.MultiHit = {}
 	sets.MultiHit.Attack = {
-		ammo="Crepuscular Pebble",
+		ammo="Oshasha's Treatise",
 		head="Mpaca's Cap",
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
 		hands = "Adhemar Wristbands +1",
@@ -197,7 +197,7 @@ function get_sets()
 
 	sets.OneHit = {}
 	sets.OneHit.Attack = {
-		ammo="Crepuscular Pebble",
+		ammo="Oshasha's Treatise",
 		head="Mpaca's Cap",
 		Body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
@@ -207,14 +207,14 @@ function get_sets()
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
-		right_ring = "Regal Ring",
+		right_ring = "Epaminondas's Ring",
 		right_ring = "Ilabrat Ring",
 		back = WSD_back,
 	}
 	
 	sets.OtherWS = {}
 	sets.OtherWS.Attack = {
-		ammo="Crepuscular Pebble",
+		ammo="Oshasha's Treatise",
 		head="Mpaca's Cap",
 		Body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
@@ -224,7 +224,7 @@ function get_sets()
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
-		right_ring = "Regal Ring",
+		right_ring = "Epaminondas's Ring",
 		right_ring = "Ilabrat Ring",
 		back = WSD_back,
 	}
@@ -238,7 +238,7 @@ function get_sets()
 		ear1 = "Moonshade Earring",
 		body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
-		ring1 = "Acumen Ring",
+		ring1 = "Epaminondas's Ring",
 		ring2 = "Dingir Ring",
 		waist = "Orpheus's Sash",
 		back = WSD_back,
@@ -255,7 +255,7 @@ function get_sets()
 		body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
 		left_ring="Gere Ring",
-		right_ring="Regal Ring",
+		right_ring="Epaminondas's Ring",
 		waist = "Orpheus's Sash",
 		back = WSD_back,
 		legs = "Nyame Flanchard",

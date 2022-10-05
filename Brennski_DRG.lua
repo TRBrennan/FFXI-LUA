@@ -25,10 +25,12 @@ function get_sets()
 	end
 
 	--TP_Body = "Emicho Haubert +1"
-	TP_Back = { name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}}
+	TP_Back = { name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
 	WSD_Back = { name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}}
-	WSD_Legs = "Vishap Brais +3"
-	WSD_Hands = "Pteroslaver Finger Gauntlets +3"
+	--WSD_Legs = "Vishap Brais +3"
+	--WSD_Hands = "Pteroslaver Finger Gauntlets +3"
+	WSD_Legs = "Nyame Flanchard"
+	WSD_Hands = "Gleti's Gauntlets"
 	WSD_Body = "Nyame Mail"
 	WSD_Head = "Nyame Helm"
 	--Idle Sets--
@@ -43,8 +45,10 @@ function get_sets()
 		neck = "Bathy Choker +1",
 		ear1 = "Eabani earring",
 		ear2 = "Infused Earring",
-		body="Nyame Mail",
-		hands = "Nyame Gauntlets",
+		--body="Nyame Mail",
+		--hands = "Nyame Gauntlets",
+		body={ name="Gleti's Cuirass", augments={'Path: A',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
 		ring1 = "Defending ring",
 		ring2 = "Shneddick Ring",
 		waist = "Carrier's Sash",
@@ -57,64 +61,55 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "AccuracyFull", "Hybrid", "DT"}
+	sets.TP.index = {"Standard", "Hybrid", "DT"}
 	--1=Standard, 2 =AccuracyFull, 3=Hybrid, 4=DT--
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		head="Hjarrandi Helm",
+		--ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		ammo="Aurgelmir Orb +1",
+		head="Flam. Zucchetto +2",
 		body={ name="Gleti's Cuirass", augments={'Path: A',}},
-		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
-		--legs="Nyame Flanchard",
-		legs = "Pteroslaver Brais +2",
+		--hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		hands = "Pel. Vambraces +2",
+		legs = "Pteroslaver Brais +3",
 		feet="Flam. Gambieras +2",
-		neck="Dragoon's collar +2",
-		waist="Ioskeha Belt +1",
+		neck={ name="Dgn. Collar +2", augments={'Path: A',}},
+		--waist="Ioskeha Belt +1",
+		waist = "Sailfi Belt +1",
 		left_ear="Sherida Earring",
 		right_ear="Telos Earring",
 		left_ring="Niqmaddu Ring",
-		right_ring="Petrov Ring",
+		right_ring="Moonlight Ring",
 		back=TP_Back
 	}
 
-	sets.TP.AccuracyFull = {
-		ammo = "Seeth. Bomblet +1",
-		head = {name = "Valorous Mask", augments = {"Accuracy+30", '"Store TP"+4', "AGI+10", "Attack+13"}},
-		neck = "Dragoon's collar +2",
-		ear1 = "Dignitary's Earring",
-		ear2 = "Telos Earring",
-		body={ name="Gleti's Cuirass", augments={'Path: A',}},
-		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
-		ring1 = "Cacoethic Ring",
-		ring2 = "Flamma Ring",
-		back = TP_Back,
-		waist = "Ioskeha Belt +1",
-		legs="Nyame Flanchard",
-		feet = "Flam. Gambieras +2"
-	}
 	
 	sets.TP.Hybrid = {
-	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		head="Nyame Helm",
+		--ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		ammo="Aurgelmir Orb +1",
+		head="Flam. Zucchetto +2",
 		body={ name="Gleti's Cuirass", augments={'Path: A',}},
-		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
-		legs={ name="Ptero. Brais +2", augments={'Enhances "Strafe" effect',}},
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		--hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		hands = "Pel. Vambraces +2",
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet="Flam. Gambieras +2",
 		neck={ name="Dgn. Collar +2", augments={'Path: A',}},
-		waist="Ioskeha Belt +1",
+		--waist="Ioskeha Belt +1",
+		waist = "Sailfi Belt +1",
 		left_ear="Sherida Earring",
 		right_ear="Telos Earring",
-		left_ring="Moonbeam Ring",
+		left_ring="Niqmaddu Ring",
 		right_ring="Moonlight Ring",
-		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		back=TP_Back
 	}
 
 	sets.TP.DT = {
 		ammo="Staunch Tathlum +1",
 		head="Nyame Helm",
 		body="Nyame Mail",
-		hands="Nyame Gauntlets",
+		--hands="Nyame Gauntlets",
+		hands = "Pel. Vambraces +2",
 		legs="Nyame Flanchard",
 		feet="Nyame Sollerets",
 		neck="Dragoon's collar +2",
@@ -142,7 +137,8 @@ function get_sets()
 		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head="Hjarrandi Helm",
 		body={ name="Gleti's Cuirass", augments={'Path: A',}},
-		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		--hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		hands = "Pel. Vambraces +2",
 		legs="Pteroslaver Brais +2",
 		feet="Flam. Gambieras +2",
 		left_ear="Sherida Earring",
@@ -161,11 +157,11 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Fotia Gorget",
-		ear1 = "Moonshade Earring",
-		ear2 = "Ishvara Earring",
+		left_ear = "Moonshade Earring",
+		right_ear = "Peltast's Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
-		ring1 = "Regal Ring",
+		ring1 = "Epaminondas's Ring",
 		ring2 = "Niqmaddu Ring",
 		back = WSD_Back,
 		waist = "Sailfi Belt +1",
@@ -183,11 +179,11 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Fotia Gorget",
-		ear1 = "Moonshade Earring",
-		ear2 = "Ishvara Earring",
+		left_ear = "Moonshade Earring",
+		right_ear = "Peltast's Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
-		ring1 = "Regal Ring",
+		ring1 = "Epaminondas's Ring",
 		ring2 = "Niqmaddu Ring",
 		back = WSD_Back,
 		waist = "Sailfi Belt +1",
@@ -210,7 +206,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu Ring",
-		ring2 = "Regal Ring",
+		ring2 = "Epaminondas's Ring",
 		back = WSD_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -220,51 +216,82 @@ function get_sets()
 	sets.WS.LegSweep ={
 	    ammo="Pemphredo Tathlum",
 		head="Flam. Zucchetto +2",
-		body={ name="Nyame Mail", augments={'Path: B',}},
-		hands="Flam. Manopolas +2",
+		body="Gleti's Cuirass",
+		hands="Gleti's Gauntlets",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet="Flam. Gambieras +2",
 		neck="Sanctity Necklace",
 		waist="Windbuffet Belt +1",
-		left_ear="Digni. Earring",
-		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		left_ear = "Moonshade Earring",
+		right_ear = "Peltast's Earring",
 		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-		right_ring="Flamma Ring",
+		right_ring="Stikini ring +1",
 		back= WSD_Back
 	}
 	
 	sets.WS.SavageBlade ={
-	    ammo="Crepuscular Pebble",
-		head= "Gleti's Mask",
-		body = WSD_Body,
-		hands = WSD_Hands,
-		legs = WSD_Legs,
+		ammo="Knobkierrie",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck="Dragoon's collar +2",
+		neck={ name="Dgn. Collar +2", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ear="Thrud Earring",
-		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-		left_ring="Niqmaddu Ring",
-		right_ring="Regal Ring",
-		back = WSD_Back,
+		left_ear = "Moonshade Earring",
+		right_ear = "Peltast's Earring",
+		left_ring="Epaminondas's Ring",
+		right_ring={ name="Beithir Ring", augments={'Path: A',}},
+		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 	
 	sets.WS.OneHit ={
-	    ammo="Knobkierrie",
-		head= WSD_Head,
-		body = WSD_Body,
-		hands = WSD_Hands,
-		legs = WSD_Legs,
+		ammo="Knobkierrie",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck="Dragoon's collar +2",
+		neck={ name="Dgn. Collar +2", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ear="Thrud Earring",
-		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-		left_ring="Niqmaddu Ring",
-		right_ring="Regal Ring",
-		back = WSD_Back,
+		left_ear = "Moonshade Earring",
+		right_ear = "Peltast's Earring",
+		left_ring="Epaminondas's Ring",
+		right_ring={ name="Beithir Ring", augments={'Path: A',}},
+		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 
+	sets.AE = {    
+		ammo={ name="Seeth. Bomblet +1", augments={'Path: A',}},
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Orpheus's Sash",
+		left_ear="Thrud Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		left_ring="Epaminondas's Ring",
+		right_ring="Regal Ring",
+		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
+		}
+	
+	sets.Cata = {    
+		ammo={ name="Seeth. Bomblet +1", augments={'Path: A',}},
+		head="Pixie Hairpin +1",
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Orpheus's Sash",
+		left_ear="Thrud Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		left_ring="Epaminondas's Ring",
+		right_ring="Archon Ring",
+		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
+		}
 	--Ninja Magic Sets--
 	sets.NINMagic = {}
 
@@ -295,12 +322,24 @@ function get_sets()
 
 	sets.JA = {}
 	sets.JA.Jump = {
-		hands = "Vishap finger gauntlets +2",
-		neck = "Vim Torque +1",
-		left_ring="Flamma Ring",
-		Feet = "Ostro Greaves"
+		ammo="Aurgelmir Orb +1",
+		head="Hjarrandi Helm",
+		body="Hjarrandi Breast.",
+		hands="Vis. Fng. Gaunt. +2",
+		legs={ name="Ptero. Brais +3", augments={'Enhances "Strafe" effect',}},
+		feet="Ostro Greaves",
+		neck={ name="Vim Torque +1", augments={'Path: A',}},
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Sherida Earring",
+		right_ear="Telos Earring",
+		right_ring="Petrov Ring",
+		left_ring="Niqmaddu Ring",
+		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
 	}
 	
+	sets.JA.SpiritJump = {
+		feet = "Pelt. Schyn. +2",	
+	}
 	
 	sets.JA.Angon = {
 		head = {name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
@@ -308,15 +347,15 @@ function get_sets()
 		ear1 = "Dragoon's Earring",
 		legs = "Volte Hose",
 		waist = "Chaac Belt",
-		Hands = WSD_Hands
+		Hands = "Pteroslaver Finger Gauntlets +3",
 	} -- Angon, Relic Hands, and that dumb earring in Mamook if you feel like it
 	
-	sets.JA.AncientCircle = {legs = WSD_Legs} -- Artifact Legs
+	sets.JA.AncientCircle = {legs = "Vishap Brais +3"} -- Artifact Legs
 
 	sets.JA.SpiritLink = {
 		head = "Vishap Armet +1",
 		ear1 = "Pratik Earring",
-		hands = "Pel. Vambraces +1",
+		hands = "Pel. Vambraces +2",
 		feet = "Ptero. Greaves +1"
 	} -- Spirit Link/Empathy gear go here
 	
@@ -327,7 +366,7 @@ function get_sets()
 		body = "Ptero. Mail +1",
 		hands = "Despair Fin. Gaunt.",
 		back = TP_Back,
-		legs = WSD_Legs,
+		legs = "Vishap Brais +3",
 		feet = "Ptero. Greaves +1"
 	} -- Relic Body and Wyvern HP go here
 	sets.JA.SteadyWing = sets.JA.SpiritSurge -- Wyvern HP
@@ -382,8 +421,12 @@ function precast(spell)
 		equip(sets.Drakesbane.Attack)
 	elseif spell.english == "Camlann's Torment" then
 		equip(sets.CT.Attack)
-	elseif spellenglish == "Savege Blade" then
+	elseif spell.english == "Savage Blade" then
 		equip(sets.WS.SavageBlade)
+	elseif spell.english == "Cataclysm" then
+		equip(sets.WS.Cata)
+	elseif spell.english =="Earth Crusher" then 
+		equip(sets.WS.AE)
 	elseif spell.english == "Box Step" then
 		equip(sets.Utility.Steps)
 	elseif spell.name == "Dismiss" and pet.hpp < 100 then
@@ -412,8 +455,12 @@ function precast(spell)
 			cancel_spell()
 			send_command('input /ja "Call Wyvern" <me>')
 		end
-	elseif spell.name == "Jump" or spell.name == "High Jump" or spell.name == "Spirit Jump" or spell.name == "Soul Jump" then
-		equip(set_combine(sets.TP.Standard, sets.JA.Jump))
+	elseif spell.name == "Jump" or spell.name == "High Jump" or spell.name == "Soul Jump" then
+		equip(sets.JA.Jump)
+	elseif spell.name == "Spirit Jump" then
+		equip(set_combine(sets.JA.Jump, sets.JA.SpiritJump))
+	elseif spell.name == "Restoring Breath" then
+		equip(sets.Breath)
 	elseif spell.english == "Leg Sweep" or spell.english == "Flat Blade" then
 		equip(sets.WS.LegSweep)
 	elseif spell.type == "WeaponSkill" then
@@ -454,14 +501,14 @@ end
 function pet_change(pet, gain)
 	if gain == false and pet.name then
 		-- General announcement for when your Wyvern is killed, Dimissed, or eaten by Spirit Surge
-		windower.add_to_chat(50, " *** " .. string.upper(pet.name) .. " IS DEAD YO ***")
+		windower.add_to_chat(50, " *** Ruh Roh! " .. string.upper(pet.name) .. " has died.***")
 	end
 end
 
 -- Pet Midcast: If GearSwap sees your pet readying a WS, this occurs
 function pet_midcast(spell)
 	if string.find(spell.name, " Breath") then
-		--equip(sets.Breath)
+		equip(sets.Breath)
 		windower.send_command("wait 1.2;gs c petcast")
 	-- Wyvern Breath Delay: 1.25s http://forum.square-enix.com/ffxi/threads/47481
 	end

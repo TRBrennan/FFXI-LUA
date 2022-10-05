@@ -33,7 +33,7 @@ function get_sets()
 		--head="Befouled Crown",
 		head ="Nyame Helm",
 		--body="Inyanga Jubbah +2",
-		body = "Theo. Bliaut +3",
+		body = "Ebers Bliaut +2",
 		hands="Nyame Gauntlets",
 		legs="Assid. Pants +1",
 		--legs="Nyame Flanchard",
@@ -76,7 +76,7 @@ function get_sets()
         head = "Nahtirah Hat",
         body = "Inyanga Jubbah +2",
         hands = {name = "Telchine Gloves", augments = {'"Fast Cast"+3'}},
-        legs = "Ebers Pant. +1",
+        legs = "Ebers Pant. +2",
         feet = "Volte Gaiters",
         neck = "Voltsurge Torque",
         waist = "Embla Sash",
@@ -197,10 +197,10 @@ function get_sets()
         sub = "Ammurapi Shield",
         ammo = "Homiliary",
         head = "Ebers Cap",
-        body="Ebers Bliaut +1",
+        body="Ebers Bliaut +2",
         hands = "Ebers Mitts",
-        legs = {name = "Piety Pantaln. +1", augments = {'Enhances "Shellra V" effect'}},
-        feet = "Ebers Duckbills +1",
+        legs = "Piety Pantaloons +3",
+        feet = "Ebers Duckbills +2",
         neck = "Incanter's Torque",
         waist = "Embla Sash",
         left_ear = "Andoaa Earring",
@@ -308,7 +308,7 @@ function get_sets()
         body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +9',}},
         hands = {name = "Telchine Gloves", augments = {"Enh. Mag. eff. dur. +10"}},
         legs = {name = "Telchine Braconi", augments = {"Enh. Mag. eff. dur. +9"}},
-        feet = "Ebers Duckbills +1",
+        feet = "Ebers Duckbills +2",
         neck = "Incanter's Torque",
         waist = "Embla Sash",
         left_ear = "Andoaa Earring",
@@ -323,9 +323,9 @@ function get_sets()
         sub = "Sors Shield",
         ammo = "Esper Stone",
         head = "Vanya Hood",
-        body="Ebers Bliaut +1",
+        body="Ebers Bliaut +2",
         hands = "Theophany Mitts +3",
-        legs = "Ebers Pant. +1",
+        legs = "Ebers Pant. +2",
         feet = "Kaykaus Boots",
         neck = "Cleric's Torque",
         waist = "Channeler's Stone",
@@ -343,7 +343,7 @@ function get_sets()
         head = "Vanya Hood",
         body = "Theo. Bliaut +3",
         hands = "Theophany Mitts +3",
-        legs = "Ebers Pant. +1",
+        legs = "Ebers Pant. +2",
         feet = "Kaykaus Boots",
         neck = "Nodens Gorget",
         waist = "Channeler's Stone",
@@ -361,7 +361,7 @@ function get_sets()
         sub = "Sors Shield",
         ammo = "Esper Stone",
         head = "Ebers Cap",
-        body="Ebers Bliaut +1",
+        body="Ebers Bliaut +2",
         hands = { name = "Fanatic Gloves",augments = {"MP+50", "Healing magic skill +10", '"Conserve MP"+7', '"Fast Cast"+7'}},
         legs = "Theophany Pantaloons +2",
         feet = "Vanya Clogs",
@@ -379,7 +379,7 @@ function get_sets()
         sub = "Sors Shield",
         ammo = "Esper Stone",
         head = "Ebers Cap",
-        body="Ebers Bliaut +1",
+        body="Ebers Bliaut +2",
 		hands = { name = "Fanatic Gloves",augments = {"MP+50", "Healing magic skill +10", '"Conserve MP"+7', '"Fast Cast"+7'}},
         legs = "Theophany Pantaloons +2",
         feet = "Gende. Galosh. +1",
@@ -397,23 +397,23 @@ end
 
 function precast(spell)
     if ST_Cure_Spells:contains(spell.name) then
-        send_command('@input /echo Cure Precast Set')
+        --send_command('@input /echo Cure Precast Set')
         equip(sets.precast_Cure)
     elseif MT_Cure_Spells:contains(spell.name) then
-        send_command('@input /echo Cure Precast Set')
+        --send_command('@input /echo Cure Precast Set')
         equip(sets.precast_Cure)
     elseif naSpells:contains(spell.name) then
-        send_command('@input /echo NA Precast Set')
+        --send_command('@input /echo NA Precast Set')
         equip(sets.precast_FastCast)
     elseif FC_Spells:contains(spell.name) then
-        send_command('@input /echo Haste Precast Set')
+        --send_command('@input /echo Haste Precast Set')
         equip(sets.precast_Haste)
     elseif spell.english == "Impact" then
         equip({body = "Twilight cloak"})
 	elseif spell.type == 'WeaponSkill' then
 		equip(sets.precast_WS)
 	else
-        send_command('@input /echo Precast Set')
+        --send_command('@input /echo Precast Set')
         equip(sets.precast_FastCast)
 	end
 end
@@ -422,60 +422,60 @@ function midcast(spell)
     if ST_Cure_Spells:contains(spell.name) then
         equip(sets.midcast_Cure)
         --weathercheck(spell.element)
-        send_command("@input /echo ST Cure Set")
+        --send_command("@input /echo ST Cure Set")
         if spell_element == world.weather_element or spell_element == world.day_element then
             equip({waist = "Korin Obi"})
-            send_command("@input /echo Using Element Obi")
+            --send_command("@input /echo Using Element Obi")
         end
     elseif MT_Cure_Spells:contains(spell.name) then
         equip(sets.midcast_Curaga)
         --weathercheck(spell.element)
-        send_command("@input /echo MT Cure Set")
+        --send_command("@input /echo MT Cure Set")
         if spell_element == world.weather_element or spell_element == world.day_element then
             equip({waist = "Korin Obi"})
-            send_command("@input /echo Using Element Obi")
+            --send_command("@input /echo Using Element Obi")
         end
     elseif naSpells:contains(spell.name) then
         equip(sets.midcast_DebuffRemoval)
-        send_command("@input /echo NA Cure Set")
+        --send_command("@input /echo NA Cure Set")
     elseif Regen_Spells:contains(spell.name) then
         equip(sets.midcast_Regen)
-        send_command("@input /echo Regen Set")
+        --send_command("@input /echo Regen Set")
     elseif spell.name == "Cursna" then
         equip(sets.midcast_Cursna)
-		send_command("@input /echo Cursna Cure Set")
+		--send_command("@input /echo Cursna Cure Set")
     elseif spell.skill == "Enfeebling Magic" then
         equip(sets.midcast_EnfeeblingMagic)
-        send_command("@input /echo Enfeebling Set")
+        --send_command("@input /echo Enfeebling Set")
     elseif spell.skill == "Enhancing Magic" then
         if resSpells:contains(spell.name) then
             equip(sets.midcast_BarSpells_Solace)
-            send_command("@input /echo Barspell Set")
+            --send_command("@input /echo Barspell Set")
         elseif FC_Spells:contains(spell.name) then
             equip(sets.midcast_Haste)
-            send_command("@input /echo Enhancing Duration Set")
+            --send_command("@input /echo Enhancing Duration Set")
         elseif spell.name == "Shellra V" then
             equip(set.midcast_Shellra)
-            send_command("@input /echo Shellra 5 Set")
+            --send_command("@input /echo Shellra 5 Set")
 		elseif spell.name == "Auspice" then
 			equip(sets.midcast_Auspice)
         else
             equip(sets.midcast_EnhancingMagic)
-            send_command("@input /echo Enhancing Set")
+            --send_command("@input /echo Enhancing Set")
         end
     elseif Holy_Spells:contains(spell.name) then
         equip(sets.midcast_MAB)
         weathercheck(spell.element)
-        send_command("@input /echo Holy Nuke Set")
+        --send_command("@input /echo Holy Nuke Set")
     elseif spell.skill == "Elemental Magic" then
         if spell.name == "Impact" then
             equip(sets.midcast_Impact)
             weathercheck(spell.element)
-            send_command("@input /echo Impact Set")
+            --send_command("@input /echo Impact Set")
         else
             equip(sets.midcast_MAB)
             weathercheck(spell.element)
-            send_command("@input /echo Elemental Set")
+            --send_command("@input /echo Elemental Set")
         end
     else
         equip(sets.midcast_Haste)
@@ -489,10 +489,10 @@ function aftercast(spell)
         equip(sets.aftercast_engaged)
     elseif Gear_Debug == 0 then
         equip(sets.aftercast_Idle)
-        send_command("@input /echo Idle Set")
+        --send_command("@input /echo Idle Set")
     else
 		equip(sets.aftercast_Idle)
-        send_command("@input /echo Idle Set")
+        --send_command("@input /echo Idle Set")
     end
 end
 
@@ -516,10 +516,10 @@ function self_command(command)
     elseif command == "change debug mode" then
         if Gear_Debug == 1 then
             Gear_Debug = 0
-            send_command("@input /echo Debug Mode Set to 0")
+            --send_command("@input /echo Debug Mode Set to 0")
         else
             Gear_Debug = 1
-            send_command("@input /echo Debug Mode Set to 1")
+            --send_command("@input /echo Debug Mode Set to 1")
         end
     end
 end
@@ -529,6 +529,6 @@ end
 function weathercheck(spell_element)
     if spell_element == world.weather_element or spell_element == world.day_element then
         equip({waist = "Hachirin-no-Obi"})
-        send_command("@input /echo Using Element Obi")
+        --send_command("@input /echo Using Element Obi")
     end
 end

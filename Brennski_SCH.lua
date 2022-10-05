@@ -32,11 +32,11 @@ function get_sets()
 		neck = "Loricate Torque +1",
 		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
-		body = "Agwu's Robe",
+		body = "Arbatel Gown +2",
 		hands = {name = "Merlinic Dastanas", augments = {"DEX+3", 'Mag. Acc.+16 "Mag.Atk.Bns."+16', '"Refresh"+1'}},
 		ring1="Defending ring",
 		ring2="Shneddick Ring",
-		waist = "Fucho-no-obi",
+		waist = "Carrier's Sash",
 		legs = "Assiduity Pants +1",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		back = "Moonbeam Cape"
@@ -50,7 +50,7 @@ function get_sets()
 		neck = "Loricate Torque +1",
 		ear1 = "Hearty Earring",
 		ear2 = "Infused Earring",
-		body = "Nyame Mail",
+		body = "Arbatel Gown +2",
 		hands = "Nyame Gauntlets",
 		ring1="Defending ring",
 		ring2="Shneddick Ring",
@@ -70,18 +70,18 @@ function get_sets()
 	sets.TP.Standard = {
 		main="Daybreak",
 		sub="Ammurapi Shield",
-		ammo = "Homiliary",
-		head = "Hike Khat",
-		neck = "Sanctity Necklace",
-		ear1 = "Eabani Earring",
+		ammo = "Staunch Tathlum +1",
+		head = "Befouled Crown",
+		neck = "Loricate Torque +1",
+		ear1 = "Hearty Earring",
 		ear2 = "Infused Earring",
-		body = "Vrikodara Jupon",
-		hands = {name = "Merlinic Dastanas", augments = {"DEX+3", 'Mag. Acc.+16 "Mag.Atk.Bns."+16', '"Refresh"+1'}},
-		ring1 = "Defending ring",
-		ring2 = "Chirich Ring +1",
-		waist = "Fucho-no-obi",
-		legs = "Assiduity Pants",
-		feet = "Chironic Slippers",
+		body = "Arbatel Gown +2",
+		hands = "Nyame Gauntlets",
+		ring1="Defending ring",
+		ring2="Shneddick Ring",
+		waist = "Carrier's Sash",
+		legs = "Nyame Flanchard",
+		feet = "Nyame Sollerets",
 		back = "Moonbeam Cape"
 	}
 
@@ -121,32 +121,34 @@ function get_sets()
 		left_ear="Regal Earring",
 		right_ear="Malignance Earring",
 		body = "Agwu's Robe",
-		hands = "Nyame Gauntlets",
+		hands = "Agwu's Gages",
 		ring1 = "Freke Ring",
 		ring2 = "Acumen Ring",
 		waist = "Sacro Cord",
 		back = "Lugh's Cape",
-		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','INT+10','"Mag.Atk.Bns."+2',}},
-		feet = {name = "Merlinic Crackows",augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Fast Cast"+3', "INT+10", '"Mag.Atk.Bns."+1'}}
+		legs="Agwu's Slops",
+		--feet = {name = "Merlinic Crackows",augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Fast Cast"+3', "INT+10", '"Mag.Atk.Bns."+1'}}
+		feet ="Arbatel Loafers +2",
 	}
 
 	sets.Nuke.MagicBurst = {
-    main="Bunzi's Rod",
-    sub="Ammurapi Shield",
-    ammo="Pemphredo Tathlum",
-    head="Agwu's Cap",
-    body = "Agwu's Robe",
-    hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
-    legs="Agwu's Slops",
-	feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
-    neck="Argute Stole +2",
-    waist="Sacro Cord",
-    left_ear="Regal Earring",
-    right_ear="Malignance Earring",
-    --left_ring="Locus Ring",
-	left_ring = "Freke Ring",
-    right_ring="Mujin Band",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
+		main="Bunzi's Rod",
+		sub="Ammurapi Shield",
+		ammo="Pemphredo Tathlum",
+		head="Agwu's Cap",
+		body = "Agwu's Robe",
+		hands = "Agwu's Gages",
+		legs="Agwu's Slops",
+		--feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
+		feet ="Arbatel Loafers +2",
+		neck="Argute Stole +2",
+		waist="Sacro Cord",
+		left_ear="Regal Earring",
+		right_ear="Malignance Earring",
+		--left_ring="Locus Ring",
+		left_ring = "Freke Ring",
+		right_ring="Mujin Band",
+		back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 	}
 	
 
@@ -158,9 +160,9 @@ function get_sets()
 	Enhancing_ind = 1
 
 	sets.Enhancing.Normal = {
-		main = "Gada",
-		sub = "Ammurapi Shield",
-		ammo = "Savant's Treatise",
+		main = "Pedagogy Staff",
+		sub = "Enki Strap",
+		ammo = "Pemphredo Tathlum",
 		head = "Telchine Cap",
 		neck = "Incanter's Torque",
 		ear1 = "Andoaa Earring",
@@ -176,9 +178,9 @@ function get_sets()
 	}
 
 	sets.Enhancing.Storms = {
-		main = "Gada",
-		sub = "Ammurapi Shield",
-		ammo = "Savant's Treatise",
+		main = "Pedagogy Staff",
+		sub = "Enki Strap",
+		ammo = "Pemphredo Tathlum",
 		head = "Telchine Cap",
 		neck = "Incanter's Torque",
 		ear1 = "Andoaa Earring",
@@ -200,18 +202,19 @@ function get_sets()
 		main="Daybreak",
 		sub="Ammurapi Shield",
 		ammo = "Pemphredo Tathlum",
-		head = "Befouled Crown",
+		head = "Arbatel Bonnet +2",
 		neck = "Argute Stole +2",
 		ear2 = "Vor Earring",
 		ear1 = "Malignance Earring",
-		body = {name = "Merlinic Jubbah",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
+		--body = {name = "Merlinic Jubbah",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
+		body = "Arbatel Gown +2",
 		hands = "Kaykaus Cuffs +1",
 		ring1 = "Stikini ring +1",
-		ring2 = "Kishar Ring",
+		ring2 = "Stikini ring +1",
 		waist = "Obstin. Sash",
 		back = "Aurist's Cape +1",
-		legs = "Chironic Hose",
-		feet = "Skaoi Boots"
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
+		feet ="Arbatel Loafers +2",
 	}
 
 	sets.Magic.Healing = {
@@ -219,7 +222,8 @@ function get_sets()
 		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
 		head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
-		body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},
+		--body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},
+		body = "Arbatel Gown +2",
 		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
@@ -233,10 +237,10 @@ function get_sets()
 	}
 
 	sets.Magic.Regen = {
-		main = "Bolelabunga",
-		sub = "Ammurapi Shield",
-		ammo = "Savant's Treatise",
-		head = "Arbatel Bonnet",
+		main = "Pedagogy Staff",
+		sub = "Enki Strap",
+		ammo = "Pemphredo Tathlum",
+		head = "Arbatel Bonnet +2",
 		neck = "Incanter's Torque ",
 		ear1 = "Regal Earring",
 		ear2 = "Regal Earring",
@@ -258,7 +262,7 @@ function get_sets()
 		left_ear="Regal Earring",
 		right_ear="Malignance Earring",
 		body = "Agwu's Robe",
-		hands = "Nyame Gauntlets",
+		hands = "Agwu's Gages",
 		ring1 = "Evanescence Ring",
 		ring2 = "Archon Ring",
 		waist = "Sacro Cord",
@@ -290,9 +294,10 @@ function get_sets()
 		ammo="Ghastly Tathlum +1",
 		body = "Agwu's Robe",
 		head="Agwu's Cap",
-		hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
+		hands = "Agwu's Gages",
 		legs="Agwu's Slops",
-		feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
+		--feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
+		feet ="Arbatel Loafers +2",
 		neck="Argute Stole +2",
 		waist = "Orpheus's Sash",
 		left_ear="Regal Earring",
@@ -311,7 +316,7 @@ function get_sets()
 		ammo="Ghastly Tathlum +1",
 		head = "Pixie Hairpin +1",
 		body = "Agwu's Robe",
-		hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
+		hands = "Agwu's Gages",
 		legs="Agwu's Slops",
 		feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
 		neck="Argute Stole +2s",
@@ -330,12 +335,14 @@ function get_sets()
 	sets.precast.FC = {}
 
 	sets.precast.FC.Standard = {
+		main = "Pedagogy Staff",
+		sub = "Enki Strap",
 		ammo="Sapience Orb",
 		head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
 		body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},
 		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}},
 		legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
-		feet={ name="Merlinic Crackows", augments={'"Fast Cast"+6','"Mag.Atk.Bns."+12',}},
+		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+21','"Fast Cast"+6','STR+6','"Mag.Atk.Bns."+13',}},
 		neck="Voltsurge Torque",
 		waist="Embla Sash",
 		left_ear="Malignance Earring",
@@ -346,6 +353,8 @@ function get_sets()
 	}
 
 	sets.precast.FC.Regen = {
+		main = "Pedagogy Staff",
+		sub = "Enki Strap",
 		ammo = "Sapience Orb",
 		head = "Telchine Cap",
 		neck = "Voltsurge Torque",
@@ -362,6 +371,8 @@ function get_sets()
 	}
 
 	sets.precast.FC.Storms = {
+		main = "Pedagogy Staff",
+		sub = "Enki Strap",
 		ammo = "Sapience Orb",
 		head = "Telchine Cap",
 		neck = "Voltsurge Torque",
@@ -383,7 +394,7 @@ function get_sets()
 
 	sets.Utility.Weather = {waist = "Hachirin-no-obi"}
 
-	sets.Utility.Klima = {feet = "Arbatel Loafers +1"}
+	sets.Utility.Klima = {feet ="Arbatel Loafers +2"}
 
 	sets.Utility.DrainAspir = {
 		ammo = "Pemphredo Tathlum",
@@ -409,7 +420,7 @@ function get_sets()
 
 	sets.Utility.Tabula = {legs = "Argute Pants +2"}
 
-	sets.Utility.Perpetuance = {hands = "Arbatel Bracers +1"}
+	sets.Utility.Perpetuance = {hands = "Arbatel Bracers +2"}
 
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 

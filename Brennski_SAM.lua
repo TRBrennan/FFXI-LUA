@@ -39,7 +39,8 @@ function get_sets()
 
 	sets.Idle.Standard = {
 	    ammo="Aurgelmir Orb +1",
-		head={ name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
+		--head={ name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
+		head = "Wakido Kabuto +3",
 		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
@@ -55,7 +56,8 @@ function get_sets()
 
 	sets.Idle.DT = {
 		ammo="Staunch Tathlum +1",
-		head={ name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
+		--head={ name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
+		head = "Wakido Kabuto +3",
 		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
@@ -72,73 +74,46 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "PDT", "Meva", "Hybrid"}
-	--1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=Hybrid--
+	sets.TP.index = {"Standard", "DTTP",}
+	--1=Standard, 2 =Hybrid, 3 =HybridZanshin --
 
 	TP_ind = 1
 	sets.TP.Standard = {
 		ammo="Aurgelmir Orb +1",
 		head="Flam. Zucchetto +2",
-		body="Mpaca's Doublet",
-		neck = "Samurai's nodowa +2",
-		hands="Wakido Kote +3",
-		legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
-		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
+		body="Kasuga Domaru +2",
+		--hands="Mpaca's Gloves",
+		hands = "Tatenashi Gote +1",
+		legs="Kasuga Haidate +2",
+		feet={ name="Ryuo Sune-Ate +1", augments={'HP+65','"Store TP"+5','"Subtle Blow"+8',}},
+		neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ear={ name="Schere Earring", augments={'Path: A',}},
-		right_ear="Telos Earring",
+		left_ear="Telos Earring",
+		right_ear={ name="Kasuga Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+7','Mag. Acc.+7',}},
 		left_ring="Niqmaddu Ring",
 		right_ring="Chirich Ring +1",
-		back=TP_Cape
+		back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}},
 	}
 
-	sets.TP.PDT = {
-		ammo = "Aurgelmir Orb +1",
-		head = "Flam. Zucchetto +2",
-		neck = "Samurai's nodowa +2",
-		ear1 = "Schere Earring",
-		ear2 = "Telos Earring",
-		body="Mpaca's Doublet",
-		hands = "Wakido Kote +3",
-		right_ring = "Niqmaddu Ring",
-		left_ring = "Flamma Ring",
-		back = TP_Cape,
-		waist = "Ioskeha belt +1",
-		legs = "Mpaca's Hose",
-		feet = "Flam. Gambieras +2"
-	}
 
-	sets.TP.Meva = {
-		ammo = "Aurgelmir Orb +1",
-		head = "Flam. Zucchetto +2",
-		neck = "Samurai's nodowa +2",
-		ear1 = "Dignitary's Earring",
-		ear2 = "Telos Earring",
-		body="Ken. Samue",
-		hands = "Wakido Kote +3",
-		right_ring = "Cacoethic Ring",
-		left_ring = "Flamma Ring",
-		back = TP_Cape,
-		waist = "Ioskeha belt +1",
-		legs = "Ken. Hakama",
-		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
-	}
-
-	sets.TP.Hybrid = {
+	sets.TP.DTTP = {
 		ammo="Aurgelmir Orb +1",
-		head="Flam. Zucchetto +2",
-		body={ name="Mpaca's Doublet", augments={'Path: A',}},
-		hands="Wakido Kote +3",
-		legs="Mpaca's Hose",
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck = "Samurai's nodowa +2",
-		waist="Ioskeha Belt +1",
-		left_ear={ name="Schere Earring", augments={'Path: A',}},
-		right_ear="Telos Earring",
-		left_ring="Defending Ring",
+		--head="Flam. Zucchetto +2",
+		head = "Kasuga Kabuto +2",
+		body="Kasuga Domaru +2",
+		--hands="Mpaca's Gloves",
+		hands = "Tatenashi Gote +1",
+		legs="Kasuga Haidate +2",
+		feet={ name="Ryuo Sune-Ate +1", augments={'HP+65','"Store TP"+5','"Subtle Blow"+8',}},
+		neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Telos Earring",
+		right_ear={ name="Kasuga Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+7','Mag. Acc.+7',}},
+		left_ring="Niqmaddu Ring",
 		right_ring="Chirich Ring +1",
-		back = TP_Cape
+		back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}},
 	}
+
 
 	--Weaponskill Sets--
 	sets.WS = {}
@@ -156,8 +131,8 @@ function get_sets()
 		waist = "Sailfi Belt +1",
 		left_ear = "Thrud Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
-		left_ring="Niqmaddu Ring",
-		right_ring="Beithir ring",
+		left_ring="Epaminondas's Ring",
+		right_ring = "Beithir ring",
 		back = WSD_Cape
 	}
 
@@ -174,7 +149,7 @@ function get_sets()
 		waist = "Sailfi Belt +1",
 		left_ear = "Telos Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
-		right_ring = "Regal Ring",
+		right_ring = "Epaminondas's Ring",
 		left_ring = "Niqmaddu Ring",
 		back = TP_Cape
 	}
@@ -193,7 +168,7 @@ function get_sets()
 		left_ear = "Friomisi earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Beithir ring",
-		left_ring = "Niqmaddu Ring",
+		left_ring = "Epaminondas's Ring",
 		back={ name="Smertrios's Mantle", augments={'STR+20','Mag. Acc+20 /Mag. Dmg.+20','STR+10','Weapon skill damage +10%',}},
 	}
 	
@@ -274,7 +249,7 @@ function get_sets()
 
 	sets.JA = {}
 
-	sets.JA.Meditate = {back = TP_Cape, hands ="Sakonji Kote", Head ="Wakido Kabuto +2"}
+	sets.JA.Meditate = {back = TP_Cape, hands ="Sakonji Kote +1", Head ="Wakido Kabuto +3"}
 
 	sets.JA.Hasso = {}
 
@@ -339,7 +314,7 @@ end
 function precast(spell)
 	if spell.action_type =="Magic" then
 		equip(sets.precast.FC.Standard)
-	elseif spell.english == "Tachi: Fudo" or spell.english == "Tachi: Kasha" or spell.english == "Tachi: Shoha" then
+	elseif spell.english == "Tachi: Fudo" or spell.english == "Tachi: Kasha" or spell.english == "Tachi: Shoha" or spell.english == "Sonic Thrust" or spell.english == "Impulse Drive" then
 		if spell.target.distance <= 5.6 then
 			equip(sets.OneHit.Attack)
 		else

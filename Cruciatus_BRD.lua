@@ -209,9 +209,9 @@ function get_sets()
     sets.midcast.Buff = {
 	   main={ name="Kali", augments={'DMG:+15','CHR+15','Mag. Acc.+15',}},
 		sub="Kali",
-		head="Fili Calot +1",
-		body="Fili Hongreline +1",
-		hands="Fili Manchettes +1",
+		head="Fili Calot +2",
+		body="Fili Hongreline +2",
+		hands="Fili Manchettes +2",
 		legs="Inyanga Shalwar +2",
 		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
@@ -244,9 +244,9 @@ function get_sets()
 		main={ name="Kali", augments={'DMG:+15','CHR+15','Mag. Acc.+15',}},
 		sub="Kali",
 		range="Marsyas",
-		head="Fili Calot +1",
-		body="Fili Hongreline +1",
-		hands="Fili Manchettes +1",
+		head="Fili Calot +2",
+		body="Fili Hongreline +2",
+		hands="Fili Manchettes +2",
 		legs="Inyanga Shalwar +2",
 		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
@@ -281,9 +281,9 @@ function get_sets()
     sets.midcast.Duration = {
 		main={ name="Kali", augments={'DMG:+15','CHR+15','Mag. Acc.+15',}},
 		sub="Kali",
-		head="Fili Calot +1",
-		body="Fili Hongreline +1",
-		hands="Fili Manchettes +1",
+		head="Fili Calot +2",
+		body="Fili Hongreline +2",
+		hands="Fili Manchettes +2",
 		legs="Inyanga Shalwar +2",
 		feet="Brioso Slippers +3",
 		neck="Moonbow Whistle +1",
@@ -295,7 +295,7 @@ function get_sets()
 		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
 	}
         
-    sets.midcast.Ballad = {legs="Fili Rhingrave +1"}
+    --sets.midcast.Ballad = {legs="Fili Rhingrave +1"}
         
     sets.midcast.Scherzo = {feet="Fili cothurnes +1"}
         
@@ -608,7 +608,7 @@ function calculate_duration(name)
     
     if string.find(name,'March') and player.equipment.hands == 'Ad. Mnchtte. +2' then mult = mult + 0.1 end
     if string.find(name,'Minuet') and player.equipment.body == "Aoidos' Hngrln. +2" then mult = mult + 0.1 end
-    if string.find(name,'Madrigal') and player.equipment.head == "Fili Calot +1" then mult = mult + 0.1 end
+    if string.find(name,'Madrigal') and player.equipment.head == "Fili Calot +2" then mult = mult + 0.1 end
     if string.find(name,'Ballad') and player.equipment.legs == "Aoidos' Rhing. +2" then mult = mult + 0.1 end
     if string.find(name,'Scherzo') and player.equipment.feet == "Aoidos' Cothrn. +2" then mult = mult + 0.1 end
     if string.find(name,'Paeon') and player.equipment.head == "Bihu Roundlet +1 +1" then mult = mult + 0.1 end

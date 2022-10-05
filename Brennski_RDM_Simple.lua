@@ -550,7 +550,7 @@ function get_sets()
 	}
 
 	sets.WS.Savage = {
-		ammo = "Crepuscular Pebble",
+		ammo = "Oshasha's Treatise",
 		head = "Nyame Helm",
 		neck = "Rep. Plat. Medal",
 		ear1 = "Ishvara Earring",

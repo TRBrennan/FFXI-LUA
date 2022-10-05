@@ -62,89 +62,40 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "AccuracyFull", "DT", "DTAccuracy", "Hybrid"}
-	--1=Standard, 2==AccuracyFull, 3=DT, 4=DTAccuracy,5=Hybrid
+	sets.TP.index = {"Standard","Hybrid"}
+	--1=Standard, 2==Hybrid --
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo ="Aurgelmir Orb +1",
-		head ="Adhemar Bonnet +1",
-		body = "Ken. Samue",
-		hands = "Adhemar Wristbands +1",
-		legs = "Hesychast's Hose +3",
-		feet = "Anchorite's Gaiters +3",
-		neck = "Mnk. Nodowa +1",
-		waist = "Moonbow Belt",
-		left_ear = "Sherida Earring",
-		right_ear = "Schere Earring",
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
+		ammo="Aurgelmir Orb +1",
+		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands={ name="Adhemar Wrist. +1", augments={'Accuracy+20','Attack+20','"Subtle Blow"+8',}},
+		legs="Bhikku Hose +2",
+		feet="Anch. Gaiters +3",
+		neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
+		waist="Moonbow Belt",
+		left_ear="Sherida Earring",
+		right_ear="Mache Earring +1",
+		left_ring="Gere Ring",
+		right_ring="Niqmaddu Ring",
+		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
-
-	sets.TP.AccuracyFull = {
-		ammo ="Aurgelmir Orb +1",
-		head = {name = "Dampening Tam", augments = {"DEX+8", "Accuracy+14", "Mag. Acc.+13", "Quadruple Attack +1"}},
-		body = "Ashera Harness",
-		hands = "Adhemar Wristbands +1",
-		legs = "Hesychast's Hose +3",
-		feet = "Anchorite's Gaiters +3",
-		neck = "Mnk. Nodowa +1",
-		waist = "Moonbow Belt",
-		left_ear = "Cessance Earring",
-		rright_ear = "Schere Earring",
-		left_ring = "Regal Ring",
-		right_ring = "Niqmaddu Ring",
-		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
-	}
-
-	sets.TP.DT = {
-	ammo = "Staunch Tathlum +1",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Malignance Gloves",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
-    neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
-    waist="Moonbow Belt",
-	left_ear = "Sherida Earring",
-	right_ear = "Schere Earring",
-    left_ring="Gere Ring",
-    right_ring="Niqmaddu Ring",
-    back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-	}
-
-	sets.TP.DTAccuracy = {
-	ammo ="Aurgelmir Orb +1",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Malignance Gloves",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
-    neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
-    waist="Moonbow Belt",
-	left_ear = "Sherida Earring",
-	right_ear = "Schere Earring",
-    left_ring="Gere Ring",
-    right_ring="Niqmaddu Ring",
-    back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-	}
-	
 	sets.TP.Hybrid ={
-		ammo ="Aurgelmir Orb +1",
+		ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",
-		body = "Mpaca's Doublet",
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
 		hands="Malignance Gloves",
-		legs = "Hesychast's Hose +3",
-		feet = "Anchorite's Gaiters +3",
-		neck = "Mnk. Nodowa +1",
-		waist = "Moonbow Belt",
-		left_ear = "Sherida Earring",
-		right_ear = "Schere Earring",
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
+		legs="Bhikku Hose +2",
+		feet="Anch. Gaiters +3",
+		neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
+		waist="Moonbow Belt",
+		left_ear="Sherida Earring",
+		right_ear="Mache Earring +1",
+		left_ring="Gere Ring",
+		right_ring="Niqmaddu Ring",
+		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	
 	}
 
@@ -153,74 +104,76 @@ function get_sets()
 
 	sets.WS.VS = {
 		ammo = "Coiste Bodhar",
-		head = "Adhemar Bonnet +1",
-		body = "Ken. Samue",
-		hands = "Adhemar Wristbands +1",
-		legs = "Ken. Hakama",
-		feet="Nyame Sollerets",
-		neck = "Fotia Gorget",
-		waist = "Foita Belt",
-		left_ear = "Sherida Earring",
-		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
+		ammo="Aurgelmir Orb +1",
+		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands={ name="Adhemar Wrist. +1", augments={'Accuracy+20','Attack+20','"Subtle Blow"+8',}},
+		legs={ name="Mpaca's Hose", augments={'Path: A',}},
+		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
+		neck="Fotia Gorget",
+		waist="Fotia Belt",
+		left_ear="Sherida Earring",
+		right_ear="Mache Earring +1",
+		left_ring="Gere Ring",
+		right_ring="Niqmaddu Ring",
+		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.WS.SS = {
-		ammo = "Crepuscular Pebble",
-		head = "Hes. Crown +3",
-		body = "Mpaca's Doublet",
-		hands = "Adhemar Wristbands +1",
-		legs = "Ken. Hakama",
-		feet="Nyame Sollerets",
-		neck = "Mnk. Nodowa +1",
-		waist = "Moonbow Belt",
-		left_ear = "Sherida Earring",
-		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back = {name = "Segomo's Mantle", augments = {"DEX+20", "Accuracy+20 Attack+20", '"Dbl.Atk."+10'}}
+		ammo = "Oshasha's Treatise",
+		ammo="Aurgelmir Orb +1",
+		head={ name="Mpaca's Cap", augments={'Path: A',}},
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands="Malignance Gloves",
+		legs={ name="Mpaca's Hose", augments={'Path: A',}},
+		feet="Malignance Boots",
+		neck="Fotia Gorget",
+		waist="Moonbow Belt",
+		left_ear="Sherida Earring",
+		right_ear="Mache Earring +1",
+		left_ring="Gere Ring",
+		right_ring="Niqmaddu Ring",
+		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.WS.AF = {
-		ammp = "Coiste Bodhar",
-		head = "Hes. Crown +3",
-		neck = "Mnk. Nodowa +1",
-		ear1 = "Moonshade Earring",
-		ear2 = "Telos Earring",
-		body = "Mpaca's Doublet",
-		hands = "Adhemar Wristbands +1",
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back = "Visucius's mantle",
-		waist = "Sailfi Belt +1",
-		legs = "Samnuha Tights",
-		feet = {name = "Herculean Boots", augments = {"Attack+30", '"Counter"+1', "STR+8", "Accuracy+10"}}
+		ammo="Aurgelmir Orb +1",
+		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands={ name="Adhemar Wrist. +1", augments={'Accuracy+20','Attack+20','"Subtle Blow"+8',}},
+		legs = "Mpaca's Hose",
+		feet="Nyame Sollerets",
+		neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
+		waist="Moonbow Belt",
+		left_ear="Sherida Earring",
+		right_ear="Mache Earring +1",
+		left_ring="Gere Ring",
+		right_ring="Niqmaddu Ring",
+		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.WS.RF = {
-		ammo = "Crepuscular Pebble",
-		head = "Hes. Crown +3",
-		Body = "Nyame Mail",
-		hands = "Adhemar Wristbands +1",
-		legs = "Ken. Hakama",
+		ammo="Aurgelmir Orb +1",
+		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands={ name="Adhemar Wrist. +1", augments={'Accuracy+20','Attack+20','"Subtle Blow"+8',}},
+		legs = "Mpaca's Hose",
 		feet="Nyame Sollerets",
-		neck = "Mnk. Nodowa +1",
-		waist = "Moonbow Belt",
-		left_ear = "Sherida Earring",
-		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back = {name = "Segomo's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "Weapon skill damage +10%"}}
+		neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
+		waist="Moonbow Belt",
+		left_ear="Sherida Earring",
+		right_ear="Mache Earring +1",
+		left_ring="Gere Ring",
+		right_ring="Niqmaddu Ring",
+		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.WS.HF = {
 		ammo = "Knobkierrie",
 		head = "Adhemar Bonnet +1",
-		body = "Ken. Samue",
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
 		hands = "Adhemar Wristbands +1",
-		legs = "Ken. Hakama",
+		legs = "Mpaca's Hose",
 		feet="Nyame Sollerets",
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
@@ -232,20 +185,53 @@ function get_sets()
 	}
 
 	sets.WS.TK = {
-		ammo = "Knobkierrie",
-		head = "Hes. Crown +3",
-		body = "Ken. Samue",
-		hands = "Adhemar Wristbands +1",
-		legs = "Ken. Hakama",
-		feet = "Anchorite's gaiters +3",
-		neck = "Mnk. Nodowa +1",
-		waist = "Moonbow Belt",
-		left_ear = "Sherida Earring",
-		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
-		left_ring = "Regal Ring",
-		right_ring = "Niqmaddu Ring",
+		main="Godhands",
+		ammo="Aurgelmir Orb +1",
+		head={ name="Mpaca's Cap", augments={'Path: A',}},
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands={ name="Adhemar Wrist. +1", augments={'Accuracy+20','Attack+20','"Subtle Blow"+8',}},
+		legs={ name="Mpaca's Hose", augments={'Path: A',}},
+		feet="Anch. Gaiters +3",
+		neck="Fotia Gorget",
+		waist="Moonbow Belt",
+		left_ear="Sherida Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		left_ring="Gere Ring",
+		right_ring="Niqmaddu Ring",
 		back = {name = "Segomo's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "Weapon skill damage +10%"}}
 	}
+	
+	sets.WS.Cata = {		
+		ammo = "Knobkierrie",
+		head="Pixie Hairpin +1",
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Orpheus's Sash",
+		left_ear="Thrud Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		left_ring="Epaminondas's Ring",
+		right_ring="Archon Ring",
+		back = {name = "Segomo's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "Weapon skill damage +10%"}}
+		}
+		
+	sets.WS.EC = {		
+		ammo = "Knobkierrie",
+		head="Nyame Helm",
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Sanctity Necklace",
+		waist="Orpheus's Sash",
+		left_ear="Thrud Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		left_ring="Epaminondas's Ring",
+		right_ring="Regal Ring",
+		back = {name = "Segomo's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "Weapon skill damage +10%"}}
+		}
 
 	--Ninja Magic Sets--
 	sets.NINMagic = {}
@@ -387,7 +373,7 @@ function precast(spell)
 	elseif spell.english == "Victory Smite" then
 		equip(sets.WS.VS)
 		if buffactive["Impetus"] then
-			equip({Body = "Bhikku Cyclas +1", right_ear ="Brutal Earring"})
+			equip({Body = "Bhikku Cyclas +2", right_ear ="Brutal Earring"})
 		end
 	elseif spell.english == "Chakra" then
 		equip(sets.JA.Chakra)
@@ -399,10 +385,14 @@ function precast(spell)
 		equip(sets.WS.RF)
 	elseif spell.english == "Howling Fist" then
 		equip(sets.WS.HF)
-	elseif spell.english == "Tornado Kick" then
+	elseif spell.english == "Tornado Kick" or spell.english == "Dragon Kick" then
 		equip(sets.WS.TK)
 	elseif spell.english == "Box Step" then
 		equip(sets.Utility.Steps)
+	elseif spell.english == "Cataclysm" then
+		equip(sets.WS.Cata)
+	elseif spell.english == "Earth Crusher" then
+		equip(sets.WS.EC)
 	elseif spell.type == "WeaponSkill" then
 		equip(sets.WS.HF)
 	end
@@ -433,7 +423,7 @@ function aftercast(spell)
 	if player.status == "Engaged" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		if buffactive["Impetus"] then
-			equip({Body = "Bhikku Cyclas +1"})
+			equip({Body = "Bhikku Cyclas +2"})
 		end
 	else
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
@@ -450,7 +440,7 @@ function status_change(new, old)
 	if player.status == "Engaged" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		if buffactive["Impetus"] then
-			equip({Body = "Bhikku Cyclas +1"})
+			equip({Body = "Bhikku Cyclas +2"})
 		end
 	else
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])

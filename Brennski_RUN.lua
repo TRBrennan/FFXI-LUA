@@ -37,7 +37,7 @@ function get_sets()
 		ammo = "Homiliary",
 		head = { name = "Herculean Helm",augments = {"Pet: CHR+2", 'Potency of "Cure" effect received+3%', '"Refresh"+2', 'Mag. Acc.+1 "Mag.Atk.Bns."+1'}},
 		neck = "Bathy Choker +1",
-		right_ear = "Eabani earring",
+		right_ear = "Erilaz Earring +1",
 		left_ear = "Infused Earring",
 		body = "Runeist's Coat +3",
 		hands = "Regal Gauntlets",
@@ -70,7 +70,7 @@ function get_sets()
 		head="Nyame Helm",
 		neck = "Futhark Torque +2",
 		left_ear = "Odnowa Earring +1",
-		right_ear = "Etiolation Earring",
+		right_ear = "Erilaz Earring +1",
 		body = "Nyame Mail",
 		hands = "Regal Gauntlets",
 		left_ring = "Shneddick Ring",
@@ -145,12 +145,13 @@ function get_sets()
 		--hands="Regal Gauntlets",
 		hands = "Nyame Gauntlets",
 		--legs = "Eri. Leg Guards +1",
-		legs = "Nyame Flanchard",
+		--legs = "Nyame Flanchard",
+		legs = "Erilaz Leg Guards +2",
 		feet = "Turms Leggings +1",
 		neck = "Futhark Torque +2",
 		waist = "Carrier's Sash",
 		left_ear = "Odnowa Earring +1",
-		right_ear = "Etiolation Earring",
+		right_ear = "Erilaz Earring +1",
 		right_ring = "Defending Ring",
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
@@ -161,7 +162,8 @@ function get_sets()
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Ashera Harness",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		--legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		legs = "Erilaz Leg Guards +2",
 		feet="Turms Leggings +1",
 		neck={ name="Futhark Torque +2", augments={'Path: A',}},
 		waist="Carrier's Sash",
@@ -173,7 +175,7 @@ function get_sets()
 	}
 	-- sets.TP.HBP = {
 		-- ammo = "Staunch Tathlum +1",
-		-- head = "Erilaz galea +1",
+		-- head = "Erilaz Galea +2",
 		-- body = "Ashera Harness",
 		-- hands = "Regal Gauntlets",
 		-- legs = "Nyame Flanchard",
@@ -194,7 +196,7 @@ function get_sets()
 		-- body = "Ashera Harness",
 		-- Hands = "Volte Bracers",
 		-- legs = "Rune. Trousers +3",
-		-- feet = "Erilaz Greaves +1",
+		-- feet = "Erilaz Greaves +2",
 		-- neck = "Futhark Torque +2",
 		-- waist = "Carrier's Sash",
 		-- right_ear = "Hearty Earring",
@@ -244,7 +246,7 @@ function get_sets()
 		waist = "Sailfi Belt +1",
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
-		left_ring = "Regal Ring",
+		left_ring = "Epaminondas's Ring",
 		right_ring = "Ilabrat Ring",
 		back = {name = "Ogma's cape", augments = {"DEX+20", "Accuracy+20 Attack+20", "DEX+10", "Weapon skill damage +10%"}}
 	}
@@ -305,7 +307,7 @@ function get_sets()
 		Body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
 		right_ring = "Niqmaddu Ring",
-		left_ring = "Regal Ring",
+		left_ring = "Epaminondas's Ring",
 		back = {name = "Ogma's cape", augments = {"DEX+20", "Accuracy+20 Attack+20", "DEX+10", "Weapon skill damage +10%"}},
 		waist = "Sailfi Belt +1",
 		Legs = "Nyame Flanchard",
@@ -344,12 +346,12 @@ function get_sets()
 		back = "Moonbeam Cape",
 		waist = "Carrier's Sash",
 		legs = "Futhark Trousers +3",
-		feet = "Erilaz Greaves +1"
+		feet = "Erilaz Greaves +2"
 	}
 
 	sets.Utility.SIRD = {
 		ammo="Staunch Tathlum +1",
-		head="Agwu's Cap",
+		head="Erilaz Galea +2",
 		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Rawhide Gloves", augments={'HP+50','Accuracy+15','Evasion+20',}},
 		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
@@ -374,14 +376,14 @@ function get_sets()
 		waist = "Trance belt",
 		right_ring = "Defending Ring",
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
-		legs = "Erilaz Leg Guards +1",
-		feet = "Ahosi Leggings",
+		legs = "Erilaz Leg Guards +2",
+		feet = "Erilaz Greaves +2",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 
 	sets.Utility.Enhancing = {
 		ammo = "Staunch Tathlum +1",
-		head = "Erilaz Galea +1",
+		head = "Erilaz Galea +2",
 		neck = "Incanter's Torque",
 		right_ear = "Andoaa Earring",
 		right_ear = "Mimir Earring",
@@ -391,17 +393,17 @@ function get_sets()
 		left_ring= "Stikini ring +1",
 		right_ring = "Stikini Ring +1",
 		legs = "Futhark Trousers +3",
-		feet = "Erilaz Greaves +1",
+		feet = "Erilaz Greaves +2",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 
 	sets.Utility.EnhancingSkill = {
 		ammo = "Staunch Tathlum +1",
-		head = "Erilaz Galea +1",
+		head = "Erilaz Galea +2",
 		body = "Emet Harness +1",
 		hands = "Runeist's Mitons +3",
 		legs = {name = "Carmine Cuisses +1", augments = {"Accuracy+20", "Attack+12", '"Dual Wield"+6'}},
-		feet = "Erilaz Greaves +1",
+		feet = "Erilaz Greaves +2",
 		neck = "Incanter's Torque",
 		waist = "Olympus Sash",
 		right_ear = "Mimir Earring",
@@ -413,7 +415,7 @@ function get_sets()
 
 	sets.Utility.Refresh = {
 		ammo = "Staunch Tathlum +1",
-		head = "Erilaz Galea +1",
+		head = "Erilaz Galea +2",
 		neck = "Incanter's Torque",
 		left_ear = "Andoaa Earring",
 		right_ear = "Mimir Earring",
@@ -423,7 +425,7 @@ function get_sets()
 		left_ring= "Stikini ring +1",
 		right_ring = "Defending Ring",
 		legs = "Futhark Trousers +3",
-		feet = "Erilaz Greaves +1",
+		feet = "Erilaz Greaves +2",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 	
@@ -431,8 +433,9 @@ function get_sets()
 	    ammo="Pemphredo Tathlum",
 		body={ name="Cohort Cloak +1", augments={'Path: A',}},
 		hands="Aya. Manopolas +2",
-		legs="Aya. Cosciales +2",
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		legs="Erilaz Leg Guards +2",
+		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		feet ="Erilaz Greaves +2",
 		neck="Sanctity Necklace",
 		waist="Eschan Stone",
 		left_ear="Digni. Earring",
@@ -446,7 +449,7 @@ function get_sets()
 
 	--Job Ability Sets--
 	sets.JA = {}
-	sets.JA.VP = {legs = "Rune. Trousers +3", left_ring= "Stikini ring +1", neck = "Incanter's Torque", head = "Erilaz Galea +1"}
+	sets.JA.VP = {legs = "Rune. Trousers +3", left_ring= "Stikini ring +1", neck = "Incanter's Torque", head = "Erilaz Galea +2"}
 
 	sets.JA.Liement = {body = {name = "Futhark Coat +1", augments = {'Enhances "Elemental Sforzo" effect'}}}
 
@@ -514,7 +517,7 @@ function get_sets()
 		hands = "Regal Gauntlets",
 		waist = "Carrier's Sash",
 		left_ring = "Defending Ring",
-		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
+		right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		legs="Agwu's Slops",
 		feet = "Carmine Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
