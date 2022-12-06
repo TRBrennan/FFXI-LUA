@@ -239,7 +239,7 @@ function get_sets()
 		feet ="Arbatel Loafers +3",
 	}
 	
-	sets.Magic.Impact= {
+	sets.Magic.Impact {
 	    main={ name="Bunzi's Rod", augments={'Path: A',}},
 		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
