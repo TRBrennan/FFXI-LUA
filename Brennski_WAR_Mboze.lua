@@ -163,7 +163,7 @@ function get_sets()
 	}
 
 	sets.TP.H2H = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Hjarrandi Helm",
 		neck = "Warrior's bead necklace +2",
 		ear2 = "Brutal earring",
@@ -336,7 +336,7 @@ function get_sets()
 	}
 
 	sets.UF = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Warrior's bead necklace +2",
 		ear2 = "Schere Earring",
@@ -352,7 +352,7 @@ function get_sets()
 	}
 
 	sets.RR = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Blistering Sallet +1",
 		neck = "Fotia gorget",
 		ear1 = "Telos earring",
@@ -528,7 +528,7 @@ function get_sets()
 	}
 
 	sets.Vorpal = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia Gorget",
 		ear2 = "Schere Earring",
@@ -544,7 +544,7 @@ function get_sets()
 	}
 
 	sets.Rampage = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia Gorget",
 		ear2 = "Schere Earring",
@@ -736,7 +736,7 @@ function get_sets()
 	}
 
 	sets.Evisceration = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Blistering Sallet +1",
 		neck = "Fotia Gorget",
 		ear2 = "Schere Earring",
@@ -752,7 +752,7 @@ function get_sets()
 	}
 
 	sets.Truestrike = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
 		ear1 = "Thrud Earring",
@@ -800,7 +800,7 @@ function get_sets()
 	}
 
 	sets.Hexa = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Blistering Sallet +1",
 		neck = "Fotia Gorget",
 		ear2 = "Brutal earring",
@@ -977,7 +977,7 @@ function get_sets()
 	}
 
 	sets.ID = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Flam. Zucchetto +2",
 		body= "Hjarrandi Breast.",
 		hands = "Flam. Manopolas +2",
@@ -996,7 +996,7 @@ function get_sets()
 	}
 
 	sets.UpheavalCrit = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = {name = "Agoge Mask +3", augments = {'Enhances "Savagery" effect'}},
 		body = "Pumm. Lorica +3",
 		hands = {name = "Valorous Mitts",augments = {"Accuracy+19 Attack+19", "Crit. hit damage +4%", "AGI+1", "Accuracy+14", "Attack+9"}},

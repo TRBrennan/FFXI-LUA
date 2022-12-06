@@ -38,7 +38,7 @@ function get_sets()
 		ear2 = "Infused Earring",
 		body = "Reverence Surcoat +3",
 		hands = "Regal Gauntlets",
-		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
+		left_ring={name="Moonlight Ring",bag="wardrobe2"},
 		right_ring = "Shneddick Ring",		
 		waist = "Fucho-no-obi",
 		legs = "Sakpata's Cuisses",
@@ -57,8 +57,8 @@ function get_sets()
 		waist= "Carrier's Sash",
 		left_ear="Odnowa Earring +1",
 		right_ear = "Tuisto Earring",
-		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
-		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
+		left_ring={name="Moonlight Ring",bag="wardrobe2"},
+		right_ring={name="Moonlight Ring",bag="wardrobe3"},
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 

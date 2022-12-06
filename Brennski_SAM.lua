@@ -21,7 +21,7 @@ function get_sets()
 	TP_Body ={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
 	--WSD_Legs = "Wakido Haidate +3"
 	WSD_Legs = "Nyame Flanchard"
-	WSD_Hands = "Nyame Gauntlets"
+	WSD_Hands = "Kasuga Kote +3"
 	--WSD_Body = "Sakonji Domaru +3"
 	WSD_Body = "Nyame Mail"
 	WSD_Head = "Nyame Helm"
@@ -132,7 +132,7 @@ function get_sets()
 		left_ear = "Thrud Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		left_ring="Epaminondas's Ring",
-		right_ring = "Beithir ring",
+		right_ring = "Sroda ring",
 		back = WSD_Cape
 	}
 
@@ -160,14 +160,14 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		body = "Nyame Mail",
-		hands = WSD_Hands,
+		hands = "Nyame Gauntlets",
 		legs = "Nyame Flanchard",
 		feet = WSD_Feet,
 		neck = "Fotia Gorget",
 		waist="Orpheus's Sash",
 		left_ear = "Friomisi earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
-		right_ring = "Beithir ring",
+		right_ring = "Sroda ring",
 		left_ring = "Epaminondas's Ring",
 		back={ name="Smertrios's Mantle", augments={'STR+20','Mag. Acc+20 /Mag. Dmg.+20','STR+10','Weapon skill damage +10%',}},
 	}

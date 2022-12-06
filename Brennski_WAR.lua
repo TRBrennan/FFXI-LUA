@@ -25,7 +25,7 @@ function get_sets()
 	--Weapon Sets--
 	
 	sets.Weapons = {}
-	sets.Weapons.index = {'Chango','NaeglingShield', 'LoxoticShield', 'ShiningOne','Ukon', 'Farsha', 'Staff'}
+	sets.Weapons.index = {'Chango','NaeglingShield', 'LoxoticShield', 'ShiningOne','Ukon', 'Farsha', 'Staff', 'FarshaDWTP', 'SwordDWTP'}
 	Weapons_ind = 1
 	
 	sets.Weapons.Chango = {main ="Chango",sub="Utu Grip"}
@@ -41,6 +41,10 @@ function get_sets()
 	sets.Weapons.Farsha ={ main ="Farsha", sub = "Blurred Shield +1"}
 	
 	sets.Weapons.Staff = {main ="Blurred Staff", sub="Utu Grip"}
+	
+	sets.Weapons.FarshaDWTP = { main ="Farsha", sub = "Renaud's Axe +2", augments={'TP Bonus +1000',}}
+	
+	sets.Weapons.SwordDWTP = { main ="Neagling", sub = "Renaud's Axe +2", augments={'TP Bonus +1000',}}
 	
 	--Idle Sets--
 	sets.Idle = {}
@@ -63,8 +67,8 @@ function get_sets()
 	WSD_Head = "Agoge Mask +3"
 	TP_Body ={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
 	--WSD_Legs ="Sakpata's Cuisses"
-	WSD_Legs ="Nyame Flanchard"
-	WSD_Hands = "Sakpata's Gauntlets"
+	WSD_Legs ="Boii Cuisses +3"
+	WSD_Hands = "Boii Mufflers +3"
 	WSD_Body = "Nyame Mail"
 
 	sets.Idle.Standard = {
@@ -109,21 +113,18 @@ function get_sets()
 	TP_ind = 1
 	
 	sets.TP.Standard ={
-		--ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		ammo ="Aurgelmir Orb +1",
-		--head={ name="Sakpata's Helm", augments={'Path: A',}},
-		head = "Hjarrandi Helm",
-		body={ name="Sakpata's Plate", augments={'Path: A',}},
+		head="Hjarrandi Helm",
+		 body="Boii Lorica +3",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs="Pumm. Cuisses +3",
 		feet="Pumm. Calligae +3",
 		neck={ name="War. Beads +2", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ear="Telos Earring",
-		right_ear={ name="Schere Earring", augments={'Path: A',}},
+		left_ear={ name="Schere Earring", augments={'Path: A',}},
+		right_ear="Boii Earring +1",
 		left_ring="Niqmaddu Ring",
-		--right_ring="Petrov Ring",
-		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
+		right_ring="Moonlight Ring",
 		back=DA_Back
 	}
 
@@ -168,21 +169,20 @@ function get_sets()
 	sets.TP.Chango ={
 		--ammo = "Staunch Tathlum +1",
 		ammo ="Aurgelmir Orb +1",
-		--head={ name="Sakpata's Helm", augments={'Path: A',}},
-		head = "Hjarrandi Helm",
-		body={ name="Sakpata's Plate", augments={'Path: A',}},
+		head="Hjarrandi Helm",
+		 body="Boii Lorica +3",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs="Pumm. Cuisses +3",
 		feet="Pumm. Calligae +3",
 		neck={ name="War. Beads +2", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ear="Telos Earring",
-		right_ear={ name="Schere Earring", augments={'Path: A',}},
+		left_ear={ name="Schere Earring", augments={'Path: A',}},
+		right_ear="Boii Earring +1",
 		left_ring="Niqmaddu Ring",
-		--right_ring="Petrov Ring",
-		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
-		back = DA_Back,
+		right_ring="Moonlight Ring",
+		back=DA_Back
 	}
+		
 	-- sets.TP.Chango = {
 		-- ammo = "Coiste Bodhar",
 		-- head = "Hjarrandi Helm",
@@ -205,7 +205,7 @@ function get_sets()
 	-- }
 
 	sets.TP.H2H = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Hjarrandi Helm",
 		neck = "Warrior's bead necklace +2",
 		ear2 = "Brutal earring",
@@ -420,7 +420,7 @@ function get_sets()
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
 		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		back = WSD_Back,
 		--waist = "Ioskeha Belt +1",
 		waist = "Sailfi Belt +1",
@@ -447,26 +447,26 @@ function get_sets()
 	}
 
 	sets.UF = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Warrior's bead necklace +2",
 		ear2 = "Schere Earring",
-		ear1 = "Moonshade earring",
+		ear1 = "Boii Earring +1",
 		body = "Hjarrandi Breast.",
 		hands = "Flamma Manopolas +2",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Hetairoi ring",
 		back = Crit_Back,
 		waist = "Sailfi Belt +1",
-		legs = "Sakpata's Cuisses",
+		legs = "Boii Cuisses +3",
 		feet = "Boii Calligae +2"
 	}
 
 	sets.RR = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Blistering Sallet +1",
 		neck = "Fotia gorget",
-		ear1 = "Telos earring",
+		ear1 = "Boii Earring +1",
 		ear2 = "Schere Earring",
 		body = "Hjarrandi Breast.",
 		hands = "Flamma manopolas +2",
@@ -474,7 +474,8 @@ function get_sets()
 		ring2 = "Hetairoi ring",
 		back = Crit_Back,
 		waist = "Sailfi Belt +1",
-		legs = "Sakpata's Cuisses",
+		--legs = "Sakpata's Cuisses",
+		legs = "Boii Cuisses +3",
 		feet = "Boii Calligae +2"
 	}
 
@@ -488,7 +489,7 @@ function get_sets()
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
 		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
@@ -505,7 +506,7 @@ function get_sets()
 		feet="Sakpata's Leggings",
 		neck = "Sanctity Necklace",
 		waist = "Eschan Stone",
-		left_ear = "Digni. Earring",
+		left_ear = "Boii Earring +1",
 		right_ear = "Crep. Earring",
 		left_ring = "Stikini ring +1",
 		right_ring = "Flamma Ring",
@@ -535,13 +536,13 @@ function get_sets()
 		ear1 = "Thrud Earring",
 		ear2 = "Moonshade earring",
 		body = WSD_Body,
-		hands = "Sakpata's Gauntlets",
+		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
 		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
-		legs = "Sakpata's Cuisses",
+		legs = WSD_Legs,
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		--feet="Sakpata's Leggings",
 	}
@@ -556,7 +557,7 @@ function get_sets()
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
 		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = "Sakpata's Cuisses",
@@ -575,7 +576,7 @@ function get_sets()
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
 		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
@@ -593,7 +594,7 @@ function get_sets()
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
 		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -611,7 +612,7 @@ function get_sets()
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
 		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -651,34 +652,34 @@ function get_sets()
 	}
 
 	sets.Vorpal = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia Gorget",
 		ear2 = "Schere Earring",
-		ear1 = "Moonshade earring",
+		ear1 = "Boii Earring +1",
 		body="Hjarrandi Breast.",
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = Crit_Back,
 		waist = "Fotia belt",
-		legs = "Sakpata's Cuisses",
+		Legs = "Boii Cuisses +3",
 		feet = "Boii Calligae +2"
 	}
 
 	sets.Rampage = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia Gorget",
 		ear2 = "Schere Earring",
-		ear1 = "Moonshade earring",
+		ear1 = "Boii Earring +1",
 		body = "Sakpata's Plate",
 		hands = "Flam. Manopolas +2",
 		ring1 = "Niqmaddu ring",
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = Crit_Back,
 		waist = "Fotia belt",
-		legs = "Sakpata's Cuisses",
+		Legs = "Boii Cuisses +3",
 		feet = "Boii Calligae +2"
 	}
 
@@ -694,7 +695,8 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = DA_Back,
 		waist = "Fotia belt",
-		legs = "Sakpata's Cuisses",
+		--legs = "Sakpata's Cuisses",
+		Legs = "Boii Cuisses +3",
 		feet = "Flam. Gambieras +2"
 	}
 
@@ -725,7 +727,7 @@ function get_sets()
 		ring1 = "Epaminondas's Ring",
 		--ring1 = "Niqmaddu ring",
 		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -742,7 +744,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -761,7 +763,8 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = DA_Back,
 		waist = "Fotia belt",
-		legs = "Sakpata's Cuisses",
+		--legs = "Sakpata's Cuisses",
+		Legs = "Boii Cuisses +3",
 		feet = "Flam. Gambieras +2"
 	}
 
@@ -777,7 +780,8 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = DA_Back,
 		waist = "Fotia belt",
-		legs = "Sakpata's Cuisses",
+		--legs = "Sakpata's Cuisses",
+		Legs = "Boii Cuisses +3",
 		feet = "Flam. Gambieras +2"
 	}
 
@@ -807,7 +811,7 @@ function get_sets()
 		body = TP_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
@@ -823,7 +827,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
@@ -864,7 +868,7 @@ function get_sets()
 	}
 
 	sets.Evisceration = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Blistering Sallet +1",
 		neck = "Fotia Gorget",
 		ear2 = "Schere Earring",
@@ -880,7 +884,7 @@ function get_sets()
 	}
 
 	sets.Truestrike = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
 		ear1 = "Thrud Earring",
@@ -903,7 +907,7 @@ function get_sets()
 		ear2 = "Moonshade earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		ring1 = "Epaminondas's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
@@ -920,7 +924,7 @@ function get_sets()
 		ear2 = "Moonshade earring",
 		body = "Nyame Mail",
 		hands = WSD_Hands,
-		ring2 = "Beithir ring",
+		ring2 = "Sroda ring",
 		ring1 = "Niqmaddu ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
@@ -930,7 +934,7 @@ function get_sets()
 	}
 
 	sets.Hexa = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Blistering Sallet +1",
 		neck = "Fotia Gorget",
 		ear2 = "Brutal earring",
@@ -958,7 +962,8 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = DA_Back,
 		waist = "Sailfi Belt +1",
-		legs = "Sakpata's Cuisses",
+		--legs = "Sakpata's Cuisses",
+		Legs = "Boii Cuisses +3",
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -974,7 +979,8 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = DA_Back,
 		waist = "Fotia belt",
-		legs = "Sakpata's Cuisses",
+		--legs = "Sakpata's Cuisses",
+		Legs = "Boii Cuisses +3",
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -990,7 +996,8 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = STR_Back,
 		waist = "Fotia belt",
-		legs = "Sakpata's Cuisses",
+		--legs = "Sakpata's Cuisses",
+		Legs = "Boii Cuisses +3",
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -1109,7 +1116,7 @@ function get_sets()
 	}
 
 	sets.ID = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = {name = "Agoge Mask +3", augments = {'Enhances "Savagery" effect'}},
 		body= "Hjarrandi Breast.",
 		hands = "Flam. Manopolas +2",
@@ -1188,7 +1195,7 @@ function get_sets()
 
 	sets.JA.Ret = {feet = "Boii Calligae +2"}
 
-	sets.JA.BloodRage = {body = "Boii lorica +2"}
+	sets.JA.BloodRage = {body = "Boii lorica +3"}
 
 	sets.JA.Tomahawk = {
 		ammo = "Throwing Tomahawk",

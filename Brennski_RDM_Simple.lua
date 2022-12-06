@@ -534,7 +534,7 @@ function get_sets()
 	sets.WS = {}
 
 	sets.WS.CDC = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Blistering Sallet +1",
 		neck = "Fotia gorget",
 		right_ear = "Moonshade Earring",

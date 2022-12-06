@@ -208,7 +208,7 @@ function get_sets()
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Epaminondas's Ring",
-		right_ring = "Ilabrat Ring",
+		right_ring = "Sroda Ring",
 		back = WSD_back,
 	}
 	
@@ -225,7 +225,7 @@ function get_sets()
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Epaminondas's Ring",
-		right_ring = "Ilabrat Ring",
+		right_ring = "Sroda Ring",
 		back = WSD_back,
 	}
 	
@@ -263,7 +263,7 @@ function get_sets()
 	}
 	
 	sets.WS.Crit ={
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 	    head={ name="Blistering Sallet +1", augments={'Path: A',}},
 		body="Mpaca's Doublet",
 		hands = "Adhemar Wristbands +1",

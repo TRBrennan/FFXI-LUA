@@ -152,7 +152,7 @@ function get_sets()
                                           head = "Nyame Helm",
 										  neck="Rep. Plat. Medal",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Nyame Mail",
-										  hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2={ name="Metamor. Ring +1", augments={'Path: A',}},
+										  hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Sroda Ring",
                                           back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 										  waist="Sailfi Belt +1",Legs = "Nyame Flanchard",
 										  feet="Nyame Sollerets" }

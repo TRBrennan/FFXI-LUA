@@ -167,7 +167,7 @@ function get_sets()
         sets.WS = {}
 
         sets.Rudras = {
-                ammo = "Yetshila",
+                ammo = "Yetshila +1",
                 head = {
                         name = "Herculean Helm",
                         augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}

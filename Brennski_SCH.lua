@@ -1,4 +1,8 @@
 function get_sets()
+-- Load dressup--
+	send_command('lua l dressup')
+	send_command('lua l sch-hud')
+	
 	send_command("bind f9 gs c toggle Nuke set")
 	send_command("bind f10 gs c toggle Idle set")
 	send_command("bind f11 gs c toggle Enhancing set")
@@ -128,19 +132,20 @@ function get_sets()
 		back = "Lugh's Cape",
 		legs="Agwu's Slops",
 		--feet = {name = "Merlinic Crackows",augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Fast Cast"+3', "INT+10", '"Mag.Atk.Bns."+1'}}
-		feet ="Arbatel Loafers +2",
+		feet ="Arbatel Loafers +3",
 	}
 
 	sets.Nuke.MagicBurst = {
 		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
-		head="Agwu's Cap",
+		--head="Agwu's Cap",
+		head = "Pedagogy Mortarboard +3",
 		body = "Agwu's Robe",
 		hands = "Agwu's Gages",
 		legs="Agwu's Slops",
 		--feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
-		feet ="Arbatel Loafers +2",
+		feet ="Arbatel Loafers +3",
 		neck="Argute Stole +2",
 		waist="Sacro Cord",
 		left_ear="Regal Earring",
@@ -168,7 +173,7 @@ function get_sets()
 		ear1 = "Andoaa Earring",
 		ear2 = "Mimir Earring",
 		body = "Telchine Chasuble",
-		hands = "Kaykaus Cuffs +1",
+		hands = "Telchine Gloves",
 		ring1 = "Stikini ring +1",
 		ring2 = "Stikini ring +1",
 		waist = "Embla Sash",
@@ -186,7 +191,7 @@ function get_sets()
 		ear1 = "Andoaa Earring",
 		ear2 = "Mimir Earring",
 		body = "Telchine Chasuble",
-		hands = "Kaykaus Cuffs",
+		hands = "Telchine Gloves",
 		ring1 = "Stikini ring +1",
 		ring2 = "Stikini ring +1",
 		waist = "Embla Sash",
@@ -197,42 +202,75 @@ function get_sets()
 
 	--Magic Sets--
 	sets.Magic = {}
-
+	
+	sets.Magic.Aquaveil = {
+	    main={ name="Pedagogy Staff", augments={'Path: C',}},
+		sub="Enki Strap",
+		ammo="Staunch Tathlum +1",
+		head="Chironic Hat",
+		body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},
+		hands={ name="Telchine Gloves", augments={'"Fast Cast"+4','Enh. Mag. eff. dur. +10',}},
+		legs={ name="Telchine Braconi", augments={'"Fast Cast"+2','Enh. Mag. eff. dur. +10',}},
+		feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +10',}},
+		neck="Incanter's Torque",
+		waist="Emphatikos Rope",
+		left_ear="Andoaa Earring",
+		right_ear="Mimir Earring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
+		back={ name="Fi Follet Cape +1", augments={'Path: A',}},
+	}
+	
 	sets.Magic.Enfeebling = {
 		main="Daybreak",
 		sub="Ammurapi Shield",
 		ammo = "Pemphredo Tathlum",
-		head = "Arbatel Bonnet +2",
 		neck = "Argute Stole +2",
 		ear2 = "Vor Earring",
 		ear1 = "Malignance Earring",
 		--body = {name = "Merlinic Jubbah",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
-		body = "Arbatel Gown +2",
+		body = "Cohort Cloak +1",
 		hands = "Kaykaus Cuffs +1",
 		ring1 = "Stikini ring +1",
 		ring2 = "Stikini ring +1",
 		waist = "Obstin. Sash",
 		back = "Aurist's Cape +1",
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
-		feet ="Arbatel Loafers +2",
+		feet ="Arbatel Loafers +3",
+	}
+	
+	sets.Magic.Impact= {
+	    main={ name="Bunzi's Rod", augments={'Path: A',}},
+		sub="Ammurapi Shield",
+		ammo="Pemphredo Tathlum",
+		body="Twilight Cloak",
+		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
+		feet="Arbatel Loafers +3",
+		neck={ name="Argute Stole +2", augments={'Path: A',}},
+		waist={ name="Obstin. Sash", augments={'Path: A',}},
+		left_ear="Malignance Earring",
+		right_ear="Crep. Earring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 
 	sets.Magic.Healing = {
 		main="Daybreak",
 		sub="Ammurapi Shield",
-		ammo="Pemphredo Tathlum",
-		head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
-		--body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},
-		body = "Arbatel Gown +2",
+		ammo="Staunch Tathlum +1",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body="Arbatel Gown +2",
 		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
-		feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		feet={ name="Kaykaus Boots +1", augments={'Mag. Acc.+20','"Cure" potency +6%','"Fast Cast"+4',}},
 		neck="Incanter's Torque",
-		waist="Obstin. Sash",
+		waist="Carrier's Sash",
 		left_ear="Regal Earring",
-		right_ear="Vor Earring",
-		left_ring="Ephedra Ring",
-		right_ring="Sirona's Ring",
+		right_ear="Meili Earring",
+		left_ring="Defending Ring",
+		right_ring="Gelatinous Ring +1",
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 
@@ -245,7 +283,7 @@ function get_sets()
 		ear1 = "Regal Earring",
 		ear2 = "Regal Earring",
 		body = "Telchine Chasuble",
-		hands = "Kaykaus Cuffs",
+		hands = "Telchine Gloves",
 		ring1 = "Stikini ring +1",
 		ring2 = "Kishar Ring",
 		waist = "Embla Sash",
@@ -256,6 +294,7 @@ function get_sets()
 
 	sets.Magic.Dark = {
 		main = "Bunzi's Rod",
+		sub="Ammurapi Shield",
 		ammo = "Pemphredo Tathlum",
 		head = "Pixie Hairpin +1",
 		neck = "Incanter's Torque",
@@ -290,23 +329,19 @@ function get_sets()
 	sets.Magic.HelixMB ={
 		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
-		--ammo="Pemphredo Tathlum",
 		ammo="Ghastly Tathlum +1",
 		body = "Agwu's Robe",
-		head="Agwu's Cap",
+		head = "Pedagogy Mortarboard +3",
 		hands = "Agwu's Gages",
 		legs="Agwu's Slops",
-		--feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
-		feet ="Arbatel Loafers +2",
+		feet ="Arbatel Loafers +3",
 		neck="Argute Stole +2",
 		waist = "Orpheus's Sash",
 		left_ear="Regal Earring",
 		right_ear="Malignance Earring",
-		--left_ring="Locus Ring",
 		left_ring="Freke Ring",
 		right_ring="Mujin Band",
 		back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
-		--back = "Bookworm's Cape"
 	}
 	
 	sets.Magic.DarkHelixMB ={
@@ -327,6 +362,24 @@ function get_sets()
 		right_ring="Mujin Band",
 		back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		--back = "Bookworm's Cape"
+	}
+	
+	sets.Magic.Cursna ={
+	    main="Gada",
+		sub="Ammurapi Shield",
+		ammo="Staunch Tathlum +1",
+		head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		body="Arbatel Gown +2",
+		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
+		legs="Acad. Pants +2",
+		feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		neck="Malison Medallion",
+		waist="Gishdubar Sash",
+		left_ear="Regal Earring",
+		right_ear="Meili Earring",
+		left_ring={name="Ephedra Ring",bag="wardrobe2"},
+		right_ring={name="Ephedra Ring",bag="wardrobe6"},
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 
 	--Precast Sets--
@@ -387,6 +440,24 @@ function get_sets()
 		legs = "Telchine Braconi",
 		feet = "Telchine Pigaches"
 	}
+	
+	sets.precast.FC.Impact ={
+	    main={ name="Pedagogy Staff", augments={'Path: C',}},
+		sub="Enki Strap",
+		ammo="Sapience Orb",
+		body="Twilight Cloak",
+		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}},
+		legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
+		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+21','"Fast Cast"+6','STR+6','"Mag.Atk.Bns."+13',}},
+		neck="Voltsurge Torque",
+		waist="Embla Sash",
+		left_ear="Malignance Earring",
+		right_ear="Loquac. Earring",
+		left_ring="Rahab Ring",
+		right_ring="Kishar Ring",
+		back={ name="Fi Follet Cape +1", augments={'Path: A',}},
+	}
+	
 	--Utility and JA Sets --
 	sets.Utility = {}
 	
@@ -394,7 +465,7 @@ function get_sets()
 
 	sets.Utility.Weather = {waist = "Hachirin-no-obi"}
 
-	sets.Utility.Klima = {feet ="Arbatel Loafers +2"}
+	sets.Utility.Klima = {feet ="Arbatel Loafers +3"}
 
 	sets.Utility.DrainAspir = {
 		ammo = "Pemphredo Tathlum",
@@ -432,6 +503,9 @@ end
 function precast(spell)
 	if spell.skill == "Elemental Magic" then
 		equip(sets.precast.FC.Standard)
+			if spell.english == "Impact" then
+				equip(sets.precast.FC.Impact)
+			end
 	elseif spell.skill == "Enfeebling Magic" then
 		equip(sets.precast.FC.Standard)
 	elseif spell.skill == "Enhancing Magic" then
@@ -451,6 +525,8 @@ function precast(spell)
 		equip(sets.Magic.Stun)
 	elseif spell.english == "Sublimation" then
 		equip(sets.Utility.Sub)
+	elseif spell.english == "Impact" then
+		equip(sets.precast.FC.Impact)
 	end
 end
 
@@ -459,6 +535,12 @@ function midcast(spell, act)
 		equip(sets.Enhancing[sets.Enhancing.index[Enhancing_ind]])
 		if buffactive["Perpetuance"] then
 			equip(set_combine(sets.Enhancing[sets.Enhancing.index[Enhancing_ind]], sets.Utility.Perpetuance))
+		end
+		if spell.name == "Aquaveil" then
+			equip(sets.Magic.Aquaveil)
+			if buffactive["Perpetuance"] then
+				equip(set_combine(sets.Magic.Aquaveil, sets.Utility.Perpetuance))
+			end
 		end
 	end
 	if spell.english == "Embrava" then
@@ -472,6 +554,13 @@ function midcast(spell, act)
 	end
 	if spell.skill == "Healing Magic" then
 		equip(sets.Magic.Healing)
+		 if spell_element == world.weather_element or spell_element == world.day_element then
+			equip(sets.Utility.Weather)
+		end
+		
+		if spell.english =="Cursna" then
+			equip(sets.Magic.Cursna)
+		end
 	end
 
 	if spell.skill == "Dark Magic" then
@@ -491,12 +580,13 @@ function midcast(spell, act)
 				-- equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]], sets.Utility.Klima))
 			-- end
 		end
+	
+		if spell.english == "Impact" then
+				equip(sets.Magic.Impact)
+		end
 	end
 
-	if
-		spell.english == "Regen" or spell.english == "Regen II" or spell.english == "Regen III" or spell.english == "Regen IV" or
-			spell.english == "Regen V"
-	 then
+	if spell.english == "Regen" or spell.english == "Regen II" or spell.english == "Regen III" or spell.english == "Regen IV" or spell.english == "Regen V" then
 		equip(sets.Magic.Regen)
 		if buffactive["Perpetuance"] then
 			equip(set_combine(sets.Magic.Regen, sets.Utility.Perpetuance))

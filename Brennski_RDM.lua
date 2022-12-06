@@ -62,7 +62,7 @@ function get_sets()
 		neck = "Bathy Choker +1",
 		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
-		body = "Lethargy Sayon +2",
+		body = "Lethargy Sayon +3",
 		hands = {name = "Merlinic Dastanas", augments = {"DEX+3", 'Mag. Acc.+16 "Mag.Atk.Bns."+16', '"Refresh"+1'}},
 		ring1 = "Defending ring",
 		ring2 = "Shneddick Ring",
@@ -75,7 +75,7 @@ function get_sets()
 	sets.Idle.DT = {
 		ammo="Homiliary",
 		head={ name="Nyame Helm", augments={'Path: B',}},
-		body = "Lethargy Sayon +2",
+		body = "Lethargy Sayon +3",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -306,7 +306,7 @@ function get_sets()
 		ear2 = "Snotra Earring",
 		ear1 = "Regal Earring",
 		--body = "Atrophy Tabard +3",
-		body ="Lethargy Sayon +2",
+		body ="Lethargy Sayon +3",
 		hands = "Kaykaus Cuffs +1",
 		ring1 = "Stikini ring +1",
 		ring2 = "Metamor. Ring +1",
@@ -325,7 +325,7 @@ function get_sets()
 		ear2 = "Snotra Earring",
 		ear1 = "Regal Earring",
 		hands = "Kaykaus Cuffs +1",
-		body = "Lethargy Sayon +2",
+		body = "Lethargy Sayon +3",
 		ring1 = "Stikini ring +1",
 		ring2 = "Kishar Ring",
 		waist = "Obstin. Sash",
@@ -343,7 +343,7 @@ function get_sets()
 		ammo="Regal Gem",
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
 		--body="Atrophy Tabard +3",
-		body ="Lethargy Sayon +2",
+		body ="Lethargy Sayon +3",
 		hands="Lethargy Gantherots +2",
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
@@ -356,11 +356,11 @@ function get_sets()
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 	
-	sets.Magic.INTEnfeeblAcc ={
+	sets.Magic.INTEnfeebleAcc ={
 		ammo="Regal Gem",
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
 		--body="Atrophy Tabard +3",
-		body ="Lethargy Sayon +2",
+		body ="Lethargy Sayon +3",
 		hands="Lethargy Gantherots +2",
 	    legs={ name="Chironic Hose", augments={'Mag. Acc.+30','"Cure" spellcasting time -10%','INT+14','"Mag.Atk.Bns."+11',}},
 		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
@@ -379,7 +379,7 @@ function get_sets()
 		ammo="Regal Gem",
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
 		--body="Atrophy Tabard +3",
-		body ="Lethargy Sayon +2",
+		body ="Lethargy Sayon +3",
 		hands="Lethargy Gantherots +2",
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
@@ -394,21 +394,38 @@ function get_sets()
 
 	sets.Magic.Healing = {
 		main="Daybreak",
-		sub = "Ammurapi shield",
-		ammo="Regal Gem",
-		head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
-		--body= "Vitiation tabard +3",
-		body = "Bunzi's Robe",
-		hands ="Kaykaus Cuffs +1",
+		sub="Ammurapi Shield",
+		ammo="Staunch Tathlum +1",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body="Bunzi's Robe",
+		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
-		feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		feet={ name="Kaykaus Boots +1", augments={'Mag. Acc.+20','"Cure" potency +6%','"Fast Cast"+4',}},
 		neck="Incanter's Torque",
-		waist="Obstin. Sash",
+		waist="Carrier's Sash",
 		left_ear="Regal Earring",
 		right_ear="Meili Earring",
-		left_ring="Ephedra Ring",
+		left_ring="Defending Ring",
 		right_ring="Sirona's Ring",
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+	}
+	
+	sets.Magic.Aquaveil = {
+		main ="Colada",
+		sub = "Ammurapi shield",
+		neck = "Duelist's torque +2",
+		left_ear="Mimir Earring",
+		right_ear = "Leth. Earring +1",
+		body = "Vitiation tabard +3",
+		hands = "Atrophy Gloves +3",
+		ring1 = "Stikini ring +1",
+		ring2 = "Sirona's Ring",
+		back = "Ghostfyre Cape",
+		legs = "Telchine Braconi",
+		feet = "Lethargy Houseaux +2",
+		ammo="Staunch Tathlum +1",
+		head="Chironic Hat",
+		waist="Emphatikos Rope",
 	}
 
 	sets.Magic.Regen = {
@@ -500,6 +517,23 @@ function get_sets()
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
 
+	sets.Magic.Cursna ={
+	    main="Gada",
+		sub="Ammurapi Shield",
+		ammo="Staunch Tathlum +1",
+		head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		body="Arbatel Gown +2",
+		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
+		legs="Acad. Pants +2",
+		feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		neck="Malison Medallion",
+		waist="Gishdubar Sash",
+		left_ear="Regal Earring",
+		right_ear="Meili Earring",
+		left_ring={name="Ephedra Ring",bag="wardrobe2"},
+		right_ring={name="Ephedra Ring",bag="wardrobe6"},
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+	}
 
 	sets.Magic.Refresh = {legs = "Lethargy Fuseau +2", waist = "Gishdubar Sash", body = "Atrophy Tabard +3"}
 	
@@ -509,7 +543,7 @@ function get_sets()
 		sub="Mephitis Grip",
 		ammo="Regal Gem",
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
-		body="Lethargy Sayon +2",
+		body="Lethargy Sayon +3",
 		hands="Lethargy Gantherots +2",
 		--legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
 		legs = "Lethargy Fuseau +2",
@@ -655,7 +689,7 @@ function get_sets()
 		left_ear="Mimir Earring",
 		right_ear = "Leth. Earring +1",
 		Feet = "Lethargy Houseaux +2",
-		body = "Lethargy Sayon +2",
+		body = "Lethargy Sayon +3",
 		legs = "Lethargy Fuseau +2",
 		head = "Lethargy Chappel +2",
 		hands = "Lethargy Gantherots +2"
@@ -666,7 +700,7 @@ function get_sets()
 	sets.WS = {}
 
 	sets.WS.CDC = {
-		ammo = "Yetshila",
+		ammo = "Yetshila +1",
 		head = "Blistering Sallet +1",
 		neck = "Fotia gorget",
 		right_ear = "Moonshade Earring",
@@ -691,7 +725,7 @@ function get_sets()
 		body="Nyame Mail",
 		hands = "Nyame Gauntlets",
 		ring1 ="Epaminondas's Ring",
-		ring2 = "Ilabrat Ring",
+		ring2 = "Sroda Ring",
 		back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 		waist = "Sailfi Belt +1",
 		legs="Nyame Flanchard",
@@ -828,17 +862,18 @@ end
 function midcast(spell, act)
 	if spell.skill == "Enhancing Magic"  then
 		equip(sets.Enhancing.Duration)
-		    if buffactive.composure and spell.target.type == 'PLAYER' then
-            		equip(set_combine(sets.Enhancing.Duration, sets.JA.Composure))
-					-- send_command("@input /echo Enhancing Duration + Composure Set")
-            end
+		if buffactive.composure and spell.target.type == 'PLAYER' then
+        	equip(set_combine(sets.Enhancing.Duration, sets.JA.Composure))
+			-- send_command("@input /echo Enhancing Duration + Composure Set")
+        end
+			
+		if spell.name == "Aquaveil" then
+			equip(sets.Magic.Aquaveil)
+		end
 	
-		if
-		spell.english == "Regen" or spell.english == "Regen II" or spell.english == "Regen III" or spell.english == "Regen IV" or
-			spell.english == "Regen V"
-		then
-		equip(sets.Magic.Regen)
-		-- send_command("@input /echo Enhancing Duration + Regen Set")
+		if spell.english == "Regen" or spell.english == "Regen II" or spell.english == "Regen III" or spell.english == "Regen IV" or spell.english == "Regen V" then
+			equip(sets.Magic.Regen)
+			-- send_command("@input /echo Enhancing Duration + Regen Set")
 		end
 		
 		if spell.english == "Refresh" or spell.english == "Refresh II" or spell.english == "Refresh III" then
@@ -859,6 +894,14 @@ function midcast(spell, act)
 	
 	if spell.skill == "Healing Magic" then
 		equip(sets.Magic.Healing)
+		
+		if spell_element == world.weather_element or spell_element == world.day_element then
+			equip(sets.Utility.Weather)
+		end
+		
+		if spell.english =="Cursna" then
+			equip(sets.Magic.Cursna)
+		end
 		-- send_command("@input /echo Healing Set")
 	end
 

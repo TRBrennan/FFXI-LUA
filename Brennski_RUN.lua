@@ -175,7 +175,7 @@ function get_sets()
 	}
 	-- sets.TP.HBP = {
 		-- ammo = "Staunch Tathlum +1",
-		-- head = "Erilaz Galea +2",
+		-- head = "Erilaz Galea +3",
 		-- body = "Ashera Harness",
 		-- hands = "Regal Gauntlets",
 		-- legs = "Nyame Flanchard",
@@ -351,7 +351,7 @@ function get_sets()
 
 	sets.Utility.SIRD = {
 		ammo="Staunch Tathlum +1",
-		head="Erilaz Galea +2",
+		head="Erilaz Galea +3",
 		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Rawhide Gloves", augments={'HP+50','Accuracy+15','Evasion+20',}},
 		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
@@ -383,7 +383,7 @@ function get_sets()
 
 	sets.Utility.Enhancing = {
 		ammo = "Staunch Tathlum +1",
-		head = "Erilaz Galea +2",
+		head = "Erilaz Galea +3",
 		neck = "Incanter's Torque",
 		right_ear = "Andoaa Earring",
 		right_ear = "Mimir Earring",
@@ -399,7 +399,7 @@ function get_sets()
 
 	sets.Utility.EnhancingSkill = {
 		ammo = "Staunch Tathlum +1",
-		head = "Erilaz Galea +2",
+		head = "Erilaz Galea +3",
 		body = "Emet Harness +1",
 		hands = "Runeist's Mitons +3",
 		legs = {name = "Carmine Cuisses +1", augments = {"Accuracy+20", "Attack+12", '"Dual Wield"+6'}},
@@ -415,7 +415,7 @@ function get_sets()
 
 	sets.Utility.Refresh = {
 		ammo = "Staunch Tathlum +1",
-		head = "Erilaz Galea +2",
+		head = "Erilaz Galea +3",
 		neck = "Incanter's Torque",
 		left_ear = "Andoaa Earring",
 		right_ear = "Mimir Earring",
@@ -449,7 +449,7 @@ function get_sets()
 
 	--Job Ability Sets--
 	sets.JA = {}
-	sets.JA.VP = {legs = "Rune. Trousers +3", left_ring= "Stikini ring +1", neck = "Incanter's Torque", head = "Erilaz Galea +2"}
+	sets.JA.VP = {legs = "Rune. Trousers +3", left_ring= "Stikini ring +1", neck = "Incanter's Torque", head = "Erilaz Galea +3"}
 
 	sets.JA.Liement = {body = {name = "Futhark Coat +1", augments = {'Enhances "Elemental Sforzo" effect'}}}
 
@@ -477,7 +477,7 @@ function get_sets()
 
 	sets.JA.Gambit = {hands = "Runeist's Mitons +3", waist = "Chaac Belt", Legs ="Volte Hose"}
 
-	sets.JA.Pflug = {feet = "Runeist's Boots +3"}
+	sets.JA.Pflug = {feet = "Runeist's Bottes +3"}
 
 	sets.JA.Rayke = {
 		feet = {name = "Futhark Boots", augments = {'Enhances "Rayke" effect'}},

@@ -221,7 +221,7 @@ function get_sets()
         sets.WS = {}
 
         sets.Rudras = {
-                ammo = "Yetshila",
+                ammo = "Yetshila +1",
                 head = "Nyame Helm",
                 neck = "Rep. Plat. Medal",
                 ear1 = "Ishvara Earring",
@@ -253,7 +253,7 @@ function get_sets()
         }
 
         sets.Evisceration = {
-			ammo="Yetshila",
+			ammo="Yetshila +1",
 			head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
 			body="Meg. Cuirie +2",
 			hands={ name="Adhemar Wristbands +1", augments={'STR+12','DEX+12','Attack+20',}},

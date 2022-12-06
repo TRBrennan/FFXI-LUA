@@ -201,7 +201,7 @@ function get_sets()
 			 	body=WSD_Body,hands=WSD_Hands,ring1="Flamma ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Sailfi Belt +1",legs=WSD_Legs,feet={ name="Nyame Sollerets", augments={'Path: B',}},}
 				
-	sets.Vorpal = {ammo="Yetshila",
+	sets.Vorpal = {ammo="Yetshila +1",
 			    head=Acc_Head,neck="Fotia Gorget",ear1="Cessance earring",ear2="Moonshade earring",
 			 	body="Argosy Hauberk +1",hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Begrudging ring",
 			   	back=DA_Back,waist="Fotia belt",legs="Ignominy Flanchard +3",feet="Valorous greaves"}
