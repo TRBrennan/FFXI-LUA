@@ -377,13 +377,15 @@ function get_sets()
 	sets.TP.UkonAm ={
 	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head={ name="Sakpata's Helm", augments={'Path: A',}},
-		body={ name="Sakpata's Plate", augments={'Path: A',}},
+		--body={ name="Sakpata's Plate", augments={'Path: A',}},
+		body="Hjarrandi Breast.",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
 		feet={ name="Sakpata's Leggings", augments={'Path: A',}},
 		neck={ name="War. Beads +2", augments={'Path: A',}},
 		waist="Ioskeha Belt +1",
-		left_ear="Cessance Earring",
+		--left_ear="Cessance Earring",
+		left_ear="Brutal Earring",
 		right_ear={ name="Schere Earring", augments={'Path: A',}},
 		left_ring="Niqmaddu Ring",
 		right_ring="Moonlight Ring",
@@ -424,7 +426,8 @@ function get_sets()
 		back = WSD_Back,
 		--waist = "Ioskeha Belt +1",
 		waist = "Sailfi Belt +1",
-		legs = WSD_Legs,
+		--legs = WSD_Legs,
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		--feet="Sakpata's Leggings",
 	}
@@ -437,30 +440,31 @@ function get_sets()
 		ear1 = "Moonshade earring",
 		body = WSD_Body,
 		hands = "Sakpata's Gauntlets",
-		ring1 = "Niqmaddu ring",
+		ring1 = "Epaminondas's Ring",
 		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		ring2 = "Beithir ring",
 		back = WSD_Back,
 		waist = "Fotia belt",
-		legs = WSD_Legs,
+		--legs = WSD_Legs,
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet = "Pummeler's calligae +3"
 	}
 
 	sets.UF = {
 		ammo = "Yetshila +1",
-		head = "Flam. Zucchetto +2",
+		head = "Blistering Sallet +1",
 		neck = "Warrior's bead necklace +2",
 		ear2 = "Schere Earring",
 		ear1 = "Boii Earring +1",
 		body = "Hjarrandi Breast.",
-		hands = "Flamma Manopolas +2",
+		hands = "Nyame Gauntlets",
+		--hands = "Flamma Manopolas +2",
 		ring1 = "Niqmaddu ring",
 		ring2 = "Hetairoi ring",
 		back = Crit_Back,
 		waist = "Sailfi Belt +1",
 		legs = "Boii Cuisses +3",
-		feet = "Boii Calligae +2"
-	}
+		feet = "Boii Calligae +3"	}
 
 	sets.RR = {
 		ammo = "Yetshila +1",
@@ -476,8 +480,7 @@ function get_sets()
 		waist = "Sailfi Belt +1",
 		--legs = "Sakpata's Cuisses",
 		legs = "Boii Cuisses +3",
-		feet = "Boii Calligae +2"
-	}
+		feet = "Boii Calligae +3"	}
 
 	sets.Steelcyclone = {
 		ammo = "Knobkierrie",
@@ -560,7 +563,6 @@ function get_sets()
 		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Fotia belt",
-		legs = "Sakpata's Cuisses",
 		legs = WSD_Legs,
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		--feet="Sakpata's Leggings",
@@ -616,8 +618,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Boii Calligae +2"
-	}
+		feet = "Boii Calligae +3"	}
 
 	sets.Sanguine = {
 		ammo = "Knobkierrie",
@@ -664,8 +665,7 @@ function get_sets()
 		back = Crit_Back,
 		waist = "Fotia belt",
 		Legs = "Boii Cuisses +3",
-		feet = "Boii Calligae +2"
-	}
+		feet = "Boii Calligae +3"	}
 
 	sets.Rampage = {
 		ammo = "Yetshila +1",
@@ -680,8 +680,7 @@ function get_sets()
 		back = Crit_Back,
 		waist = "Fotia belt",
 		Legs = "Boii Cuisses +3",
-		feet = "Boii Calligae +2"
-	}
+		feet = "Boii Calligae +3"	}
 
 	sets.Ruinator = {
 		ammo = "Coiste Bodhar",
@@ -731,8 +730,8 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		feet="Sakpata's Leggings",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		
 	}
 
 	sets.MistralCrit = {
@@ -748,7 +747,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
-		feet = "Boii Calligae +2"
+		feet = "Boii Calligae +3"
 	}
 
 	sets.Decimation = {
@@ -763,9 +762,8 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = DA_Back,
 		waist = "Fotia belt",
-		--legs = "Sakpata's Cuisses",
 		Legs = "Boii Cuisses +3",
-		feet = "Flam. Gambieras +2"
+		feet = "Boii Calligae +3"
 	}
 
 	sets.Resolution = {
@@ -798,8 +796,8 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
-		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		feet="Sakpata's Leggings",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		
 	}
 
 	sets.Shockwave = {
@@ -896,8 +894,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		feet = "Boii Calligae +2"
-	}
+		feet = "Boii Calligae +3"	}
 
 	sets.Judgment = {
 		ammo = "Knobkierrie",
@@ -1120,15 +1117,15 @@ function get_sets()
 		head = {name = "Agoge Mask +3", augments = {'Enhances "Savagery" effect'}},
 		body= "Hjarrandi Breast.",
 		hands = "Flam. Manopolas +2",
-		legs = WSD_Legs,
-		--feet = "Boii Calligae +2",
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		--legs = WSD_Legs,
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet="Boii Calligae +3",
 		neck = "War. Beads +2",
 		waist = "Sailfi Belt +1",
 		ear2= "Schere Earring",
 		ear1 = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
 		left_ring = "Niqmaddu Ring",
-		right_ring = "Beithir ring",
+		right_ring="Epaminondas's Ring",
 		back = {name = "Cichol's Mantle",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}}
 	}
 
@@ -1199,7 +1196,7 @@ function get_sets()
 
 	sets.JA.Tomahawk = {
 		ammo = "Throwing Tomahawk",
-		feet = "Agoge Calligae +2",
+		feet = "Agoge Calligae +3",
 		Hands = "Volte Bracers",
 		waist = "Chaac Belt",
 		Legs ="Volte Hose",
@@ -1226,6 +1223,20 @@ function get_sets()
 	sets.Utility.Sleeping = {neck = "Opo-Opo Necklace"}
 
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
+	
+	sets.Utility.Phalanx ={
+	    ammo="Staunch Tathlum +1",
+		head={ name="Valorous Mask", augments={'"Dbl.Atk."+2','"Snapshot"+1','Phalanx +2','Accuracy+13 Attack+13','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
+		body={ name="Odyss. Chestplate", augments={'STR+8','Pet: "Mag.Atk.Bns."+2','Phalanx +5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},
+		hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+		feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+		neck="Incanter's Torque",
+		waist="Olympus Sash",
+		left_ear="Mimir Earring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
+		}
 
 	sets.enmity = {
 		ammo = "Sapience Orb",

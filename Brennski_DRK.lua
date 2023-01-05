@@ -46,7 +46,7 @@ function get_sets()
 	WS_Head = {name="Valorous Mask", augments={'Accuracy+25 Attack+25','Enmity+2','STR+12','Accuracy+6',}}	
 	--TP_Legs = "Sakpata's Cuisses"
 	TP_Legs = "Ignominy Flanchard +3"
-	TP_Body = { name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
+	TP_Body = "Sakpata's Plate"
 	WSD_Legs = "Nyame Flanchard"
 	WSD_Hands = "Sakpata's Gauntlets"
 	WSD_Body = "Nyame Mail"
@@ -129,11 +129,12 @@ function get_sets()
 		head={ name="Sakpata's Helm", augments={'Path: A',}},
 		body={ name="Sakpata's Plate", augments={'Path: A',}},
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
-		legs="Ig. Flanchard +3",
+		--legs="Ig. Flanchard +3",
+		legs="Sakpata's Cuisses",
 		feet={ name="Sakpata's Leggings", augments={'Path: A',}},
 		neck={ name="Abyssal Beads +2", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ear="Telos Earring",
+		left_ear="Schere Earring",
 		right_ear="Cessance Earring",
 		left_ring="Niqmaddu Ring",
 		right_ring="Moonlight Ring",
@@ -161,10 +162,21 @@ function get_sets()
 			 	body="Argosy Hauberk +1",hands="Sakpata's Gauntlets",ring1="Niqmaddu ring",ring2="Regal ring",
 				back=STR_Back,waist="Fotia belt",legs=WSD_Legs,feet="Flam. Gambieras +2"}
 	
-	sets.Torcleaver = {ammo="Knobkierrie",	
-			    head=WSD_Head,neck="Abyssal Bead Necklace +2",ear1="Thrud Earring", ear2="Moonshade earring",
-			 	body=WSD_Body,hands=WSD_Hands,ring1="Niqmaddu ring",ring2="Regal ring",
-			   	back=STR_Back,waist="Sailfi Belt +1",legs=WSD_Legs,feet={ name="Nyame Sollerets", augments={'Path: B',}},}
+	sets.Torcleaver = {    
+			ammo="Knobkierrie",
+			head={ name="Nyame Helm", augments={'Path: B',}},
+			body={ name="Nyame Mail", augments={'Path: B',}},
+			hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+			legs={ name="Nyame Flanchard", augments={'Path: B',}},
+			feet={ name="Nyame Sollerets", augments={'Path: B',}},
+			neck={ name="Abyssal Beads +2", augments={'Path: A',}},
+			--waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+			waist = "Fotia belt",
+			right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Weapon skill damage +2%',}},
+			left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			left_ring="Epaminondas's Ring",
+			right_ring="Sroda Ring",
+			back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},}
 				 
 	sets.Quietus = {ammo="Knobkierrie",	
 			    head=WSD_Head,neck="Fotia Gorget",ear1="Thrud Earring", ear2="Moonshade earring",
@@ -192,12 +204,13 @@ function get_sets()
 			   	back=WSD_Back,waist="Eschan stone",legs="Heathen's flanchard +1",feet="Nyame Sollerets"}
 	
 	sets.Herculean = {ammo="Knobkierrie",
-			    head="Jumalik helm",neck="Abyssal Bead Necklace +2",ear1="Friomisi earring",ear2="Crematio earring",
+			    head=WSD_Head,neck="Abyssal Bead Necklace +2",ear1="Friomisi earring",ear2="Crematio earring",
 			 	body=WSD_Body,hands="Nyame Gauntlets",ring1="Shiva ring +1",ring2="Acumen ring",
-			   	back=WSD_Back,waist="Eschan stone",legs="Heathen's flanchard +1",feet="Nyame Sollerets"}
+			   	back=WSD_Back,waist="Eschan stone",legs=WSD_Legs,feet="Nyame Sollerets"}
 				
 	sets.Savage = {ammo="Knobkierrie",	
-			    head=WSD_Head,neck="Abyssal Bead Necklace +2",ear1="Thrud Earring", ear2="Moonshade earring",
+			    head=WSD_Head,neck="Abyssal Bead Necklace +2",right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Weapon skill damage +2%',}},
+			left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 			 	body=WSD_Body,hands=WSD_Hands,ring1="Flamma ring",ring2="Regal ring",
 			   	back=STR_Back,waist="Sailfi Belt +1",legs=WSD_Legs,feet={ name="Nyame Sollerets", augments={'Path: B',}},}
 				
@@ -207,7 +220,8 @@ function get_sets()
 			   	back=DA_Back,waist="Fotia belt",legs="Ignominy Flanchard +3",feet="Valorous greaves"}
 	
 	sets.Upheaval = {ammo="Knobkierrie",
-			     head=WSD_Head,neck="Fotia gorget",ear1="Moonshade earring",ear2="Cessance earring",
+			     head=WSD_Head,neck="Fotia gorget",right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Weapon skill damage +2%',}},
+			left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 			 	 body=WSD_Body,hands="Sulevia's gauntlets +2",ring1="Niqmaddu ring",ring2="Regal ring",
 			   	 back=WSD_Back,waist="Ioskeha belt +1",legs="Ignominy Flanchard +3",feet={ name="Nyame Sollerets", augments={'Path: B',}},}
 				 
@@ -297,10 +311,22 @@ function get_sets()
 	
 	sets.CaladAM ={ 
 		body="Hjarrandi Breast.",
-        --hands="Flam. Manopolas +2",
 		ring2="Hetairoi Ring",
 		head="Sakpata's Helm",
-		}
+		-- ammo="Aurgelmir Orb +1",
+		-- head={ name="Sakpata's Helm", augments={'Path: A',}},
+		-- body={ name="Sakpata's Plate", augments={'Path: A',}},
+		-- hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		-- legs="Sakpata's Cuisses",
+		-- feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+		-- neck={ name="Abyssal Beads +2", augments={'Path: A',}},
+		-- waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		-- left_ear="Schere Earring",
+		-- right_ear="Cessance Earring",
+		-- left_ring="Niqmaddu Ring",
+		-- right_ring="Moonlight Ring",
+		-- back= DA_Back
+	}
 	
 end
 
@@ -498,7 +524,7 @@ function aftercast(spell)
 		--if player.equipment.main == "Caladbolg" and buffactive["Aftermath"] then
 		if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Caladbolg" then
 			equip(set_combine(sets.TP[sets.TP.index[TP_ind]], sets.CaladAM))
-			send_command('@input /echo Caladbolg AM set')
+			--send_command('@input /echo Caladbolg AM set')
 				if buff == "doom" or buff == "curse" then
 					equip(sets.Utility.Doomed)
 				end
@@ -510,7 +536,7 @@ function aftercast(spell)
 			end
 		else
 			equip(sets.TP[sets.TP.index[TP_ind]])
-			send_command('@input /echo TP Set')
+			--send_command('@input /echo TP Set')
 			if buff == "doom" or buff == "curse" then
 				equip(sets.Utility.Doomed)
 			end
@@ -528,7 +554,7 @@ function status_change(new,old)
 		end
 		if buffactive['Aftermath: Lv.3'] and player.equipment.main == "Caladbolg" then
 			equip(set_combine(sets.TP[sets.TP.index[TP_ind]], sets.CaladAM))
-			send_command('@input /echo Caladbolg AM set')
+			--send_command('@input /echo Caladbolg AM set')
 		end
 	else
 		equip(sets.Idle.Standard)

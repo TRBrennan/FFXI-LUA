@@ -17,12 +17,14 @@ function get_sets()
 		--Weapon Sets--
 	
 	sets.Weapons = {}
-	sets.Weapons.index = {'Aegis', 'Srivatsa'}
+	sets.Weapons.index = {'Aegis', 'Srivatsa', 'Duban'}
 	Weapons_ind = 1
 	
 	sets.Weapons.Aegis = {sub="Aegis"}
 
 	sets.Weapons.Srivatsa = {sub ="Srivatsa"}
+	
+	sets.Weapons.Duban = {sub="Duban"}
 
 	--Idle Sets--
 	sets.Idle = {}
@@ -274,9 +276,9 @@ function get_sets()
 	sets.Magic.SIRD ={
 		ammo="Staunch Tathlum +1",
 		head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-		body="Souveran Cuirass +1",
-		hands = "Souveran Handschuhs +1",
-		legs={ name="Founder's Hose", augments={'MND+10','Mag. Acc.+15','Attack+15','Breath dmg. taken -5%',}},
+		body="Chev. Cuirass +3",
+		hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+		legs={ name="Cab. Breeches +3", augments={'Enhances "Invincible" effect',}},
 		feet={ name="Odyssean Greaves", augments={'Enmity+7','VIT+9','Accuracy+14','Attack+12',}},
 		neck="Moonlight Necklace",
 		waist="Audumbla Sash",
@@ -290,9 +292,11 @@ function get_sets()
 	sets.Magic.SIRDCure ={
 		ammo="Staunch Tathlum +1",
 		head={ name="Souv. Schaller +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-		body="Souveran Cuirass +1",
+		--body="Souveran Cuirass +1",
+		body="Chev. Cuirass +3",
 		hands = "Macabre Gauntlets +1",
-		legs={ name="Founder's Hose", augments={'MND+10','Mag. Acc.+15','Attack+15','Breath dmg. taken -5%',}},
+		--legs={ name="Founder's Hose", augments={'MND+10','Mag. Acc.+15','Attack+15','Breath dmg. taken -5%',}},
+		legs={ name="Cab. Breeches +3", augments={'Enhances "Invincible" effect',}},
 		feet={ name="Odyssean Greaves", augments={'Enmity+7','VIT+9','Accuracy+14','Attack+12',}},
 		neck="Sacro Gorget",
 		waist="Audumbla Sash",
@@ -340,7 +344,7 @@ function get_sets()
 		ring2 = "Supershear Ring",
 		neck = "Unmoving Collar +1",
 		hands = "Souveran Handschuhs +1",
-		feet = "Souveran Schuhs +1",
+		feet = "Chevalier's sabatons +3",
 		body = "Souveran Cuirass +1",
 		ring1 = "Petrov Ring",
 		legs = "Souveran Diechlings +1",
@@ -355,7 +359,7 @@ function get_sets()
 		body={ name="Sakpata's Plate", augments={'Path: A',}},
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		feet="Chevalier's sabatons +2",
+		feet="Chevalier's sabatons +3",
 		neck="Sanctity Necklace",
 		waist="Eschan Stone",
 		left_ear="Crep. Earring",
@@ -385,7 +389,9 @@ function get_sets()
 	
 	sets.JA.Chivalry ={hands = "Caballarius Gauntlets +2"}
 	
-	sets.JA.DE = {feet="Chevalier's sabatons +2"}
+	sets.JA.DE = {feet="Chevalier's sabatons +3"}
+	
+	sets.JA.Invc = {legs={ name="Cab. Breeches +3", augments={'Enhances "Invincible" effect',}},}
 
 	--Precast Sets--
 	sets.precast = {}
@@ -398,7 +404,7 @@ function get_sets()
 		body="Rev. Surcoat +3",
 		hands={ name="Leyline Gloves", augments={'Accuracy+12','Mag. Acc.+14','"Mag.Atk.Bns."+15','"Fast Cast"+2',}},
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		feet="Chevalier's sabatons +2",
+		feet="Chevalier's sabatons +3",
 		neck="Voltsurge Torque",
 		waist="Carrier's Sash",
 		left_ear="Etiolation Earring",
@@ -477,6 +483,10 @@ function precast(spell)
 
 	if spell.english == "Cover" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Cover))
+	end
+	
+	if spell.english == "Invincible" then
+		equip(sets.JA.Invc)
 	end
 end
 

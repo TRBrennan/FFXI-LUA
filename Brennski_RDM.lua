@@ -34,7 +34,7 @@ function get_sets()
 	--Weapon Sets--
 	sets.Weapons = {}
 	
-	sets.Weapons.index = {"CroceaDaybreak", "NeaglingTPBonus", "MaxTPBonus", "TauretGleti", "OneDamage"}
+	sets.Weapons.index = {"CroceaDaybreak", "NeaglingTPBonus", "MaxTPBonus", "TauretGleti", "OneDamage", "ClubShield", "SwordShield"}
 	--1=CroceaDaybreak, 2=NeaglingTPBonus, 3=MaxTPBonus, 4=TauretGleti, 5=OneDamage --
 	Weapons_Ind = 1
 	
@@ -47,6 +47,10 @@ function get_sets()
 	sets.Weapons.TauretGleti = {main = "Tauret", sub ="Gleti's Knife"}
 	
 	sets.Weapons.OneDamage = {	main ="Wind Knife", sub="Qutrub Knife"}
+	
+	sets.Weapons.ClubShield = {main="Maxentius", sub="Ammurapi Shield"}
+	
+	sets.Weapons.SwordShield = {main="Naegling", sub="Ammurapi Shield"}
 
 
 	--Idle Sets--
@@ -204,7 +208,7 @@ function get_sets()
 		ring1 = "Freke Ring",
 		--ring2 = "Acumen Ring",
 		ring2 = "Metamor. Ring +1",
-		waist = "Sacro Cord",
+		waist = "Acuity Belt +1",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 		--legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','INT+10','"Mag.Atk.Bns."+2',}},
 		legs = "Lethargy Fuseau +2",
@@ -222,7 +226,7 @@ function get_sets()
 		--ring1 = "Locus Ring",
 		ring1 = "Freke Ring",
 		ring2 = "Mujin Band",
-		waist = "Sacro Cord",
+		waist = "Acuity Belt +1",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 		--head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
 		head = "Lethargy Chappel +2",
@@ -251,7 +255,7 @@ function get_sets()
 		waist = "Embla Sash",
 		back = "Ghostfyre Cape",
 		legs = "Telchine Braconi",
-		feet = "Lethargy Houseaux +2"
+		feet = "Lethargy Houseaux +3"
 	}
 			
 	sets.Enhancing.Gain = {
@@ -269,7 +273,7 @@ function get_sets()
 		waist = "Embla Sash",
 		back = "Ghostfyre Cape",
 		legs = "Telchine Braconi",
-		feet = "Lethargy Houseaux +2"
+		feet = "Lethargy Houseaux +3"
 	}
 	
 	sets.Enhancing.SkillUnCapped={	
@@ -307,7 +311,7 @@ function get_sets()
 		ear1 = "Regal Earring",
 		--body = "Atrophy Tabard +3",
 		body ="Lethargy Sayon +3",
-		hands = "Kaykaus Cuffs +1",
+		hands = "Lethargy Gantherots +3",
 		ring1 = "Stikini ring +1",
 		ring2 = "Metamor. Ring +1",
 		waist = "Obstin. Sash",
@@ -344,7 +348,7 @@ function get_sets()
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
 		--body="Atrophy Tabard +3",
 		body ="Lethargy Sayon +3",
-		hands="Lethargy Gantherots +2",
+		hands="Lethargy Gantherots +3",
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
 		neck={ name="Dls. Torque +2", augments={'Path: A',}},
@@ -359,13 +363,12 @@ function get_sets()
 	sets.Magic.INTEnfeebleAcc ={
 		ammo="Regal Gem",
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
-		--body="Atrophy Tabard +3",
 		body ="Lethargy Sayon +3",
-		hands="Lethargy Gantherots +2",
+		hands="Lethargy Gantherots +3",
 	    legs={ name="Chironic Hose", augments={'Mag. Acc.+30','"Cure" spellcasting time -10%','INT+14','"Mag.Atk.Bns."+11',}},
-		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
+		feet = "Lethargy Houseaux +3",
 		neck={ name="Dls. Torque +2", augments={'Path: A',}},
-		waist="Obstin. Sash",
+		waist="Acuity Belt +1",
 		left_ear="Regal Earring",
 		right_ear="Snotra Earring",
 		left_ring="Stikini ring +1",
@@ -380,9 +383,9 @@ function get_sets()
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
 		--body="Atrophy Tabard +3",
 		body ="Lethargy Sayon +3",
-		hands="Lethargy Gantherots +2",
+		hands="Lethargy Gantherots +3",
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
-		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
+		feet = "Lethargy Houseaux +3",
 		neck={ name="Dls. Torque +2", augments={'Path: A',}},
 		waist="Obstin. Sash",
 		left_ear="Regal Earring",
@@ -422,7 +425,7 @@ function get_sets()
 		ring2 = "Sirona's Ring",
 		back = "Ghostfyre Cape",
 		legs = "Telchine Braconi",
-		feet = "Lethargy Houseaux +2",
+		feet = "Lethargy Houseaux +3",
 		ammo="Staunch Tathlum +1",
 		head="Chironic Hat",
 		waist="Emphatikos Rope",
@@ -455,10 +458,10 @@ function get_sets()
 		ear2 = "Malignance Earring",
 		ear1 = "Regal Earring",
 		body = { name = "Merlinic Jubbah", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
-		hands="Lethargy Gantherots +2",
+		hands="Lethargy Gantherots +3",
 		ring1 = "Evanescence Ring",
 		ring2 = "Freke Ring",
-		waist = "Sacro Cord",
+		waist = "Acuity Belt +1",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 		legs = "Lethargy Fuseau +2",
 		feet = {name = "Merlinic Crackows",	augments = {'Mag. Acc.+19 "Mag.Atk.Bns."+19', "Magic burst dmg.+9%", "MND+9", "Mag. Acc.+15"}}
@@ -469,7 +472,7 @@ function get_sets()
 		sub="Ammurapi Shield",
 		ammo="Regal Gem",
 		body="Twilight Cloak",
-		hands="Lethargy Gantherots +2",
+		hands="Lethargy Gantherots +3",
 		--legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
 		legs = "Lethargy Fuseau +2",
 		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
@@ -544,7 +547,7 @@ function get_sets()
 		ammo="Regal Gem",
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
 		body="Lethargy Sayon +3",
-		hands="Lethargy Gantherots +2",
+		hands="Lethargy Gantherots +3",
 		--legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
 		legs = "Lethargy Fuseau +2",
 		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
@@ -683,16 +686,16 @@ function get_sets()
 
 	sets.JA.CS = {body = "Vitiation Tabard +3"}
 
-	sets.JA.Sab = {hands = "Lethargy Gantherots +2"}
+	sets.JA.Sab = {hands = "Lethargy Gantherots +3"}
 
 	sets.JA.Composure = { 
 		left_ear="Mimir Earring",
 		right_ear = "Leth. Earring +1",
-		Feet = "Lethargy Houseaux +2",
+		Feet = "Lethargy Houseaux +3",
 		body = "Lethargy Sayon +3",
 		legs = "Lethargy Fuseau +2",
 		head = "Lethargy Chappel +2",
-		hands = "Lethargy Gantherots +2"
+		hands = "Lethargy Gantherots +3"
 	}
 
 	--WS Sets--
@@ -746,7 +749,7 @@ function get_sets()
 		waist = "Orpheus's Sash",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 		legs="Nyame Flanchard",
-		feet="Lethargy Houseaux +2",
+		feet="Lethargy Houseaux +3",
 		--feet={ name="Chironic Slippers", augments={'Attack+13','"Mag.Atk.Bns."+5','Weapon skill damage +7%','Accuracy+18 Attack+18','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
 	}
 
@@ -764,7 +767,7 @@ function get_sets()
 		waist = "Orpheus's Sash",
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 		legs="Nyame Flanchard",
-		feet="Lethargy Houseaux +2",
+		feet="Lethargy Houseaux +3",
 		--feet={ name="Chironic Slippers", augments={'Attack+13','"Mag.Atk.Bns."+5','Weapon skill damage +7%','Accuracy+18 Attack+18','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
 	}
 	
@@ -773,7 +776,7 @@ function get_sets()
 		body="Nyame Mail",
 		hands="Nyame Gauntlets",
 		legs="Nyame Flanchard",
-		feet="Lethargy Houseaux +2",
+		feet="Lethargy Houseaux +3",
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear="Friomisi Earring",

@@ -39,13 +39,13 @@ function get_sets()
 		neck = "Bathy Choker +1",
 		right_ear = "Erilaz Earring +1",
 		left_ear = "Infused Earring",
-		body = "Runeist's Coat +3",
+		body = "Runeist Coat +3",
 		hands = "Regal Gauntlets",
 		left_ring = "Shneddick Ring",
 		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Fucho-no-obi",
-		legs = "Nyame Flanchard",
+		legs = "Erilaz Leg Guards +3",
 		feet = {name = "Herculean Boots", augments = {"CHR+6", "STR+14", '"Refresh"+1', 'Mag. Acc.+14 "Mag.Atk.Bns."+14'}}
 	}
 
@@ -61,7 +61,7 @@ function get_sets()
 		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Carrier's Sash",
-		legs="Nyame Flanchard",
+		legs = "Erilaz Leg Guards +3",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
@@ -77,7 +77,7 @@ function get_sets()
 		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Carrier's Sash",
-		legs = "Nyame Flanchard",
+		legs = "Erilaz Leg Guards +3",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
@@ -141,12 +141,9 @@ function get_sets()
 	sets.TP.MDTank = {
 		ammo = "Staunch Tathlum +1",
 		head="Nyame Helm",
-		body = "Runeist's Coat +3",
-		--hands="Regal Gauntlets",
+		body = "Runeist Coat +3",
 		hands = "Nyame Gauntlets",
-		--legs = "Eri. Leg Guards +1",
-		--legs = "Nyame Flanchard",
-		legs = "Erilaz Leg Guards +2",
+		legs = "Erilaz Leg Guards +3",
 		feet = "Turms Leggings +1",
 		neck = "Futhark Torque +2",
 		waist = "Carrier's Sash",
@@ -163,7 +160,7 @@ function get_sets()
 		body="Ashera Harness",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		--legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		legs = "Erilaz Leg Guards +2",
+		legs = "Erilaz Leg Guards +3",
 		feet="Turms Leggings +1",
 		neck={ name="Futhark Torque +2", augments={'Path: A',}},
 		waist="Carrier's Sash",
@@ -340,7 +337,7 @@ function get_sets()
 		right_ear = "Eabani earring",
 		left_ear = "Augment. earring",
 		body = {name = "Futhark Coat +1", augments = {'Enhances "Elemental Sforzo" effect'}},
-		hands = "Runeist's Mitons +3",
+		hands = "Runeist Mitons +3",
 		left_ring= "Rahab ring",
 		right_ring = "Defending Ring",
 		back = "Moonbeam Cape",
@@ -376,7 +373,7 @@ function get_sets()
 		waist = "Trance belt",
 		right_ring = "Defending Ring",
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
-		legs = "Erilaz Leg Guards +2",
+		legs = "Erilaz Leg Guards +3",
 		feet = "Erilaz Greaves +2",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
@@ -401,7 +398,7 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head = "Erilaz Galea +3",
 		body = "Emet Harness +1",
-		hands = "Runeist's Mitons +3",
+		hands = "Runeist Mitons +3",
 		legs = {name = "Carmine Cuisses +1", augments = {"Accuracy+20", "Attack+12", '"Dual Wield"+6'}},
 		feet = "Erilaz Greaves +2",
 		neck = "Incanter's Torque",
@@ -433,7 +430,7 @@ function get_sets()
 	    ammo="Pemphredo Tathlum",
 		body={ name="Cohort Cloak +1", augments={'Path: A',}},
 		hands="Aya. Manopolas +2",
-		legs="Erilaz Leg Guards +2",
+		legs="Erilaz Leg Guards +3",
 		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		feet ="Erilaz Greaves +2",
 		neck="Sanctity Necklace",
@@ -456,28 +453,28 @@ function get_sets()
 	sets.JA.Embolen = {back = "Evasionist's cape"}
 
 	sets.JA.Lunge = {
-		    ammo="Pemphredo Tathlum",
-			head="Nyame Helm",
-			body="Nyame Mail",
-			hands="Nyame Gauntlets",
-			legs="Nyame Flanchard",
-			feet="Nyame Sollerets",
-			neck="Sanctity Necklace",
-			waist="Orpheus's Sash",
-			left_ear="Friomisi Earring",
-			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-			left_ring="Acumen Ring",
-			right_ring="Dingir Ring",
-			back="Izdubar Mantle",
-		}
+	    ammo="Pemphredo Tathlum",
+		head={ name="Agwu's Cap", augments={'Path: A',}},
+		body={ name="Agwu's Robe", augments={'Path: A',}},
+		hands={ name="Agwu's Gages", augments={'Path: A',}},
+		legs={ name="Agwu's Slops", augments={'Path: A',}},
+		feet="Agwu's Pigaches",
+		neck="Sanctity Necklace",
+		waist="Orpheus's Sash",
+		left_ear="Friomisi Earring",
+		right_ear="Erilaz Earring +1",
+		left_ring="Moonlight Ring",
+		right_ring="Defending Ring",
+		back="Izdubar Mantle",
+	}
 
 	sets.JA.Battuta = {Head ="Fu. Bandeau +3", hands = "Turms Mittens"}
 
 	sets.JA.BattutaActive = {hands = "Turms Mittens"}
 
-	sets.JA.Gambit = {hands = "Runeist's Mitons +3", waist = "Chaac Belt", Legs ="Volte Hose"}
+	sets.JA.Gambit = {hands = "Runeist Mitons +3", waist = "Chaac Belt", Legs ="Volte Hose"}
 
-	sets.JA.Pflug = {feet = "Runeist's Bottes +3"}
+	sets.JA.Pflug = {feet = "Runeist Bottes +3"}
 
 	sets.JA.Rayke = {
 		feet = {name = "Futhark Boots", augments = {'Enhances "Rayke" effect'}},
@@ -490,7 +487,7 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
 		body = "Ashera Harness",
-		hands = "Runeist's Mitons +3",
+		hands = "Runeist Mitons +3",
 		legs = "Rune. Trousers +3",
 		feet = "Ahosi Leggings",
 		neck = "Futhark Torque +2",
