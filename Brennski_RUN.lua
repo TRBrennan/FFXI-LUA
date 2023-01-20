@@ -134,7 +134,8 @@ function get_sets()
 		back = { name = "Ogma's cape",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}	},
 		waist = "Ioskeha belt +1",
 		--legs = "Samnuha Tights",
-		legs = "Meghanada Chausses +2",
+		--legs = "Meghanada Chausses +2",
+		legs = "Erilaz Leg Guards +3",
 		feet = "Turms Leggings +1"
 	}
 
@@ -159,7 +160,6 @@ function get_sets()
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Ashera Harness",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-		--legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		legs = "Erilaz Leg Guards +3",
 		feet="Turms Leggings +1",
 		neck={ name="Futhark Torque +2", augments={'Path: A',}},
@@ -594,7 +594,7 @@ function precast(spell)
 	elseif spell.english == "Rayke" then
 		send_command('timers delete "Rayke"')
 		send_command(
-			'timers create "Rayke" 34 down;wait 19;input /party Rayke [WEARING OFF IN 15 SEC.];wait 15;input /party Rayke [OFF];timers delete "Rayke"'
+			'timers create "Rayke" 49 down;wait 34;input /party Rayke [WEARING OFF IN 15 SEC.];wait 15;input /party Rayke [OFF];timers delete "Rayke"'
 		)
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Rayke))
 	elseif spell.english == "Resolution" or spell.english == "Shockwave" then

@@ -383,8 +383,6 @@ function get_sets()
 
     sets.BlueMagic.BlueMagic = {
         ammo = "Pemphredo Tathlum",
-        -- head = "Jhakri Coronal +2",
-        -- body = {name = "Amalric Doublet",augments = {'MP+60', 'Mag. Acc.+15', '"Mag.Atk.Bns."+15',}},
 		body={ name="Cohort Cloak +1", augments={'Path: A',}},
         hands = "Hashishin bazubands +2",
         legs="Luhlaza Shalwar +3",
@@ -414,14 +412,15 @@ function get_sets()
 
     sets.BlueMagic.Debuff = {
 	    ammo="Pemphredo Tathlum",
-		--head="Malignance Chapeau",
 		head="Assim. Keffiyeh +3",
 		body="Hashishin Mintan +2",
 		hands="Hashishin bazubands +2",
-		legs="Assim. Shalwar +3",
-		feet="Hashishin Basmak +2",
+		--legs="Assim. Shalwar +3",
+		legs = "Hashishin tayt +2",
+		--feet="Hashishin Basmak +2",
+		feet = "Malignance Boots",
 		neck={ name="Mirage Stole +2", augments={'Path: A',}},
-		waist="Sacro Cord",
+		waist="Acuity Belt +1",
 		left_ear="Crep. Earring",
 		right_ear="Regal Earring",
 		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},

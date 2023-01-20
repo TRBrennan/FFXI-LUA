@@ -25,7 +25,7 @@ function get_sets()
 	--Weapon Sets--
 	
 	sets.Weapons = {}
-	sets.Weapons.index = {'Chango','NaeglingShield', 'LoxoticShield', 'ShiningOne','Ukon', 'Farsha', 'Staff', 'FarshaDWTP', 'SwordDWTP'}
+	sets.Weapons.index = {'Chango','NaeglingShield', 'LoxoticShield', 'ShiningOne','Ukon', 'Farsha', 'IkengaAxe', 'FarshaDWTP', 'SwordDWTP'}
 	Weapons_ind = 1
 	
 	sets.Weapons.Chango = {main ="Chango",sub="Utu Grip"}
@@ -40,7 +40,9 @@ function get_sets()
 	
 	sets.Weapons.Farsha ={ main ="Farsha", sub = "Blurred Shield +1"}
 	
-	sets.Weapons.Staff = {main ="Blurred Staff", sub="Utu Grip"}
+	sets.Weapons.IkengaAxe ={ main ="Ikenga's Axe", sub = "Blurred Shield +1"}
+	
+	--sets.Weapons.Staff = {main ="Blurred Staff", sub="Utu Grip"}
 	
 	sets.Weapons.FarshaDWTP = { main ="Farsha", sub = "Renaud's Axe +2", augments={'TP Bonus +1000',}}
 	
@@ -66,7 +68,7 @@ function get_sets()
 	TH_Head = {name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}}
 	WSD_Head = "Agoge Mask +3"
 	TP_Body ={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
-	--WSD_Legs ="Sakpata's Cuisses"
+	--WSD_Legs ="Nyame Flanchard"
 	WSD_Legs ="Boii Cuisses +3"
 	WSD_Hands = "Boii Mufflers +3"
 	WSD_Body = "Nyame Mail"
@@ -331,9 +333,10 @@ function get_sets()
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet="Sakpata's Leggings",
 		neck={ name="War. Beads +2", augments={'Path: A',}},
-		waist="Ioskeha Belt +1",
-		left_ear="Telos Earring",
-		right_ear="Schere Earring",
+		--waist="Ioskeha Belt +1",
+		waist = "Sailfi Belt +1",
+		right_ear="Boii Earring +1",
+		left_ear="Schere Earring",
 		right_ring="Moonlight Ring",
 		--right_ring="Chirich Ring +1",
 		left_ring = "Niqmaddu Ring",
@@ -413,23 +416,18 @@ function get_sets()
 
 	sets.UpheavalWSD = {
 		ammo = "Knobkierrie",
-		--head = WSD_Head,
-		head = "Nyame Helm",
+		head = WSD_Head,
 		neck = "Warrior's bead necklace +2",
 		ear1 = "Thrud Earring",
 		ear2 = "Moonshade earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		ring2 = "Sroda ring",
 		back = WSD_Back,
-		--waist = "Ioskeha Belt +1",
 		waist = "Sailfi Belt +1",
-		--legs = WSD_Legs,
-		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		legs = WSD_Legs,		
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		--feet="Sakpata's Leggings",
 	}
 
 	sets.UpheavalDA = {
@@ -441,12 +439,10 @@ function get_sets()
 		body = WSD_Body,
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Epaminondas's Ring",
-		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		ring2 = "Beithir ring",
 		back = WSD_Back,
 		waist = "Fotia belt",
-		--legs = WSD_Legs,
-		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		legs = WSD_Legs,
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -478,7 +474,6 @@ function get_sets()
 		ring2 = "Hetairoi ring",
 		back = Crit_Back,
 		waist = "Sailfi Belt +1",
-		--legs = "Sakpata's Cuisses",
 		legs = "Boii Cuisses +3",
 		feet = "Boii Calligae +3"	}
 
@@ -491,13 +486,11 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		--feet="Sakpata's Leggings",
 	}
 
 	sets.Break = {
@@ -541,13 +534,11 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		--feet="Sakpata's Leggings",
 	}
 
 	sets.FellCleave = {
@@ -559,13 +550,11 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		--feet="Sakpata's Leggings",
 	}
 
 	sets.MT = {
@@ -577,13 +566,11 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
-		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		feet="Sakpata's Leggings",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Savage = {
@@ -595,13 +582,11 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		--feet="Sakpata's Leggings",
 	}
 
 	sets.SavageCrit = {
@@ -613,7 +598,6 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
@@ -694,7 +678,6 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = DA_Back,
 		waist = "Fotia belt",
-		--legs = "Sakpata's Cuisses",
 		Legs = "Boii Cuisses +3",
 		feet = "Flam. Gambieras +2"
 	}
@@ -718,14 +701,12 @@ function get_sets()
 	sets.Mistral = {
 		ammo = "Knobkierrie",
 		head = WSD_Head,
-		neck = "Fotia Gorget",
+		neck = "Warrior's bead necklace +2",
 		ear1 = "Thrud Earring",
 		ear2 = "Moonshade earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		--ring1 = "Niqmaddu ring",
-		--ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		ring2 = "Sroda ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
@@ -778,7 +759,6 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = DA_Back,
 		waist = "Fotia belt",
-		--legs = "Sakpata's Cuisses",
 		Legs = "Boii Cuisses +3",
 		feet = "Flam. Gambieras +2"
 	}
@@ -829,7 +809,6 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		--feet = "Valorous greaves"
 		feet="Sakpata's Leggings",
 	}
 
@@ -927,7 +906,6 @@ function get_sets()
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		--feet="Sakpata's Leggings",
 	}
 
 	sets.Hexa = {
@@ -942,7 +920,6 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = Crit_Back,
 		waist = "Fotia belt",
-		--legs = "Pummeler's cuisses +3",
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Pummeler's calligae +3"
 	}
@@ -959,7 +936,6 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = DA_Back,
 		waist = "Sailfi Belt +1",
-		--legs = "Sakpata's Cuisses",
 		Legs = "Boii Cuisses +3",
 		feet = "Pummeler's calligae +3"
 	}
@@ -976,7 +952,6 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = DA_Back,
 		waist = "Fotia belt",
-		--legs = "Sakpata's Cuisses",
 		Legs = "Boii Cuisses +3",
 		feet = "Pummeler's calligae +3"
 	}
@@ -993,7 +968,6 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = STR_Back,
 		waist = "Fotia belt",
-		--legs = "Sakpata's Cuisses",
 		Legs = "Boii Cuisses +3",
 		feet = "Pummeler's calligae +3"
 	}
@@ -1011,8 +985,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		feet="Sakpata's Leggings",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.CR = {
@@ -1028,8 +1001,7 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
-		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		feet="Sakpata's Leggings",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Retribution = {
@@ -1134,7 +1106,6 @@ function get_sets()
 		head = {name = "Agoge Mask +3", augments = {'Enhances "Savagery" effect'}},
 		body = "Pumm. Lorica +3",
 		hands = "Sakpata's Gauntlets",
-		--legs = "Pummeler's cuisses +3",
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Sulev. Leggings +2",
 		neck = "Fotia Gorget",
@@ -1724,6 +1695,8 @@ function self_command(command)
 			Weaons_ind = 4
 		elseif player.equipment.main == "Ukonvasara" then
 			Weapons_ind = 5
+		elseif player.equipment.main == "Ikenga's Axe" then
+			Weapons_ind = 7
 		end
 	elseif command == "cycle WeaponSet" then
 		Weapons_ind = Weapons_ind + 1

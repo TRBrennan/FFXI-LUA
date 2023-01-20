@@ -50,52 +50,68 @@ function get_sets()
         sets.Idle.index = {'Melee','RA'}
         Idle_ind = 1                  
        
-        sets.Idle.Melee = {		 	  main = "Neagling", sub= "Gleti's knife",
-                                      head="Malignance Chapeau",
-									  neck = "Bathy Choker +1", ear1="Eabani Earring", ear2="Infused Earring",
-                                      body="Malignance Tabard",
-									  hands="Malignance Gloves",
-									  ring1="Defending ring",ring2="Shneddick Ring",
-                                      waist="Carrier's Sash",legs="Nyame Flanchard",feet="Malignance Boots", 
-									  back ="Moonbeam Cape"}
+        sets.Idle.Melee = {	main="Naegling",
+							sub= "Gleti's knife",
+							ammo ="Chrono bullet",
+                            head="Nyame Helm",
+							neck = "Bathy Choker +1", 
+							ear1="Eabani Earring", 
+							ear2="Infused Earring",
+                            body="Nyame Mail",
+							hands="Nyame Gauntlets",
+							ring1="Defending ring",
+							ring2="Shneddick Ring",
+                            waist="Carrier's Sash",
+							legs="Nyame Flanchard",
+							feet="Nyame Sollerets", 
+							back ="Moonbeam Cape"}
 							
                                                  
-        sets.Idle.RA = {	          head="Malignance Chapeau",
-									  neck = "Bathy Choker +1", ear1="Eabani Earring", ear2="Infused Earring",
-                                      body="Malignance Tabard",
-									  hands="Malignance Gloves",
-									  ring1="Defending ring",ring2="Shneddick Ring",
-                                      waist="Carrier's Sash",legs="Nyame Flanchard",feet="Malignance Boots", 
-									  back ="Moonbeam Cape" }
+        sets.Idle.RA = {	main ="Lanun Knife",
+							sub="Nusku Shield",
+							ammo ="Chrono bullet",
+							head="Nyame Helm",
+							neck = "Bathy Choker +1", 
+							ear1="Eabani Earring", 
+							ear2="Infused Earring",
+                            body="Nyame Mail",
+							hands="Nyame Gauntlets",
+							ring1="Defending ring",
+							ring2="Shneddick Ring",
+                            waist="Carrier's Sash",
+							legs="Nyame Flanchard",
+							feet="Nyame Sollerets", 
+							back ="Moonbeam Cape" }
 							
         --TP Sets--
         sets.TP = {}
  
-           sets.TP.index = {'StandardNIN', 'DNCSub', 'AccuracyFull', 'DT', 'DTAccuracy', 'DTSW'}
-                --1=Standard, 2 = DNCSub, 3=AccuracyFull, 4=DT, 5=DTAccuracy, 7=DTSW,--
+           sets.TP.index = {'Standard', 'DT', 'SW', 'Shooting'}
+                --1=Standard, 2 = =DT, 3=SingleWeild, 4=Shooting,--
 				
                 TP_ind = 1
-				sets.TP.StandardNIN = {main = "Neagling", sub= "Gleti's knife",  ammo ="Chrono bullet",
-                                    head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Cessance Earring", ear2="Telos Earring",
-                                   body="Malignance Tabard",hands={ name="Adhemar Wristbands +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Chirich Ring +1",ring2="Epona's Ring",
-                                    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
-									waist="Reiki Yotai",legs="Samnuha Tights",feet = "Nyame Sollerets" }
+				sets.TP.Standard = { main="Naegling",
+										sub= "Gleti's knife",
+										ammo ="Chrono bullet",
+                                        head="Malignance Chapeau",
+										body="Malignance Tabard",
+										hands="Malignance Gloves",
+										legs="Malignance Tights",
+										feet="Malignance Boots",
+										neck="Lissome Necklace",
+										waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+										left_ear="Suppanomimi",
+										right_ear="Telos Earring",
+										right_ring="Chirich Ring +1",
+										left_ring="Epona's Ring",
+										back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}}, }
                                                        
+   
                                                        
-                sets.TP.DNCSub = {main = "Neagling", sub= "Gleti's knife", ammo ="Chrono bullet",
-                                        head="Adhemar Bonnet +1", neck="Lissome necklace", ear1="Suppanomimi", ear2="Telos Earring",
-                                   body="Malignance Tabard",hands={ name="Adhemar Wristbands +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Chirich Ring +1",ring2="Epona's Ring",
-                                    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
-									waist="Reiki Yotai",legs="Samnuha Tights",feet = "Nyame Sollerets" }
-       
-                sets.TP.AccuracyFull = {ammo ="Chrono bullet",
-                                        head="Adhemar Bonnet +1",neck="Sanctity Necklace", ear1="Cessance Earring", ear2="Telos Earring",
-                                       body="Malignance Tabard",hands={ name="Adhemar Wristbands +1", augments={'STR+12','DEX+12','Attack+20',}},ring2="Chirich Ring +1",ring1="Cacoethic Ring",
-                                        back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
-										waist="Sailfi Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1" }
-                                                       
-                sets.TP.DT = { main = "Neagling", sub= "Gleti's knife",
-							 ammo ="Chrono bullet",
+                sets.TP.DT = { 
+							main="Naegling",
+							sub= "Gleti's knife",
+							ammo ="Chrono bullet",
                               head="Malignance Chapeau",
 							  neck="Loricate Torque +1", ear1="Eabani Earring", ear2="Dignitary's Earring",
                               body="Malignance Tabard",hands="Malignance Gloves",
@@ -104,27 +120,29 @@ function get_sets()
 							  waist="Carrier's Sash",										
 							  legs="Malignance Tights",
 							  feet="Malignance Boots", }
-                                 
-                sets.TP.DTAccuracy = { main = "Neagling", 
-										sub= "Gleti's knife",
-										ammo ="Chrono bullet",
-                                         head="Malignance Chapeau",
-										body="Malignance Tabard",
-										hands="Malignance Gloves",
-										legs="Malignance Tights",
-										feet="Malignance Boots",
-										neck="Lissome Necklace",
-										waist="Reiki Yotai",
-										left_ear="Suppanomimi",
-										right_ear="Telos Earring",
-										right_ring="Chirich Ring +1",
-										left_ring="Epona's Ring",
-										back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
-										}
-				sets.TP.DTSW = {
-					main ="Neagling",
+							  
+				sets.TP.SW = {
+					main="Naegling",
 					sub="Nusku Shield",
-				   ammo="Chrono Bullet",
+					ammo="Chrono Bullet",
+					head="Malignance Chapeau",
+					body="Malignance Tabard",
+					hands="Malignance Gloves",
+					legs="Malignance Tights",
+					feet="Malignance Boots",
+					neck="Lissome Necklace",
+					waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+					right_ear="Telos Earring",
+					left_ear="Digni. Earring",
+					left_ring="Chirich Ring +1",
+					right_ring="Epona's Ring",
+					back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+				}
+			
+				sets.TP.Shooting = {
+					main ="Lanun Knife",
+					sub="Nusku Shield",
+					ammo="Chrono Bullet",
 					head="Malignance Chapeau",
 					body="Malignance Tabard",
 					hands="Malignance Gloves",
@@ -262,10 +280,10 @@ function get_sets()
 			
 		sets.Ranged.RangedAttack =  {   
 			ammo="Chrono Bullet",
-			head="Malignance Chapeau",
-			body="Nisroch Jerkin",
+			head="Ikenga's Hat",
+			body={ name="Ikenga's Vest", augments={'Path: A',}},
 			hands="Malignance Gloves",
-			legs="Malignance Tights",
+			legs="Chasseur's Culottes +2",
 			feet="Malignance Boots",
 			neck="Iskur Gorget",
 			waist="Yemaya Belt",
@@ -305,7 +323,7 @@ function get_sets()
        
         sets.JA = {}
         
-        sets.JA.PhantomRoll = {range = "Compensator", head="Lanun Tricorne",neck="Regal Necklace", ear1="Etiolation earring", ear2="Eabani Earring",
+        sets.JA.PhantomRoll = {Main ="Rostam",range = "Compensator", head="Lanun Tricorne +1",neck="Regal Necklace", ear1="Etiolation earring", ear2="Eabani Earring",
                               body="Nyame Mail",hands="Chasseur's gants +2",ring2="Luzaf's Ring",ring1="Defending Ring",
                               back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 							  waist="Carrier's Sash",legs="Nyame Flanchard",feet = "Nyame Sollerets" }
@@ -315,7 +333,7 @@ function get_sets()
 			body="Malignance Tabard",
 			hands="Malignance Gloves",
 			legs="Malignance Tights",
-			feet="Chasseur's Bottes +1",
+			feet="Chasseur's Bottes +3",
 			neck={ name="Comm. Charm +1", augments={'Path: A',}},
 			waist="Eschan Stone",
 			left_ear="Crep. Earring",
@@ -325,13 +343,17 @@ function get_sets()
 			back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 		}
 							
-		sets.JA.TactsRoll={body ="Chasseur's Frac"}
+		sets.JA.TactsRoll={body ="Chasseur's Frac +2"}
 							
-		sets.JA.SnakeEye = {legs ="Lanun trews"}
+		sets.JA.SnakeEye = {legs ="Lanun trews +1"}
 		
 		sets.JA.RandomDeal = {body ="Lanun Frac +3"}
 		
 		sets.JA.WildCard = {Feet = "Lanun Bottes +3"}
+		
+		sets.JA.TripleShot ={
+			body ="Chasseur's Frac +2",
+		}
 		
 		--- Quick Draw Sets ---
 		sets.QD ={}
@@ -371,7 +393,7 @@ function get_sets()
 			body="Malignance Tabard",
 			hands="Malignance Gloves",
 			legs="Malignance Tights",
-			feet="Chasseur's Bottes +2",
+			feet="Chasseur's Bottes +3",
 			neck={ name="Comm. Charm +1", augments={'Path: A',}},
 			waist="Eschan Stone",
 			left_ear="Crep. Earring",
@@ -474,6 +496,9 @@ end
 function midcast(spell,act)
 	if spell.english == 'Ranged' then
 			equip(sets.Ranged.RangedAttack)
+			if buffactive["Triple Shot"] then
+				equip(sets.JA.TripleShot)
+			end
 		elseif spell.english == 'Utsusemi: Ichi' then
                 equip(sets.NINMagic.Utsusemi)
                         if buffactive['Copy Image (3)'] then

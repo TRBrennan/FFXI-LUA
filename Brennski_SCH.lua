@@ -52,7 +52,7 @@ function get_sets()
 
 	sets.Idle.DT = {
 		main="Daybreak",
-		sub="Ammurapi Shield",
+		sub="Genmei Shield",
 		ammo = "Staunch Tathlum +1",
 		head = "Befouled Crown",
 		neck = "Loricate Torque +1",
@@ -154,7 +154,6 @@ function get_sets()
 		left_ear="Regal Earring",
 		right_ear="Malignance Earring",
 		left_ring = "Freke Ring",
-		--right_ring="Mujin Band",
 		right_ring ="Metamor. Ring +1",
 		back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 	}
@@ -205,6 +204,24 @@ function get_sets()
 
 	--Magic Sets--
 	sets.Magic = {}
+	
+	sets.Magic.ImmaDT ={
+	    main={ name="Bunzi's Rod", augments={'Path: A',}},
+		sub="Genmei Shield",
+		ammo="Pemphredo Tathlum",
+		head={ name="Agwu's Cap", augments={'Path: A',}},
+		body="Arbatel Gown +3",
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Agwu's Slops", augments={'Path: A',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck={ name="Argute Stole +2", augments={'Path: A',}},
+		waist={ name="Acuity Belt +1", augments={'Path: A',}},
+		left_ear="Regal Earring",
+		right_ear="Malignance Earring",
+		left_ring="Defending Ring",
+		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		back="Moonbeam Cape",
+	}
 	
 	sets.Magic.Aquaveil = {
 	    main="Musa",
@@ -313,6 +330,24 @@ function get_sets()
 		feet = "Merlinic Crackows"
 	}
 
+	sets.Magic.AbsorbTP = {
+		main={ name="Bunzi's Rod", augments={'Path: A',}},
+		sub="Ammurapi Shield",
+		ammo="Pemphredo Tathlum",
+		head="Arbatel Bonnet +3",
+		body = "Arbatel Gown +3",
+		hands ="Arbatel Bracers +3",
+		legs="Acad. Pants +3",
+		feet="Arbatel Loafers +3",
+		neck={ name="Argute Stole +2", augments={'Path: A',}},
+		waist={ name="Acuity Belt +1", augments={'Path: A',}},
+		left_ear="Regal Earring",
+		right_ear="Malignance Earring",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		right_ring="Stikini Ring +1",
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+	}
+	
 	sets.Magic.Stun = {
 		main = "Bunzi's Rod",
 		ammo = "Pemphredo Tathlum",
@@ -365,6 +400,24 @@ function get_sets()
 		right_ring="Mujin Band",
 		back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		--back = "Bookworm's Cape"
+	}
+	
+		sets.Magic.LightHelixMB ={
+		main="Daybreak",
+		sub="Ammurapi Shield",
+		ammo="Ghastly Tathlum +1",
+		body = "Agwu's Robe",
+		head = "Pedagogy Mortarboard +3",
+		hands = "Agwu's Gages",
+		legs="Agwu's Slops",
+		feet ="Arbatel Loafers +3",
+		neck="Argute Stole +2",
+		waist = "Orpheus's Sash",
+		left_ear="Regal Earring",
+		right_ear="Malignance Earring",
+		left_ring="Freke Ring",
+		right_ring="Mujin Band",
+		back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 	}
 	
 	sets.Magic.Cursna ={
@@ -591,6 +644,9 @@ function midcast(spell, act)
 
 	if spell.skill == "Dark Magic" then
 		equip(sets.Magic.Dark)
+		if spell.english =="Absorb-TP" then
+			equip(sets.Magic.AbsorbTP)
+		end
 	end
 
 	if spell.skill == "Enfeebling Magic" then
@@ -605,6 +661,10 @@ function midcast(spell, act)
 			-- if buffactive["Klimaform"] then
 				-- equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]], sets.Utility.Klima))
 			-- end
+		end
+		
+		if buffactive["Immanence"] then
+			equip(sets.Magic.ImmaDT)
 		end
 	
 		if spell.english == "Impact" then
@@ -624,20 +684,29 @@ function midcast(spell, act)
 			spell.english == "Pyrohelix" or
 			spell.english == "Anemohelix" or
 			spell.english == "Ionohelix" or
-			spell.english == "Luminohelix" or
 			spell.english == "Geohelix II" or
 			spell.english == "Hydrohelix II" or
 			spell.english == "Anemohelix II" or
 			spell.english == "Pyrohelix II" or
 			spell.english == "Anemohelix II" or
-			spell.english == "Ionohelix II" or
-			spell.english == "Luminohelix II"
+			spell.english == "Ionohelix II" 
 		then
 			equip(sets.Magic.HelixMB)
 	end
 
-	if spell.english == "Noctohelix" or spell.english == "Noctohelix II" or spell.english == "Kastura" then
+	if spell.english == "Noctohelix II" or spell.english == "Kastura" then
 		equip(sets.Magic.DarkHelixMB)
+		if buffactive["Immanence"] then
+			equip(sets.Magic.ImmaDT)
+		end
+	end
+
+	if spell.english == "Luminohelix II" or spell.english == "Luminohelix" then
+		equip(sets.Magic.LightHelixMB)
+	end
+	
+	if spell.english == "Noctohelix"  then
+		equip(sets.Magic.ImmaDT)
 	end
 
 	if spell.english == "Drain" or spell.english == "Drain II" or spell.english == "Aspir II" or spell.english == "Aspir" then

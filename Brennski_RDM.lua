@@ -467,6 +467,25 @@ function get_sets()
 		feet = {name = "Merlinic Crackows",	augments = {'Mag. Acc.+19 "Mag.Atk.Bns."+19', "Magic burst dmg.+9%", "MND+9", "Mag. Acc.+15"}}
 	}
 	
+	sets.Magic.AbsorbTP = {
+	    main={ name="Bunzi's Rod", augments={'Path: A',}},
+		sub="Ammurapi Shield",
+		ammo="Regal Gem",
+		head="Leth. Chappel +2",
+		body="Lethargy Sayon +3",
+		hands="Leth. Ganth. +3",
+		legs="Leth. Fuseau +2",
+		feet="Leth. Houseaux +3",
+		neck = "Duelist's torque +2",
+		waist={ name="Acuity Belt +1", augments={'Path: A',}},
+		left_ear="Crep. Earring",
+		right_ear="Malignance Earring",
+		left_ring="Stikini Ring +1",
+		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+	}
+	
+	
 	sets.Magic.Impact = {   
 		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
@@ -917,7 +936,10 @@ function midcast(spell, act)
 		elseif buffactive['Chainspell'] and spell.english == "Stun" then
 				equip(sets.Magic.StunAcc)
 				-- send_command("@input /echo Stun Acc Set")
-		end		
+		end
+		if spell.english =="Absorb-TP" then
+			equip(sets.Magic.AbsorbTP)
+		end
 	end
 	
 	if spell.skill == "Enfeebling Magic" then

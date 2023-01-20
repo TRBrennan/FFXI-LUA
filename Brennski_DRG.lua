@@ -86,22 +86,19 @@ function get_sets()
 
 	
 	sets.TP.Hybrid = {
-		--ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		ammo="Aurgelmir Orb +1",
-		head="Flam. Zucchetto +2",
-		body={ name="Gleti's Cuirass", augments={'Path: A',}},
-		--hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
-		hands = "Pel. Vambraces +2",
-		legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet="Flam. Gambieras +2",
-		neck={ name="Dgn. Collar +2", augments={'Path: A',}},
-		--waist="Ioskeha Belt +1",
-		waist = "Sailfi Belt +1",
-		left_ear="Sherida Earring",
-		right_ear="Telos Earring",
-		left_ring="Niqmaddu Ring",
-		right_ring="Moonlight Ring",
-		back=TP_Back
+		   ammo="Aurgelmir Orb +1",
+			head="Flam. Zucchetto +2",
+			body={ name="Gleti's Cuirass", augments={'Path: A',}},
+			hands="Pel. Vambraces +2",
+			legs={ name="Gleti's Breeches", augments={'Path: A',}},
+			feet={ name="Nyame Sollerets", augments={'Path: B',}},
+			neck={ name="Dgn. Collar +2", augments={'Path: A',}},
+			waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+			left_ear="Sherida Earring",
+			right_ear="Telos Earring",
+			left_ring="Niqmaddu Ring",
+			right_ring="Moonlight Ring",
+			back=TP_Back
 	}
 
 	sets.TP.DT = {

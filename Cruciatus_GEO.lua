@@ -543,6 +543,14 @@ function user_setup()
     send_command("bind ^` gs c toggle MagicBurst")
 end
 
+-- Pet Change: Occurs when your Pet is summoned or killed.
+function pet_change(pet, gain)
+    if gain == false and pet.name then
+        -- General announcement for when your Wyvern is killed, Dimissed, or eaten by Spirit Surge
+        windower.add_to_chat(50, " *** Ruh Roh! " .. string.upper(pet.name) .. " has died.***")
+    end
+end
+
 function self_command(str)
     -- Use an in game macro "/con gs c auto_action" to toggle bot Off and On
     --macro: "/con send Anukk gs c auto_action"
