@@ -170,7 +170,7 @@ function get_sets()
                                           head = "Nyame Helm",
 										  neck="Rep. Plat. Medal",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Nyame Mail",
-										  hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Sroda Ring",
+										  hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Ephramad's Ring",
                                           back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
 										  waist="Sailfi Belt +1",Legs = "Nyame Flanchard",
 										  feet="Nyame Sollerets" }
@@ -231,7 +231,8 @@ function get_sets()
 		sets.LastStand = {ammo ="Chrono bullet", 
 						Head = "Nyame Helm",
 						body="Ikenga's Vest",
-						hands="Nyame Gauntlets",
+						--hands="Nyame Gauntlets",
+						hands="Chasseur's gants +3",
 						Legs = "Nyame Flanchard",
 						feet="Lanun Bottes +3",
 						neck="Fotia Gorget",
@@ -247,7 +248,8 @@ function get_sets()
 				ammo ="Chrono bullet", 
 				Head = "Nyame Helm",
 				body="Nyame Mail",
-				hands="Nyame Gauntlets",
+				--hands="Nyame Gauntlets",
+				hands="Chasseur's gants +3",
 				Legs = "Nyame Flanchard",
 				feet="Lanun Bottes +3",
 				neck="Fotia Gorget",
@@ -324,7 +326,7 @@ function get_sets()
         sets.JA = {}
         
         sets.JA.PhantomRoll = {Main ="Rostam",range = "Compensator", head="Lanun Tricorne +1",neck="Regal Necklace", ear1="Etiolation earring", ear2="Eabani Earring",
-                              body="Nyame Mail",hands="Chasseur's gants +2",ring2="Luzaf's Ring",ring1="Defending Ring",
+                              body="Nyame Mail",hands="Chasseur's gants +3",ring2="Luzaf's Ring",ring1="Defending Ring",
                               back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 							  waist="Carrier's Sash",legs="Nyame Flanchard",feet = "Nyame Sollerets" }
        

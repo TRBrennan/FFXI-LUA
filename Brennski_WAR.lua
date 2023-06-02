@@ -68,8 +68,8 @@ function get_sets()
 	TH_Head = {name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}}
 	WSD_Head = "Agoge Mask +3"
 	TP_Body ={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
-	--WSD_Legs ="Nyame Flanchard"
-	WSD_Legs ="Boii Cuisses +3"
+	WSD_Legs ="Nyame Flanchard"
+	--WSD_Legs ="Boii Cuisses +3"
 	WSD_Hands = "Boii Mufflers +3"
 	WSD_Body = "Nyame Mail"
 
@@ -115,9 +115,11 @@ function get_sets()
 	TP_ind = 1
 	
 	sets.TP.Standard ={
-		ammo ="Aurgelmir Orb +1",
+		-- ammo ="Aurgelmir Orb +1",
 		head="Hjarrandi Helm",
-		 body="Boii Lorica +3",
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		--head={ name="Sakpata's Helm", augments={'Path: A',}},
+		body="Boii Lorica +3",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs="Pumm. Cuisses +3",
 		feet="Pumm. Calligae +3",
@@ -152,7 +154,8 @@ function get_sets()
 
 	sets.TP.OH = {
 		ammo = "Coiste Bodhar",
-		head = "Hjarrandi Helm",
+		--head = "Hjarrandi Helm",
+		head={ name="Sakpata's Helm", augments={'Path: A',}},
 		neck = "Warrior's bead necklace +2",
 		ear2 = "Schere Earring",
 		ear1 = "Telos earring",
@@ -169,10 +172,11 @@ function get_sets()
 	}
 
 	sets.TP.Chango ={
-		--ammo = "Staunch Tathlum +1",
-		ammo ="Aurgelmir Orb +1",
+		-- ammo ="Aurgelmir Orb +1",
 		head="Hjarrandi Helm",
-		 body="Boii Lorica +3",
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		--head={ name="Sakpata's Helm", augments={'Path: A',}},
+		body="Boii Lorica +3",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs="Pumm. Cuisses +3",
 		feet="Pumm. Calligae +3",
@@ -309,9 +313,11 @@ function get_sets()
 	}
 
 	sets.TP.DW = {
-		ammo ="Aurgelmir Orb +1",
+				-- ammo ="Aurgelmir Orb +1",
+		-- head="Hjarrandi Helm",
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head={ name="Sakpata's Helm", augments={'Path: A',}},
-		body={ name="Sakpata's Plate", augments={'Path: A',}},
+		body=TP_Body,
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},
 		legs="Pumm. Cuisses +3",
 		feet="Pumm. Calligae +3",
@@ -423,7 +429,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		back = WSD_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,		
@@ -486,7 +492,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
@@ -534,7 +540,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -550,7 +556,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
@@ -566,7 +572,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Fotia Belt",
 		legs = WSD_Legs,
@@ -582,7 +588,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -598,7 +604,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -707,7 +713,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -724,7 +730,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
@@ -789,7 +795,7 @@ function get_sets()
 		body = TP_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
@@ -805,7 +811,7 @@ function get_sets()
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
@@ -883,7 +889,7 @@ function get_sets()
 		ear2 = "Moonshade earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		ring1 = "Epaminondas's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
@@ -900,7 +906,7 @@ function get_sets()
 		ear2 = "Moonshade earring",
 		body = "Nyame Mail",
 		hands = WSD_Hands,
-		ring2 = "Sroda ring",
+		ring2 = "Ephramad's Ring",
 		ring1 = "Niqmaddu ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
@@ -1148,6 +1154,22 @@ function get_sets()
 		right_ring="Archon Ring",
 		back=STR_Back,
 		}
+	
+	sets.WSMS = {
+		ammo="Yetshila +1",
+		head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands="Boii Mufflers +3",
+		legs="Boii Cuisses +3",
+		feet="Boii Calligae +3",
+		neck={ name="War. Beads +2", augments={'Path: A',}},
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Thrud Earring",
+		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		left_ring="Epaminondas's Ring",
+		right_ring="Ephramad's Ring",
+		back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
+	}
 
 	--Job Ability Sets--
 
@@ -1197,7 +1219,7 @@ function get_sets()
 	
 	sets.Utility.Phalanx ={
 	    ammo="Staunch Tathlum +1",
-		head={ name="Valorous Mask", augments={'"Dbl.Atk."+2','"Snapshot"+1','Phalanx +2','Accuracy+13 Attack+13','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
+		head={ name="Valorous Mask", augments={'Mag. Acc.+5','AGI+3','Phalanx +3','Accuracy+16 Attack+16','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},
 		body={ name="Odyss. Chestplate", augments={'STR+8','Pet: "Mag.Atk.Bns."+2','Phalanx +5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},
 		hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
@@ -1296,6 +1318,10 @@ function precast(spell)
 				--send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
 				if CurrentTP > 1500 then
 					equip(sets.UpheavalWSD)
+					
+				if buffactive['Mighty Strikes'] then
+					equip(sets.WSMS)
+				end
 					--send_command("@input /echo Upheaval WSD Set")
 				-- if buffactive["Mighty Strikes"] then
 					-- equip(sets.UpheavalCrit)
@@ -1321,6 +1347,9 @@ function precast(spell)
 				send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
 				if CurrentTP > 1500 then
 					equip(sets.UpheavalWSD)
+					if buffactive['Mighty Strikes'] then
+						equip(sets.WSMS)
+					end
 					--send_command("@input /echo ID Crit Damage WSD Set")
 				else
 					equip(sets.ID)
@@ -1349,6 +1378,9 @@ function precast(spell)
 			if CurrentTP > 1500 then
 				equip(sets.KingsJusticeWSD)
 				--send_command("@input /echo KJ WSD Set")
+				if buffactive['Mighty Strikes'] then
+					equip(sets.WSMS)
+				end
 			else
 				equip(sets.KingsJusticeDA)
 				--send_command("@input /echo KJ DA Set")
@@ -1394,13 +1426,11 @@ function precast(spell)
 			equip(sets.Ruinator)
 			--send_command("@input /echo Ruinator Set")
 		elseif spell.english == "Mistral Axe" or spell.english == "Calamity" then
-			if buffactive["Sneak Attack"] then
-				equip(sets.MistralCrit)
-				--send_command("@input /echo Mistral Crit Set")
-			else
 				equip(sets.Mistral)
 				--send_command("@input /echo Mistral Set")
-			end
+				if buffactive['Mighty Strikes'] then
+					equip(sets.WSMS)
+				end
 		elseif spell.english == "Cloudsplitter" or spell.english == "Red Lotus Blade" or spell.english == "Seraph Blade" or spell.english == "Earth Crusher"  then
 			equip(sets.Cloud)
 			--send_command("@input /echo Magic WS Set")
@@ -1416,12 +1446,10 @@ function precast(spell)
 			--send_command("@input /echo Rampage Set")
 		elseif spell.english == "Savage Blade" then
 			if spell.target.distance <= 5.6 then
-				if buffactive["Sneak Attack"] then
-					equip(sets.SavageCrit)
-					--send_command("@input /echo Savage Blade Crit Set")
-				else
 					equip(sets.Savage)
 					--send_command("@input /echo Savage Blade Set")
+				if buffactive['Mighty Strikes'] then
+					equip(sets.WSMS)
 				end
 			else
 			cancel_spell()

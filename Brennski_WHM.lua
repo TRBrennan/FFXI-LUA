@@ -75,40 +75,40 @@ function get_sets()
 	}
 
     sets.precast_Cure = {
-        main = {
-            name = "Queller Rod",
-            augments = {"Healing magic skill +15", '"Cure" potency +10%', '"Cure" spellcasting time -7%'}
-        },
-        sub = "Sors Shield",
-        ammo = "Incantor Stone",
-        head = "Nahtirah Hat",
-        body = "Inyanga Jubbah +2",
-        hands = {name = "Telchine Gloves", augments = {'"Fast Cast"+3'}},
-        legs = "Ebers Pant. +1",
-        feet = "Regal Pumps +1",
-        neck = "Voltsurge Torque",
-        waist = "Witful Belt",
-        left_ear = "Mendicant's Earring",
-        right_ear = "Spellbr. Earring",
-        left_ring = "Prolix Ring",
-        right_ring = "Kishar Ring",
-        back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}}
+         main="Bolelabunga",
+		sub="Ammurapi Shield",
+		ammo="Homiliary",
+		head={ name="Bunzi's Hat", augments={'Path: A',}},
+		body="Shango Robe",
+		hands={ name="Telchine Gloves", augments={'"Fast Cast"+4','Enh. Mag. eff. dur. +10',}},
+		legs="Aya. Cosciales +2",
+		feet={ name="Kaykaus Boots +1", augments={'Mag. Acc.+20','"Cure" potency +6%','"Fast Cast"+4',}},
+		neck="Voltsurge Torque",
+		waist="Embla Sash",
+		left_ear="Loquac. Earring",
+		right_ear="Etiolation Earring",
+		left_ring="Rahab Ring",
+		right_ring="Kishar Ring",
+		back={ name="Fi Follet Cape +1", augments={'Path: A',}},
     }
 
     sets.precast_FastCast = {
-        ammo = "Incantor Stone",
-        head = "Nahtirah Hat",
-        body = "Inyanga Jubbah +2",
-        hands = {name = "Telchine Gloves", augments = {'"Fast Cast"+3'}},
-        legs = "Assid. Pants +1",
-        feet = "Regal Pumps +1",
-        neck = "Voltsurge Torque",
-        waist = "Witful Belt",
-        left_ear = "Lifestorm Earring",
-        right_ear = "Spellbr. Earring",
-        left_ring = "Prolix Ring",
-        right_ring = "Kishar Ring",
-        back = {name = "Alaunus's Cape", augments = {"MND+20", "Mag. Acc+20 /Mag. Dmg.+20", '"Fast Cast"+10'}}
+		main="Bolelabunga",
+		sub="Ammurapi Shield",
+		ammo="Homiliary",
+		head={ name="Bunzi's Hat", augments={'Path: A',}},
+		body="Shango Robe",
+		hands={ name="Telchine Gloves", augments={'"Fast Cast"+4','Enh. Mag. eff. dur. +10',}},
+		legs="Aya. Cosciales +2",
+		feet={ name="Kaykaus Boots +1", augments={'Mag. Acc.+20','"Cure" potency +6%','"Fast Cast"+4',}},
+		neck="Voltsurge Torque",
+		waist="Embla Sash",
+		left_ear="Loquac. Earring",
+		right_ear="Etiolation Earring",
+		left_ring="Rahab Ring",
+		right_ring="Kishar Ring",
+		back={ name="Fi Follet Cape +1", augments={'Path: A',}},
+
     }
 
     sets.precast_Haste = {

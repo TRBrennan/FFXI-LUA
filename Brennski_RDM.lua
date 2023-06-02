@@ -101,7 +101,8 @@ function get_sets()
 	TP_ind = 1
 	sets.TP.Standard = {
 		ammo="Aurgelmir Orb +1",
-		head="Malignance Chapeau",
+		--head="Malignance Chapeau",
+		head = "Bunzi's Hat",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
@@ -118,7 +119,8 @@ function get_sets()
 	sets.TP.EnSpell = {
 		--ammo="Regal Gem",
 		ammo ="Aurgelmir Orb +1",
-		head="Malignance Chapeau",
+			--head="Malignance Chapeau",
+		head = "Bunzi's Hat",
 		body="Malignance Tabard",
 		hands="Aya. Manopolas +2",
 		legs="Malignance Tights",
@@ -134,7 +136,8 @@ function get_sets()
 
 	sets.TP.LowHaste ={    
 		ammo ="Aurgelmir Orb +1",
-		head="Malignance Chapeau",
+			--head="Malignance Chapeau",
+		head = "Bunzi's Hat",
 		body="Malignance Tabard",
 		hands="Aya. Manopolas +2",
 		legs="Malignance Tights",
@@ -150,7 +153,8 @@ function get_sets()
 	
 	sets.TP.LowHasteEnSpell = {
 		ammo="Regal Gem",
-		head="Malignance Chapeau",
+			--head="Malignance Chapeau",
+		head = "Bunzi's Hat",
 		body="Malignance Tabard",
 		hands="Aya. Manopolas +2",
 		legs="Malignance Tights",
@@ -167,7 +171,8 @@ function get_sets()
 	
 	sets.TP.SubtleBlow = {
 		ammo ="Aurgelmir Orb +1",
-		head="Malignance Chapeau",
+			--head="Malignance Chapeau",
+		head = "Bunzi's Hat",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
@@ -204,7 +209,7 @@ function get_sets()
 		ear1 = "Regal Earring",
 		--body = { name = "Merlinic Jubbah", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
 		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+10%','CHR+4','Mag. Acc.+2','"Mag.Atk.Bns."+13',}},
-		hands = "Amalric Gages +1",
+		hands = "Bunzi's Gloves",
 		ring1 = "Freke Ring",
 		--ring2 = "Acumen Ring",
 		ring2 = "Metamor. Ring +1",
@@ -231,7 +236,7 @@ function get_sets()
 		--head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
 		head = "Lethargy Chappel +2",
 		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+10%','CHR+4','Mag. Acc.+2','"Mag.Atk.Bns."+13',}},
-		hands = "Amalric Gages +1",
+		hands = "Bunzi's Gloves",
 		--legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','INT+10','"Mag.Atk.Bns."+2',}},
 		legs = "Lethargy Fuseau +2",
 		feet = {name = "Merlinic Crackows",	augments = {'Mag. Acc.+19 "Mag.Atk.Bns."+19', "Magic burst dmg.+9%", "MND+9", "Mag. Acc.+15"}}
@@ -747,7 +752,7 @@ function get_sets()
 		body="Nyame Mail",
 		hands = "Nyame Gauntlets",
 		ring1 ="Epaminondas's Ring",
-		ring2 = "Sroda Ring",
+		ring2 = "Ephramad's Ring",
 		back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 		waist = "Sailfi Belt +1",
 		legs="Nyame Flanchard",

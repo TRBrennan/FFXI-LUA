@@ -238,7 +238,7 @@ function get_sets()
 		left_ear = "Moonshade Earring",
 		right_ear = "Peltast's Earring",
 		left_ring="Epaminondas's Ring",
-		right_ring = "Sroda ring",
+		right_ring = "Ephramad's Ring",
 		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 	
@@ -254,7 +254,7 @@ function get_sets()
 		left_ear = "Moonshade Earring",
 		right_ear = "Peltast's Earring",
 		left_ring="Epaminondas's Ring",
-		right_ring = "Sroda ring",
+		right_ring = "Ephramad's Ring",
 		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 

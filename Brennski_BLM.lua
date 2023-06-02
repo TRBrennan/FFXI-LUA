@@ -290,7 +290,7 @@ function get_sets()
         main = "Marin Staff +1",
 		sub="Enki Strap",
 		ammo="Pemphredo Tathlum",
-		head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
+		head="Agwu's Cap",
 		body={ name="Agwu's Robe", augments={'Path: A',}},
 		hands={ name="Agwu's Gages", augments={'Path: A',}},
 		legs={ name="Agwu's Slops", augments={'Path: A',}},
@@ -311,7 +311,7 @@ function get_sets()
 	
 	sets.precast.FC.Standard = {
 		ammo="Sapience Orb",
-		head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
+		head="Agwu's Cap",
 		body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},
 		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}},
 		legs={ name="Agwu's Slops", augments={'Path: A',}},
@@ -345,7 +345,7 @@ function get_sets()
 		main="Daybreak",
 		sub="Ammurapi Shield",
 		ammo="Sapience Orb",
-		head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
+		head="Agwu's Cap",
 		body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},
 		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}},
 		legs={ name="Agwu's Slops", augments={'Path: A',}},
@@ -361,7 +361,7 @@ function get_sets()
 
     sets.precast.FC.Death = {
         ammo="Sapience Orb",
-		head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
+		head="Agwu's Cap",
 		body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},
 		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}},
 		legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},

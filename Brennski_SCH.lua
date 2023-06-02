@@ -378,7 +378,7 @@ function get_sets()
 		left_ear="Regal Earring",
 		right_ear="Malignance Earring",
 		left_ring="Freke Ring",
-		right_ring="Mujin Band",
+		right_ring ="Metamor. Ring +1",
 		back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 	}
 	
@@ -397,7 +397,7 @@ function get_sets()
 		left_ear="Regal Earring",
 		right_ear="Malignance Earring",
 		left_ring = "Archon Ring",
-		right_ring="Mujin Band",
+		right_ring ="Metamor. Ring +1",
 		back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 		--back = "Bookworm's Cape"
 	}
@@ -416,7 +416,7 @@ function get_sets()
 		left_ear="Regal Earring",
 		right_ear="Malignance Earring",
 		left_ring="Freke Ring",
-		right_ring="Mujin Band",
+		right_ring ="Metamor. Ring +1",
 		back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}},
 	}
 	
@@ -427,7 +427,7 @@ function get_sets()
 		head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
 		body="Arbatel Gown +3",
 		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
-		legs="Acad. Pants +2",
+		legs="Acad. Pants +3",
 		feet={ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
 		neck="Malison Medallion",
 		waist="Gishdubar Sash",
@@ -447,7 +447,7 @@ function get_sets()
 		main="Musa",
 		sub = "Enki Strap",
 		ammo="Sapience Orb",
-		head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
+		head="Agwu's Cap",
 		body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},
 		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}},
 		legs={ name="Agwu's Slops", augments={'Path: A',}},
@@ -518,7 +518,7 @@ function get_sets()
 		main="Daybreak",
 		sub="Ammurapi Shield",
 		ammo="Sapience Orb",
-		head={ name="Merlinic Hood", augments={'"Fast Cast"+5','Mag. Acc.+10',}},
+		head="Agwu's Cap",
 		body={ name="Merlinic Jubbah", augments={'Accuracy+6','"Fast Cast"+6','MND+8','Mag. Acc.+15','"Mag.Atk.Bns."+5',}},
 		hands={ name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+25','"Fast Cast"+7','Mag. Acc.+13',}},
 		legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},

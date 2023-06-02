@@ -175,7 +175,7 @@ function get_sets()
 			right_ear={ name="Heath. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Weapon skill damage +2%',}},
 			left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 			left_ring="Epaminondas's Ring",
-			right_ring="Sroda Ring",
+			right_ring="Ephramad's Ring",
 			back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},}
 				 
 	sets.Quietus = {ammo="Knobkierrie",	

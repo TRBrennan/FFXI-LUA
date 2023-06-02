@@ -132,7 +132,7 @@ function get_sets()
 		left_ear = "Thrud Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		left_ring="Epaminondas's Ring",
-		right_ring = "Sroda ring",
+		right_ring = "Ephramad's Ring",
 		back = WSD_Cape
 	}
 
@@ -167,7 +167,7 @@ function get_sets()
 		waist="Orpheus's Sash",
 		left_ear = "Friomisi earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
-		right_ring = "Sroda ring",
+		right_ring = "Ephramad's Ring",
 		left_ring = "Epaminondas's Ring",
 		back={ name="Smertrios's Mantle", augments={'STR+20','Mag. Acc+20 /Mag. Dmg.+20','STR+10','Weapon skill damage +10%',}},
 	}

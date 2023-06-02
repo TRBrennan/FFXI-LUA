@@ -208,7 +208,7 @@ function get_sets()
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Epaminondas's Ring",
-		right_ring = "Sroda Ring",
+		right_ring = "Ephramad's Ring",
 		back = WSD_back,
 	}
 	
@@ -225,7 +225,7 @@ function get_sets()
 		left_ear = "Ishvara Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Epaminondas's Ring",
-		right_ring = "Sroda Ring",
+		right_ring = "Ephramad's Ring",
 		back = WSD_back,
 	}
 	

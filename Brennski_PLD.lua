@@ -242,7 +242,7 @@ function get_sets()
 	
 	sets.Magic.Phalanx ={
 	    ammo="Staunch Tathlum +1",
-		head={ name="Valorous Mask", augments={'"Dbl.Atk."+2','"Snapshot"+1','Phalanx +2','Accuracy+13 Attack+13','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
+		head={ name="Valorous Mask", augments={'Mag. Acc.+5','AGI+3','Phalanx +3','Accuracy+16 Attack+16','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},
 		body={ name="Odyss. Chestplate", augments={'STR+8','Pet: "Mag.Atk.Bns."+2','Phalanx +5','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},
 		hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},

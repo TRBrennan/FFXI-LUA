@@ -425,6 +425,9 @@ function aftercast(spell)
 		if buffactive["Impetus"] then
 			equip({Body = "Bhikku Cyclas +2"})
 		end
+		if buffactive["Footwork"] then
+			equip(sets.Utility.Footwork)
+		end
 	else
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 	end
