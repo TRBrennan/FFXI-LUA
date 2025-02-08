@@ -53,8 +53,8 @@ function get_sets()
         sets.Idle.Melee = {	main="Naegling",
 							sub= "Gleti's knife",
 							ammo ="Chrono bullet",
-                            head="Nyame Helm",
-							neck = "Bathy Choker +1", 
+                            head="Null Masque",
+							neck = "Warder's Charm +1", 
 							ear1="Eabani Earring", 
 							ear2="Infused Earring",
                             body="Nyame Mail",
@@ -70,8 +70,8 @@ function get_sets()
         sets.Idle.RA = {	main ="Lanun Knife",
 							sub="Nusku Shield",
 							ammo ="Chrono bullet",
-							head="Nyame Helm",
-							neck = "Bathy Choker +1", 
+							head="Null Masque",
+							neck = "Warder's Charm +1", 
 							ear1="Eabani Earring", 
 							ear2="Infused Earring",
                             body="Nyame Mail",
@@ -104,7 +104,7 @@ function get_sets()
 										right_ear="Telos Earring",
 										right_ring="Chirich Ring +1",
 										left_ring="Epona's Ring",
-										back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}}, }
+										back="Null Shawl"}
                                                        
    
                                                        
@@ -116,7 +116,7 @@ function get_sets()
 							  neck="Loricate Torque +1", ear1="Eabani Earring", ear2="Dignitary's Earring",
                               body="Malignance Tabard",hands="Malignance Gloves",
 							  ring1="Defending ring",ring2="Chirich Ring +1",
-                              back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+                              back="Null Shawl",
 							  waist="Carrier's Sash",										
 							  legs="Malignance Tights",
 							  feet="Malignance Boots", }
@@ -136,7 +136,7 @@ function get_sets()
 					left_ear="Digni. Earring",
 					left_ring="Chirich Ring +1",
 					right_ring="Epona's Ring",
-					back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+					back="Null Shawl",
 				}
 			
 				sets.TP.Shooting = {
@@ -154,7 +154,7 @@ function get_sets()
 					left_ear="Digni. Earring",
 					left_ring="Chirich Ring +1",
 					right_ring="Epona's Ring",
-					back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+					back="Null Shawl",
 				}
                                                          				
        --Weaponskill Sets--
@@ -184,7 +184,7 @@ function get_sets()
                                  head = "Nyame Helm",neck="Commodore Charm +1",
 								 rear="Friomisi earring", ear1="Novio Earring",
                                  body="Lanun Frac +3",hands = "Nyame Gauntlets", ring1="Dignir Ring", ring2 ='Fenrir Ring', waist ="Orpheus's Sash",
-                                 back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+                                 back="Null Shawl",
 								Legs = "Nyame Flanchard",feet="Lanun Bottes +3" }
 								 
 		sets.VorpalBlade = {}
@@ -194,7 +194,7 @@ function get_sets()
         sets.VorpalBlade = {ammo ="Chrono bullet",
                                           head="Adhemar Bonnet +1",neck="Fotia gorget",ear1="Moonshade Earring",ear2="Telos Earring",
                                          body="Malignance Tabard",hands={ name="Adhemar Wristbands +1", augments={'STR+12','DEX+12','Attack+20',}},ring1="Petrov ring",ring2="Epaminondas's Ring",
-                                          back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+                                         back="Null Shawl",
 										  waist="Sailfi Belt +1",legs="Quiahuiz leggings",feet = "Nyame Sollerets" }						 
                
 	    sets.Leaden = {}
@@ -293,7 +293,7 @@ function get_sets()
 			right_ear="Telos Earring",
 			left_ring="Ilabrat Ring",
 			right_ring="Crepuscular Ring",
-			back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
+			back="Null Shawl",
 		} 
 		
         --Utility Sets--1
@@ -309,7 +309,7 @@ function get_sets()
 			hands="Malignance Gloves",
 			legs={ name="Nyame Flanchard", augments={'Path: B',}},
 			feet={ name="Herculean Boots", augments={'Magic burst dmg.+6%','"Fast Cast"+1','Phalanx +4','Accuracy+14 Attack+14','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-			neck={ name="Bathy Choker +1", augments={'Path: A',}},
+			neck={ name="Warder's Charm +1", augments={'Path: A',}},
 			waist="Carrier's Sash",
 			left_ear="Eabani Earring",
 			right_ear="Infused Earring",
@@ -342,7 +342,7 @@ function get_sets()
 			right_ear="Digni. Earring",
 			left_ring="Stikini Ring +1",
 			right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-			back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
+			back="Null Shawl",
 		}
 							
 		sets.JA.TactsRoll={body ="Chasseur's Frac +2"}
@@ -376,7 +376,7 @@ function get_sets()
 			right_ear="Telos Earring",
 			left_ring="Chirich Ring +1",
 			right_ring="Crepuscular Ring",
-			back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
+			back="Null Shawl",
 		}
 		
 		sets.QD.Damage = {ammo ="Animikii Bullet", head ="Nyame Helm",

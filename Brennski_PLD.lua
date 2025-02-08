@@ -34,7 +34,7 @@ function get_sets()
 
 	sets.Idle.Standard = {
 		ammo = "Homiliary",
-		head = {name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
+		head="Null Masque",
 		neck = "Coatl Gorget +1",
 		ear1 = "Odnowa Earring +1",
 		ear2 = "Infused Earring",
@@ -45,12 +45,12 @@ function get_sets()
 		waist = "Fucho-no-obi",
 		legs = "Sakpata's Cuisses",
 		feet="Sakpata's Leggings",
-		back = "Moonbeam Cape"
+		back="Null Shawl"
 	}
 
 	sets.Idle.DT = {
 		ammo="Staunch Tathlum +1",
-		head="Sakpata's Helm",
+		head="Null Masque",
 		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs="Sakpata's Cuisses",
@@ -66,7 +66,7 @@ function get_sets()
 
 	sets.Idle.Cleave = {
 		ammo="Staunch Tathlum +1",
-		head="Sakpata's Helm",
+		head="Null Masque",
 		body="Sakpata's Plate",
 		hands="Regal Gauntlets",
 		legs="Sakpata's Cuisses",
@@ -83,8 +83,8 @@ function get_sets()
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Tank", "Turtle"}
-	--1=Tank ,2 = Turtle,-
+	sets.TP.index = {"Tank", "Turtle", "DD"}
+	--1=Tank ,2 = Turtle, 3="DD"-
 
 	TP_ind = 1
 	sets.TP.Tank = {
@@ -99,7 +99,7 @@ function get_sets()
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Odnowa Earring +1",
 		right_ear = "Tuisto Earring",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
+		back="Null Shawl",
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 	}
 
@@ -116,6 +116,22 @@ function get_sets()
 		left_ear="Odnowa Earring +1",
 		right_ear = "Tuisto Earring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
+		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
+	}
+	
+		sets.TP.DD = {
+		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
+		ammo = "Coiste Bodhar",
+		head="Hjarrandi Helm",
+		body="Sakpata's Plate",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Sakpata's Cuisses",
+		feet="Sakpata's Leggings",
+		neck="Lissome Necklace",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Telos Earring",
+		right_ear = "Cessance Earring",
+		back="Null Shawl",
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 	}
 	
@@ -141,7 +157,7 @@ function get_sets()
 		ring2 = "Regal Ring",
 		ring1 = "Petrov Ring",
 		waist = "Fotia Belt",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
+		back="Null Shawl",
 	}
 
 	sets.SavageBlade = {}
@@ -150,19 +166,19 @@ function get_sets()
 	SavageBlade_ind = 1
 
 	sets.SavageBlade.Attack = {
-		ammo = "Oshasha's Treatise",
-		neck = "Unmoving Collar +1",
-		left_ear="Odnowa Earring +1",
-		ear1 = "Thrud Earring",
-		head = "Nyame Helm",
-		body = "Nyame Mail",
-		hands= "Nyame Gauntlets",
-		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
-		ring2 = "Epaminondas's Ring",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
-		waist = "Sailfi Belt +1",
-		legs = "Nyame Flanchard",
+		ammo="Oshasha's Treatise",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck={ name="Unmoving Collar +1", augments={'Path: A',}},
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Thrud Earring",
+		right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+16','Mag. Acc.+16','Damage taken-6%','STR+7 VIT+7',}},
+		left_ring="Epaminondas's Ring",
+		right_ring="Ephramad's Ring",
+		back="Null Shawl",
 	}
 
 	sets.ChantDuCygne = {}
@@ -180,7 +196,7 @@ function get_sets()
 		hands = "Flam. Manopolas +2",
 		ring2 = "Rajas ring",
 		ring1 = "Petrov Ring",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
+		back="Null Shawl",
 		waist = "Fotia Belt",
 		legs="Sakpata's Cuisses",
 		feet = "Thereoid Greaves"
@@ -198,7 +214,7 @@ function get_sets()
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		 right_ring	=	"Archon Ring",
 		waist = "Eschan Stone",
-		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','HP+20','"Dbl.Atk."+10','Mag. Evasion+15',}},
+		back="Null Shawl",
 		legs = "Nyame Flanchard",
 		feet = "Nyame Sollerets"
 	}
@@ -300,7 +316,7 @@ function get_sets()
 		feet={ name="Odyssean Greaves", augments={'Enmity+7','VIT+9','Accuracy+14','Attack+12',}},
 		neck="Sacro Gorget",
 		waist="Audumbla Sash",
-		right_ear="Chevalier's Earring +1",
+		right_ear="Chevalier's Earring +2",
 		left_ear="Nourish. Earring +1",
 		right_ring="Defending Ring",
 		left_ring="Moonlight Ring",
@@ -433,7 +449,7 @@ function precast(spell)
 		end
 	end
 
-	if spell.english == "Savage Blade" then
+	if spell.english == "Savage Blade" or spell.english == "Knights of Round" or spell.english == "Torcleaver" then
 		--equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
 		if spell.target.distance <= 5.6 then
 			equip(sets.SavageBlade[sets.SavageBlade.index[SavageBlade_ind]])
@@ -488,11 +504,21 @@ function precast(spell)
 	if spell.english == "Invincible" then
 		equip(sets.JA.Invc)
 	end
+	
+	if spell.english == "Tellus" or spell.english == "Lux" or spell.english == "Gelus" or spell.english == "Tenebrae" or
+		spell.english == "Sulpor" or spell.english == "Ignis" or spell.english == "Unda" or
+		spell.english == "Flabra" or spell.english == "Vallation" or spell.english == "Swordplay" or spell.english == "Valiance" or spell.english == "Pflug" then
+			equip(sets.Utility.Enmity)
+	end
 end
 
 function midcast(spell, act)
 	if spell.english == "Flash" then
 		equip(set_combine(sets.Utility.Enmity, sets.Magic.Flash))
+	end
+	
+	if spells.english == "Foil" then 
+		equip(sets.Utility.Enmity)
 	end
 
 	if spell.skill == "Enhancing Magic" then

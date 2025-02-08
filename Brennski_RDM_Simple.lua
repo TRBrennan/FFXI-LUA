@@ -36,7 +36,7 @@ function get_sets()
 		sub = "Sacro Bulwark",
 		ammo = "Homiliary",
 		head = "Vitiation chapeau +3",
-		neck = "Bathy Choker +1",
+		neck = "Warder's Charm +1",
 		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
 		body = "Atrophy Tabard +3",
@@ -46,7 +46,7 @@ function get_sets()
 		waist = "Fucho-no-obi",
 		legs = "Nyame Flanchard",
 		feet = "Malignance Boots",
-		back = "Moonbeam Cape"
+		back="Null Shawl"
 	}
 
 	sets.Idle.DT = {
@@ -484,7 +484,7 @@ function get_sets()
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Thereoid Greaves",
-		neck={ name="Bathy Choker +1", augments={'Path: A',}},
+		neck={ name="Warder's Charm +1", augments={'Path: A',}},
 		waist="Yemaya Belt",
 		left_ear="Crep. Earring",
 		right_ear="Telos Earring",

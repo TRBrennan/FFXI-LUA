@@ -44,10 +44,10 @@ function get_sets()
 		hands = {name = "Merlinic Dastanas", augments = {"DEX+3", 'Mag. Acc.+16 "Mag.Atk.Bns."+16', '"Refresh"+1'}},
 		ring1="Defending ring",
 		ring2="Shneddick Ring",
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		legs = "Assiduity Pants +1",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		back = "Moonbeam Cape"
+		back="Null Shawl"
 	}
 
 	sets.Idle.DT = {
@@ -62,10 +62,10 @@ function get_sets()
 		hands = "Nyame Gauntlets",
 		ring1="Defending ring",
 		ring2="Shneddick Ring",
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		legs = "Nyame Flanchard",
 		feet = "Nyame Sollerets",
-		back = "Moonbeam Cape"
+		back="Null Shawl"
 	}
 
 	--TP Sets--
@@ -87,10 +87,10 @@ function get_sets()
 		hands = "Nyame Gauntlets",
 		ring1="Defending ring",
 		ring2="Shneddick Ring",
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		legs = "Nyame Flanchard",
 		feet = "Nyame Sollerets",
-		back = "Moonbeam Cape"
+		back="Null Shawl"
 	}
 
 	--WS Sets--

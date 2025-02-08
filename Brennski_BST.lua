@@ -73,12 +73,12 @@ function get_sets()
 
 	sets.Idle.Standard = {
 		ammo="Staunch Tathlum +1",
-		head="Malignance Chapeau",
+		head="Null Masque",
 		body={ name="Gleti's Cuirass", augments={'Path: A',}},
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
 		legs="Malignance Tights",
 		feet="Malignance Boots",
-		neck = "Bathy Choker +1",
+		neck = "Warder's Charm +1",
 		waist="Carrier's Sash",
 		left_ear="Eabani Earring",
 		right_ear="Infused Earring",
@@ -89,7 +89,7 @@ function get_sets()
 
 	sets.Idle.DT = {
 		ammo="Staunch Tathlum +1",
-		head="Malignance Chapeau",
+		head="Null Masque",
 		body= "Malignance Tabard",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
@@ -342,8 +342,8 @@ function get_sets()
 		hands = "Adhemar Wristbands",
 		ring1 = "Chirich Ring +1",
 		ring2 = "Petrov Ring",
-		back = "Moonbeam Cape",
-		waist = "Carrier's Sash",
+		back="Null Shawl",
+		waist = "Null Belt",
 		legs = "Herculean Trousers",
 		feet = {name = "Herculean Boots",augments = {"Accuracy+20 Attack+20", '"Triple Atk."+4'}}
 	}

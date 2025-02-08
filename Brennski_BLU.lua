@@ -59,48 +59,48 @@ function get_sets()
 
     sets.Idle.Standard = {
         ammo = "Staunch Tathlum +1",
-        head = { name = "Herculean Helm", augments = { 'Pet: CHR+2','Potency of "Cure" effect received+3%','"Refresh"+2','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},
-        neck = "Bathy Choker +1",
+        head="Null Masque",
+        neck = "Warder's Charm +1",
         ear1 = "Eabani Earring",
         ear2 = "Infused Earring",
         body = "Hashishin Mintan +2",
         hands = { name = "Herculean Gloves",augments = {'DEX+9', 'Magic dmg. taken -3%', '"Refresh"+1',}},
         ring1 = "Defending ring",
         ring2 = "Shneddick Ring",
-        waist = "Fucho-no-obi",
+        waist = "Null Belt",
         legs = "Nyame Flanchard",
         feet = {name = "Herculean Boots",augments = {'CHR+6','STR+14','"Refresh"+1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},
-        back = "Moonbeam Cape"
+        back="Null Shawl"
     }
 
     sets.Idle.DT = {
         ammo = "Staunch Tathlum +1",
-         head="Malignance Chapeau",
-        neck = "Loricate Torque +1",
+        head="Null Masque",
+        neck = "Warder's Charm +1",
         ear1 = "Eabani Earring",
         ear2 = "Infused Earring",
         body="Hashishin Mintan +2",
         hands="Malignance Gloves",
         ring1 = "Defending ring",
         ring2 = "Shneddick Ring",
-        back = "Moonbeam Cape",
-        waist = "Carrier's Sash",
+        back="Null Shawl",
+        waist = "Null Belt",
         legs = "Malignance Tights",
 		feet="Malignance Boots",	
     }
 
     sets.Idle.Cleave = {
         ammo = "Staunch Tathlum +1",
-        head="Malignance Chapeau",
-		neck = "Loricate Torque +1",
+		head="Null Masque",
+		neck = "Warder's Charm +1",
         ear1 = "Eabani Earring",
         ear2 = "Infused Earring",
         body="Hashishin Mintan +2",
 		hands="Malignance Gloves",
         ring1 = "Defending ring",
         ring2 = "Shneddick Ring",
-        back = "Moonbeam Cape",
-        waist = "Carrier's Sash",
+        back="Null Shawl",
+        waist = "Null Belt",
         legs = "Nyame Flanchard",
         feet="Malignance Boots",
     }
@@ -112,13 +112,13 @@ function get_sets()
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs="Nyame Flanchard",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck={ name="Bathy Choker +1", augments={'Path: A',}},
+		neck={ name="Warder's Charm +1", augments={'Path: A',}},
 		waist="Carrier's Sash",
 		left_ear="Eabani Earring",
 		right_ear="Infused Earring",
 		left_ring="Defending Ring",
 		right_ring="Shneddick Ring",
-		back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},
+		back="Null Shawl",
 	}
 	
 	sets.Idle.RefreshRegain = {
@@ -134,7 +134,7 @@ function get_sets()
 		right_ear="Infused Earring",
 		left_ring="Defending Ring",
 		right_ring="Shneddick Ring",
-		back="Moonbeam Cape",
+		back="Null Shawl",
 	}
 
     -- TP Sets--
@@ -154,7 +154,7 @@ function get_sets()
         hands ="Adhemar Wristbands +1",
 		left_ring="Ilabrat Ring",
 		right_ring="Epona's Ring",
-        back = { name = "Rosmerta's Cape",augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10', 'Phys. dmg. taken-10%', }},
+        back="Null Shawl",
         waist = "Reiki Yotai",
         legs = "Samnuha Tights",
 		Feet = "Nyame Sollerets",
@@ -174,7 +174,7 @@ function get_sets()
 		right_ear="Eabani Earring",
 		left_ring="Chirich Ring +1",
 		right_ring="Defending Ring",
-		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+		back="Null Shawl",
 	}
     
 
@@ -191,7 +191,7 @@ function get_sets()
 		right_ear="Suppanomimi",
 		right_ring="Ilabrat Ring",
 		left_ring="Chirich Ring +1",
-		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+		back="Null Shawl",
     }
 	
 	sets.TP.DTSB = {
@@ -207,7 +207,7 @@ function get_sets()
 		right_ear="Telos Earring",
 		left_ring="Chirich Ring +1",
 		right_ring="Chirich Ring",
-		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+		back="Null Shawl",
 	}
 
 	sets.TP.EvaTank ={
@@ -217,13 +217,13 @@ function get_sets()
 			hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 			legs="Malignance Tights",
 			feet={ name="Nyame Sollerets", augments={'Path: B',}},
-			neck={ name="Bathy Choker +1", augments={'Path: A',}},
+			neck={ name="Warder's Charm +1", augments={'Path: A',}},
 			waist="Carrier's Sash",
 			left_ear="Eabani Earring",
 			right_ear="Infused Earring",
 			left_ring="Chirich Ring +1",
 			right_ring="Ilabrat Ring",
-			back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},
+			back="Null Shawl",
 	}
 	
 	sets.TP.Counter ={
@@ -233,13 +233,13 @@ function get_sets()
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
 		legs="Malignance Tights",
 		feet="Malignance Boots",
-		neck={ name="Bathy Choker +1", augments={'Path: A',}},
+		neck={ name="Warder's Charm +1", augments={'Path: A',}},
 		waist="Cornelia's Belt",
 		left_ear="Telos Earring",
 		right_ear="Genmei Earring",
 		left_ring="Chirich Ring +1",
 		right_ring="Ilabrat Ring",
-		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+		back="Null Shawl",
 	}
 	
     -- Weaponskill Sets--
@@ -260,7 +260,7 @@ function get_sets()
         hands = "Adhemar Wristbands +1",
         ring1 = "Ilabrat Ring",
         ring2 = "Epona's ring",
-        back = {name = "Rosmerta's Cape", augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+        back="Null Shawl",
         waist = "Fotia belt",
         legs = "Samnuha Tights",
         feet = "Carmine Greaves +1"
@@ -302,7 +302,7 @@ function get_sets()
 		hands = "Adhemar Wristbands +1",
         ring1 = "Hetairoi Ring",
         ring2 = "Epona's Ring",
-        back = { name = "Rosmerta's Cape",augments = {'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10', 'Phys. dmg. taken-10%', }},
+        back="Null Shawl",
         waist = "Fotia belt",
         legs = "Samnuha Tights",
         feet = "Thereoid Greaves"
@@ -388,7 +388,7 @@ function get_sets()
         ring1 = "Shiva Ring",
         ring2 = 'Shiva Ring',
         waist = "Sacro Cord",
-        back = "Cornflower cape",
+        back="Null Shawl",
         legs="Nyame Flanchard",
         feet={ name="Nyame Sollerets", augments={'Path: B',}},
     }
@@ -534,7 +534,7 @@ function get_sets()
 		right_ear="Friomisi Earring",
 		left_ring="Petrov Ring",
 		right_ring="Supershear Ring",
-		back={ name="Rosmerta's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},
+		back="Null Shawl",
     }
 
     sets.BlueMagic.Dark = {
@@ -590,7 +590,7 @@ function get_sets()
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Telchine Braconi", augments={'"Fast Cast"+2','Enh. Mag. eff. dur. +8',}},
 		feet={ name="Herculean Boots", augments={'Magic burst dmg.+6%','"Fast Cast"+1','Phalanx +4','Accuracy+14 Attack+14','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-		neck={ name="Bathy Choker +1", augments={'Path: A',}},
+		neck={ name="Warder's Charm +1", augments={'Path: A',}},
 		waist="Olympus Sash",
 		left_ear="Mimir Earring",
 		right_ear="Infused Earring",

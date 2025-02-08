@@ -72,10 +72,10 @@ function get_sets()
 		hands = { name="Sakpata's Gauntlets", augments={'Path: A',}},
 		ring2 = "Defending ring",
 		ring1 = "Moonlight Ring",
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		legs = "Sakpata's Cuisses",
 		feet = "Hermes' Sandals",
-		back = "Moonbeam Cape"
+		back="Null Shawl"
 	}
 
 	sets.Idle.DT = {
@@ -89,8 +89,8 @@ function get_sets()
 		legs="Sakpata's Cuisses",
 		ring1 = "Moonlight Ring",
 		ring2 = "Defending Ring",
-		back = "Moonbeam Cape",
-		waist = "Carrier's Sash",
+		back="Null Shawl",
+		waist = "Null Belt",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
@@ -396,7 +396,7 @@ function get_sets()
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
 		left_ring = "Stikini ring +1",
 		right_ring = "Flamma Ring",
-		back = "Izdubar Mantle"
+		back="Null Shawl"
 	}
 
 	sets.KingsJusticeDA = {

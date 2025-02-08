@@ -33,15 +33,15 @@ function get_sets()
         sets.Idle.Standard = {
                 ammo = "Staunch Tathlum +1",
 				head="Malignance Chapeau",
-                 neck = "Bathy Choker +1",
+                 neck = "Warder's Charm +1",
                 ear1 = "Eabani Earring",
                 ear2 = "Infused Earring",
                 body = "Ashera Harness",
                 hands = "Malignance gloves",
                 ring1 = "Defending ring",
                 ring2 = "Shneddick Ring",
-                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-                waist = "Carrier's Sash",
+                back="Null Shawl",
+                waist = "Null Belt",
                 legs="Malignance Tights",
                 feet = "Turms Leggings +1"
         }
@@ -59,8 +59,8 @@ function get_sets()
                 hands = "Malignance gloves",
                 ring2 = "Defending ring",
                 ring1 = "Shneddick Ring",
-                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-                waist = "Carrier's Sash",
+                back="Null Shawl",
+                waist = "Null Belt",
 				legs="Malignance Tights",
 				feet="Malignance Boots",
         }
@@ -78,22 +78,22 @@ function get_sets()
 			right_ear="Infused Earring",
 			left_ring="Shneddick Ring",
 			right_ring="Defending Ring",
-			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+			back="Null Shawl",
 		}
 		
 		sets.Idle.Eva = {
 
 				ammo = "Yamarang",
 				head="Malignance Chapeau",
-                neck = "Bathy Choker +1",
+                neck = "Warder's Charm +1",
                 ear1 = "Eabani Earring",
                 ear2 = "Infused Earring",
                 body = "Malignance Tabard",
                 hands = "Malignance gloves",
                 ring2 = "Defending ring",
                 ring1 = "Shneddick Ring",
-                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-                waist = "Carrier's Sash",
+                back="Null Shawl",
+                waist = "Null Belt",
 				legs="Malignance Tights",
 				feet="Malignance Boots",
         }
@@ -115,7 +115,7 @@ function get_sets()
                 hands = "Adhemar Wristbands +1",
                 ring1 = "Gere Ring",
                 ring2 = "Epona's Ring",
-                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+                back="Null Shawl",
                 waist = "Windbuffet Belt +1",
                 legs = "Samnuha Tights",
                 Feet = "Nyame Sollerets",
@@ -131,7 +131,7 @@ function get_sets()
                 hands = "Adhemar Wristbands +1",
                 ring1 = "Gere Ring",
                 ring2 = "Epona's ring",
-                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+                back="Null Shawl",
                 waist = "Windbuffet Belt +1",
                 legs = "Meg. Chausses +2",
                 Feet = "Nyame Sollerets",
@@ -147,7 +147,7 @@ function get_sets()
                 hands = "Adhemar Wristbands +1",
                 ring1 = "Cacoethic Ring",
                 ring2 = "Chirich Ring +1",
-                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+                back="Null Shawl",
                 waist = "Sailfi Belt +1",
                 legs = "Carmine Cuisses +1",
                 Feet = "Nyame Sollerets",
@@ -163,8 +163,8 @@ function get_sets()
                 hands = "Malignance Gloves",
                 ring1 = "Moonlight Ring",
                 ring2 = "Defending Ring",
-                back = "Moonbeam Cape",
-                waist = "Carrier's Sash",
+                back="Null Shawl",
+                waist = "Null Belt",
 				legs="Malignance Tights",
 				feet="Malignance Boots",
         }
@@ -179,8 +179,8 @@ function get_sets()
                 hands = "Malignance Gloves",
                 ring1 = "Gere ring",
                 ring2 = "Moonlight Ring",
-                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
-                waist = "Carrier's Sash",
+                back="Null Shawl",
+                waist = "Null Belt",
  				legs="Malignance Tights",
 				feet="Malignance Boots",
         }
@@ -195,7 +195,7 @@ function get_sets()
                 hands = "Plunderer's Armlets +1",
                 ring1 = "Gere Ring",
                 ring2 = "Epona's Ring",
-                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+                back="Null Shawl",
                 waist = "Chaac Belt",
                 legs = "Samnuha Tights",
                 Feet = "Nyame Sollerets",
@@ -209,13 +209,13 @@ function get_sets()
 			hands = "Malignance Gloves",
 			legs="Malignance Tights",
 			feet="Malignance Boots",
-			neck = "Bathy Choker +1",
+			neck = "Warder's Charm +1",
 			waist="Chaac Belt",
 			left_ear="Eabani Earring",
 			right_ear="Telos Earring",
 			right_ring="Gere Ring",
 			left_ring="Moonlight Ring",
-			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+			back="Null Shawl",
 		}
         --Weaponskill Sets--
         sets.WS = {}
@@ -246,7 +246,7 @@ function get_sets()
                 hands = "Adhemar Wristbands +1",
                 ring1 = "Gere Ring",
                 ring2 = "Regal Ring",
-                back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+                back="Null Shawl",
                 waist = "Fotia belt",
                 legs = "Samnuha Tights",
                 Feet = "Nyame Sollerets",
@@ -265,7 +265,7 @@ function get_sets()
 			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 			left_ring="Gere Ring",
 			right_ring="Regal Ring",
-			back={ name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+			back="Null Shawl",
 	}
 
         sets.SharkBite = {
@@ -330,8 +330,8 @@ function get_sets()
                 hands = "Adhemar Wristbands +1",
                 ring1 = "Moonlight Ring",
                 ring2 = "Petrov Ring",
-                back = "Moonbeam Cape",
-                waist = "Carrier's Sash",
+                back="Null Shawl",
+                waist = "Null Belt",
                 legs = "Herculean Trousers",
                 Feet = "Nyame Sollerets",
         }
@@ -403,7 +403,7 @@ function get_sets()
                 hands = "Umuthi gloves",
                 ring1 = "Dark ring",
                 ring2 = "Dark ring",
-                back = "Moonbeam Cape",
+                back="Null Shawl",
                 waist = "Flume belt",
                 legs = "Iuitl Tights +1",
                 Feet = "Nyame Sollerets",
@@ -416,7 +416,7 @@ function get_sets()
                 hands = "Umuthi gloves",
                 ring1 = "Dark ring",
                 ring2 = "Dark ring",
-                back = "Moonbeam Cape",
+                back="Null Shawl",
                 legs = "Quiahuiz trousers",
                 feet = "Luhlaza charuqs"
         }	

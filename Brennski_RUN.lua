@@ -35,8 +35,8 @@ function get_sets()
 
 	sets.Idle.Standard = {
 		ammo = "Homiliary",
-		head = { name = "Herculean Helm",augments = {"Pet: CHR+2", 'Potency of "Cure" effect received+3%', '"Refresh"+2', 'Mag. Acc.+1 "Mag.Atk.Bns."+1'}},
-		neck = "Bathy Choker +1",
+		head="Null Masque",
+		neck = "Warder's Charm +1",
 		right_ear = "Erilaz Earring +1",
 		left_ear = "Infused Earring",
 		body = "Runeist Coat +3",
@@ -51,7 +51,7 @@ function get_sets()
 
 	sets.Idle.DT = {
 		ammo = "Staunch Tathlum +1",
-		head="Nyame Helm",
+		head="Null Masque",
 		neck = "Futhark Torque +2",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Hearty Earring",
@@ -60,14 +60,14 @@ function get_sets()
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		legs = "Erilaz Leg Guards +3",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Idle.Cleave = {
 		ammo = "Staunch Tathlum +1",
-		head="Nyame Helm",
+		head="Null Masque",
 		neck = "Futhark Torque +2",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Erilaz Earring +1",
@@ -76,7 +76,7 @@ function get_sets()
 		left_ring = "Shneddick Ring",
 		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		legs = "Erilaz Leg Guards +3",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
@@ -115,7 +115,7 @@ function get_sets()
 		hands = "Adhemar Wristbands +1",
 		left_ring = "Epona's Ring",
 		right_ring = "Niqmaddu Ring",
-		back = { name = "Ogma's cape",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}},
+		back="Null Shawl",
 		waist = "Ioskeha belt +1",
 		legs = "Samnuha Tights",
 		Feet = "Nyame Sollerets",
@@ -131,10 +131,8 @@ function get_sets()
 		hands = "Adhemar Wristbands +1",
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		right_ring = "Niqmaddu Ring",
-		back = { name = "Ogma's cape",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}	},
+		back="Null Shawl",
 		waist = "Ioskeha belt +1",
-		--legs = "Samnuha Tights",
-		--legs = "Meghanada Chausses +2",
 		legs = "Erilaz Leg Guards +3",
 		feet = "Turms Leggings +1"
 	}
@@ -147,7 +145,7 @@ function get_sets()
 		legs = "Erilaz Leg Guards +3",
 		feet = "Turms Leggings +1",
 		neck = "Futhark Torque +2",
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Erilaz Earring +1",
 		right_ring = "Defending Ring",
@@ -168,7 +166,7 @@ function get_sets()
 		right_ear="Sherida Earring",
 		right_ring="Moonlight Ring",
 		left_ring="Moonlight Ring",
-		back={ name="Ogma's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+		back="Null Shawl",
 	}
 	-- sets.TP.HBP = {
 		-- ammo = "Staunch Tathlum +1",
@@ -178,12 +176,12 @@ function get_sets()
 		-- legs = "Nyame Flanchard",
 		-- feet = "Turms Leggings +1",
 		-- neck = "Futhark Torque +2",
-		-- waist = "Carrier's Sash",
+		-- waist = "Null Belt",
 		-- left_ear = "Odnowa Earring +1",
 		-- right_ear = "Odnowa Earring",
 		-- left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		-- right_ring = "Moonbeam Ring",
-		-- back = "Moonbeam Cape"
+		-- back="Null Shawl"
 	-- }
 	
 
@@ -195,7 +193,7 @@ function get_sets()
 		-- legs = "Rune. Trousers +3",
 		-- feet = "Erilaz Greaves +2",
 		-- neck = "Futhark Torque +2",
-		-- waist = "Carrier's Sash",
+		-- waist = "Null Belt",
 		-- right_ear = "Hearty Earring",
 		-- left_ear = "Odnowa Earring +1",
 		-- left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
@@ -224,7 +222,7 @@ function get_sets()
 		right_ear = "Sherida Earring",
 		right_ring = "Niqmaddu Ring",
 		left_ring = "Regal Ring",
-		back = { name = "Ogma's cape",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}	},
+		back="Null Shawl",
 	}
 
 	sets.Dimidiation = {}
@@ -263,7 +261,7 @@ function get_sets()
 		hands = "Adhemar Wristbands +1",
 		right_ring = "Niqmaddu Ring",
 		left_ring = "Regal ring",
-		back = { name = "Ogma's cape", augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}},
+		back="Null Shawl",
 		waist = "Fotia belt",
 		legs = "Samnuha Tights",
 		Feet = "Nyame Sollerets",
@@ -287,7 +285,7 @@ function get_sets()
 		right_ear = "Telos Earring",
 		right_ring = "Niqmaddu Ring",
 		left_ring = "Regal ring",
-		back = { name = "Ogma's cape",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}	},
+		back="Null Shawl",
 	}
 
 	sets.SavageBlade = {}
@@ -340,8 +338,8 @@ function get_sets()
 		hands = "Runeist Mitons +3",
 		left_ring= "Rahab ring",
 		right_ring = "Defending Ring",
-		back = "Moonbeam Cape",
-		waist = "Carrier's Sash",
+		back="Null Shawl",
+		waist = "Null Belt",
 		legs = "Futhark Trousers +3",
 		feet = "Erilaz Greaves +2"
 	}
@@ -491,7 +489,7 @@ function get_sets()
 		legs = "Rune. Trousers +3",
 		feet = "Ahosi Leggings",
 		neck = "Futhark Torque +2",
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Hearty Earring",
 		left_ring = "Defending Ring",
@@ -512,7 +510,7 @@ function get_sets()
 		left_ear = "Etiolation Earring",
 		body = "Adhemar Jacket +1",
 		hands = "Regal Gauntlets",
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		left_ring = "Defending Ring",
 		right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		legs="Agwu's Slops",
@@ -528,7 +526,7 @@ function get_sets()
 		left_ear = "Etiolation Earring",
 		body = "Adhemar Jacket +1",
 		hands = "Regal Gauntlets",
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		left_ring = "Defending Ring",
 		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		legs = {name = "Futhark Trousers +1", augments = {'Enhances "Inspire" effect'}},
@@ -544,7 +542,7 @@ function get_sets()
 		left_ear = "Etiolation Earring",
 		body = "Adhemar Jacket +1",
 		hands = "Regal Gauntlets",
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		left_ring = "Defending Ring",
 		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
 		legs="Agwu's Slops",

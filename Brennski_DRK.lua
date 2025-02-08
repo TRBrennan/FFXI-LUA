@@ -34,7 +34,8 @@ function get_sets()
 	Idle_ind = 1
 	Gear_Debug = 0
 	Killer_Mode = 0
-	DA_Back ={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}}
+	--DA_Back ={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}}
+	DA_Back ="Null Shawl"
 	WSD_Back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}}
 	STR_Back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}}
 	--STR_Back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','Weapon skill damage +10%',}}
@@ -56,7 +57,7 @@ function get_sets()
 	
 	sets.Idle.Standard = {
 			ammo="Staunch Tathlum +1",
-			head=TH_Head,
+			head="Null Masque",
 			body="Sakpata's Plate",
 			hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 			legs="Sakpata's Cuisses",
@@ -71,7 +72,7 @@ function get_sets()
 						  
 	sets.Idle.DT = {
 			ammo="Staunch Tathlum +1",
-			head=WSD_Head,
+			head="Null Masque",
 			body="Sakpata's Plate",
 			hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 			legs="Sakpata's Cuisses",

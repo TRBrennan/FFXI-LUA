@@ -43,8 +43,8 @@ function get_sets()
                 hands = "Herculean gloves",
                 ring1 = "Defending ring",
                 ring2 = "Chirich Ring +1",
-                back = "Moonbeam Cape",
-                waist = "Carrier's Sash",
+                back="Null Shawl",
+                waist = "Null Belt",
                 legs = "Mummu Kecks +2",
                 feet = "Turms Leggings +1"
         }
@@ -64,8 +64,8 @@ function get_sets()
                 hands = "Herculean gloves",
                 ring1 = "Defending ring",
                 ring2 = "Chirich Ring +1",
-                back = "Moonbeam Cape",
-                waist = "Carrier's Sash",
+                back="Null Shawl",
+                waist = "Null Belt",
                 legs = "Mummu Kecks +2",
                 Feet = "Nyame Sollerets",
         }
@@ -138,8 +138,8 @@ function get_sets()
                 hands = "Herculean Gloves",
                 ring1 = "Chirich Ring +1",
                 ring2 = "Ilabrat Ring",
-                back = "Moonbeam Cape",
-                waist = "Carrier's Sash",
+                back="Null Shawl",
+                waist = "Null Belt",
                 legs = "Mummu Kecks +2",
                 Feet = "Nyame Sollerets",
         }
@@ -158,7 +158,7 @@ function get_sets()
                 ring1 = "Dark ring",
                 ring2 = "Chirich Ring +1",
                 back = "Canny Cape",
-                waist = "Carrier's Sash",
+                waist = "Null Belt",
                 legs = "Mummu Kecks +2",
                 Feet = "Nyame Sollerets",
         }
@@ -344,8 +344,8 @@ function get_sets()
                 hands = "Adhemar Wristbands +1",
                 ring1 = "Chirich Ring +1",
                 ring2 = "Petrov Ring",
-                back = "Moonbeam Cape",
-                waist = "Carrier's Sash",
+                back="Null Shawl",
+                waist = "Null Belt",
                 legs = "Herculean Trousers",
                 Feet = "Nyame Sollerets",
         }
@@ -415,7 +415,7 @@ function get_sets()
                 hands = "Umuthi gloves",
                 ring1 = "Dark ring",
                 ring2 = "Dark ring",
-                back = "Moonbeam Cape",
+                back="Null Shawl",
                 waist = "Flume belt",
                 legs = "Iuitl Tights +1",
                 Feet = "Nyame Sollerets",
@@ -428,7 +428,7 @@ function get_sets()
                 hands = "Umuthi gloves",
                 ring1 = "Dark ring",
                 ring2 = "Dark ring",
-                back = "Moonbeam Cape",
+                back="Null Shawl",
                 legs = "Quiahuiz trousers",
                 feet = "Luhlaza charuqs"
         }

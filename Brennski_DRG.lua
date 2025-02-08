@@ -25,7 +25,7 @@ function get_sets()
 	end
 
 	--TP_Body = "Emicho Haubert +1"
-	TP_Back = { name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+	TP_Back = "Null Shawl"
 	WSD_Back = { name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}}
 	--WSD_Legs = "Vishap Brais +3"
 	--WSD_Hands = "Pteroslaver Finger Gauntlets +3"
@@ -42,7 +42,7 @@ function get_sets()
 	sets.Idle.Standard = {
 		ammo = "Staunch Tathlum +1",
 		head = {name="Valorous Mask", augments={'Blood Pact Dmg.+3','Potency of "Cure" effect received+7%','"Treasure Hunter"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
-		neck = "Bathy Choker +1",
+		neck = "Warder's Charm +1",
 		ear1 = "Eabani earring",
 		ear2 = "Infused Earring",
 		--body="Nyame Mail",
@@ -51,10 +51,10 @@ function get_sets()
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
 		ring1 = "Defending ring",
 		ring2 = "Shneddick Ring",
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		legs = "Nyame Flanchard",
 		feet="Nyame Sollerets",
-		back = "Moonbeam Cape"
+		back="Null Shawl"
 	}
 
 
@@ -217,7 +217,7 @@ function get_sets()
 		hands="Gleti's Gauntlets",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet="Flam. Gambieras +2",
-		neck="Sanctity Necklace",
+		neck="Null Loop",
 		waist="Windbuffet Belt +1",
 		left_ear = "Moonshade Earring",
 		right_ear = "Peltast's Earring",
@@ -301,8 +301,8 @@ function get_sets()
 		hands = "Sulev. Gauntlets +2",
 		ring1 = "Chirich Ring +1",
 		ring2 = "Petrov Ring",
-		back = "Moonbeam Cape",
-		waist = "Carrier's Sash",
+		back="Null Shawl",
+		waist = "Null Belt",
 		legs = "Herculean Trousers",
 		feet = "Valorous Greaves"
 	}

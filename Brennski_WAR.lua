@@ -69,25 +69,24 @@ function get_sets()
 	WSD_Head = "Agoge Mask +3"
 	TP_Body ={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}}
 	WSD_Legs ="Nyame Flanchard"
-	--WSD_Legs ="Boii Cuisses +3"
 	WSD_Hands = "Boii Mufflers +3"
 	WSD_Body = "Nyame Mail"
 
 	sets.Idle.Standard = {
 		--ammo = "Staunch Tathlum +1",
 		ammo ="Aurgelmir Orb +1",
-		head = TH_Head,
-		neck = "Bathy Choker +1",
+		head="Null Masque",
+		neck = "Warder's Charm +1",
 		ear1 = "Eabani earring",
 		ear2 = "Infused Earring",
 		body = "Sakpata's Plate",
 		hands = { name="Sakpata's Gauntlets", augments={'Path: A',}},
 		ring2 = "Defending ring",
 		ring1 = "Shneddick Ring",
-		waist = "Carrier's Sash",
+		waist = "Null Belt",
 		legs = "Sakpata's Cuisses",
 		feet = "Sakpata's leggings",
-		back = "Moonbeam Cape"
+		back="Null Shawl",
 	}
 
 	sets.Idle.DT = {
@@ -95,22 +94,22 @@ function get_sets()
 		neck = "Loricate Torque +1",
 		ear1 = "Eabani earring",
 		ear2 = "Hearty Earring",
-		head="Sakpata's Helm",
+		head="Null Masque",
 		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		ring1 = "Moonlight Ring",
 		ring2 = "Defending Ring",
-		back = "Moonbeam Cape",
-		waist = "Carrier's Sash",
+		back="Null Shawl",
+		waist = "Null Belt",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "OH", "Chango", "AccuracyLite", "AccuracyFull", "DT", "DTAM", "H2H", "Zulfiqar", "DW", "Hybrid", "HybridSB","UkonAM"}
-	--1=Standard, 2=One Handed, 3=Chango Set, 4=AccuracyLite, 5=AccuracyFull, 6=DT, 7=DT After Math, 8=H2H, 9=Zulfiqar, 10=DW, 11=Hybrid, 12 = HybridSB,13 = UkonAM --
+	--1=Standard, 2=One Handed, 3=Chango Set, 4=AccuracyFull, 5=DT, 6=DT Aftermath, 7=H2H, 8=DW, 9=Hybrid, 10= HybridSB,11= UkonAM --
+	sets.TP.index = {"Standard", "OH", "Chango", "AccuracyFull", "DT", "DTAM", "H2H","DW", "Hybrid", "HybridSB","UkonAM"}
 	Melee_Default = 1
 	TP_ind = 1
 	
@@ -131,26 +130,6 @@ function get_sets()
 		right_ring="Moonlight Ring",
 		back=DA_Back
 	}
-
-	-- sets.TP.Standard = {
-		-- ammo = "Coiste Bodhar",
-		-- head = "Hjarrandi Helm",
-		-- body = TP_Body,
-		-- --hands = "Sakpata's Gauntlets",
-		-- hands = "Sakpata's Gauntlets",
-		-- --legs = "Pumm. Cuisses +3",
-		-- legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		-- feet = "Pumm. Calligae +3",
-		-- neck = "Warrior's bead necklace +2",
-		-- --waist = "Ioskeha belt +1",
-		-- waist = "Sailfi Belt +1",
-		-- left_ear = "Telos Earring",
-		-- --right_ear = "Cessance Earring",
-		-- right_ear = "Schere Earring",
-		-- left_ring = "Niqmaddu Ring",
-		-- right_ring = "Petrov Ring",
-		-- back = {name = "Cichol's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10'}}
-	-- }
 
 	sets.TP.OH = {
 		ammo = "Coiste Bodhar",
@@ -188,27 +167,6 @@ function get_sets()
 		right_ring="Moonlight Ring",
 		back=DA_Back
 	}
-		
-	-- sets.TP.Chango = {
-		-- ammo = "Coiste Bodhar",
-		-- head = "Hjarrandi Helm",
-		-- --body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
-		-- body = TP_Body,
-		-- --hands = "Sakpata's Gauntlets",
-		-- hands = "Sakpata's Gauntlets",
-		-- --legs = "Pumm. Cuisses +3",
-		-- legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		-- feet = "Pumm. Calligae +3",
-		-- neck = "Warrior's bead necklace +2",
-		-- --waist = "Ioskeha belt +1",
-		-- waist = "Sailfi Belt +1",
-		-- left_ear = "Telos Earring",
-		-- --right_ear = "Cessance Earring",
-		-- right_ear = "Schere Earring",
-		-- left_ring = "Niqmaddu Ring",
-		-- right_ring = "Petrov Ring",
-		-- back = {name = "Cichol's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10'}}
-	-- }
 
 	sets.TP.H2H = {
 		ammo = "Yetshila +1",
@@ -225,40 +183,6 @@ function get_sets()
 		--legs = "Pummeler's cuisses +3",
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet = "Pummeler's calligae +3"
-	}
-
-	sets.TP.Zulfiqar = {
-		ammo = "Coiste Bodhar",
-		head = "Hjarrandi Helm",
-		neck = "Warrior's bead necklace +2",
-		ear2 = "Brutal earring",
-		ear1 = "Cessance earring",
-		body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
-		hands = "Sakpata's Gauntlets",
-		ring1 = "Niqmaddu ring",
-		ring2 = "Petrov ring",
-		back = DA_Back,
-		waist = "Ioskeha belt +1",
-		--legs = "Pummeler's cuisses +3",
-		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		feet = "Pummeler's calligae +3"
-	}
-
-	sets.TP.AccuracyLite = {
-		ammo = "Coiste Bodhar",
-		head = Acc_Head,
-		neck = "Warrior's bead necklace +2",
-		ear2 = "Schere Earring",
-		ear1 = "Telos earring",
-		body = TP_Body,
-		hands = "Sakpata's Gauntlets",
-		ring1 = {name="Moonlight Ring",bag="wardrobe3"},
-		ring2 = "Chirich Ring +1",
-		back = DA_Back,
-		waist = "Ioskeha belt +1",
-		--legs = "Pummeler's cuisses +3",
-		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		feet = "Pummeler's Calligae +3"
 	}
 
 	sets.TP.AccuracyFull = {
@@ -313,8 +237,7 @@ function get_sets()
 	}
 
 	sets.TP.DW = {
-				-- ammo ="Aurgelmir Orb +1",
-		-- head="Hjarrandi Helm",
+
 		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head={ name="Sakpata's Helm", augments={'Path: A',}},
 		body=TP_Body,
@@ -366,22 +289,6 @@ function get_sets()
 		left_ring = "Niqmaddu Ring",
 		back= DA_Back
 	}
-	
-	-- sets.TP.UkonAm ={
-	    -- ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		-- head="Sakpata's Helm",
-		-- body="Hjarrandi Breast.",
-		-- hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
-		-- legs={ name="Agoge Cuisses +3", augments={'Enhances "Warrior\'s Charge" effect',}},
-		-- feet="Pumm. Calligae +3",
-		-- neck={ name="War. Beads +2", augments={'Path: A',}},
-		-- waist="Ioskeha Belt +1",
-		-- left_ear="Brutal Earring",
-		-- right_ear={ name="Schere Earring", augments={'Path: A',}},
-		-- left_ring="Niqmaddu Ring",
-		-- right_ring="Petrov Ring",
-		-- back= DA_Back
-	-- }
 	
 	sets.TP.UkonAm ={
 	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
@@ -506,13 +413,13 @@ function get_sets()
 		hands = "Sakpata's Gauntlets",
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet="Sakpata's Leggings",
-		neck = "Sanctity Necklace",
-		waist = "Eschan Stone",
+		neck = "Moonlight Necklace",
+		waist = "Null Belt",
 		left_ear = "Boii Earring +1",
 		right_ear = "Crep. Earring",
 		left_ring = "Stikini ring +1",
 		right_ring = "Flamma Ring",
-		back = "Izdubar Mantle"
+		back="Null Shawl",
 	}
 
 	sets.KingsJusticeDA = {
@@ -796,7 +703,7 @@ function get_sets()
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
 		ring2 = "Ephramad's Ring",
-		back = STR_Back,
+		back="Null Shawl",
 		waist = "Fotia belt",
 		legs = WSD_Legs,
 		feet = "Pummeler's Calligae +3"
@@ -1638,10 +1545,6 @@ function self_command(command)
 			TP_ind = 3
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			send_command("@input /echo Chango Set")
-		elseif player.equipment.main == "Zulfiqar" then
-			TP_ind = 9
-			equip(sets.TP[sets.TP.index[TP_ind]])
-			send_command("@input /echo Zulfiqar Set")
 		elseif player.equipment.main == "Exalted Spear" or player.equipment.main == "Exalted Spear +1" then
 			TP_ind = 3
 			equip(sets.TP[sets.TP.index[TP_ind]])
@@ -1663,45 +1566,37 @@ function self_command(command)
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		--send_command("@input /echo OHAcc Set")
 	elseif command == "equip H2H set" then
-		TP_ind = 8
+		TP_ind = 7
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		--send_command("@input /echo H2H Set")
-	elseif command == "equip Zulfiqar set" then
-		TP_ind = 9
-		equip(sets.TP[sets.TP.index[TP_ind]])
-		--send_command("@input /echo Zulfiqar Set")
 	elseif command == "equip DW set" then
-		TP_ind = 10
+		TP_ind = 8
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		--send_command("@input /echo DW Set")
 	elseif command == "equip DT set" then
 		if player.equipment.main == "Bravura" and buffactive["Aftermath"] then
-			TP_ind = 7
+			TP_ind = 6
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			--send_command("@input /echo Bravura DT Set")
 		else
-			TP_ind = 6
+			TP_ind = 5
 			equip(sets.TP[sets.TP.index[TP_ind]])
 			--send_command("@input /echo DT Set")
 		end
 	elseif command == "equip DTAM set" then
-		TP_ind = 7
+		TP_ind = 6
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		--send_command("@input /echo DTAM Set")
-	elseif command == "equip Acc_Lite set" then
-		TP_ind = 4
-		equip(sets.TP[sets.TP.index[TP_ind]])
-		--send_command("@input /echo Acc_lite Set")
 	elseif command == "equip Acc_Full set" then
-		TP_ind = 5
+		TP_ind = 4
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		--send_command("@input /echo Acc_Full Set")
 	elseif command == "equip Hybrid set" then
-		TP_ind = 11
+		TP_ind = 9
 		equip(sets.TP.Hybrid)
 		send_command("@input /echo Hybrid Set")
 	elseif command == "equip HybridSB set" then
-		TP_ind = 12
+		TP_ind = 10
 		equip(sets.TP.HybridSB)
 		send_command("@input /echo Hybrid SB Set")
 	elseif command == "change debug mode" then
@@ -1720,7 +1615,8 @@ function self_command(command)
 		elseif player.equipment.main == "Loxotic Mace +1" then
 			Weapons_ind = 3
 		elseif player.equipment.main == "Shining One" then
-			Weaons_ind = 4
+			Weapons_ind = 4
+			--send_command("@input /echo Weapon set to 4")
 		elseif player.equipment.main == "Ukonvasara" then
 			Weapons_ind = 5
 		elseif player.equipment.main == "Ikenga's Axe" then

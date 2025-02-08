@@ -244,7 +244,7 @@ function get_sets()
 		hands = "Kurys Gloves",
 		ring1 = "Defending Ring",
 		ring2 = "Chirich Ring +1",
-		back = "Moonbeam Cape",
+		back="Null Shawl",
 		waist = "Sailfi Belt +1",
 		legs = "Samnuha Tights",
 		Feet = "Nyame Sollerets",
@@ -258,7 +258,7 @@ function get_sets()
 		hands = "Kurys Gloves",
 		ring1 = "Defending Ring",
 		ring2 = "Chirich Ring +1",
-		back = "Moonbeam Cape",
+		back="Null Shawl",
 		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
 		Feet = "Nyame Sollerets",
@@ -272,7 +272,7 @@ function get_sets()
 		hands = "Kurys Gloves",
 		ring1 = "Defending Ring",
 		ring2 = "Chirich Ring +1",
-		back = "Moonbeam Cape",
+		back="Null Shawl",
 		waist = "Sailfi Belt +1",
 		legs = "Carmine Cuisses +1",
 		Feet = "Nyame Sollerets",
@@ -322,7 +322,7 @@ function get_sets()
 		right_ear = "Eabani Earring",
 		left_ring = "Chirich Ring +1",
 		right_ring = "Defending Ring",
-		back = "Moonbeam Cape"
+		back="Null Shawl"
 	}
 	set.MDT = {
 		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
@@ -336,7 +336,7 @@ function get_sets()
 		right_ear = "Eabani Earring",
 		left_ring = "Chirich Ring +1",
 		right_ring = "Defending Ring",
-		back = "Moonbeam Cape"
+		back="Null Shawl"
 	}
 
 	--Weaponskill Sets--

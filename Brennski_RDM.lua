@@ -63,7 +63,7 @@ function get_sets()
 	sets.Idle.Standard = {
 		ammo = "Homiliary",
 		head = "Vitiation chapeau +3",
-		neck = "Bathy Choker +1",
+		neck = "Warder's Charm +1",
 		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
 		body = "Lethargy Sayon +3",
@@ -73,12 +73,12 @@ function get_sets()
 		waist = "Fucho-no-obi",
 		legs = "Nyame Flanchard",
 		feet = "Malignance Boots",
-		back = "Moonbeam Cape"
+		back="Null Shawl"
 	}
 
 	sets.Idle.DT = {
 		ammo="Homiliary",
-		head={ name="Nyame Helm", augments={'Path: B',}},
+		head="Null Mask",
 		body = "Lethargy Sayon +3",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
@@ -89,7 +89,7 @@ function get_sets()
 		right_ear="Infused Earring",
 		left_ring="Defending Ring",
 		right_ring="Shneddick Ring",
-		back="Moonbeam Cape",
+		back="Nawl Shawl",
 	}
 
 	--TP Sets--
@@ -177,7 +177,7 @@ function get_sets()
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
-		neck = "Bathy Choker +1",
+		neck = "Warder's Charm +1",
 		waist = "Sailfi Belt +1",
 		left_ear="Sherida Earring",
 		right_ear="Telos Earring",
@@ -495,9 +495,10 @@ function get_sets()
 		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
 		ammo="Regal Gem",
+		head = empty,
 		body="Twilight Cloak",
 		hands="Lethargy Gantherots +3",
-		--legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.Atk.Bns."+9',}},
+		--legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.BAtk.Bns."+9',}},
 		legs = "Lethargy Fuseau +2",
 		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
 		neck="Duelist's torque +2",
@@ -674,7 +675,7 @@ function get_sets()
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Thereoid Greaves",
-		neck={ name="Bathy Choker +1", augments={'Path: A',}},
+		neck={ name="Warder's Charm +1", augments={'Path: A',}},
 		waist="Yemaya Belt",
 		left_ear="Crep. Earring",
 		right_ear="Telos Earring",
@@ -828,6 +829,11 @@ function get_sets()
 end
 
 function precast(spell)
+
+	if spell.english == "Impact" then
+			equip(sets.precast.FC.Impact)
+			-- send_command("@input /echo Impact FC Set")
+		end
 	if spell.action_type == 'Magic' then
 		equip(sets.precast.FC.Standard)
 		if spell.english == "Regen" or spell.english == "Regen II" or spell.english == "Regen III" or spell.english == "Regen IV" or spell.english == "Regen V" then
@@ -942,7 +948,7 @@ function midcast(spell, act)
 				equip(sets.Magic.StunAcc)
 				-- send_command("@input /echo Stun Acc Set")
 		end
-		if spell.english =="Absorb-TP" then
+		if spell.english == "Absorb-TP" then
 			equip(sets.Magic.AbsorbTP)
 		end
 	end
@@ -979,7 +985,11 @@ function midcast(spell, act)
 			equip(sets.Magic.Dispelga)
 		end
 	end	
-
+	if spell.english == "Impact" then
+			equip(sets.Magic.Impact)
+			-- send_command("@input /echo Impact Set")
+	end
+	
 	if spell.skill == "Elemental Magic" then
 		equip(sets.Nuke[sets.Nuke.index[Nuke_ind]])
 		if spell.element == world.day_element or spell.element == world.weather_element then
@@ -988,16 +998,17 @@ function midcast(spell, act)
 		if spell.english == "Aero" then
 			equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]], sets.Utility.TH))
 		end
+		if spell.english == "Impact" then
+			equip(sets.Magic.Impact)
+			-- send_command("@input /echo Impact Set")
+		end
 	end
 
 	if spell.english == "Drain" or spell.english == "Drain II" or spell.english == "Aspir II" or spell.english == "Aspir" then
 		equip(sets.Utility.DrainAspir)
 		-- send_command("@input /echo DarinAspir Set")
 	end
-	if spell.english == "Impact" then
-			equip(sets.Magic.Impact)
-			-- send_command("@input /echo Impact Set")
-	end
+
 	if spell.english == "Ranged" then
 		equip(sets.Utility.RangedAttack)
 	end

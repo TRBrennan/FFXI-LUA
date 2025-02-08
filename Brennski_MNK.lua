@@ -38,7 +38,7 @@ function get_sets()
 		hands="Malignance Gloves",
 		ring1 = "Defending ring",
 		ring2 = "Shneddick Ring",
-		back = "Moonbeam Cape",
+		back="Null Shawl",
 		waist = "Moobow Belt",
 		legs="Malignance Tights",
 		feet = "Nyame Sollerets"
@@ -54,7 +54,7 @@ function get_sets()
 		hands="Malignance Gloves",
 		ring1 = "Defending ring",
 		ring2 = "Shneddick Ring",
-		back = "Moonbeam Cape",
+		back="Null Shawl",
 		waist = "Moobow Belt",
 		legs="Malignance Tights",
 		feet = "Malignance Boots"
@@ -79,7 +79,7 @@ function get_sets()
 		right_ear="Mache Earring +1",
 		left_ring="Gere Ring",
 		right_ring="Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		back="Null Shawl",
 	}
 
 	sets.TP.Hybrid ={
@@ -95,7 +95,7 @@ function get_sets()
 		right_ear="Mache Earring +1",
 		left_ring="Gere Ring",
 		right_ring="Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		back="Null Shawl",
 	
 	}
 
@@ -116,7 +116,7 @@ function get_sets()
 		right_ear="Mache Earring +1",
 		left_ring="Gere Ring",
 		right_ring="Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		back="Null Shawl",
 	}
 
 	sets.WS.SS = {
@@ -133,7 +133,7 @@ function get_sets()
 		right_ear="Mache Earring +1",
 		left_ring="Gere Ring",
 		right_ring="Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		back="Null Shawl",
 	}
 
 	sets.WS.AF = {
@@ -149,7 +149,7 @@ function get_sets()
 		right_ear="Mache Earring +1",
 		left_ring="Gere Ring",
 		right_ring="Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		back="Null Shawl",
 	}
 
 	sets.WS.RF = {
@@ -165,7 +165,7 @@ function get_sets()
 		right_ear="Mache Earring +1",
 		left_ring="Gere Ring",
 		right_ring="Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Damage taken-5%',}},
+		back="Null Shawl",
 	}
 
 	sets.WS.HF = {
@@ -260,8 +260,8 @@ function get_sets()
 		hands = "Regimens Mittens",
 		ring1 = "Chirich Ring +1",
 		ring2 = "Niqmaddu Ring",
-		back = "Moonbeam Cape",
-		waist = "Carrier's Sash",
+		back="Null Shawl",
+		waist = "Null Belt",
 		legs = "Herculean Trousers",
 		Feet = "Nyame Sollerets",
 	}
@@ -357,7 +357,7 @@ function get_sets()
 		right_ear = "Loquac. Earring",
 		left_ring = "Rahab Ring",
 		right_ring = "Defending Ring",
-		back = "Moonbeam Cape"
+		back="Null Shawl"
 	}
 end
 
