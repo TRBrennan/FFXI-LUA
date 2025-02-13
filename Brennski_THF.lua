@@ -32,7 +32,7 @@ function get_sets()
 
         sets.Idle.Standard = {
                 ammo = "Staunch Tathlum +1",
-				head="Malignance Chapeau",
+				head="Null Masque",
                  neck = "Warder's Charm +1",
                 ear1 = "Eabani Earring",
                 ear2 = "Infused Earring",
@@ -47,8 +47,6 @@ function get_sets()
         }
 
         sets.Idle.DT = {
-                main = "Terra's Staff",
-                sub = "Umbra strap",
                 --ammo = "Staunch Tathlum +1",
 				ammo = "Yamarang",
 				head="Malignance Chapeau",
@@ -101,8 +99,8 @@ function get_sets()
         --TP Sets--
         sets.TP = {}
 
-        sets.TP.index = {"Standard", "AccuracyMid", "AccuracyFull", "DT", "DTAccuracy", "TH", "THHybrid"}
-        --1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy, 6 = TH, 7 = TH Hybrid
+        sets.TP.index = {"Standard", "DTAccuracy", "THHybrid"}
+        --1=Standard, 2 = DTAccuracy, 3 = TH Hybrid
 
         TP_ind = 1
         sets.TP.Standard = {
@@ -121,54 +119,6 @@ function get_sets()
                 Feet = "Nyame Sollerets",
         }
 
-        sets.TP.AccuracyMid = {
-                ammo = "Yamarang",
-                head = "Dampening Tam",
-                neck = "Lissome necklace",
-                ear1 = "Sherida Earring",
-                ear2 = "Telos Earring",
-                body = "Gleti's Cuirass",
-                hands = "Adhemar Wristbands +1",
-                ring1 = "Gere Ring",
-                ring2 = "Epona's ring",
-                back="Null Shawl",
-                waist = "Windbuffet Belt +1",
-                legs = "Meg. Chausses +2",
-                Feet = "Nyame Sollerets",
-        }
-
-        sets.TP.AccuracyFull = {
-                ammo = "Yamarang",
-                head = "Adhemar Bonnet +1",
-                neck = "Lissome necklace",
-                ear1 = "Cessance Earring",
-                ear2 = "Telos Earring",
-                body = "Ashera Harness",
-                hands = "Adhemar Wristbands +1",
-                ring1 = "Cacoethic Ring",
-                ring2 = "Chirich Ring +1",
-                back="Null Shawl",
-                waist = "Sailfi Belt +1",
-                legs = "Carmine Cuisses +1",
-                Feet = "Nyame Sollerets",
-        }
-
-        sets.TP.DT = {
-                ammo = "Staunch Tathlum +1",
-				head="Malignance Chapeau",
-                neck = "Loricate Torque +1",
-                ear1 = "Eabani Earring",
-                ear2 = "Infused Earring",
-				body="Malignance Tabard",
-                hands = "Malignance Gloves",
-                ring1 = "Moonlight Ring",
-                ring2 = "Defending Ring",
-                back="Null Shawl",
-                waist = "Null Belt",
-				legs="Malignance Tights",
-				feet="Malignance Boots",
-        }
-
         sets.TP.DTAccuracy = {
                 ammo = "Yamarang",
 				head="Malignance Chapeau",
@@ -185,22 +135,6 @@ function get_sets()
 				feet="Malignance Boots",
         }
 
-        sets.TP.TH = {
-                ammo = "Yamarang",
-                head = "Adhemar Bonnet +1",
-                neck = "Lissome necklace",
-                ear1 = "Suppanomimi",
-                ear2 = "Telos Earring",
-                body = "Ashera Harness",
-                hands = "Plunderer's Armlets +1",
-                ring1 = "Gere Ring",
-                ring2 = "Epona's Ring",
-                back="Null Shawl",
-                waist = "Chaac Belt",
-                legs = "Samnuha Tights",
-                Feet = "Nyame Sollerets",
-				
-        }
 		
 		sets.TP.THHybrid = {
 		    ammo="Yamarang",
@@ -209,7 +143,7 @@ function get_sets()
 			hands = "Malignance Gloves",
 			legs="Malignance Tights",
 			feet="Malignance Boots",
-			neck = "Warder's Charm +1",
+			neck = "Lissome necklace",
 			waist="Chaac Belt",
 			left_ear="Eabani Earring",
 			right_ear="Telos Earring",

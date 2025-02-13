@@ -106,7 +106,7 @@ function get_sets()
 	--1=Standard,2=DT, 3=MDTtank, 4=Ongo --
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo = "Yamarang",
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head = "Adhemar Bonnet +1",
 		neck = "Lissome necklace",
 		left_ear = "Telos Earring",
@@ -210,7 +210,7 @@ function get_sets()
 	Resolution_ind = 1
 
 	sets.Resolution.Attack = {
-		ammo = "Seeth. Bomblet +1",
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head = "Adhemar Bonnet +1",
 		body="Ashera Harness",
 		hands = "Adhemar Wristbands +1",

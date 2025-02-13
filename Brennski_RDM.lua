@@ -100,7 +100,7 @@ function get_sets()
 
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo="Aurgelmir Orb +1",
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		--head="Malignance Chapeau",
 		head = "Bunzi's Hat",
 		body="Malignance Tabard",
@@ -118,7 +118,7 @@ function get_sets()
 
 	sets.TP.EnSpell = {
 		--ammo="Regal Gem",
-		ammo ="Aurgelmir Orb +1",
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 			--head="Malignance Chapeau",
 		head = "Bunzi's Hat",
 		body="Malignance Tabard",

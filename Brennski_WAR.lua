@@ -25,10 +25,12 @@ function get_sets()
 	--Weapon Sets--
 	
 	sets.Weapons = {}
-	sets.Weapons.index = {'Chango','NaeglingShield', 'LoxoticShield', 'ShiningOne','Ukon', 'Farsha', 'IkengaAxe', 'FarshaDWTP', 'SwordDWTP'}
+	sets.Weapons.index = {'Chango','Laphria','NaeglingShield', 'LoxoticShield', 'ShiningOne','Ukon', 'Farsha', 'IkengaAxe'}
 	Weapons_ind = 1
 	
 	sets.Weapons.Chango = {main ="Chango",sub="Utu Grip"}
+	
+	sets.Weapons.Laphria = {main = "Laphria",sub="Utu Grip"}
 
 	sets.Weapons.NaeglingShield = {main = "Naegling", sub ="Blurred Shield +1"}
 	
@@ -44,9 +46,6 @@ function get_sets()
 	
 	--sets.Weapons.Staff = {main ="Blurred Staff", sub="Utu Grip"}
 	
-	sets.Weapons.FarshaDWTP = { main ="Farsha", sub = "Renaud's Axe +2", augments={'TP Bonus +1000',}}
-	
-	sets.Weapons.SwordDWTP = { main ="Neagling", sub = "Renaud's Axe +2", augments={'TP Bonus +1000',}}
 	
 	--Idle Sets--
 	sets.Idle = {}
@@ -1302,7 +1301,9 @@ function precast(spell)
 			spell.english == "Full Break" or spell.name == "Armor Break" or spell.name == "Shield Break" or
 			spell.name == "Weapon Break" or	spell.name == "Leg Sweep" then
 			equip(sets.Break)
-			--send_command("@input /echo Break Set")		
+			--send_command("@input /echo Break Set")
+		elseif spell.english == "Disaster" then
+			equip(sets.KingsJusticeWSD)
 	---Great Sword Weapon Skills---
 		elseif spell.english == "Resolution" then
 			if spell.target.distance <= 5.6 then	
@@ -1611,16 +1612,16 @@ function self_command(command)
 		if player.equipment.main =="Chango" then
 			Weapons_ind = 1
 		elseif player.equipment.main == "Naegling" then
-			Weapons_ind = 2
-		elseif player.equipment.main == "Loxotic Mace +1" then
 			Weapons_ind = 3
-		elseif player.equipment.main == "Shining One" then
+		elseif player.equipment.main == "Loxotic Mace +1" then
 			Weapons_ind = 4
+		elseif player.equipment.main == "Shining One" then
+			Weapons_ind = 5
 			--send_command("@input /echo Weapon set to 4")
 		elseif player.equipment.main == "Ukonvasara" then
-			Weapons_ind = 5
+			Weapons_ind = 6
 		elseif player.equipment.main == "Ikenga's Axe" then
-			Weapons_ind = 7
+			Weapons_ind = 8
 		end
 	elseif command == "cycle WeaponSet" then
 		Weapons_ind = Weapons_ind + 1

@@ -517,7 +517,7 @@ function midcast(spell, act)
 		equip(set_combine(sets.Utility.Enmity, sets.Magic.Flash))
 	end
 	
-	if spells.english == "Foil" then 
+	if spell.english == "Foil" then 
 		equip(sets.Utility.Enmity)
 	end
 

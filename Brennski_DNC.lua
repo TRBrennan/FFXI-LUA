@@ -1,10 +1,22 @@
+text = require('texts')
+str = "Evis>SB>Rudra>Evis>Rudra/PK<>Cyclone/SB>PK>Evis>Rudra"
+display = text.new()
+display:text(str)
+display:font("Consolas")
+display:size(9)
+display:pos(430,480)
+display:show()
+
+waltz = S{'Curing Waltz', 'Curing Waltz II', 'Curing Waltz III', 'Curing Waltz IV', 'Curing Waltz V', 'Healing Waltz', 'Divine Waltz', 'Divine Waltz II'}
+
+jigs = S{'Spectral Jig', 'Chocobo Jig', 'Chocobo Jig II'}
+
+sambas = S{'Haste Samba', 'Drain Samba', 'Drain Samba II' , 'Drain Samba III', 'Aspir Samba', 'Aspir Samba II'}
+
+
 function get_sets()
         send_command("bind f9 gs c toggle TP set")
         send_command("bind f10 gs c toggle Idle set")
-        send_command("bind f11 gs c toggle CDC set")
-        send_command("bind f12 gs c toggle Req set")
-        send_command("bind !f12 gs c toggle Rea set")
-        send_command("bind ^` gs c toggle MB set")
 
         function file_unload()
                 send_command("unbind ^f9")
@@ -27,171 +39,97 @@ function get_sets()
         --Idle Sets--
         sets.Idle = {}
 
-        sets.Idle.index = {"Standard", "DT"}
+        sets.Idle.index = {"Standard", "Ami"}
         Idle_ind = 1
 
         sets.Idle.Standard = {
                 ammo = "Staunch Tathlum +1",
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
-                neck = "Sanctity Necklace",
+				head="Null Masque",
+                 neck = "Warder's Charm +1",
                 ear1 = "Eabani Earring",
                 ear2 = "Infused Earring",
                 body = "Ashera Harness",
-                hands = "Herculean gloves",
+                hands = "Malignance gloves",
                 ring1 = "Defending ring",
-                ring2 = "Chirich Ring +1",
+                ring2 = "Shneddick Ring",
                 back="Null Shawl",
                 waist = "Null Belt",
-                legs = "Mummu Kecks +2",
+                legs="Malignance Tights",
                 feet = "Turms Leggings +1"
         }
 
-        sets.Idle.DT = {
-                main = "Terra's Staff",
-                sub = "Umbra strap",
+        sets.Idle.Ami = {
                 ammo = "Staunch Tathlum +1",
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
-                neck = "Loricate Torque +1",
+				head="Null Masque",
+                neck = "Warder's Charm +1",
                 ear1 = "Eabani Earring",
                 ear2 = "Infused Earring",
-                body = "Ashera Harness",
-                hands = "Herculean gloves",
+                body = "Gleti's Cuirass",
+                hands = "Regal Gloves",
                 ring1 = "Defending ring",
-                ring2 = "Chirich Ring +1",
+                ring2 = "Shneddick Ring",
                 back="Null Shawl",
                 waist = "Null Belt",
-                legs = "Mummu Kecks +2",
-                Feet = "Nyame Sollerets",
+				legs="Gleti's Breeches",
+				feet="Gleti's Boots"
         }
 
         --TP Sets--
         sets.TP = {}
 
-        sets.TP.index = {"Standard", "AccuracyMid", "AccuracyFull", "DT", "DTAccuracy"}
-        --1=Standard, 2 = AccuracyMid, 3=AccuracyFull, 4=DT, 5=DTAccuracy,
+        sets.TP.index = {"Standard", "DTAccuracy"}
+        --1=Standard, 2=DTAccuracy,
 
         TP_ind = 1
         sets.TP.Standard = {
-                ammo = "Yamarang",
-                head = "Adhemar Bonnet +1",
-                neck = "Lissome necklace",
-                ear1 = "Sherida Earring",
-                ear2 = "Telos Earring",
-                body = "Ashera Harness",
-                hands = "Adhemar Wristbands +1",
-                ring1 = "Ilabrat Ring",
-                ring2 = "Epona's Ring",
-                back = "Canny Cape",
-                waist = "Windbuffet Belt +1",
-                legs = "Samnuha Tights",
-                Feet = "Nyame Sollerets",
-        }
-
-        sets.TP.AccuracyMid = {
-                ammo = "Yamarang",
-                head = "Dampening Tam",
-                neck = "Lissome necklace",
-                ear1 = "Sherida Earring",
-                ear2 = "Telos Earring",
-                body = "Ashera Harness",
-                hands = "Adhemar Wristbands +1",
-                ring1 = "Ilabrat Ring",
-                ring2 = "Epona's ring",
-                back = "Canny Cape",
-                waist = "Windbuffet Belt +1",
-                legs = "Meg. Chausses +2",
-                Feet = "Nyame Sollerets",
-        }
-
-        sets.TP.AccuracyFull = {
-                ammo = "Yamarang",
-                head = "Adhemar Bonnet +1",
-                neck = "Lissome necklace",
-                ear1 = "Cessance Earring",
-                ear2 = "Telos Earring",
-                body = "Ashera Harness",
-                hands = "Adhemar Wristbands +1",
-                ring1 = "Cacoethic Ring",
-                ring2 = "Chirich Ring +1",
-                back = "Canny Cape",
-                waist = "Sailfi Belt +1",
-                legs = "Carmine Cuisses +1",
-                Feet = "Nyame Sollerets",
-        }
-
-        sets.TP.DT = {
-                ammo = "Staunch Tathlum +1",
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
-                neck = "Loricate Torque +1",
-                ear1 = "Ethereal",
-                ear2 = "Eabani Earring",
-                body = "Ashera Harness",
-                hands = "Herculean Gloves",
-                ring1 = "Chirich Ring +1",
-                ring2 = "Ilabrat Ring",
-                back="Null Shawl",
-                waist = "Null Belt",
-                legs = "Mummu Kecks +2",
-                Feet = "Nyame Sollerets",
+			ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+			head="Maculele Tiara +3",
+			body={ name="Gleti's Cuirass", augments={'Path: A',}},
+			hands="Malignance Gloves",
+			legs={ name="Gleti's Breeches", augments={'Path: A',}},
+			feet="Maculele Toe Shoes +3",
+			neck="Lissome Necklace",
+			waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+			left_ear="Sherida Earring",
+			right_ear="Telos Earring",
+			left_ring="Moonlight Ring",
+			right_ring="Gere Ring",
+			back="Null Shawl"
         }
 
         sets.TP.DTAccuracy = {
-                ammo = "Yamarang",
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
-                neck = "Loricate Torque +1",
-                ear1 = "Suppanomimi",
-                ear2 = "Eabani Earring",
-                body = "Ashera Harness",
-                hands = "Herculean Gloves",
-                ring1 = "Dark ring",
-                ring2 = "Chirich Ring +1",
-                back = "Canny Cape",
-                waist = "Null Belt",
-                legs = "Mummu Kecks +2",
-                Feet = "Nyame Sollerets",
+			ammo="Coiste Bodhar",
+			head="Maculele Tiara +3",
+			neck="Etoile Gorget +2",
+			ear1="Sherida Earring",
+			ear2="Macu. Earring +2",
+			body="Malignance Tabard",
+			hands="Malignance Gloves",
+			ring1="Moonlight Ring",
+			ring2="Gere Ring",
+			back="Null Shawl",
+			waist="Sailfi Belt +1",
+			legs="Gleti's Breeches",
+			feet="Maculele Toe Shoes +3"
         }
 
         --Weaponskill Sets--
         sets.WS = {}
 
         sets.Rudras = {
-                ammo = "Yetshila +1",
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}
-                },
-                neck = "Rep. Plat. Medal",
-                ear1 = "Moonshade Earring",
-                ear2 = "Ishvara Earring",
-                body = {
-                        name = "Herculean Vest",
-                        augments = {"Accuracy+21 Attack+21", "Weapon skill damage +4%", "DEX+4", "Attack+5"}
-                },
-                hands = "Nyame Gauntlets",
-                ring1 = "Ilabrat Ring",
-                ring2 = "Regal Ring",
-                back = "Canny Cape",
-                waist = "Sailfi Belt +1",
-                legs = {
-                        name = "Herculean Trousers",
-                        augments = {"Accuracy+12 Attack+12", "Weapon skill damage +3%", "DEX+9", "Accuracy+13"}
-                },
-                feet = {
-                        name = "Herculean Boots",
-                        augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}
-                }
+			ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+			head="Maculele Tiara +3",
+			body={ name="Nyame Mail", augments={'Path: B',}},
+			hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+			legs={ name="Nyame Flanchard", augments={'Path: B',}},
+			feet={ name="Nyame Sollerets", augments={'Path: B',}},
+			neck="Rep. Plat. Medal",
+			waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+			left_ear="Ishvara Earring",
+			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			left_ring="Ephramad's Ring",
+			right_ring="Epaminondas's Ring",
+			back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
         }
 
         sets.Exenterator = {
@@ -204,139 +142,64 @@ function get_sets()
                 hands = "Adhemar Wristbands +1",
                 ring1 = "Ilabrat Ring",
                 ring2 = "Regal Ring",
-                back = "Canny Cape",
+                back = "Null Shawl",
                 waist = "Fotia belt",
                 legs = "Samnuha Tights",
                 Feet = "Nyame Sollerets",
         }
 
         sets.Evisceration = {
-                ammo = "Oshasha's Treatise",
-                head = "Adhemar Bonnet +1",
-                neck = "Fotia gorget",
-                ear1 = "Moonshade Earring",
-                ear2 = "Sherida Earring",
-                body = "Herculean Vest",
-                hands = "Adhemar Wristbands +1",
-                ring1 = "Ilabrat Ring",
-                ring2 = "Epaminondas's Ring",
-                back = "Canny Cape",
-                waist = "Fotia belt",
-                legs = "Samnuha Tights",
-                Feet = "Nyame Sollerets",
+			ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+			head={ name="Blistering Sallet +1", augments={'Path: A',}},
+			body={ name="Gleti's Cuirass", augments={'Path: A',}},
+			hands="Gleti's Gauntlets",
+			legs={ name="Gleti's Breeches", augments={'Path: A',}},
+			feet={ name="Nyame Sollerets", augments={'Path: B',}},
+			neck="Fotia Gorget",
+			waist="Fotia Belt",
+			left_ear="Sherida Earring",
+			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			left_ring="Hetairoi Ring",
+			right_ring="Gere Ring",
+			back="Null Shawl",
         }
 
         sets.SharkBite = {
-                ammo = "Oshasha's Treatise",
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+24 Attack+24", "Weapon skill damage +5%", "DEX+4"}
-                },
-                neck = "Rep. Plat. Medal",
-                ear1 = "Ishvara Earring",
-                ear2 = "Moonshade Earring",
-                body = "Herculean Vest",
-                hands = "Nyame Gauntlets",
-                ring1 = "Ilabrat Ring",
-                ring2 = "Regal Ring",
-                back = "Canny Cape",
-                waist = "Sailfi Belt +1",
-                legs = {
-                        name = "Herculean Trousers",
-                        augments = {"Accuracy+12 Attack+12", "Weapon skill damage +3%", "DEX+9", "Accuracy+13"}
-                },
-                feet = {
-                        name = "Herculean Boots",
-                        augments = {"Accuracy+22 Attack+22", "Weapon skill damage +4%", "STR+3", "Attack+8"}
-                }
+			ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+			head="Maculele Tiara +3",
+			body={ name="Nyame Mail", augments={'Path: B',}},
+			hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+			legs={ name="Nyame Flanchard", augments={'Path: B',}},
+			feet={ name="Nyame Sollerets", augments={'Path: B',}},
+			neck="Rep. Plat. Medal",
+			waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+			left_ear="Ishvara Earring",
+			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			left_ring="Ephramad's Ring",
+			right_ring="Epaminondas's Ring",
+			back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
         }
 
         sets.AeolianEdge = {
-                head = {
-                        name = "Herculean Helm",
-                        augments = {
-                                'Mag. Acc.+20 "Mag.Atk.Bns."+20',
-                                '"Dbl.Atk."+2',
-                                "Mag. Acc.+12",
-                                '"Mag.Atk.Bns."+4'
-                        }
-                },
-                neck = "Sanctity Necklace",
-                ear2 = "Friomisi earring",
-                ear1 = "Moonshade Earring",
-                body = "Samnuha Coat",
-                hands = "Nyame Gauntlets",
-                ring1 = "Acumen Ring",
-                ring2 = "Dingir Ring",
-                waist = "Chaac Belt",
-                back = "Belenus's Cape",
-                legs = {
-                        name = "Herculean Trousers",
-                        augments = {
-                                'Mag. Acc.+16 "Mag.Atk.Bns."+16',
-                                "Weapon skill damage +2%",
-                                "Mag. Acc.+14",
-                                '"Mag.Atk.Bns."+13'
-                        }
-                },
-                feet = {
-                        name = "Herculean Boots",
-                        augments = {
-                                '"Mag.Atk.Bns."+27',
-                                "Weapon skill damage +4%",
-                                "Quadruple Attack +1",
-                                'Mag. Acc.+14 "Mag.Atk.Bns."+14'
-                        }
-                }
+            ammo="Seething bomblet +1",
+			head="Nyame Helm",
+			body="Nyame Mail",
+			hands="Nyame Gauntlets",
+			legs="Nyame Flanchard",
+			feet="Nyame Sollerets",
+			neck="Sanctity Necklace",
+			waist="Orpheus's Sash",
+			left_ear="Friomisi Earring",
+			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			left_ring="Acumen Ring",
+			right_ring="Dingir Ring",
+			back="Sacro Mantle",
         }
 
         --Ninja Magic Sets--
         sets.NINMagic = {}
-
-        sets.NINMagic.Nuke = {
-                head = {
-                        name = "Herculean Helm",
-                        augments = {
-                                'Mag. Acc.+20 "Mag.Atk.Bns."+20',
-                                '"Dbl.Atk."+2',
-                                "Mag. Acc.+12",
-                                '"Mag.Atk.Bns."+4'
-                        }
-                },
-                neck = "Sanctity Necklace",
-                ear2 = "Friomisi earring",
-                ear1 = "Hecate's Earring",
-                body = "Samnuha Coat",
-                hands = "Leyline Gloves",
-                ring1 = "Shiva Ring",
-                ring2 = "Acumen Ring",
-                waist = "Eschan Stone",
-                back = "Gunslinger's Cape",
-                legs = {
-                        name = "Herculean Trousers",
-                        augments = {
-                                'Mag. Acc.+16 "Mag.Atk.Bns."+16',
-                                "Weapon skill damage +2%",
-                                "Mag. Acc.+14",
-                                '"Mag.Atk.Bns."+13'
-                        }
-                },
-                feet = {
-                        name = "Herculean Boots",
-                        augments = {
-                                '"Mag.Atk.Bns."+27',
-                                "Weapon skill damage +4%",
-                                "Quadruple Attack +1",
-                                'Mag. Acc.+14 "Mag.Atk.Bns."+14'
-                        }
-                }
-        }
-
         sets.NINMagic.Utsusemi = {
-                head = {
-                        name = "Herculean Helm",
-                        augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}
-                },
+                head = "Null Masque",
                 neck = "Loricate Torque",
                 ar1 = "Brutal Earring",
                 ear2 = "Cessance Earring",
@@ -392,19 +255,20 @@ function get_sets()
         }
 
         sets.Utility.Steps = {
-                ammo = "Falcon Eye",
-                head = "Adhemar Bonnet +1",
-                body = "Gleti's Cuirass",
-                hands = "Rawhide Gloves",
-                legs == "Samnuha Tights",
-                feet="Nyame Sollerets",
-                neck = "Subtlety Spec.",
-                waist = "Chaac Belt",
-                left_ear = "Heartseeker Earring",
-                right_ear = "Dignitary's Earring",
-                left_ring = "Yacuruna Ring",
-                right_ring = "Epona's Ring",
-                back = "Canny Cape"
+		
+			ammo="Yamarang",
+			head="Malignance Chapeau",
+			body={ name="Gleti's Cuirass", augments={'Path: A',}},
+			hands="Maxixi Bangles +2",
+			legs={ name="Gleti's Breeches", augments={'Path: A',}},
+			feet="Horos T. Shoes +2",
+			neck="Lissome Necklace",
+			waist="Eschan Stone",
+			left_ear="Crep Earring",
+			right_ear="Telos Earring",
+			left_ring="Moonlight Ring",
+			right_ring="Chirich Ring +1",
+			back="Null Shawl"
         }
 
         sets.Utility.PDT = {
@@ -440,6 +304,20 @@ function get_sets()
         --Job Ability Sets--
 
         sets.JA = {}
+		
+		sets.JA.Waltz = {ammo="Yamarang", body ="Maxixi Casaque +2",back ="Toetapper Mantle", ring2 = "Metamor. Ring +1",}
+		
+		sets.JA.Jigs = { back = "Senuna's Mantle", legs ="Horos Tights +2" }
+		
+		sets.JA.RF = {back ="Toetapper Mantle", hands = "Macu. Bangles +1"}
+		
+		sets.JA.VF = {}
+		
+		sets.JA.Samba = {head = "Maxixi Tiara +1"}
+		
+		sets.JA.FeatherStep ={feet = "Maculele Toe Shoes +3"}
+		
+		sets.JA.Trance = {head = "Horos Tiara +1"}
 
         --Precast Sets--
         sets.precast = {}
@@ -479,10 +357,24 @@ function precast(spell)
                 if spell.element == world.day_element or spell.element == world.weather_element then
                         equip(sets.Utility.Weather)
                 end
-        elseif spell.english == "Aeolian Edge" then
+        elseif spell.english == "Aeolian Edge" or spell.english == "Cyclone" then
                 equip(sets.AeolianEdge)
-        elseif spell.english == "Box Step" then
+        elseif spell.english == "Box Step" or spell.english == "Quick Step" or spell.english == "Shutter Step" then
                 equip(sets.Utility.Steps)
+		elseif spell.english == "Feather Step" then
+				equip(set_combine(sets.Utility.Steps, sets.JA.FeatherStep))
+		elseif jigs:contains(spell.english) then
+				equip(sets.JA.Jigs)
+		elseif sambas:contains(spell.english) then
+				equip(sets.JA.Samba)
+		elseif waltz:contains(spell.english) then
+				equip(sets.JA.Waltz)
+		elseif spell.english == "Reverse Flourish" then
+			equip(sets.JA.RF)
+		elseif spell.english == "Violent Flourish" then
+			equip(sets.JA.VF)
+		elseif spell.english == 'Trance' then
+			equip(sets.JA.Trance)
         elseif spell.english == "Flash Nova" then
                 equip(sets.FlashNova)
                 if spell.element == world.day_element or spell.element == world.weather_element then
