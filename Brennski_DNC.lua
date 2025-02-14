@@ -297,6 +297,8 @@ function get_sets()
                 feet = "Luhlaza charuqs"
         }
 
+		sets.Utility.TH ={waist = "Chaac Belt", Legs = "Volte Hose", feet = "Volte Boots", Hands = "Volte Bracers"}
+		
         sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
 
         sets.Utility.Sleeping = {neck = "Opo-Opo Necklace"}
@@ -312,6 +314,8 @@ function get_sets()
 		sets.JA.RF = {back ="Toetapper Mantle", hands = "Macu. Bangles +1"}
 		
 		sets.JA.VF = {}
+		
+		sets.JA.AF = {}
 		
 		sets.JA.Samba = {head = "Maxixi Tiara +1"}
 		
@@ -373,6 +377,8 @@ function precast(spell)
 			equip(sets.JA.RF)
 		elseif spell.english == "Violent Flourish" then
 			equip(sets.JA.VF)
+		elseif spell.english == "Animated Flourish" then
+			equip(set_combine(sets.JA.AF, sets.Utility.TH))
 		elseif spell.english == 'Trance' then
 			equip(sets.JA.Trance)
         elseif spell.english == "Flash Nova" then
@@ -401,6 +407,9 @@ function midcast(spell, act)
         elseif spell.english == "Utsusemi: Ni" or spell.english == "Utsusemi: San" then
                 equip(sets.NINMagic.Utsusemi)
         end
+		if spell.english == 'Ranged' then
+			equip(sets.Utility.TH)
+		end
 end
 
 function aftercast(spell)
