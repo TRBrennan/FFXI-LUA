@@ -48,7 +48,7 @@ function get_sets()
                  neck = "Warder's Charm +1",
                 ear1 = "Eabani Earring",
                 ear2 = "Infused Earring",
-                body = "Ashera Harness",
+                body = "Malignance Tabard",
                 hands = "Malignance gloves",
                 ring1 = "Defending ring",
                 ring2 = "Shneddick Ring",
@@ -88,7 +88,7 @@ function get_sets()
 			hands="Malignance Gloves",
 			legs={ name="Gleti's Breeches", augments={'Path: A',}},
 			feet="Maculele Toe Shoes +3",
-			neck="Lissome Necklace",
+			neck="Etoile Gorget +2",
 			waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 			left_ear="Sherida Earring",
 			right_ear="Telos Earring",
@@ -123,7 +123,7 @@ function get_sets()
 			hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 			legs={ name="Nyame Flanchard", augments={'Path: B',}},
 			feet={ name="Nyame Sollerets", augments={'Path: B',}},
-			neck="Rep. Plat. Medal",
+			neck="Etoile Gorget +2",
 			waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 			left_ear="Ishvara Earring",
 			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -171,7 +171,7 @@ function get_sets()
 			hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 			legs={ name="Nyame Flanchard", augments={'Path: B',}},
 			feet={ name="Nyame Sollerets", augments={'Path: B',}},
-			neck="Rep. Plat. Medal",
+			neck="Etoile Gorget +2",
 			waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 			left_ear="Ishvara Earring",
 			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -192,7 +192,7 @@ function get_sets()
 			left_ear="Friomisi Earring",
 			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 			left_ring="Acumen Ring",
-			right_ring="Dingir Ring",
+			right_ring="Ephramad's Ring",
 			back="Sacro Mantle",
         }
 
@@ -307,15 +307,45 @@ function get_sets()
 
         sets.JA = {}
 		
-		sets.JA.Waltz = {ammo="Yamarang", body ="Maxixi Casaque +2",back ="Toetapper Mantle", ring2 = "Metamor. Ring +1",}
+		sets.JA.Waltz = {ammo="Yamarang", body ="Maxixi Casaque +2",back ="Toetapper Mantle", neck="Etoile Gorget +2", ring2 = "Metamor. Ring +1",}
 		
 		sets.JA.Jigs = { back = "Senuna's Mantle", legs ="Horos Tights +2" }
 		
 		sets.JA.RF = {back ="Toetapper Mantle", hands = "Macu. Bangles +1"}
 		
-		sets.JA.VF = {}
+		sets.JA.VF = {    
+			ammo="Yamarang",
+			head="Malignance Chapeau",
+			body={ name="Horos Casaque +2", augments={'Enhances "No Foot Rise" effect',}},
+			hands="Malignance Gloves",
+			legs="Malignance Tights",
+			feet="Malignance Boots",
+			neck="Null Loop",
+			waist="Null Belt",
+			left_ear="Digni. Earring",
+			right_ear="Crep. Earring",
+			left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+			right_ring="Stikini Ring +1",
+			back="Null Shawl",
+		}
 		
-		sets.JA.AF = {}
+		sets.JA.NoFootRise = {body = "Horos Casaque +2"}
+		
+		sets.JA.AF = {
+			ammo="Sapience Orb",
+			head="Halitus Helm",
+			body={ name="Emet Harness +1", augments={'Path: A',}},
+			hands="Kurys Gloves",
+			legs={ name="Nyame Flanchard", augments={'Path: B',}},
+			feet={ name="Nyame Sollerets", augments={'Path: B',}},
+			neck="Warder's Charm +1",
+			waist="Trance Belt",
+			left_ear="Trux Earring",
+			right_ear="Friomisi Earring",
+			left_ring="Supershear Ring",
+			right_ring="Petrov Ring",
+			back="Moonbeam Cape",
+		}
 		
 		sets.JA.Samba = {head = "Maxixi Tiara +1"}
 		
@@ -354,7 +384,7 @@ function precast(spell)
                 equip(sets.Evisceration)
         elseif spell.english == "Shark Bite" then
                 equip(sets.SharkBite)
-        elseif spell.english == "Rudra's Storm" then
+        elseif spell.english == "Rudra's Storm" or spell.english == "Pyrrhic Kleos" then
                 equip(sets.Rudras)
         elseif spell.english == "Sanguine Blade" then
                 equip(sets.BlueMagic.Dark)
@@ -381,6 +411,8 @@ function precast(spell)
 			equip(set_combine(sets.JA.AF, sets.Utility.TH))
 		elseif spell.english == 'Trance' then
 			equip(sets.JA.Trance)
+		elseif spell.english == "No Foot Rise" then
+			equip(sets.JA.NoFootRise)
         elseif spell.english == "Flash Nova" then
                 equip(sets.FlashNova)
                 if spell.element == world.day_element or spell.element == world.weather_element then

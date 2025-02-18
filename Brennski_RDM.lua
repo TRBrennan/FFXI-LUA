@@ -104,7 +104,7 @@ function get_sets()
 		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head = "Bunzi's Hat",
 		body="Malignance Tabard",
-		hands="Malignance Gloves",
+		hands="Bunzi's Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
 		neck="Lissome Necklace",
@@ -135,7 +135,6 @@ function get_sets()
 	
 	sets.TP.SubtleBlow = {
 		ammo ="Aurgelmir Orb +1",
-			--head="Malignance Chapeau",
 		head = "Bunzi's Hat",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
@@ -154,7 +153,7 @@ function get_sets()
 		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head = "Bunzi's Hat",
 		body="Malignance Tabard",
-		hands="Malignance Gloves",
+		hands="Bunzi's Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
 		neck="Lissome Necklace",
@@ -164,9 +163,7 @@ function get_sets()
 		left_ring="Hetairoi Ring",
 		right_ring="Chirich Ring +1",
 		back="Null Shawl",
-	
 	}
-
 
 	sets.MeleeMode = {}
 	sets.MeleeMode.Index = {"NotMelee", "Melee"}
@@ -269,7 +266,7 @@ function get_sets()
 		neck="Incanter's Torque",
 		waist="Olympus Sash",
 		left_ear="Mimir Earring",
-		right_ear = "Leth. Earring +1",
+		right_ear = "Leth. Earring +3",
 		right_ring="Stikini ring +1",
 		left_ring="Stikini Ring +1",
 		back = "Ghostfyre Cape",
