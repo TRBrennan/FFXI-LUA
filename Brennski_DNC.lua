@@ -141,7 +141,7 @@ function get_sets()
                 body = "Herculean Vest",
                 hands = "Adhemar Wristbands +1",
                 ring1 = "Ilabrat Ring",
-                ring2 = "Regal Ring",
+                ring2 = "Ephramad's Ring",
                 back = "Null Shawl",
                 waist = "Fotia belt",
                 legs = "Samnuha Tights",

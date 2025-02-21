@@ -30,39 +30,39 @@ function get_sets()
 
 	sets.Idle.Standard = {
 		ammo ="Aurgelmir Orb +1",
-		head="Malignance Chapeau",
+		head="Null Masque",
 		neck = "Sanctity Necklace",
 		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
-		body = "Ashera Harness",
+		body = "Malignance Tabard",
 		hands="Malignance Gloves",
 		ring1 = "Defending ring",
 		ring2 = "Shneddick Ring",
 		back="Null Shawl",
-		waist = "Moobow Belt",
+		waist = "Carrier's Sash",
 		legs="Malignance Tights",
 		feet = "Nyame Sollerets"
 	}
 
 	sets.Idle.DT = {
 		ammo = "Staunch Tathlum +1",
-		head="Malignance Chapeau",
-		neck = "Loricate Torque +1",
+		head="Null Masque",
+		neck = "Warder's Charm +1",
 		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
-		body = "Ashera Harness",
+		body = "Maligannce Tabard",
 		hands="Malignance Gloves",
 		ring1 = "Defending ring",
 		ring2 = "Shneddick Ring",
 		back="Null Shawl",
-		waist = "Moobow Belt",
+		waist = "Null Belt",
 		legs="Malignance Tights",
 		feet = "Malignance Boots"
 	}
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard","Hybrid"}
+	sets.TP.index = {"Standard","Hybrid", "DT"}
 	--1=Standard, 2==Hybrid --
 
 	TP_ind = 1
@@ -98,16 +98,32 @@ function get_sets()
 		back="Null Shawl",
 	
 	}
+	
+	sets.TP.DT = {
+	    ammo="Coiste Bodhar",
+		head="Bhikku Crown +2",
+		neck="Mnk. Nodowa +1",
+		ear1="Schere Earring",
+		ear2="Sherida Earring",
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands="Mpaca's Gloves",
+		ring1="Niqmaddu Ring",
+		ring2="Gere Ring",
+		back="Null Shawl",
+		waist="Moonbow Belt",
+		legs="Bhikku Hose +2",
+		--feet="Mpaca's Boots"
+		feet="Nyame Sollerets"	
+	}
 
 	--Weaponskill Sets--
 	sets.WS = {}
 
 	sets.WS.VS = {
-		ammo = "Coiste Bodhar",
-		ammo="Aurgelmir Orb +1",
-		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head={ name="Blistering Sallet +1", augments={'Path: A',}},
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
-		hands={ name="Adhemar Wrist. +1", augments={'Accuracy+20','Attack+20','"Subtle Blow"+8',}},
+		hands="Mpaca's Gloves",
 		legs={ name="Mpaca's Hose", augments={'Path: A',}},
 		feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
 		neck="Fotia Gorget",
@@ -140,7 +156,7 @@ function get_sets()
 		ammo="Aurgelmir Orb +1",
 		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
-		hands={ name="Adhemar Wrist. +1", augments={'Accuracy+20','Attack+20','"Subtle Blow"+8',}},
+		hands="Mpaca's Gloves",
 		legs = "Mpaca's Hose",
 		feet="Nyame Sollerets",
 		neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
@@ -156,7 +172,7 @@ function get_sets()
 		ammo="Aurgelmir Orb +1",
 		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
-		hands={ name="Adhemar Wrist. +1", augments={'Accuracy+20','Attack+20','"Subtle Blow"+8',}},
+		hands="Mpaca's Gloves",
 		legs = "Mpaca's Hose",
 		feet="Nyame Sollerets",
 		neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
@@ -170,34 +186,33 @@ function get_sets()
 
 	sets.WS.HF = {
 		ammo = "Knobkierrie",
-		head = "Adhemar Bonnet +1",
-		body={ name="Mpaca's Doublet", augments={'Path: A',}},
-		hands = "Adhemar Wristbands +1",
+		head = "Mpaca's Cap",
+		body="Nyame Mail",
+		hands = "Nyame Gauntlets",
 		legs = "Mpaca's Hose",
 		feet="Nyame Sollerets",
 		neck = "Mnk. Nodowa +1",
 		waist = "Moonbow Belt",
-		left_ear = "Sherida Earring",
+		left_ear = "Schere Earring",
 		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
-		left_ring = "Regal Ring",
-		right_ring = "Niqmaddu Ring",
+		left_ring="Ephramad's Ring",
+		right_ring="Epaminondas's Ring",
 		back = {name = "Segomo's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "Weapon skill damage +10%"}}
 	}
 
 	sets.WS.TK = {
-		main="Godhands",
-		ammo="Aurgelmir Orb +1",
-		head={ name="Mpaca's Cap", augments={'Path: A',}},
-		body={ name="Mpaca's Doublet", augments={'Path: A',}},
-		hands={ name="Adhemar Wrist. +1", augments={'Accuracy+20','Attack+20','"Subtle Blow"+8',}},
-		legs={ name="Mpaca's Hose", augments={'Path: A',}},
+		ammo = "Knobkierrie",
+		head = "Mpaca's Cap",
+		body="Nyame Mail",
+		hands = "Nyame Gauntlets",
+		legs = "Mpaca's Hose",
 		feet="Anch. Gaiters +3",
-		neck="Fotia Gorget",
-		waist="Moonbow Belt",
-		left_ear="Sherida Earring",
-		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-		left_ring="Gere Ring",
-		right_ring="Niqmaddu Ring",
+		neck = "Mnk. Nodowa +1",
+		waist = "Moonbow Belt",
+		left_ear = "Schere Earring",
+		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
+		left_ring="Ephramad's Ring",
+		right_ring="Epaminondas's Ring",
 		back = {name = "Segomo's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "Weapon skill damage +10%"}}
 	}
 	

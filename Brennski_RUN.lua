@@ -46,7 +46,7 @@ function get_sets()
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Fucho-no-obi",
 		legs = "Erilaz Leg Guards +3",
-		feet = {name = "Herculean Boots", augments = {"CHR+6", "STR+14", '"Refresh"+1', 'Mag. Acc.+14 "Mag.Atk.Bns."+14'}}
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
 	sets.Idle.DT = {

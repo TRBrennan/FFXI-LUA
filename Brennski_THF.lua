@@ -36,7 +36,7 @@ function get_sets()
                  neck = "Warder's Charm +1",
                 ear1 = "Eabani Earring",
                 ear2 = "Infused Earring",
-                body = "Ashera Harness",
+                body = "Malignance Tabard",
                 hands = "Malignance gloves",
                 ring1 = "Defending ring",
                 ring2 = "Shneddick Ring",

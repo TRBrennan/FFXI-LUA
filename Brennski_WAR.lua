@@ -801,7 +801,6 @@ function get_sets()
 		waist = "Sailfi Belt +1",
 		legs = WSD_Legs,
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		--feet="Sakpata's Leggings",
 	}
 
 	sets.BH = {
@@ -998,7 +997,7 @@ function get_sets()
 
 	sets.ID = {
 		ammo = "Yetshila +1",
-		head = {name = "Agoge Mask +3", augments = {'Enhances "Savagery" effect'}},
+		head={ name="Blistering Sallet +1", augments={'Path: A',}},
 		body= "Hjarrandi Breast.",
 		hands = "Flam. Manopolas +2",
 		--legs = WSD_Legs,
@@ -1010,8 +1009,25 @@ function get_sets()
 		ear1 = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
 		left_ring = "Niqmaddu Ring",
 		right_ring="Epaminondas's Ring",
-		back = {name = "Cichol's Mantle",augments = {"STR+20", "Accuracy+20 Attack+20", "STR+10", '"Dbl.Atk."+10', "Phys. dmg. taken-10%"}}
+		back = DA_Back,
 	}
+	
+	sets.IDHigh = {
+		ammo = "Yetshila +1",
+		head={ name="Blistering Sallet +1", augments={'Path: A',}},
+		body= "Sakpata Breastplate",
+		hands = "Boii Mufflers +3",
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet="Boii Calligae +3",
+		neck = "War. Beads +2",
+		waist = "Sailfi Belt +1",
+		ear2= "Boii Earring +1",
+		ear1 = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
+		left_ring = "Niqmaddu Ring",
+		right_ring="Ephramad's Ring",
+		back = STR_Back
+	}
+	
 
 	sets.ResoWSD = {
 		ammo = "Knobkierrie",
@@ -1041,7 +1057,7 @@ function get_sets()
 		left_ear="Thrud Earring",
 		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 		left_ring="Epaminondas's Ring",
-		right_ring="Regal Ring",
+		right_ring="Ephramad's Ring",
 		back=STR_Back,
 		}
 	
@@ -1252,7 +1268,8 @@ function precast(spell)
 				CurrentTP = player.tp + TPBonus
 				send_command("@input /echo TP Bonus " .. TPBonus .. " CurrentTP " .. CurrentTP)
 				if CurrentTP > 1500 then
-					equip(sets.UpheavalWSD)
+					--equip(sets.UpheavalWSD)
+					equip(sets.IDHigh)
 					if buffactive['Mighty Strikes'] then
 						equip(sets.WSMS)
 					end

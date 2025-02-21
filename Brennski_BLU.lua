@@ -64,12 +64,13 @@ function get_sets()
         ear1 = "Eabani Earring",
         ear2 = "Infused Earring",
         body = "Hashishin Mintan +2",
-        hands = { name = "Herculean Gloves",augments = {'DEX+9', 'Magic dmg. taken -3%', '"Refresh"+1',}},
+        --hands = { name = "Herculean Gloves",augments = {'DEX+9', 'Magic dmg. taken -3%', '"Refresh"+1',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
         ring1 = "Defending ring",
         ring2 = "Shneddick Ring",
-        waist = "Null Belt",
-        legs = "Nyame Flanchard",
-        feet = {name = "Herculean Boots",augments = {'CHR+6','STR+14','"Refresh"+1','Mag. Acc.+14 "Mag.Atk.Bns."+14',}},
+		waist = "Null Belt",
+        legs = "Gleti's Breeches",
+        feet="Malignance Boots",
         back="Null Shawl"
     }
 
