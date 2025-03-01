@@ -71,7 +71,7 @@ function get_sets()
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		ring1 = "Defending ring",
 		ring2 = "Shneddick Ring",
-		waist = "Fucho-no-obi",
+		waist = "Null Belt",
 		legs = "Nyame Flanchard",
 		feet = "Malignance Boots",
 		back="Null Shawl"
@@ -84,8 +84,8 @@ function get_sets()
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck={ name="Loricate Torque +1", augments={'Path: A',}},
-		waist="Carrier's Sash",
+		neck = "Warder's Charm +1",
+		waist="Null belt",
 		left_ear="Etiolation Earring",
 		right_ear="Infused Earring",
 		left_ring="Defending Ring",
@@ -718,12 +718,11 @@ function get_sets()
 	}
 
 	sets.WS.Savage = {
-		ammo = "Oshasha's Treatise",
+		ammo = "Crepuscular Pebble",
 		head = "Nyame Helm",
-		neck = "Rep. Plat. Medal",
+		neck = "Dls. Torque +2",
 		ear1 = "Ishvara Earring",
 		ear2 = "Moonshade Earring",
-		--body = "Vitiation tabard +3",
 		body="Nyame Mail",
 		hands = "Nyame Gauntlets",
 		ring1 ="Epaminondas's Ring",
@@ -731,17 +730,16 @@ function get_sets()
 		back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 		waist = "Sailfi Belt +1",
 		legs="Nyame Flanchard",
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		feet="Lethargy Houseaux +3",
 	}
 	
 	sets.WS.Sang ={
 		ammo = "Pemphredo Tathlum",
 		head = "Pixie Hairpin +1",
-		neck = "Duelist's torque +2",
+		neck = "Sibyl Scarf",
 		ear2 = "Malignance Earring",
 		ear1 = "Regal Earring",
-		--body = { name = "Merlinic Jubbah", augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
-		body="Nyame Mail",
+		body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
 		ring1 = "Evanescence Ring",
 		ring2 = "Freke Ring",
@@ -756,7 +754,7 @@ function get_sets()
 	sets.WS.Light ={
 		ammo = "Pemphredo Tathlum",
 		head="Nyame Helm",
-		neck = "Duelist's torque +2",
+		neck = "Sibyl Scarf",
 		ear2 = "Regal Earring",
 		ear1 = "Moonshade Earring",
 		body="Nyame Mail",
@@ -767,10 +765,10 @@ function get_sets()
 		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
 		legs="Nyame Flanchard",
 		feet="Lethargy Houseaux +3",
-		--feet={ name="Chironic Slippers", augments={'Attack+13','"Mag.Atk.Bns."+5','Weapon skill damage +7%','Accuracy+18 Attack+18','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
 	}
 	
 	sets.WS.Hybrid ={
+		ammo = "Pemphredo Tathlum",
 	    head="Nyame Helm",
 		body="Nyame Mail",
 		hands="Nyame Gauntlets",

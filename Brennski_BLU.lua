@@ -252,7 +252,7 @@ function get_sets()
     Requiescat_ind = 1
 
     sets.Requiescat.Attack = {
-        ammo = "Oshasha's Treatise",
+        ammo = "Coiste Bodhar",
         head = "Carmine Mask +1",
         neck = "Fotia gorget",
         ear1 = "Telos Earring",
@@ -273,7 +273,7 @@ function get_sets()
     SavageBlade_ind = 1
 
     sets.SavageBlade.Attack = {
-        ammo = "Oshasha's Treatise",
+        ammo = "Coiste Bodhar",
 		Head = "Nyame Helm",
         neck = "Mirage Stole +2",
         ear1 = "Ishvara Earring",
@@ -294,7 +294,7 @@ function get_sets()
     ChantDuCygne_ind = 1
 
     sets.ChantDuCygne.Attack = {
-        ammo = "Oshasha's Treatise",
+        ammo = "Coiste Bodhar",
         head = "Adhemar Bonnet +1",
         neck = "Mirage Stole +2",
         ear2 = "Moonshade Earring",
@@ -326,7 +326,7 @@ function get_sets()
     }
 
     sets.CircleBlade = {
-        ammo = "Oshasha's Treatise",
+        ammo = "Coiste Bodhar",
 		Head = "Nyame Helm",
         neck = "Mirage Stole +2",
         ear1 = "Moonshade Earring",
@@ -342,7 +342,7 @@ function get_sets()
 	}
 
     sets.Expiacion = {
-        ammo = "Oshasha's Treatise",
+        ammo = "Coiste Bodhar",
 		Head = "Nyame Helm",
         neck = "Mirage Stole +2",
         ear1 = "Moonshade Earring",
@@ -363,7 +363,7 @@ function get_sets()
     Realmrazer_ind = 1
 
     sets.Realmrazer.Attack = {
-        ammo = "Oshasha's Treatise",
+        ammo = "Coiste Bodhar",
         head = "Dampening Tam",
         neck = "Fotia gorget",
         ear1 = "Brutal Earring",

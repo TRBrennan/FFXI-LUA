@@ -31,19 +31,19 @@ function get_sets()
         Idle_ind = 1
 
         sets.Idle.Standard = {
-                ammo = "Staunch Tathlum +1",
-				head="Null Masque",
-                 neck = "Warder's Charm +1",
-                ear1 = "Eabani Earring",
-                ear2 = "Infused Earring",
-                body = "Malignance Tabard",
-                hands = "Malignance gloves",
-                ring1 = "Defending ring",
-                ring2 = "Shneddick Ring",
-                back="Null Shawl",
-                waist = "Null Belt",
-                legs="Malignance Tights",
-                feet = "Turms Leggings +1"
+			ammo="Staunch Tathlum +1",
+			head="Turms Cap +1",
+			body="Adamantite Armor",
+			hands="Malignance Gloves",
+			legs={ name="Nyame Flanchard", augments={'Path: B',}},
+			feet={ name="Nyame Sollerets", augments={'Path: B',}},
+			neck="Warder's Charm +1",
+			waist="Null Belt",
+			left_ear="Eabani Earring",
+			right_ear="Infused Earring",
+			left_ring="Defending Ring",
+			right_ring="Shneddick Ring",
+			back="Null Shawl",
         }
 
         sets.Idle.DT = {
@@ -171,7 +171,7 @@ function get_sets()
         }
 
         sets.Exenterator = {
-                ammo = "Oshasha's Treatise",
+                ammo = "Coiste Bodhar",
                 head = "Adhemar Bonnet +1",
                 neck = "Fotia gorget",
                 ear2 = "Moonshade Earring",
@@ -203,7 +203,7 @@ function get_sets()
 	}
 
         sets.SharkBite = {
-                ammo = "Oshasha's Treatise",
+                ammo = "Coiste Bodhar",
                 head = "Nyame Helm",
                 neck = "Rep. Plat. Medal",
                 ear1 = "Ishvara Earring",

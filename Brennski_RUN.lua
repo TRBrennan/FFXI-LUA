@@ -71,7 +71,7 @@ function get_sets()
 		neck = "Futhark Torque +2",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Erilaz Earring +1",
-		body = "Nyame Mail",
+		body="Adamantite Armor",
 		hands = "Regal Gauntlets",
 		left_ring = "Shneddick Ring",
 		right_ring = "Defending Ring",

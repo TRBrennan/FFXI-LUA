@@ -146,7 +146,7 @@ function get_sets()
 	Requiescat_ind = 1
 
 	sets.Requiescat.Attack = {
-		ammo = "Oshasha's Treatise",
+		ammo = "Coiste Bodhar",
 		neck = "Fotia Gorget",
 		ear2 = "Moondshade earring",
 		ear1 = "Telos Earring",
@@ -167,7 +167,7 @@ function get_sets()
 	SavageBlade_ind = 1
 
 	sets.SavageBlade.Attack = {
-		ammo="Oshasha's Treatise",
+		ammo="Coiste Bodhar",
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -188,7 +188,7 @@ function get_sets()
 	ChantDuCygne_ind = 1
 
 	sets.ChantDuCygne.Attack = {
-		ammo = "Oshasha's Treatise",
+		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
 		ear1 = "Telos Earring",
@@ -205,7 +205,7 @@ function get_sets()
 
 
 	sets.WS.SanguineBlade = {
-		ammo = "Oshasha's Treatise",
+		ammo = "Coiste Bodhar",
 		head = "Pixie Hairpin +1",
 		neck = "Sanctity Necklace",
 		rear = "Friomisi earring",
@@ -213,7 +213,7 @@ function get_sets()
 		body = "Nyame Mail",
 		hands = "Nyame Gauntlets",
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
-		 right_ring	=	"Archon Ring",
+		right_ring	=	"Archon Ring",
 		waist = "Eschan Stone",
 		back="Null Shawl",
 		legs = "Nyame Flanchard",

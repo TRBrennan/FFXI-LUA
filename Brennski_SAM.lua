@@ -34,13 +34,13 @@ function get_sets()
 	--Idle Sets--
 	sets.Idle = {}
 
-	sets.Idle.index = {"Standard", "DT"}
+	sets.Idle.index = {"Standard"}
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
 	    ammo="Aurgelmir Orb +1",
 		head="Null Masque",
-		body={ name="Nyame Mail", augments={'Path: B',}},
+		body="Adamantite Armor",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -53,21 +53,6 @@ function get_sets()
 		back="Null Shawl",
 	}
 
-	sets.Idle.DT = {
-		ammo="Staunch Tathlum +1",
-		head="Null Masque",
-		body={ name="Nyame Mail", augments={'Path: B',}},
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-		legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck="Sanctity Necklace",
-		waist="Carrier's Sash",
-		left_ear="Infused Earring",
-		right_ear="Eabani Earring",
-		left_ring="Defending Ring",
-		right_ring="Shneddick Ring",
-		back="Moonbeam Cape",
-	}
 
 	--TP Sets--
 	sets.TP = {}
@@ -127,8 +112,8 @@ function get_sets()
 		feet = WSD_Feet,
 		neck = "Samurai's nodowa +2",
 		waist = "Sailfi Belt +1",
-		left_ear = "Kasuga Earring +2",
-		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
+		right_ear = "Kasuga Earring +2",
+		left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		left_ring="Epaminondas's Ring",
 		right_ring = "Ephramad's Ring",
 		back = WSD_Cape
@@ -145,8 +130,8 @@ function get_sets()
 		feet = "Flam. Gambieras +2",
 		neck = "Samurai's nodowa +2",
 		waist = "Sailfi Belt +1",
-		left_ear = "Kasuga Earring +2",
-		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
+		right_ear = "Kasuga Earring +2",
+		left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Epaminondas's Ring",
 		left_ring = "Niqmaddu Ring",
 		back = TP_Cape
@@ -163,8 +148,8 @@ function get_sets()
 		feet = WSD_Feet,
 		neck = "Fotia Gorget",
 		waist="Orpheus's Sash",
-		left_ear = "Kasuga Earring +2",
-		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
+		right_ear = "Kasuga Earring +2",
+		left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +25"}},
 		right_ring = "Ephramad's Ring",
 		left_ring = "Epaminondas's Ring",
 		back={ name="Smertrios's Mantle", augments={'STR+20','Mag. Acc+20 /Mag. Dmg.+20','STR+10','Weapon skill damage +10%',}},

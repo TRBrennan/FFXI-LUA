@@ -338,7 +338,8 @@ function get_sets()
 		ring2 = "Ephramad's Ring",
 		back = WSD_Back,
 		waist = "Sailfi Belt +1",
-		legs = WSD_Legs,		
+		--legs = WSD_Legs,		
+		legs = "Boii Cuisses +3",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
@@ -354,7 +355,8 @@ function get_sets()
 		ring2 = "Beithir ring",
 		back = WSD_Back,
 		waist = "Fotia belt",
-		legs = WSD_Legs,
+		--legs = WSD_Legs,		
+		legs = "Boii Cuisses +3",
 		feet = "Pummeler's calligae +3"
 	}
 
@@ -362,8 +364,8 @@ function get_sets()
 		ammo = "Yetshila +1",
 		head = "Blistering Sallet +1",
 		neck = "Warrior's bead necklace +2",
-		ear2 = "Schere Earring",
-		ear1 = "Boii Earring +1",
+		left_ear = "Schere Earring",
+		right_ear = "Boii Earring +1",
 		body = "Hjarrandi Breast.",
 		hands = "Nyame Gauntlets",
 		--hands = "Flamma Manopolas +2",
@@ -378,8 +380,8 @@ function get_sets()
 		ammo = "Yetshila +1",
 		head = "Blistering Sallet +1",
 		neck = "Fotia gorget",
-		ear1 = "Boii Earring +1",
-		ear2 = "Schere Earring",
+		left_ear = "Schere Earring",
+		right_ear = "Boii Earring +1",
 		body = "Hjarrandi Breast.",
 		hands = "Flamma manopolas +2",
 		ring1 = "Niqmaddu ring",
@@ -449,7 +451,8 @@ function get_sets()
 		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
-		legs = WSD_Legs,
+		--legs = WSD_Legs,		
+		legs = "Boii Cuisses +3",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
@@ -497,7 +500,8 @@ function get_sets()
 		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
-		legs = WSD_Legs,
+		--legs = WSD_Legs,		
+		legs = "Boii Cuisses +3",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
@@ -513,7 +517,8 @@ function get_sets()
 		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
-		legs = WSD_Legs,
+		--legs = WSD_Legs,		
+		legs = "Boii Cuisses +3",
 		feet = "Boii Calligae +3"	}
 
 	sets.Sanguine = {
@@ -552,8 +557,8 @@ function get_sets()
 		ammo = "Yetshila +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia Gorget",
-		ear2 = "Schere Earring",
-		ear1 = "Boii Earring +1",
+		left_ear = "Schere Earring",
+		right_ear = "Boii Earring +1",
 		body="Hjarrandi Breast.",
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
@@ -567,8 +572,8 @@ function get_sets()
 		ammo = "Yetshila +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia Gorget",
-		ear2 = "Schere Earring",
-		ear1 = "Boii Earring +1",
+		left_ear = "Schere Earring",
+		right_ear = "Boii Earring +1",
 		body = "Sakpata's Plate",
 		hands = "Flam. Manopolas +2",
 		ring1 = "Niqmaddu ring",
@@ -622,7 +627,8 @@ function get_sets()
 		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
-		legs = WSD_Legs,
+		--legs = WSD_Legs,
+		legs = "Boii Cuisses+3",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		
 	}
@@ -639,7 +645,8 @@ function get_sets()
 		ring2 = "Ephramad's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
-		legs = WSD_Legs,
+		--legs = WSD_Legs,
+		legs = "Boii Cuisses+3",
 		feet = "Boii Calligae +3"
 	}
 
@@ -687,7 +694,8 @@ function get_sets()
 		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
 		back = STR_Back,
 		waist = "Fotia Belt",
-		legs = WSD_Legs,
+		--legs = WSD_Legs,
+		legs = "Boii Cuisses+3",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		
 	}
@@ -799,7 +807,8 @@ function get_sets()
 		ring1 = "Epaminondas's Ring",
 		back = STR_Back,
 		waist = "Sailfi Belt +1",
-		legs = WSD_Legs,
+		--legs = WSD_Legs,
+		legs = "Boii Cuisses+3",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
@@ -1021,8 +1030,8 @@ function get_sets()
 		feet="Boii Calligae +3",
 		neck = "War. Beads +2",
 		waist = "Sailfi Belt +1",
-		ear2= "Boii Earring +1",
-		ear1 = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
+		right_ear= "Boii Earring +1",
+		left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
 		left_ring = "Niqmaddu Ring",
 		right_ring="Ephramad's Ring",
 		back = STR_Back
@@ -1222,6 +1231,11 @@ function precast(spell)
 		TPBonus = 500
 	else
 		TPBonus = 0
+	end
+	if player.equipment.legs ==  "Boii Cuisses +3" then
+		TPBonus = TPBonus + 100
+	else
+		TPBonus = TPBonus
 	end
 	if buffactive["Warcry"] then
 		TPBonus = TPBonus + 700
