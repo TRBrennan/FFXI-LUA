@@ -1,7 +1,17 @@
+text = require('texts')
+str = "Fudo>Kasha>Shoha>Fudo(Light)/Ageha>Yuki>Kasha>Fudo(Dark)>"
+display = text.new()
+display:text(str)
+display:font("Consolas")
+display:size(9)
+display:pos(430,480)
+display:show()
+
 function get_sets()
 	send_command("bind f9 gs c toggle TP set")
 	send_command("bind f10 gs c toggle Idle set")
 	send_command("bind f11 gs c toggle Weapons")
+	
 	function file_unload()
 		send_command("unbind ^f9")
 		send_command("unbind ^f10")

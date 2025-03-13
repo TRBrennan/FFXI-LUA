@@ -11,8 +11,20 @@ function get_sets()
 	sets.Haste.index = {"Low", "Mid", "High"}
 	Haste_ind = 1
 	
+	--Weapons for Aby--
+	
+	-- sets.Weapons.GS = {main = "Irradiance Blade"}
+	-- sets.Weapons.Scythe = {main = "Hoe"}
+	-- sets.Weapons.Pole = {main = "Tee Xicu's Blade"}
+	-- sets.Weapons.GK = {main = "Mutsunokami"}
+	-- sets.Weapons.Staff = {main = "Savage Pole"}
+	-- sets.Weapons.Dagger = {main = "Qutrub Knife"}
+	-- sets.Weapons.Sword = {main = "Kam'lanaut's Sword"}
+	-- sets.Weapons.Club = {main = "Ash Club"}
+	
 	--Gear--
-    DA_Back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+    --DA_Back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+	DA_Back ="NullShawl"
 	WSD_back ="Sacro Mantle"
 	
 	--Utility--
@@ -56,7 +68,7 @@ function get_sets()
 
 	--TP Sets--
 	sets.TP = {}
-	sets.TP.index = {"Standard", "Hybrid"}
+	sets.TP.index = {"Standard", "Hybrid", "Aby"}
 	TP_ind = 1
 
 	sets.TP.Standard = {}
@@ -155,6 +167,57 @@ function get_sets()
 		right_ring="Chirich Ring +1",
 		back=DA_Back
 	}
+	
+	sets.TP.Aby ={}
+	sets.TP.Hybrid.index = {"Low", "Mid", "High"}
+	sets.TP.Aby.Low ={    
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Ninja Nodowa +2",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Telos Earring",
+		right_ear="Cessance Earring",
+		left_ring="Gere Ring",
+		right_ring="Chirich Ring +1",
+		back="Null Shawl",
+	}
+	
+	sets.TP.Aby.Mid ={    
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Ninja Nodowa +2",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Telos Earring",
+		right_ear="Cessance Earring",
+		left_ring="Gere Ring",
+		right_ring="Chirich Ring +1",
+		back="Null Shawl",
+	}
+	
+	sets.TP.Aby.High ={    
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Ninja Nodowa +2",
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Telos Earring",
+		right_ear="Cessance Earring",
+		left_ring="Gere Ring",
+		right_ring="Chirich Ring +1",
+		back="Null Shawl",
+	}
+	
 	--Defence Sets--
 	set.DT = {
 		ammo="Seki Shuriken",
@@ -277,6 +340,22 @@ function get_sets()
 		right_ring="Hetairoi Ring",
 		Back = DA_Back
 	}
+	
+	sets.WS.Proc ={
+	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Malignance Tights",
+		feet="Malignance Boots",
+		neck="Null Loop",
+		waist="Null Belt",
+		left_ear="Crep. Earring",
+		right_ear="Digni. Earring",
+		left_ring="Chirich Ring +1",
+		right_ring="Chirich Ring",
+		back="Null Shawl",
+	}
 
 	--Job Ability Sets--
 	sets.JA = {}
@@ -387,6 +466,10 @@ function precast(spell)
 				equip(sets.WS.Hybrid)				
 			elseif spell.english == "Evisceration" then
 				equip(sets.WS.Crit)
+			elseif spell.english == "Freezebite" or spell.english == "Earth Crusher" or spell.english == "Red Lotus Blade" or spell.english == "Serpah Blade" or spell.english == "Shadow of Death"
+			or spell.english == "Blade: ei" or spell.english == "Energy Drain" or spell.english == "Sunburst" or spell.english == "Raiden Thrust" or spell.english == "Cyclone" or spell.english == "Tachi: Koki" 
+			or spell.english == "Tachi: Jinpu" then
+				equip(sets.WS.Proc)
 			elseif spell.type == "WeaponSkill" then
 				equip(sets.OtherWS[sets.WS.index[WS_ind]])
 			end

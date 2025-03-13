@@ -161,7 +161,8 @@ function get_sets()
 		legs = "Erilaz Leg Guards +3",
 		feet="Turms Leggings +1",
 		neck={ name="Futhark Torque +2", augments={'Path: A',}},
-		waist="Carrier's Sash",
+		--waist="Carrier's Sash",
+		waist = "Ioskeha belt +1",
 		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
 		right_ear="Sherida Earring",
 		right_ring="Moonlight Ring",
@@ -330,18 +331,20 @@ function get_sets()
 
 	sets.Utility.Regen = {
 		ammo = "Staunch Tathlum +1",
-		head = "Rune. Bandeau +2",
-		neck = "Sacro Gorget",
-		right_ear = "Eabani earring",
+		head="Rune. Bandeau +2",
 		left_ear = "Augment. earring",
-		body = {name = "Futhark Coat +1", augments = {'Enhances "Elemental Sforzo" effect'}},
-		hands = "Runeist Mitons +3",
-		left_ring= "Rahab ring",
-		right_ring = "Defending Ring",
+		body = "Futhark Coat +2",
+		hands="Runeist Mitons +3",
+		legs={ name="Futhark Trousers +3", augments={'Enhances "Inspire" effect',}},
+		feet="Erilaz Greaves +2",
+		neck="Sacro Gorget",
+		waist="Sroda Belt",
+		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+		right_ear={ name="Erilaz Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+13','Mag. Acc.+13','Damage taken-4%',}},
+		left_ring="Stikini Ring +1",
+		right_ring="Defending Ring",
 		back="Null Shawl",
-		waist = "Null Belt",
-		legs = "Futhark Trousers +3",
-		feet = "Erilaz Greaves +2"
+
 	}
 
 	sets.Utility.SIRD = {
@@ -425,28 +428,42 @@ function get_sets()
 	}
 	
 	sets.Utility.FrightfulRoar = {
-	    ammo="Pemphredo Tathlum",
-		body={ name="Cohort Cloak +1", augments={'Path: A',}},
-		hands="Aya. Manopolas +2",
-		legs="Erilaz Leg Guards +3",
-		--feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		feet ="Erilaz Greaves +2",
-		neck="Sanctity Necklace",
-		waist="Eschan Stone",
+		ammo="Pemphredo Tathlum",
+		head="Erilaz Galea +3",
+		body="Erilaz Surcoat +2",
+		hands={ name="Agwu's Gages", augments={'Path: A',}},
+		legs="Eri. Leg Guards +3",
+		feet="Erilaz Greaves +2",
+		neck="Null Loop",
+		waist="Null Belt",
 		left_ear="Digni. Earring",
 		right_ear="Crep. Earring",
 		left_ring="Stikini Ring +1",
 		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-		back="Izdubar Mantle",
+		back="Null Shawl",
 	}
 
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", left_ring= "Eshmun's Ring"}
 
 	--Job Ability Sets--
 	sets.JA = {}
-	sets.JA.VP = {legs = "Rune. Trousers +3", left_ring= "Stikini ring +1", neck = "Incanter's Torque", head = "Erilaz Galea +3"}
+	sets.JA.VP = {    
+		ammo="Staunch Tathlum +1",
+		head="Erilaz Galea +3",
+		body="Adamantite Armor",
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs="Rune. Trousers +3",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck="Incanter's Torque",
+		waist="Null Belt",
+		left_ear="Saxnot Earring",
+		right_ear="Divine Earring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
+		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
+	}
 
-	sets.JA.Liement = {body = {name = "Futhark Coat +1", augments = {'Enhances "Elemental Sforzo" effect'}}}
+	sets.JA.Liement = {body = {name = "Futhark Coat +2", augments = {'Enhances "Elemental Sforzo" effect'}}}
 
 	sets.JA.Embolen = {back = "Evasionist's cape"}
 
@@ -493,7 +510,7 @@ function get_sets()
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Hearty Earring",
 		left_ring = "Defending Ring",
-		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
+		right_ring = {name="Moonlight Ring",bag="wardrobe3"},
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 
@@ -544,7 +561,7 @@ function get_sets()
 		hands = "Regal Gauntlets",
 		waist = "Null Belt",
 		left_ring = "Defending Ring",
-		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
+		right_ring = {name="Moonlight Ring",bag="wardrobe3"},
 		legs="Agwu's Slops",
 		feet = "Carmine Greaves +1",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
@@ -559,7 +576,7 @@ function precast(spell)
 	elseif spell.skill == "Ninjutsu" then
 		equip(sets.precast.FC.Standard)
 	elseif spell.english == "Vivacious Pulse" then
-		equip(set_combine(sets.Utility.Enmity, sets.JA.VP))
+		equip(sets.JA.VP)
 	elseif spell.english == "Lunge" or spell.english == "Swipe" or spell.english == "Herculean Slash" then
 		equip(sets.JA.Lunge)
 	elseif spell.english == "Vallation" or spell.english == "Valiance" then

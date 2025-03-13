@@ -74,17 +74,17 @@ function get_sets()
 	sets.Idle.Standard = {
 		ammo="Staunch Tathlum +1",
 		head="Null Masque",
-		body={ name="Gleti's Cuirass", augments={'Path: A',}},
-		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		body= "Malignance Tabard",
+		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
-		neck = "Warder's Charm +1",
-		waist="Carrier's Sash",
+		neck="Warder's Charm +1",
+		waist="Null Belt",
 		left_ear="Eabani Earring",
 		right_ear="Infused Earring",
 		left_ring="Shneddick Ring",
 		right_ring="Defending Ring",
-		back="Moonbeam Cape",
+		back="Null Cape",
 	}
 
 	sets.Idle.DT = {
@@ -94,13 +94,13 @@ function get_sets()
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
-		neck="Sanctity Necklace",
-		waist="Carrier's Sash",
+		neck="Warder's Charm +1",
+		waist="Null Belt",
 		left_ear="Eabani Earring",
 		right_ear="Infused Earring",
 		left_ring="Shneddick Ring",
 		right_ring="Defending Ring",
-		back="Moonbeam Cape",
+		back="Null Cape",
 	}
 
 	sets.Idle.PetEngaged = {

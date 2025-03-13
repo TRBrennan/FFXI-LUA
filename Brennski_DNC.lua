@@ -66,8 +66,8 @@ function get_sets()
                 ear2 = "Infused Earring",
                 body = "Gleti's Cuirass",
                 hands = "Regal Gloves",
-                ring1 = "Defending ring",
-                ring2 = "Shneddick Ring",
+				left_ring="Defending Ring",
+				right_ring="Shneddick Ring",
                 back="Null Shawl",
                 waist = "Null Belt",
 				legs="Gleti's Breeches",
@@ -84,8 +84,10 @@ function get_sets()
         sets.TP.Standard = {
 			ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 			head="Maculele Tiara +3",
-			body={ name="Gleti's Cuirass", augments={'Path: A',}},
-			hands="Malignance Gloves",
+			--body={ name="Gleti's Cuirass", augments={'Path: A',}},
+			body="Malignance Tabard",
+			--hands="Malignance Gloves",
+			hands="Gleti's Gauntlets",
 			legs={ name="Gleti's Breeches", augments={'Path: A',}},
 			feet="Maculele Toe Shoes +3",
 			neck="Etoile Gorget +2",
@@ -124,9 +126,9 @@ function get_sets()
 			legs={ name="Nyame Flanchard", augments={'Path: B',}},
 			feet={ name="Nyame Sollerets", augments={'Path: B',}},
 			neck="Etoile Gorget +2",
-			waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-			left_ear="Ishvara Earring",
-			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			waist="Kentarch Belt +1",
+			right_ear="Maculele Earring",
+			left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 			left_ring="Ephramad's Ring",
 			right_ring="Epaminondas's Ring",
 			back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
@@ -172,9 +174,9 @@ function get_sets()
 			legs={ name="Nyame Flanchard", augments={'Path: B',}},
 			feet={ name="Nyame Sollerets", augments={'Path: B',}},
 			neck="Etoile Gorget +2",
-			waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-			left_ear="Ishvara Earring",
-			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+			waist="Kentarch Belt +1",
+			right_ear="Maculele Earring",
+			left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 			left_ring="Ephramad's Ring",
 			right_ring="Epaminondas's Ring",
 			back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Weapon skill damage +10%','Damage taken-5%',}},
@@ -254,47 +256,20 @@ function get_sets()
                 Feet = "Nyame Sollerets",
         }
 
-        sets.Utility.Steps = {
-		
+        sets.Utility.Steps = {		
 			ammo="Yamarang",
 			head="Malignance Chapeau",
 			body={ name="Gleti's Cuirass", augments={'Path: A',}},
-			hands="Maxixi Bangles +2",
+			hands="Maxixi Bangles +3",
 			legs={ name="Gleti's Breeches", augments={'Path: A',}},
 			feet="Horos T. Shoes +2",
-			neck="Lissome Necklace",
-			waist="Eschan Stone",
-			left_ear="Crep Earring",
+			neck="Etoile Gorget +2",
+			waist="Null Belt",
+			left_ear="Crep. Earring",
 			right_ear="Telos Earring",
 			left_ring="Moonlight Ring",
 			right_ring="Chirich Ring +1",
 			back="Null Shawl"
-        }
-
-        sets.Utility.PDT = {
-                head = "Adhemar Bonnet +1",
-                neck = "Loricate Torque +1",
-                ear1 = "Etiolation Earring",
-                body = "Iuitl vest",
-                hands = "Umuthi gloves",
-                ring1 = "Dark ring",
-                ring2 = "Dark ring",
-                back="Null Shawl",
-                waist = "Flume belt",
-                legs = "Iuitl Tights +1",
-                Feet = "Nyame Sollerets",
-        }
-
-        sets.Utility.MDT = {
-                head = "Adhemar Bonnet +1",
-                neck = "Loricate Torque +1",
-                body = "Assim. jubbah +1",
-                hands = "Umuthi gloves",
-                ring1 = "Dark ring",
-                ring2 = "Dark ring",
-                back="Null Shawl",
-                legs = "Quiahuiz trousers",
-                feet = "Luhlaza charuqs"
         }
 
 		sets.Utility.TH ={waist = "Chaac Belt", Legs = "Volte Hose", feet = "Volte Boots", Hands = "Volte Bracers"}
@@ -307,7 +282,7 @@ function get_sets()
 
         sets.JA = {}
 		
-		sets.JA.Waltz = {ammo="Yamarang", body ="Maxixi Casaque +2",back ="Toetapper Mantle", neck="Etoile Gorget +2", ring2 = "Metamor. Ring +1",}
+		sets.JA.Waltz = {ammo="Yamarang", body ="Maxixi Casaque +2",back ="Toetapper Mantle", leg="Dashing Subligar", neck="Etoile Gorget +2", ring2 = "Metamor. Ring +1",}
 		
 		sets.JA.Jigs = { back = "Senuna's Mantle", legs ="Horos Tights +2" }
 		

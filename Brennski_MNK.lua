@@ -3,6 +3,7 @@ function get_sets()
 	send_command("bind f10 gs c toggle Idle set")
 	send_command("bind ^f9 gs c equip TP set")
 	send_command("bind ^f10 gs c equip DT set")
+	send_command("bind !f9 gs c cycle WeaponSet")
 	
 	function file_unload()
 		send_command("unbind ^f9")
@@ -21,6 +22,16 @@ function get_sets()
 		send_command("unbind f11")
 		send_command("unbind f12")
 	end
+
+	--Weapon Sets--
+	
+	sets.Weapons = {}
+	sets.Weapons.index = {"Godhands", "MaliPole"}
+	Weapons_ind = 1
+	
+	sets.Weapons.Godhands = {main = "Godhands"}
+	
+	sets.Weapons.MaliPole = {main="Malignance Pole"}
 
 	--Idle Sets--
 	sets.Idle = {}
@@ -89,7 +100,8 @@ function get_sets()
 		body={ name="Mpaca's Doublet", augments={'Path: A',}},
 		hands="Malignance Gloves",
 		legs="Bhikku Hose +2",
-		feet="Anch. Gaiters +3",
+		--feet="Anch. Gaiters +3",
+		feet = "Malignance Boots",
 		neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
 		waist="Moonbow Belt +1",
 		right_ear="Sherida Earring",
@@ -255,68 +267,27 @@ function get_sets()
 		right_ring="Regal Ring",
 		back = {name = "Segomo's Mantle", augments = {"STR+20", "Accuracy+20 Attack+20", "Weapon skill damage +10%"}}
 		}
-
-	--Ninja Magic Sets--
-	sets.NINMagic = {}
-
-	sets.NINMagic.Nuke = {
-		head = {name = "Herculean Helm",augments = {'Mag. Acc.+20 "Mag.Atk.Bns."+20', '"Dbl.Atk."+2', "Mag. Acc.+12", '"Mag.Atk.Bns."+4'}},
-		neck = "Sanctity Necklace",
-		ear2 = "Friomisi earring",
-		ear1 = "Hecate's Earring",
-		body = "Samnuha Coat",
-		hands = "Leyline Gloves",
-		ring1 = "Shiva Ring",
-		ring2 = "Acumen Ring",
-		waist = "Eschan Stone",
-		back = "Gunslinger's Cape",
-		legs = "Herculean Trousers",
-		feet = {name = "Herculean Boots", augments = {'Mag. Acc.+15 "Mag.Atk.Bns."+15', "VIT+10", '"Mag.Atk.Bns."+12'}}
-	}
-
-	sets.NINMagic.Utsusemi = {
-		head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		neck = "Loricate Torque",
-		ar1 = "Brutal Earring",
-		ear2 = "Cessance Earring",
-		body = "Ashera Harness",
-		hands = "Regimens Mittens",
-		ring1 = "Chirich Ring +1",
-		ring2 = "Niqmaddu Ring",
+		
+	sets.WS.ShellCrusher ={
+		ammo="Pemphredo Tathlum",
+		head="Malignance Chapeau",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		legs="Bhikku Hose +2",
+		feet="Malignance Boots",
+		neck="Null Loop",
+		waist="Null Belt",
+		left_ear="Crep. Earring",
+		right_ear="Digni. Earring",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		right_ring="Chirich Ring +1",
 		back="Null Shawl",
-		waist = "Null Belt",
-		legs = "Herculean Trousers",
-		Feet = "Nyame Sollerets",
 	}
 
 	--Utility Sets--
 	sets.Utility = {}
 
 	sets.Utility.Sleeping = {neck = "Opo-Opo Necklace"}
-
-	sets.Utility.Weather = {waist = "Hachirin-no-obi", back = "Twilight Cape"}
-
-	sets.Utility.MB = {
-		head = "Herculean Helm",
-		body = "Amalric Doublet",
-		ear1 = "Static Earring",
-		ring1 = "Locus Ring",
-		ring2 = "Mujin Band"
-	}
-
-	sets.Utility.Stoneskin = {
-		head = "Haruspex hat",
-		neck = "Stone Gorget",
-		ear1 = "Loquac. earring",
-		ear2 = "Earthcry earring",
-		body = "Assim. jubbah +1",
-		hands = "Stone Mufflers",
-		ring1 = "Rahab ring",
-		back = "Fi follet cape +1",
-		waist = "Siegel sash",
-		legs = "Haven hose",
-		Feet = "Nyame Sollerets",
-	}
 
 	sets.Utility.Phalanx = {
 		head = "Haruspex hat",
@@ -416,6 +387,8 @@ function precast(spell)
 		equip(sets.WS.Cata)
 	elseif spell.english == "Earth Crusher" then
 		equip(sets.WS.EC)
+	elseif spell.english == "Shell Crusher" then
+		equip(sets.WS.ShellCrusher)
 	elseif spell.type == "WeaponSkill" then
 		equip(sets.WS.HF)
 	end
@@ -488,6 +461,13 @@ function self_command(command)
 		end
 		send_command("@input /echo <----- Idle Set changed to " .. sets.Idle.index[Idle_ind] .. " ----->")
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])
+	elseif command == "cycle WeaponSet" then
+		Weapons_ind = Weapons_ind + 1
+		if Weapons_ind > #sets.Weapons.index then
+			Weapons_ind = 1
+		end
+		send_command("@input /echo <----- Weapon Set changed to " .. sets.Weapons.index[Weapons_ind] .. " ----->")
+		equip(sets.Weapons[sets.Weapons.index[Weapons_ind]])
 	elseif command == "equip TP set" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
 	elseif command =="equip DT set" then

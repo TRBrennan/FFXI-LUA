@@ -377,13 +377,13 @@ function get_sets()
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
 		feet="Chevalier's sabatons +3",
-		neck="Sanctity Necklace",
-		waist="Eschan Stone",
+		neck="Null Loop",
+		waist="Null Belt",
 		left_ear="Crep. Earring",
 		right_ear="Digni. Earring",
 		left_ring="Stikini Ring +1",
 		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-		back="Izdubar Mantle",
+		back="Null Shawl",
 	}
 
 	--Job Ability Sets--
