@@ -218,7 +218,7 @@ function get_sets()
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet="Flam. Gambieras +2",
 		neck="Null Loop",
-		waist="Windbuffet Belt +1",
+		waist="Null Belt",
 		left_ear = "Moonshade Earring",
 		right_ear = "Peltast's Earring",
 		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},

@@ -46,7 +46,7 @@ function get_sets()
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Fucho-no-obi",
 		legs = "Erilaz Leg Guards +3",
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		feet = "Erilaz Greaves +3",
 	}
 
 	sets.Idle.DT = {
@@ -55,14 +55,14 @@ function get_sets()
 		neck = "Futhark Torque +2",
 		left_ear = "Odnowa Earring +1",
 		right_ear = "Hearty Earring",
-		body = "Nyame Mail",
+		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands = "Regal Gauntlets",
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		right_ring = "Defending Ring",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Null Belt",
 		legs = "Erilaz Leg Guards +3",
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		ffeet = "Erilaz Greaves +3",
 	}
 
 	sets.Idle.Cleave = {
@@ -78,50 +78,33 @@ function get_sets()
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}},
 		waist = "Null Belt",
 		legs = "Erilaz Leg Guards +3",
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		feet = "Erilaz Greaves +3",
 	}
 
 	--Weapons--
 
 	sets.Weapons = {}
 
-	sets.Weapons.Index = {"Lionheart", "Aettir", "Epeolatry", "Sword"}
+	sets.Weapons.Index = {"EpeolatryMelee","EpeolatryTanking", "Aettir",  "Sword"}
 	Weapons_ind = 1
 
-	sets.Weapons.Lionheart = {main = "Lionheart", sub = "Utu Grip"}
-
+	sets.Weapons.EpeolatryMelee = {main = "Epeolatry", sub = "Utu Grip"}
+	
+	sets.Weapons.EpeolatryTanking = {main = "Epeolatry", sub = "Refined Grip +1"}
+	
 	sets.Weapons.Aettir = {
-		main = {name = "Aettir", augments = {"Accuracy+70", "Mag. Evasion+50", "System: 2 ID: 114 Val: 9"}},
+		main ="Aettir",
 		sub = "Refined Grip +1"
 	}
-
-	sets.Weapons.Epeolatry = {main = "Epeolatry", sub = "Utu Grip"}
-
 	sets.Weapons.Sword = {main = "Reikiko"}
 
 	--TP Sets--
 	sets.TP = {}
 
-	sets.TP.index = {"Standard", "TankTP", "MDTank", "Ongo"}
-	--1=Standard,2=DT, 3=MDTtank, 4=Ongo --
+	sets.TP.index = {"Standard", "MevaTank", "Ongo"}
+	--1=Standard,2=MevaTtank, 3=Ongo --
 	TP_ind = 1
 	sets.TP.Standard = {
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		head = "Adhemar Bonnet +1",
-		neck = "Lissome necklace",
-		left_ear = "Telos Earring",
-		right_ear = "Sherida earring",
-		body = "Ashera Harness",
-		hands = "Adhemar Wristbands +1",
-		left_ring = "Epona's Ring",
-		right_ring = "Niqmaddu Ring",
-		back="Null Shawl",
-		waist = "Ioskeha belt +1",
-		legs = "Samnuha Tights",
-		Feet = "Nyame Sollerets",
-	}
-
-	sets.TP.TankTP = {
 		ammo = "Yamarang",
 		head="Nyame Helm",
 		neck = "Futhark Torque +2",
@@ -137,13 +120,15 @@ function get_sets()
 		feet = "Turms Leggings +1"
 	}
 
-	sets.TP.MDTank = {
+	sets.TP.MevaTank = {
 		ammo = "Staunch Tathlum +1",
-		head="Nyame Helm",
+		--head="Nyame Helm",
+		head="Null Masque",
 		body = "Runeist Coat +3",
 		hands = "Nyame Gauntlets",
 		legs = "Erilaz Leg Guards +3",
-		feet = "Turms Leggings +1",
+		--feet = "Turms Leggings +1",
+		feet = "Erilaz Greaves +3",
 		neck = "Futhark Torque +2",
 		waist = "Null Belt",
 		left_ear = "Odnowa Earring +1",
@@ -169,38 +154,6 @@ function get_sets()
 		left_ring="Moonlight Ring",
 		back="Null Shawl",
 	}
-	-- sets.TP.HBP = {
-		-- ammo = "Staunch Tathlum +1",
-		-- head = "Erilaz Galea +3",
-		-- body = "Ashera Harness",
-		-- hands = "Regal Gauntlets",
-		-- legs = "Nyame Flanchard",
-		-- feet = "Turms Leggings +1",
-		-- neck = "Futhark Torque +2",
-		-- waist = "Null Belt",
-		-- left_ear = "Odnowa Earring +1",
-		-- right_ear = "Odnowa Earring",
-		-- left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
-		-- right_ring = "Moonbeam Ring",
-		-- back="Null Shawl"
-	-- }
-	
-
-	-- sets.TP.StatusResist = {
-		-- ammo = "Staunch Tathlum +1",
-		-- head = {name = "Herculean Helm", augments = {"Accuracy+19 Attack+19", "Damage taken-3%", "AGI+3", "Accuracy+2"}},
-		-- body = "Ashera Harness",
-		-- Hands = "Volte Bracers",
-		-- legs = "Rune. Trousers +3",
-		-- feet = "Erilaz Greaves +2",
-		-- neck = "Futhark Torque +2",
-		-- waist = "Null Belt",
-		-- right_ear = "Hearty Earring",
-		-- left_ear = "Odnowa Earring +1",
-		-- left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
-		-- right_ring = "Defending Ring",
-		-- back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
-	-- }
 
 	--Weaponskill Sets--
 	sets.WS = {}
@@ -336,7 +289,7 @@ function get_sets()
 		body = "Futhark Coat +2",
 		hands="Runeist Mitons +3",
 		legs={ name="Futhark Trousers +3", augments={'Enhances "Inspire" effect',}},
-		feet="Erilaz Greaves +2",
+		feet="Erilaz Greaves +3",
 		neck="Sacro Gorget",
 		waist="Sroda Belt",
 		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -350,7 +303,7 @@ function get_sets()
 	sets.Utility.SIRD = {
 		ammo="Staunch Tathlum +1",
 		head="Erilaz Galea +3",
-		body={ name="Nyame Mail", augments={'Path: B',}},
+		body="Adamantite Armor",
 		hands={ name="Rawhide Gloves", augments={'HP+50','Accuracy+15','Evasion+20',}},
 		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -375,7 +328,7 @@ function get_sets()
 		right_ring = "Defending Ring",
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		legs = "Erilaz Leg Guards +3",
-		feet = "Erilaz Greaves +2",
+		feet = "Erilaz Greaves +3",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 
@@ -385,23 +338,25 @@ function get_sets()
 		neck = "Incanter's Torque",
 		right_ear = "Andoaa Earring",
 		right_ear = "Mimir Earring",
-		body = "Emet harness +1",
+		--body = "Emet harness +1",
+		body="Adamantite Armor",
 		hands = "Regal Gauntlets",
 		waist = "Olympus Sash",
 		left_ring= "Stikini ring +1",
 		right_ring = "Stikini Ring +1",
 		legs = "Futhark Trousers +3",
-		feet = "Erilaz Greaves +2",
+		feet = "Erilaz Greaves +3",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 
 	sets.Utility.EnhancingSkill = {
 		ammo = "Staunch Tathlum +1",
 		head = "Erilaz Galea +3",
-		body = "Emet Harness +1",
+		--body = "Emet Harness +1",
+		body="Adamantite Armor",
 		hands = "Runeist Mitons +3",
 		legs = {name = "Carmine Cuisses +1", augments = {"Accuracy+20", "Attack+12", '"Dual Wield"+6'}},
-		feet = "Erilaz Greaves +2",
+		feet = "Erilaz Greaves +3",
 		neck = "Incanter's Torque",
 		waist = "Olympus Sash",
 		right_ear = "Mimir Earring",
@@ -417,13 +372,14 @@ function get_sets()
 		neck = "Incanter's Torque",
 		left_ear = "Andoaa Earring",
 		right_ear = "Mimir Earring",
-		body = "Emet harness +1",
+		--body = "Emet harness +1",
+		body="Adamantite Armor",
 		hands = "Regal Gauntlets",
 		waist = "Gishdubar Sash",
 		left_ring= "Stikini ring +1",
 		right_ring = "Defending Ring",
 		legs = "Futhark Trousers +3",
-		feet = "Erilaz Greaves +2",
+		feet = "Erilaz Greaves +3",
 		back = {name = "Ogma's cape", augments = {"HP+60", "Eva.+20 /Mag. Eva.+20", "Mag. Evasion+10", "Enmity+10"}}
 	}
 	
@@ -433,7 +389,7 @@ function get_sets()
 		body="Erilaz Surcoat +2",
 		hands={ name="Agwu's Gages", augments={'Path: A',}},
 		legs="Eri. Leg Guards +3",
-		feet="Erilaz Greaves +2",
+		feet="Erilaz Greaves +3",
 		neck="Null Loop",
 		waist="Null Belt",
 		left_ear="Digni. Earring",
@@ -444,6 +400,8 @@ function get_sets()
 	}
 
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", left_ring= "Eshmun's Ring"}
+	
+	sets.Utility.TH ={waist = "Chaac Belt", Legs = "Volte Hose", feet = "Volte Boots", Hands = "Volte Bracers"}
 
 	--Job Ability Sets--
 	sets.JA = {}
@@ -483,16 +441,18 @@ function get_sets()
 		back="Izdubar Mantle",
 	}
 
-	sets.JA.Battuta = {Head ="Fu. Bandeau +3", hands = "Turms Mittens"}
+	sets.JA.Battuta = {Head ="Fu. Bandeau +3", hands = "Turms Mittens +1"}
 
-	sets.JA.BattutaActive = {hands = "Turms Mittens"}
+	sets.JA.BattutaActive = {hands = "Turms Mittens +1", feet = "Trums Leggings +1"}
 
 	sets.JA.Gambit = {hands = "Runeist Mitons +3", waist = "Chaac Belt", Legs ="Volte Hose"}
 
 	sets.JA.Pflug = {feet = "Runeist Bottes +3"}
+	
+	sets.JA.Swordplay ={ hands = "Futhark Mitons +1"}
 
 	sets.JA.Rayke = {
-		feet = {name = "Futhark Boots", augments = {'Enhances "Rayke" effect'}},
+		feet = {name = "Futhark Boots +1", augments = {'Enhances "Rayke" effect'}},
 		waist = "Chaac Belt",
 		Hands = "Volte Bracers",
 		Legs ="Volte Hose"
@@ -525,8 +485,8 @@ function get_sets()
 		neck = "Voltsurge Torque",
 		right_ear = "Loquac. Earring",
 		left_ear = "Etiolation Earring",
-		body = "Adhemar Jacket +1",
-		hands = "Regal Gauntlets",
+		body = "Erilaz Surcoat +2",
+		hands = "Nyame Gauntlets",
 		waist = "Null Belt",
 		left_ring = "Defending Ring",
 		right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
@@ -541,8 +501,8 @@ function get_sets()
 		neck = "Voltsurge Torque",
 		right_ear = "Loquac. Earring",
 		left_ear = "Etiolation Earring",
-		body = "Adhemar Jacket +1",
-		hands = "Regal Gauntlets",
+		body = "Erilaz Surcoat +2",
+		hands = "Nyame Gauntlets",
 		waist = "Null Belt",
 		left_ring = "Defending Ring",
 		 right_ring	=	{name="Moonlight Ring",bag="wardrobe3"},
@@ -557,8 +517,8 @@ function get_sets()
 		neck = "Unmoving Collar +1",
 		right_ear = "Loquac. Earring",
 		left_ear = "Etiolation Earring",
-		body = "Adhemar Jacket +1",
-		hands = "Regal Gauntlets",
+		body = "Erilaz Surcoat +2",
+		hands = "Nyame Gauntlets",
 		waist = "Null Belt",
 		left_ring = "Defending Ring",
 		right_ring = {name="Moonlight Ring",bag="wardrobe3"},
@@ -581,6 +541,8 @@ function precast(spell)
 		equip(sets.JA.Lunge)
 	elseif spell.english == "Vallation" or spell.english == "Valiance" then
 		equip(set_combine(sets.Utility.Enmity, sets.JA.Vallation))
+	elseif spell.english == "Swordplay" then
+		equip(set_combine(sets.Utility.Enmity, sets.JA.Swordplay))
 	elseif	spell.english == "Flash" or spell.skill == "Enfeebling Magic" or spell.english == "Foil" or spell.skill == "Dark Magic" or spell.skill == "Blue Magic" then
 		equip(sets.precast.FC.Enmity)
 	elseif
@@ -689,6 +651,9 @@ function midcast(spell, act)
 			equip(sets.Utility.FrightfulRoar)
 		end
 	end
+	if spell.english == 'Ranged' then
+			equip(sets.Utility.TH)
+	end
 end
 
 function aftercast(spell)
@@ -794,7 +759,7 @@ function self_command(command)
 		equip(sets.TP[sets.TP.index[TP_ind]])
 		send_command("@input /echo  <--- Equipped TP Set ----->")
 	elseif command =="equip DT set" then
-		equip (sets.TP.MDTank)
+		equip (sets.TP.MevaTank)
 		send_command("@input /echo  <--- Equipped DT Set ----->")
 	elseif command == "equip Idle set" then
 		equip(sets.Idle[sets.Idle.index[Idle_ind]])

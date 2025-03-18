@@ -56,8 +56,8 @@ function get_sets()
 	--Idle Sets--
 	sets.Idle = {}
 
-	sets.Idle.index = {"Standard", "DT"}
-	--1=Standard, 2 =DT --
+	sets.Idle.index = {"Standard", "Ami"}
+	--1=Standard, 2 =Ami --
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
@@ -67,17 +67,16 @@ function get_sets()
 		ear1 = "Eabani Earring",
 		ear2 = "Infused Earring",
 		body = "Lethargy Sayon +3",
-		--hands = {name = "Merlinic Dastanas", augments = {"DEX+3", 'Mag. Acc.+16 "Mag.Atk.Bns."+16', '"Refresh"+1'}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		ring1 = "Defending ring",
 		ring2 = "Shneddick Ring",
 		waist = "Null Belt",
 		legs = "Nyame Flanchard",
-		feet = "Malignance Boots",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		back="Null Shawl"
 	}
 
-	sets.Idle.DT = {
+	sets.Idle.Ami = {
 		ammo="Homiliary",
 		head="Null Mask",
 		body = "Lethargy Sayon +3",
@@ -88,7 +87,7 @@ function get_sets()
 		waist="Null belt",
 		left_ear="Etiolation Earring",
 		right_ear="Infused Earring",
-		left_ring="Defending Ring",
+		left_ring="Roller's Ring",
 		right_ring="Shneddick Ring",
 		back="Nawl Shawl",
 	}

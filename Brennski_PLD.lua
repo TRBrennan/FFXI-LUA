@@ -2,6 +2,7 @@ function get_sets()
 	send_command("bind f9 gs c toggle TP set")
 	send_command("bind f10 gs c toggle Idle set")
 	send_command("bind !f9 gs c cycle WeaponSet")
+	send_command("bind !f10 gs c cycle SwordSet")
 
 	function file_unload()
 		send_command("unbind ^f9")
@@ -25,11 +26,20 @@ function get_sets()
 	sets.Weapons.Srivatsa = {sub ="Srivatsa"}
 	
 	sets.Weapons.Duban = {sub="Duban"}
+	
+	--Sword Sets--
+	sets.Swords = {}
+	sets.Swords.index = {"Burtgang", "Excal" }
+	Swords_ind = 1
+	
+	sets.Swords.Burtgang = {main = "Burtgang"}
+	
+	sets.Swords.Excal = { main = "Excalibur"}
 
 	--Idle Sets--
 	sets.Idle = {}
 
-	sets.Idle.index = {"Standard", "DT", "Cleave"}
+	sets.Idle.index = {"Standard", "DT", "Cleave", "Ami"}
 	Idle_ind = 1
 
 	sets.Idle.Standard = {
@@ -78,6 +88,22 @@ function get_sets()
 		right_ear = "Tuisto Earring",
 		left_ring	=	{name="Moonlight Ring",bag="wardrobe2"},
 		right_ring = "Shneddick Ring",
+		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
+	}
+	
+	sets.Idle.Ami = {
+		ammo="Staunch Tathlum +1",
+		head="Null Masque",
+		body="Sakpata's Plate",
+		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+		legs="Sakpata's Cuisses",
+		feet="Sakpata's Leggings",
+		neck = "Unmoving Collar +1",
+		waist= "Carrier's Sash",
+		left_ear="Odnowa Earring +1",
+		right_ear = "Tuisto Earring",
+		left_ring= "Roller's Ring",
+		right_ring={name="Moonlight Ring",bag="wardrobe3"},
 		back={ name="Rudianos's Mantle", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Mag. Evasion+15',}},
 	}
 		
@@ -596,6 +622,13 @@ function self_command(command)
 		end
 		send_command("@input /echo <----- Weapon Set changed to " .. sets.Weapons.index[Weapons_ind] .. " ----->")
 		equip(sets.Weapons[sets.Weapons.index[Weapons_ind]])
+	elseif command == "cycle SwordSet" then
+		Swords_ind = Swords_ind + 1
+		if Swords_ind > #sets.Swords.index then
+			Swords_ind = 1
+		end
+		send_command("@input /echo <----- Sword Set changed to " .. sets.Swords.index[Swords_ind] .. " ----->")
+		equip(sets.Swords[sets.Swords.index[Swords_ind]])
 	elseif command == "equip TP set" then
 		equip(sets.TP[sets.TP.index[TP_ind]])
 	elseif command == "equip Idle set" then

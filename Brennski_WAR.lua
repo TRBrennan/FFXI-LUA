@@ -1330,7 +1330,7 @@ function precast(spell)
 			send_command('@input /echo Raging Rush Set')
 		elseif
 			spell.english == "Full Break" or spell.name == "Armor Break" or spell.name == "Shield Break" or
-			spell.name == "Weapon Break" or	spell.name == "Leg Sweep" then
+			spell.name == "Weapon Break" or	spell.name == "Leg Sweep" or spell.name == "Flat Blade" then
 			equip(sets.Break)
 			--send_command("@input /echo Break Set")
 		elseif spell.english == "Disaster" then
