@@ -158,7 +158,7 @@ function get_sets()
         back="Null Shawl",
         --waist = "Reiki Yotai",
 		waist = "Sailfi Belt +1",
-        	legs={ name="Gleti's Breeches", augments={'Path: A',}},
+        legs={ name="Gleti's Breeches", augments={'Path: A',}},
 		Feet = "Nyame Sollerets",
     }
 
@@ -168,7 +168,7 @@ function get_sets()
 		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
-		legs="Malignance Tights",
+		legs={ name="Gleti's Breeches", augments={'Path: A',}},
 		feet="Malignance Boots",
 		neck="Loricate Torque +1",
 		waist="Carrier's Sash",
@@ -185,7 +185,7 @@ function get_sets()
 		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
-		legs="Gelti's Breeches",
+		legs={ name="Gleti's Breeches", augments={'Path: A',}},
 		feet="Malignance Boots",
 		neck={ name="Mirage Stole +2", augments={'Path: A',}},
 		--waist="Reiki Yotai",
