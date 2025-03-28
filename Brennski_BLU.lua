@@ -158,7 +158,7 @@ function get_sets()
         back="Null Shawl",
         --waist = "Reiki Yotai",
 		waist = "Sailfi Belt +1",
-        legs="Gelti's Breeches",
+        	legs={ name="Gleti's Breeches", augments={'Path: A',}},
 		Feet = "Nyame Sollerets",
     }
 
