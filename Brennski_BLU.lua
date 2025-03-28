@@ -81,13 +81,13 @@ function get_sets()
         ear1 = "Eabani Earring",
         ear2 = "Infused Earring",
         body="Hashishin Mintan +2",
-        hands="Malignance Gloves",
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs="Nyame Flanchard",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
         ring1 = "Defending ring",
         ring2 = "Shneddick Ring",
         back="Null Shawl",
-        waist = "Null Belt",
-        legs = "Malignance Tights",
-		feet="Malignance Boots",	
+        waist = "Null Belt"
     }
 
     sets.Idle.Cleave = {
@@ -156,8 +156,9 @@ function get_sets()
 		left_ring="Ilabrat Ring",
 		right_ring="Epona's Ring",
         back="Null Shawl",
-        waist = "Reiki Yotai",
-        legs = "Samnuha Tights",
+        --waist = "Reiki Yotai",
+		waist = "Sailfi Belt +1",
+        legs="Gelti's Breeches",
 		Feet = "Nyame Sollerets",
     }
 
@@ -184,10 +185,11 @@ function get_sets()
 		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
-		legs="Malignance Tights",
+		legs="Gelti's Breeches",
 		feet="Malignance Boots",
 		neck={ name="Mirage Stole +2", augments={'Path: A',}},
-		waist="Reiki Yotai",
+		--waist="Reiki Yotai",
+		waist = "Sailfi Belt +1",
 		left_ear="Telos Earring",
 		right_ear="Suppanomimi",
 		right_ring="Ilabrat Ring",
@@ -440,7 +442,8 @@ function get_sets()
         back={ name="Aurist's Cape +1", augments={'Path: A',}},
         hands = "Hashishin bazubands +3",
 		feet="Hashishin Basmak +2",
-        neck = "Mirage Stole +2"
+        neck = "Mirage Stole +2",
+		back = "Null Shawl"
     }
 
     sets.BlueMagic.Debuff = {
@@ -455,10 +458,11 @@ function get_sets()
 		neck={ name="Mirage Stole +2", augments={'Path: A',}},
 		waist="Acuity Belt +1",
 		right_ear = "Hashi. Earring +1",
-		left_ear="Regal Earring",
+		left_ear="Crep. Earring",
 		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		right_ring="Stikini Ring +1",
-		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+		--back={ name="Aurist's Cape +1", augments={'Path: A',}},
+		back = "Null Shawl"
     }
 
     sets.BlueMagic.BuffSkill = {
@@ -515,11 +519,12 @@ function get_sets()
 		feet="Hashishin Basmak +2",
 		neck={ name="Mirage Stole +2", augments={'Path: A',}},
 		waist="Sacro Cord",
-		left_ear="Regal Earring",
+		left_ear="Crep. Earring",
 		right_ear = "Hashi. Earring +1",
 		right_ring="Stikini ring +1",
 		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+		--back={ name="Aurist's Cape +1", augments={'Path: A',}},
+		back = "Null Shawl"
 	}
 
     sets.BlueMagic.Enmity = {
@@ -544,7 +549,7 @@ function get_sets()
         neck = "Mirage Stole +2",
         ear2 = "Friomisi earring",
         ear1 = "Regal Earring",
-        body = "Jhakri Robe +2",
+        body="Hashishin Mintan +2",
         hands = "Hashishin bazubands +3",
         left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
         right_ring = "Acumen Ring",
@@ -557,7 +562,7 @@ function get_sets()
 	sets.BlueMagic.OdyDF ={
 	    ammo="Staunch Tathlum +1",
 		head={ name="Nyame Helm", augments={'Path: B',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
+		body="Hashishin Mintan +2",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs = "Hashishin tayt +3",
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -567,7 +572,8 @@ function get_sets()
 		right_ear="Digni. Earring",
 		left_ring="Defending Ring",
 		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+		--back={ name="Aurist's Cape +1", augments={'Path: A',}},
+		back = "Null Shawl"
 	}
 
 

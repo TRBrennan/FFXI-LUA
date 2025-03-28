@@ -171,7 +171,7 @@ function get_sets()
 										  neck="Rep. Plat. Medal",ear1="Ishvara Earring",ear2="Moonshade Earring",
                                           body="Nyame Mail",
 										  hands="Nyame Gauntlets",ring1="Epaminondas's Ring",ring2="Ephramad's Ring",
-                                          back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},
+                                          back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}},
 										  waist="Sailfi Belt +1",Legs = "Nyame Flanchard",
 										  feet="Nyame Sollerets" }
                                                            
@@ -270,7 +270,7 @@ function get_sets()
 			head={ name="Taeon Chapeau", augments={'"Snapshot"+4','"Snapshot"+4',}},
 			body="Oshosi Vest",
 			hands={ name="Taeon Gloves", augments={'"Snapshot"+5','"Snapshot"+5',}},
-			legs="Ikenga's Trousers",
+			legs="Chasseur's Culottes +2",
 			feet="Meg. Jam. +2",
 			neck={ name="Comm. Charm +1", augments={'Path: A',}},
 			waist="Yemaya Belt",

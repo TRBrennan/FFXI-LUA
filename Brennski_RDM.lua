@@ -78,7 +78,7 @@ function get_sets()
 
 	sets.Idle.Ami = {
 		ammo="Homiliary",
-		head="Null Mask",
+		head="Null Masque",
 		body = "Lethargy Sayon +3",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
@@ -113,7 +113,8 @@ function get_sets()
 		right_ear="Telos Earring",
 		left_ring="Hetairoi Ring",
 		right_ring="Chirich Ring +1",
-		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
+		--back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},	
+		back="Null Shawl",
 	}
 
 	sets.TP.EnSpell = {
@@ -130,7 +131,8 @@ function get_sets()
 		right_ear="Telos Earring",
 		left_ring="Hetairoi Ring",
 		right_ring="Chirich Ring +1",
-		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},
+		--back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},	
+		back="Null Shawl",
 	}
 	
 	sets.TP.SubtleBlow = {
@@ -146,7 +148,8 @@ function get_sets()
 		right_ear="Telos Earring",
 		left_ring="Chirich Ring",
 		right_ring="Chirich Ring +1",
-		back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},	
+		--back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Dual Wield"+10','Phys. dmg. taken-10%',}},	
+		back="Null Shawl",
 	}
 	
 	sets.TP.SingleWield = {

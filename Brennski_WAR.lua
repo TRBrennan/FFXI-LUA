@@ -76,8 +76,8 @@ function get_sets()
 		ammo ="Aurgelmir Orb +1",
 		head="Null Masque",
 		neck = "Warder's Charm +1",
-		ear1 = "Eabani earring",
-		ear2 = "Infused Earring",
+		right_ear = "Eabani earring",
+		left_ear = "Infused Earring",
 		body = "Sakpata's Plate",
 		hands = { name="Sakpata's Gauntlets", augments={'Path: A',}},
 		ring2 = "Defending ring",
@@ -91,8 +91,8 @@ function get_sets()
 	sets.Idle.DT = {
 		ammo = "Staunch Tathlum +1",
 		neck = "Loricate Torque +1",
-		ear1 = "Eabani earring",
-		ear2 = "Hearty Earring",
+		right_ear = "Eabani earring",
+		left_ear = "Hearty Earring",
 		head="Null Masque",
 		body="Sakpata's Plate",
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
@@ -135,8 +135,8 @@ function get_sets()
 		--head = "Hjarrandi Helm",
 		head={ name="Sakpata's Helm", augments={'Path: A',}},
 		neck = "Warrior's bead necklace +2",
-		ear2 = "Schere Earring",
-		ear1 = "Telos earring",
+		left_ear = "Schere Earring",
+		right_ear = "Telos earring",
 		--body={ name="Valorous Mail", augments={'Accuracy+30','"Dbl.Atk."+4','DEX+7',}},
 		body = TP_Body,
 		hands = "Sakpata's Gauntlets",
@@ -171,8 +171,8 @@ function get_sets()
 		ammo = "Yetshila +1",
 		head = "Hjarrandi Helm",
 		neck = "Warrior's bead necklace +2",
-		ear2 = "Brutal earring",
-		ear1 = "Telos earring",
+		left_ear = "Brutal earring",
+		right_ear = "Telos earring",
 		body = TP_Body,
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
@@ -188,8 +188,8 @@ function get_sets()
 		ammo = "Coiste Bodhar",
 		head = Acc_Head,
 		neck = "Subtlety spectacles",
-		ear2 = "Dignitary's earring",
-		ear1 = "Telos earring",
+		left_ear = "Dignitary's earring",
+		right_ear = "Telos earring",
 		body = TP_Body,
 		hands = "Sakpata's Gauntlets",
 		ring1 = {name="Moonlight Ring",bag="wardrobe3"},
@@ -221,8 +221,8 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head = "Hjarrandi Helm",
 		neck={ name="War. Beads +2", augments={'Path: A',}},
-		ear2 = "Schere Earring",
-		ear1 = "Telos earring",
+		left_ear = "Schere Earring",
+		right_ear = "Telos earring",
 		body = TP_Body,
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
@@ -330,8 +330,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Warrior's bead necklace +2",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
@@ -347,8 +347,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = "Sakpata's Helm",
 		neck = "Warrior's bead necklace +2",
-		ear2 = "Schere Earring",
-		ear1 = "Moonshade earring",
+		left_ear = "Schere Earring",
+		right_ear = "Moonshade earring",
 		body = WSD_Body,
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Epaminondas's Ring",
@@ -395,8 +395,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Fotia gorget",
-		ear1 = "Moonshade earring",
-		ear2 = "Schere Earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
@@ -408,18 +408,18 @@ function get_sets()
 	}
 
 	sets.Break = {
-		ammo = "Pemphredo Tathlum",
-		head = "Sakpata's Helm",
-		body="Sakpata's Plate",
-		hands = "Sakpata's Gauntlets",
-		legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
-		feet="Sakpata's Leggings",
-		neck = "Moonlight Necklace",
-		waist = "Null Belt",
-		left_ear = "Boii Earring +1",
-		right_ear = "Crep. Earring",
-		left_ring = "Stikini ring +1",
-		right_ring = "Flamma Ring",
+		ammo="Pemphredo Tathlum",
+		head="Null Masque",
+		body="Boii Lorica +3",
+		hands="Boii Mufflers +3",
+		legs="Boii Cuisses +3",
+		feet="Boii Calligae +3",
+		neck="Moonlight Necklace",
+		waist="Null Belt",
+		right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Crit.hit rate+3',}},
+		left_ear="Crep. Earring",
+		right_ring="Stikini Ring +1",
+		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		back="Null Shawl",
 	}
 
@@ -427,8 +427,8 @@ function get_sets()
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Warrior's bead necklace +2",
-		ear1 = "Telos earring",
-		ear2 = "Moonshade earring",
+		right_ear = "Boii Earring +1",
+		right_ear = "Moonshade Earring",
 		body = "Sakpata's Plate",
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
@@ -443,8 +443,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Warrior's bead necklace +2",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
@@ -460,8 +460,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Fotia gorget",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
@@ -476,8 +476,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Fotia Gorget",
-		ear1 = "Thrud Earring",
-		ear1 = "Telos earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Telos earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
@@ -492,8 +492,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Warrior's bead necklace +2",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
@@ -509,8 +509,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Fotia gorget",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
@@ -525,8 +525,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = "Pixie hairpin +1",
 		neck = "Sanctity Necklace",
-		ear1 = "Friomisi earring",
-		ear2 = "Crep. earring",
+		right_ear = "Friomisi earring",
+		left_ear = "Crep. earring",
 		body = "Nayame Mail",
 		hands = "Nayame Gauntlets",
 		ring1 = "Epaminondas's Ring",
@@ -541,8 +541,8 @@ function get_sets()
 		ammo = "Coiste Bodhar",
 		head = WS_Head,
 		neck = "Fotia Gorget",
-		ear2 = "Schere Earring",
-		ear1 = "Moonshade earring",
+		right_ear = "Schere Earring",
+		right_ear = "Moonshade Earring",
 		body = "Sakpata's Plate",
 		hands = "Valorous mitts",
 		ring1 = "Niqmaddu Ring",
@@ -587,8 +587,8 @@ function get_sets()
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia Gorget",
-		ear2 = "Brutal earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Brutal earring",
+		right_ear = "Moonshade Earring",
 		body = "Sakpata's Plate",
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
@@ -603,8 +603,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = "Nyame Helm",
 		neck = "Sanctity Necklace",
-		ear1 = "Friomisi earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Friomisi earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands="Nyame Gauntlets",
 		ring1 = "Beithir ring",
@@ -619,8 +619,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Warrior's bead necklace +2",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
@@ -637,8 +637,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Fotia gorget",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Epaminondas's Ring",
@@ -654,8 +654,8 @@ function get_sets()
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
-		ear2 = "Schere Earring",
-		ear1 = "Moonshade earring",
+		left_ear = "Schere Earring",
+		right_ear = "Moonshade Earring",
 		body = "Sakpata's Plate",
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
@@ -670,8 +670,8 @@ function get_sets()
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
-		ear2 = "Moonshade earring",
-		ear1 = "Schere Earring",
+		right_ear = "Moonshade Earring",
+		left_ear = "Schere Earring",
 		body = "Sakpata's Plate",
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
@@ -686,8 +686,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Warrior's bead necklace +2",
-		ear1 = "Telos earring",
-		ear1 = "Telos earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Flamma ring",
@@ -700,28 +700,12 @@ function get_sets()
 		
 	}
 
-	sets.Shockwave = {
-		ammo = "Knobkierrie",
-		head = WSD_Head,
-		neck = "Fotia Gorget",
-		ear2 = "Brutal earring",
-		ear2 = "Moonshade earring",
-		body = TP_Body,
-		hands = WSD_Hands,
-		ring1 = "Niqmaddu ring",
-		ring2 = "Ephramad's Ring",
-		back="Null Shawl",
-		waist = "Fotia belt",
-		legs = WSD_Legs,
-		feet = "Pummeler's Calligae +3"
-	}
-
 	sets.Groundstrike = {
 		ammo = "Knobkierrie",
 		head = WS_Head,
 		neck = "Fotia Gorget",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
@@ -732,44 +716,12 @@ function get_sets()
 		feet="Sakpata's Leggings",
 	}
 
-	sets.CrescentMoon = {
-		ammo = "Knobkierrie",
-		head = WSD_Head,
-		neck = "Fotia Gorget",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
-		body = WSD_Body,
-		hands = WSD_Hands,
-		ring1 = "Niqmaddu ring",
-		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		back = STR_Back,
-		waist = "Fotia belt",
-		legs = WSD_Legs,
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-	}
-
-	sets.Herculean = {
-		ammo = "Knobkierrie",
-		head = "Jumalik helm",
-		neck = "Baetyl pendant",
-		ear1 = "Friomisi earring",
-		ear2 = "Crematio earring",
-		body = "Nayame Mail",
-		hands = "Nayame Gauntlets",
-		ring1 = "Shiva ring +1",
-		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		back = WSD_Back,
-		waist = "Eschan stone",
-		legs = "Eschite cuisses",
-		feet = "Nayame Sollerets",
-	}
-
 	sets.Evisceration = {
 		ammo = "Yetshila +1",
 		head = "Blistering Sallet +1",
 		neck = "Fotia Gorget",
-		ear2 = "Schere Earring",
-		ear1 = "Moonshade earring",
+		left_ear = "Schere Earring",
+		right_ear = "Moonshade earring",
 		body="Hjarrandi Breast.",
 		hands = "Flamma manopolas +2",
 		ring1 = "Niqmaddu ring",
@@ -784,8 +736,8 @@ function get_sets()
 		ammo = "Yetshila +1",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
@@ -793,14 +745,15 @@ function get_sets()
 		back = STR_Back,
 		waist = "Fotia belt",
 		legs = WSD_Legs,
-		feet = "Boii Calligae +3"	}
+		feet = "Boii Calligae +3"	
+	}
 
 	sets.Judgment = {
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Warrior's bead necklace +2",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring2 = "Ephramad's Ring",
@@ -816,8 +769,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Fotia gorget",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = "Nyame Mail",
 		hands = WSD_Hands,
 		ring2 = "Ephramad's Ring",
@@ -832,8 +785,8 @@ function get_sets()
 		ammo = "Yetshila +1",
 		head = "Blistering Sallet +1",
 		neck = "Fotia Gorget",
-		ear2 = "Brutal earring",
-		ear2 = "Moonshade earring",
+		right_ear = "Boii earring +1",
+		left_ear = "Moonshade Earring",
 		body = "Sakpata's Plate",
 		hands = "Flamma manopolas +2",
 		ring1 = "Niqmaddu ring",
@@ -848,8 +801,8 @@ function get_sets()
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
-		ear1 = "Moonshade earring",
-		ear2 = "Cessance earring",
+		right_ear = "Moonshade earring",
+		left_ear = "Cessance earring",
 		body = "Sakpata's Plate",
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
@@ -864,8 +817,8 @@ function get_sets()
 		ammo = "Coiste Bodhar",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
-		ear1 = "Moonshade earring",
-		ear2 = "Cessance earring",
+		right_ear = "Boii Earring +1",
+		left_ear = "Moonshade earring",
 		body = "Sakpata's Plate",
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
@@ -880,8 +833,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = "Flam. Zucchetto +2",
 		neck = "Fotia gorget",
-		ear1 = "Moonshade earring",
-		ear2 = "Cessance earring",
+		right_ear = "Boii Earring +1",
+		left_ear = "Moonshade earring",
 		body = "Sakpata's Plate",
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
@@ -896,8 +849,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Fotia gorget",
-		ear1 = "Moonshade earring",
-		ear2 = "Thrud Earring",
+		right_ear = "Moonshade earring",
+		left_ear = "Thrud Earring",
 		body = WSD_Body,
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Niqmaddu ring",
@@ -908,28 +861,12 @@ function get_sets()
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 	}
 
-	sets.CR = {
-		ammo = "Knobkierrie",
-		head = WSD_Head,
-		neck = "Fotia Gorget",
-		ear1 = "Thrud Earring",
-		ear1 = "Telos earring",
-		body = WSD_Body,
-		hands = WSD_Hands,
-		ring1 = "Niqmaddu ring",
-		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		back = STR_Back,
-		waist = "Fotia Belt",
-		legs = WSD_Legs,
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-	}
-
 	sets.Retribution = {
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Fotia gorget",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
@@ -944,8 +881,8 @@ function get_sets()
 		ammo = "Knobkierrie",
 		head = WSD_Head,
 		neck = "Fotia gorget",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
+		left_ear = "Thrud Earring",
+		right_ear = "Moonshade Earring",
 		body = WSD_Body,
 		hands = WSD_Hands,
 		ring1 = "Niqmaddu ring",
@@ -954,54 +891,6 @@ function get_sets()
 		waist = "Fotia belt",
 		legs = WSD_Legs,
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-	}
-
-	sets.TK = {
-		ammo = "Knobkierrie",
-		head = WSD_Head,
-		neck = "Fotia gorget",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
-		body = WSD_Body,
-		hands = WSD_Hands,
-		ring1 = "Niqmaddu ring",
-		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		back = STR_Back,
-		waist = "Fotia belt",
-		legs = WSD_Legs,
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-	}
-
-	sets.DK = {
-		ammo = "Knobkierrie",
-		head = WSD_Head,
-		neck = "Fotia gorget",
-		ear1 = "Thrud Earring",
-		ear2 = "Moonshade earring",
-		body = WSD_Body,
-		hands = WSD_Hands,
-		ring1 = "Niqmaddu ring",
-		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		back = WSD_Back,
-		waist = "Caudata belt",
-		legs = WSD_Legs,
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-	}
-
-	sets.RF = {
-		ammo = "Coiste Bodhar",
-		head = "Flam. Zucchetto +2",
-		neck = "Rep. Plat. Medal",
-		ear1 = "Moonshade earring",
-		ear2 = "Cessance earring",
-		body = "Sakpata's Plate",
-		hands = "Sakpata's Gauntlets",
-		ring1 = "Niqmaddu ring",
-		ring2 = {name="Moonlight Ring",bag="wardrobe3"},
-		back = DA_Back,
-		waist = "Sailfi Belt +1",
-		legs = "Sakpata's Cuisses",
-		feet = "Pummeler's calligae +3"
 	}
 
 	sets.ID = {
@@ -1014,8 +903,8 @@ function get_sets()
 		feet="Boii Calligae +3",
 		neck = "War. Beads +2",
 		waist = "Sailfi Belt +1",
-		ear2= "Schere Earring",
-		ear1 = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
+		left_ear= "Schere Earring",
+		right_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
 		left_ring = "Niqmaddu Ring",
 		right_ring="Epaminondas's Ring",
 		back = DA_Back,
@@ -1037,7 +926,6 @@ function get_sets()
 		back = STR_Back
 	}
 	
-
 	sets.ResoWSD = {
 		ammo = "Knobkierrie",
 		head = {name = "Agoge Mask +3", augments = {'Enhances "Savagery" effect'}},
@@ -1048,7 +936,7 @@ function get_sets()
 		neck = "Fotia Gorget",
 		waist = "Fotia Belt",
 		left_ear = {name = "Moonshade Earring", augments = {"Accuracy+4", "TP Bonus +250"}},
-		right_ear = "Thrud Earring",
+		left_ear = "Thrud Earring",
 		left_ring = {name="Moonlight Ring",bag="wardrobe3"},
 		right_ring = "Niqmaddu Ring",
 		back = {name = "Cichol's Mantle",augments = {"VIT+20", "Accuracy+20 Attack+20", "VIT+10", "Weapon skill damage +10%"}}
@@ -1069,23 +957,7 @@ function get_sets()
 		right_ring="Ephramad's Ring",
 		back=STR_Back,
 		}
-	
-	sets.Cata = {    
-		ammo={ name="Seeth. Bomblet +1", augments={'Path: A',}},
-		head="Pixie Hairpin +1",
-		body={ name="Nyame Mail", augments={'Path: B',}},
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-		legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
-		neck="Sanctity Necklace",
-		waist="Orpheus's Sash",
-		left_ear="Thrud Earring",
-		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-		left_ring="Epaminondas's Ring",
-		right_ring="Archon Ring",
-		back=STR_Back,
-		}
-	
+		
 	sets.WSMS = {
 		ammo="Yetshila +1",
 		head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
@@ -1164,7 +1036,7 @@ function get_sets()
 
 	sets.enmity = {
 		ammo = "Sapience Orb",
-		ear2 = "Trux Earring",
+		left_ear = "Trux Earring",
 		back = "Weard Mantle",
 		waist = "Trance belt",
 		ring2 = "Supershear Ring",
@@ -1183,8 +1055,8 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head = "Cizin helm +1",
 		neck = "Loricate torque +1",
-		ear1 = "Loquac. Earring",
-		ear2 = "Sanare Earring",
+		right_ear = "Loquac. Earring",
+		left_ear = "Sanare Earring",
 		body = "Odyssean chestplate",
 		hands = "Leyline Gloves",
 		ring1 = "Weatherspoon ring",
@@ -1198,8 +1070,8 @@ function get_sets()
 		ammo = "Staunch Tathlum +1",
 		head = "Sulevia's mask +1",
 		neck = "Loricate torque +1",
-		ear1 = "Hearty earring",
-		ear2 = "Sanare earring",
+		right_ear = "Hearty earring",
+		left_ear = "Sanare earring",
 		body = "Souveran cuirass +1",
 		hands = "Sakpata's Gauntlets",
 		ring1 = "Moonbeam ring",
@@ -1227,7 +1099,7 @@ function precast(spell)
 		equip(sets.fastcast)
 		--send_command("@input /echo Fastcast Set")
 	end
-	if player.equipment.main == "Chango" then
+	if player.equipment.main == "Chango" or player.equipment.main == "Ikenga's Axe" then
 		TPBonus = 500
 	else
 		TPBonus = 0
@@ -1255,22 +1127,11 @@ function precast(spell)
 				if CurrentTP > 1500 then
 					equip(sets.UpheavalWSD)
 					
-				if buffactive['Mighty Strikes'] then
-					equip(sets.WSMS)
-				end
-					--send_command("@input /echo Upheaval WSD Set")
-				-- if buffactive["Mighty Strikes"] then
-					-- equip(sets.UpheavalCrit)
-					-- send_command("@input /echo Upheavel Crit Set")
-					-- end
+				-- if buffactive['Mighty Strikes'] then
+					-- equip(sets.WSMS)
+				-- end
 				else
 					equip(sets.UpheavalDA)
-				--equip(sets.UpheavalWSD)
-					--send_command("@input /echo Upheaval DA Set")
-				-- if buffactive["Mighty Strikes"] then
-					-- equip(sets.UpheavalCrit)
-					-- send_command("@input /echo Upheavel Crit Set")
-					-- end
 				end
 			else
 				cancel_spell()
@@ -1284,9 +1145,9 @@ function precast(spell)
 				if CurrentTP > 1500 then
 					--equip(sets.UpheavalWSD)
 					equip(sets.IDHigh)
-					if buffactive['Mighty Strikes'] then
-						equip(sets.WSMS)
-					end
+					-- if buffactive['Mighty Strikes'] then
+						-- equip(sets.WSMS)
+					-- end
 					--send_command("@input /echo ID Crit Damage WSD Set")
 				else
 					equip(sets.ID)
@@ -1334,7 +1195,12 @@ function precast(spell)
 			equip(sets.Break)
 			--send_command("@input /echo Break Set")
 		elseif spell.english == "Disaster" then
+		CurrentTP = player.tp + TPBonus
+		 if CurrentTP > 2700 then
+			equip(set_combine(sets.KingsJusticeWSD, {right_ear = "Schere Earring"}))
+		else		 
 			equip(sets.KingsJusticeWSD)
+		end	
 	---Great Sword Weapon Skills---
 		elseif spell.english == "Resolution" then
 			if spell.target.distance <= 5.6 then	
@@ -1351,25 +1217,16 @@ function precast(spell)
 		elseif spell.english == "Ground Strike" then
 			equip(sets.Groundstrike)
 			--send_command("@input /echo Ground Strike Set")
-		elseif spell.english == "Crescent Moon" then
-			equip(sets.CrescentMoon)
-			--send_command("@input /echo CM Set")
-		elseif spell.english == "Shockwave" then
-			equip(sets.Shockwave)
-			--send_command("@input /echo Shockwave Set")
-		elseif spell.english == "Herculean Slash" then
-			---Axe Weapon Skills---
-			equip(sets.Herculean)
-			--send_command("@input /echo Herculean Set")
 		elseif spell.english == "Ruinator" then
 			equip(sets.Ruinator)
 			--send_command("@input /echo Ruinator Set")
 		elseif spell.english == "Mistral Axe" or spell.english == "Calamity" then
+			CurrentTP = player.tp + TPBonus
+			if CurrentTP > 1390 then
+				equip(set_combine(sets.Mistral, {right_ear = "Schere Earring"}))
+			else
 				equip(sets.Mistral)
-				--send_command("@input /echo Mistral Set")
-				if buffactive['Mighty Strikes'] then
-					equip(sets.WSMS)
-				end
+			end
 		elseif spell.english == "Cloudsplitter" or spell.english == "Red Lotus Blade" or spell.english == "Seraph Blade" or spell.english == "Earth Crusher"  then
 			equip(sets.Cloud)
 			--send_command("@input /echo Magic WS Set")
@@ -1385,12 +1242,12 @@ function precast(spell)
 			--send_command("@input /echo Rampage Set")
 		elseif spell.english == "Savage Blade" then
 			if spell.target.distance <= 5.6 then
+				CurrentTP = player.tp + TPBonus
+				if CurrentTP > 1500 then
+					equip(set_combine(sets.Savage, {right_ear = "Schere Earring"}))
+				else
 					equip(sets.Savage)
-					--send_command("@input /echo Savage Blade Set")
-				if buffactive['Mighty Strikes'] then
-					equip(sets.WSMS)
 				end
-			else
 			cancel_spell()
 			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
 			end
@@ -1409,8 +1266,12 @@ function precast(spell)
 			--send_command("@input /echo BH Set")
 		elseif spell.english == "Judgment" then
 			if spell.target.distance <= 5.6 then
-				equip(sets.Judgment)
-				--send_command("@input /echo Judgment Set")
+				CurrentTP = player.tp + TPBonus
+				if CurrentTP > 1500 then
+					equip(set_combine(sets.Judgment, {right_ear = "Schere Earring"}))
+				else
+					equip(sets.Judgment)
+				end
 			else
 			cancel_spell()
 			windower.add_to_chat(121, "Canceled " .. spell.name .. " " .. spell.target.name .. " is Too Far")
@@ -1437,11 +1298,6 @@ function precast(spell)
 			---Scythe Weapon Skills---
 			equip(sets.Wheeling)
 			--send_command("@input /echo Wheeling Thrust Set")
-		elseif spell.english == "Cross Reaper" then
-			---Dagger Weapon Skills---
-			equip(sets.CR)
-			--send_command("@input /echo CR Set")
-		elseif spell.english == "Evisceration" then
 			---Staff Weapon Skills---
 			equip(sets.Evisceration)
 			--send_command("@input /echo Evisceration Set")
@@ -1452,18 +1308,11 @@ function precast(spell)
 			---H2H Weapon Skills---
 			equip(sets.FullSwing)
 			--send_command("@input /echo Full Swing Set")
-		elseif spell.english == "Raging Fists" then
-			equip(sets.RF)
-			--send_command("@input /echo RF Set")
-		elseif spell.english == "Tornado Kick" then
-			equip(sets.TK)
-			--send_command("@input /echo TK Set")
-		elseif spell.english == "Dragon Kick" then
-			equip(sets.DK)
-			--send_command("@input /echo DK Set")
 		elseif spell.english == "Aeolian Edge" then
 			equip(sets.AE)
 		end
+		else 
+			equip(sets.Savage)
 	end
 	--JA Sets--
 	if spell.type == "JobAbility" then

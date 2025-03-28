@@ -59,27 +59,26 @@ function get_sets()
         }
 
         sets.Idle.Ami = {
-                ammo = "Staunch Tathlum +1",
-				head="Turms Cap +1",
-               -- neck = "Warder's Charm +1",
-			    neck = "Rep. Plat. Medal",
-                ear1 = "Eabani Earring",
-                ear2 = "Infused Earring",
-                body = "Gleti's Cuirass",
-                hands = "Regal Gloves",
-				left_ring="Roller's Ring",
-				right_ring="Shneddick Ring",
-                back="Null Shawl",
-                waist = "Null Belt",
-				legs="Gleti's Breeches",
-				feet="Gleti's Boots"
+			ammo="Staunch Tathlum +1",
+			head="Turms Cap +1",
+			body={ name="Gleti's Cuirass", augments={'Path: A',}},
+			hands="Regal Gloves",
+			legs={ name="Gleti's Breeches", augments={'Path: A',}},
+			feet="Gleti's Boots",
+			neck="Rep. Plat. Medal",
+			waist="Carrier's Sash",
+			left_ear="Eabani Earring",
+			right_ear="Etiolation Earring",
+			left_ring="Roller's Ring",
+			right_ring="Defending Ring",
+			back="Moonbeam Cape",
         }
 
         --TP Sets--
         sets.TP = {}
 
-        sets.TP.index = {"Standard", "DTAccuracy"}
-        --1=Standard, 2=DTAccuracy,
+        sets.TP.index = {"Standard", "DTAccuracy", "Ami"}
+        --1=Standard, 2=DTAccuracy, 3 =Ami,
 
         TP_ind = 1
         sets.TP.Standard = {
@@ -102,12 +101,14 @@ function get_sets()
 
         sets.TP.DTAccuracy = {
 			ammo="Coiste Bodhar",
-			head="Maculele Tiara +3",
+			--head="Maculele Tiara +3",
+			head="Malignance Chapeau",
 			neck="Etoile Gorget +2",
-			ear1="Sherida Earring",
-			ear2="Macu. Earring +2",
+			left_ear="Sherida Earring",
+			right_ear="Telos Earring",
 			body="Malignance Tabard",
-			hands="Malignance Gloves",
+			--hands="Malignance Gloves",
+			hands="Gleti's Gauntlets",
 			ring1="Moonlight Ring",
 			ring2="Gere Ring",
 			back="Null Shawl",
@@ -115,6 +116,22 @@ function get_sets()
 			legs="Gleti's Breeches",
 			feet="Maculele Toe Shoes +3"
         }
+		
+		sets.TP.Ami = {
+		    ammo="Staunch Tathlum +1",
+			head="Turms Cap +1",
+			body={ name="Gleti's Cuirass", augments={'Path: A',}},
+			hands="Regal Gloves",
+			legs={ name="Gleti's Breeches", augments={'Path: A',}},
+			feet="Gleti's Boots",
+			neck="Rep. Plat. Medal",
+			waist="Carrier's Sash",
+			left_ear="Eabani Earring",
+			right_ear="Etiolation Earring",
+			left_ring="Roller's Ring",
+			right_ring="Defending Ring",
+			back="Moonbeam Cape",
+		}
 
         --Weaponskill Sets--
         sets.WS = {}
