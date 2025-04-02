@@ -44,7 +44,8 @@ function get_sets()
 		right_ear="Hearty Earring",
 		left_ring="Defending Ring",
 		right_ring="Shneddick Ring",
-		back="Alaunus's Cape",
+		--back="Alaunus's Cape",
+		back = "Null shawl"
 	}
 
     sets.aftercast_Move = sets.aftercast_Idle_refresh
@@ -66,7 +67,8 @@ function get_sets()
 		right_ear="Steelflash Earring",
 		left_ring="Chirich Ring +1",
 		right_ring="Petrov Ring",
-		back="Alaunus's Cape",
+		--back="Alaunus's Cape",
+		back = "Null Shawl"
 	}
 
     sets.precast_Cure = {
@@ -132,7 +134,8 @@ function get_sets()
         feet = "Nyame Sollerets",
 		right_ring="Petrov Ring",
 		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-        back = "Lifestream Cape",
+       -- back = "Lifestream Cape",
+	   back = "Null Shawl",
         waist = "Sailfi Belt +1"
     }
 
@@ -179,7 +182,8 @@ function get_sets()
         sub = "Ammurapi Shield",
         ammo = "Hydrocera",
         head = "Befouled crown",
-        neck = "Imbodla necklace",
+        --neck = "Imbodla necklace",
+		neck = "Null Loop",
         ear1 = "Lifestorm Earring",
         ear2 = "Regal Earring",
         body = "Theo. Bliaut +3",
@@ -229,6 +233,25 @@ function get_sets()
         right_ring = "Kishar Ring",
         back = "Fi Follet Cape +1"
     }
+	
+	sets.midcast_Aquaveil ={
+	    main = "Vadose Rod",
+        sub = "Ammurapi Shield",
+        ammo = "Homiliary",
+        head = {name = "Telchine Cap", augments = {"Enh. Mag. eff. dur. +9"}},
+        body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +9',}},
+        hands = {name = "Telchine Gloves", augments = {"Enh. Mag. eff. dur. +10"}},
+		legs ="Shedir Seraweels",
+        feet = {name = "Telchine Pigaches", augments = {"Enh. Mag. eff. dur. +9"}},
+        neck = "Incanter's Torque",
+        waist = "Emphatikos Rope",
+        left_ear = "Andoaa Earring",
+        right_ear = "Mimir Earring",
+        left_ring = "Stinki Ring",
+        right_ring = "Kishar Ring",
+        back = "Fi Follet Cape +1"
+	}
+	
     set.midcast_Shellra = {
         main = {name = "Gada", augments = {"Enh. Mag. eff. dur. +4", "VIT+5", "Mag. Acc.+18", '"Mag.Atk.Bns."+4'}},
         sub = "Ammurapi Shield",
@@ -459,7 +482,9 @@ function midcast(spell)
             --send_command("@input /echo Shellra 5 Set")
 		elseif spell.name == "Auspice" then
 			equip(sets.midcast_Auspice)
-        else
+        elseif spell.name == "Auqaveil" then
+			equip(sets.midcast_Aquaveil)
+		else
             equip(sets.midcast_EnhancingMagic)
             --send_command("@input /echo Enhancing Set")
         end

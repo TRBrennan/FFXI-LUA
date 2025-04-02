@@ -147,7 +147,7 @@ function get_sets()
 		left_ear="Cessance Earring",
 		right_ear="Telos Earring",
 		left_ring="Chirich Ring +1",
-		right_ring="Petrov Ring",
+		right_ring="Moonbeam Ring",
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+7','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	

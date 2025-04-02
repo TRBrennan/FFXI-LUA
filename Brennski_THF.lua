@@ -115,7 +115,7 @@ function get_sets()
                 ring2 = "Epona's Ring",
                 back="Null Shawl",
                 waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-                legs = "Samnuha Tights",
+                legs={ name="Gleti's Breeches", augments={'Path: A',}},
                 feet="Malignance Boots",
         }
 
@@ -182,7 +182,7 @@ function get_sets()
                 ring2 = "Regal Ring",
                 back="Null Shawl",
                 waist = "Fotia belt",
-                legs = "Samnuha Tights",
+                legs={ name="Gleti's Breeches", augments={'Path: A',}},
                 Feet = "Nyame Sollerets",
         }
 
@@ -195,7 +195,7 @@ function get_sets()
 			feet="Nyame Sollerets",
 			neck="Fotia Gorget",
 			waist ="Fotia Belt",
-			left_ear="Sherida Earring",
+			left_ear="Odr Earring",
 			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 			left_ring="Gere Ring",
 			right_ring="Regal Ring",

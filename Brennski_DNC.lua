@@ -40,6 +40,7 @@ function get_sets()
         sets.Idle = {}
 
         sets.Idle.index = {"Standard", "Ami"}
+		TPBonus = 0
         Idle_ind = 1
 
         sets.Idle.Standard = {
@@ -164,7 +165,7 @@ function get_sets()
                 ring2 = "Ephramad's Ring",
                 back = "Null Shawl",
                 waist = "Fotia belt",
-                legs = "Samnuha Tights",
+                legs={ name="Gleti's Breeches", augments={'Path: A',}},
                 Feet = "Nyame Sollerets",
         }
 
@@ -177,7 +178,7 @@ function get_sets()
 			feet={ name="Nyame Sollerets", augments={'Path: B',}},
 			neck="Fotia Gorget",
 			waist="Fotia Belt",
-			left_ear="Sherida Earring",
+			left_ear="Odr Earring",
 			right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
 			left_ring="Hetairoi Ring",
 			right_ring="Gere Ring",
@@ -276,11 +277,11 @@ function get_sets()
 
         sets.Utility.Steps = {		
 			ammo="Yamarang",
-			head="Malignance Chapeau",
+			head="Maxixi Tiara +2",
 			body={ name="Gleti's Cuirass", augments={'Path: A',}},
 			hands="Maxixi Bangles +3",
 			legs={ name="Gleti's Breeches", augments={'Path: A',}},
-			feet="Horos T. Shoes +2",
+			feet="Horos T. Shoes +3",
 			neck="Etoile Gorget +2",
 			waist="Null Belt",
 			left_ear="Crep. Earring",
@@ -340,7 +341,7 @@ function get_sets()
 			back="Moonbeam Cape",
 		}
 		
-		sets.JA.Samba = {head = "Maxixi Tiara +1"}
+		sets.JA.Samba = {head = "Maxixi Tiara +2"}
 		
 		sets.JA.FeatherStep ={feet = "Maculele Toe Shoes +3"}
 		
@@ -369,6 +370,11 @@ function get_sets()
 end
 
 function precast(spell)
+		if player.equipment.sub == "Fusetto +3" then
+			TPBonus = 1000
+		else
+			TPBonus = 0
+		end
         if spell.action_type == "Magic" then
                 equip(sets.precast.FC.Standard)
         elseif spell.english == "Exenterator" then
@@ -376,9 +382,21 @@ function precast(spell)
         elseif spell.english == "Evisceration" then
                 equip(sets.Evisceration)
         elseif spell.english == "Shark Bite" then
+			TPBonus = TPBonus + 250
+			CurrentTP = player.tp + TPBonus
+			if CurrentTP > 1750 then
+                equip(set_combine(sets.SharkBite, {left_ear = "Odr Earring"}))
+			else
                 equip(sets.SharkBite)
+			end
         elseif spell.english == "Rudra's Storm" or spell.english == "Pyrrhic Kleos" then
-                equip(sets.Rudras)
+			TPBonus = TPBonus + 250
+			CurrentTP = player.tp + TPBonus
+			if CurrentTP > 1750 then
+                equip(set_combine(sets.Rudras, {left_ear = "Odr Earring"}))
+			else 
+			   equip(sets.Rudras)
+			end
         elseif spell.english == "Sanguine Blade" then
                 equip(sets.BlueMagic.Dark)
                 if spell.element == world.day_element or spell.element == world.weather_element then

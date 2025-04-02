@@ -265,7 +265,7 @@ function get_sets()
         ring2 = "Epona's ring",
         back="Null Shawl",
         waist = "Fotia belt",
-        legs = "Samnuha Tights",
+        legs={ name="Gleti's Breeches", augments={'Path: A',}},
         feet = "Carmine Greaves +1"
     }
 
@@ -307,7 +307,7 @@ function get_sets()
         ring2 = "Epona's Ring",
         back="Null Shawl",
         waist = "Fotia belt",
-        legs = "Samnuha Tights",
+		legs={ name="Gleti's Breeches", augments={'Path: A',}},
         feet = "Thereoid Greaves"
     }
 

@@ -175,28 +175,10 @@ function get_sets()
 	--Nuke Sets---
 	sets.Nuke = {}
 
-	sets.Nuke.index = {"Standard", "MagicBurst"}
-	--1=Standard, 2= Magic Burst'--
+	sets.Nuke.index = {"MagicBurst", "Standard", "Occult"}
+	--1=MagicBurst, 2= Standard, 3 = "Occult--
 	Nuke_ind = 1
-
-	sets.Nuke.Standard = {
-		main="Bunzi's Rod",
-		sub="Ammurapi Shield",
-		ammo = "Pemphredo Tathlum",
-		head = "Lethargy Chappel +2",
-		neck = "Sibyl Scarf",
-		ear2 = "Malignance Earring",
-		ear1 = "Regal Earring",
-		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+10%','CHR+4','Mag. Acc.+2','"Mag.Atk.Bns."+13',}},
-		hands = "Bunzi's Gloves",
-		ring1 = "Freke Ring",
-		ring2 = "Metamor. Ring +1",
-		waist = "Acuity Belt +1",
-		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
-		legs = "Lethargy Fuseau +2",
-		feet = "Vitiation Boots +3",
-	}
-
+	
 	sets.Nuke.MagicBurst = {
 		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
@@ -216,6 +198,41 @@ function get_sets()
 		--legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','INT+10','"Mag.Atk.Bns."+2',}},
 		legs = "Lethargy Fuseau +2",
 		feet = {name = "Merlinic Crackows",	augments = {'Mag. Acc.+19 "Mag.Atk.Bns."+19', "Magic burst dmg.+9%", "MND+9", "Mag. Acc.+15"}}
+	}
+
+	sets.Nuke.Standard = {
+		main="Bunzi's Rod",
+		sub="Ammurapi Shield",
+		ammo = "Pemphredo Tathlum",
+		head = "Lethargy Chappel +2",
+		neck = "Sibyl Scarf",
+		ear2 = "Malignance Earring",
+		ear1 = "Regal Earring",
+		body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Magic burst dmg.+10%','CHR+4','Mag. Acc.+2','"Mag.Atk.Bns."+13',}},
+		hands = "Bunzi's Gloves",
+		ring1 = "Freke Ring",
+		ring2 = "Metamor. Ring +1",
+		waist = "Acuity Belt +1",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','Weapon skill damage +10%',}},
+		legs = "Lethargy Fuseau +2",
+		feet = "Vitiation Boots +3",
+	}
+
+	
+	sets.Nuke.Occult ={
+		main="Bunzi's Rod",
+		sub="Ammurapi Shield",
+		ammo = "Aurgelmir Orb +1",
+	    hands={ name="Merlinic Dastanas", augments={'Mag. Acc.+28','"Occult Acumen"+9','INT+9',}},
+		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+26','"Occult Acumen"+11','INT+5',}},
+		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+22','"Occult Acumen"+9','INT+8','"Mag.Atk.Bns."+14',}},
+		neck="Lissome Necklace",
+		waist="Null Belt",
+		left_ear="Crep. Earring",
+		right_ear="Digni. Earring",
+		left_ring="Chirich Ring +1",
+		right_ring="Chirich Ring",
+		back="Null Shawl",
 	}
 
 	--Enhancing Sets--
@@ -467,23 +484,41 @@ function get_sets()
 	}
 	
 	
+	-- sets.Magic.Impact = {   
+		-- main="Bunzi's Rod",
+		-- sub="Ammurapi Shield",
+		-- ammo="Regal Gem",
+		-- head = empty,
+		-- body="Twilight Cloak",
+		-- hands="Lethargy Gantherots +3",
+		-- --legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.BAtk.Bns."+9',}},
+		-- legs = "Lethargy Fuseau +2",
+		-- feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
+		-- neck="Duelist's torque +2",
+		-- waist="Obstin. Sash",
+		-- left_ear="Malignance Earring",
+		-- right_ear="Snotra Earring",
+		-- left_ring="Stikini ring +1",
+		-- right_ring="Metamor. Ring +1",
+		-- back={ name="Aurist's Cape +1", augments={'Path: A',}},
+	-- }
+	
 	sets.Magic.Impact = {   
 		main="Bunzi's Rod",
 		sub="Ammurapi Shield",
 		ammo="Regal Gem",
 		head = empty,
 		body="Twilight Cloak",
-		hands="Lethargy Gantherots +3",
-		--legs={ name="Chironic Hose", augments={'Mag. Acc.+30','Haste+1','MND+14','"Mag.BAtk.Bns."+9',}},
-		legs = "Lethargy Fuseau +2",
-		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
-		neck="Duelist's torque +2",
-		waist="Obstin. Sash",
-		left_ear="Malignance Earring",
-		right_ear="Snotra Earring",
-		left_ring="Stikini ring +1",
-		right_ring="Metamor. Ring +1",
-		back={ name="Aurist's Cape +1", augments={'Path: A',}},
+		hands={ name="Merlinic Dastanas", augments={'Mag. Acc.+28','"Occult Acumen"+9','INT+9',}},
+		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+26','"Occult Acumen"+11','INT+5',}},
+		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+22','"Occult Acumen"+9','INT+8','"Mag.Atk.Bns."+14',}},
+		neck="Lissome Necklace",
+		waist="Null Belt",
+		left_ear="Crep. Earring",
+		right_ear="Digni. Earring",
+		left_ring="Chirich Ring +1",
+		right_ring="Chirich Ring",
+		back="Null Shawl",
 	}
 	
 	sets.Magic.Stun = {
@@ -503,6 +538,7 @@ function get_sets()
 		legs = "Psycloth Lappas",
 		back={ name="Aurist's Cape +1", augments={'Path: A',}},
 	}
+	
 	sets.Magic.StunAcc = {
 		main = "Crocea Mors",
 		sub = "Ammurapi shield",
@@ -670,7 +706,8 @@ function get_sets()
 		neck = "Erra Pendant",
 		ear2 = "Malignance Earring",
 		ear1 = "Regal Earring",
-		body = {name = "Merlinic Jubbah",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
+		--body = {name = "Merlinic Jubbah",augments = {'Mag. Acc.+23 "Mag.Atk.Bns."+23', "INT+7", "Mag. Acc.+14", '"Mag.Atk.Bns."+14'}},
+		body="Lethargy Sayon +3",
 		hands = "Amalric Gages +1",
 		ring1 = "Evanescence Ring",
 		ring2 = "Kishar Ring",
@@ -958,6 +995,9 @@ function midcast(spell, act)
 		if spell.english == "Dispelga" then
 			equip(sets.Magic.Dispelga)
 		end
+		if spell.english == "Dia" or spell.english == "Dia II" or spell.english == "Dia III" then
+			equip(set_combine(sets.Magic.EnfeebleAcc, sets.Utility.TH))
+		end
 	end	
 	if spell.english == "Impact" then
 			equip(sets.Magic.Impact)
@@ -968,9 +1008,6 @@ function midcast(spell, act)
 		equip(sets.Nuke[sets.Nuke.index[Nuke_ind]])
 		if spell.element == world.day_element or spell.element == world.weather_element then
 			equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]], sets.Utility.Weather))
-		end
-		if spell.english == "Aero" then
-			equip(set_combine(sets.Nuke[sets.Nuke.index[Nuke_ind]], sets.Utility.TH))
 		end
 		if spell.english == "Impact" then
 			equip(sets.Magic.Impact)
