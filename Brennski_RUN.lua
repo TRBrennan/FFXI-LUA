@@ -398,6 +398,22 @@ function get_sets()
 		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
 		back="Null Shawl",
 	}
+	
+	sets.Utility.Bluhealing = {
+		ammo="Staunch Tathlum +1",
+		head="Null Masque",
+		body="Adamantite Armor",
+		hands={ name="Agwu's Gages", augments={'Path: A',}},
+		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+		feet="Erilaz Greaves +3",
+		neck="Sacro Gorget",
+		waist="Sroda Belt",
+		left_ear="Roundel Earring",
+		right_ear="Meili Earring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
+		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
+		}
 
 	sets.Utility.Doomed = {waist = "Gishdubar Sash", left_ring= "Eshmun's Ring"}
 	
@@ -649,6 +665,9 @@ function midcast(spell, act)
 		equip(sets.Utility.SIRD)
 		if spell.english == "Frightful Roar" then
 			equip(sets.Utility.FrightfulRoar)
+		end
+		if spell.english == "Magic Fruit" or spell.english == "Healing Breeze" or spell.english == "Wild Carrot" then
+			equip(sets.Utility.Bluhealing )
 		end
 	end
 	if spell.english == 'Ranged' then

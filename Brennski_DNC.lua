@@ -275,22 +275,6 @@ function get_sets()
                 Feet = "Nyame Sollerets",
         }
 
-        sets.Utility.Steps = {		
-			ammo="Yamarang",
-			head="Maxixi Tiara +2",
-			body={ name="Gleti's Cuirass", augments={'Path: A',}},
-			hands="Maxixi Bangles +3",
-			legs={ name="Gleti's Breeches", augments={'Path: A',}},
-			feet="Horos T. Shoes +3",
-			neck="Etoile Gorget +2",
-			waist="Null Belt",
-			left_ear="Crep. Earring",
-			right_ear="Telos Earring",
-			left_ring="Moonlight Ring",
-			right_ring="Chirich Ring +1",
-			back="Null Shawl"
-        }
-
 		sets.Utility.TH ={waist = "Chaac Belt", Legs = "Volte Hose", feet = "Volte Boots", Hands = "Volte Bracers"}
 		
         sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
@@ -301,11 +285,27 @@ function get_sets()
 
         sets.JA = {}
 		
-		sets.JA.Waltz = {ammo="Yamarang", body ="Maxixi Casaque +2",back ="Toetapper Mantle", leg="Dashing Subligar", neck="Etoile Gorget +2", ring2 = "Metamor. Ring +1",}
+		sets.JA.Waltz = {    
+			ammo="Yamarang",
+			head="Null Masque",
+			body="Maxixi Casaque +2",
+			hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+			legs={ name="Nyame Flanchard", augments={'Path: B',}},
+			feet="Macu. Toe Sh. +3",
+			neck={ name="Etoile Gorget +2", augments={'Path: A',}},
+			waist="Null Belt",
+			left_ear="Eabani Earring",
+			right_ear="Roundel Earring",
+			left_ring="Defending Ring",
+			right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+			back={ name="Senuna's Mantle", augments={'CHR+20','Eva.+20 /Mag. Eva.+20','CHR+8','"Waltz" potency +10%','Phys. dmg. taken-10%',}},
+	}
 		
 		sets.JA.Jigs = { back = "Senuna's Mantle", legs ="Horos Tights +2" }
 		
-		sets.JA.RF = {back ="Toetapper Mantle", hands = "Macu. Bangles +1"}
+		sets.JA.RF = {back ="Toetapper Mantle", hands = "Macu. Bangles +2"}
+		
+		sets.JA.CF = {head = "Maculele Tiara +3"}
 		
 		sets.JA.VF = {    
 			ammo="Yamarang",
@@ -346,6 +346,22 @@ function get_sets()
 		sets.JA.FeatherStep ={feet = "Maculele Toe Shoes +3"}
 		
 		sets.JA.Trance = {head = "Horos Tiara +1"}
+		
+		sets.JA.Steps = {		
+			ammo="Yamarang",
+			head="Maxixi Tiara +2",
+			body={ name="Gleti's Cuirass", augments={'Path: A',}},
+			hands="Maxixi Bangles +3",
+			legs={ name="Gleti's Breeches", augments={'Path: A',}},
+			feet="Horos T. Shoes +3",
+			neck="Null Loop",
+			waist="Null Belt",
+			left_ear="Crep. Earring",
+			right_ear="Telos Earring",
+			left_ring="Moonlight Ring",
+			right_ring="Chirich Ring +1",
+			back="Null Shawl"
+        }
 
         --Precast Sets--
         sets.precast = {}
@@ -397,17 +413,12 @@ function precast(spell)
 			else 
 			   equip(sets.Rudras)
 			end
-        elseif spell.english == "Sanguine Blade" then
-                equip(sets.BlueMagic.Dark)
-                if spell.element == world.day_element or spell.element == world.weather_element then
-                        equip(sets.Utility.Weather)
-                end
         elseif spell.english == "Aeolian Edge" or spell.english == "Cyclone" then
                 equip(sets.AeolianEdge)
         elseif spell.english == "Box Step" or spell.english == "Quick Step" or spell.english == "Shutter Step" then
-                equip(sets.Utility.Steps)
+                equip(sets.JA.Steps)
 		elseif spell.english == "Feather Step" then
-				equip(set_combine(sets.Utility.Steps, sets.JA.FeatherStep))
+				equip(set_combine(sets.JA.Steps, sets.JA.FeatherStep))
 		elseif jigs:contains(spell.english) then
 				equip(sets.JA.Jigs)
 		elseif sambas:contains(spell.english) then
@@ -420,6 +431,8 @@ function precast(spell)
 			equip(sets.JA.VF)
 		elseif spell.english == "Animated Flourish" then
 			equip(set_combine(sets.JA.AF, sets.Utility.TH))
+		elseif spell.english == "Climactic Flourish" then
+			equip(sets.JA.CF)
 		elseif spell.english == 'Trance' then
 			equip(sets.JA.Trance)
 		elseif spell.english == "No Foot Rise" then
